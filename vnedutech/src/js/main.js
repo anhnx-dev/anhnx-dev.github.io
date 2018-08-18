@@ -1,7 +1,8 @@
 // Hero
+const banner_bg_image = document.querySelector('.hero__banner-bg img');
 const banner = document.querySelector('.hero__banner');
 const ACTIVE_ANIMATION_CLASS = 'active-animetion';
-document.addEventListener('DOMContentLoaded', () => {
+banner_bg_image.addEventListener('load', () => {
   banner.classList.add(ACTIVE_ANIMATION_CLASS);
 })
 
