@@ -1,3 +1,10 @@
+// Hero
+const banner = document.querySelector('.hero__banner');
+const ACTIVE_ANIMATION_CLASS = 'active-animetion';
+document.addEventListener('DOMContentLoaded', () => {
+  banner.classList.add(ACTIVE_ANIMATION_CLASS);
+})
+
 // Navbar
 const navbar = document.querySelector('.js-navbar');
 const DROPDOWN_CLASS = 'dropdown';
@@ -35,16 +42,6 @@ if (navTrigger) {
     body.classList.remove(FIXED_CLASS)
   })
 }
-
-// Carousel
-$(".hero__list").carousel({
-  single: true,
-  infinite: true,
-  autoAdvance: true,
-  autoTime: 4000,
-  controls: false,
-  pagination: false
-});
 
 // accordion
 const ITEM_CLASS = 'js-accordion';
