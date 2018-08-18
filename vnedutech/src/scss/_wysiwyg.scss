@@ -1,0 +1,65 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+body {
+  font-family: $f-roboto;
+  font-size: .75rem;
+  line-height: 1.6;
+  background: $c-white;
+  color: $c-dark;
+  @media (min-width: $breakpoints-lg) {
+    font-size: .9375rem;
+  }
+}
+
+div,
+ul,
+li,
+a,
+section {
+  box-sizing: border-box;
+}
+
+.img-cover {
+	position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: block;
+    padding-bottom: 56.25%;
+  }
+}
+
+.img-cover__wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: $transition;
+  >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.cover {
+  pointer-events: none;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $c-cover-blue;
+  }
+}
+
+.section {
+  margin-bottom: 40px;
+}
