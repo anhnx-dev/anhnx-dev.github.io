@@ -397,10 +397,28 @@
   position: relative;
   background-size: cover;
   background-position: 50%;
+  opacity: 0;
   &::before {
     content: '';
     display: block;
     padding-bottom: 560px;
+  }
+  &.active-animetion {
+    opacity: 1;
+    .hero__banner-content {
+      animation: content 2s ease-in-out;
+    }
+    .hero__banner-girl {
+      animation: girl 1s linear;
+    }
+    .hero__banner-air {
+      animation: air-0 1s linear;
+      @media (min-width: $breakpoints-lg) {
+        left: 66%;
+        top: 10%;
+        animation: air-1 1s linear;
+      }
+    }
   }
 }
 
@@ -434,33 +452,12 @@
   }
 }
 
-.active-animetion {
-  .hero__banner-content {
-    animation: content 3s ease-in-out;
-  }
-  .hero__banner-girl {
-    animation: girl 2s linear;
-  }
-  .hero__banner-air {
-    animation: air-0 2s linear;
-    @media (min-width: $breakpoints-lg) {
-      left: 66%;
-      top: 10%;
-      animation: air-1 2s linear;
-    }
-  }
-}
-
 @keyframes content {
   0% {
     transform: translateX(-50%) scale(0);
     opacity: 0;
   }
   50% {
-    transform: translateX(-50%) scale(0);
-    opacity: 0;
-  }
-  75% {
     transform: translateX(-50%) scale(0);
     opacity: 0;
   }
@@ -474,9 +471,6 @@
   0% {
     bottom: -100%;
   }
-  50% {
-    bottom: -100%;
-  }
   100% {
     bottom: -10px;
   }
@@ -486,18 +480,12 @@
   0% {
     left: 120%;
   }
-  50% {
-    left: 120%;
-  }
   100% {
     left: 100%;
   }
 }
 
 @keyframes air-1 {
-  50% {
-    left: 100%;
-  }
   0% {
     left: 100%;
   }
@@ -1307,16 +1295,17 @@
   >a {
     display: block;
     position: relative;
-    &::after,
-    &::before {
+    margin-right: 15px;
+    &::after {
       content: '';
       position: absolute;
-      width: 10px;
-      height: 1px;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background: $c-white;
+      width: 0;
+      height: 0;
+      right: -13px;
+      top: 14px;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid $c-dark;
       transition: $transition;
     }
   }
@@ -1328,8 +1317,8 @@
     opacity: 1;
   }
   >a {
-    &::before {
-      transform: translateY(-50%) rotate(90deg);
+    &::after {
+      transform: rotate(180deg);
     }
   }
 }

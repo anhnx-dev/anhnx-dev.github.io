@@ -1,98 +1,86 @@
-'use strict';
-
 // Hero
-var banner = document.querySelector('.hero__banner');
-var ACTIVE_ANIMATION_CLASS = 'active-animetion';
-window.addEventListener('load', function () {
+const banner = document.querySelector('.hero__banner');
+// const bannerImage = document.querySelector('.hero__banner img');
+const ACTIVE_ANIMATION_CLASS = 'active-animetion';
+window.addEventListener('load', () => {
   banner.classList.add(ACTIVE_ANIMATION_CLASS);
 });
 
 // Navbar
-var navbar = document.querySelector('.js-navbar');
-var DROPDOWN_CLASS = 'dropdown';
-var ACTIVE_DROPDOWN_CLASS = 'dropdown-active';
-var SUB_MENU_CLASS = 'sub-menu';
-var submenus = document.querySelectorAll('.js-navbar>ul li ul');
+const navbar = document.querySelector('.js-navbar');
+const DROPDOWN_CLASS = 'dropdown';
+const ACTIVE_DROPDOWN_CLASS = 'dropdown-active';
+const SUB_MENU_CLASS = 'sub-menu';
+const submenus = document.querySelectorAll('.js-navbar>ul li ul');
 
 if (navbar) {
-  for (var i = 0; i < submenus.length; i++) {
-    var submenu = submenus[i];
+  for (let i = 0; i < submenus.length; i++) {
+    const submenu = submenus[i];
     submenu.parentNode.classList.add(DROPDOWN_CLASS);
     submenu.classList.add(SUB_MENU_CLASS);
   }
-  var dropdownButtons = document.querySelectorAll('.dropdown>a');
-
-  var _loop = function _loop(_i) {
-    var dropdownButton = dropdownButtons[_i];
-    dropdownButton.addEventListener('click', function () {
+  const dropdownButtons = document.querySelectorAll('.dropdown>a');
+  for (let i = 0; i < dropdownButtons.length; i++) {
+    const dropdownButton = dropdownButtons[i];
+    dropdownButton.removeAttribute('href');
+    dropdownButton.addEventListener('click', () => {
       dropdownButton.parentNode.classList.toggle(ACTIVE_DROPDOWN_CLASS);
     });
-  };
-
-  for (var _i = 0; _i < dropdownButtons.length; _i++) {
-    _loop(_i);
+    // return false;
   }
 }
 
+
 // Menu Mobile
-var navTrigger = document.querySelector('.js-trigger');
-var slideoutOvarlay = document.querySelector('.js-slideout-overlay');
-var FIXED_CLASS = 'fixed-top';
-var body = document.body;
+const navTrigger = document.querySelector('.js-trigger');
+const slideoutOvarlay = document.querySelector('.js-slideout-overlay');
+const FIXED_CLASS = 'fixed-top';
+const body = document.body;
 
 if (navTrigger) {
-  navTrigger.addEventListener('click', function () {
-    body.classList.toggle(FIXED_CLASS);
+  navTrigger.addEventListener('click', () => {
+    body.classList.toggle(FIXED_CLASS)
   });
-  slideoutOvarlay.addEventListener('click', function () {
-    body.classList.remove(FIXED_CLASS);
-  });
+  slideoutOvarlay.addEventListener('click', () => {
+    body.classList.remove(FIXED_CLASS)
+  })
 }
 
 // accordion
-var ITEM_CLASS = 'js-accordion';
-var ACTIVE_CLASS = 'accordion-active';
-var HEADER_ITEM_CLASS = 'js-accordion-header';
-var BODY_ITEM_CLASS = 'js-accordion-body';
-var BODY_WRAPPER_CLASS = 'js-accordion-body-inner';
+const ITEM_CLASS = 'js-accordion';
+const ACTIVE_CLASS = 'accordion-active';
+const HEADER_ITEM_CLASS = 'js-accordion-header';
+const BODY_ITEM_CLASS = 'js-accordion-body';
+const BODY_WRAPPER_CLASS = 'js-accordion-body-inner';
 
-var addClass = function addClass(item) {
-  return item.classList.add(ACTIVE_CLASS);
-};
-var removeClass = function removeClass(item) {
-  return item.classList.remove(ACTIVE_CLASS);
-};
-var hideContent = function hideContent(content) {
-  return content.style.height = 0;
-};
-var isActivated = function isActivated(content, contentWarpper) {
-  return content.style.height = contentWarpper.offsetHeight + 'px';
-};
+const addClass = (item) => item.classList.add(ACTIVE_CLASS);
+const removeClass = (item) => item.classList.remove(ACTIVE_CLASS);
+const hideContent = (content) => content.style.height = 0;
+const isActivated = (content, contentWarpper) => content.style.height = (contentWarpper.offsetHeight) + 'px';
 
-var accordion = function accordion() {
-  var items = document.getElementsByClassName(ITEM_CLASS);
-  var buttons = document.getElementsByClassName(HEADER_ITEM_CLASS);
-  var contents = document.getElementsByClassName(BODY_ITEM_CLASS);
-  var contentsWarpper = document.getElementsByClassName(BODY_WRAPPER_CLASS);
+const accordion = () => {
+  const items = document.getElementsByClassName(ITEM_CLASS);
+  const buttons = document.getElementsByClassName(HEADER_ITEM_CLASS);
+  const contents = document.getElementsByClassName(BODY_ITEM_CLASS);
+  const contentsWarpper = document.getElementsByClassName(BODY_WRAPPER_CLASS);
   if (items) {
-    var _loop2 = function _loop2(_i2) {
-      buttons[_i2].addEventListener('click', function () {
-        if (items[_i2].classList[2] == ACTIVE_CLASS) {
-          removeClass(items[_i2]);
-          hideContent(contents[_i2]);
+    for (let i = 0; i < items.length; i++) {
+      buttons[i].addEventListener('click', () => {
+        if (items[i].classList[2] == ACTIVE_CLASS) {
+          removeClass(items[i]);
+          hideContent(contents[i]);
         } else {
-          for (var _i3 = 0; _i3 < buttons.length; _i3++) {
-            removeClass(items[_i3]);
-            hideContent(contents[_i3]);
+          for (let i = 0; i < buttons.length; i++) {
+            removeClass(items[i]);
+            hideContent(contents[i]);
           }
-          addClass(items[_i2]);
-          isActivated(contents[_i2], contentsWarpper[_i2]);
+          addClass(items[i]);
+          isActivated(
+            contents[i],
+            contentsWarpper[i]
+          );
         }
       });
-    };
-
-    for (var _i2 = 0; _i2 < items.length; _i2++) {
-      _loop2(_i2);
     }
   }
 };
