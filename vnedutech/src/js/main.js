@@ -67,7 +67,7 @@ if (COUNTDOWN_CLASS) {
       }).animate({
         countNum: countTo
       }, {
-        duration: 8000,
+        duration: 2000,
         easing: 'linear',
         step: function () {
           $this.text(Math.floor(this.countNum));
