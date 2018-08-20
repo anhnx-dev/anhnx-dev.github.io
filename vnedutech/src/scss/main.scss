@@ -231,6 +231,21 @@
     transform: none;
   }
   >.nav__item {
+    &:nth-child(1) {
+      .nav__link {
+        
+        &::after {
+          content: '\e906';
+          display: block;
+          width: 24px;
+          height: 20px;
+          font-family: $f-icon;
+          font-size: 24px;
+          color: $c-blue;
+          transform: translateY(-10px);
+        }
+      }
+    }
     >.nav__link {
       padding: 15px 0;
       @media (min-width: $breakpoints-xl) {
@@ -309,21 +324,6 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-  >span {
-    display: inline-block;
-    position: relative;
-    font-family: $f-icon;
-    width: 24px;
-    height: 20px;
-    &::before {
-      content: '\e906';
-      position: absolute;
-      top: 50%;
-      transform: translateY(-40%);
-      font-size: 24px;
-      color: $c-blue;
-    }
-  }
   &::before {
     content: '';
     position: absolute;
@@ -867,6 +867,15 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+  &.active {
+    .ask-reply__item-reply {
+      max-height: 999px;
+      padding-top: 10px;
+      @media (min-width: $breakpoints-md) {
+        padding-top: 25px;
+      }
+    }
+  }
 }
 
 .ask-reply__item-ask {
@@ -886,17 +895,10 @@
 }
 
 .ask-reply__item-reply {
-  padding-left: 45px;
-  height: 0;
+  padding: 0 0 0 45px;
+  max-height: 0;
   overflow: hidden;
   transition: $transition;
-}
-
-.ask-reply__item-reply--wrapper {
-  padding-top: 10px;
-  @media (min-width: $breakpoints-md) {
-    padding-top: 25px;
-  }
 }
 
 // Images
@@ -950,6 +952,22 @@
 
 .achievements__item {
   margin-bottom: 50px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all .5s ease-in-out;
+  &:nth-child(2) {
+    transition-delay: .3s;
+  }
+  &:nth-child(3) {
+    transition-delay: .6s;
+  }
+  &:nth-child(4) {
+    transition-delay: .9s;
+  }
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
   @media (min-width: $breakpoints-md) {
    margin-bottom: 0; 
   }
@@ -960,9 +978,9 @@
 
 .achievements__item-number {
   position: relative;
-  padding-bottom: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   font-size: 2.5rem;
+  height: 2.5rem;
   line-height: 1;
   font-weight: 700;
   &::after {
@@ -971,7 +989,7 @@
     width: 60px;
     height: 4px;
     background: $c-blue;
-    bottom: 0;
+    bottom: -21px;
     left: 50%;
     transform: translateX(-50%);
   }

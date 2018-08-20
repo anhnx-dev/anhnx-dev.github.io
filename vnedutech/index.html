@@ -8,13 +8,27 @@
 	<title>Document</title>
 
 	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/fancybox/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="src/css/main.min.css">
 
 </head>
 
 <body>
 
+
+
 	<div id="app">
+
+		<noscript>
+			<![if !(lte IE 9)]>
+			<div class="noscript-message">
+				<div class="noscript-message__content">
+					<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc mở JavaScript trong phần
+					cài đặt.</p>
+				</div>
+			</div>
+			<![endif]>
+		</noscript>
 
 		<!-- header -->
 		<header class="header">
@@ -61,9 +75,7 @@
 							</div>
 							<ul class="nav navbar__nav">
 								<li class="nav__item">
-									<a class="nav__link active-page" href="">
-										<span></span>
-									</a>
+									<a class="nav__link active-page" href=""></a>
 								</li>
 								<li class="nav__item">
 									<a class="nav__link" href="">Về Leader's Edu</a>
@@ -162,7 +174,9 @@
 								<div class="why__item-icon">
 									<img src="images/icon1.png" alt="">
 								</div>
-								<h2 class="why__item-link"><a href="">Học tập tại Hàn Quốc</a></h2>
+								<h2 class="why__item-link">
+									<a href="">Học tập tại Hàn Quốc</a>
+								</h2>
 							</div>
 						</div>
 						<div class="col-6 col-md-3 why__item">
@@ -170,7 +184,9 @@
 								<div class="why__item-icon">
 									<img src="images/icon2.png" alt="">
 								</div>
-								<h2 class="why__item-link"><a href="">Lưu ý khi nhập học</a></h2>
+								<h2 class="why__item-link">
+									<a href="">Lưu ý khi nhập học</a>
+								</h2>
 							</div>
 						</div>
 						<div class="col-6 col-md-3 why__item">
@@ -178,7 +194,9 @@
 								<div class="why__item-icon">
 									<img src="images/icon3.png" alt="">
 								</div>
-								<h2 class="why__item-link"><a href="">Thông tin học bổng</a></h2>
+								<h2 class="why__item-link">
+									<a href="">Thông tin học bổng</a>
+								</h2>
 							</div>
 						</div>
 						<div class="col-6 col-md-3 why__item">
@@ -186,7 +204,9 @@
 								<div class="why__item-icon">
 									<img src="images/icon4.png" alt="">
 								</div>
-								<h2 class="why__item-link"><a href="">Giới thiệu về IEQAS</a></h2>
+								<h2 class="why__item-link">
+									<a href="">Giới thiệu về IEQAS</a>
+								</h2>
 							</div>
 						</div>
 					</div>
@@ -205,7 +225,7 @@
 											<img src="images/video.png" alt="">
 										</span>
 									</div>
-									<button class="btn-play"></button>
+									<a class="btn-play" data-fancybox="Video about" href="https://www.youtube.com/watch?v=rptO-1ia4e0"></a>
 								</div>
 							</div>
 							<div class="col-md-6 col-lg-4 about__introduce">
@@ -363,60 +383,50 @@
 							<h2 class="section-headline ask-reply__headline">
 								<a href="">Hỏi đáp</a>
 							</h2>
-							<div class="ask-reply__list">
-								<div class="ask-reply__item js-accordion">
+							<div class="ask-reply__list js-accordion">
+								<div class="ask-reply__item">
 									<div class="ask-reply__item-wrapper">
 										<span class="btn btn-ask-reply"></span>
-										<h3 class="ask-reply__item-ask js-accordion-header">Chi phí sinh hoạt tối thiểu tại Seoul đến thời điểm này là bao nhiêu, tiền xe đi lại, internet, giá ăn ở,…?</h3>
-										<div class="ask-reply__item-reply js-accordion-body">
-											<div class="ask-reply__item-reply--wrapper js-accordion-body-inner">
-												Hi em, so với các thành phố khác thì chi phí ở Seoul không qua đắt, 1 tháng tổng chi phí sinh hoạt của em khoảng 400$ – 450$.
-											</div>
+										<h3 class="ask-reply__item-ask">Chi phí sinh hoạt tối thiểu tại Seoul đến thời điểm này là bao nhiêu, tiền xe đi lại, internet, giá ăn ở,…?</h3>
+										<div class="ask-reply__item-reply">
+											Hi em, so với các thành phố khác thì chi phí ở Seoul không qua đắt, 1 tháng tổng chi phí sinh hoạt của em khoảng 400$ – 450$.
 										</div>
 									</div>
 								</div>
-								<div class="ask-reply__item js-accordion">
+								<div class="ask-reply__item">
 									<div class="ask-reply__item-wrapper">
 										<span class="btn btn-ask-reply"></span>
-										<h3 class="ask-reply__item-ask js-accordion-header">Em thấy trên trang web Leadersedu có chương trình “ Trao đổi sinh viên với đại học Hồ Nam” là sao ạ?</h3>
-										<div class="ask-reply__item-reply js-accordion-body">
-											<div class="ask-reply__item-reply--wrapper js-accordion-body-inner">
-												Hi em, so với các thành phố khác thì chi phí ở Seoul không qua đắt, 1 tháng tổng chi phí sinh hoạt của em khoảng 400$ – 450$.
-											</div>
+										<h3 class="ask-reply__item-ask">Em thấy trên trang web Leadersedu có chương trình “ Trao đổi sinh viên với đại học Hồ Nam” là sao ạ?</h3>
+										<div class="ask-reply__item-reply">
+											Hi em, so với các thành phố khác thì chi phí ở Seoul không qua đắt, 1 tháng tổng chi phí sinh hoạt của em khoảng 400$ – 450$.
 										</div>
 									</div>
 								</div>
-								<div class="ask-reply__item js-accordion">
+								<div class="ask-reply__item">
 									<div class="ask-reply__item-wrapper">
 										<span class="btn btn-ask-reply"></span>
-										<h3 class="ask-reply__item-ask js-accordion-header">Vậy điều kiện nhận học bổng chương trình “ Trao đổi sinh viên với đại học Hồ Nam” là gì?</h3>
-										<div class="ask-reply__item-reply js-accordion-body">
-											<div class="ask-reply__item-reply--wrapper js-accordion-body-inner">
-												Hi em, so với các thành phố khác thì chi phí ở Seoul không qua đắt, 1 tháng tổng chi phí sinh hoạt của em khoảng 400$ – 450$.
-											</div>
+										<h3 class="ask-reply__item-ask">Vậy điều kiện nhận học bổng chương trình “ Trao đổi sinh viên với đại học Hồ Nam” là gì?</h3>
+										<div class="ask-reply__item-reply">
+											Hi em, so với các thành phố khác thì chi phí ở Seoul không qua đắt, 1 tháng tổng chi phí sinh hoạt của em khoảng 400$ – 450$.
 										</div>
 									</div>
 								</div>
-								<div class="ask-reply__item js-accordion">
+								<div class="ask-reply__item">
 									<div class="ask-reply__item-wrapper">
 										<span class="btn btn-ask-reply"></span>
-										<h3 class="ask-reply__item-ask js-accordion-header">Em muốn hỏi chứng minh có việc làm ổn định như thế nào và lương hàng tháng là bao nhiêu mới đủ để đỗ visa ạ?</h3>
-										<div class="ask-reply__item-reply js-accordion-body">
-											<div class="ask-reply__item-reply--wrapper js-accordion-body-inner">
-												Hi em, so với các thành phố khác thì chi phí ở Seoul không qua đắt, 1 tháng tổng chi phí sinh hoạt của em khoảng 400$ – 450$.
-											</div>
+										<h3 class="ask-reply__item-ask">Em muốn hỏi chứng minh có việc làm ổn định như thế nào và lương hàng tháng là bao nhiêu mới đủ để đỗ visa ạ?</h3>
+										<div class="ask-reply__item-reply">
+											Hi em, so với các thành phố khác thì chi phí ở Seoul không qua đắt, 1 tháng tổng chi phí sinh hoạt của em khoảng 400$ – 450$.
 										</div>
 									</div>
 								</div>
-								<div class="ask-reply__item js-accordion">
+								<div class="ask-reply__item">
 									<div class="ask-reply__item-wrapper">
 										<span class="btn btn-ask-reply"></span>
-										<h3 class="ask-reply__item-ask js-accordion-header">Em có nghe đến dịch vụ cho thuê tài khoản tiết kiệm để chứng minh tài chính đi du học, Leadersedu có dịch vụ này
+										<h3 class="ask-reply__item-ask">Em có nghe đến dịch vụ cho thuê tài khoản tiết kiệm để chứng minh tài chính đi du học, Leadersedu có dịch vụ này
 											không, chi phí thuê là bao nhiêu?</h3>
-										<div class="ask-reply__item-reply js-accordion-body">
-											<div class="ask-reply__item-reply--wrapper js-accordion-body-inner">
-												Hi em, so với các thành phố khác thì chi phí ở Seoul không qua đắt, 1 tháng tổng chi phí sinh hoạt của em khoảng 400$ – 450$.
-											</div>
+										<div class="ask-reply__item-reply">
+											Hi em, so với các thành phố khác thì chi phí ở Seoul không qua đắt, 1 tháng tổng chi phí sinh hoạt của em khoảng 400$ – 450$.
 										</div>
 									</div>
 								</div>
@@ -432,63 +442,63 @@
 							<div class="row images__list">
 								<div class="col-4 images__item">
 									<div class="img-cover">
-										<a class="img-cover__wrapper" href="#">
+										<a class="img-cover__wrapper" data-fancybox="images" href="images/hinhanh1.png">
 											<img src="images/hinhanh1.png" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="col-4 images__item">
 									<div class="img-cover">
-										<a class="img-cover__wrapper" href="#">
+										<a class="img-cover__wrapper" data-fancybox="images" href="images/hinhanh2.png">
 											<img src="images/hinhanh2.png" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="col-4 images__item">
 									<div class="img-cover">
-										<a class="img-cover__wrapper" href="#">
+										<a class="img-cover__wrapper" data-fancybox="images" href="images/hinhanh3.png">
 											<img src="images/hinhanh3.png" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="col-4 images__item">
 									<div class="img-cover">
-										<a class="img-cover__wrapper" href="#">
+										<a class="img-cover__wrapper" data-fancybox="images" href="images/hinhanh4.png">
 											<img src="images/hinhanh4.png" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="col-4 images__item">
 									<div class="img-cover">
-										<a class="img-cover__wrapper" href="#">
+										<a class="img-cover__wrapper" data-fancybox="images" href="images/hinhanh5.png">
 											<img src="images/hinhanh5.png" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="col-4 images__item">
 									<div class="img-cover">
-										<a class="img-cover__wrapper" href="#">
+										<a class="img-cover__wrapper" data-fancybox="images" href="images/hinhanh6.png">
 											<img src="images/hinhanh6.png" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="col-4 images__item">
 									<div class="img-cover">
-										<a class="img-cover__wrapper" href="#">
+										<a class="img-cover__wrapper" data-fancybox="images" href="images/hinhanh7.png">
 											<img src="images/hinhanh7.png" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="col-4 images__item">
 									<div class="img-cover">
-										<a class="img-cover__wrapper" href="#">
+										<a class="img-cover__wrapper" data-fancybox="images" href="images/hinhanh8.png">
 											<img src="images/hinhanh8.png" alt="">
 										</a>
 									</div>
 								</div>
 								<div class="col-4 images__item">
 									<div class="img-cover">
-										<a class="img-cover__wrapper" href="#">
+										<a class="img-cover__wrapper" data-fancybox="images" href="images/hinhanh9.png">
 											<img src="images/hinhanh9.png" alt="">
 										</a>
 									</div>
@@ -506,19 +516,19 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 achievements__item">
-							<div class="achievements__item-number">5000</div>
+							<div class="achievements__item-number js-counter" data-count="5000"></div>
 							<div class="achievements__item-text">Du học sinh</div>
 						</div>
 						<div class="col-md-3 achievements__item">
-							<div class="achievements__item-number">150</div>
+							<div class="achievements__item-number js-counter" data-count="150"></div>
 							<div class="achievements__item-text">Tư vấn viên chuyên nghiệp</div>
 						</div>
 						<div class="col-md-3 achievements__item">
-							<div class="achievements__item-number">850</div>
+							<div class="achievements__item-number js-counter" data-count="850"></div>
 							<div class="achievements__item-text">Hội thảo đã được tổ chức</div>
 						</div>
 						<div class="col-md-3 achievements__item">
-							<div class="achievements__item-number">6214</div>
+							<div class="achievements__item-number js-counter" data-count="6214"></div>
 							<div class="achievements__item-text">Học sinh đã tham gia các khóa đào tạo tiếng Hàn</div>
 						</div>
 					</div>
@@ -549,8 +559,8 @@
 										<h3 class="sub-heading news__item-title">
 											<a href="">Kỹ sư, Khoa học tự nhiên và Nhân đạo là 3 ngành nên học tại Hàn Quốc</a>
 										</h3>
-										<div class="news__item-description">Đời sống văn hóa sôi động và những thành phố xinh đẹp khiến Hàn Quốc càng thêm thu hút trong mắt các bạn sinh viên quốc tế.
-										Đất nước Hàn Quốc ngày càng lan rộng tầm ảnh hưởng trên toàn cầu...</div>
+										<div class="news__item-description">Đời sống văn hóa sôi động và những thành phố xinh đẹp khiến Hàn Quốc càng thêm thu hút trong mắt các bạn sinh viên
+											quốc tế. Đất nước Hàn Quốc ngày càng lan rộng tầm ảnh hưởng trên toàn cầu...</div>
 										<a class="btn btn-news-item" href="">Chi tiết</a>
 									</div>
 								</div>
@@ -591,8 +601,8 @@
 											<span class="news__item-date">25/05/2018</span>
 											<span class="news__item-copyright">Leader’s Edu</span>
 										</div>
-										<div class="news__item-description">Với những ứng viên chưa có trình độ tiếng Hàn trên TOPIK 5, bạn phải tham gia chương
-											trình...</div>
+										<div class="news__item-description">Với những ứng viên chưa có trình độ tiếng Hàn trên TOPIK 5, bạn phải tham gia chương trình...
+										</div>
 									</div>
 								</div>
 							</figure>
@@ -611,8 +621,7 @@
 											<span class="news__item-date">25/05/2018</span>
 											<span class="news__item-copyright">Leader’s Edu</span>
 										</div>
-										<div class="news__item-description">Việc tìm kiếm nơi ở tại một thành phố lạ có thể hơi khó khăn, bất kể điểm đến du học
-											của bạn là ở đâu.</div>
+										<div class="news__item-description">Việc tìm kiếm nơi ở tại một thành phố lạ có thể hơi khó khăn, bất kể điểm đến du học của bạn là ở đâu.</div>
 									</div>
 								</div>
 							</figure>
@@ -833,7 +842,10 @@
 	</div>
 
 	<!-- js -->
-	<script src="src/js/main.min.js"></script>
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/jquery.appear.js"></script>
+	<script src="src/js/vendor/fancybox/jquery.fancybox.min.js"></script>
+	<script src="src/js/main.js"></script>
 
 </body>
 

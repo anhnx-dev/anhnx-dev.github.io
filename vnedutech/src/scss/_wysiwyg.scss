@@ -63,3 +63,20 @@ section {
 .section {
   margin-bottom: 40px;
 }
+
+.noscript-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $c-white;
+}
+
+.noscript-message__content {
+  padding: 30px 13px;
+}
