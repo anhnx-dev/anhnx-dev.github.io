@@ -1,9 +1,12 @@
 // Banner
 var banner = document.querySelector('.hero__banner');
 var ACTIVE_ANIMATION_CLASS = 'active-animetion';
-window.addEventListener('load', function () {
-  banner.classList.add(ACTIVE_ANIMATION_CLASS)
-});
+
+if (banner) {
+  window.addEventListener('load', function () {
+    banner.classList.add(ACTIVE_ANIMATION_CLASS);
+  });
+}
 
 // navbar
 var navbar = $('.js-navbar');
@@ -79,3 +82,40 @@ if (COUNTDOWN_CLASS) {
     });
   });
 }
+
+$('.js-carousel-01').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.js-carousel-02'
+});
+$('.js-carousel-02').slick({
+  slidesToScroll: 3,
+  slidesToShow: 1,
+  asNavFor: '.js-carousel-01',
+  arrows: false,
+  focusOnSelect: true,
+  vertical: true,
+  responsive: [{
+      breakpoint: 992,
+      settings: {
+        vertical: false,
+        focusOnSelect: false
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        vertical: false
+      }
+    }
+  ]
+});

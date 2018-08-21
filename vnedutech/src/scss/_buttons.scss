@@ -115,3 +115,34 @@
     color: $c-blue;
   }
 }
+
+.btn-item-01 {
+  margin-top: 10px;
+  color: $c-blue;
+  font-size: .875rem;
+  line-height: 1.429;
+  &::after {
+    content: '\e904';
+    font-family: $f-icon;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 3px;
+  }
+  &:hover {
+    &::after {
+      animation: btn-item-01 .5s infinite;
+    }
+  }
+}
+
+@keyframes btn-item-01 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
