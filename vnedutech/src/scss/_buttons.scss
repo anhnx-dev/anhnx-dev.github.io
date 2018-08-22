@@ -95,7 +95,7 @@
   }
 }
 
-.accordion-active .btn-ask-reply {
+.active .btn-ask-reply {
   &::after {
     transform: translate(-50%, -50%) rotate(90deg);
   }
@@ -144,5 +144,22 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+.btn-comments {
+  margin-top: 20px;
+  font-size: .8125rem;
+  padding: 10px 45px;
+  border-radius: $round;
+  background: $c-green;
+  text-transform: uppercase;
+  border: none;
+  color: $c-white;
+  cursor: pointer;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    background: $c-blue;
   }
 }

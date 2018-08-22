@@ -8,6 +8,33 @@ if (banner) {
   });
 }
 
+// Video Youtube
+// Find all YouTube videos
+var $allVideos = $("iframe[src*='youtube']"),
+  // The element that is fluid width
+  $fluidEl = $("iframe[src*='youtube']").parent().addClass("youtube-iframe-wrap");
+// Figure out and save aspect ratio for each video
+$allVideos.each(function () {
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+// When the window is resized
+$(window).resize(function () {
+  var newWidth = $fluidEl.width();
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function () {
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+  });
+  // Kick off one resize to fix all videos on page load
+}).resize();
+
 // navbar
 var navbar = $('.js-navbar');
 var SUB_MENU_CLASS = 'sub-menu';
@@ -91,23 +118,26 @@ $('.js-carousel-01').slick({
   asNavFor: '.js-carousel-02'
 });
 $('.js-carousel-02').slick({
-  slidesToScroll: 3,
-  slidesToShow: 1,
+  slidesToScroll: 1,
+  slidesToShow: 3,
   asNavFor: '.js-carousel-01',
   arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
   focusOnSelect: true,
   vertical: true,
   responsive: [{
       breakpoint: 992,
       settings: {
-        vertical: false,
-        focusOnSelect: false
+        slidesToShow: 1,
+        vertical: false
       }
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 1,
+        vertical: false
       }
     },
     {

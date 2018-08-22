@@ -1069,7 +1069,7 @@
 }
 
 .news__content-list {
-  margin-top: 30px;
+  @extend .block-right;
   @media (min-width: $breakpoints-md) {
     margin-top: 0;
   }
@@ -1177,7 +1177,8 @@
   margin: 0;
   width: 100%;
   padding: 5px 15px;
-  @media (min-width: $breakpoints-md) {
+  text-align: justify;
+  @media (min-width: $breakpoints-lg) {
     padding: 13px 30px;
   }
   background: $c-bg-black1;
@@ -1201,8 +1202,10 @@
 .news-carousel__contents {
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 100%;
   @media (min-width: $breakpoints-lg) {
     width: calc(25% + 15px);
+    padding-left: 0;
     padding-right: 15px;
     height: 380px;
     overflow: initial;
@@ -1215,24 +1218,27 @@
 
 .news-carousel__content-item {
   position: relative;
-  padding: 15px 15px 15px 30px;
+  padding: 10px 15px;
   cursor: pointer;
   outline: none;
   transition: $transition;
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-100%, -50%);
-    border-top: 9px solid transparent;
-    border-bottom: 9px solid transparent;
-    border-right: 10px solid $c-blue;
-    z-index: 999;
-    opacity: 0;
-    transition: $transition;
+  @media (min-width: $breakpoints-lg) {
+    padding: 15px 15px 15px 30px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-100%, -50%);
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+      border-right: 10px solid $c-blue;
+      z-index: 999;
+      opacity: 0;
+      transition: $transition;
+    }
   }
-  &.slick-active {
+  &.slick-current {
     background: $c-blue;
     color: $c-white;
     &::after {
@@ -1248,20 +1254,62 @@
 }
 
 .news-carousel__content--item-description {
-  margin-top: 10px;
   font-size: .8125rem;
   line-height: 1.8461;
   text-align: justify;
+  @media (min-width: $breakpoints-md) {
+    margin-top: 10px;
+  }
 }
 
-// News list
-.news-list {
-  margin-top: 30px;
+// detail
+.detail__media {
+  img {
+    max-width: 100%;
+    height: auto !important;
+  }
 }
 
-// News right
-.news-right {
-  
+.detail__content {
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
+// News other
+.related-news__headline {
+  @extend .footer-title;
+  text-align: center;
+  text-transform: uppercase;
+  color: $c-blue;
+  margin: 0;
+}
+
+.related-news__list {
+  margin-top: 25px;
+}
+
+.item-03__image {
+  &::after {
+    padding-bottom: 65.25%;
+  }
+}
+
+.item-03__title {
+  margin: 15px 0 0 0;
+  font-size: .9375rem;
+  line-height: 1.6;
+  a {
+    color: $c-dark;
+    text-decoration: none;
+    transition: $transition;
+    &:hover,
+    &:focus {
+      color: $c-blue;
+    }
+  }
 }
 
 // ------------------------------- Footer
