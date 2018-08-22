@@ -281,6 +281,7 @@
     >.nav__dropdown {
       pointer-events: initial;
       max-height: 999px;
+      min-width: 200px;
       opacity: 1;
     }
   }
@@ -288,7 +289,7 @@
 
 .nav__dropdown {
   position: absolute;
-  min-width: 200px;
+  min-width: 0;
   padding: 0;
   margin: 0;
   top: 100%;
