@@ -3,7 +3,6 @@
 @import '_variables.scss';
 @import '_mixins.scss';
 @import '_layout.scss';
-@import '_slick.scss';
 @import '_typography.scss';
 @import '_wysiwyg.scss';
 @import '_buttons.scss';
@@ -1142,127 +1141,6 @@
   }
 }
 
-// new carousel
-.news-carousel__container {
-  overflow: hidden;
-}
-
-.news-carousel__list {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  @media (min-width: $breakpoints-lg) {
-    width: calc(75% - 15px);
-    padding-left: 15px;
-    padding-right: 0;
-  }
-}
-
-.news-carousel__item {
-  position: relative;
-}
-
-.news-carousel__item-image {
-  &::after {
-    @media (min-width: $breakpoints-lg) {
-      height: 380px;
-      padding-bottom: 0;
-    }
-  }
-}
-
-.news-carousel__item-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  width: 100%;
-  padding: 5px 15px;
-  text-align: justify;
-  @media (min-width: $breakpoints-lg) {
-    padding: 13px 30px;
-  }
-  background: $c-bg-black1;
-  a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $c-white;
-    font-size: .875rem;
-    line-height: 1.75;
-    transition: $transition;
-    @media (min-width: $breakpoints-md) {
-      font-size: 1rem;
-    }
-    &:hover,
-    &:focus {
-      color: $c-blue;
-    }
-  }
-}
-
-.news-carousel__contents {
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 100%;
-  @media (min-width: $breakpoints-lg) {
-    width: calc(25% + 15px);
-    padding-left: 0;
-    padding-right: 15px;
-    height: 380px;
-    overflow: initial;
-    .slick-list {
-      height: auto !important;
-      overflow: initial;
-    }
-  }
-}
-
-.news-carousel__content-item {
-  position: relative;
-  padding: 10px 15px;
-  cursor: pointer;
-  outline: none;
-  transition: $transition;
-  @media (min-width: $breakpoints-lg) {
-    padding: 15px 15px 15px 30px;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translate(-100%, -50%);
-      border-top: 9px solid transparent;
-      border-bottom: 9px solid transparent;
-      border-right: 10px solid $c-blue;
-      z-index: 999;
-      opacity: 0;
-      transition: $transition;
-    }
-  }
-  &.slick-current {
-    background: $c-blue;
-    color: $c-white;
-    &::after {
-      opacity: 1;
-    }
-  }
-}
-
-.news-carousel__content--item-name {
-  margin: 0;
-  font-size: .9375rem;
-  font-weight: 700;
-}
-
-.news-carousel__content--item-description {
-  font-size: .8125rem;
-  line-height: 1.8461;
-  text-align: justify;
-  @media (min-width: $breakpoints-md) {
-    margin-top: 10px;
-  }
-}
-
 // detail
 .detail__media {
   img {
@@ -1292,23 +1170,65 @@
   margin-top: 25px;
 }
 
-.item-03__image {
-  &::after {
-    padding-bottom: 65.25%;
+// Highlights news
+.highlights-news__wrapper {
+  @media (min-width: $breakpoints-lg) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .highlights-news__list {
+    @media (min-width: $breakpoints-lg) {
+      width: 50%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  >.item-04 {
+    @extend .highlights-news__list;
+    .item-04__image {
+      @media (min-width: $breakpoints-lg) {
+        height: 420px;
+        &::after {
+          padding-bottom: 0;
+        }
+      }
+    }
   }
 }
 
-.item-03__title {
-  margin: 15px 0 0 0;
-  font-size: .9375rem;
-  line-height: 1.6;
-  a {
-    color: $c-dark;
-    text-decoration: none;
-    transition: $transition;
-    &:hover,
-    &:focus {
-      color: $c-blue;
+.highlights-news__list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+  @media (min-width: $breakpoints-md) {
+    margin-left: -10px; 
+    margin-right: -10px; 
+  }
+  .item-04 {
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+    @media (min-width: $breakpoints-md) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @media (min-width: $breakpoints-lg) {
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+    .item-04__image {
+      @media (min-width: $breakpoints-lg) {
+        height: 200px;
+        &::after {
+          padding-bottom: 0;
+        }
+      }
     }
   }
 }
