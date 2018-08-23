@@ -531,7 +531,9 @@ body {
 
 h2.item-04__title {
   @extend .sub-heading;
+  max-height: 3.222em;
   margin: 0;
+  overflow: hidden;
   a {
     color: $c-dark;
     text-decoration: none;
@@ -548,7 +550,9 @@ h2.item-04__title {
 
 h3.item-04__title {
   @extend .title-text;
+  height: 2.6666em;
   margin: 0;
+  overflow: hidden;
   a {
     color: $c-dark;
     @media (min-width: $breakpoints-md) {
