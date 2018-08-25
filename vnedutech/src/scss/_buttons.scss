@@ -163,3 +163,19 @@
     background: $c-blue;
   }
 }
+
+.btn-message {
+  margin-top: 15px;
+  padding: 7px 29px;
+  text-transform: uppercase;
+  border-radius: $round;
+  color: $c-white;
+  background: $c-green;
+  border: 1px solid $c-green;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: $c-green;
+  }
+}

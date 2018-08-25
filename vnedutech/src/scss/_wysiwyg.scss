@@ -401,14 +401,12 @@ body {
 }
 
 .item-01__title {
+  @extend .medium-text;
   margin: 0;
   font-size: 1rem;
   line-height: 1.3334;
   font-weight: 700;
   text-align: justify;
-  @media (min-width: $breakpoints-md) {
-    font-size: 1.125rem;
-  }
   a {
     text-decoration: none;
     color: $c-dark1;

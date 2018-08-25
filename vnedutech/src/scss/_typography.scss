@@ -3,7 +3,7 @@
 
 /* Heading */
 .page-headline {
-  font-size: 1.125rem;
+  @extend .medium-text;
   line-height: 1.4;
   font-weight: 700;
 }
@@ -40,6 +40,26 @@
   }
 }
 
+.about-headline {
+  position: relative;
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 1.5625;
+  text-transform: uppercase;
+  text-align: center;
+  color: $c-white;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background: $c-white;
+  }
+}
+
 .block-headline {
   position: relative;
   font-size: 1.125;
@@ -65,12 +85,9 @@
 }
 
 .sub-heading {
-  font-size: .9375rem;
+  @extend .medium-text;
   line-height: 1.6667;
   font-weight: 700;
-  @media (min-width: $breakpoints-md) {
-    font-size: 1.125rem;
-  }
 }
 
 .title-text {
@@ -102,6 +119,19 @@
 
 // }
 
+.medium-text {
+  font-size: .9375rem;
+  @media (min-width: $breakpoints-md) {
+    font-size: 1.125rem;
+  }
+}
+
 .small-text {
   font-size: 0.8125rem;
+}
+
+.about-description {
+  margin: 25px auto 0 auto;
+  max-width: 83%;
+  text-align: center;
 }
