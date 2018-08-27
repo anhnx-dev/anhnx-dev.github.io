@@ -119,6 +119,13 @@
 
 // }
 
+.big-text {
+  font-size: 1rem;
+  @media (min-width: $breakpoints-md) {
+    font-size: 1.25rem;
+  }
+}
+
 .medium-text {
   font-size: .9375rem;
   @media (min-width: $breakpoints-md) {
@@ -132,6 +139,8 @@
 
 .about-description {
   margin: 25px auto 0 auto;
-  max-width: 83%;
   text-align: center;
+  @media (min-width: $breakpoints-md) {
+    max-width: 83%;
+  }
 }

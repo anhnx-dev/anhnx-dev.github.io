@@ -109,3 +109,25 @@ if (COUNTDOWN_CLASS) {
     });
   });
 }
+
+// carousel
+var aboutCommentsCarousel = $('.about-comments__list');
+if (aboutCommentsCarousel) {
+  aboutCommentsCarousel.slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          arrows: false
+        }
+      }
+    ]
+  });
+}

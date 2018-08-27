@@ -8,7 +8,7 @@ body {
   background: $c-white;
   color: $c-dark;
   @media (min-width: $breakpoints-lg) {
-    font-size: .9375rem;
+    font-size: .875rem;
   }
 }
 
@@ -196,6 +196,8 @@ body {
   input {
     padding: 6px 10px;
     width: 100%;
+    font-family: $f-roboto;
+    line-height: 1.6;
     font-size: 11px;
     border: 1px solid $bc-grey;
   }
