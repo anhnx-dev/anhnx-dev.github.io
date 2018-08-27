@@ -1010,9 +1010,11 @@
 }
 
 .news__item-wrapper {
-  @include clear;
   padding: 14px;
   border: 1px solid $bc-grey;
+  &::after {
+    @include clear;
+  }
 }
 
 .news__item-image {
@@ -1866,9 +1868,11 @@
 }
 
 .about-comments__item-wrapper {
-  @include clear;
   padding: 25px 15px;
   border: 1px solid $bc-light;
+  &::after {
+    @include clear;
+  }
 }
 
 .about-comments__item-image {
