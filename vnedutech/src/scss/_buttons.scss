@@ -179,3 +179,36 @@
     color: $c-green;
   }
 }
+
+.btn-academic-calendar {
+  width: 100%;
+  margin-top: 10px;
+  padding: 4px 10px;
+  background: $c-red2;
+  color: $c-white;
+  border-radius: $round;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    background: $c-blue;
+  }
+}
+
+.btn-contact-info {
+  margin-top: 10px;
+  padding: 11px 25px;
+  background: $c-blue;
+  color: $c-white;
+  border: none;
+  &::after {
+    content: '\e912';
+    font-family: $f-icon;
+    display: inline-block;
+    margin-left: 3px;
+  }
+  &:hover {
+    &::after {
+      animation: btn-item-01 .5s infinite;
+    }
+  }
+}
