@@ -1,0 +1,28 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.c-logo-list {
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  transition: $transition;
+  &.active {
+    left: 25px;
+    transform: translateX(0);
+  }
+  .logo-item {
+    list-style: none;
+    margin: 0 25px;
+
+    img {
+      width: auto;
+      height: auto;
+      max-height: 65px;
+    }
+  }
+}

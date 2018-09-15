@@ -1,0 +1,17 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.c-game-over {
+  width: 25%;
+  margin-top: 60px;
+  text-align: right;
+
+  .btn {
+    @extend .big-text-02;
+    display: inline-block;
+    padding: 14px 25px;
+    min-width: 210px;
+    text-align: center;
+  }
+}
+

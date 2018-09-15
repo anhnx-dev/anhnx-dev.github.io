@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/css/app.min.css">
+
+</head>
+
+<body>
+
+	<noscript>
+		<![if !(lte IE 10)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc mở
+					JavaScript trong
+					phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app">
+<div v-bind:style="{ backgroundImage: 'url(' + backgroundImage + ')' }" class="app-wrapper">
+
+			<!-- logo list -->
+			<ul v-bind:class="{ active: logoListActive }" class="c-logo-list">
+				<li class="logo-item" v-for="logo in logos">
+					<a v-bind:href="logo.url" target="_blank">
+						<img v-bind:src="logo.image" alt="">
+					</a>
+				</li>
+			</ul>
+			<!-- logo list end -->
+
+			<button v-on:click="startBtn" v-if="!start" class="btn btn-start">Vào Thi</button>
+
+			<template v-if="start && !end">
+				<!-- statute -->
+				<template v-if="!toggle">
+					<p v-if="startDate <= time">{{ message }}</p>
+					<p v-else-if="time <= endDate">{{ message }}</p>
+					<div v-else class="c-statute">
+						<h1 class="headline">{{ headline }}</h1>
+						<div class="gim content">
+							<div class="inner" v-html="description"></div>
+						</div>
+						<button class="btn" v-on:click="toggle = !toggle">Bắt đầu</button>
+					</div>
+				</template>
+				<!-- statute end -->
+
+				<template v-if="toggle">
+					<div class="app-container">
+						<div class="app-row">
+
+							<!-- observe -->
+							<div class="c-observe">
+								<div class="observe-item time">
+									<span class="text">Thời gian</span>
+									<span class="data">{{ observetime }}</span>
+								</div>
+								<div class="observe-item number">
+									<span class="text">Điểm</span>
+									<span class="data">{{ observenumber }}</span>
+								</div>
+							</div>
+							<!-- observe end -->
+
+							<!-- question -->
+							<div class="app-col c-question">
+
+								<div class="wrapper">
+									<h1 class="gim title">{{ questionName }}</h1>
+									<div class="content">{{ questionContent }}</div>
+									<div class="media" v-on:click="togglePopup = !togglePopup">
+										<div class="inner">
+											<span>
+												<img v-bind:src="questionMediaImage" alt="">
+											</span>
+										</div>
+									</div>
+									<a class="btn" href="http://">Câu tiếp theo</a>
+								</div>
+
+								<div class="c-popup" v-if="togglePopup">
+									<span class="close"></span>
+									<div class="inner">
+										<iframe width="560" height="315" v-bind:src="questionMediaVideoUrl" frameborder="0" allow="autoplay; encrypted-media"
+										 allowfullscreen></iframe>
+									</div>
+								</div>
+								<div class="popup-close" v-if="togglePopup" v-on:click="togglePopup = !togglePopup"></div>
+
+							</div>
+							<!-- question end -->
+
+							<!-- answer -->
+							<div class="app-col c-answer">
+								<div class="wrapper">
+									<div class="answer-item">
+										<div class="name">A</div>
+										<div class="content">{{ answerA }}</div>
+									</div>
+									<div class="answer-item">
+										<div class="name">B</div>
+										<div class="content">{{ answerB }}</div>
+									</div>
+									<div class="answer-item">
+										<div class="name">C</div>
+										<div class="content">{{ answerC }}</div>
+									</div>
+									<div class="answer-item">
+										<div class="name">D</div>
+										<div class="content">{{ answerD }}</div>
+									</div>
+								</div>
+							</div>
+							<!-- answer end -->
+
+							<!-- ring -->
+							<div class="app-col c-ring">
+								<div class="text">Vòng 1</div>
+								<ul class="ring-list">
+									<li v-for="ringItem in ringItems"><span>{{ ringItem.number }}</span></li>
+								</ul>
+							</div>
+							<!-- ring end -->
+
+							<!-- game over -->
+							<div class="app-col c-game-over">
+								<button v-on:click="endBtn" class="btn">Kết thúc</button>
+							</div>
+							<!-- game over end -->
+
+						</div>
+					</div>
+				</template>
+
+			</template>
+
+			<template v-if="end">
+				<div class="c-result">
+					<div class="headline"><img src="images/hoanthanh.png" alt=""></div>
+					<div class="result-item time">
+						<div class="text">Thời gian</div>
+						<div class="data">01:25:20</div>
+					</div>
+					<div class="result-item number">
+						<div class="text">ĐIỂM</div>
+						<div class="data">235</div>
+					</div>
+				</div>
+				<div class="firework" style="background-image: url(/images/phaohoa.png);"></div>
+			</template>
+
+
+
+
+		</div>
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vue.js"></script>
+	<script src="src/js/axios.min.js"></script>
+	<script src="src/js/app.js"></script>
+
+</body>
+
+</html>
