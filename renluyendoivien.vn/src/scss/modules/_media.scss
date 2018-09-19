@@ -1,0 +1,72 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.media {
+  padding: 30px 0;
+  background: $c-white;
+  margin-bottom: -20px;
+  @media (min-width: $breakpoints-md) {
+    margin-bottom: -30px;
+  }
+  .headline {
+    text-align: center;
+  }
+  .media-list {
+    margin-top: 20px;
+  }
+  .media-item {
+    .title {
+      @extend .small-text-01;
+      line-height: 1.4;
+      transform: translateY(-3px);
+      margin: 10px 0 0 0;
+      text-align: center;
+      a {
+        color: $c-blue;
+        text-decoration: none;
+        transition: $transition;
+        &:hover,
+        &:focus {
+          color: $c-orange1;
+        }
+      }
+    }
+    &.video {
+      .img-cover {
+        &::before {
+          content: '';
+          position: absolute;
+          z-index: 2;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-left: 27px solid $c-blue;
+          pointer-events: none;
+        }
+        &:hover::before {
+          animation: play 1s infinite;
+        }
+      }
+    }
+  }
+}
+
+@keyframes play {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    transform: translate(-55%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -50%);
+  }
+  75% {
+    transform: translate(-45%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

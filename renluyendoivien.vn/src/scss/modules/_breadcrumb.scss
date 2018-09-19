@@ -1,0 +1,45 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.breadcrumb-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  .breadcrumb-item {
+    list-style: none;
+    &:last-of-type {
+      .breadcrumb-link {
+        font-weight: 700;
+        color: $c-blue;
+      }
+    }
+    &+.breadcrumb-item {
+      &::before {
+        content: '\e90a';
+        font-family: $f-icon;
+        margin: 0 4px;
+      }
+    }
+    .breadcrumb-link {
+      position: relative;
+      color: $c-dark;
+      text-decoration: none;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: $c-white;
+        transition: $transition;
+      }
+      &:hover,
+      &:focus {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

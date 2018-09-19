@@ -1,0 +1,20 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.logos-right {
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}

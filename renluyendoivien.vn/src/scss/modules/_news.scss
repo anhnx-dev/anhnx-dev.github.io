@@ -1,0 +1,59 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.news {
+  background: $c-white;
+  .news-list {
+    .item {
+      display: flex;
+      padding: 15px;
+      margin: 0;
+      border-top: 1px solid $bc-light;
+      .img-cover {
+        width: 33.33333%;
+      }
+      .content {
+        width: 66.66666%;
+        padding-left: 10px;
+        min-height: 101px;
+        .title {
+          @extend .small-text-01;
+          line-height: 1.4;
+          transform: translateY(-3px);
+          margin: 0;
+          a {
+            color: $c-blue;
+            text-decoration: none;
+            transition: $transition;
+            &:hover,
+            &:focus {
+              color: $c-orange1;
+            }
+          }
+        }
+        .description {
+          position: relative;
+          height: 4.7em;
+          overflow: hidden;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 1.6em;
+            bottom: 0;
+            right: 0;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $c-white);
+          }
+        }
+      }
+    }
+  }
+  &.news-page {
+    .news-list {
+      .item {
+        border-top: none;
+        border-bottom: 1px solid $bc-light;
+      }
+    }
+  }
+}

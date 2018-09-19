@@ -1,0 +1,58 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+/* Headline */ 
+
+/* Paragraph */
+// .large-text {
+
+// }
+
+.big-text {
+  font-size: 1rem;
+  @media (min-width: $breakpoints-md) {
+    font-size: 1.25rem;
+  }
+}
+
+.big-text-01 {
+  font-size: 1.25rem;
+  @media (min-width: $breakpoints-md) {
+    font-size: 1.375rem;
+  }
+}
+
+.medium-text {
+  font-size: .9375rem;
+  @media (min-width: $breakpoints-md) {
+    font-size: 1.125rem;
+  }
+}
+
+.body-text {
+  font-size: .75rem;
+  @media (min-width: $breakpoints-lg) {
+    font-size: .875rem;
+  }
+}
+
+.small-text {
+  font-size: .6875rem;
+  @media (min-width: $breakpoints-md) {
+    font-size: .8125rem;
+  }
+}
+
+.small-text-01 {
+  font-size: .8125rem;
+  @media (min-width: $breakpoints-md) {
+    font-size: 1rem;
+  }
+}
+
+.small-text-02 {
+  font-size: .625rem;
+  @media (min-width: $breakpoints-md) {
+    font-size: .75rem;
+  }
+}

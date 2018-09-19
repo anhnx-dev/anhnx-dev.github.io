@@ -1,0 +1,92 @@
+/* Fonts */
+
+$f-roboto: 'Roboto',sans-serif;
+$f-icon: 'icon';
+/* Colors - Default */
+
+$c-black: #000000;
+$c-white: #ffffff;
+
+/* Body background */
+
+$c-bb: #dbe4ee;
+/* Colors - Theme */
+
+$c-purple: #0791d2;
+$c-blue: #5ebeff;
+$c-blue1: #35b5ff;
+$c-blue2: #3268f0;
+$c-blue3: #0572e1;
+$c-blue4: #1e55e0;
+$c-blue5: #009eed;
+$c-yellow: #ffdd1e;
+$c-yellow1: #f6ff00;
+$c-yellow2: #fff76f;
+$c-green: #ffb400;
+$c-green1: #efa900;
+$c-green2: #009a49;
+$c-green3: #e57200;
+$c-orange: #da251c;
+$c-orange1: #009b0b;
+$c-orange2: #f6a744;
+$c-orange3: #f28c37;
+$c-orange4: #ef7937;
+$c-orange5: #1ba92f;
+$c-orange6: #4bb737;
+$c-red: #d32a0f;
+$c-red1: #e80088;
+$c-red2: #ff1134;
+$c-grey: #8794a8;
+$c-grey1: #6e6e6e;
+$c-navy: #1f3586;
+$c-navy1: #1244c3;
+$c-light: #f3f3f3;
+$c-light1: #f3f0e6;
+
+
+$c-dark: #3b3b3b;
+$c-dark1: #2c2c2c;
+$c-divider: #E2E2E2;
+/* Coler border */
+
+$bc-light: #ccc;
+$bc-light1: #e1dbc8;
+$bc-grey: #f1f1f1;
+$bc-grey1: #dadada;
+$bc-grey2: #d2d2d4;
+$bc-grey3: #b8b8b8;
+/* Cover */
+
+$c-cover-blue: rgba(19, 99, 161, 0.5);
+$c-cover-black: rgba(0, 0, 0, 0.15);
+/* Background */
+
+$c-bg-black: rgba(0, 0, 0, 0.3);
+$c-bg-black1: rgba(0, 0, 0, 0.6);
+$c-bg-blue: rgba(0, 120, 153, 0.7);
+$c-bg-white: rgba(255, 255, 255, 0.7);
+/* Transitions */
+
+/* box shadow */
+$bs-black: rgba(0, 0, 0, 0.3);
+
+$transition: all .3s ease-in-out;
+$duration: .25s;
+$speed: 200ms;
+$ease: ease-in-out;
+/* Round */
+
+$round: 4px;
+$round1: 10px;
+/* Breakpoints */
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+$breakpoints-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$breakpoints-md: 768px;
+// Large devices (desktops, 992px and up)
+$breakpoints-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$breakpoints-xl: 1200px;

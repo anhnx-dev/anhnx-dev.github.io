@@ -1,0 +1,115 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.top-bar {
+  position: relative;
+  z-index: 10;
+  background: $c-white;
+  color: $c-white;
+  border-bottom: 1px solid $c-blue1;
+  .inner {
+    @media (min-width: $breakpoints-lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+    align-items: center;
+    padding: 10px 0;
+  }
+  .contact {
+    p {
+      @extend .small-text;
+      margin: 0;
+    }
+    .phone {
+      color: $c-yellow;
+    }
+  }
+  .branb {
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  .btn-group {
+    display: flex;
+    align-items: center;
+    margin: 10px -5px 0 -5px;
+    padding: 0;
+    @media (min-width: $breakpoints-lg) {
+      margin: 0;
+    }
+    .btn-item {
+      list-style: none;
+      width: 50%;
+      padding: 0 5px;
+      &:nth-child(1) {
+        text-align: right;
+      }
+      @media (min-width: $breakpoints-lg) {
+        margin-left: 10px;
+        padding: 0;
+        width: auto;
+      }
+      a {
+        display: block;
+        transition: $transition;
+        img {
+          max-width: 100%;
+          height: 44px;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .user {
+    padding: 0;
+    margin: 0;
+    display: none;
+    @media (min-width: $breakpoints-lg) {
+      display: block;
+    }
+    .user-item {
+      @extend .small-text;
+      position: relative;
+      margin-left: 10px;
+      margin-top: 5px;
+      height: 30px;
+      min-width: 125px;
+      padding: 0 10px 0 40px;
+      line-height: 30px;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      list-style: none;
+      position: relative;
+      cursor: pointer;
+      background: $c-green;
+      border-radius: $round;
+      transition: $transition;
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+      &:hover {
+        box-shadow: 2px 2px 2px 2px $bs-black;
+      }
+
+      i {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 30px;
+        height: 26px;
+        border-radius: $round - 1;
+        background-color: $c-green1;
+        line-height: 26px;
+      }
+
+      a {
+        color: $c-white;
+        text-decoration: none;
+      }
+    }
+  }
+}

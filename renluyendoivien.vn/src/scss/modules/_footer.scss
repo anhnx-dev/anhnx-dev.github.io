@@ -1,0 +1,46 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.footer {
+  @extend .section;
+  padding: 35px 0;
+  background: $c-blue3;
+  color: $c-white;
+  border-top: 5px solid $c-blue1;
+  .footer-info {
+    @media (min-width: $breakpoints-md) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer-contact {
+      >p {
+        text-align: center;
+        @media (min-width: $breakpoints-md) {
+          text-align: left;
+        }
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          position: relative;
+          padding-left: 20px;
+          .fa {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+    .footer-facebook {
+      overflow: hidden;
+    }
+  }
+  .copyright {
+    margin-top: 20px;
+    a {
+      color: $c-white;
+    }
+  }
+}

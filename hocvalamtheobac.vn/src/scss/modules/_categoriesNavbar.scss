@@ -1,0 +1,54 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+@import '../_typography.scss';
+
+.categories-navbar {
+  .wrapper {
+    background: $c-purple;
+    border-radius: $round1;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0 10px;
+    @media (min-width: $breakpoints-xl) {
+      justify-content: flex-start;
+    }
+    .nav-item {
+      list-style: none;
+      padding: 0 10px;
+      @media (min-width: $breakpoints-xl) {
+        padding: 0 20px;
+      }
+      .nav-link {
+        @extend .small-text-01;
+        display: block;
+        position: relative;
+        padding: 5px 0;
+        color: $c-white;
+        font-weight: 700;
+        text-decoration: none;
+        @media (min-width: $breakpoints-md) {
+          padding: 15px 0;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 3px;
+          bottom: 0;
+          left: 0;
+          background: $c-green;
+          transition: $transition;
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
