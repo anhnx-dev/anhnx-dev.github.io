@@ -1,0 +1,9 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.footer {
+  margin-top: 40px;
+  padding: 35px 0;
+  background: $cl02;
+  color: $c-white;
+}

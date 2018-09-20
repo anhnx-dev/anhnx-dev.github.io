@@ -1,0 +1,139 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.timeline {
+  padding: 20px 15px 200px 15px;
+  background-color: $c-white;
+  background-image: url(/src/images/bg-timeline.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  text-align: center;
+  border-radius: $round1;
+  @media (min-width: $breakpoints-lg) {
+    padding-bottom: 20px;
+  }
+  .headline {
+    @extend .big-text;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .timeline-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 50px 0 50px;
+    padding: 0;
+    @media (min-width: $breakpoints-lg) {
+      margin: 200px 50px 0 50px;
+      transform: rotate(-10deg);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 5px;
+      background: $cl04;
+      @media (min-width: $breakpoints-lg) {
+        width: 100%;
+        height: 5px;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 118px;
+      height: 60px;
+      bottom: 0;
+      left: 0;
+      transform: translate(-50%, 100%);
+      background: url(/src/images/cup1.png);
+      @media (min-width: $breakpoints-lg) {
+        bottom: initial;
+        left: initial;
+        right: 0;
+        top: -50px;
+        transform: rotate(10deg) translate(50%, -100%);
+      }
+    }
+    .item {
+      position: relative;
+      list-style: none;
+      width: 100%;
+      margin-top: 20px;
+      padding-left: 30px;
+      text-align: left;
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+      @media (min-width: $breakpoints-lg) {
+        width: 12.5%;
+        margin-top: 0;
+        padding-left: 0;
+        text-align: center;
+        .inner {
+          position: absolute;
+          transform: rotate(10deg) translate(-50%, -100%);
+          top: -50px;
+          transition: $transition;
+          .title {
+            font-weight: 700;
+          }
+          .date {
+            margin-top: 10px;
+          }
+          &:hover {
+            padding: 10px;
+            background: $cl04;
+            color: $c-white;
+            border-radius: $round;
+          }
+        }
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: $cl04;
+        border-radius: 50%;
+        top: 0;
+        left: 2px;
+        transform: translateX(-50%);
+        border: 3px solid $c-white;
+        @media (min-width: $breakpoints-lg) {
+          top: -8px;
+          left: 0;
+        }
+      }
+    }
+  }
+  .info {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    @media (min-width: $breakpoints-lg) {
+      position: initial;
+      margin-top: 100px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .user {
+      padding: 0 10px;
+      .number {
+        @extend .big-text-01;
+        font-weight: 700;
+        margin-top: 10px;
+      }
+      &.user-registration .number {
+        color: $cl17;
+      }
+      &.user-active .number {
+        color: $cl04;
+      }
+      .title {
+        margin-top: 5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

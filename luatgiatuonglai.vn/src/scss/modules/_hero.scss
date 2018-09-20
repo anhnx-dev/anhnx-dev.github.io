@@ -1,0 +1,76 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.hero {
+  .carousel {
+    .slick-arrow {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0;
+      font-size: 0;
+      background: transparent;
+      border: none;
+      color: $c-white;
+      outline: none;
+      cursor: pointer;
+      transition: $transition;
+      &:hover {
+        color: $c-blue;
+      }
+      &::after {
+        font-family: $f-icon;
+        font-size: 40px;
+      }
+      &.slick-prev {
+        left: 25px;
+        &::after {
+          content: '\e904';
+        }
+      }
+      &.slick-next {
+        right: 25px;
+        &::after {
+          content: '\e903';
+        }
+      }
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        margin: 0 6px;
+        &.slick-active,
+        &:hover {
+          button {
+            background: $c-white;
+          }
+        }
+        button {
+          width: 12px;
+          height: 12px;
+          padding: 0;
+          border-radius: 50%;
+          font-size: 0;
+          background: transparent;
+          border: 1px solid $c-white;
+          cursor: pointer;
+          outline: none;
+          transition: $transition;
+        }
+      }
+    }
+  }
+  @media (min-width: $breakpoints-md) {
+    .carousel-item::after {
+      padding-bottom: 33%;
+    }
+  }
+}

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/css/main.min.css">
+
+</head>
+
+<body class="home">
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc mở
+					JavaScript trong
+					phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app">
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- top bar -->
+			<section class="top-bar">
+				<div class="container">
+					<div class="inner">
+						<div class="contact">
+							<p class="phone">Hotline: 1900 636 444</p>
+							<p class="email">Email: hocvalamtheobac@egroup.vn</p>
+						</div> <!-- /top bar -->
+						<ul class="nav">
+							<li class="nav-item"><i class="fa fa-graduation-cap"></i><a href="http://">Học cùng thủ khoa</a></li>
+							<li class="nav-item js-toggle-login"><i class="fa fa-user"></i>Đăng nhập</li>
+							<li class="nav-item js-toggle-registration"><i class="fa fa-edit"></i>Đăng ký</li>
+						</ul> <!-- nav -->
+					</div>
+				</div>
+			</section>
+			<!-- top bar end -->
+
+			<!-- navbar -->
+			<nav class="navbar">
+				<div class="container">
+					<div class="wrapper">
+						<div class="branb">
+							<a class="logo" href="http://"><img src="images/logo_bak.png" alt=""></a>
+						</div>
+						<ul class="nav js-navbar">
+							<li class="nav-item">
+								<a href="" class="nav-link">Giới thiệu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Giới thiệu cuộc thi</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn đăng ký</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn thi</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thông báo BTC</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tra cứu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Danh sách thí sinh</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Kết quả</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Bảng xếp hạng</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thể lệ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tin tức</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Văn bản khác</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Video</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Tin tức khác</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Lịnh thi</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- navbar end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+
+		<!-- breadcrumb -->
+		<nav class="section breadcrumb">
+			<div class="container">
+				<ul class="breadcrumb-list">
+					<li class="breadcrumb-item">
+						<a class="breadcrumb-link" href="#">Trang chủ</a>
+					</li>
+					<li class="breadcrumb-item">
+						<a class="breadcrumb-link" href="#">Tra cứu</a>
+					</li>
+					<li class="breadcrumb-item">
+						<a class="breadcrumb-link" href="#">Tra cứu bài viết</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- breadcrumb end -->
+
+			<!-- search -->
+			<section class="section search">
+				<div class="container">
+					<div class="search-wrapper">
+						<div class="headline"><i class="fa fa-search"></i> Tra cứu bài viết</div>
+						<form action="" class="search-form">
+							<div class="wrapper">
+								<div class="form-group col-md-4">
+									<label for="id">Tên đăng nhập</label>
+									<input type="id" class="form-control" placeholder="Tên đăng nhập">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="name">Họ tên</label>
+									<input type="name" class="form-control" placeholder="Họ tên">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="provinceCity">Chọn tỉnh/thành phố</label>
+									<select class="form-control">
+										<option>Chọn tỉnh/thành phố</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="name_post">Tên bài viết</label>
+									<input type="name_post" class="form-control" placeholder="Tên bài viết">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="topic">Đề tài</label>
+									<select class="form-control">
+										<option>Chọn đề tài</option>
+									</select>
+								</div>
+							</div>
+							<button class="btn btn-primary" type="submit">Tìm kiếm</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- search end -->
+
+			<!-- search results -->
+			<section class="section search-results">
+				<div class="container">
+					<div class="results">Tổng só: <span>1.965.697</span> lượt thi</div>
+					<!-- pagination -->
+					<nav class="pagination">
+						<ul class="nav">
+							<li class="item">
+								<a class="link disabled" href="#">Đầu</a>
+							</li>
+							<li class="item">
+								<a class="link disabled" href="#"><i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="item">
+								<a class="link active" href="#">1</a>
+							</li>
+							<li class="item">
+								<a class="link" href="#">2</a>
+							</li>
+							<li class="item">
+								<a class="link" href="#">3</a>
+							</li>
+							<li class="item">
+								<a class="link" href="#">4</a>
+							</li>
+							<li class="item">
+								<a class="link" href="#">5</a>
+							</li>
+							<li class="item">
+								<a class="link" href="#">6</a>
+							</li>
+							<li class="item">
+								<a class="link" href="#">7</a>
+							</li>
+							<li class="item">
+								<a class="link" href="#">8</a>
+							</li>
+							<li class="item">
+								<a class="link" href="#">9</a>
+							</li>
+							<li class="item">
+								<a class="link" href="#">10</a>
+							</li>
+							<li class="item">
+								<a class="link" href="#"><i class="fa fa-angle-left"></i></a>
+							</li>
+							<li class="item">
+								<a class="link" href="#">Cuối</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- pagination end -->
+					<div class="detail">
+						<ul class="detail-row title">
+							<li class="detail-col-1">STT</li>
+							<li class="detail-col-2">Họ tên</li>
+							<li class="detail-col-3">Tên đăng nhập</li>
+							<li class="detail-col-4">Lớp</li>
+							<li class="detail-col-5">Trường</li>
+							<li class="detail-col-6">Quận/Huyện</li>
+							<li class="detail-col-7">Thành phố</li>
+							<li class="detail-col-8">Thời gian</li>
+							<li class="detail-col-9">Điểm</li>
+						</ul>
+						<div class="detail-list">
+							<ul class="detail-row item">
+								<li class="detail-col-1">1</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A10</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">2</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A1</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">3</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A10</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">4</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A1</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">5</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A10</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">6</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A1</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">7</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A10</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">8</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A1</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">9</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A10</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">10</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A1</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">11</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A10</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">12</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A1</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">13</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A10</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">14</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A1</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">15</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A10</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">16</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A1</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">17</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A10</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">18</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A1</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">19</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A10</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+							<ul class="detail-row item">
+								<li class="detail-col-1">20</li>
+								<li class="detail-col-2">Nguyễn Trí Đức Nghĩa</li>
+								<li class="detail-col-3">banhbeovodung0102</li>
+								<li class="detail-col-4">Lớp A1</li>
+								<li class="detail-col-5">Trường Đại học Khoa học Tự nhiên - Đại học QG Tp Hồ Chí Minh</li>
+								<li class="detail-col-6">Quận 5</li>
+								<li class="detail-col-7">TP. Hồ Chí Minh</li>
+								<li class="detail-col-8">00:15:018</li>
+								<li class="detail-col-9">200</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- search results end -->
+
+
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h4>TM THƯỜNG TRỰC BAN TỔ CHỨC</h4>
+						<p><i class="fa fa-address"></i> Tầng 2, Tòa nhà 25T1, Hoàng Đạo Thúy, Trung Hòa , Cầu Giấy , Hà Nội</p>
+						<p><i class="fa fa-phone"></i> Hotline: 1900 636 444 (8h - 22h hàng ngày)</p>
+					</div>
+					<div class="col-md-4">
+						<h4>VỤ PHỔ BIẾN, PHÁP LUẬT GIÁO DỤC, BỘ TƯ PHÁP</h4>
+						<p><i class="fa fa-address"></i> 58-60 Trần Phú, Ba Đình, Hà Nội</p>
+					</div>
+					<div class="col-md-4">
+						<h4>CÔNG TY CP TẬP ĐOÀN GIÁO DỤC EGROUP</h4>
+						<p><i class="fa fa-address"></i> Tầng 2, Tòa Nhà 25T1, Hoàng Đạo Thúy, Trung Hòa, Cầu Giấy, Hà Nội</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+		<!-- slide out -->
+		<div class="nav-trigger js-trigger">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+		<div class="slideout js-slideout">
+			<div class="inner">
+				<ul class="button-group">
+					<li class="button"><i class="fa fa-graduation-cap"></i><a href="http://">Học cùng thủ khoa</a></li>
+					<li class="button js-toggle-login"><i class="fa fa-user"></i>Đăng nhập</li>
+					<li class="button js-toggle-registration"><i class="fa fa-edit"></i>Đăng ký</li>
+				</ul> <!-- button group -->
+				<nav class="slideout-navbar">
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="" class="nav-link">Trang chủ</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Giới thiệu</a>
+							<ul>
+								<li class="nav-item">
+									<a href="" class="nav-link">Giới thiệu cuộc thi</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Hướng dẫn đăng ký</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Hướng dẫn thi</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Thông báo BTC</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Tra cứu</a>
+							<ul>
+								<li class="nav-item">
+									<a href="" class="nav-link">Danh sách thí sinh</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Kết quả</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Bảng xếp hạng</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Thể lệ</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Tin tức</a>
+							<ul>
+								<li class="nav-item">
+									<a href="" class="nav-link">Văn bản khác</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Video</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Tin tức khác</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Lịnh thi</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Liên hệ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contact">
+					<p class="phone">Hotline: 1900 636 444</p>
+					<p class="email">Email: hocvalamtheobac@egroup.vn</p>
+				</div>
+			</div>
+		</div>
+		<!-- slideout end -->
+
+		<!-- popup -->
+		<div class="form-user form-login js-login">
+			<div class="logo">
+				<img src="src/images/egroup-logo.png" alt="">
+			</div>
+			<form action="" class="form">
+				<p>Đã là thành viên?</p>
+				<div class="form-group">
+					<input type="username" class="form-control" placeholder="Email/Username">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="password">
+				</div>
+				<div class="form-group form-check">
+					<input type="checkbox" class="form-check-input">
+					<label class="form-check-label">Ghi nhớ đăng nhập</label>
+				</div>
+				<button type="submit" class="btn btn-success">Đăng nhập</button>
+			</form>
+			<div class="bottom">
+				<p>Chưa có tài khoản?</p>
+				<button class="btn btn-primary js-open-registration">Đăng ký mới</button>
+			</div>
+		</div>
+
+		<div class="form-user from-registration js-registration">
+			<div class="logo">
+				<img src="src/images/egroup-logo.png" alt="">
+			</div>
+			<form action="" class="form">
+				<p>Thành viên mới?</p>
+				<div class="form-group">
+					<input type="username" class="form-control" placeholder="Email/Username">
+					<small>(Tên đăng nhập viết liền không dấu, không chứa kí tự đặc biệt)</small>
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Mật khẩu">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Xác nhận mật khẩu">
+				</div>
+				<div class="form-group">
+					<input type="phone" class="form-control" placeholder="Số điện thoại">
+				</div>
+				<button type="submit" class="btn btn-success">Đăng ký</button>
+			</form>
+		</div>
+		<!-- popup end -->
+
+		<div class="body-overlay js-body-overlay"></div>
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/slick.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+</body>
+
+</html>

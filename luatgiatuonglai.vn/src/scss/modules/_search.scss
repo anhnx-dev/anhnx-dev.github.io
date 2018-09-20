@@ -1,0 +1,80 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.search {
+  .search-wrapper {
+    padding: 10px;
+    background: $c-light1;
+    border-radius: $round1;
+    border: 1px solid $c-light1;
+    @media (min-width: $breakpoints-md) {
+      padding: 30px 40px 40px 40px;
+    }
+    .headline {
+      @extend .big-text-01;
+      font-weight: 700;
+      text-align: center;
+      @media (min-width: $breakpoints-md) {
+        text-align: left;
+      }
+      >.fa {
+        display: inline-block;
+        transform: translateY(7px);
+        font-size: 2.2rem;
+        font-weight: 400;
+      }
+    }
+    .search-form {
+      text-align: center;
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        @media (min-width: $breakpoints-md) {
+          margin: 0 -10px;
+        }
+        .form-group {
+          width: 100%;
+          margin-top: 10px;
+          padding: 0 10px;
+          &.col-12 {
+            @media (min-width: $breakpoints-md) {
+              .form-control {
+                width: 25%;
+              }
+            }
+          }
+          @media (min-width: $breakpoints-md) {
+            width: 33.33333%;
+            margin-top: 15px;
+          }
+          @media (min-width: $breakpoints-lg) {
+            width: 25%;
+            margin-top: 25px;
+          }
+          label {
+            @extend .small-text-01;
+            display: block;
+            font-weight: 700;
+            margin-bottom: 5px;
+            @media (min-width: $breakpoints-lg) {
+              margin-bottom: 15px;
+            }
+          }
+          .form-control {
+            width: 100%;
+          }
+        }
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 15px;
+        min-width: 200px;
+        max-width: 100%;
+        @media (min-width: $breakpoints-md) {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}

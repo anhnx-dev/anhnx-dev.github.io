@@ -1,0 +1,54 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.notification {
+  .notification-item {
+    @extend .section;
+    position: relative;
+    padding: 30px 15px 30px 45px;
+    background: $c-white;
+    border-radius: $round1;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 100%;
+      top: 0;
+      left: 23px;
+      border-left: 1px solid #f7e6d2;
+      border-right: 1px solid #f7e6d2;
+    }
+    &:nth-child(2n + 1) {
+      background: #fdfbe9;
+    }
+    &:nth-child(2n + 2) {
+      background: #f8f8f8;
+    }
+    .headline {
+      @extend .medium-text;
+      text-transform: uppercase;
+      margin: 0;
+      color: $c-red2;
+    }
+    .list-item {
+      margin-top: 25px;
+      .title {
+        @extend .medium-text;
+        margin: 0;
+        a {
+          color: $c-dark;
+          text-decoration: none;
+          transition: $transition;
+          &:hover,
+          &:focus {
+            color: $c-red2;
+          }
+        }
+      }
+      .date {
+        margin: 0;
+        color: $c-grey;
+      }
+    }
+  }
+}
