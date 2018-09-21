@@ -88,6 +88,11 @@ body {
   }
 }
 
+.no-spacing {
+  margin: 0;
+  padding: 0;
+}
+
 .section {
   margin-top: 20px;
   @media (min-width: $breakpoints-md) {

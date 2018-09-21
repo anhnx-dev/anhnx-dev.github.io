@@ -1,0 +1,130 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.ratings-table {
+  .ratings-table-hero {
+    min-height: 235px;
+    &::after {
+      padding-bottom: 20%;
+    }
+  }
+  .table-group {
+    margin-top: -60px;
+    .inner {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 15px;
+      background: $c-white;
+      .item {
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 95px;
+        @media (min-width: $breakpoints-md) {
+          width: 33.3333%;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            list-style: none;
+          }
+        }
+        .btn {
+          position: absolute;
+          width: 175px;
+          height: 50px;
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          bottom: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .headline {
+          @extend .big-text;
+          margin: 0;
+          padding:  15px;
+          text-align: center;
+          font-weight: 400;
+          color: $c-white;
+        }
+        .list-item {
+          margin-top: 15px;
+          min-height: 60px;
+          p {
+            margin: 0;
+          }
+        }
+        &.v1 {
+          .headline {
+            background: $c-orange5;
+          }
+          .list-item {
+            .wrapper {
+              display: flex;
+              justify-content: space-between;
+            }
+            .user {
+              position: relative;
+              padding: 0 10px 0 60px;
+              .avatar {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                left: 0;
+                top: 0;
+              }
+              .name {
+                @extend .small-text;
+                margin: 0;
+                color: $c-blue;
+              }
+            }
+            .info {
+              @extend .small-text;
+              font-weight: 700;
+              text-align: right;
+              .date {
+                color: $c-blue;
+              }
+            }
+          }
+          .btn {
+            background: $c-orange5;
+          }
+        }
+        &.v2 {
+          .headline {
+            background: $c-orange3;
+          }
+          .number {
+            @extend .small-text;
+            color: $c-blue;
+            font-weight: 700;
+          }
+          .btn {
+            background: $c-orange3;
+          }
+        }
+        &.v3 {
+          .headline {
+            background: $c-blue5;
+          }
+          .number {
+            @extend .small-text;
+            color: $c-blue;
+            font-weight: 700;
+          }
+          .btn {
+            background: $c-blue5;
+          }
+        }
+      }
+    }
+  }
+}

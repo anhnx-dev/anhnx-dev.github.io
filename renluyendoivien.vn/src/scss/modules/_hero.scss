@@ -70,6 +70,11 @@
   }
   @media (min-width: $breakpoints-md) {
     .carousel-item::after {
+      padding-bottom: 68%;
+    }
+  }
+  @media (min-width: $breakpoints-xl) {
+    .carousel-item::after {
       padding-bottom: 42%;
     }
   }
