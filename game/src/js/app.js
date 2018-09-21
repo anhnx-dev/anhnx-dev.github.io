@@ -119,3 +119,37 @@ new Vue({
       });
   }
 });
+
+function startTimer(duration, display) {
+  var start = Date.now(),
+    diff,
+    minutes,
+    seconds,
+    countDownTimer;
+
+  function timer() {
+    diff = duration - (((Date.now() - start) / 1000) | 0);
+
+    minutes = (diff / 60) | 0;
+    seconds = (diff % 60) | 0;
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    display.textContent = minutes + ":" + seconds;
+
+    if (diff <= 0) {
+      start = Date.now() + 1000;
+      clearInterval(countDownTimer);
+    }
+  }
+
+  timer();
+  countDownTimer = setInterval(timer, 1000);
+}
+{/* <p data-time="100"></p> */}
+const time = document.querySelector('[data-time]');
+if (time) {
+  const timeValues = time.getAttribute('data-time');
+  startTimer(timeValues, time);
+}
