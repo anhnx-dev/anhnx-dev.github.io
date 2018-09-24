@@ -55,8 +55,12 @@
 					<div class="wrapper">
 						<div class="branb">
 							<a class="logo" href="http://"><img src="images/logo_bak.png" alt=""></a>
+							<div class="slogan"><img src="images/bar-logo.png" alt=""></div>
 						</div>
 						<ul class="nav js-navbar">
+							<li class="nav-item">
+								<a href="" class="nav-link"><i class="fa fa-home"></i></a>
+							</li>
 							<li class="nav-item">
 								<a href="" class="nav-link">Giới thiệu</a>
 								<ul>
@@ -118,32 +122,48 @@
 			<!-- navbar end -->
 
 		</header>
-		<!-- header end -->
+		<!-- header end --
 
 		<!-- main -->
 		<main class="main">
 
-			<!-- hero -->
-			<section class="hero">
-				<div class="carousel js-carousel">
-					<div class="img-cover carousel-item">
-						<a href="#" class="img-cover__wrapper">
-							<img src="images/slider.jpg" alt="">
-						</a>
-					</div>
-					<div class="img-cover carousel-item">
-						<a href="#" class="img-cover__wrapper">
-							<img src="images/slider1.jpg" alt="">
-						</a>
+			<div class="hero-countdown" style="background-image: url(images/bg-banner.png);">
+				<div class="container">
+					<div class="row no-spacing">
+						<!-- hero -->
+						<section class="col-lg-8 no-spacing section hero">
+							<div class="carousel js-carousel">
+								<div class="img-cover carousel-item">
+									<a href="#" class="img-cover__wrapper">
+										<img src="images/slider.jpg" alt="">
+									</a>
+								</div>
+								<div class="img-cover carousel-item">
+									<a href="#" class="img-cover__wrapper">
+										<img src="images/slider1.jpg" alt="">
+									</a>
+								</div>
+							</div>
+						</section>
+						<!-- hero end -->
+						<!-- Countdown clock -->
+						<section class="col-lg-4 no-spacing section countdown-clock">
+							<h2 class="headline">Cuộc thi LUẬT GIA TƯƠNG LAI</h2>
+							<div data-minutes="600000"></div>
+							<div class="button-group">
+								<a class="btn" href="">Vào thi</a>
+								<a class="btn" href="">Thi thử</a>
+							</div>
+						</section>
+						<!-- Countdown clock end -->
 					</div>
 				</div>
-			</section>
-			<!-- hero end -->
+			</div>
 
 			<div class="container container-main">
 				<div class="row">
 
-					<div class="col-lg-8">
+					<div class="col-12">
 						<!-- logo list -->
 						<section class="section logo-group">
 							<div class="logo-list">
@@ -179,36 +199,6 @@
 						<!-- logo list end -->
 					</div>
 
-					<div class="col-lg-4">
-						<!-- Countdown clock -->
-						<section class="section countdown-clock">
-							<h2 class="headline">Cuộc thi LUẬT GIA TƯƠNG LAI</h2>
-							<div id="clockdiv">
-								<div>
-									<span class="days" data-days="09"></span>
-									<div class="smalltext">Ngày</div>
-								</div>
-								<div>
-									<span class="hours" data-hours="24"></span>
-									<div class="smalltext">Giờ</div>
-								</div>
-								<div>
-									<span class="minutes" data-minutes="60"></span>
-									<div class="smalltext">Phút</div>
-								</div>
-								<div>
-									<span class="seconds" data-seconds="60"></span>
-									<div class="smalltext">Giây</div>
-								</div>
-							</div>
-							<div class="button-group">
-								<a class="btn" href="">Vào thi</a>
-								<a class="btn" href="">Thi thử</a>
-							</div>
-						</section>
-						<!-- Countdown clock end -->
-					</div>
-
 					<div class="col-12">
 						<!-- adv -->
 						<div class="section adv">
@@ -221,7 +211,7 @@
 
 					<div class="col-12">
 						<section class="section timeline">
-							<h2 class="headline">Timeline cuộc thi</h2>
+							<h2 class="headline"><a href="">Timeline cuộc thi</a></h2>
 							<ul class="timeline-list">
 								<li class="item">
 									<div class="inner">
@@ -292,17 +282,25 @@
 						<!-- notification -->
 						<section class="section notification">
 							<div class="notification-item">
-								<h2 class="headline">Thông báo BTC</h2>
+								<div class="headline">
+									<h2><a href="">THÔNG BÁO CỦA BAN TỔ CHỨC</a></h2>
+									<a class="btn" href="">Xem thêm</a>
+								</div>
 								<div class="list">
 									<div class="list-item">
+										<p class="date">11/06/2018</p>
 										<h3 class="title"><a href="http://">Thông báo kết quả Cuộc thi “Tuổi trẻ học tập và làm theo tư tưởng, đạo
 												đức,</a></h3>
-										<p class="date">Ngày: 11/06/2018</p>
 									</div>
 									<div class="list-item">
+										<p class="date">11/06/2018</p>
 										<h3 class="title"><a href="http://">Danh sách chính thức các thí sinh đoạt giải Vòng chung kết cá nhân xếp
 												hạng</a></h3>
-										<p class="date">Ngày: 11/06/2018</p>
+									</div>
+									<div class="list-item">
+										<p class="date">11/06/2018</p>
+										<h3 class="title"><a href="http://">Danh sách chính thức các thí sinh đoạt giải Vòng chung kết cá nhân xếp
+												hạng</a></h3>
 									</div>
 								</div>
 							</div>
@@ -314,146 +312,185 @@
 							<div class="news-wrapper">
 								<div class="news-list">
 									<figure class="news-item">
-										<h2 class="title">
-											<a href="">Nội dung tìm hiểu của cuộc thi: Các chủ trương, quan điểm của Đảng, Nhà nước về biển đảo Việt Nam</a>
-										</h2>
-										<div class="content">
+										<div class="inner">
 											<div class="img-cover">
 												<a href="#" class="img-cover__wrapper">
 													<img src="images/new1.png" alt="">
 												</a>
 											</div>
-											<div class="info">
-												<div class="date"><span>10:37</span> <span>28/07/2018</span></div>
-												<div class="description">Nội dung tìm hiểu của cuộc thi: Các chủ trương, quan điểm của Đảng, Nhà nước về
-													biển
-													đảo
-													Việt Nam</div>
+											<div class="content">
+												<h2 class="title">
+													<a href="">Video: Tổng kết Cuộc thi Luật gia tương lai năm 2017</a>
+												</h2>
+												<div class="info">
+													<span class="date">26/12/2017</span>
+													<span class="view"><i class="fa fa-eye"></i> 1.802</span>
+													<span class="commit"><i class="fa fa-chat"></i> 0</span>
+												</div>
+												<div class="description">17 tỉnh, thành phố tích cực hưởng ứng với trên 233.000 thí sinh tham gia, trong
+													đó, vòng sơ khảo có trên 575.000 lượt
+													thí sinh tham gia, vòng chung</div>
 												<div class="copyright"><i class="fa fa-graduation-cap"></i> Ban tổ chức cuộc thi</div>
 											</div>
 										</div>
 									</figure>
 									<figure class="news-item">
-										<h2 class="title">
-											<a href="">Nội dung tìm hiểu của cuộc thi: Những nội dung chính của “Chiến lược biển Việt Nam đến năm 2020”;
-												Luật
-												biển Việt Nam
-												năm 2013</a>
-										</h2>
-										<div class="content">
+										<div class="inner">
 											<div class="img-cover">
 												<a href="#" class="img-cover__wrapper">
-													<img src="images/new2.png" alt="">
+													<img src="images/new1.png" alt="">
 												</a>
 											</div>
-											<div class="info">
-												<div class="date"><span>10:37</span> <span>28/07/2018</span></div>
-												<div class="description">Nội dung tìm hiểu của cuộc thi: Các chủ trương, quan điểm của Đảng, Nhà nước về
-													biển
-													đảo
-													Việt Nam</div>
+											<div class="content">
+												<h2 class="title">
+													<a href="">Video: Tổng kết Cuộc thi Luật gia tương lai năm 2017</a>
+												</h2>
+												<div class="info">
+													<span class="date">26/12/2017</span>
+													<span class="view"><i class="fa fa-eye"></i> 1.802</span>
+													<span class="commit"><i class="fa fa-chat"></i> 0</span>
+												</div>
+												<div class="description">17 tỉnh, thành phố tích cực hưởng ứng với trên 233.000 thí sinh tham gia, trong
+													đó, vòng sơ khảo có trên 575.000 lượt
+													thí sinh tham gia, vòng chung</div>
 												<div class="copyright"><i class="fa fa-graduation-cap"></i> Ban tổ chức cuộc thi</div>
 											</div>
 										</div>
 									</figure>
 									<figure class="news-item">
-										<h2 class="title">
-											<a href="">Nội dung tìm hiểu của cuộc thi: Vai trò, vị trí và tiềm năng của biển, đảo Việt Nam</a>
-										</h2>
-										<div class="content">
+										<div class="inner">
 											<div class="img-cover">
 												<a href="#" class="img-cover__wrapper">
-													<img src="images/new3.png" alt="">
+													<img src="images/new1.png" alt="">
 												</a>
 											</div>
-											<div class="info">
-												<div class="date"><span>10:37</span> <span>28/07/2018</span></div>
-												<div class="description">Nội dung tìm hiểu của cuộc thi: Các chủ trương, quan điểm của Đảng, Nhà nước về
-													biển
-													đảo
-													Việt Nam</div>
+											<div class="content">
+												<h2 class="title">
+													<a href="">Video: Tổng kết Cuộc thi Luật gia tương lai năm 2017</a>
+												</h2>
+												<div class="info">
+													<span class="date">26/12/2017</span>
+													<span class="view"><i class="fa fa-eye"></i> 1.802</span>
+													<span class="commit"><i class="fa fa-chat"></i> 0</span>
+												</div>
+												<div class="description">17 tỉnh, thành phố tích cực hưởng ứng với trên 233.000 thí sinh tham gia, trong
+													đó, vòng sơ khảo có trên 575.000 lượt
+													thí sinh tham gia, vòng chung</div>
 												<div class="copyright"><i class="fa fa-graduation-cap"></i> Ban tổ chức cuộc thi</div>
 											</div>
 										</div>
 									</figure>
 									<figure class="news-item">
-										<h2 class="title">
-											<a href="">Nội dung tìm hiểu của cuộc thi: Những thành tựu xây dựng và phát triển các lĩnh vực liên quan đến
-												biển, đảo Việt Nam</a>
-										</h2>
-										<div class="content">
+										<div class="inner">
 											<div class="img-cover">
 												<a href="#" class="img-cover__wrapper">
-													<img src="images/new4.png" alt="">
+													<img src="images/new1.png" alt="">
 												</a>
 											</div>
-											<div class="info">
-												<div class="date"><span>10:37</span> <span>28/07/2018</span></div>
-												<div class="description">Nội dung tìm hiểu của cuộc thi: Các chủ trương, quan điểm của Đảng, Nhà nước về
-													biển
-													đảo
-													Việt Nam</div>
+											<div class="content">
+												<h2 class="title">
+													<a href="">Video: Tổng kết Cuộc thi Luật gia tương lai năm 2017</a>
+												</h2>
+												<div class="info">
+													<span class="date">26/12/2017</span>
+													<span class="view"><i class="fa fa-eye"></i> 1.802</span>
+													<span class="commit"><i class="fa fa-chat"></i> 0</span>
+												</div>
+												<div class="description">17 tỉnh, thành phố tích cực hưởng ứng với trên 233.000 thí sinh tham gia, trong
+													đó, vòng sơ khảo có trên 575.000 lượt
+													thí sinh tham gia, vòng chung</div>
 												<div class="copyright"><i class="fa fa-graduation-cap"></i> Ban tổ chức cuộc thi</div>
 											</div>
 										</div>
 									</figure>
 									<figure class="news-item">
-										<h2 class="title">
-											<a href="">Nội dung tìm hiểu của cuộc thi: Chủ quyền và quyền chủ quyền của Việt Nam trên Biển Đông</a>
-										</h2>
-										<div class="content">
+										<div class="inner">
 											<div class="img-cover">
 												<a href="#" class="img-cover__wrapper">
-													<img src="images/new5.png" alt="">
+													<img src="images/new1.png" alt="">
 												</a>
 											</div>
-											<div class="info">
-												<div class="date"><span>10:37</span> <span>28/07/2018</span></div>
-												<div class="description">Nội dung tìm hiểu của cuộc thi: Các chủ trương, quan điểm của Đảng, Nhà nước về
-													biển
-													đảo
-													Việt Nam</div>
+											<div class="content">
+												<h2 class="title">
+													<a href="">Video: Tổng kết Cuộc thi Luật gia tương lai năm 2017</a>
+												</h2>
+												<div class="info">
+													<span class="date">26/12/2017</span>
+													<span class="view"><i class="fa fa-eye"></i> 1.802</span>
+													<span class="commit"><i class="fa fa-chat"></i> 0</span>
+												</div>
+												<div class="description">17 tỉnh, thành phố tích cực hưởng ứng với trên 233.000 thí sinh tham gia, trong
+													đó, vòng sơ khảo có trên 575.000 lượt
+													thí sinh tham gia, vòng chung</div>
 												<div class="copyright"><i class="fa fa-graduation-cap"></i> Ban tổ chức cuộc thi</div>
 											</div>
 										</div>
 									</figure>
 									<figure class="news-item">
-										<h2 class="title">
-											<a href="">Nội dung tìm hiểu của cuộc thi: Những thành tựu xây dựng và phát triển các lĩnh vực liên quan đến
-												biển, đảo Việt Nam</a>
-										</h2>
-										<div class="content">
+										<div class="inner">
 											<div class="img-cover">
 												<a href="#" class="img-cover__wrapper">
-													<img src="images/new4.png" alt="">
+													<img src="images/new1.png" alt="">
 												</a>
 											</div>
-											<div class="info">
-												<div class="date"><span>10:37</span> <span>28/07/2018</span></div>
-												<div class="description">Nội dung tìm hiểu của cuộc thi: Các chủ trương, quan điểm của Đảng, Nhà nước về
-													biển
-													đảo
-													Việt Nam</div>
+											<div class="content">
+												<h2 class="title">
+													<a href="">Video: Tổng kết Cuộc thi Luật gia tương lai năm 2017</a>
+												</h2>
+												<div class="info">
+													<span class="date">26/12/2017</span>
+													<span class="view"><i class="fa fa-eye"></i> 1.802</span>
+													<span class="commit"><i class="fa fa-chat"></i> 0</span>
+												</div>
+												<div class="description">17 tỉnh, thành phố tích cực hưởng ứng với trên 233.000 thí sinh tham gia, trong
+													đó, vòng sơ khảo có trên 575.000 lượt
+													thí sinh tham gia, vòng chung</div>
 												<div class="copyright"><i class="fa fa-graduation-cap"></i> Ban tổ chức cuộc thi</div>
 											</div>
 										</div>
 									</figure>
 									<figure class="news-item">
-										<h2 class="title">
-											<a href="">Nội dung tìm hiểu của cuộc thi: Chủ quyền và quyền chủ quyền của Việt Nam trên Biển Đông</a>
-										</h2>
-										<div class="content">
+										<div class="inner">
 											<div class="img-cover">
 												<a href="#" class="img-cover__wrapper">
-													<img src="images/new5.png" alt="">
+													<img src="images/new1.png" alt="">
 												</a>
 											</div>
-											<div class="info">
-												<div class="date"><span>10:37</span> <span>28/07/2018</span></div>
-												<div class="description">Nội dung tìm hiểu của cuộc thi: Các chủ trương, quan điểm của Đảng, Nhà nước về
-													biển
-													đảo
-													Việt Nam</div>
+											<div class="content">
+												<h2 class="title">
+													<a href="">Video: Tổng kết Cuộc thi Luật gia tương lai năm 2017</a>
+												</h2>
+												<div class="info">
+													<span class="date">26/12/2017</span>
+													<span class="view"><i class="fa fa-eye"></i> 1.802</span>
+													<span class="commit"><i class="fa fa-chat"></i> 0</span>
+												</div>
+												<div class="description">17 tỉnh, thành phố tích cực hưởng ứng với trên 233.000 thí sinh tham gia, trong
+													đó, vòng sơ khảo có trên 575.000 lượt
+													thí sinh tham gia, vòng chung</div>
+												<div class="copyright"><i class="fa fa-graduation-cap"></i> Ban tổ chức cuộc thi</div>
+											</div>
+										</div>
+									</figure>
+									<figure class="news-item">
+										<div class="inner">
+											<div class="img-cover">
+												<a href="#" class="img-cover__wrapper">
+													<img src="images/new1.png" alt="">
+												</a>
+											</div>
+											<div class="content">
+												<h2 class="title">
+													<a href="">Video: Tổng kết Cuộc thi Luật gia tương lai năm 2017</a>
+												</h2>
+												<div class="info">
+													<span class="date">26/12/2017</span>
+													<span class="view"><i class="fa fa-eye"></i> 1.802</span>
+													<span class="commit"><i class="fa fa-chat"></i> 0</span>
+												</div>
+												<div class="description">17 tỉnh, thành phố tích cực hưởng ứng với trên 233.000 thí sinh tham gia, trong
+													đó, vòng sơ khảo có trên 575.000 lượt
+													thí sinh tham gia, vòng chung</div>
 												<div class="copyright"><i class="fa fa-graduation-cap"></i> Ban tổ chức cuộc thi</div>
 											</div>
 										</div>
@@ -744,6 +781,59 @@
 						</section>
 						<!-- video right end -->
 
+						<!-- quest -->
+						<section class="section quest">
+							<div class="headline">HỌ NÓI VỀ CHÚNG TÔI</div>
+							<div class="quest-list js-carousel-02">
+								<div class="item">
+									<div class="avatar">
+										<div class="img-cover">
+											<a href="#" class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="commit">Deserunt amet eiusmod adipisicing exercitation. Ut nostrud duis consequat est commodo eu
+											occaecat excepteur eiusmod magna magna.</div>
+										<div class="name">Hồ Phi Khánh</div>
+										<div class="address">Học sinh lớp 11 Tin, trường THPT chuyên Nguyễn Huệ</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="avatar">
+										<div class="img-cover">
+											<a href="#" class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="commit">Deserunt amet eiusmod adipisicing exercitation. Magna magna proident culpa est nostrud
+											labore deserunt sit.</div>
+										<div class="name">Hồ Phi Khánh</div>
+										<div class="address">Học sinh lớp 11 Tin, trường THPT chuyên Nguyễn Huệ</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="avatar">
+										<div class="img-cover">
+											<a href="#" class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</a>
+										</div>
+									</div>
+									<div class="info">
+										<div class="commit">Deserunt amet eiusmod adipisicing exercitation. Incididunt mollit ad occaecat fugiat ut
+											cupidatat labore dolor fugiat amet fugiat nostrud amet.</div>
+										<div class="name">Hồ Phi Khánh</div>
+										<div class="address">Học sinh lớp 11 Tin, trường THPT chuyên Nguyễn Huệ</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- quest end -->
+
 						<!-- facebook right -->
 						<section class="section facebook-right">
 							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=270&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=226666764204714"
@@ -754,145 +844,173 @@
 
 					</div>
 
+					<div class="col-12">
+						<!-- new user -->
+						<section class="section new-user">
+							<h2 class="headline">Thành viên mới nhất</h2>
+							<div class="row list-item">
+								<div class="col-md-6 col-lg-4 user-item">
+									<div class="wrapper">
+										<div class="img-cover avatar">
+											<span class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</span>
+										</div>
+										<div class="info">
+											<h3 class="name">Nguyễn Thị Ngân</h3>
+											<p class="address">Lớp 11-THCS và THPT Mỹ Thuận -Sóc Trăng</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 user-item">
+									<div class="wrapper">
+										<div class="img-cover avatar">
+											<span class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</span>
+										</div>
+										<div class="info">
+											<h3 class="name">Nguyễn Thị Ngân</h3>
+											<p class="address">Lớp 11-THCS và THPT Mỹ Thuận -Sóc Trăng</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 user-item">
+									<div class="wrapper">
+										<div class="img-cover avatar">
+											<span class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</span>
+										</div>
+										<div class="info">
+											<h3 class="name">Nguyễn Thị Ngân</h3>
+											<p class="address">Lớp 11-THCS và THPT Mỹ Thuận -Sóc Trăng</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 user-item">
+									<div class="wrapper">
+										<div class="img-cover avatar">
+											<span class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</span>
+										</div>
+										<div class="info">
+											<h3 class="name">Nguyễn Thị Ngân</h3>
+											<p class="address">Lớp 11-THCS và THPT Mỹ Thuận -Sóc Trăng</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 user-item">
+									<div class="wrapper">
+										<div class="img-cover avatar">
+											<span class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</span>
+										</div>
+										<div class="info">
+											<h3 class="name">Nguyễn Thị Ngân</h3>
+											<p class="address">Lớp 11-THCS và THPT Mỹ Thuận -Sóc Trăng</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 user-item">
+									<div class="wrapper">
+										<div class="img-cover avatar">
+											<span class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</span>
+										</div>
+										<div class="info">
+											<h3 class="name">Nguyễn Thị Ngân</h3>
+											<p class="address">Lớp 11-THCS và THPT Mỹ Thuận -Sóc Trăng</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 user-item">
+									<div class="wrapper">
+										<div class="img-cover avatar">
+											<span class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</span>
+										</div>
+										<div class="info">
+											<h3 class="name">Nguyễn Thị Ngân</h3>
+											<p class="address">Lớp 11-THCS và THPT Mỹ Thuận -Sóc Trăng</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 user-item">
+									<div class="wrapper">
+										<div class="img-cover avatar">
+											<span class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</span>
+										</div>
+										<div class="info">
+											<h3 class="name">Nguyễn Thị Ngân</h3>
+											<p class="address">Lớp 11-THCS và THPT Mỹ Thuận -Sóc Trăng</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 user-item">
+									<div class="wrapper">
+										<div class="img-cover avatar">
+											<span class="img-cover__wrapper">
+												<img src="images/user1.png" alt="">
+											</span>
+										</div>
+										<div class="info">
+											<h3 class="name">Nguyễn Thị Ngân</h3>
+											<p class="address">Lớp 11-THCS và THPT Mỹ Thuận -Sóc Trăng</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- new user end -->
+					</div>
+
 				</div>
 
 			</div>
-
-			<!-- new user -->
-			<section class="new-user" style="background-image: url(/images/bg.png);">
-				<div class="container">
-					<h2 class="headline">Thành viên mới nhất</h2>
-					<div class="row">
-						<div class="col-md-6 col-lg-3 user-item">
-							<div class="wrapper">
-								<div class="img-cover avatar">
-									<span class="img-cover__wrapper">
-										<img src="images/user1.png" alt="">
-									</span>
-								</div>
-								<div class="info">
-									<h3 class="name">Nguyễn Thị Ngân</h3>
-									<p class="class-school">Lớp 12 -
-										<span>THPT Hoài Đức A -</span></p>
-									<p class="district">Quảng Bình</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3 user-item">
-							<div class="wrapper">
-								<div class="img-cover avatar">
-									<span class="img-cover__wrapper">
-										<img src="images/user1.png" alt="">
-									</span>
-								</div>
-								<div class="info">
-									<h3 class="name">Nguyễn Thị Thảo</h3>
-									<p class="class-school">Lớp 12 -
-										<span>THCS Duy Ninh -</span></p>
-									<p class="district">Quảng Bình</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3 user-item">
-							<div class="wrapper">
-								<div class="img-cover avatar">
-									<span class="img-cover__wrapper">
-										<img src="images/user1.png" alt="">
-									</span>
-								</div>
-								<div class="info">
-									<h3 class="name">Trịnh Thị Ngọc Ánh</h3>
-									<p class="class-school">Lớp 9 -
-										<span>THCS Thanh An -</span></p>
-									<p class="district">Quảng Bình</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3 user-item">
-							<div class="wrapper">
-								<div class="img-cover avatar">
-									<span class="img-cover__wrapper">
-										<img src="images/user1.png" alt="">
-									</span>
-								</div>
-								<div class="info">
-									<h3 class="name">Nguyễn Thị Thanh Bình</h3>
-									<p class="class-school">Lớp 12 -
-										<span>THPT Hoài Đức A -</span></p>
-									<p class="district">Quảng Bình</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3 user-item">
-							<div class="wrapper">
-								<div class="img-cover avatar">
-									<span class="img-cover__wrapper">
-										<img src="images/user1.png" alt="">
-									</span>
-								</div>
-								<div class="info">
-									<h3 class="name">Nguyễn Thị Ngân</h3>
-									<p class="class-school">Lớp 12 -
-										<span>THPT Hoài Đức A -</span></p>
-									<p class="district">Quảng Bình</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3 user-item">
-							<div class="wrapper">
-								<div class="img-cover avatar">
-									<span class="img-cover__wrapper">
-										<img src="images/user1.png" alt="">
-									</span>
-								</div>
-								<div class="info">
-									<h3 class="name">Nguyễn Thị Thảo</h3>
-									<p class="class-school">Lớp 12 -
-										<span>THCS Duy Ninh -</span></p>
-									<p class="district">Quảng Bình</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3 user-item">
-							<div class="wrapper">
-								<div class="img-cover avatar">
-									<span class="img-cover__wrapper">
-										<img src="images/user1.png" alt="">
-									</span>
-								</div>
-								<div class="info">
-									<h3 class="name">Trịnh Thị Ngọc Ánh</h3>
-									<p class="class-school">Lớp 9 -
-										<span>THCS Thanh An -</span></p>
-									<p class="district">Quảng Bình</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3 user-item">
-							<div class="wrapper">
-								<div class="img-cover avatar">
-									<span class="img-cover__wrapper">
-										<img src="images/user1.png" alt="">
-									</span>
-								</div>
-								<div class="info">
-									<h3 class="name">Nguyễn Thị Thanh Bình</h3>
-									<p class="class-school">Lớp 12 -
-										<span>THPT Hoài Đức A -</span></p>
-									<p class="district">Quảng Bình</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- new user end -->
 
 		</main>
 		<!-- main end -->
 
 		<!-- footer -->
 		<footer class="footer">
+			<div class="footer-logo-list">
+				<div class="container">
+					<div class="carousel js-carousel-03">
+						<a class="carousel-item" href="">
+							<div class="logo">
+								<img src="images/vnedutech-logo.png" alt="">
+							</div>
+						</a>
+						<a class="carousel-item" href="">
+							<div class="logo">
+								<img src="images/logo_bak.png" alt="">
+							</div>
+						</a>
+						<a class="carousel-item" href="">
+							<div class="logo">
+								<img src="images/mgc.png" alt="">
+							</div>
+						</a>
+						<a class="carousel-item" href="">
+							<div class="logo">
+								<img src="images/thieunien.png" alt="">
+							</div>
+						</a>
+						<a class="carousel-item" href="">
+							<div class="logo">
+								<img src="images/hoahoctro.png" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
@@ -1050,6 +1168,7 @@
 
 	<!-- js -->
 	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/flipclock.min.js"></script>
 	<script src="src/js/vendor/slick.min.js"></script>
 	<script src="src/js/main.js"></script>
 

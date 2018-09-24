@@ -10,17 +10,30 @@
       background: $c-white;
       border-radius: $round1;
       overflow: hidden;
+      padding-bottom: 240px;
+      background-image: url(/src/images/bg-timeline.png);
+      background-repeat: no-repeat;
+      background-position: bottom left;
       .headline {
         @extend .medium-text;
+        position: relative;
         padding: 13px 15px;
         margin: 0;
         text-align: center;
         text-transform: uppercase;
         color: $c-white;
+        &::after,
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 36px;
+          height: 12px;
+          background: url(/src/images/start.png);
+        }
       }
       .btn {
         position: absolute;
-        bottom: 15px;
+        bottom: 185px;
         width: calc(100% - 30px);
         left: 15px;
         font-size: 1rem;

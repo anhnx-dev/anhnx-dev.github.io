@@ -2,18 +2,33 @@
 @import '../_mixins.scss';
 
 .new-user {
-  margin-top: 40px;
-  margin-bottom: -40px;
-  padding: 40px 0;
+  background: $c-white;
+  border-radius: $round1;
+  overflow: hidden;
   .headline {
     @extend .big-text-01;
     margin: 0;
     text-transform: uppercase;
     text-align: center;
-    color: $c-red2;
+    color: $c-white;
+    background: $cl11;
+    padding: 15px;
+    &::after,
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 36px;
+      height: 12px;
+      background: url(/src/images/start.png);
+    }
+  }
+  .list-item {
+    margin: 0;
+    padding: 20px 15px 30px 15px;
   }
   .user-item {
-    margin-top: 40px;
+    margin-top: 10px;
+    min-height: 65px;
     .wrapper {
       position: relative;
       padding-left: 75px;
@@ -25,15 +40,12 @@
         height: 65px;
       }
       .info {
-        .name,
-        .district {
+        .name {
           margin: 0;
         }
-        .class-school {
+        .address {
+          @extend .small-text;
           margin: 0;
-          >span {
-            color: $c-blue;
-          }
         }
       }
     }

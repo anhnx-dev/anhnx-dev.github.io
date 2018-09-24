@@ -14,9 +14,21 @@
     }
   }
   .branb {
+    position: relative;
     text-align: center;
     @media (min-width: $breakpoints-md) {
       text-align: left;
+    }
+    .slogan {
+      position: absolute;
+      bottom: 0;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      @media (min-width: $breakpoints-md) {
+        left: -43px;
+        transform: translateX(0);
+      }
     }
   }
   .nav {
@@ -37,6 +49,7 @@
         margin-right: 0;
       }
       >.nav-link {
+        position: relative;
         display: block;
         padding: 7px 0;
         font-size: 1rem;
@@ -44,6 +57,19 @@
         text-decoration: none;
         font-weight: 500;
         color: $c-white;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 1px;
+          bottom: 8px;
+          left: 0;
+          background: $c-white;
+          transition: $transition;
+        }
+        &:hover::before {
+          width: 100%;
+        }
       }
     }
     .dropdown {

@@ -4,7 +4,7 @@
 .timeline {
   padding: 20px 15px 200px 15px;
   background-color: $c-white;
-  background-image: url(/luatgiatuonglai.vn/src/images/bg-timeline.png);
+  background-image: url(/src/images/bg-timeline.png);
   background-repeat: no-repeat;
   background-position: bottom left;
   text-align: center;
@@ -16,6 +16,10 @@
     @extend .big-text;
     margin: 0;
     text-transform: uppercase;
+    a {
+      text-decoration: none;
+      color: $c-dark;
+    }
   }
   .timeline-list {
     position: relative;
@@ -24,8 +28,7 @@
     margin: 20px 50px 0 50px;
     padding: 0;
     @media (min-width: $breakpoints-lg) {
-      margin: 200px 50px 0 50px;
-      transform: rotate(-10deg);
+      margin: 100px 50px 0 50px;
     }
     &::before {
       content: '';
@@ -46,13 +49,13 @@
       bottom: 0;
       left: 0;
       transform: translate(-50%, 100%);
-      background: url(/luatgiatuonglai.vn/src/images/cup1.png);
+      background: url(/src/images/cup1.png);
       @media (min-width: $breakpoints-lg) {
         bottom: initial;
         left: initial;
         right: 0;
         top: -50px;
-        transform: rotate(10deg) translate(50%, -100%);
+        transform: translate(50%);
       }
     }
     .item {
@@ -62,6 +65,7 @@
       margin-top: 20px;
       padding-left: 30px;
       text-align: left;
+      cursor: pointer;
       &:nth-child(1) {
         margin-top: 0;
       }
@@ -72,22 +76,39 @@
         text-align: center;
         .inner {
           position: absolute;
-          transform: rotate(10deg) translate(-50%, -100%);
+          pointer-events: none;
+          opacity: 0;
+          transform: translate(-50%, -60%);
           top: -50px;
           transition: $transition;
+          background: $cl04;
+          color: $c-white;
+          border-radius: $round;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-top: 3px solid $cl05;
+          }
           .title {
             font-weight: 700;
+            background: $cl05;
+            padding: 3px 10px;
+            border-radius: $round $round 0 0;
           }
           .date {
-            margin-top: 10px;
-          }
-          &:hover {
-            padding: 10px;
-            background: $cl04;
-            color: $c-white;
-            border-radius: $round;
+            padding: 5px 10px;
           }
         }
+      }
+      &:hover .inner {
+        pointer-events: initial;
+        opacity: 1;
+        transform: (-50%, -80%);
       }
       &::after {
         position: absolute;

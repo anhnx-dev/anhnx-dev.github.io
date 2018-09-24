@@ -120,6 +120,8 @@ if (tab) {
 // carousel
 var heroCarousel = $('.js-carousel');
 var logoGroup = $('.js-carousel-01');
+var questList = $('.js-carousel-02');
+var logoGroupFooter = $('.js-carousel-03');
 
 if (heroCarousel) {
   heroCarousel.slick({
@@ -127,14 +129,29 @@ if (heroCarousel) {
     fade: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false
-        }
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        arrows: false
       }
-    ]
+    }]
+  });
+}
+
+if (logoGroupFooter) {
+  logoGroupFooter.slick({
+    arrows: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000
+      }
+    }]
   });
 }
 
@@ -152,6 +169,16 @@ if (logoGroup) {
         autoplaySpeed: 3000
       }
     }]
+  });
+}
+
+if (questList) {
+  questList.slick({
+    dots: true,
+    fade: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000
   });
 }
 
@@ -205,55 +232,19 @@ if ($(window).width() <= 1024) {
 }
 
 // Countdown clock
-function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
+const elements = document.querySelector('[data-minutes]');
 
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
+if (elements) {
+  const clock = $(elements);
+  const targetValues = elements.getAttribute('data-minutes');
 
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
+  FlipClock.Lang.English.days = 'Ngày';
+  FlipClock.Lang.English.hours = 'Giờ';
+  FlipClock.Lang.English.minutes = 'Phút';
+  FlipClock.Lang.English.seconds = 'Giây';
 
-    daysSpan.innerHTML = ('0' + t.days).slice(-2);
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
-
-const days = document.querySelector('[data-days]');
-const hours = document.querySelector('[data-hours]');
-const minutes = document.querySelector('[data-minutes]');
-const seconds = document.querySelector('[data-seconds]');
-if (days) {
-  const daysValues = days.getAttribute('data-days');
-  const hoursValues = hours.getAttribute('data-hours');
-  const minutesValues = minutes.getAttribute('data-minutes');
-  const secondsValues = seconds.getAttribute('data-seconds');
-
-  var deadline = new Date(Date.parse(new Date()) + daysValues * hoursValues * minutesValues * secondsValues * 1000);
-  initializeClock('clockdiv', deadline);
+  clock.FlipClock(targetValues, {
+    clockFace: 'DailyCounter',
+    countdown: true
+  });
 }
