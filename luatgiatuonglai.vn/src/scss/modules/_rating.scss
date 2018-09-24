@@ -11,7 +11,7 @@
       border-radius: $round1;
       overflow: hidden;
       padding-bottom: 240px;
-      background-image: url(/src/images/bg-timeline.png);
+      background-image: url(../images/bg-timeline.png);
       background-repeat: no-repeat;
       background-position: bottom left;
       .headline {
@@ -28,7 +28,7 @@
           display: inline-block;
           width: 36px;
           height: 12px;
-          background: url(/src/images/start.png);
+          background: url(../images/start.png);
         }
       }
       .btn {
