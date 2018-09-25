@@ -1,0 +1,57 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.new-user {
+  background: $c-white;
+  border-radius: $round1;
+  overflow: hidden;
+  .headline {
+    @extend .medium-text;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: $c-white;
+    background: $cl08;
+    padding: 8px 15px;
+  }
+  .list-item {
+    margin: 0;
+    padding: 15px;
+    background: url(../images/bg-thanh-vien.png);
+  }
+  .user-item {
+    margin-top: 15px;
+    min-height: 50px;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+    .wrapper {
+      position: relative;
+      padding-left: 60px;
+      .avatar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+      }
+      .info {
+        .name {
+          margin: 0;
+        }
+        .address {
+          @extend .small-text;
+          margin: 0;
+          a {
+            color: $cl03;
+            text-decoration: none;
+            &:hover,
+            &:focus {
+              color: $c-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}

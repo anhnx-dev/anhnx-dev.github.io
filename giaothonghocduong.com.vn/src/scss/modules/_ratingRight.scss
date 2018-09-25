@@ -1,0 +1,101 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.rating-right {
+  background: $c-white;
+  border-radius: $round1;
+  overflow: hidden;
+  >.info {
+    padding: 30px 15px 25px 15px;
+    text-align: center;
+    background: $c-blue;
+    .icon {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      background: $c-white;
+      border-radius: 50%;
+      border: 7px solid $c-blue2;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    .number {
+      margin-top: 15px;
+      color: $c-yellow2;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    p {
+      color: $c-white;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+  .headline {
+    @extend .medium-text;
+    padding: 13px 15px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: $c-white;
+    background: $cl10;
+  }
+  .list {
+    padding: 17px 15px 35px 15px;
+    .list-item {
+      position: relative;
+      margin-top: 20px;
+      padding-left: 87px;
+      .number {
+        position: absolute;
+        z-index: 2;
+        top: -5px;
+        left: -5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: $cl11;
+        color: $c-white;
+      }
+      .img {
+        position: absolute;
+        left: 5px;
+        top: 0;
+        width: 67px;
+        height: 67px;
+        border: 1px solid $bc-grey;
+        border-radius: $round;
+        .img-cover {
+          border-radius: $round - 1;
+          margin: 3px;
+          &::after {
+            padding-bottom: 100%;
+          }
+        }
+      }
+      .info {
+        .title {
+          margin: 0;
+          text-transform: uppercase;
+        }
+        .date {
+          margin: 0;
+          color: $c-grey;
+        }
+        .name-school {
+          margin: 0;
+          color: $c-blue;
+        }
+      }
+    }
+  }
+}

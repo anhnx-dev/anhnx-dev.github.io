@@ -1,0 +1,58 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.posts {
+  .wrapper {
+    background: $c-white;
+    border-radius: $round1;
+    padding: 0 15px 20px 15px;
+    @media (min-width: $breakpoints-md) {
+      padding: 0 20px 20px 20px
+    }
+    .inner {
+      margin: 0 -10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .post-item {
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (min-width: $breakpoints-md) {
+      width: 33.33333%;
+    }
+    @media (min-width: $breakpoints-lg) {
+      width: 25%;
+    }
+    .img-cover {
+      border-radius: $round;
+      overflow: hidden;
+      &::after {
+        padding-bottom: 70%;
+      }
+    }
+    .content {
+      margin-top: 10px;
+    }
+    .title {
+      margin: 0;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.4;
+      a {
+        color: $cl11;
+        text-decoration: none;
+        transition: $transition;
+        &:hover,
+        &:focus {
+          color: $c-dark;
+        }
+      }
+    }
+    .date {
+      color: $c-grey;
+    }
+  }
+}

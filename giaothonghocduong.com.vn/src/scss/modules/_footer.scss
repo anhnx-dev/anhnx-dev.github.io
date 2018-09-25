@@ -1,0 +1,60 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.home .footer {
+  margin-top: 0;
+}
+
+.footer {
+  @extend .section;
+  background: $cl17;
+  color: $c-white;
+  >.container {
+    padding: 30px 15px;
+  }
+  .footer-top {
+    background: $cl18;
+    padding: 30px 0;
+    .carousel-item {
+      a {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        align-items: center;
+        padding: 0 15px;
+        transition: $transition;
+        img {
+          max-height: 100%;
+          max-width: 100%;
+        }
+        &:hover {
+          transform: scale(1.01);
+          opacity: .8;
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 30px 0;
+    ul {
+      padding: 0;
+      li {
+        @extend .small-text;
+        margin-top: 10px;
+        list-style: none;
+        position: relative;
+        padding-left: 15px;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: $c-white;
+          top: 7px;
+          left: 0;
+        }
+      }
+    }
+  }
+}

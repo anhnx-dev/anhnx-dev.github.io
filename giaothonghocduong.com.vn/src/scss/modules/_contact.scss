@@ -1,0 +1,62 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.contact {
+  .wrapper {
+    background: $c-white;
+    padding: 0 15px 30px 15px;
+  }
+  .col-lg-5 {
+    @media (min-width: $breakpoints-lg) {
+      left: 58.333333%;
+    }
+  }
+  .col-lg-7 {
+    @media (min-width: $breakpoints-lg) {
+      right: 41.666667%;
+    }
+  }
+  .maps {
+    @extend .section;
+  }
+  .headline {
+    @extend .small-text-01;
+    margin: 0;
+    padding: 10px 15px;
+    margin: 0 -15px;
+    background: $cl07;
+    color: $c-white;
+  }
+  .title {
+    @extend .body-text;
+    margin: 0;
+    color: $cl07;
+    text-transform: uppercase;
+  }
+  .info {
+    @extend .section;
+    .info-item {
+      margin-top: 20px;
+      p {
+        margin: 5px 0 0 0;
+      }
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+  }
+  .form-contact {
+    margin-top: 20px;
+    @media (min-width: $breakpoints-lg) {
+      max-width: 525px;
+    }
+    .form-control {
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px;
+    }
+    .btn {
+      margin-top: 20px;
+    }
+  }
+}

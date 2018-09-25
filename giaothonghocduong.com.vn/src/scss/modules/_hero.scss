@@ -1,0 +1,10 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.hero {
+  @media (min-width: $breakpoints-md) {
+    .carousel-item {
+      height: 367px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.quest {
+  background: $c-white;
+  border-radius: $round1;
+  overflow: hidden;
+  .headline {
+    @extend .medium-text;
+    position: relative;
+    padding: 8px 15px;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $c-white;
+    background: url(../images/bg-about.png) no-repeat left bottom $cl10;
+  }
+  .quest-list {
+    padding: 15px;
+    background-image: url(../images/bg-about-slider.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    .item {
+      text-align: center;
+      .avatar {
+        padding: 30px 0;
+        .img-cover {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .info {
+        .commit {
+          font-style: italic;
+        }
+        .name {
+          margin-top: 10px;
+          font-weight: 700;
+          color: $cl05;
+        }
+        .address {
+          @extend .small-text;
+        }
+      }
+    }
+    .slick-dots {
+      position: initial;
+      justify-content: center;
+      transform: initial;
+      li {
+        button {
+          background: $c-light1;
+        }
+        &.slick-active {
+          button {
+            background: $c-red;
+          }
+        }
+      }
+    }
+  }
+}

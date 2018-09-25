@@ -1,0 +1,29 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.social {
+  border-radius: $round1;
+  background: url(../images/bg-social.png) no-repeat center top 35px $cl16;
+  .headline {
+    @extend .medium-text;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: $cl08;
+    padding: 8px 15px;
+  }
+  .list {
+    display: flex;
+    padding: 0 0 15px 0;
+    justify-content: center;
+    margin-top: 130px;
+    li {
+      list-style: none;
+      margin: 0 10px;
+      transition: $transition;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
