@@ -1,0 +1,190 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.timeline {
+  padding: 20px 15px 130px 15px;
+  background-color: $c-white;
+  background-image: url(../images/bg-timeline.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100%;
+  text-align: center;
+  @media (min-width: $breakpoints-md) {
+    padding: 20px 15px 160px 15px;
+  }
+  @media (min-width: $breakpoints-lg) {
+    padding-bottom: 20px;
+  }
+  .headline {
+    @extend .big-text;
+    margin: 0;
+    text-transform: uppercase;
+    a {
+      text-decoration: none;
+      color: $c-dark;
+    }
+  }
+  .timeline-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 50px 0 50px;
+    padding: 0;
+    @media (min-width: $breakpoints-lg) {
+      margin: 120px 100px 0 100px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 5px;
+      background: $cl05;
+      @media (min-width: $breakpoints-lg) {
+        width: 100%;
+        height: 5px;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 118px;
+      height: 60px;
+      bottom: 0;
+      left: 0;
+      transform: translate(-50%, 100%);
+      background: url(../images/cup1.png);
+      @media (min-width: $breakpoints-lg) {
+        bottom: initial;
+        left: initial;
+        right: 0;
+        top: -50px;
+        transform: translate(50%);
+      }
+    }
+    .item {
+      position: relative;
+      list-style: none;
+      width: 100%;
+      margin-top: 20px;
+      padding-left: 30px;
+      text-align: left;
+      cursor: pointer;
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+      @media (min-width: $breakpoints-lg) {
+        width: 20%;
+        margin-top: 0;
+        padding-left: 0;
+        text-align: center;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 5px;
+          background: $c-white;
+          left: 0;
+          opacity: 0;
+          border-top: 1px solid $cl14;
+          border-bottom: 1px solid $cl14;
+          transition: $transition;
+        }
+        .inner {
+          position: absolute;
+          pointer-events: none;
+          opacity: 0;
+          transform: translate(-50%, -60%);
+          top: -50px;
+          transition: $transition;
+          background: $cl08;
+          color: $c-white;
+          border-radius: $round1;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-top: 3px solid $cl08;
+          }
+          .title {
+            font-weight: 700;
+            text-transform: uppercase;
+            background: $cl07;
+            padding: 3px 10px;
+            border-radius: $round1 $round1 0 0;
+          }
+          .date {
+            padding: 5px 10px;
+            font-weight: 700;
+          }
+        }
+      }
+      
+      &::after {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: $cl07;
+        border-radius: 50%;
+        top: 0;
+        left: 2px;
+        transform: translateX(-50%);
+        border: 2px solid $c-white;
+        @media (min-width: $breakpoints-lg) {
+          top: -7px;
+          left: 0;
+        }
+      }
+      &:hover,
+      &.active {
+        &::before {
+          opacity: 1;
+          width: 100%;
+        }
+        .inner {
+          pointer-events: initial;
+          opacity: 1;
+          transform: (-50%, -80%);
+        }
+      }
+    }
+  }
+  .info {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    @media (min-width: $breakpoints-lg) {
+      position: initial;
+      margin-top: 120px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .user {
+      padding: 0 10px;
+      position: relative;
+      padding-left: 60px;
+      @media (min-width: $breakpoints-lg) {
+        text-align: left;
+        img {
+          position: absolute;
+          bottom: 6px;
+          left: 0;
+        }
+      }
+      .number {
+        @extend .big-text-01;
+        font-weight: 700;
+        margin-top: 10px;
+        color: $cl08;
+      }
+      .title {
+        margin-top: 5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

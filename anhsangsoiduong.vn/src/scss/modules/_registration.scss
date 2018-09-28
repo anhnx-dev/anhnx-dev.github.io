@@ -1,0 +1,133 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.registration {
+  margin-top: 60px;
+  .inner {
+    background: $c-white;
+    padding: 20px 15px;
+    @media (min-width: $breakpoints-xl) {
+      margin: 0 95px;
+      padding: 30px 50px 50px 50px;
+    }
+    .class00 {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: -10px;
+      font-style: italic;
+      @media (min-width: $breakpoints-md) {
+        padding-left: 20%;
+        text-align: center;
+      }
+    }
+    .class01 {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: -10px;
+      padding-right: 30px;
+      @media (min-width: $breakpoints-md) {
+        width: 20%;
+        text-align: right;
+      }
+    }
+    .or {
+      margin: 10px 0 -10px 0;
+      @media (min-width: $breakpoints-md) {
+        width: 20%;
+        text-align: right;
+        >i {
+          display: inline-block;
+          transform: translateX(100%);
+        }
+      }
+    }
+    .btn-group {
+      margin-top: 20px;
+      text-align: center;
+      @media (min-width: $breakpoints-md) {
+        padding-left: 20%;
+        margin-top: 40px;
+      }
+      .btn {
+        width: 150px;
+        max-width: 100%;
+        color: $c-white;
+        margin-bottom: 10px;
+        @media (min-width: $breakpoints-md) {
+          margin-top: 0;
+        }
+        &.btn-save {
+          background: $c-green;
+        }
+        &.btn-exit {
+          background: $c-red2;
+        }
+        &:hover,
+        &:focus {
+          background: $c-blue1;
+          border-color: $c-blue1;
+        }
+      }
+    }
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+      label {
+        width: 100%;
+        font-weight: 500;
+        @media (min-width: $breakpoints-md) {
+          padding-right: 30px;
+          text-align: right;
+          width: 20%;
+        }
+      }
+      .input {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        @media (min-width: $breakpoints-md) {
+          width: 80%;
+          margin-top: 0;
+        }
+        span {
+          display: inline-block;
+          margin: 0 5px;
+          transform: scale(1.5);
+        }
+        .form-control {
+          display: block;
+          width: 100%;
+          &.date {
+            display: inline-block;
+            width: 60px;
+            &.year {
+              width: 95px;
+            }
+          }
+        }
+        .item {
+          display: inline-block;
+          margin-right: 20px;
+        }
+        .form-text {
+          display: block;
+          font-style: italic;
+          color: $c-grey1;
+        }
+        .text-muted {
+          position: absolute;
+          top: 10px;
+          right: -10px;
+          color: $c-red2;
+        }
+        .form-eror {
+          color: $c-red2;
+        }
+      }
+    }
+  }
+}

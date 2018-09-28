@@ -1,0 +1,38 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.organizations {
+  background: $c-white;
+  min-height: 160px;
+  .headline {
+    @extend .medium-text;
+    padding: 6px 15px;
+    margin: 0;
+    background: $cl27;
+    color: $cl26;
+    text-align: center;
+  }
+  .list {
+    padding: 20px 15px;
+    margin: 0;
+    li {
+      list-style: none;
+    }
+    a {
+      position: relative;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      color: $c-dark;
+      img {
+        max-height: 70px;
+      }
+      img+span{
+        margin-left: 15px;
+      }
+    }
+  }
+}

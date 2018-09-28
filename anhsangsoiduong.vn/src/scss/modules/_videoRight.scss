@@ -1,0 +1,70 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.video-right {
+  background: $c-white;
+  border-radius: $round1;
+  overflow: hidden;
+  padding-bottom: 30px;
+  .headline {
+    @extend .medium-text;
+    margin: 0;
+    padding: 16px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    background: $c-navy1;
+    color: $c-white;
+  }
+  .video-item {
+    .title {
+      padding: 10px 15px;
+      margin: 0;
+      @extend .small-text-01;
+      a {
+        color: $c-dark;
+        text-decoration: none;
+        transition: $transition;
+        &:hover,
+        &:focus {
+          color: $c-blue;
+        }
+      }
+    }
+  }
+  .list {
+    margin: 0;
+    padding: 0;
+    .list-item {
+      list-style: none;
+      padding: 15px;
+      border-bottom: 1px solid $bc-light;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      .title {
+        margin: 0;
+        @extend .small-text-01;
+        a {
+          color: $c-dark;
+          text-decoration: none;
+          transition: $transition;
+          &:hover,
+          &:focus {
+            color: $c-blue;
+          }
+        }
+      }
+      .date {
+        margin: 0;
+        color: $c-grey;
+      }
+    }
+  }
+  .btn {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 11px 15px;
+  }
+}
