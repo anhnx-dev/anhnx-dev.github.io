@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="src/css/main.min.css">
+
+</head>
+
+<body class="home">
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript. <br>
+					Bạn vui lòng cập nhận trình đuyệt web hoặc mở JavaScript trong phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app">
+
+		<!-- top bar -->
+		<section class="top-bar">
+			<div class="container">
+				<div class="wrapper">
+					<nav class="navbar">
+						<div class="brand"><a href=""><img src="images/logo-vnedu.png" alt=""></a></div>
+						<ul class="nav">
+							<li class="item"><a href=""><img src="../src/images/sohagame-16x16.png" alt=""><span>Chinh phục Vũ Môn</span></a></li>
+							<li class="item"><a href=""><img src="../src/images/hoc-cung-thu-khoa.png" alt=""><span>Học cùng thủ khoa</span><img
+									 src="../src/images/hot.gif" alt=""></a></li>
+						</ul>
+					</nav>
+					<div class="user">
+						<button v-on:click="openUserManege" class="login">Đăng nhập</button>
+						<button v-on:click="openUserRegistration" class="registration">Đăng ký</button>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- top bar end -->
+
+		<!-- main -->
+		<main class="main">
+
+			<!-- home section 01 -->
+			<section class="home-section">
+				<div class="container">
+					<div class="block block-01">
+						<img class="bg" src="images/section-1.jpg" alt="">
+						<div class="wrapper">
+							<ul class="nav">
+								<li><a href=""><img src="../src/images/bt_cuocthi.png" alt=""></a></li>
+								<li><a href=""><img src="../src/images/bt_guide.png" alt=""></a></li>
+								<li><a href=""><img src="../src/images/bt_support.png" alt=""></a></li>
+							</ul>
+							<div class="logo"><img src="/images/home-logo.png" alt=""></div>
+							<div class="btn-start">
+								<a href=""><img src="../src/images/btn.png" alt=""></a>
+							</div>
+							<div class="btn-group">
+								<a href="" class="btn">
+									<img src="../src/images/download-android.png" alt="download-android">
+									<img class="hover" src="../src/images/download-android-hover.png" alt="download-android-hover">
+								</a>
+								<a href="" class="btn">
+									<img src="../src/images/download-ios.png" alt="download-iso">
+									<img class="hover" src="../src/images/download-ios-hover.png" alt="download-iso-hover">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="block block-02">
+						<img class="bg" src="images/map.jpg" alt="">
+						<div class="title"><img src="images/title-1.png" alt=""></div>
+					</div>
+					<div class="block block-03">
+						<img class="bg" src="images/cards.jpg" alt="">
+						<div class="title-01"><img src="images/title-2.png" alt=""></div>
+						<div class="title-02"><img src="images/title-3.png" alt=""></div>
+					</div>
+					<div class="block block-04">
+						<img class="bg" src="images/room.jpg" alt="">
+						<div class="title"><img src="images/title-4.png" alt=""></div>
+					</div>
+					<div class="block block-05">
+						<img class="bg" src="images/platform.jpg" alt="">
+						<div class="title"><img src="images/title-4.png" alt=""></div>
+					</div>
+					<div class="block block-06">
+						<div class="copyright">CÔNG TY CỔ PHẦN DỊCH VỤ CÔNG NGHỆ GIÁO DỤC VIỆT NAM (VNEDUTECH)</div>
+						<div class="phone">Hỗ trợ kỹ thuật: 1900 636 444 - 0967 345 456</div>
+					</div>
+				</div>
+			</section>
+			<!-- home section 01 end -->
+
+		</main>
+		<!-- main end -->
+
+		<!-- age -->
+		<div class="age"><img src="../src/images/icon_age.png" alt=""></div>
+		<!-- age end -->
+
+		<!-- social right -->
+		<ul class="social-right">
+			<li class="item">
+				<a href=""><img src="../src/images/link_z.png" alt=""></a>
+			</li>
+			<li class="item">
+				<a href=""><img src="../src/images/link_f.png" alt=""></a>
+				<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=58&layout=box_count&action=like&size=small&show_faces=true&share=true&height=65&appId=226666764204714"
+				 width="58" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+				 allow="encrypted-media"></iframe>
+			</li>
+			<li class="item">
+				<a href=""><img src="../src/images/youtube.png" alt=""></a>
+			</li>
+		</ul>
+		<!-- social right end -->
+
+		<!-- hot news -->
+		<div class="hot-news">
+			<div v-bind:class="{ active: !hotNews }" v-on:click="openHotNews" class="open">
+				<i class="fa fa-chevron-up"></i>
+				<div class="inner">
+					<p>Tin Hot</p>
+					<p><img src="../src/images/new.gif" alt=""></p>
+				</div>
+			</div>
+			<div v-bind:class="{ active: hotNews }" class="wrapper">
+				<div v-on:click="closeHotnew" class="close"><i class="fa fa-chevron-down"></i></div>
+				<div class="headline">Tin hot <img src="../src/images/new.gif" alt=""></div>
+				<div class="list">
+					<div class="block">
+						<figure class="item">
+							<div class="img-cover">
+								<a href="#" class="img-cover__wrapper">
+									<img src="images/origin_1442818230.png" alt="">
+								</a>
+							</div>
+							<div class="content">
+								<h3 class="title">
+									<a href="">Phiên bản cập nhật Phòng học VIP ngày 18-1-2016 có gì HOT!?</a>
+								</h3>
+							</div>
+						</figure>
+						<figure class="item">
+							<div class="img-cover">
+								<a href="#" class="img-cover__wrapper">
+									<img src="images/origin_1449136902.jpg" alt="">
+								</a>
+							</div>
+							<div class="content">
+								<h3 class="title">
+									<a href="">Thử nghiệm tính năng giải đấu TRANH BÁ BỐN PHƯƠNG</a>
+								</h3>
+							</div>
+						</figure>
+					</div>
+					<div class="block">
+						<figure class="item">
+							<div class="img-cover">
+								<a href="#" class="img-cover__wrapper">
+									<img src="images/origin_1442818230.png" alt="">
+								</a>
+							</div>
+							<div class="content">
+								<h3 class="title">
+									<a href="">Phiên bản cập nhật Phòng học VIP ngày 18-1-2016 có gì HOT!?</a>
+								</h3>
+							</div>
+						</figure>
+						<figure class="item">
+							<div class="img-cover">
+								<a href="#" class="img-cover__wrapper">
+									<img src="images/origin_1449136902.jpg" alt="">
+								</a>
+							</div>
+							<div class="content">
+								<h3 class="title">
+									<a href="">Thử nghiệm tính năng giải đấu TRANH BÁ BỐN PHƯƠNG</a>
+								</h3>
+							</div>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- hot news end -->
+
+		<!-- user manege -->
+		<div v-if="userManege" class="user-manege">
+			<div v-on:click="closeUserManege" class="over"></div> <!-- /over -->
+			<div class="form">
+				<div class="top">
+					<img src="../src/images/egame-logo2.png" alt="">
+					<div v-on:click="closeUserManege" class="closed"></div>
+				</div>
+				<div class="center">
+					<form v-if="userLogIn" class="log-in">
+						<strong><i class="fa fa-group"></i> Đã là thành viên?</strong>
+						<small class="form-text">Không tồn tại tài khoản hoặc mật khẩu sai</small>
+						<div class="form-group">
+							<input class="form-control" type="user" placeholder="Tài khoản">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="password" placeholder="Mật khẩu">
+						</div>
+						<div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label">Ghi nhớ đăng nhập <a href="http://">Quên mật khẩu?</a></label>
+						</div>
+						<button class="btn" type="submit">Đăng nhập</button>
+					</form>
+					<form v-if="userRegistration" class="registration">
+						<strong><i class="fa fa-group"></i> Thành viên mới?</strong>
+						<small class="form-text">Xác nhận mật khẩu sai</small>
+						<div class="form-group">
+							<input class="form-control" type="user" placeholder="Tài khoản">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="password" placeholder="Mật khẩu">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="password" placeholder="Xác nhận mật khẩu">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="phone" placeholder="Số điện thoại">
+						</div>
+						<div class="form-group form-select">
+							<label>Bạn biết CPVM từ</label>
+							<select class="form-control">
+								<option selected disabled>Nguồn nào?</option>
+								<option>Nhà trường</option>
+								<option>Người quen giới thiệu</option>
+								<option>Khác</option>
+							</select>
+						</div>
+						<button class="btn" type="submit">Đăng nhập</button>
+					</form>
+				</div>
+				<div v-if="userLogIn" class="bottom">
+					<div class="inner">
+						Chưa có tài khoản?
+						<button v-on:click="openUserRegistration" class="btn btn-e">Đăng ký ngay</button>
+						Hoặc chơi bằng
+						<button class="btn btn-z"><img src="../src/images/zingme.jpg" alt=""></button>
+					</div>
+				</div>
+			</div> <!-- /form -->
+		</div>
+		<!-- user manege end -->
+
+
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/jquery.fancybox.min.js"></script>
+	<script src="src/js/vendor/vue.min.js"></script>
+	<script src="src/js/vendor/flickity.pkgd.min.js"></script>
+	<script src="src/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="src/css/main.min.css">
+
+</head>
+
+<body>
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript. <br>
+					Bạn vui lòng cập nhận trình đuyệt web hoặc mở JavaScript trong phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<!-- back to top -->
+	<div class="js-back-to-top-end"></div>
+	<div class="back-to-top js-back-to-top"><i class="fa fa-chevron-up"></i></div>
+	<!-- back to top end -->
+
+	<div id="app">
+
+		<!-- top bar -->
+		<section class="top-bar">
+			<div class="container">
+				<div class="wrapper">
+					<nav class="navbar">
+						<div class="brand"><a href=""><img src="images/logo-vnedu.png" alt=""></a></div>
+						<ul class="nav">
+							<li class="item"><a href=""><img src="../src/images/sohagame-16x16.png" alt=""><span>Chinh phục Vũ Môn</span></a></li>
+							<li class="item"><a href=""><img src="../src/images/hoc-cung-thu-khoa.png" alt=""><span>Học cùng thủ khoa</span><img
+									 src="../src/images/hot.gif" alt=""></a></li>
+						</ul>
+					</nav>
+					<div class="user">
+						<button v-on:click="openUserManege" class="login">Đăng nhập</button>
+						<button v-on:click="openUserRegistration" class="registration">Đăng ký</button>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- top bar end -->
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- menu -->
+			<nav class="menu">
+				<div class="container">
+					<div class="wrapper">
+						<div class="brand"><a href=""><img src="images/logo.png" alt=""></a></div>
+						<a href="" class="btn"><img src="../src/images/btn.png" alt=""></a>
+						<ul class="nav js-nav">
+							<li class="nav-item">
+								<a href="" class="nav-link active">Tin Tức</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Sự kiện</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Tin tức</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Cuộc thi Chinh Phục Vũ Môn 2015 - 2016</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Echat - Phòng học VIP của CPVM</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thư viện</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hình ảnh</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Screenshot</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Wallpaper</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Hướng dấn</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn cơ bản</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Cập nhật danh sách địa điểm bán thẻ game Chinh Phục Vũ Môn</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn mua hàng</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn đăng nhập</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Học tập</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Phòng học thông minh</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn tải dữ liệu bài học khi dùng thẻ VIP học tập</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn sử dụng Winrar nén, giải nén file dữ liệu</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn kích hoạt thẻ Vip học tập</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Đấu trường</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn sử dụng Thẻ bài</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn xây tinh cầu</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Đổ xúc xắc bá đạo</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Nhiệm vụ ngày</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Cửa hàng</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Nâng cấp</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Tiến hóa Thẻ bài</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Câu hỏi thường gặp</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn nhập Giftcode</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn cài đặt bản Mobile</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn đăng ký cuộc thi Chinh Phục Vũ Môn</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Bé giỏi tiếng Anh</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Bé giỏi tiếng anh - Gói học tập mới nhất trên Chinh Phục Vũ Môn</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn kích hoạt sản phẩm Bé giỏi tiếng Anh</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Giới thiệu sản phẩm Bé giỏi tiếng anh lứa tuổi từ 5 - 6</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Giới thiệu sản phẩm Bé giỏi tiếng anh lứa tuổi từ 4 - 5</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Giới thiệu sản phẩm Bé giỏi tiếng anh lứa tuổi từ 3 - 4</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- menu end -->
+
+			<!-- button group -->
+			<section class="button-group">
+				<div class="container">
+					<div class="inner">
+						<a href="" class="btn">
+							<img class="bg" src="../src/images/download-android.png" alt="">
+							<img class="hover" src="../src/images/download-android-hover.png" alt="">
+							<img class="code-qr" src="../src/images/qr-android.png" alt="">
+						</a>
+						<a href="" class="btn">
+							<img class="bg" src="../src/images/download-ios.png" alt="">
+							<img class="hover" src="../src/images/download-ios-hover.png" alt="">
+							<img class="code-qr" src="../src/images/qr-ios2.png" alt="">
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- button group end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+			<div class="container">
+
+				<div class="contact">
+					<div class="wrapper">
+						<div class="inner">
+
+							<h1 class="headline"><span>Liên Hệ</span></h1> <!-- /headline -->
+
+							<div class="content">
+								<div class="row">
+									<div class="col-6">
+										<div class="info">
+											<h2 class="title">CÔNG TY CỔ PHẦN DỊCH VỤ CÔNG NGHỆ GIÁO DỤC VIỆT NAM (VNEDUTECH)</h2>
+											<div class="address">Tầng 4, tòa nhà 25T1, đường Hoàng Đạo Thúy, phường Trung Hòa, quận Cầu Giấy, TP. Hà Nội</div>
+											<ul class="list">
+												<li><i class="fa fa-phone"></i> Hỗ trợ đối tác: 098 800 8000</li>
+												<li><i class="fa fa-phone"></i> Hỗ trợ kỹ thuật: 1900 636 444 - 0967 345 456</li>
+												<li><i class="fa fa-home"></i> <a href="">http://vnedutech.vn</a></li>
+												<li><i class="fa fa-facebook"></i> <a href="">Chúng tôi trên Facebook</a></li>
+												<li><i class="fa fa-envelope"></i> <a href="">contact@vnedutech.vn</a></li>
+											</ul>
+										</div>
+										<div class="form-contact">
+											<h2 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+											<form class="row">
+												<div class="col-6 form-group">
+													<input type="name" class="form-control" placeholder="Họ và tên...">
+												</div>
+												<div class="col-6 form-group">
+													<input type="email" class="form-control" placeholder="Email...">
+												</div>
+												<div class="col-12 form-group">
+													<textarea class="form-control" rows="6" placeholder="Nộ dung..."></textarea>
+												</div>
+												<div class="col-12 button">
+													<button type="submit" class="btn btn-contact">Gửi thông tin</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="map">
+											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6363086371684!2d105.79868641539858!3d21.007210986010143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca143131561%3A0x5d47295f81445f37!2zMjVUMSBUcnVuZyBIb8OgIE5ow6JuIENow61uaA!5e0!3m2!1svi!2s!4v1539145697373"
+											 width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div> <!-- /main right -->
+
+			</div>
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 footer-contact">
+						<div class="inner">
+							<h4 class="title">CÔNG TY CỔ PHẦN DỊCH VỤ CÔNG NGHỆ GIÁO DỤC VIỆT NAM (VNEDUTECH)</h4>
+							<div class="content">
+								Tầng 4, tòa nhà 25T1, đường Hoàng Đạo Thúy, phường Trung Hòa, quận Cầu Giấy, TP. Hà Nội<br>
+								Hỗ trợ đối tác: 098 800 8000 - Hỗ trợ kỹ thuật: 0967 345 456 - 0985758223<br>
+								Website: www.vnedutech.vn.vn - Email: <a href="">contact@vnedutech.vn</a>
+							</div>
+						</div>
+					</div>
+					<nav class="col-6 nav-footer">
+						<ul class="nav">
+							<li class="nav-item"><a href="" class="nav-link">Trang chủ</a></li>
+							<li class="nav-item"><a href="" class="nav-link">Tin tức</a></li>
+							<li class="nav-item"><a href="" class="nav-link">Thư viện</a></li>
+							<li class="nav-item"><a href="" class="nav-link">Hưỡng dẫn</a></li>
+							<li class="nav-item"><a href="" class="nav-link">Liên hệ</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+		<!-- social right -->
+		<ul class="social-right">
+			<li class="item">
+				<a href=""><img src="../src/images/link_z.png" alt=""></a>
+			</li>
+			<li class="item">
+				<a href=""><img src="../src/images/link_f.png" alt=""></a>
+				<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=58&layout=box_count&action=like&size=small&show_faces=true&share=true&height=65&appId=226666764204714"
+				 width="58" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+				 allow="encrypted-media"></iframe>
+			</li>
+			<li class="item">
+				<a href=""><img src="../src/images/youtube.png" alt=""></a>
+			</li>
+		</ul>
+		<!-- social right end -->
+
+		<!-- user manege -->
+		<div v-if="userManege" class="user-manege">
+			<div v-on:click="closeUserManege" class="over"></div> <!-- /over -->
+			<div class="form">
+				<div class="top">
+					<img src="../src/images/egame-logo2.png" alt="">
+					<div v-on:click="closeUserManege" class="closed"></div>
+				</div>
+				<div class="center">
+					<form v-if="userLogIn" class="log-in">
+						<strong><i class="fa fa-group"></i> Đã là thành viên?</strong>
+						<small class="form-text">Không tồn tại tài khoản hoặc mật khẩu sai</small>
+						<div class="form-group">
+							<input class="form-control" type="user" placeholder="Tài khoản">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="password" placeholder="Mật khẩu">
+						</div>
+						<div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label">Ghi nhớ đăng nhập <a href="http://">Quên mật khẩu?</a></label>
+						</div>
+						<button class="btn" type="submit">Đăng nhập</button>
+					</form>
+					<form v-if="userRegistration" class="registration">
+						<strong><i class="fa fa-group"></i> Thành viên mới?</strong>
+						<small class="form-text">Xác nhận mật khẩu sai</small>
+						<div class="form-group">
+							<input class="form-control" type="user" placeholder="Tài khoản">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="password" placeholder="Mật khẩu">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="password" placeholder="Xác nhận mật khẩu">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="phone" placeholder="Số điện thoại">
+						</div>
+						<div class="form-group form-select">
+							<label>Bạn biết CPVM từ</label>
+							<select class="form-control">
+								<option selected disabled>Nguồn nào?</option>
+								<option>Nhà trường</option>
+								<option>Người quen giới thiệu</option>
+								<option>Khác</option>
+							</select>
+						</div>
+						<button class="btn" type="submit">Đăng nhập</button>
+					</form>
+				</div>
+				<div v-if="userLogIn" class="bottom">
+					<div class="inner">
+						Chưa có tài khoản?
+						<button v-on:click="openUserRegistration" class="btn btn-e">Đăng ký ngay</button>
+						Hoặc chơi bằng
+						<button class="btn btn-z"><img src="../src/images/zingme.jpg" alt=""></button>
+					</div>
+				</div>
+			</div> <!-- /form -->
+		</div>
+		<!-- user manege end -->
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/jquery.fancybox.min.js"></script>
+	<script src="src/js/vendor/vue.min.js"></script>
+	<script src="src/js/vendor/flickity.pkgd.min.js"></script>
+	<script src="src/js/app.js"></script>
+
+</body>
+
+</html>
