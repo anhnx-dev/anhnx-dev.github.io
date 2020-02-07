@@ -1,0 +1,631 @@
+/* Extra small devices (portrait phones, less than 576px) No media query since this is the default in Bootstrap */
+
+
+/*Extra large devices (large desktops full hd, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+
+/*Extra large devices (large desktops no full hd, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .language {
+        padding-right: 10px;
+    }
+    .menu-main .navbar-nav .nav-item {
+        margin: 0 10px;
+    }
+    .menu-main .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+    .news>.inner {
+        padding: 25px 10px;
+    }
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .hide-home {
+        display: block;
+    }
+    .f-thongtin {
+        flex: 0 0 66%;
+        max-width: 66%;
+    }
+    .f-hoatdong {
+        flex: 0 0 34%;
+        max-width: 34%;
+    }
+    .f-hoatdong ul li {
+        width: 100%;
+        float: initial;
+        margin-bottom: 0;
+    }
+    .footer strong {
+        margin-bottom: 10px;
+    }
+    .tatthanh {
+        display: none;
+    }
+    .toanphat {
+        flex: 0 0 55%;
+        max-width: 55%;
+    }
+    .social {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+    .f-thongtin .diachi {
+        margin-bottom: 15px;
+    }
+    .f-thongtin .dienthoai {
+        margin-bottom: 15px;
+    }
+    .footer {
+        padding-top: 20px;
+    }
+    .slide-bg .khungAnh {
+        height: initial;
+    }
+    .slide-bg .khungAnh {
+        height: 375px;
+    }
+    .news {
+        position: initial;
+        width: 100%;
+        height: auto;
+        margin-top: 375px;
+    }
+    .slidehome {
+        height: auto;
+    }
+    .slide-thutu {
+        bottom: initial;
+        width: 100%;
+        top: 225px;
+    }
+    .slide-bg .slick-dots {
+        right: 10px;
+        bottom: initial;
+        top: 345px;
+    }
+    .news strong {
+        display: block;
+        padding-right: 50%;
+        float: left;
+    }
+    .news .about {
+        width: 50%;
+        float: left;
+    }
+    .news .tt-sk {
+        width: 45%;
+        float: right;
+        margin-top: -92px;
+    }
+    .news .tt-sk .inner {
+        margin-bottom: 20px;
+    }
+    .news .about .text {
+        height: 120px;
+    }
+    .logo .khungAnh {
+        margin-left: 10px;
+    }
+    .logo {
+        flex: 0 0 10%;
+        max-width: 10%;
+    }
+    .menu-main {
+        flex: initial;
+        max-width: initial;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        top: 70px;
+        left: 0;
+        height: auto;
+    }
+    .language {
+        flex: 0 0 90%;
+        max-width: 90%;
+        padding-right: 70px;
+    }
+    .menu-main.navbar-light .navbar-toggler {
+        position: fixed;
+        top: 20px;
+        right: 10px;
+        width: 35px;
+        height: 25px;
+    }
+    .menu-main .navbar-toggler span b,
+    .menu-main .navbar-toggler span:after,
+    .menu-main .navbar-toggler span:before {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #fff;
+        left: 0;
+        top: 50%;
+        margin-top: -2px;
+        border-radius: 2px;
+        transition: all 0.5s;
+    }
+    .menu-main .navbar-toggler.active span b {
+        opacity: 0;
+        transform: scale(0);
+    }
+    .menu-main .navbar-toggler span:after {
+        content: "";
+        top: 93%;
+        margin: 0;
+    }
+    .menu-main .navbar-toggler.active span:after {
+        top: 50%;
+        margin-top: -2px;
+        transform: rotate(-45deg);
+    }
+    .menu-main .navbar-toggler span:before {
+        content: "";
+        top: 0;
+        margin: 0;
+    }
+    .menu-main .navbar-toggler.active span:before {
+        top: 50%;
+        margin-top: -2px;
+        transform: rotate(45deg);
+    }
+    .menu-main .navbar-collapse {
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .form-search {
+        flex: initial;
+        max-width: initial;
+        width: 100%;
+        position: relative;
+        text-align: initial;
+        line-height: 54px;
+        border-bottom: 1px solid #525051;
+    }
+    .form-search input {
+        position: initial;
+        width: 96%;
+        top: 0;
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+        background: #fff;
+        line-height: 36px;
+        margin: 0 2%;
+        color: #333;
+    }
+    .form-search .fa {
+        position: absolute;
+        top: 50%;
+        right: 21px;
+        color: #333333;
+        font-size: 22px;
+        top: 15px;
+    }
+    .menu-main .navbar-nav .nav-item.active:after,
+    .menu-main .navbar-nav .nav-item:hover:after {
+        content: initial;
+    }
+    .menu-main .navbar-nav .nav-item {
+        line-height: 46px;
+        border-bottom: 1px solid #515151;
+        margin: 0;
+    }
+    .menu-main .navbar-nav .nav-link {
+        padding: 0 2%;
+    }
+    .menu-main .navbar-nav .nav-item.active .nav-link {
+        background: #ff0000;
+    }
+    .menu-main .dropdown .dropdown-menu {
+        background: #000;
+        transform: initial !important;
+        height: 0;
+        overflow: hidden;
+    }
+    .menu-main .dropdown.active .dropdown-menu {
+        height: auto;
+    }
+    .menu-main .dropdown .dropdown-item {
+        line-height: 46px;
+        padding: 0 4%;
+        border-bottom: 1px solid #515151;
+    }
+    .block-right {
+        display: none;
+    }
+    .s-breadcrumb .khungAnh:before {
+        padding-bottom: 32.57%;
+    }
+    .block-left {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*Small devices (landscape phones, 0px and up)*/
+
+@media (max-width: 767px) {
+    .hide-home {
+        display: block;
+    }
+    .f-thongtin {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .f-hoatdong {
+        display: none;
+    }
+    .f-hoatdong ul li {
+        width: 100%;
+        float: initial;
+        margin-bottom: 0;
+    }
+    .footer strong {
+        margin-bottom: 10px;
+    }
+    .tatthanh {
+        display: none;
+    }
+    .toanphat {
+        flex: 0 0 100%;
+        max-width: 100%;
+        font-size: 12px;
+    }
+    .social {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .f-thongtin p {
+        margin-bottom: 15px;
+        margin-left: 23px;
+    }
+    .f-thongtin .dienthoai {
+        margin-bottom: 15px;
+    }
+    .footer {
+        padding-top: 20px;
+    }
+    .slide-bg .khungAnh {
+        height: initial;
+    }
+    .slide-bg .khungAnh {
+        height: 230px;
+    }
+    .news {
+        position: initial;
+        width: 100%;
+        height: auto;
+        margin-top: 230px;
+    }
+    .slidehome {
+        height: auto;
+    }
+    .slide-thutu {
+        bottom: initial;
+        width: 100%;
+        top: 85px;
+        left: 10px;
+    }
+    .slide-bg .slick-dots {
+        right: 10px;
+        bottom: initial;
+        top: 205px;
+    }
+    .news strong {
+        display: block;
+    }
+    .news .tt-sk .inner {
+        margin-bottom: 20px;
+    }
+    .news .about .text {
+        height: 120px;
+    }
+    .logo .khungAnh {
+        margin-left: 10px;
+    }
+    .logo {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .menu-main {
+        flex: initial;
+        max-width: initial;
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+        top: 70px;
+        left: 0;
+        height: auto;
+    }
+    .language {
+        flex: 0 0 80%;
+        max-width: 80%;
+        padding-right: 70px;
+    }
+    .menu-main.navbar-light .navbar-toggler {
+        position: absolute;
+        top: -50px;
+        right: 10px;
+        width: 35px;
+        height: 25px;
+    }
+    .menu-main .navbar-toggler span b,
+    .menu-main .navbar-toggler span:after,
+    .menu-main .navbar-toggler span:before {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #fff;
+        left: 0;
+        top: 50%;
+        margin-top: -2px;
+        border-radius: 2px;
+        transition: all 0.5s;
+    }
+    .menu-main .navbar-toggler.active span b {
+        opacity: 0;
+        transform: scale(0);
+    }
+    .menu-main .navbar-toggler span:after {
+        content: "";
+        top: 93%;
+        margin: 0;
+    }
+    .menu-main .navbar-toggler.active span:after {
+        top: 50%;
+        margin-top: -2px;
+        transform: rotate(-45deg);
+    }
+    .menu-main .navbar-toggler span:before {
+        content: "";
+        top: 0;
+        margin: 0;
+    }
+    .menu-main .navbar-toggler.active span:before {
+        top: 50%;
+        margin-top: -2px;
+        transform: rotate(45deg);
+    }
+    .menu-main .navbar-collapse {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .form-search {
+        flex: initial;
+        max-width: initial;
+        width: 100%;
+        position: relative;
+        text-align: initial;
+        line-height: 54px;
+        border-bottom: 1px solid #525051;
+    }
+    .form-search input {
+        position: initial;
+        width: 96%;
+        top: 0;
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+        background: #fff;
+        line-height: 36px;
+        margin: 0 2%;
+        color: #333;
+    }
+    .form-search .fa {
+        position: absolute;
+        top: 50%;
+        right: 21px;
+        color: #333333;
+        font-size: 22px;
+        top: 15px;
+    }
+    .menu-main .navbar-nav .nav-item.active:after,
+    .menu-main .navbar-nav .nav-item:hover:after {
+        content: initial;
+    }
+    .menu-main .navbar-nav .nav-item {
+        line-height: 46px;
+        border-bottom: 1px solid #515151;
+        margin: 0;
+    }
+    .menu-main .navbar-nav .nav-link {
+        padding: 0 2%;
+        line-height: 50px;
+    }
+    .menu-main .navbar-nav .nav-item.active .nav-link {
+        background: #ff0000;
+    }
+    .menu-main .dropdown .dropdown-menu {
+        background: #000;
+        transform: initial !important;
+        height: 0;
+        overflow: hidden;
+    }
+    .menu-main .dropdown.active .dropdown-menu {
+        height: auto;
+    }
+    .menu-main .dropdown .dropdown-item {
+        line-height: 46px;
+        padding: 0 4%;
+        border-bottom: 1px solid #515151;
+    }
+    .block-right {
+        display: none;
+    }
+    .s-breadcrumb .khungAnh:before {
+        padding-bottom: 72%;
+    }
+    .block-left {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .slide-thutu h2 {
+        width: 62%;
+        padding: 0px;
+    }
+    .slide-thutu span {
+        width: 36%;
+    }
+    .slide-bg {
+        height: 230px;
+    }
+    .slide-bg .img {
+        height: auto;
+    }
+    .news>.inner {
+        padding: 10px;
+    }
+    .f-thongtin p>i {
+        position: absolute;
+        left: 10px;
+    }
+    .copyright {
+        line-height: 30px;
+        padding-bottom: 5px;
+    }
+    .news-left .img,
+    .news-left .content {
+        flex: initial;
+        max-width: initial;
+        width: 100%;
+    }
+    .news-left .khungAnh:before {
+        padding-bottom: 65%;
+    }
+    .news-left .item {
+        display: block;
+    }
+    .block-left>.inner {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .news-left .content {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 35px;
+    }
+    .header {
+        position: absolute;
+    }
+    .cochu {
+        display: none;
+    }
+    .thongke-luotxem {
+        margin-left: 10px;
+    }
+    .slider-block-right {
+        padding: 20px 0;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .main-datc .block-left>.inner {
+        padding-right: 10px;
+    }
+    .main-tvtc {
+        padding-right: 0;
+    }
+    .library-images .inner .item:nth-child(1) {
+        width: 100%;
+        float: initial;
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    .library-images .item {
+        width: 50%;
+        padding: 0 5px;
+    }
+    .library-images>.inner {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .library-images .item:nth-child(1) .title {
+        margin-bottom: 5px;
+    }
+    .library-videos .item:nth-child(1) .img,
+    .library-videos .item:nth-child(1) .content {
+        width: 100%;
+        float: initial;
+        padding: 0;
+    }
+    .library-videos .item:nth-child(1) .title {
+        font-size: 18px;
+        height: 90px;
+        margin-bottom: 0;
+    }
+    .library-videos .item {
+        width: 50%;
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    .library-videos .inner .item:nth-child(1) {
+        padding: 0 5px;
+        float: initial;
+    }
+    .slider-block-right .inner .item:nth-child(1) {
+        float: left;
+    }
+    .library-videos .inner {
+        margin: 0;
+    }
+    .library-videos>.inner {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .library-videos .item .img {
+        padding: 0;
+    }
+    .library-videos .item .content {
+        padding: 0;
+    }
+    .library-videos .item .title {
+        margin: 0;
+    }
+    .library-images2 .inner .item:nth-child(1) {
+        width: 50%;
+        float: left;
+    }
+    .library-images .item .title {
+        margin-bottom: 5px;
+    }
+    .form-lienhe,
+    .map {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+    .block-hide_lh {
+        width: 96%;
+        margin-left: -48%;
+        padding: 10px;
+    }
+    .news-other .slick-arrow {
+        right: 35px;
+    }
+    .news-other .slick-prev {
+        right: 10px;
+    }
+    .SplitPages a {
+        border-right: 0.5px solid #ddd;
+        border-left: 0.5px solid #ddd;
+    }
+    .SplitPages .dau,
+    .SplitPages .cuoi {
+        border-radius: 0;
+    }
+}

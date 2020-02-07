@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/tether.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+    <script type="text/javascript" src="vendor/google-map/infobox.js"></script>
+    <script type="text/javascript" src="vendor/google-map/GoogleMapInit.js"></script>
+    <script type="text/javascript" src="js/addthis_widget.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="vendor/perfect-scrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!--header-->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <!--logo-->
+                <div class="logo">
+                    <div class="khungAnh">
+                        <a class="khungAnhCrop0" href="#">
+                            <img src="./pic/logo.png">
+                        </a>
+                    </div>
+                    <h1>toanviet.com</h1>
+                </div>
+                <!--end logo-->
+                <!--menu-->
+                <nav class="navbar navbar-toggleable-md navbar-light menu-main">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span>
+                            <b></b>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">trang chủ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle">giới thiệu</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#"></a>
+                                    <a class="dropdown-item" href="#"></a>
+                                    <a class="dropdown-item" href="#"></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle">dự án</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle">tin tức</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">văn hóa doanh nghiệp</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle">dịch vụ</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">tuyển dụng</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle">thư viện</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--end manu-->
+                <!--search-->
+                <div class="form-search">
+                    <input type="text" placeholder="Từ khóa tìm kiếm">
+                    <a href="#" class="fa fa-search" aria-hidden="true"></a>
+                </div>
+                <!--end search-->
+                <!--language-->
+                <div class="language">
+                    <a href="#"><img src="./css/icons/quockyanh.png" alt=""></a>
+                    <a href="#"><img src="./css/icons/quockyvietnam.png" alt=""></a>
+                </div>
+                <!--end language-->
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+
+    <!--breadcrumb-->
+    <section class="s-breadcrumb">
+        <div class="inner">
+            <div class="img">
+                <div class="khungAnh">
+                    <a class="khungAnhCrop" href="#">
+                        <img src="./pic/bg-slidermini.png">
+                    </a>
+                </div>
+            </div>
+            <div class="text">
+                <h2 class="title-page">Giới thiệu</h2>
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item" href="#">Trang chủ</a>
+                    <a class="breadcrumb-item">Sản phẩm</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!--end breadcrumb-->
+
+    <!--main-->
+    <main class="main main-tva-tc">
+        <div class="container">
+            <div class="row">
+                <!--block left-->
+                <div class="block-left">
+                    <div class="inner">
+                        <!--library images-->
+                        <div class="library-images-list library-videos-list">
+                            <div class="top-news-left">
+                                <h3>
+                                    <a href="" class="title-strong">Video về công ty</a>
+                                </h3>
+                                <a href="#" class="btn-xt2">Xem thêm</a>
+                            </div>
+                            <div class="row inner">
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 item">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title"><a href="#">Một số hình ảnh hoạt động của Nhà trường</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end library images-->
+                        <!--SplitPages-->
+                        <div class="splitPages text-center">
+                            <div class="SplitPages">
+                                <a class="dau" href="#">Đầu</a>
+                                <a class="truoc" href="#">Trước</a>
+                                <a class="hientai" href="#">1</a>
+                                <a class="trangkhac" href="#">2</a>
+                                <a class="trangkhac" href="#">3</a>
+                                <a class="trangkhac" href="#">4</a>
+                                <a class="sau" href="#">Sau</a>
+                                <a class="cuoi" href="#">Cuối</a>
+                            </div>
+                        </div>
+                        <!--end SplitPages-->
+                    </div>
+                </div>
+                <!--end block left-->
+                <!--block right-->
+                <div class="block-right">
+                    <div class="inner">
+                        <!--menu right-->
+                        <div class="menu-right">
+                            <ul>
+                                <li><a href="#">Thư viện hình ảnh</a></li>
+                                <li><a href="#">thư viện video</a></li>
+                            </ul>
+                        </div>
+                        <!--end menu right-->
+                        <!--news right-->
+                        <div class="news-right">
+                            <strong><a href="#" class="title-strong">Tin nổi bật</a></strong>
+                            <div class="inner">
+                                <div class="item">
+                                    <div class="content">
+                                        <a href="#" class="title-news-right"><span>01.</span>So sánh chi phí 5 tuyến đường đắt nhất Hà Nội</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content">
+                                        <a href="#" class="title-news-right"><span>02.</span>So sánh chi phí 5 tuyến đường đắt nhất Hà Nội</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content">
+                                        <a href="#" class="title-news-right"><span>03.</span>So sánh chi phí 5 tuyến đường đắt nhất Hà Nội</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content">
+                                        <a href="#" class="title-news-right"><span>04.</span>So sánh chi phí 5 tuyến đường đắt nhất Hà Nội</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content">
+                                        <a href="#" class="title-news-right"><span>05.</span>So sánh chi phí 5 tuyến đường đắt nhất Hà Nội</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content">
+                                        <a href="#" class="title-news-right"><span>06.</span>So sánh chi phí 5 tuyến đường đắt nhất Hà Nội</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content">
+                                        <a href="#" class="title-news-right"><span>07.</span>So sánh chi phí 5 tuyến đường đắt nhất Hà Nội</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end news right-->
+                        <!--video right-->
+                        <div class="video-right">
+                            <div class="inner">
+                                <div class="item">
+                                    <div class="video">
+                                        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/eH8AoIqMyQc" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="title-vedeo"><a href="#">TVC giới thiệu về công ty Toàn Phát</a></div>
+                                </div>
+                                <div class="item">
+                                    <div class="title-vedeo"><a href="#">TVC giới thiệu về công ty Toàn Phát</a></div>
+                                </div>
+                                <div class="item">
+                                    <div class="title-vedeo"><a href="#">TVC giới thiệu về công ty Toàn Phát</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end video right-->
+                    </div>
+                </div>
+                <!--end block right-->
+            </div>
+        </div>
+    </main>
+    <!--end main-->
+
+    <!--slider logo-->
+    <section class="slider-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 inner" id="slider-logo">
+                    <div class="item">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop0" href="#">
+                                <img src="./pic/inter.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop0" href="#">
+                                <img src="./pic/u.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop0" href="#">
+                                <img src="./pic/b.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop0" href="#">
+                                <img src="./pic/inter.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop0" href="#">
+                                <img src="./pic/u.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop0" href="#">
+                                <img src="./pic/b.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop0" href="#">
+                                <img src="./pic/u.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end slider logo-->
+
+    <!--footer-->
+    <footer class="footer">
+        <!--footer main-->
+        <div class="f-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 f-thongtin">
+                        <div class="inner">
+                            <strong>Toanviet.com</strong>
+                            <p class="diachi"><i class="fa fa-map-marker" aria-hidden="true"></i>Địa chỉ: Tầng 3, T 101 Láng Hạ, P. Láng Hạ, Q. Đống Đa , Hà Nội</p>
+                            <p class="dienthoai"><i class="fa fa-mobile" aria-hidden="true"></i>Điện thoại: +84 4 3537 9421</p>
+                            <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i>Email: toanviet@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 f-hoatdong">
+                        <div class="inner">
+                            <strong>công trình</strong>
+                            <ul>
+                                <li><a href="#">Xây lắp và lắp máy công trình</a></li>
+                                <li><a href="#">Sản xuất công nghiệp</a></li>
+                                <li><a href="#">Đầu tư Năng lượng</a></li>
+                                <li><a href="#">Đầu tư Bất động sản</a></li>
+                                <li><a href="#">Hoạt động Tư vấn và Dịch vụ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end footer main-->
+            <!--copyright-->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 toanphat">
+                            <p>Copyright 2013-2017 by <span>Toàn Phát.</span> All rights reserved.</p>
+                        </div>
+                        <div class="col-12 col-lg-4 social">
+                            <span>Kết nối với chúng tôi</span>
+                            <a href="#" class="fa fa-envelope" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                            <a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+                        </div>
+                        <div class="col-12 col-lg-4 tatthanh">
+                            <p>Thiết kế website và SEO Google bởi <span><a href="#">TẤT THÀNH</a></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end copyright-->
+        </div>
+    </footer>
+    <!--end footer-->
+
+</body>
+
+</html>
