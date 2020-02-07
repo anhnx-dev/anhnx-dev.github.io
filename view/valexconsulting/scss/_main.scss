@@ -39,13 +39,13 @@
 }
 
 .ps__thumb-y {
-    background: url(../css/icons/scrollbar.png) no-repeat;
+    background: url(.././css/icons/scrollbar.png) no-repeat;
     border-radius: 0;
 }
 
 .ps__rail-y:hover>.ps__thumb-y,
 .ps__rail-y:focus>.ps__thumb-y {
-    background: url(../css/icons/scrollbar.png) no-repeat;
+    background: url(.././css/icons/scrollbar.png) no-repeat;
 }
 
 .intro {
@@ -178,14 +178,14 @@
     width: 48px;
     font-size: 0;
     border: none;
-    background: url(../css/icons/m2.png) no-repeat center;
+    background: url(.././css/icons/m2.png) no-repeat center;
     cursor: pointer;
     outline: none !important;
     z-index: 2;
     &.slick-next {
         left: unset;
         right: -63px;
-        background: url(../css/icons/m1.png) no-repeat center;
+        background: url(.././css/icons/m1.png) no-repeat center;
     }
 }
 

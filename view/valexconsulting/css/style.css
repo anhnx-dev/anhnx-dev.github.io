@@ -75,7 +75,7 @@ summary {
   display: block; }
 
 select {
-  background: #fff url(../css/icons/select.png) no-repeat right 10px center;
+  background: #fff url(.././css/icons/select.png) no-repeat right 10px center;
   -moz-appearance: none;
   -webkit-appearance: none;
   -o-appearance: none; }
@@ -565,7 +565,7 @@ a {
       display: inline-block;
       width: 15px;
       height: 16px;
-      background: url(../css/icons/i1.png) no-repeat center;
+      background: url(.././css/icons/i1.png) no-repeat center;
       margin-right: 4px;
       -webkit-transform: translateY(2px);
       -ms-transform: translateY(2px);
@@ -706,12 +706,12 @@ a {
         color: #f34a38; }
 
 .ps__thumb-y {
-  background: url(../css/icons/scrollbar.png) no-repeat;
+  background: url(.././css/icons/scrollbar.png) no-repeat;
   border-radius: 0; }
 
 .ps__rail-y:hover > .ps__thumb-y,
 .ps__rail-y:focus > .ps__thumb-y {
-  background: url(../css/icons/scrollbar.png) no-repeat; }
+  background: url(.././css/icons/scrollbar.png) no-repeat; }
 
 .intro {
   height: 100vh;
@@ -829,14 +829,14 @@ a {
   width: 48px;
   font-size: 0;
   border: none;
-  background: url(../css/icons/m2.png) no-repeat center;
+  background: url(.././css/icons/m2.png) no-repeat center;
   cursor: pointer;
   outline: none !important;
   z-index: 2; }
   .slick-arrow.slick-next {
     left: unset;
     right: -63px;
-    background: url(../css/icons/m1.png) no-repeat center; }
+    background: url(.././css/icons/m1.png) no-repeat center; }
 
 .service {
   padding-bottom: 70px;

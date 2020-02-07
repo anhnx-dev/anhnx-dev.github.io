@@ -25,7 +25,7 @@
 
 .thongke-ngay {
     line-height: 23px;
-    background: url(../css/icons/date_ct.png) no-repeat left top 6px;
+    background: url(.././css/icons/date_ct.png) no-repeat left top 6px;
     float: left;
     margin-left: 10px;
     padding-left: 20px;
@@ -35,7 +35,7 @@
 
 .thongke-luotxem {
     line-height: 23px;
-    background: url(../css/icons/view_ct.png) no-repeat left center;
+    background: url(.././css/icons/view_ct.png) no-repeat left center;
     float: left;
     padding-left: 20px;
     margin-left: 20px;
@@ -69,13 +69,13 @@
 .SmallSize {
     width: 25px;
     height: 25px;
-    background: #efefef url(../css/icons/tru.png) no-repeat center;
+    background: #efefef url(.././css/icons/tru.png) no-repeat center;
 }
 
 .LargeSize {
     width: 25px;
     height: 25px;
-    background: #efefef url(../css/icons/cong.png) no-repeat center;
+    background: #efefef url(.././css/icons/cong.png) no-repeat center;
 }
 
 #CommonCuoiChiTietTin {
@@ -123,11 +123,11 @@
 }
 
 #CommonCuoiChiTietTin a.prevDBT {
-    background: url(../css/icons/trove.png) no-repeat left center;
+    background: url(.././css/icons/trove.png) no-repeat left center;
 }
 
 #CommonCuoiChiTietTin a.email {
-    background: url(../css/icons/email_ct.png) no-repeat left center;
+    background: url(.././css/icons/email_ct.png) no-repeat left center;
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
 }
@@ -137,7 +137,7 @@
 }
 
 #CommonCuoiChiTietTin a.print {
-    background: url(../css/icons/intrang.png) no-repeat left center;
+    background: url(.././css/icons/intrang.png) no-repeat left center;
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
 }
