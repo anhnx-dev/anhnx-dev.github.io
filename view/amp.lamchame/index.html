@@ -1,0 +1,656 @@
+<!--
+     This is the minimum valid AMP HTML document. Type away
+     here and the AMP Validator will re-check your document on the fly.
+-->
+<!doctype html>
+<html ⚡>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<link rel="canonical" href="self.html" />
+ 	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>dl,h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}address,dl,ol,p,ul{margin-bottom:1rem}body,caption{text-align:left}dd,h1,h2,h3,h4,h5,h6,label{margin-bottom:.5rem}article,aside,dialog,figcaption,figure,footer,header,hgroup,legend,main,nav,section{display:block}address,legend{line-height:inherit}progress,sub,sup{vertical-align:baseline}label,output{display:inline-block}button,hr,input{overflow:visible}pre,textarea{overflow:auto}html,pre{-ms-overflow-style:scrollbar}.img-fluid,.img-thumbnail,img,legend{max-width:100%}[type=search],select{-webkit-appearance:none}.col,.img-auto,sub,sup{position:relative}@font-face{font-family:FontAwesome;src:url(fonts/fontawesome-webfont.eot);src:url(fonts/fontawesome-webfont.woff) format("woff"),url(fonts/fontawesome-webfont.woff2) format("woff2"),url(fonts/fontawesome-webfont.ttf) format("truetype"),url(fonts/fontawesome-webfont.svg#iciel) format("svg"),url(fonts/fontawesome-webfont.eot?#iefix) format("embedded-opentype");font-weight:400;font-style:normal}*,::after,::before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}body{margin:0;font-weight:400;background-color:#fff}abbr[data-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;border-bottom:0}address{font-style:normal}dt{font-weight:700}dd{margin-left:0}dfn{font-style:italic}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0}sub{bottom:-.25em}sup{top:-.5em}a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}a:hover{color:#0056b3;text-decoration:underline}a:not([href]):not([tabindex]),a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus{outline:0}code,kbd,pre,samp{font-size:1em}figure{margin:0 0 1rem}img{vertical-align:middle;border-style:none}svg:not(:root){overflow:hidden}[role=button],a,area,button,input:not([type=range]),label,select,summary,textarea{-ms-touch-action:manipulation;touch-action:manipulation}table{border-collapse:collapse}caption{padding-top:.75rem;padding-bottom:.75rem;color:#868e96;caption-side:bottom}th{text-align:inherit}button{border-radius:0}button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}button,input,optgroup,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=date],input[type=datetime-local],input[type=month],input[type=time]{-webkit-appearance:listbox}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;color:inherit;white-space:normal}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}template{display:none}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}.blockquote,hr{margin-bottom:1rem}.h1,h1{font-size:2.5rem}.h2,h2{font-size:2rem}.h3,h3{font-size:1.75rem}.h4,h4{font-size:1.5rem}.h5,h5{font-size:1.25rem}.h6,h6{font-size:1rem}hr{box-sizing:content-box;height:0;margin-top:1rem;border:0;border-top:1px solid rgba(0,0,0,.1)}.small,small{font-size:80%;font-weight:400}.mark,mark{padding:.2em;background-color:#fcf8e3}.list-inline,.list-unstyled{padding-left:0;list-style:none}.list-inline-item{display:inline-block}.list-inline-item:not(:last-child){margin-right:5px}.initialism{font-size:90%;text-transform:uppercase}.blockquote{font-size:1.25rem}.blockquote-footer{display:block;font-size:80%;color:#868e96}.blockquote-footer::before{content:"\2014 \00A0"}#header .container::after,.item-01::after,.item-02::after,.item-04::after{content:""}.img-fluid{height:auto}.img-thumbnail{padding:.25rem;background-color:#fff;border:1px solid #ddd;border-radius:.25rem;transition:all .2s ease-in-out;height:auto}.figure{display:inline-block}.figure-img{margin-bottom:.5rem;line-height:1}.figure-caption{font-size:90%;color:#868e96}a>code,pre code{padding:0;color:inherit}code,kbd{font-size:90%;padding:.2rem .4rem}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}code{color:#bd4147;background-color:#f8f9fa;border-radius:.25rem}a>code{background-color:inherit}kbd{color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:100%;font-weight:700}pre{display:block;margin-bottom:1rem;font-size:90%;color:#212529}pre code{font-size:inherit;background-color:transparent;border-radius:0}.item-01 .content .title a,body{color:#222}.container{width:100%;padding-right:10px;padding-left:10px;margin-right:auto;margin-left:auto}.news-lump .warpper-news-lump .block-01 .group-item,.row,.section-img .group-item .warpper{margin-right:-5px;margin-left:-5px}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.col{width:100%;min-height:1px;padding-right:5px;padding-left:5px}blockquote,button,dl,input,li,ol,optgroup,p,pre,select,textarea,ul{margin:0;padding:0}body{background:#eee;line-height:20px;font-size:14px;font-family:Roboto,sans-serif}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}li{list-style-type:none}.item-02 .img-auto,.item-04 .img-auto{margin-right:10px;width:120px;height:68px}embed,iframe,object,video{width:100%;height:auto}img{width:auto;height:auto}summary{display:block}.fa::before{font-family:FontAwesome}.img-auto{padding-bottom:57%}.img-auto .img-warpper{position:absolute;width:100%;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.img-auto .img-warpper>img{width:100%;height:auto}.img-auto .img-warpper.cover{height:100%}.img-auto .img-warpper.cover>img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}.item-01{margin-bottom:20px}.item-01::after{display:block;clear:both}.item-01 .img-auto{width:250px;height:140px;padding-bottom:0;float:left}.item-01 .content{position:relative;margin-left:265px}.item-01 .content .title{font-size:18px;line-height:24px;margin-bottom:5px}.item-01 .content .title a:hover{color:#0d9d81;text-decoration:none}.item-01 .content .summary{font-size:15px;overflow:hidden;margin-bottom:10px}.item-01 .content .list>a{padding:5px 25px;display:inline-block;border-radius:10px;color:#e63f3c}.item-01 .content .list>a.active,.item-01 .content .list>a:hover{background:#e2f9ff;color:#222;text-decoration:none}.item-02{margin-bottom:20px}.item-02::after{display:block;clear:both}.item-02 .img-auto{padding-bottom:0;float:left}.item-02 .title{display:block;color:#fff;font-weight:700;text-decoration:none}.item-02 .title:hover{color:#0d9d81}.item-03{margin-bottom:15px}.item-03 .img-auto{margin-bottom:10px}.item-03 .title{font-size:18px;line-height:20px}.item-03 .title a{color:#222}.item-03 .title a:hover{color:#0d9d81;text-decoration:none}.item-03 summary{color:#666}.item-03 .group-link{margin-top:10px}.item-03 .group-link li{padding:10px 0;border-top:1px dotted #666}.item-03 .group-link li a{font-size:16px;line-height:20px;font-weight:700;color:#222;display:block}.item-04 .title,.item-05 .title,.item-06 .title{font-size:15px;display:block;font-weight:700;text-decoration:none}.item-03 .group-link li a:hover{color:#0d9d81;text-decoration:none}.item-04{margin-bottom:15px}.item-04::after{display:block;clear:both}.item-04 .img-auto{padding-bottom:0;float:left}.item-04 .title{color:#fff;line-height:20px}.item-04 .title a{color:#222;text-decoration:none}.item-04 .title a:hover{color:#0d9d81}.item-05{margin-bottom:20px}.item-05 .title{color:#fff;line-height:20px;margin-top:5px}.item-05 .title a{color:#222;text-decoration:none}.item-05 .title a:hover{color:#0d9d81}.item-05 .content{position:relative;padding-right:135px}.item-05 .content .img-auto{width:120px;height:68px;padding-bottom:0;position:absolute;top:0;right:0}.item-05 .content summary{line-height:18px;color:#666}.item-06{padding-left:5px;padding-right:5px}.item-06 .title{margin-top:10px;color:#fff}.item-06 .title:hover{color:#0d9d81}.item-07{margin-bottom:10px;flex:0 0 25%;max-width:25%}.item-07 .title{display:block;font-size:16px;line-height:22px;font-weight:700;margin-top:5px}.item-07 .title a{color:#222}.item-07 .title a:hover{text-decoration:none;color:#0d9d81}.navbar-toggler{width:30px;height:30px;position:relative}.navbar-toggler span,.navbar-toggler:after,.navbar-toggler:before{content:"";position:absolute;width:22px;height:2px;background:#222;left:50%;margin-left:-11px;border-radius:1px;-webkit-transition:all .5s ease-in;-o-transition:all .5s ease-in;transition:all .5s ease-in}#header .container,#header .right{position:relative}.navbar-toggler span{top:50%;margin-top:-1px}.navbar-toggler:before{top:6px}.navbar-toggler:after{top:20px}.navbar-toggler.active span{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);opacity:0}.navbar-toggler.active:before{top:50%;margin-top:-1px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}.navbar-toggler.active:after{top:50%;margin-top:-1px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.slick-dots{text-align:center;padding-top:5px}.slick-dots li{display:inline-block}.slick-dots li button{font-size:0;width:10px;height:10px;background:#c2c2c2;border:none;border-radius:50%;margin:0 2.5px}.slick-dots li.slick-active button{background:#e63f3c}.left-main{-webkit-box-flex:68%;-ms-flex:68%;flex:68%;max-width:68%}.right-main{-webkit-box-flex:0;-ms-flex:0 0 32%;flex:0 0 32%;max-width:32%}#header{padding-top:10px;padding-bottom:10px}#header .container::after{display:block;clear:both}#header a{text-decoration:none}#header .logo{float:left}#header .logo a{display:inline-block;height:60px;width:82px}#header .logo .text{display:inline-block;font-weight:500;text-transform:uppercase;font-size:14px;padding-left:20px;-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px);color:#666;line-height:18px}#header .right{float:right;margin-top:15px}#nav .warpper-link .link li{display:inline-block;margin-left:10px;padding:4px 20px;border-radius:15px;border:1px solid #e2e2e2}#nav .warpper-link .link li a{color:#222}#nav .warpper-link .link li a:hover{text-decoration:underline}#nav .warpper-link .link li:nth-child(1){padding:4px 0;border:none;width:25px;height:14px}#header .right .search{position:absolute;top:5px;right:0;z-index:10}#header .right .search .form-search{position:relative}#header .right .search .form-search input{position:absolute;width:200px;background:#a2edde;border:none;padding:8px 40px 8px 10px;border-radius:18px;top:50%;right:-10px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);display:none;outline:0}#header .right .search .form-search .fa{position:relative;z-index:2}#header .right .search .form-search .fa::before{content:"\f002";font-size:20px;color:#666}#header .right .search .form-search.active input,#header .right .search .form-search:hover input{display:block}#footer p>strong,#nav ul li,.heading-block .list,.heading-block .list li,.heading-block .title{display:inline-block}#nav{background:#a2edde;padding-top:10px;padding-bottom:10px;position:relative;z-index:9}#nav .home-link{position:absolute;left:10px;top:0;text-decoration:none}#nav .container,.clip .left-main .item .content{position:relative}#nav .home-link .fa::before{content:"\f015";font-size:18px;color:#222}.heading-page::after,.new-right01 .top .title::after,.new-right01 .top::before{content:""}#nav .home-link:hover .fa::before{color:#0d9d81}#nav ul{padding-left:20px}#nav ul li{padding:0 7.5px}#nav ul li a{font-size:15px;font-weight:500;color:#222}#nav ul li a:hover{color:#0d9d81;text-decoration:none}#footer{background:#a2edde;line-height:22px}#footer p>strong{margin-bottom:10px}#footer .container{padding-left:25px;padding-right:25px}#footer .copyright{padding-top:15px;padding-bottom:15px}#footer>.img{background:#fff;padding-top:4px;padding-bottom:4px}.adv{text-align:center;padding-bottom:10px}.adv.v2 img{width:100%}.news-lump .warpper-news-lump{background:#fff;padding:10px 15px;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,.05);box-shadow:0 0 2px 2px rgba(0,0,0,.05)}.news-lump .warpper-news-lump .group-item-lump{margin-bottom:20px}.news-lump .warpper-news-lump .group-item-lump .item{margin-bottom:10px}.news-lump .warpper-news-lump .group-item-lump .item .img-auto{height:250px;padding-bottom:0}.news-lump .warpper-news-lump .group-item-lump .item .content{padding-top:5px}.news-lump .warpper-news-lump .group-item-lump .item .content .title{font-size:24px;line-height:32px}.news-lump .warpper-news-lump .group-item-lump .item .content .title a{color:#222}.news-lump .warpper-news-lump .group-item-lump .item .content .title a:hover{color:#0d9d81;text-decoration:none}.news-lump .warpper-news-lump .group-item-lump .item .content summary{font-size:16px;line-height:22px}.news-lump .warpper-news-lump .block-01{padding-bottom:10px;border-bottom:2px solid #e63f3c;margin-bottom:30px}.news-lump .warpper-news-lump .block-01>.title{font-size:18px;font-weight:700;color:#e63f3c;margin-bottom:15px}.news-lump .warpper-news-lump .block-01 .group-item .slick-slide div:nth-child(1) .item:nth-child(3n+3) .warpper{background:#ddfff5}.news-lump .warpper-news-lump .block-01 .group-item .slick-slide div:nth-child(1) .item:nth-child(3n+1) .warpper{background:#e2f9ff}.news-lump .warpper-news-lump .block-01 .group-item .slick-slide div:nth-child(1) .item:nth-child(3n+2) .warpper{background:#ffe8e8}.news-lump .warpper-news-lump .block-01 .group-item .item{padding-left:5px;padding-right:5px;margin-bottom:10px}.news-lump .warpper-news-lump .block-01 .group-item .item .warpper{padding:10px}.news-lump .warpper-news-lump .block-01 .group-item .item .title{font-size:15px;line-height:20px}.news-lump .warpper-news-lump .block-01 .group-item .item .title a{color:#222;text-decoration:none}.news-lump .warpper-news-lump .block-01 .group-item .item .title a:hover{color:#0d9d81}.news-lump .warpper-news-lump .block-01 .group-item .item:nth-child(3n+1) .warpper{background:#ddfff5}.news-lump .warpper-news-lump .block-01 .group-item .item:nth-child(3n+2) .warpper{background:#e2f9ff}.news-lump .warpper-news-lump .block-01 .group-item .item:nth-child(3n+3) .warpper{background:#ffe8e8}.news-lump .warpper-news-lump .group-item-lump-02 .right-main{padding-top:36px}.clip{background:#222;color:#fff}.clip .warpper-clip{padding:15px 15px 0}.clip .title-clip{font-size:24px}.clip .left-main .item .title{font-size:18px;line-height:24px;padding-right:175px;margin-top:10px}.clip .left-main .item .title a{color:#fff;text-decoration:none}.clip .left-main .item .title a:hover{color:#0d9d81}.clip .left-main .item .share-fb{position:absolute;width:157px;top:0;right:0;text-align:center}.clip .left-main .item .share-fb>a{position:absolute;line-height:40px;z-index:2;width:157px;top:0;right:0;background:#45b1d0;font-size:15px;border-radius:4px;color:#fff}.clip .left-main .item .share-fb .fb_iframe_widget{width:157px;height:40px;opacity:0}.section-img{background:#222;color:#fff;padding-bottom:40px}.section-img .warpper-img{padding:15px 15px 0}.section-img .title-img{font-size:24px}.section-img .top{margin-bottom:15px}.section-img .top .img{left:33.333333%}.section-img .top .content{right:66.666667%}.group-block-page .block-v1 .group-item-01 .right,.news-all .group-block .block-v1 .group-item .right{right:50%}.section-img .top .content .title{font-size:24px;line-height:32px;color:#fff}.section-img .top .content .title a{color:#fff;text-decoration:none}.section-img .top .content .title a:hover{color:#0d9d81}.section-img .top .content summary{line-height:24px;font-size:15px}.new-right01{margin-bottom:10px}.new-right01 .top{color:#fff;padding:10px;position:relative}.new-right01 .top::before,.new-right01 .top>img{position:absolute;width:100%;height:100%;top:0;left:0}.new-right01 .top::before{background:-webkit-gradient(linear,left top,right top,from(#000),to(transparent));background:-webkit-linear-gradient(left,#000,transparent);background:-o-linear-gradient(left,#000,transparent);background:linear-gradient(to right,#000,transparent);z-index:1}.new-right01 .top>img{-o-object-fit:cover;object-fit:cover}.new-right01 .top .title{position:relative;display:inline-block;font-weight:500;border-bottom:1px solid #b7b7b7;margin-bottom:10px;z-index:2}.new-right01 .top .title::after{position:absolute;width:43px;height:1px;background:#e63f3c;left:0;bottom:-1px}.new-right01 .link,.read-much{background:#f2f2f2}.new-right01 .top .text{font-size:18px;font-weight:700;line-height:22px;position:relative;z-index:2}.new-right01 .link h4{font-size:15px;font-weight:400}.new-right01 .link li{padding:5px 10px;border-bottom:1px solid #e0e0e0}.new-right01 .link li:last-of-type{border-bottom:none}.new-right01 .link li a{font-size:15px;color:#222;text-decoration:none}.new-right01 .link li a:hover{color:#0d9d81}.read-much{margin-bottom:20px}.read-much>.title{padding:12px 10px 11px;border-bottom:2px solid #e63f3c;font-size:18px;font-weight:700;color:#e63f3c;margin-bottom:0}.read-much .group-item .item{padding:10px 10px 10px 55px;position:relative;border-bottom:1px solid #e0e0e0}.read-much .group-item .item:last-of-type{border-bottom:none}.read-much .group-item .item .number{position:absolute;width:35px;top:15px;left:10px;text-align:center;font-size:18px;font-weight:900;color:#e63f3c}.group-block-page .block-v1 .group-item-01 .left,.news-all .group-block .block-v1 .group-item .left{left:50%}.read-much .group-item .item .title{font-size:15px;line-height:21px;font-weight:700;margin-bottom:0}.read-much .group-item .item .title a{color:#222;text-decoration:none}.read-much .group-item .item .title a:hover{color:#0d9d81}.news-all .warpper-news-lump{background:#fff;padding:20px 15px;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,.05);box-shadow:0 0 2px 2px rgba(0,0,0,.05)}.news-all .adv.v1{padding-bottom:20px}.news-all .group-block .block-v3 .right .item-03 .title{font-size:15px;font-weight:700}.news-all .group-block .block-v3 .right .item-03 .group-link li a{font-size:15px}.heading-block{border-bottom:2px solid #e63f3c;margin-bottom:10px;padding-bottom:5px}.heading-block .title{line-height:20px;font-size:30px;margin-right:30px;font-weight:700}.heading-block .title a{color:#0d9d81;text-decoration:none}.heading-block .list li{margin:0 9px}.block-main .group-item-02:after,.group-block-page .block-v1 .group-item-02::before,.group-block-page .block-v1 .group-item-02:after{display:block;border-bottom:10px solid #a2edde;margin-bottom:20px;content:""}.heading-block .list li a{font-weight:500;font-size:18px;color:#666}.block-main .item-03 .title{font-size:24px;line-height:32px}.block-main .item-03 summary{font-size:16px;line-height:22px}.block-main .item-05 .img-auto{padding-bottom:61%}.block-main .adv.v1{padding-bottom:20px}.group-block-page{background:#fff;padding:10px 15px;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,.05);box-shadow:0 0 2px 2px rgba(0,0,0,.05)}.group-block-page .block-v1:last-of-type .group-item-02::after{display:none}.load-content{margin-bottom:10px}.load-content a{display:block;line-height:40px;text-decoration:none;text-transform:uppercase;text-align:center;font-weight:700;font-size:16px;color:#fff;background:#222}.load-content a:focus,.load-content a:hover{background:#e63f3c}.heading-page{margin-bottom:13px}.heading-page::after{display:block;border-bottom:1px solid #e2e2e2}.heading-page .list,.heading-page .title{display:inline-block}.heading-page .title{font-size:30px;line-height:40px;font-weight:700;margin-right:38px;border-bottom:3px solid #e63f3c;margin-bottom:1px}.heading-page .title a{color:#0d9d81;text-decoration:none}.heading-page .list li{display:inline-block;margin-right:20px}.heading-page .list li:last-of-type{margin-right:0}.heading-page .list li a{font-size:18px;font-weight:700;color:#666}.detail-main .title{font-size:40px;font-weight:700;margin-bottom:15px;text-align:justify}.detail-main .copyright-date{margin-bottom:20px;font-size:13px;line-height:22px;color:#666}.detail-main .content-detail>.content,.detail-main .top-content{font-size:16px;text-align:justify}.detail-main .copyright-date .copyright{margin-right:15px}.detail-main .copyright-date .copyright .name{color:#e63f3c}.detail-main .copyright-date .date::before{content:"\f017";margin-right:4px}.detail-main .content-detail{margin-bottom:20px}.detail-main .top-content{text-decoration:underline}.detail-main .content-detail .comment,.detail-main .content-detail .like-share,.detail-main .content-detail .news-through,.detail-main .content-detail .tag{max-width:656.39px}.detail-main .content-detail .summary{font-size:18px;line-height:24px;font-weight:700;margin-bottom:10px;text-align:justify}.detail-main .content-detail .link{background:#f4f4f4;padding:10px;margin-bottom:20px}.detail-main .content-detail .link li{padding:5px 0 4px 12px;border-bottom:1px solid #e2e2e2;position:relative}.detail-main .content-detail .link li:last-of-type{border-bottom:none}.detail-main .content-detail .link li::before{content:"";position:absolute;left:0;width:5px;height:5px;border-radius:50%;background:#e63f3c;margin-right:7px;top:11px}.detail-main .content-detail .link li a{color:#666}.detail-main .content-detail .news-through{margin:auto auto 27px}.detail-main .content-detail .news-through li.item{margin-bottom:10px;background:#f4f4f4;min-height:88px;position:relative;padding:10px}.detail-main .content-detail .news-through li.item::after{content:"";display:block;clear:both}.detail-main .content-detail .news-through li.item .img-auto{width:120px;height:68px;padding-bottom:0;position:absolute;top:10px;left:10px}.detail-main .content-detail .news-through li.item .title{font-size:16px;line-height:24px;font-weight:700;padding:0 10px;margin-left:120px;text-align:justify}.detail-main .content-detail .news-through li.item .title a{color:#222;text-decoration:none}.detail-main .content-detail .news-through li.item .title a:hover{color:#0d9d81}.detail-main .content-detail .tag{margin:auto auto 15px}.detail-main .content-detail .tag::before{content:"\f02c";margin-right:13px}.detail-main .content-detail .tag a{padding:2px 10px;border-radius:3px;background:#f1f1f1;margin-right:10px;font-size:12px;font-weight:700;color:#666;display:inline-block;margin-bottom:10px}.detail-main .content-detail .like-share{padding:20px 0;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;margin:auto auto 20px}.detail-main .content-detail .like-share .b-fb,.detail-main .content-detail .like-share .b-gl{line-height:27px;padding:0 12px;color:#fff;border-bottom:1px solid #274177;margin-right:10px;background:#3a5998;display:inline-block;border-radius:3px;font-weight:700;text-decoration:none}.detail-main .content-detail .like-share .b-fb::before,.detail-main .content-detail .like-share .b-gl::before{content:"\f09a";margin-right:5px;font-weight:400}.detail-main .content-detail .like-share .b-gl{background:#f5313e;border-color:#b6121d;margin-right:0}.detail-main .content-detail .like-share .b-gl::before{content:"\f0d5"}.detail-main .content-detail .like-share .in,.detail-main .content-detail .like-share .mail{float:right;text-decoration:none;margin-left:17px;color:#999}.detail-main .content-detail .like-share .mail::before{content:"\f0e0"}.detail-main .content-detail .like-share .in::before{content:"\f02f"}.detail-main .content-detail .comment{margin:auto}.detail-main .content-detail .comment .input{margin-bottom:20px;background:#f0f0f0;padding:15px 12px 30px 15px}.detail-main .content-detail .comment .input p{margin-bottom:5px}.detail-main .content-detail .comment .input textarea{width:100%;border:1px solid #ccc;padding:5px}.detail-main .content-detail .comment .input a{display:inline-block;width:142px;text-align:center;background:#e63f3c;line-height:26px;color:#fff;text-transform:uppercase;font-size:12px}.detail-main .content-detail .comment .ouput .top{margin-bottom:10px;padding:7.5px 10px;background:#f2f2f2}.detail-main .content-detail .comment .ouput .top .sort{float:right}.detail-main .content-detail .comment .ouput .top .sort a{color:#222}.detail-main .content-detail .comment .ouput .top .sort a:nth-child(1)::after{content:"";display:inline-block;margin:0 9px;-webkit-transform:translateY(1px);-ms-transform:translateY(1px);transform:translateY(1px);height:11px;border-left:1px solid #c69166;border-right:1px solid #91c6f2}.detail-main .content-detail .comment .ouput .top .sort a.active,.detail-main .content-detail .comment .ouput .top .sort a:hover{color:#6e59ae}.detail-main .content-detail .comment .ouput .top .number{color:#e63f3c;display:inline-block;font-size:14px;font-weight:400;margin-bottom:0}.detail-main .content-detail .comment .ouput .group-item .item .copyright-date-item{color:#999;font-size:12px}.detail-main .content-detail .comment .ouput .group-item .item .copyright-date-item .name{color:#666;font-weight:500}.detail-main .content-detail .comment .ouput .group-item .item .copyright-date-item .date::before{content:"";display:inline-block;width:3px;height:3px;background:#999;border-radius:50%;margin:0 9px;-webkit-transform:translateY(-2px);-ms-transform:translateY(-2px);transform:translateY(-2px)}.detail-main .content-detail .comment .ouput .group-item .item .content{padding:5px 0}.detail-main .content-detail .comment .ouput .group-item .item .like-share-item{font-size:12px;text-transform:uppercase}.detail-main .content-detail .comment .ouput .group-item .item .like-share-item a{color:#e63f3c;margin-right:25px}.detail-main .content-detail .comment .ouput .group-item .item .like-share-item a.like::before{content:"\f004";margin-right:2px}.detail-main .content-detail .comment .ouput .group-item .item .like-share-item a.share{color:#3b5998;margin-right:3px}.detail-main .content-detail .comment .ouput .group-item .item .like-share-item a.share::before{content:"\f09a"}.main-detail .block-02{margin-bottom:20px}.main-detail .block-03 .heading-block .title{padding-top:10px;font-weight:700}.main-detail .modal input{width:100%;margin-bottom:10px;padding:5px 10px;border:1px solid #e2e2e2}.search-results{font-size:20px;font-weight:700;margin-bottom:15px}.search-results::after{content:"";display:block;padding-bottom:10px;border-bottom:1px solid #e2e2e2;margin-left:-20px;margin-right:-20px}#nav .warpper-link{position:absolute;right:50px;top:-67px}@media (min-width:1200px){.container{max-width:1020px}}@media (max-width:1199px){.container{max-width:960px}.item-01 .content .list>a{display:none}.item-01 .content .list>a.active{display:inline-block}}@media (max-width:991px){#nav .warpper-link .link li a{font-weight:700}.news-lump .warpper-news-lump .group-item-lump .item .img-auto{height:auto;padding-bottom:57%}#nav .warpper-link{position:unset;width:500px;overflow-x:auto}.right-main{display:none}.left-main{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.clip .right-main{display:block;-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.slick-arrow{position:absolute;top:35px;left:5px;font-size:0;background:rgba(255,255,255,.8);width:40px;height:30px;text-align:center;line-height:30px;border:none;z-index:2}#nav,#nav .container{position:unset}.slick-arrow::before{font-family:FontAwesome;content:"\f104";color:#666;font-size:18px;font-weight:700}.slick-arrow.slick-next{left:unset;right:5px}.slick-arrow.slick-next::before{content:"\f105"}#nav ul.menu::after,#nav ul.menu::before{content:""}.item-02{padding-left:5px;padding-right:5px}.item-02 .img-auto{width:auto;height:auto;padding-bottom:57%;float:none;margin-right:0}.clip .right-main .warpper{margin-left:-5px;margin-right:-5px}.clip .left-main{margin-bottom:15px}.section-img .top .img{left:0;margin-bottom:10px}.section-img .top .content{right:0}.clip .left-main .item .title{padding-right:0}.clip .left-main .item .share-fb,.section-img .top .content summary{display:none}#nav .home-link{top:95px}#nav{padding:0}#nav ul.menu{position:absolute;width:260px;height:100%;top:0;right:-260px;padding-left:0;background:#1ab99b;transition:all .5s ease-in;z-index:9999}#nav ul.menu::before{position:absolute;width:24px;height:17px;background:url(img/2.png) center no-repeat;top:35px;left:-34px}#nav ul.menu::after{position:fixed;width:100%;height:100%;top:0;right:0;background:0 0;z-index:-1;pointer-events:none;transition:all .5s ease-in}#nav ul.menu:hover::after{background:rgba(0,0,0,.5);right:260px}#nav ul.menu:hover{right:0}#nav ul.menu li{display:block;padding:10px 10px 9px;border-bottom:1px solid #83d5c6;background:#1ab99b}#nav ul.menu li a{color:#fff;font-size:18px;font-weight:700}#header .right{position:unset}#header .right .search{right:50px;top:22px}#nav .warpper-link{margin-left:30px;padding:10px 0}#nav .warpper-link .link{min-width:550px;padding-left:0}#nav .warpper-link .link li{padding:0 8px;border:none}#nav .warpper-link .link li:nth-child(1){display:none}#nav .warpper-link .link li:nth-child(2){padding-left:0}.item-07{flex:0 0 33.33333%;max-width:33.33333%}}@media (max-width:767px){.container{max-width:720px}body{background:#fff}.news-all .warpper-news-lump,.news-lump .warpper-news-lump{padding:10px 0;-webkit-box-shadow:unset;box-shadow:unset}.news-lump .warpper-news-lump .group-item-lump .item:nth-child(1) .img-auto{margin-left:-10px;margin-right:-10px;padding-bottom:60%}#header .logo .text{display:none}.news-lump .warpper-news-lump .group-item-lump .item .content .title{font-size:18px;line-height:22px}.news-lump .warpper-news-lump .group-item-lump .item:nth-child(1) .content .title{font-size:20px;line-height:24px}.item-01{position:relative;margin-bottom:10px}.item-01 .img-auto{width:128px;height:72px;position:absolute;left:0;bottom:7px}.item-01 .content{margin-left:0;position:unset;height:auto}.item-01 .content .list{position:unset;margin-left:138px;margin-top:5px}.item-01 .content .list a,.item-01 .content .list a.active{background:unset;padding:0;font-size:11px;text-transform:uppercase;color:#e63f3c}.item-01 .content summary{height:57px;line-height:19px;font-size:15px;margin-left:138px}.right-main{display:block;-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.heading-block .list,.item-05 .content summary{display:none}.clip .warpper-clip,.section-img .warpper-img{padding:15px 0}.section-img{padding-bottom:10px}.clip .left-main .item .title,.section-img .top .content .title{font-size:16px;line-height:20px}.item-02 .title{font-size:15px}.news-all .group-block .block-v1 .group-item .left{left:0}.news-all .group-block .block-v1 .group-item .right{right:0}.item-05{position:relative;padding-left:130px;min-height:68px}.item-05 .content{position:absolute;top:0;left:0;padding:0}.item-05 .content .img-auto{position:relative;top:unset;right:unset}.block-section.block-v3 .right .item-03::after{content:"";display:block;clear:both}.block-section.block-v3 .right .item-03 .img-auto{width:120px;height:68px;padding-bottom:0;float:left;margin-right:10px}.block-section.block-v3 .right .item-03 .title{height:60px;margin-bottom:28px}#footer .container{padding-left:10px;padding-right:10px}.group-block-page .block-v1 .group-item-01 .left{left:0}.group-block-page .block-v1 .group-item-01 .right{right:0}.group-block-page{padding:10px 0;background:unset;-webkit-box-shadow:unset;box-shadow:unset}.heading-page .list{display:none}.block-main .item-03:nth-child(1) .img-auto{margin-left:-10px;margin-right:-10px;padding-bottom:60%}.block-main .item-05{padding-left:5px}.block-main .item-05 .title{font-size:18px;line-height:22px}.detail-main .title{font-size:30px}.detail-main .copyright-date .copyright{display:block}.detail-main .content-detail{padding-left:0}.detail-main .content-detail .like-share .in,.detail-main .content-detail .like-share .mail{display:none}.detail-main .content-detail .comment .input{padding:20px 10px}.detail-main .content-detail .comment .ouput .top .sort{float:none;display:block}.main-detail .right-main{display:none}.search-results::after{margin:0}.item-07 .title{font-size:14px;line-height:20px;font-weight:400}.detail-main .content-detail .comment{margin-left:-10px;margin-right:-10px}.detail-main .content-detail .comment .ouput .group-item .item{padding-left:10px;padding-right:10px}.block-main .item-03 .title{font-size:20px;line-height:24px}.clip .title-clip,.heading-block .title,.heading-page .title,.section-img .title-img{font-size:34px;line-height:40px;margin-bottom:0}#header .right .search .form-search .fa::before{color:#19b89a}.item-01 .content .summary{height:60px;margin-left:138px;margin-bottom:0}.item-07{flex:0 0 50%;max-width:50%}}</style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+</head>
+
+<body id="body">
+
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <amp-img layout="responsive" alt="" src="pic/logo.png" width="82" height="60"></amp-img>
+                </a>
+            </div>
+            <div class="right">
+                <div class="search">
+                    <div class="form-search">
+                        <input type="text" placeholder="Từ khóa tìm kiếm">
+                        <a href="#" class="fa"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- nav -->
+    <nav id="nav">
+        <div class="container">
+            <a href="#" class="home-link">
+                <span class="fa"></span>
+            </a>
+            <div class="warpper-link">
+                <ul class="link">
+                    <li>
+                        <a href="#">
+                            <amp-img layout="responsive" alt="" src="img/1.png" width="25" height="14"></amp-img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">#Tết Nguyên đán</a>
+                    </li>
+                    <li>
+                        <a href="#">#Các bài khấn, lễ vật cúng Tết</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">Đời sống</a>
+                </li>
+                <li>
+                    <a href="#">Clip</a>
+                </li>
+                <li>
+                    <a href="#">Làm mẹ</a>
+                </li>
+                <li>
+                    <a href="#">Giải trí</a>
+                </li>
+                <li>
+                    <a href="#">Khỏe</a>
+                </li>
+                <li>
+                    <a href="#">Đẹp</a>
+                </li>
+                <li>
+                    <a href="#">Khéo</a>
+                </li>
+                <li>
+                    <a href="#">Yêu và cưới</a>
+                </li>
+                <li>
+                    <a href="#">Tổ Ấm</a>
+                </li>
+                <li>
+                    <a href="#">Chi tiêu</a>
+                </li>
+                <li>
+                    <a href="#">Ăn chơi</a>
+                </li>
+                <li>
+                    <a href="#">Nhật ký</a>
+                </li>
+                <li>
+                    <a href="#">Khoe ngắm</a>
+                </li>
+                <li>
+                    <a href="#">Sống chậm</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- main -->
+    <main id="main" class="main-detail">
+        <div class="container">
+            <div class="group-block-page">
+                <div class="warpper-page">
+                    <div class="adv v1">
+                        <a href="#">
+                            <amp-img layout="responsive" alt="" src="pic/adv/9.png" width="728" height="90"></amp-img>
+                        </a>
+                    </div>
+                    <div class="heading-page">
+                        <h2 class="title">
+                            <a href="">Đời sống</a>
+                        </h2>
+                        <ul class="list">
+                            <li>
+                                <a href="#">Trong nước</a>
+                            </li>
+                            <li>
+                                <a href="#">Quốc tế</a>
+                            </li>
+                            <li>
+                                <a href="#">Lạ</a>
+                            </li>
+                            <li>
+                                <a href="#">Xưa</a>
+                            </li>
+                            <li>
+                                <a href="#">Công sở</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail-main">
+                        <h1 class="title">'Thân nhau con chấy cắn đôi' có khác: Kỳ Duyên, Diệp Lâm Anh, Hà Lade đến mắt mũi môi cũng giống
+                            nhau
+                        </h1>
+                        <div class="copyright-date">
+                            <span class="copyright">
+                                <span class="name">PHƯƠNG ANH</span>,Theo Infonet
+                            </span>
+                            <span class="fa date">12:00 02/03/2018</span>
+                        </div>
+                        <div class="content-detail">
+                            <h2 class="summary">Trong chính chiếc iPad mà An hay dùng khi còn sống, ngoài những tấm ảnh, video bé tự chụp, tự
+                                quay là đôi ba lời nhắn nhủ bé xen kẽ trong từng bản ghi chú của mẹ. "Tôi sẽ đọc thật kỹ,
+                                xem từng bức ảnh để tìm kiếm thêm những dòng nhắn nhủ con để lại", chị Dương nói.</h2>
+                            <ul class="link">
+                                <li>
+                                    <a href="#">Bác sĩ 10 năm đi lấy giác mạc hé lộ về ca hiến giác mạc đầu tiên của Việt Nam</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cận cảnh quá trình ghép giác mạc của bé Hải An cho 2 người bệnh</a>
+                                </li>
+                                <li>
+                                    <a href="#">Giác mạc của bé Hải An hiến tặng sau khi qua đời đã ghép thành công cho 2 bệnh nhân
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="top-content">
+                                Trong căn nhà cấp 4 nằm ở thôn Tân Mỹ (quận Nam Từ Liêm, Hà Nội), cuộc sống của gia đình 1 tuần sau khi em bé Hải An ra đi,
+                                hình như không có bất kỳ sự xáo trộn nào. Đến bữa cơm, mọi người vẫn gọi: "An ơi, ăn cơm
+                                thôi con!". Trời tối khuya, chị Dương thắp cho con gái 3 nén hương rồi thì thào: "An ơi,
+                                hôm nay không có thịt xiên nướng. Ngày mai mẹ mua cho con nhé!".
+                            </div>
+                            <div class="content">
+
+                                <br>
+                                <p>Anh Trung (bác ruột bé) vừa nhâm nhi chén rượu vừa thủ thỉ: "Em có thấy căn nhà này toàn
+                                    "người điên" không? Nhiều người đi đường nhìn vào nhà thỉnh thoảng nghe thấy tiếng độc
+                                    thoại, nhưng chính là đang nói chuyện với An đó. Tụi anh chưa quen, chưa thể quen và
+                                    có lẽ phải cần một thời gian nữa mới chấp nhận được sự thật này".
+                                </p>
+                                <p>
+                                    <amp-img layout="responsive" alt="" src="pic/1.png" width="598" height="398"></amp-img>
+                                </p>
+                                <p>Trong căn nhà cấp 4 nằm ở thôn Tân Mỹ (quận Nam Từ Liêm, Hà Nội), cuộc sống của gia đình
+                                    1 tuần sau khi em bé Hải An ra đi, hình như không có bất kỳ sự xáo trộn nào. Đến bữa
+                                    cơm, mọi người vẫn gọi: "An ơi, ăn cơm thôi con!". Trời tối khuya, chị Dương thắp cho
+                                    con gái 3 nén hương rồi thì thào: "An ơi, hôm nay không có thịt xiên nướng. Ngày mai
+                                    mẹ mua cho con nhé!".</p>
+                                <br>
+                                <p>Anh Trung (bác ruột bé) vừa nhâm nhi chén rượu vừa thủ thỉ: "Em có thấy căn nhà này toàn
+                                    "người điên" không? Nhiều người đi đường nhìn vào nhà thỉnh thoảng nghe thấy tiếng độc
+                                    thoại, nhưng chính là đang nói chuyện với An đó. Tụi anh chưa quen, chưa thể quen và
+                                    có lẽ phải cần một thời gian nữa mới chấp nhận được sự thật này".
+                                </p>
+                                <br>
+                                <p>Năm tháng tuổi thơ của An tràn ngập những bức ảnh do chính tay chị Dương chụp. Cứ lướt qua
+                                    5 bức lại có 2, 3 bức bé An dán miếng hạ sốt trên trán.</p>
+                                <br>
+                                <p>"Em thấy chị có hâm không, chụp từng khoảnh khắc của con mà không biết chán. Nhưng mà giờ
+                                    nhìn lại thấy con ốm đau suốt từ bé mà xót lắm...".</p>
+                                <br>
+                                <p>Bé An lớn lên trong tình thương vô bờ bến của mẹ và bố, nhưng có lẽ người đồng hành cùng
+                                    con đến tận giờ phút cuối cùng là mẹ em. Lướt qua tấm ảnh mà theo tôi là xúc động nhất
+                                    trong cả hành trình - khung hình bé An ra đi trong vòng tay của mẹ - chị Dương khóc:
+                                    "Chị đâu có chịu được nỗi đau ấy. Con ra đi nhẹ nhàng nhưng chị chỉ biết gào lên thôi".</p>
+                                <br>
+                                <p>"Con em bây giờ tính ngày hay tính tháng?" Ngày hai mẹ con đưa nhau đi từ bệnh viện Việt
+                                    Đức, sang viện K rồi Bạch Mai với tờ xét nghiệm trên tay, tất cả đều chung một kết quả:
+                                    Hải An bị u não, khối u hiện đã chèn lên dây thần kinh nên y học không thể can thiệp
+                                    được.
+                                </p>
+                                <br>
+                                <p>Sau khi hội chẩn, các bác sĩ tại bệnh viện Bạch Mai đã tức tốc gọi mẹ bé Hải An vào gặp riêng,
+                                    đưa ra đề xuất thực hiện các thủ thuật xạ trị để kéo dài thời gian sống cho bé. Nhưng
+                                    An chỉ mới 7 tuổi, xạ trị với em khi đó quá nguy hiểm. Năm tháng tuổi thơ của An tràn
+                                    ngập những bức ảnh do chính tay chị Dương chụp. Cứ lướt qua 5 bức lại có 2, 3 bức bé
+                                    An dán miếng hạ sốt trên trán.</p>
+                                <br>
+                                <p>"Em thấy chị có hâm không, chụp từng khoảnh khắc của con mà không biết chán. Nhưng mà giờ
+                                    nhìn lại thấy con ốm đau suốt từ bé mà xót lắm...".</p>
+                                <br>
+                                <p>Bé An lớn lên trong tình thương vô bờ bến của mẹ và bố, nhưng có lẽ người đồng hành cùng
+                                    con đến tận giờ phút cuối cùng là mẹ em. Lướt qua tấm ảnh mà theo tôi là xúc động nhất
+                                    trong cả hành trình - khung hình bé An ra đi trong vòng tay của mẹ - chị Dương khóc:
+                                    "Chị đâu có chịu được nỗi đau ấy. Con ra đi nhẹ nhàng nhưng chị chỉ biết gào lên thôi".</p>
+                                <br>
+                                <p>"Con em bây giờ tính ngày hay tính tháng?" Ngày hai mẹ con đưa nhau đi từ bệnh viện Việt
+                                    Đức, sang viện K rồi Bạch Mai với tờ xét nghiệm trên tay, tất cả đều chung một kết quả:
+                                    Hải An bị u não, khối u hiện đã chèn lên dây thần kinh nên y học không thể can thiệp
+                                    được.
+                                </p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                            <ul class="news-through">
+                                <li class="item">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                        </a>
+                                    </div>
+                                    <h3 class="title">
+                                        <a href="#" class="fa">Chuyện về bé Hải An hiến giác mạc sau khi qua đời: "Con muốn khi mất đi, những bộ
+                                            phận vẫn sống trên cơ thể người khác"
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li class="item">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                        </a>
+                                    </div>
+                                    <h3 class="title">
+                                        <a href="#" class="fa">5 lý do khiến bạn phải tìm hiểu: Hoa Vinh là ai? Sao lại hot đến thế?</a>
+                                    </h3>
+                                </li>
+                                <li class="item">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                        </a>
+                                    </div>
+                                    <h3 class="title">
+                                        <a href="#" class="fa">Chuyện về bé Hải An hiến giác mạc sau khi qua đời: "Con muốn khi mất đi, những bộ
+                                            phận vẫn sống trên cơ thể người khác"
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li class="item">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                        </a>
+                                    </div>
+                                    <h3 class="title">
+                                        <a href="#" class="fa">
+                                            5 lý do khiến bạn phải tìm hiểu: Hoa Vinh là ai? Sao lại hot đến thế?</a>
+                                    </h3>
+                                </li>
+                                <li class="item">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                        </a>
+                                    </div>
+                                    <h3 class="title">
+                                        <a href="#" class="fa">Chuyện về bé Hải An hiến giác mạc sau khi qua đời: "Con muốn khi mất đi, những bộ
+                                            phận vẫn sống trên cơ thể người khác"
+                                        </a>
+                                    </h3>
+                                </li>
+                            </ul>
+                            <div class="fa tag">
+                                <a href="">Em bé Hải An</a>
+                                <a href="">Tin nóng xã hội</a>
+                                <a href="">Bé Hải An hiến giác mạc</a>
+                            </div>
+                            <div class="like-share">
+                                <a href="#" class="fa b-fb">Chia sẻ facebook</a>
+                                <a href="#" class="fa b-gl">Chia sẻ google</a>
+                                <a href="#" class="fa in"></a>
+                                <a class="fa mail" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row block-02">
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                        <article class="col item-07">
+                            <div class="img-auto">
+                                <a href="#" class="img-warpper cover">
+                                    <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="120" height="68"></amp-img>
+                                </a>
+                            </div>
+                            <h3 class="title">
+                                <a href="#">Chiếc lồng đèn trong lễ hội chùa Bà Thiên Hậu Bình Dương được đấu giá 2,5 tỷ đồng</a>
+                            </h3>
+                        </article>
+                    </div>
+                    <div class="row block-03">
+                        <div class="col left-main">
+                            <div class="heading-block">
+                                <h2 class="title">MỚI NHẤT
+                                </h2>
+                            </div>
+                            <div class="group-item">
+                                <article class="item-01">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="250" height="140"></amp-img>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#">Những thực phẩm cung cấp nguồn năng lượng dồi dào cho bé</a>
+                                        </h3>
+                                        <div class="summary">Thực phẩm họ ngũ cốc, chế phẩm từ sữa hay trái cây đều là các món phụ cung cấp nguồn
+                                            năng lượng dồi dào...
+                                        </div>
+                                        <div class="list">
+                                            <a class="active" href="#">Đời sống</a>
+                                            <a href="#">Thực phẩm</a>
+                                            <a href="#">Thực phẩm</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-01">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="250" height="140"></amp-img>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#">Mùng 7 Tết, cô gái than vãn vì vẫn không được về nhà mẹ đẻ và nỗi sợ của các
+                                                nàng dâu trẻ</a>
+                                        </h3>
+                                        <div class="summary">Thực phẩm họ ngũ cốc, chế phẩm từ sữa hay trái cây đều là các món phụ cung cấp nguồn
+                                            năng lượng dồi dào...
+                                        </div>
+                                        <div class="list">
+                                            <a class="active" href="#">Đời sống</a>
+                                            <a href="#">Thực phẩm</a>
+                                            <a href="#">Thực phẩm</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-01">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="250" height="140"></amp-img>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#">Những thực phẩm cung cấp nguồn năng lượng dồi dào cho bé</a>
+                                        </h3>
+                                        <div class="summary">Thực phẩm họ ngũ cốc, chế phẩm từ sữa hay trái cây đều là các món phụ cung cấp nguồn
+                                            năng lượng dồi dào...
+                                        </div>
+                                        <div class="list">
+                                            <a class="active" href="#">Đời sống</a>
+                                            <a href="#">Thực phẩm</a>
+                                            <a href="#">Thực phẩm</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-01">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="250" height="140"></amp-img>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#">Những thực phẩm cung cấp nguồn năng lượng dồi dào cho bé</a>
+                                        </h3>
+                                        <div class="summary">Thực phẩm họ ngũ cốc, chế phẩm từ sữa hay trái cây đều là các món phụ cung cấp nguồn
+                                            năng lượng dồi dào...
+                                        </div>
+                                        <div class="list">
+                                            <a class="active" href="#">Đời sống</a>
+                                            <a href="#">Thực phẩm</a>
+                                            <a href="#">Thực phẩm</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-01">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="250" height="140"></amp-img>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#">Mùng 7 Tết, cô gái than vãn vì vẫn không được về nhà mẹ đẻ và nỗi sợ của các
+                                                nàng dâu trẻ</a>
+                                        </h3>
+                                        <div class="summary">Thực phẩm họ ngũ cốc, chế phẩm từ sữa hay trái cây đều là các món phụ cung cấp nguồn
+                                            năng lượng dồi dào...
+                                        </div>
+                                        <div class="list">
+                                            <a class="active" href="#">Đời sống</a>
+                                            <a href="#">Thực phẩm</a>
+                                            <a href="#">Thực phẩm</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-01">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <amp-img layout="responsive" alt="" src="pic/demo.jpg" width="250" height="140"></amp-img>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#">Những thực phẩm cung cấp nguồn năng lượng dồi dào cho bé</a>
+                                        </h3>
+                                        <div class="summary">Thực phẩm họ ngũ cốc, chế phẩm từ sữa hay trái cây đều là các món phụ cung cấp nguồn
+                                            năng lượng dồi dào...
+                                        </div>
+                                        <div class="list">
+                                            <a class="active" href="#">Đời sống</a>
+                                            <a href="#">Thực phẩm</a>
+                                            <a href="#">Thực phẩm</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="load-content">
+                                <a href="#">Xem Thêm</a>
+                            </div>
+                        </div>
+                        <div class="col right-main">
+                            <div class="read-much">
+                                <h3 class="title">ĐỌC NHIỀU</h3>
+                                <div class="group-item">
+                                    <div class="item">
+                                        <div class="number">1</div>
+                                        <h4 class="title">
+                                            <a href="#">Khai hội Yên Tử, hàng trăm người leo trèo ra khỏi đám đông vì đứng chôn chân
+                                                2 tiếng ở đường lên chùa Đồng</a>
+                                        </h4>
+                                    </div>
+                                    <div class="item">
+                                        <div class="number">2</div>
+                                        <h4 class="title">
+                                            <a href="#">Loạt ảnh "biến hình" của chị em khi ở nhà với ra đường: Quan trọng nhất vẫn là
+                                                thần thái!</a>
+                                        </h4>
+                                    </div>
+                                    <div class="item">
+                                        <div class="number">3</div>
+                                        <h4 class="title">
+                                            <a href="#">Khai hội Yên Tử, hàng trăm người leo trèo ra khỏi đám đông vì đứng chôn chân
+                                                2 tiếng ở đường lên chùa Đồng</a>
+                                        </h4>
+                                    </div>
+                                    <div class="item">
+                                        <div class="number">4</div>
+                                        <h4 class="title">
+                                            <a href="#">Loạt ảnh "biến hình" của chị em khi ở nhà với ra đường: Quan trọng nhất vẫn là
+                                                thần thái!</a>
+                                        </h4>
+                                    </div>
+                                    <div class="item">
+                                        <div class="number">5</div>
+                                        <h4 class="title">
+                                            <a href="#">Cứ nghĩ mọc răng là bình thường, ai ngờ suýt mất con mãi mãi</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-8 left">
+                        <p>
+                            <strong>© BẢN QUYỀN THUỘC VỀ CÔNG TY CP TRUYỀN THÔNG DIGI ONE</strong>
+                        </p>
+                        <p>
+                            Số ĐKKD: 0102080029 do Sở Kế hoạch và Đầu tư Hà Nội cấp ngày 22/11/2006
+                            <br> Địa chỉ: 31C Lý Tự Trọng, Phường Bến Nghé, Quận 1, Tp Hồ Chí Minh
+                            <br> Hotline: 028.38277997
+                            <br> Email: info@digi-one.vn
+                            <br> Giấy phép số 2860/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 12 tháng 07 năm 2017
+                            <br> Chịu trách nhiệm nội dung: Bà Nguyễn Vương Thị Thảo
+                        </p>
+                    </div>
+                    <div class="col col-md-4 right">
+                        <p>
+                            LIÊN HỆ QUẢNG CÁO
+                            <br> Hotline: 028 38277997
+                            <br> Email: sales@digi-one.vn
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <div class="container text-right">
+                <amp-img layout="fixed" alt="" src="pic/copyright.png" width="269" height="9"></amp-img>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+</html>
