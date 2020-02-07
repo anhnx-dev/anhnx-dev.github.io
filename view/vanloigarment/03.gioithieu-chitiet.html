@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- js -->
+    <script type="text/javascript" src="vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+    <script type="text/javascript" src="vendor/google-map/infobox.js"></script>
+    <script type="text/javascript" src="vendor/google-map/GoogleMapInit.js"></script>
+    <script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/tether.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="clear container">
+            <!-- logo -->
+            <div class="logo">
+                <a href="#"><img src="pic/logo.png" alt=""></a>
+            </div>
+            <!-- contact -->
+            <div class="contact-h">
+                <a class="mobile" href="tel: 0303 658 268" title="0303 658 268">Moble: 0303 658 268</a>
+                <a class="email" href="#" title="">Email: vanloi.company.nv@gmail.com</a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- menu main -->
+    <nav class="menu-main">
+        <div class="clear container">
+            <!-- nav -->
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Giới thiệu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Giới thiệu chung</a></li>
+                        <li><a href="#">Tầm nhìn - Sứ mệnh</a></li>
+                        <li><a href="#">Triết lý kinh doanh</a></li>
+                        <li><a href="#">Ngành nghề kinh doanh</a></li>
+                        <li><a href="#">Văn hóa doanh nghiệp</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tin tức - Sự kiện</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Thư viện ảnh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+            </ul>
+            <!--search-->
+            <div class="search">
+                <div class="form-search">
+                    <input type="text" placeholder="Từ khóa tìm kiếm">
+                    <a href="#" aria-hidden="true"><img src="./css/icons/search.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- menu main -->
+
+    <!-- breadcrumb -->
+    <section id="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <nav class="col-12 breadcrumb">
+                    <a class="breadcrumb-item" href="#">Trang chủ</a>
+                    <a class="breadcrumb-item" href="#">Giới thiệu</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- end breadcrumb -->
+
+    <!-- main -->
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 left-main">
+                    <!-- menu left -->
+                    <div class="menu-left">
+                        <ul>
+                            <li class="active"><a href="#">Giới thiệu chung</a></li>
+                            <li><a href="#">Tầm nhìn - Sứ mệnh</a></li>
+                            <li><a href="#">Triết lý kinh doanh</a></li>
+                            <li><a href="#">Ngành nghề kinh doanh</a></li>
+                            <li><a href="#">Văn hóa doanh nghiệp</a></li>
+                            <li><a href="#">Năng lực - Thành tích</a></li>
+                        </ul>
+                    </div>
+                    <!-- news event left -->
+                    <div class="news-event-left">
+                        <div class="top-left">Lĩnh vực hoạt động</div>
+                        <ul>
+                            <li><a href="#"><img src="pic/7.png" alt=""> <span>Blouse / Áo sơ mi</span></a></li>
+                            <li><a href="#"><img src="pic/8.png" alt=""> <span>T-shirt / Áo phông</span></a></li>
+                            <li><a href="#"><img src="pic/9.png" alt=""> <span>Woman pant / Quần nữ</span></a></li>
+                            <li><a href="#"><img src="pic/10.png" alt=""> <span>Jacket / Áo khoác</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- news left -->
+                    <div class="news-left">
+                        <div class="top-left">Tin tức mới nhất</div>
+                        <div class="group-item">
+                            <div class="clear item">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                                <img src="pic/demo.jpg">
+                                            </a>
+                                </div>
+                                <div class="content">
+                                    <a href="#">Proident commodo amet incididunt nisi ad nulla anim nisi eiusmod aute.</a>
+                                    <div class="summary">Irure ullamco sunt adipisicing non sit occaecat. Consequat excepteur eu nostrud Lorem
+                                        mollit dolor sunt. Magna nisi ea magna commodo proident reprehenderit irure ex dolor
+                                        sit.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear item">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                                    <img src="pic/demo.jpg">
+                                                </a>
+                                </div>
+                                <a href="#">Proident commodo amet incididunt nisi ad nulla anim nisi eiusmod aute.</a>
+                            </div>
+                            <div class="clear item">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                                        <img src="pic/demo.jpg">
+                                                    </a>
+                                </div>
+                                <a href="#">Proident commodo amet incididunt nisi ad nulla anim nisi eiusmod aute.</a>
+                            </div>
+                            <div class="clear item">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                                            <img src="pic/demo.jpg">
+                                                        </a>
+                                </div>
+                                <a href="#">Proident commodo amet incididunt nisi ad nulla anim nisi eiusmod aute.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 right-main">
+                    <!-- new detail -->
+                    <div class="new-detail">
+                        <div href="#" title="" class="title">
+                            <h1>title</h1>
+                        </div>
+                        <div>
+                            <!-- top -->
+                            <div class="thongke">
+                                <div class="thongke-ngay"><span>Ngày đăng: 08:32-20/06/2015</span></div>
+                                <div class="thongke-luotxem"><span>Lượt xem: 1.688</span></div>
+                                <div class="cochu">
+                                    <span>Cỡ chữ</span>
+                                    <a href="javascript:DecreaseTextSize()" title="" class="SmallSize"></a>
+                                    <a class="LargeSize" href="javascript:IncreaseTextSize()" title=""></a>
+                                </div>
+                            </div>
+                            <!-- end top -->
+                            <!-- center -->
+                            <div class="noidung TextSize">
+                                <div class="nddes fRobotoB lh22 pb20">
+                                    Nội dung ở đây
+                                </div>
+                            </div>
+                            <!-- end center -->
+                            <!-- buttom -->
+                            <div id="CommonCuoiChiTietTin">
+                                <div class="fl apd dnmb">
+                                    <a class="prevDBT" href="javascript:history.go(-1)">Về trang trước</a>
+                                    <div class="fr pl20 apd dnmb">
+                                        <a href="javascript:void(0)" class="email addthis_button_email">Gửi emmail</a>
+                                        <a href="javascript:window.print()" class="print">In trang</a>
+                                    </div>
+                                </div>
+                                <div class="fr">
+                                    <!-- AddThis Button BEGIN -->
+                                    <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                                        <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                                        <div class="shareItem"><a class="addthis_button_facebook"></a></div>
+                                        <div class="shareItem"><a class="addthis_button_twitter"></a></div>
+                                        <div class="shareItem"><a class="addthis_button_zingme"></a></div>
+                                        <div class="shareItem"><a class="addthis_button_compact"></a></div>
+                                        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+                                    </div>
+                                    <!-- AddThis Button END -->
+                                </div>
+                            </div>
+                            <!-- end buttom -->
+                        </div>
+                    </div>
+                    <!-- other -->
+                    <div class="other other-01">
+                        <strong>Các bài viết khác</strong>
+                        <div class="group-item">
+                            <div class="clear item">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                        <img src="pic/demo.jpg">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <a href="#">Nulla exercitation pariatur voluptate et.</a>
+                                    <div class="time-view">
+                                        <span class="time">Ngày đăng: 11/7/2016</span>
+                                        <span class="view">Lượt xem: 2.658</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear item">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                                <img src="pic/demo.jpg">
+                                            </a>
+                                </div>
+                                <div class="content">
+                                    <a href="#">Nulla exercitation pariatur voluptate et.</a>
+                                    <div class="time-view">
+                                        <span class="time">Ngày đăng: 11/7/2016</span>
+                                        <span class="view">Lượt xem: 2.658</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear item">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                                    <img src="pic/demo.jpg">
+                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="#">Nulla exercitation pariatur voluptate et.</a>
+                                    <div class="time-view">
+                                        <span class="time">Ngày đăng: 11/7/2016</span>
+                                        <span class="view">Lượt xem: 2.658</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear item">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                                        <img src="pic/demo.jpg">
+                                                    </a>
+                                </div>
+                                <div class="content">
+                                    <a href="#">Nulla exercitation pariatur voluptate et.</a>
+                                    <div class="time-view">
+                                        <span class="time">Ngày đăng: 11/7/2016</span>
+                                        <span class="view">Lượt xem: 2.658</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear item">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                                            <img src="pic/demo.jpg">
+                                                        </a>
+                                </div>
+                                <div class="content">
+                                    <a href="#">Nulla exercitation pariatur voluptate et.</a>
+                                    <div class="time-view">
+                                        <span class="time">Ngày đăng: 11/7/2016</span>
+                                        <span class="view">Lượt xem: 2.658</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container clear offset45 block-group">
+            <div class="block-f">
+                <div class="top">CÔNG TY TNHH VẠN LỢI </div>
+                <div class="contact-f">
+                    <p>KM08, Quốc lộ 1A, Thôn La Mai, Hoa Lư, Ninh Bình</p>
+                    <p>0303 658 268/ FAX: 0303 623 433</p>
+                    <p>Vanloi.company.nv@gmail.com</p>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#model-map"><img src="./css/icons/google.png" alt=""></a>
+            </div>
+            <div class="block-f">
+                <div class="top">Sản phẩm</div>
+                <ul class="nav-f">
+                    <li><a href="#">Áo sơ mi nữ</a></li>
+                    <li><a href="#">Quần nữ</a></li>
+                    <li><a href="#">Áo khoác</a></li>
+                    <li><a href="#">Áo phông</a></li>
+                </ul>
+            </div>
+            <div class="block-f">
+                <div class="top">Tin tức</div>
+                <ul class="nav-f">
+                    <li><a href="#">Tin nội bộ</a></li>
+                    <li><a href="#">Tin chuyên ngành</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                </ul>
+            </div>
+            <div class="block-f">
+                <div id="fb-root"></div>
+                <script>
+                    (function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10&appId=226666764204714";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                </script>
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="182" data-small-header="true"
+                    data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <span>© 2017 Công ty TNHH Vạn Lợi - All rights reserved. <a target="_bank" href="http://tatthanh.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!" class="fs13">Thiết kế website và SEO - Tất Thành</a></span>
+                <span><img src="./css/icons/online.png" alt="">Đang online: 120</span>
+                <span><img src="./css/icons/tong-onlile.png" alt="">Tổng truy cập: 1.567.555</span>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <div class="ve-top">
+        <img src="./css/icons/ve-top.png" alt="">
+    </div>
+
+    <!-- Modal maps -->
+    <div class="modal fade modal-map" id="model-map" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">Đóng</button>
+                    <div id="maps-f"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- maps -->
+    <script>
+        initialize(
+            '21.00757415248039',
+            '105.80296128988266',
+            '',
+            'maps-f',
+            ''
+        );
+    </script>
+
+</body>
+
+</html>
