@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- top bar -->
+        <div class="top-bar">
+            <div class="container">
+                <!-- contact -->
+                <div class="contact">
+                    <a href="tel: 02432047979" title="02432047979">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        02432047979
+                    </a>
+                    <a href="#" title="info@virex.vn">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        info@virex.vn
+                    </a>
+                    <a href="#" title="33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội.">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội.
+                    </a>
+                </div>
+                <!-- Language -->
+                <div class="language">
+                    <a class="active" href="#">VI</a>
+                    <a href="#">EN</a>
+                </div>
+            </div>
+        </div>
+        <!-- main bar -->
+        <div class="main-bar">
+            <div class="container">
+                <!-- logo -->
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./pic/logo.png" alt="">
+                    </a>
+                </h1>
+                <!-- butuom menu main -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-main" aria-controls="menu-main" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-icon">
+                        <span></span>
+                    </span>
+                </button>
+                <!-- menu main -->
+                <nav class="menu-main" id="menu-main">
+                    <div class="inner">
+                        <ul class="nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Về trúng tôi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dự án</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tài liện</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cho thuê bđs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin tức</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức dự án</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức nội bộ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sự kiện nổi bật</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức khác</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Demo</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Demo</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--search-->
+                <div class="search">
+                    <div class="form-search">
+                        <input type="text" placeholder="Từ khóa tìm kiếm">
+                        <a href="#">
+                            <img src="css/icons/search.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main id="main">
+
+        <!-- img page -->
+        <section class="breadcrumb-page">
+            <div class="img">
+                <div class="khungAnh">
+                    <span class="khungAnhCrop">
+                        <img src="./pic/slider2.png">
+                    </span>
+                </div>
+            </div>
+            <!-- breadcrumb -->
+            <div class="link-page">
+                <div class="container text-center">
+                    <h1>Vị trí tuyển dụng</h1>
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="#">Trang chu</a>
+                        <a class="breadcrumb-item" href="#">Tuyển dụng</a>
+                        <a class="breadcrumb-item" href="#">Vị trí tuyển dụng</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- end breadcrumb -->
+        </section>
+        <!-- img page end -->
+
+        <!-- page about us -->
+        <section class="page-news">
+            <div class="container">
+                <div class="row">
+                    <!-- left -->
+                    <div class="col-12 col-lg-9 left">
+                        <div class="inner-left">
+                            <!-- new detail -->
+                            <div class="new-detail">
+                                <h2 class="tile-ditail">NHÂN VIÊN SEO</h2>
+                                <div class="contact-detail">
+                                    <div class="time-view">
+                                        <span class="time">11/7/2016</span>
+                                        <span class="view">348 lượt xem</span>
+                                    </div>
+                                    <div class="social">
+                                        <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                                            <div class="shareItem">
+                                                <a class="addthis_button_compact"></a>
+                                            </div>
+                                            <div class="shareItem">
+                                                <a class="addthis_button_facebook"></a>
+                                            </div>
+                                            <div class="shareItem">
+                                                <a class="addthis_button_twitter"></a>
+                                            </div>
+                                            <div class="shareItem">
+                                                <a class="addthis_button_zingme"></a>
+                                            </div>
+                                            <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                                            <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                                        </div>
+                                        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+                                        <script>
+                                            (function (d, s, id) {
+                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                if (d.getElementById(id)) return;
+                                                js = d.createElement(s);
+                                                js.id = id;
+                                                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                            }(document, "script", "facebook-jssdk"));
+                                            (function () {
+                                                var po = document.createElement("script");
+                                                po.type = "text/javascript";
+                                                po.async = true;
+                                                po.src = "https://apis.google.com/js/platform.js";
+                                                var s = document.getElementsByTagName("script")[0];
+                                                s.parentNode.insertBefore(po, s);
+                                            })();
+                                        </script>
+                                    </div>
+                                </div>
+                                <!-- content recruitment -->
+                                <div class="content-recruitment">
+                                    <ul class="block">
+                                        <strong>MÔ TẢ CÔNG VIỆC</strong>
+                                        <li>Đẩy các từ khóa lên trang đầu của công cụ tìm kiếm.</li>
+                                        <li>SEO từ khóa lên Top nhanh và đảm bảo duy trì vị trí Top lâu dài.</li>
+                                        <li>Tối ưu hóa website phục vụ cho công việc SEO.</li>
+                                        <li>Viết các tin bài liên quan đến SEO lên các diễn đàn, blog, các mạng xã hội.</li>
+                                        <li>Phân tích và đánh giá về thị trường thông qua các từ khóa;</li>
+                                        <li>Lập kế hoạch và triển khai đẩy nội dung từ khóa cho website;</li>
+                                        <li>Sử dụng các công cụ và phương pháp marketing online để đẩy mạnh kết quả SEO;</li>
+                                        <li>Các công việc khác liên quan đến SEO theo yêu cầu của quản lý</li>
+                                    </ul>
+                                    <ul class="block">
+                                        <strong>YÊU CẦU CHUNG</strong>
+                                        <li>Thật thà, chăm chỉ, sáng tạo, yêu nghề</li>
+                                        <li>Có kinh nghiệm tối thiểu 1 năm</li>
+                                        <li>Hiểu biết rõ về các kênh Marketing Online</li>
+                                        <li>Phối hợp chặt chẽ với nhóm Marketing Online để hoàn thành tốt mục tiêu</li>
+                                        <li>Đẩy các từ khoá được giao lên top Google.</li>
+                                        <li>Đưa ra những kế hoạch về Marketing cụ thể</li>
+                                    </ul>
+                                    <ul class="block">
+                                        <strong>MÔ TẢ CÔNG VIỆC</strong>
+                                        <li>Mức lương: Thỏa thuận theo năng lực</li>
+                                        <li>Môi trường làm việc chuyên nghiệp, thân thiện.</li>
+                                        <li>Các chế độ ưu đãi khác.</li>
+                                        <li>Được đào tạo cơ bản về kỹ năng công việc.</li>
+                                        <li>Được tham gia Bảo hiểm xã hội, Bảo hiểm Y tế. bảo hiểm thất nghiệp. Các chế độ công
+                                            đoàn ốm đau, ma chay hiếu hỉ theo quy định công ty</li>
+                                        <li>Được thưởng các ngày Lễ, Tết</li>
+                                        <li>Các chế độ chính sách khác được thực hiện đầy đủ theo quy định của luật lao động</li>
+                                    </ul>
+                                    <ul class="block">
+                                        <strong>HÌNH THỨC ỨNG TUYỂN</strong>
+                                        <li>Ứng viên quan tâm vui lòng gửi hồ sơ/CV đến: email: tuyendung@virex.vn</li>
+                                        <li>Hoặc nộp trực tiếp tại: Công ty cổ phần Virex, 33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm,
+                                            Hà Nội.</li>
+                                        <li>Hoặc tải lên Hồ sơ / CV bằng cách click vào button dưới đây:</li>
+                                    </ul>
+                                    <a href="#" class="btn-03" id="active-form-recruitment">Ứng tuyển HS/CV</a>
+                                    <div class="form-recruitment">
+                                        <div class="inner">
+                                            <p>
+                                                <input type="text" placeholder="Họ tên">
+                                            </p>
+                                            <p>
+                                                <input type="text" placeholder="Email">
+                                            </p>
+                                            <p>
+                                                <input type="text" placeholder="Số điện thoại">
+                                            </p>
+                                            <p>
+                                                <input type="text" placeholder="Địa chỉ">
+                                            </p>
+                                            <label class="custom-file">
+                                                <input type="file" id="file" class="custom-file-input" required>
+                                                <span class="btn-10">
+                                                    <i class="fa fa-upload" aria-hidden="true"></i> Đính kèm HS/CV</span>
+                                            </label>
+                                            <p>
+                                                <input type="text" placeholder="Mã xác nhận">
+                                                <img src="css/icons/code2.png" alt="">
+                                                <a href="#" class="btn-10">GỬI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- other recruitment -->
+                                <div class="recruitment other-recruitment">
+                                    <strong>TIN TUYỂN DỤNG KHÁC</strong>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>VỊ TRÍ TUYỂN DỤNG</th>
+                                                    <th>MÃ ỨNG TUYỂN</th>
+                                                    <th>SỐ LƯỢNG</th>
+                                                    <th>ĐỊA ĐIỂM</th>
+                                                    <th>NGÀY HẾT HẠN</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">Nhân viên SEO</a>
+                                                    </td>
+                                                    <td>VR - 1004 SEO</td>
+                                                    <td>02</td>
+                                                    <td>Hà Nội</td>
+                                                    <td>30/12/2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">Nhân viên Kinh doanh</a>
+                                                    </td>
+                                                    <td>VR - 1004 SEO</td>
+                                                    <td>02</td>
+                                                    <td>Hà Nội</td>
+                                                    <td>30/12/2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">Trưởng phòng Marketing</a>
+                                                    </td>
+                                                    <td>VR - 1004 SEO</td>
+                                                    <td>02</td>
+                                                    <td>Hà Nội</td>
+                                                    <td>30/12/2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">Nhân viên Marketing</a>
+                                                    </td>
+                                                    <td>VR - 1004 SEO</td>
+                                                    <td>02</td>
+                                                    <td>Hà Nội</td>
+                                                    <td>30/12/2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">Nhân viên thiết kế đồ họa</a>
+                                                    </td>
+                                                    <td>VR - 1004 SEO</td>
+                                                    <td>02</td>
+                                                    <td>Hà Nội</td>
+                                                    <td>30/12/2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">Trưởng phòng quản lý nhân sự</a>
+                                                    </td>
+                                                    <td>VR - 1004 SEO</td>
+                                                    <td>02</td>
+                                                    <td>Hà Nội</td>
+                                                    <td>30/12/2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">Trưởng nhóm SEO</a>
+                                                    </td>
+                                                    <td>VR - 1004 SEO</td>
+                                                    <td>02</td>
+                                                    <td>Hà Nội</td>
+                                                    <td>30/12/2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">Nhân viên hành chính kế toán</a>
+                                                    </td>
+                                                    <td>VR - 1004 SEO</td>
+                                                    <td>02</td>
+                                                    <td>Hà Nội</td>
+                                                    <td>30/12/2017</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="col-12 col-lg-3 right">
+                        <div class="inner-right">
+                            <!-- menu right -->
+                            <nav class="menu-right">
+                                <ul>
+                                    <li>
+                                        <a href="#">Chính sách nhân sự</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">Vị trí tuyển dụng</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- adv right -->
+                            <div class="adv-right">
+                                <div class="top-right">
+                                    TẠI SAO CHỌN CHÚNG TÔI
+                                </div>
+                                <ul>
+                                    <li>
+                                        <img src="./pic/icons/1.png" alt="">
+                                        <span>Uy tín là thương hiệu</span>
+                                    </li>
+                                    <li>
+                                        <img src="./pic/icons/2.png" alt="">
+                                        <span>Sản phẩm phân phối</span>
+                                    </li>
+                                    <li>
+                                        <img src="./pic/icons/3.png" alt="">
+                                        <span>Dịch vụ chuyên nghiệp</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- page about us end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- contact -->
+            <div class="contact">
+                <div class="row">
+                    <!-- registration -->
+                    <div class="col-12 col-md-4 registration">
+                        <div class="inner-registration">
+                            <strong>ĐĂNG KÝ NHẬN BẢN TIN</strong>
+                            <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất.</p>
+                            <div class="form">
+                                <input type="text" placeholder="Nhập email của bạn...">
+                                <a href="#">Gửi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- brochure -->
+                    <div class="col-12 col-md-4 brochure">
+                        <div class="inner-brochure">
+                            <strong>Brochure Công ty</strong>
+                            <p>Download Brochure mới nhất của Virex để hiểu rõ hơn về chúng tôi</p>
+                            <a href="#">Tải brochure
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- take care of -->
+                    <div class="col-12 col-md-4 take-care-of">
+                        <div class="inner-take-care-of">
+                            <strong>chăm sóc khách hàng</strong>
+                            <p>Hotline:
+                                <b>02432047979</b>
+                            </p>
+                            <p>Email:
+                                <b>info@virex.vn</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- menu footer -->
+            <div class="menu-footer">
+                <div class="link-block">
+                    <strong>dự án</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Laluna Nha Trang</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Eden Rose</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Luxury Apartment Đà Nẵng</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Golden City An Giang</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án 28E Trần Phú  Nha Trang</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>tin tức</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin thị trường</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin Virex
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin báo chí</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Brochure công ty</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Video</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>Phát triển bền vững</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Hội đồng Phát triển bền vững</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị Công ty</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị nguồn nhân lực</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị thương hiệu Virex</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Môi trường</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Hoạt động Cộng đồng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>tuyển dụng</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Chính sách nhân sự</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Vị trí tuyển dụng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- copyright social -->
+            <div class="copyright-social">
+                <div class="left">
+                    <p>Công ty cổ phần VIREX, 33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội. Điện thoại: 02432047979. Email:
+                        info@virex.vn
+                    </p>
+                    <p>© 2017. Bản quyền thuộc về Công ty cổ phần VIREX. Tất cả các quyền được bảo hộ. </p>
+                </div>
+                <div class="right">
+                    <a href="#">
+                        <img src="css/icons/s1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s2.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s4.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

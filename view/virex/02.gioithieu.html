@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- top bar -->
+        <div class="top-bar">
+            <div class="container">
+                <!-- contact -->
+                <div class="contact">
+                    <a href="tel: 02432047979" title="02432047979">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        02432047979
+                    </a>
+                    <a href="#" title="info@virex.vn">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        info@virex.vn
+                    </a>
+                    <a href="#" title="33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội.">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội.
+                    </a>
+                </div>
+                <!-- Language -->
+                <div class="language">
+                    <a class="active" href="#">VI</a>
+                    <a href="#">EN</a>
+                </div>
+            </div>
+        </div>
+        <!-- main bar -->
+        <div class="main-bar">
+            <div class="container">
+                <!-- logo -->
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./pic/logo.png" alt="">
+                    </a>
+                </h1>
+                <!-- butuom menu main -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-main" aria-controls="menu-main" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-icon">
+                        <span></span>
+                    </span>
+                </button>
+                <!-- menu main -->
+                <nav class="menu-main" id="menu-main">
+                    <div class="inner">
+                        <ul class="nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Về trúng tôi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dự án</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tài liện</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cho thuê bđs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin tức</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức dự án</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức nội bộ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sự kiện nổi bật</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức khác</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Demo</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Demo</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--search-->
+                <div class="search">
+                    <div class="form-search">
+                        <input type="text" placeholder="Từ khóa tìm kiếm">
+                        <a href="#">
+                            <img src="css/icons/search.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main id="main">
+
+        <!-- img page -->
+        <section class="breadcrumb-page">
+            <div class="img">
+                <div class="khungAnh">
+                    <span class="khungAnhCrop">
+                        <img src="./pic/slider2.png">
+                    </span>
+                </div>
+            </div>
+            <!-- breadcrumb -->
+            <div class="link-page">
+                <div class="container text-center">
+                    <h1>VỀ CHÚNG TÔI</h1>
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="#">Trang chu</a>
+                        <a class="breadcrumb-item" href="#">về chúng tôi</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- end breadcrumb -->
+        </section>
+        <!-- img page end -->
+
+        <!-- page about us -->
+        <section class="page-about-us">
+
+            <!-- button nav section -->
+            <button class="navbar-toggler button-nav-section" type="button" data-toggle="collapse" data-target="#nav-section" aria-controls="nav-section" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-icon">
+                    <span></span>
+                </span>
+            </button>
+            <!-- nav section -->
+            <nav class="nav-section" id="nav-section">
+                <div class="container">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link1" href="#general-introduction">GIỚI THIỆU CHUNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link2" href="#vision-mission">TẦM NHÌN - SỨ MỆNH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link3" href="#value">GIÁ TRỊ CỐT LÕI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link4" href="#history">LỊCH SỬ PHÁT TRIỂN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link5" href="#leader">BAN LÃNH ĐẠO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link6" href="#adviser">Ban cố vấn</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- nav section end -->
+
+            <!-- general introduction -->
+            <div class="general-introduction" id="general-introduction">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="col-12 top-au">GIỚI THIỆU CHUNG</h2>
+                        <div class="col-12 col-lg-6 text">
+                            <div class="inner">
+                                <p>Hiện nay, sự thiếu nhất quán về thông tin của các dự án bất động sản đang khiến khách hàng
+                                    cảm thấy bối rối và bất an, tạo nên một rào cản lớn cho giao dịch mua bán ở cả trong
+                                    và ngoài nước. Để giải quyết vấn đề này, nền tảng VIREX ra đời nhằm xác thực và cung
+                                    cấp thông tin tin cậy, dễ dàng giữa nhà đầu tư và khách hàng.
+                                </p>
+                                <br>
+                                <p>
+                                    Với một ban điều hành giàu kinh nghiệm, và sự hợp tác chặt chẽ với các chuyên gia và tổ chức hàng đầu về: kinh tế, đầu tư,
+                                    tài chính, chiến lược, bất động sản, xây dựng… VIREX đặt mục tiêu trở thành một đối tác
+                                    tin cậy trong lĩnh vực bất động sản tại Việt Nam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 video">
+                            <div class="inner">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/wJnBTPUQS5A" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- vision mission -->
+            <div class="vision-mission" id="vision-mission">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="col-12 top-au">TẦM NHÌN - SỨ MỆNH</h2>
+                        <div class="col-12 col-md-6 item">
+                            <div class="inner">
+                                <h3>
+                                    <img src="./pic/icons/5.png" alt=""> TẦM NHÌN
+                                </h3>
+                                <br>
+                                <p>Phát triển VIREX trở thành công ty Bất động sản chuyên nghiệp vững mạnh với thương hiệu uy
+                                    tín hàng đầu trên thị trường bất động sản Việt Nam.</p>
+                                <br>
+                                <p>Với một ban điều hành giàu kinh nghiệm, và sự hợp tác chặt chẽ với các chuyên gia và tổ chức
+                                    hàng đầu về: kinh tế, đầu tư, tài chính, chiến lược, bất động sản, xây dựng… VIREX đặt
+                                    mục tiêu trở thành một đối tác tin cậy trong lĩnh vực bất động sản tại Việt Nam.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 item">
+                            <div class="inner">
+                                <h3>
+                                    <img src="./pic/icons/6.png" alt=""> SỨ MỆNH
+                                </h3>
+                                <br>
+                                <p>Tạo ra một môi trường giao dịch minh bạch, khép kín trong lĩnh vực bất động sản:</p>
+                                <br>
+                                <p>- Hỗ trợ chủ đầu tư nắm bắt được thông tin thị trường, tư vấn chiến lược bán hàng…</p>
+                                <p>- Hỗ trợ Khách hàng có cái nhìn tổng quan về nhóm sản phẩm mà họ quan tâm, từ đó đưa ra các
+                                    quyết định mua hoặc đầu tư chính xác, hiệu quả.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- value -->
+            <div class="value" id="value">
+                <div class="container">
+                    <h2 class="top-au">GIÁ TRỊ CỐT LÕI</h2>
+                    <div class="text-center inner">
+                        <strong>Công nghệ và Con người</strong>
+                        <br>
+                        <p> Với việc đầu tư vào công nghệ tân tiến, VIREX hỗ trợ người bán tìm kiếm khách hàng mục tiêu nhanh
+                            chóng và đáng tin cậy hơn. Theo đó, VIREX sẽ đạt được khối lượng bán hàng lớn gấp nhiều lần so
+                            với phương pháp kinh doanh truyền thống.</p>
+                        <br>
+                        <p>Mô hình Đối tác VIREX đảm bảo lợi ích cho tất cả các bên, cho phép VIREX hợp tác với các đối tác
+                            chuyên nghiệp, bên tư vấn chuyên môn và tránh khỏi thị trường độc quyền hiện nay. VIREX xác thực
+                            dựa trên ba yếu tố “Minh mạch, Rõ ràng và An Toàn”.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- history -->
+            <div class="history" id="history">
+                <div class="container">
+                    <h2 class="top-au">LỊCH SỬ HÌNH THÀNH</h2>
+                    <p>Với một ban điều hành giàu kinh nghiệm, và sự hợp tác chặt chẽ với các chuyên gia và tổ chức hàng đầu
+                        về: kinh tế, đầu tư, tài chính, chiến lược, bất động sản, xây dựng… VIREX đặt mục tiêu trở thành
+                        một đối tác tin cậy trong lĩnh vực bất động sản tại Việt Nam.</p>
+                    <div class="inner">
+                        <article class="item-07">
+                            <div class="content">
+                                <div class="time">2002</div>
+                                <div class="text">
+                                    <p>Thành lập Công ty cổ phần VIREX với vốn điều lệ 100 tỷ đồng</p>
+                                </div>
+                            </div>
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/ls1.png">
+                                </a>
+                            </div>
+                        </article>
+                        <article class="item-07">
+                            <div class="content">
+                                <div class="time">2008</div>
+                                <div class="text">
+                                    <p>Phát triển VIREX trở thành công ty Bất động sản chuyên nghiệp vững mạnh với vốn điều
+                                        lệ tăng lên 500 tỷ đồng</p>
+                                    <br>
+                                    <p>Khởi công dự án
+                                        <span>Luxury Apartment Đà Nẵng</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/ls2.png">
+                                </a>
+                            </div>
+                        </article>
+                        <article class="item-07">
+                            <div class="content">
+                                <div class="time">2002</div>
+                                <div class="text">
+                                    <p>Thành lập Công ty cổ phần VIREX với vốn điều lệ 100 tỷ đồng</p>
+                                </div>
+                            </div>
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/ls1.png">
+                                </a>
+                            </div>
+                        </article>
+                        <article class="item-07">
+                            <div class="content">
+                                <div class="time">2012</div>
+                                <div class="text">
+                                    <p>Khởi công dự án:
+                                        <span>Golden City An Giang</span>, Nguyễn Hoàng, Mỹ Hòa, Tp. Long Xuyên, An Giang</p>
+                                    <br>
+                                    <p>Bàn giao dự án:
+                                        <span>Luxury Apartment Đà Nẵng</span> ,</p>
+                                </div>
+                            </div>
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/ls3.png">
+                                </a>
+                            </div>
+                        </article>
+                        <article class="item-07">
+                            <div class="content">
+                                <div class="time">2015</div>
+                                <div class="text">
+                                    <p>Tăng vốn điều lệ lên 2000 tỷ đồng</p>
+                                    <br>
+                                    <p>Công bố 2 dự án:</p>
+                                    <p>
+                                        <span>28E Trần Phú  Nha Trang</span>
+                                    </p>
+                                    <p>
+                                        <span>Eden Rose Thanh Trì</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/ls4.png">
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- manifesto -->
+            <div class="manifesto">
+                <div class="container text-center">
+                    <p>“VIREX” đã xoá bỏ mọi rào cản để kiến tạo một sàn giao dịch bất động sản thành công tại Việt Nam, thể
+                        hiện được rõ những quan điểm và tầm nhìn chiến lược cho những cơ hội tương lai. Chúng tôi hoàn toàn
+                        bị thuyết phục và mong muốn trở thành một phần của nền tảng sơ khai ấy. Alphanam tự hào là chủ đầu
+                        tư tiên phong tham gia vào VIREX, thực hiện sứ mệnh hiện đại hoá bất động sản tại Việt Nam”.</p>
+                    <strong>CĐT Alphanam</strong>
+                </div>
+            </div>
+
+            <!-- leader -->
+            <div class="leader" id="leader">
+                <div class="container">
+                    <h2 class="top-au">BAN LÃNH ĐẠO</h2>
+                    <div class="inner">
+                        <article class="item-06">
+                            <div class="khungAnh">
+                                <span class="khungAnhCrop">
+                                    <img src="./pic/ld.png" class="wide">
+                                </span>
+                            </div>
+                            <div class="content">
+                                <summary>
+                                    <p>"Con người Virex với giá trị cốt lõi: Chính trực - Hiệu quả - Chuyên nghiệp là tài sản
+                                        quý báu của Công ty; là chìa khóa của sự thành công sẽ sớm hiện thực được Sứ mạng,
+                                        Hoài bão của Virex”.</p>
+                                </summary>
+                                <div class="function">
+                                    <strong>Ông Nguyễn Văn A</strong>
+                                    <p>Chủ tịch HĐQT</p>
+                                    <p>Tiến sĩ Quản trị kinh doanh (DBA) - Tốt nghiệp khóa Executive MBA, HSB-TUCK, Đại học
+                                        Dartmouth, Hoa Kỳ.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item-06">
+                            <div class="khungAnh">
+                                <span class="khungAnhCrop">
+                                    <img src="./pic/ld.png" class="wide">
+                                </span>
+                            </div>
+                            <div class="content">
+                                <summary>
+                                    <p>"Con người Virex với giá trị cốt lõi: Chính trực - Hiệu quả - Chuyên nghiệp là tài sản
+                                        quý báu của Công ty; là chìa khóa của sự thành công sẽ sớm hiện thực được Sứ mạng,
+                                        Hoài bão của Virex”.</p>
+                                </summary>
+                                <div class="function">
+                                    <strong>Ông Nguyễn Văn A</strong>
+                                    <p>Chủ tịch HĐQT</p>
+                                    <p>Tiến sĩ Quản trị kinh doanh (DBA) - Tốt nghiệp khóa Executive MBA, HSB-TUCK, Đại học
+                                        Dartmouth, Hoa Kỳ.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item-06">
+                            <div class="khungAnh">
+                                <span class="khungAnhCrop">
+                                    <img src="./pic/ld.png" class="wide">
+                                </span>
+                            </div>
+                            <div class="content">
+                                <summary>
+                                    <p>"Con người Virex với giá trị cốt lõi: Chính trực - Hiệu quả - Chuyên nghiệp là tài sản
+                                        quý báu của Công ty; là chìa khóa của sự thành công sẽ sớm hiện thực được Sứ mạng,
+                                        Hoài bão của Virex”.</p>
+                                </summary>
+                                <div class="function">
+                                    <strong>Ông Nguyễn Văn A</strong>
+                                    <p>Chủ tịch HĐQT</p>
+                                    <p>Tiến sĩ Quản trị kinh doanh (DBA) - Tốt nghiệp khóa Executive MBA, HSB-TUCK, Đại học
+                                        Dartmouth, Hoa Kỳ.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item-06">
+                            <div class="khungAnh">
+                                <span class="khungAnhCrop">
+                                    <img src="./pic/ld.png" class="wide">
+                                </span>
+                            </div>
+                            <div class="content">
+                                <summary>
+                                    <p>"Con người Virex với giá trị cốt lõi: Chính trực - Hiệu quả - Chuyên nghiệp là tài sản
+                                        quý báu của Công ty; là chìa khóa của sự thành công sẽ sớm hiện thực được Sứ mạng,
+                                        Hoài bão của Virex”.</p>
+                                </summary>
+                                <div class="function">
+                                    <strong>Ông Nguyễn Văn A</strong>
+                                    <p>Chủ tịch HĐQT</p>
+                                    <p>Tiến sĩ Quản trị kinh doanh (DBA) - Tốt nghiệp khóa Executive MBA, HSB-TUCK, Đại học
+                                        Dartmouth, Hoa Kỳ.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- leader -->
+            <div class="leader adviser" id="adviser">
+                <div class="container">
+                    <h2 class="top-au">BAN CỐ VẤN</h2>
+                    <div class="inner">
+                        <article class="item-06">
+                            <div class="khungAnh">
+                                <span class="khungAnhCrop">
+                                    <img src="./pic/ld.png" class="wide">
+                                </span>
+                            </div>
+                            <div class="content">
+                                <summary>
+                                    <p>"Con người Virex với giá trị cốt lõi: Chính trực - Hiệu quả - Chuyên nghiệp là tài sản quý báu của
+                                        Công ty; là chìa khóa của sự thành công sẽ sớm hiện thực được Sứ mạng, Hoài bão của Virex”.</p>
+                                </summary>
+                                <div class="function">
+                                    <strong>Ông Nguyễn Văn A</strong>
+                                    <p>Chủ tịch HĐQT</p>
+                                    <p>Tiến sĩ Quản trị kinh doanh (DBA) - Tốt nghiệp khóa Executive MBA, HSB-TUCK, Đại học Dartmouth, Hoa
+                                        Kỳ.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item-06">
+                            <div class="khungAnh">
+                                <span class="khungAnhCrop">
+                                    <img src="./pic/ld.png" class="wide">
+                                </span>
+                            </div>
+                            <div class="content">
+                                <summary>
+                                    <p>"Con người Virex với giá trị cốt lõi: Chính trực - Hiệu quả - Chuyên nghiệp là tài sản quý báu của
+                                        Công ty; là chìa khóa của sự thành công sẽ sớm hiện thực được Sứ mạng, Hoài bão của Virex”.</p>
+                                </summary>
+                                <div class="function">
+                                    <strong>Ông Nguyễn Văn A</strong>
+                                    <p>Chủ tịch HĐQT</p>
+                                    <p>Tiến sĩ Quản trị kinh doanh (DBA) - Tốt nghiệp khóa Executive MBA, HSB-TUCK, Đại học Dartmouth, Hoa
+                                        Kỳ.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item-06">
+                            <div class="khungAnh">
+                                <span class="khungAnhCrop">
+                                    <img src="./pic/ld.png" class="wide">
+                                </span>
+                            </div>
+                            <div class="content">
+                                <summary>
+                                    <p>"Con người Virex với giá trị cốt lõi: Chính trực - Hiệu quả - Chuyên nghiệp là tài sản quý báu của
+                                        Công ty; là chìa khóa của sự thành công sẽ sớm hiện thực được Sứ mạng, Hoài bão của Virex”.</p>
+                                </summary>
+                                <div class="function">
+                                    <strong>Ông Nguyễn Văn A</strong>
+                                    <p>Chủ tịch HĐQT</p>
+                                    <p>Tiến sĩ Quản trị kinh doanh (DBA) - Tốt nghiệp khóa Executive MBA, HSB-TUCK, Đại học Dartmouth, Hoa
+                                        Kỳ.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item-06">
+                            <div class="khungAnh">
+                                <span class="khungAnhCrop">
+                                    <img src="./pic/ld.png" class="wide">
+                                </span>
+                            </div>
+                            <div class="content">
+                                <summary>
+                                    <p>"Con người Virex với giá trị cốt lõi: Chính trực - Hiệu quả - Chuyên nghiệp là tài sản quý báu của
+                                        Công ty; là chìa khóa của sự thành công sẽ sớm hiện thực được Sứ mạng, Hoài bão của Virex”.</p>
+                                </summary>
+                                <div class="function">
+                                    <strong>Ông Nguyễn Văn A</strong>
+                                    <p>Chủ tịch HĐQT</p>
+                                    <p>Tiến sĩ Quản trị kinh doanh (DBA) - Tốt nghiệp khóa Executive MBA, HSB-TUCK, Đại học Dartmouth, Hoa
+                                        Kỳ.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- page about us end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- contact -->
+            <div class="contact">
+                <div class="row">
+                    <!-- registration -->
+                    <div class="col-12 col-md-4 registration">
+                        <div class="inner-registration">
+                            <strong>ĐĂNG KÝ NHẬN BẢN TIN</strong>
+                            <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất.</p>
+                            <div class="form">
+                                <input type="text" placeholder="Nhập email của bạn...">
+                                <a href="#">Gửi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- brochure -->
+                    <div class="col-12 col-md-4 brochure">
+                        <div class="inner-brochure">
+                            <strong>Brochure Công ty</strong>
+                            <p>Download Brochure mới nhất của Virex để hiểu rõ hơn về chúng tôi</p>
+                            <a href="#">Tải brochure
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- take care of -->
+                    <div class="col-12 col-md-4 take-care-of">
+                        <div class="inner-take-care-of">
+                            <strong>chăm sóc khách hàng</strong>
+                            <p>Hotline:
+                                <b>02432047979</b>
+                            </p>
+                            <p>Email:
+                                <b>info@virex.vn</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- menu footer -->
+            <div class="menu-footer">
+                <div class="link-block">
+                    <strong>dự án</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Laluna Nha Trang</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Eden Rose</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Luxury Apartment Đà Nẵng</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Golden City An Giang</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án 28E Trần Phú  Nha Trang</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>tin tức</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin thị trường</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin Virex
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin báo chí</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Brochure công ty</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Video</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>Phát triển bền vững</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Hội đồng Phát triển bền vững</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị Công ty</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị nguồn nhân lực</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị thương hiệu Virex</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Môi trường</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Hoạt động Cộng đồng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>tuyển dụng</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Chính sách nhân sự</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Vị trí tuyển dụng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- copyright social -->
+            <div class="copyright-social">
+                <div class="left">
+                    <p>Công ty cổ phần VIREX, 33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội. Điện thoại: 02432047979. Email: info@virex.vn
+                    </p>
+                    <p>© 2017. Bản quyền thuộc về Công ty cổ phần VIREX. Tất cả các quyền được bảo hộ. </p>
+                </div>
+                <div class="right">
+                    <a href="#">
+                        <img src="css/icons/s1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s2.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s4.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+    $('body').attr({
+        'data-spy': "scroll",
+        'data-target': '#nav-section',
+        'data-offset': '0'
+    });
+</script>
+
+</html>

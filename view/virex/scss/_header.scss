@@ -1,0 +1,184 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.navbar-icon {
+    display: none;
+    border: 1px solid $color-04;
+    border-radius: $radius;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    span,
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background: $color-03;
+        top: 0;
+        left: 50%;
+        margin-left: -11px;
+        border-radius: 1px;
+        transition: $time-a2;
+    }
+    span {
+        top: 50%;
+        margin-top: -2px;
+    }
+    &:before {
+        top: 6px;
+    }
+    &:after {
+        top: 20px;
+    }
+    &.active {
+        span {
+            transform: scale(0);
+            opacity: 0;
+        }
+        &:before {
+            top: 50%;
+            margin-top: -1px;
+            transform: rotate(-45deg);
+        }
+        &:after {
+            top: 50%;
+            margin-top: -1px;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    .top-bar {
+        background: $color-05;
+        padding: 9px 0;
+        .contact {
+            display: inline-block;
+            >a {
+                color: $color-01;
+                font-family: $font-f2;
+                margin-right: 45px;
+                >i {
+                    margin-right: 3px;
+                    font-size: 18px;
+                }
+            }
+        }
+        .language {
+            float: right;
+            >a {
+                color: $color-07;
+                margin-left: 10px;
+                font-family: $font-f2;
+                &:hover,
+                &.active {
+                    color: $color-01;
+                }
+            }
+        }
+    }
+    .main-bar {
+        background: $color-01;
+        box-shadow: 0 4px 9px 1px rgba(0, 0, 0, 0.3);
+        .container {
+            position: relative;
+        }
+        padding: 15px 0;
+        .logo {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        .menu-main {
+            float: right;
+            .inner {
+                position: relative;
+            }
+            .nav {
+                margin-right: 45px;
+                .nav-item {
+                    .nav-link {
+                        text-transform: uppercase;
+                        font-family: $font-f2;
+                        color: $color-02;
+                        padding: 15px;
+                        &:hover {
+                            color: $color-06;
+                        }
+                    }
+                    &.active .nav-link {
+                        color: $color-06;
+                    }
+                    &.dropdown {
+                        .dropdown-menu {
+                            background: rgba(190, 30, 45, 0.8);
+                            border: none;
+                            border-radius: 0;
+                            margin: 0;
+                            padding: 10px 0;
+                            left: 15px;
+                            min-width: 195px;
+                            >.dropdown .dropdown-menu {
+                                left: 100%;
+                                top: 0;
+                            }
+                            .nav-link {
+                                padding: 0 15px;
+                                line-height: 30px;
+                                text-transform: unset;
+                            }
+                        }
+                        &:hover>.dropdown-menu {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .search {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            .form-search {
+                 ::-webkit-input-placeholder {
+                    color: $color-01;
+                }
+                 ::-moz-placeholder {
+                    color: $color-01;
+                }
+                position: relative;
+                input {
+                    transition: $time-a1;
+                    transform: translateY(50px) scale(0) translateX(25px);
+                    opacity: 0;
+                    background: $color-05;
+                    color: $color-01;
+                    border: none;
+                    padding: 2.5px 10px;
+                    position: absolute;
+                    z-index: 2;
+                    right: 100%;
+                    top: 50%;
+                }
+                &:hover>input {
+                    opacity: 1;
+                    transform: translateY(-50%) scale(1) translateX(25px);
+                }
+                a {
+                    transform: translateY(-4px);
+                    display: inline-block;
+                    text-align: right;
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

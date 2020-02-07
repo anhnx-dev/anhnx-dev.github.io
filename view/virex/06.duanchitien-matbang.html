@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- top bar -->
+        <div class="top-bar">
+            <div class="container">
+                <!-- contact -->
+                <div class="contact">
+                    <a href="tel: 02432047979" title="02432047979">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        02432047979
+                    </a>
+                    <a href="#" title="info@virex.vn">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        info@virex.vn
+                    </a>
+                    <a href="#" title="33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội.">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội.
+                    </a>
+                </div>
+                <!-- Language -->
+                <div class="language">
+                    <a class="active" href="#">VI</a>
+                    <a href="#">EN</a>
+                </div>
+            </div>
+        </div>
+        <!-- main bar -->
+        <div class="main-bar">
+            <div class="container">
+                <!-- logo -->
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./pic/logo.png" alt="">
+                    </a>
+                </h1>
+                <!-- butuom menu main -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-main" aria-controls="menu-main" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-icon">
+                        <span></span>
+                    </span>
+                </button>
+                <!-- menu main -->
+                <nav class="menu-main" id="menu-main">
+                    <div class="inner">
+                        <ul class="nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Về trúng tôi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dự án</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tài liện</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cho thuê bđs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin tức</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức dự án</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức nội bộ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sự kiện nổi bật</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức khác</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Demo</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Demo</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--search-->
+                <div class="search">
+                    <div class="form-search">
+                        <input type="text" placeholder="Từ khóa tìm kiếm">
+                        <a href="#">
+                            <img src="css/icons/search.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main id="main">
+
+        <!-- img page -->
+        <section class="breadcrumb-page">
+            <div class="img">
+                <div class="khungAnh">
+                    <span class="khungAnhCrop">
+                        <img src="./pic/slider2.png">
+                    </span>
+                </div>
+            </div>
+            <!-- breadcrumb -->
+            <div class="link-page">
+                <div class="container text-center">
+                    <h1>Laluna Nha Trang</h1>
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="#">Trang chu</a>
+                        <a class="breadcrumb-item" href="#">về chúng tôi</a>
+                        <a class="breadcrumb-item" href="#">Laluna Nha Trang</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- end breadcrumb -->
+        </section>
+        <!-- img page end -->
+
+        <!-- page about us -->
+        <section class="page-about-us">
+
+            <!-- button nav section -->
+            <button class="navbar-toggler button-nav-section" type="button" data-toggle="collapse" data-target="#nav-section" aria-controls="nav-section"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-icon">
+                    <span></span>
+                </span>
+            </button>
+            <!-- nav section -->
+            <nav class="nav-section nav-page" id="nav-section">
+                <div class="container">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TỔNG QUAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">VỊ TRÍ</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">MẶT BẰNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIỆN ÍCH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIẾN ĐỘ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">THƯ VIỆN ẢNH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">VIDEO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CHƯƠNG TRÌNH BÁN HÀNG</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- nav section end -->
+
+            <!-- new detail -->
+            <section class="new-detail">
+                <div class="container">
+                    <h2 class="tile-ditail">MẶT BẰNG DỰ ÁN Laluna Nha Trang</h2>
+                    <div class="contact-detail">
+                        <div class="address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> Khu Đô Thị Vĩnh Hòa, Nha Trang, Khánh Hòa
+                        </div>
+                        <div class="social">
+                            <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                                <div class="shareItem">
+                                    <a class="addthis_button_compact"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_facebook"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_twitter"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_zingme"></a>
+                                </div>
+                                <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                                <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                            </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, "script", "facebook-jssdk"));
+                                (function () {
+                                    var po = document.createElement("script");
+                                    po.type = "text/javascript";
+                                    po.async = true;
+                                    po.src = "https://apis.google.com/js/platform.js";
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(po, s);
+                                })();
+                            </script>
+                        </div>
+                    </div>
+                    <div class="noidung TextSize">
+                        <div class="nddes fRobotoB lh22 pb20">
+                            <p>Condotel Swisstouches La Luna Nha Trang với tiền thân trước đây là dự án Condotel Royal Marina
+                                Center được chủ đầu tư Công ty CP Thương mại dịch vụ Điện lực (PIST) đầu tư xây dựng trên
+                                khu đất rộng 4.74ha với quy hoạch thành 4 khu căn hộ khách sạn Condotel cao 32 tầng với 4
+                                tầng thương mại dịch vụ đẳng cấp, phục vụ trọn vẹn nhu cầu du khách - Đẳng cấp La Luna Nha
+                                Trang, với mong muốn mang đến một thiên đường nghỉ dưỡng thật ấn tượng và tuyệt vời đến quý
+                                khách hàng.</p>
+                        </div>
+                    </div>
+                    <div class="text-center ground">
+                        <div class="header">
+                            <a class="active" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                khu a
+                            </a>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                khu b
+                            </a>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                khu c
+                            </a>
+                            <a class="collapsed" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                khu d
+                            </a>
+                        </div>
+                        <div class="body" id="accordion-mother" role="tablist">
+                            <div class="card">
+                                <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-mother">
+                                    <div class="card-body">
+                                        <div class="floor">
+                                            <div class="header">
+                                                <a class="active" data-toggle="collapse" href="#collapse1-children-1" aria-expanded="true" aria-controls="collapse1">
+                                                    tầng 01 - 05
+                                                </a>
+                                                <a class="collapsed" data-toggle="collapse" href="#collapse2-children-1" aria-expanded="false" aria-controls="collapse2">
+                                                    tầng 06 - 27
+                                                </a>
+                                                <a class="collapsed" data-toggle="collapse" href="#collapse3-children-1" aria-expanded="false" aria-controls="collapse3">
+                                                    tầng 28 - 32
+                                                </a>
+                                            </div>
+                                            <div class="body" id="accordion-children-1" role="tablist">
+                                                <div class="card">
+                                                    <div id="collapse1-children-1" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-children-1">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div id="collapse2-children-1" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion-children-1">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div id="collapse3-children-1" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion-children-1">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion-mother">
+                                    <div class="card-body">
+                                        <div class="floor">
+                                            <div class="header">
+                                                <a class="active" data-toggle="collapse" href="#collapse1-children-2" aria-expanded="true" aria-controls="collapse1">
+                                                    tầng 01 - 05
+                                                </a>
+                                                <a class="collapsed" data-toggle="collapse" href="#collapse2-children-2" aria-expanded="false" aria-controls="collapse2">
+                                                    tầng 06 - 27
+                                                </a>
+                                                <a class="collapsed" data-toggle="collapse" href="#collapse3-children-2" aria-expanded="false" aria-controls="collapse3">
+                                                    tầng 28 - 32
+                                                </a>
+                                            </div>
+                                            <div class="body" id="accordion-children-2" role="tablist">
+                                                <div class="card">
+                                                    <div id="collapse1-children-2" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-children-2">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div id="collapse2-children-2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion-children-2">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div id="collapse3-children-2" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion-children-2">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion-mother">
+                                    <div class="card-body">
+                                        <div class="floor">
+                                            <div class="header">
+                                                <a class="active" data-toggle="collapse" href="#collapse1-children-3" aria-expanded="true" aria-controls="collapse1">
+                                                    tầng 01 - 05
+                                                </a>
+                                                <a class="collapsed" data-toggle="collapse" href="#collapse2-children-3" aria-expanded="false" aria-controls="collapse2">
+                                                    tầng 06 - 27
+                                                </a>
+                                                <a class="collapsed" data-toggle="collapse" href="#collapse3-children-3" aria-expanded="false" aria-controls="collapse3">
+                                                    tầng 28 - 32
+                                                </a>
+                                            </div>
+                                            <div class="body" id="accordion-children-3" role="tablist">
+                                                <div class="card">
+                                                    <div id="collapse1-children-3" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-children-3">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div id="collapse2-children-3" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion-children-3">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div id="collapse3-children-3" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion-children-3">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion-mother">
+                                    <div class="card-body">
+                                        <div class="floor">
+                                            <div class="header">
+                                                <a class="active" data-toggle="collapse" href="#collapse1-children-4" aria-expanded="true" aria-controls="collapse1">
+                                                    tầng 01 - 05
+                                                </a>
+                                                <a class="collapsed" data-toggle="collapse" href="#collapse2-children-4" aria-expanded="false" aria-controls="collapse2">
+                                                    tầng 06 - 27
+                                                </a>
+                                                <a class="collapsed" data-toggle="collapse" href="#collapse3-children-4" aria-expanded="false" aria-controls="collapse3">
+                                                    tầng 28 - 32
+                                                </a>
+                                            </div>
+                                            <div class="body" id="accordion-children-4" role="tablist">
+                                                <div class="card">
+                                                    <div id="collapse1-children-4" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-children-4">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div id="collapse2-children-4" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion-children-4">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div id="collapse3-children-4" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion-children-4">
+                                                        <div class="card-body">
+                                                            <img src="./pic/matbang.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-ground">
+                            <h3>MẶT BẰNG CÁC CĂN HỘ</h3>
+                            <div class="group-item">
+                                <div class="item">
+                                    <a href="#" class="top" data-toggle="modal" data-target="#modal-01">
+                                        <strong class="name">Căn hộ 1</strong>
+                                        <span class="acreage">80</span>
+                                    </a>
+                                    <div class="img">
+                                        <img src="./pic/m1.png" alt="">
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade modal-ground" id="modal-01" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <img src="css/icons/close.png" alt="">
+                                                </button>
+                                                <div class="modal-body">
+                                                    <div class="content">
+                                                        <a href="#" class="top">
+                                                            <strong class="name">Căn hộ 1</strong>
+                                                            <span class="acreage">80</span>
+                                                        </a>
+                                                        <p>
+                                                            <img src="./pic/m1.png" alt="">
+                                                        </p>
+                                                        <br>
+                                                        <p>La Luna Resort Nha Trang là siêu dự án Condotel được xây dựng trên
+                                                            khu đất " Vàng " có tổng diện tích rộng hơn 4.74ha ngay mặt tiền
+                                                            biển đắt giá nhất của thành phố Nha Trang. Trong tương lai khi
+                                                            chính thức đi vào hoạt động, dự án sẽ cung cấp cho thị trường
+                                                            1.997 căn hộ tiêu chuẩn quốc tế 5 sao đáp ứng nhu cầu của cư
+                                                            dân về một khu nghỉ dưỡng thực thụ. Căn hộ La Luna Nha Trang
+                                                            mang phong cách thiết kế hiện đại từ những công trình kiến trúc
+                                                            của châu âu cùng không gian sống đẳng cấp, Swisstouches La Luna
+                                                            sẽ là một trong những điểm nghỉ dưỡng tuyệt vời để khách hàng
+                                                            có thể tận hưởng kỳ kỷ trọn vẹn cùng gia đình.</p>
+                                                        <br>
+                                                        <p>La Luna Resort Nha Trang là siêu dự án Condotel được xây dựng trên
+                                                            khu đất " Vàng " có tổng diện tích rộng hơn 4.74ha ngay mặt tiền
+                                                            biển đắt giá nhất của thành phố Nha Trang. Trong tương lai khi
+                                                            chính thức đi vào hoạt động, dự án sẽ cung cấp cho thị trường
+                                                            1.997 căn hộ tiêu chuẩn quốc tế 5 sao đáp ứng nhu cầu của cư
+                                                            dân về một khu nghỉ dưỡng thực thụ. Căn hộ La Luna Nha Trang
+                                                            mang phong cách thiết kế hiện đại từ những công trình kiến trúc
+                                                            của châu âu cùng không gian sống đẳng cấp, Swisstouches La Luna
+                                                            sẽ là một trong những điểm nghỉ dưỡng tuyệt vời để khách hàng
+                                                            có thể tận hưởng kỳ kỷ trọn vẹn cùng gia đình.</p>
+                                                        <br>
+                                                        <p>
+                                                            <img src="./pic/m2.png" alt="" style="width: 100%;">
+                                                        </p>
+                                                        <br>
+                                                        <p>La Luna Resort Nha Trang là siêu dự án Condotel được xây dựng trên
+                                                            khu đất " Vàng " có tổng diện tích rộng hơn 4.74ha ngay mặt tiền
+                                                            biển đắt giá nhất của thành phố Nha Trang. Trong tương lai khi
+                                                            chính thức đi vào hoạt động, dự án sẽ cung cấp cho thị trường
+                                                            1.997 căn hộ tiêu chuẩn quốc tế 5 sao đáp ứng nhu cầu của cư
+                                                            dân về một khu nghỉ dưỡng thực thụ. Căn hộ La Luna Nha Trang
+                                                            mang phong cách thiết kế hiện đại từ những công trình kiến trúc
+                                                            của châu âu cùng không gian sống đẳng cấp, Swisstouches La Luna
+                                                            sẽ là một trong những điểm nghỉ dưỡng tuyệt vời để khách hàng
+                                                            có thể tận hưởng kỳ kỷ trọn vẹn cùng gia đình. La Luna Resort
+                                                            Nha Trang là siêu dự án Condotel được xây dựng trên khu đất "
+                                                            Vàng " có tổng diện tích rộng hơn 4.74ha ngay mặt tiền biển đắt
+                                                            giá nhất của thành phố Nha Trang. Trong tương lai khi chính thức
+                                                            đi vào hoạt động, dự án sẽ cung cấp cho thị trường 1.997 căn
+                                                            hộ tiêu chuẩn quốc tế 5 sao đáp ứng nhu cầu của cư dân về một
+                                                            khu nghỉ dưỡng thực thụ. Căn hộ La Luna Nha Trang mang phong
+                                                            cách thiết kế hiện đại từ những công trình kiến trúc của châu
+                                                            âu cùng không gian sống đẳng cấp, Swisstouches La Luna sẽ là
+                                                            một trong những điểm nghỉ dưỡng tuyệt vời để khách hàng có thể
+                                                            tận hưởng kỳ kỷ trọn vẹn cùng gia đình.</p>
+                                                    </div>
+                                                    <div class="form">
+                                                        <div class="inner">
+                                                            <div class="text">
+                                                                <h3>ĐĂNG KÝ ĐỂ ĐƯỢC</h3>
+                                                                <h3>NHẬN ƯU ĐÃI &amp; TƯ VẤN MIỄN PHÍ</h3>
+                                                                <a href="tel:02432047979" title="02432047979">HOTLINE:
+                                                                    <span>02432047979</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="input">
+                                                                <p>
+                                                                    <input type="text" placeholder="Họ và tên *">
+                                                                </p>
+                                                                <p>
+                                                                    <input type="text" placeholder="Số điện thoại *">
+                                                                </p>
+                                                                <p>
+                                                                    <input type="text" placeholder="Email">
+                                                                </p>
+                                                                <p>
+                                                                    <input type="text" placeholder="Địa chỉ">
+                                                                </p>
+                                                                <p>
+                                                                    <a href="#">Gửi</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="top" data-toggle="modal" data-target="#modal-02">
+                                        <strong class="name">Căn hộ 2</strong>
+                                        <span class="acreage">80</span>
+                                    </a>
+                                    <div class="img">
+                                        <img src="./pic/m1.png" alt="">
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade modal-ground" id="modal-02" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <img src="css/icons/close.png" alt="">
+                                                </button>
+                                                <div class="modal-body">
+                                                    <div class="content">
+                                                        <a href="#" class="top">
+                                                            <strong class="name">Căn hộ 2</strong>
+                                                            <span class="acreage">80</span>
+                                                        </a>
+                                                        <p>
+                                                            <img src="./pic/m1.png" alt="">
+                                                        </p>
+                                                        <br>
+                                                        <p>La Luna Resort Nha Trang là siêu dự án Condotel được xây dựng trên
+                                                            khu đất " Vàng " có tổng diện tích rộng hơn 4.74ha ngay mặt tiền
+                                                            biển đắt giá nhất của thành phố Nha Trang. Trong tương lai khi
+                                                            chính thức đi vào hoạt động, dự án sẽ cung cấp cho thị trường
+                                                            1.997 căn hộ tiêu chuẩn quốc tế 5 sao đáp ứng nhu cầu của cư
+                                                            dân về một khu nghỉ dưỡng thực thụ. Căn hộ La Luna Nha Trang
+                                                            mang phong cách thiết kế hiện đại từ những công trình kiến trúc
+                                                            của châu âu cùng không gian sống đẳng cấp, Swisstouches La Luna
+                                                            sẽ là một trong những điểm nghỉ dưỡng tuyệt vời để khách hàng
+                                                            có thể tận hưởng kỳ kỷ trọn vẹn cùng gia đình.</p>
+                                                        <br>
+                                                        <p>La Luna Resort Nha Trang là siêu dự án Condotel được xây dựng trên
+                                                            khu đất " Vàng " có tổng diện tích rộng hơn 4.74ha ngay mặt tiền
+                                                            biển đắt giá nhất của thành phố Nha Trang. Trong tương lai khi
+                                                            chính thức đi vào hoạt động, dự án sẽ cung cấp cho thị trường
+                                                            1.997 căn hộ tiêu chuẩn quốc tế 5 sao đáp ứng nhu cầu của cư
+                                                            dân về một khu nghỉ dưỡng thực thụ. Căn hộ La Luna Nha Trang
+                                                            mang phong cách thiết kế hiện đại từ những công trình kiến trúc
+                                                            của châu âu cùng không gian sống đẳng cấp, Swisstouches La Luna
+                                                            sẽ là một trong những điểm nghỉ dưỡng tuyệt vời để khách hàng
+                                                            có thể tận hưởng kỳ kỷ trọn vẹn cùng gia đình.</p>
+                                                        <br>
+                                                        <p>
+                                                            <img src="./pic/m2.png" alt="" style="width: 100%;">
+                                                        </p>
+                                                        <br>
+                                                        <p>La Luna Resort Nha Trang là siêu dự án Condotel được xây dựng trên
+                                                            khu đất " Vàng " có tổng diện tích rộng hơn 4.74ha ngay mặt tiền
+                                                            biển đắt giá nhất của thành phố Nha Trang. Trong tương lai khi
+                                                            chính thức đi vào hoạt động, dự án sẽ cung cấp cho thị trường
+                                                            1.997 căn hộ tiêu chuẩn quốc tế 5 sao đáp ứng nhu cầu của cư
+                                                            dân về một khu nghỉ dưỡng thực thụ. Căn hộ La Luna Nha Trang
+                                                            mang phong cách thiết kế hiện đại từ những công trình kiến trúc
+                                                            của châu âu cùng không gian sống đẳng cấp, Swisstouches La Luna
+                                                            sẽ là một trong những điểm nghỉ dưỡng tuyệt vời để khách hàng
+                                                            có thể tận hưởng kỳ kỷ trọn vẹn cùng gia đình. La Luna Resort
+                                                            Nha Trang là siêu dự án Condotel được xây dựng trên khu đất "
+                                                            Vàng " có tổng diện tích rộng hơn 4.74ha ngay mặt tiền biển đắt
+                                                            giá nhất của thành phố Nha Trang. Trong tương lai khi chính thức
+                                                            đi vào hoạt động, dự án sẽ cung cấp cho thị trường 1.997 căn
+                                                            hộ tiêu chuẩn quốc tế 5 sao đáp ứng nhu cầu của cư dân về một
+                                                            khu nghỉ dưỡng thực thụ. Căn hộ La Luna Nha Trang mang phong
+                                                            cách thiết kế hiện đại từ những công trình kiến trúc của châu
+                                                            âu cùng không gian sống đẳng cấp, Swisstouches La Luna sẽ là
+                                                            một trong những điểm nghỉ dưỡng tuyệt vời để khách hàng có thể
+                                                            tận hưởng kỳ kỷ trọn vẹn cùng gia đình.</p>
+                                                    </div>
+                                                    <div class="form">
+                                                        <div class="inner">
+                                                            <div class="text">
+                                                                <h3>ĐĂNG KÝ ĐỂ ĐƯỢC</h3>
+                                                                <h3>NHẬN ƯU ĐÃI &amp; TƯ VẤN MIỄN PHÍ</h3>
+                                                                <a href="tel:02432047979" title="02432047979">HOTLINE:
+                                                                    <span>02432047979</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="input">
+                                                                <p>
+                                                                    <input type="text" placeholder="Họ và tên *">
+                                                                </p>
+                                                                <p>
+                                                                    <input type="text" placeholder="Số điện thoại *">
+                                                                </p>
+                                                                <p>
+                                                                    <input type="text" placeholder="Email">
+                                                                </p>
+                                                                <p>
+                                                                    <input type="text" placeholder="Địa chỉ">
+                                                                </p>
+                                                                <p>
+                                                                    <a href="#">Gửi</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- new detail end -->
+
+        </section>
+        <!-- page about us end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- contact -->
+            <div class="contact">
+                <div class="row">
+                    <!-- registration -->
+                    <div class="col-12 col-md-4 registration">
+                        <div class="inner-registration">
+                            <strong>ĐĂNG KÝ NHẬN BẢN TIN</strong>
+                            <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất.</p>
+                            <div class="form">
+                                <input type="text" placeholder="Nhập email của bạn...">
+                                <a href="#">Gửi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- brochure -->
+                    <div class="col-12 col-md-4 brochure">
+                        <div class="inner-brochure">
+                            <strong>Brochure Công ty</strong>
+                            <p>Download Brochure mới nhất của Virex để hiểu rõ hơn về chúng tôi</p>
+                            <a href="#">Tải brochure
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- take care of -->
+                    <div class="col-12 col-md-4 take-care-of">
+                        <div class="inner-take-care-of">
+                            <strong>chăm sóc khách hàng</strong>
+                            <p>Hotline:
+                                <b>02432047979</b>
+                            </p>
+                            <p>Email:
+                                <b>info@virex.vn</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- menu footer -->
+            <div class="menu-footer">
+                <div class="link-block">
+                    <strong>dự án</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Laluna Nha Trang</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Eden Rose</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Luxury Apartment Đà Nẵng</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Golden City An Giang</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án 28E Trần Phú  Nha Trang</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>tin tức</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin thị trường</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin Virex
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin báo chí</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Brochure công ty</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Video</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>Phát triển bền vững</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Hội đồng Phát triển bền vững</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị Công ty</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị nguồn nhân lực</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị thương hiệu Virex</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Môi trường</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Hoạt động Cộng đồng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>tuyển dụng</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Chính sách nhân sự</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Vị trí tuyển dụng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- copyright social -->
+            <div class="copyright-social">
+                <div class="left">
+                    <p>Công ty cổ phần VIREX, 33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội. Điện thoại: 02432047979. Email:
+                        info@virex.vn
+                    </p>
+                    <p>© 2017. Bản quyền thuộc về Công ty cổ phần VIREX. Tất cả các quyền được bảo hộ. </p>
+                </div>
+                <div class="right">
+                    <a href="#">
+                        <img src="css/icons/s1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s2.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s4.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

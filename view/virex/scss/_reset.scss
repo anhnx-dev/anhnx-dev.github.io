@@ -1,0 +1,112 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../css/fonts/HelveticaNeue.eot');
+    src: url('../css/fonts/HelveticaNeue.woff') format('woff'), url('../css/fonts/HelveticaNeue.woff2') format('woff2'), url('../css/fonts/HelveticaNeue.ttf') format('truetype'), url('../css/fonts/HelveticaNeue.svg#iciel') format('svg'), url('../css/fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Medium';
+    src: url('../css/fonts/HelveticaNeue-Medium.eot');
+    src: url('../css/fonts/HelveticaNeue-Medium.woff') format('woff'), url('../css/fonts/HelveticaNeue-Medium.woff2') format('woff2'), url('../css/fonts/HelveticaNeue-Medium.ttf') format('truetype'), url('../css/fonts/HelveticaNeue-Medium.svg#iciel') format('svg'), url('../css/fonts/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTMAvo';
+    src: url('../css/fonts/UTMAvo.eot');
+    src: url('../css/fonts/UTMAvo.woff') format('woff'), url('../css/fonts/UTMAvo.woff2') format('woff2'), url('../css/fonts/UTMAvo.ttf') format('truetype'), url('../css/fonts/UTMAvo.svg#iciel') format('svg'), url('../css/fonts/UTMAvo.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTMAvoBold';
+    src: url('../css/fonts/UTMAvoBold.eot');
+    src: url('../css/fonts/UTMAvoBold.woff') format('woff'), url('../css/fonts/UTMAvoBold.woff2') format('woff2'), url('../css/fonts/UTMAvoBold.ttf') format('truetype'), url('../css/fonts/UTMAvoBold.svg#iciel') format('svg'), url('../css/fonts/UTMAvoBold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: $color-01;
+    line-height: $line-01;
+    color: $color-02;
+    font-size: $font-s1;
+    font-family: $font-f1;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+dl,
+pre,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+embed,
+object,
+video,
+iframe {
+    width: 100%;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    color: $color-02;
+    transition: $time-a1;
+    display: inline-block;
+    &:focus,
+    &:hover {
+        color: $color-06;
+        text-decoration: none;
+    }
+}
+
+select {
+    color: $color-02;
+    background: $color-01 url(../css/icons/select.png) no-repeat right 10px center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    &::-ms-expand {
+        display: none;
+    }
+}

@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../css/fonts/HelveticaNeue.eot");
+  src: url("../css/fonts/HelveticaNeue.woff") format("woff"), url("../css/fonts/HelveticaNeue.woff2") format("woff2"), url("../css/fonts/HelveticaNeue.ttf") format("truetype"), url("../css/fonts/HelveticaNeue.svg#iciel") format("svg"), url("../css/fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Medium';
+  src: url("../css/fonts/HelveticaNeue-Medium.eot");
+  src: url("../css/fonts/HelveticaNeue-Medium.woff") format("woff"), url("../css/fonts/HelveticaNeue-Medium.woff2") format("woff2"), url("../css/fonts/HelveticaNeue-Medium.ttf") format("truetype"), url("../css/fonts/HelveticaNeue-Medium.svg#iciel") format("svg"), url("../css/fonts/HelveticaNeue-Medium.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvo';
+  src: url("../css/fonts/UTMAvo.eot");
+  src: url("../css/fonts/UTMAvo.woff") format("woff"), url("../css/fonts/UTMAvo.woff2") format("woff2"), url("../css/fonts/UTMAvo.ttf") format("truetype"), url("../css/fonts/UTMAvo.svg#iciel") format("svg"), url("../css/fonts/UTMAvo.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMAvoBold';
+  src: url("../css/fonts/UTMAvoBold.eot");
+  src: url("../css/fonts/UTMAvoBold.woff") format("woff"), url("../css/fonts/UTMAvoBold.woff2") format("woff2"), url("../css/fonts/UTMAvoBold.ttf") format("truetype"), url("../css/fonts/UTMAvoBold.svg#iciel") format("svg"), url("../css/fonts/UTMAvoBold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #fff;
+  line-height: 21px;
+  color: #333;
+  font-size: 14px;
+  font-family: "HelveticaNeue";
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul,
+dl,
+pre,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+embed,
+object,
+video,
+iframe {
+  width: 100%;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  color: #333;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+}
+
+a:focus, a:hover {
+  color: #faaf3f;
+  text-decoration: none;
+}
+
+select {
+  color: #333;
+  background: #fff url(../css/icons/select.png) no-repeat right 10px center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}

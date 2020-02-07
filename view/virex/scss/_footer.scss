@@ -1,0 +1,127 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+#footer {
+    padding-top: 60px;
+    background: #f9f9f9 url(../css/bg/1.png) no-repeat bottom 68px right;
+    .contact {
+        border-bottom: 1px solid $color-09;
+        strong {
+            font-size: $font-s2;
+            line-height: $line-02;
+            display: block;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        p {
+            color: $color-03;
+        }
+        b {
+            color: $color-05;
+        }
+        .inner-registration {
+            margin-bottom: 30px;
+            .form {
+                padding-top: 25px;
+                position: relative;
+                display: inline-block;
+                input {
+                    width: 330px;
+                    border: 1px solid $color-09;
+                    height: 36px;
+                    border-radius: $radius;
+                    padding-right: 70px;
+                    padding-left: 10px;
+                }
+                a {
+                    position: absolute;
+                    width: 58px;
+                    line-height: 32px;
+                    border-radius: $radius;
+                    background: $color-05;
+                    text-align: center;
+                    color: $color-01;
+                    font-family: $font-f2;
+                    right: 3px;
+                    top: 27px;
+                    &:hover {
+                        background: $color-06;
+                    }
+
+                }
+            }
+        }
+        .inner-brochure {
+            padding-left: 70px;
+            position: relative;
+            padding-right: 10px;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 43px;
+                height: 108px;
+                left: 0;
+                top: 0;
+                background: url(.././pic/icons/4.png) no-repeat center;
+            }
+            >a {
+                padding-top: 15px;
+                color: $color-06;
+                &:hover {
+                    color: $color-05;
+                }
+            }
+        }
+    }
+    .menu-footer {
+        padding-top: 25px;
+        border-bottom: 1px solid $color-09;
+        &::after {
+            @include clear;
+        }
+        .link-block {
+            width: 22.2222%;
+            float: left;
+            margin-bottom: 30px;
+            &:nth-child(1) {
+                width: 33.3333%;
+            }
+            >strong {
+                font-size: $font-s2;
+                line-height: $line-02;
+                display: block;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+            >ul>li {
+                padding: 4.5px 0;
+                >a,>i {
+                    color: $color-03;
+                }
+                &:hover a,
+                &:hover i {
+                    color: $color-06;
+                }
+            }
+        }
+    }
+    .copyright-social {
+        padding: 10px 0;
+        .left {
+            display: inline-block;
+            font-size: $font-s2;
+            line-height: $line-02;
+            color: $color-03;
+        }
+        .right {
+            float: right;
+            >a {
+                line-height: 48px;
+                margin-left: 10px;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- top bar -->
+        <div class="top-bar">
+            <div class="container">
+                <!-- contact -->
+                <div class="contact">
+                    <a href="tel: 02432047979" title="02432047979">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        02432047979
+                    </a>
+                    <a href="#" title="info@virex.vn">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        info@virex.vn
+                    </a>
+                    <a href="#" title="33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội.">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội.
+                    </a>
+                </div>
+                <!-- Language -->
+                <div class="language">
+                    <a class="active" href="#">VI</a>
+                    <a href="#">EN</a>
+                </div>
+            </div>
+        </div>
+        <!-- main bar -->
+        <div class="main-bar">
+            <div class="container">
+                <!-- logo -->
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./pic/logo.png" alt="">
+                    </a>
+                </h1>
+                <!-- butuom menu main -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-main" aria-controls="menu-main" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-icon">
+                        <span></span>
+                    </span>
+                </button>
+                <!-- menu main -->
+                <nav class="menu-main" id="menu-main">
+                    <div class="inner">
+                        <ul class="nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Về trúng tôi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dự án</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tài liện</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cho thuê bđs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin tức</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức dự án</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức nội bộ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sự kiện nổi bật</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức khác</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Demo</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Demo</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--search-->
+                <div class="search">
+                    <div class="form-search">
+                        <input type="text" placeholder="Từ khóa tìm kiếm">
+                        <a href="#">
+                            <img src="css/icons/search.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main id="main">
+
+        <!-- img page -->
+        <section class="breadcrumb-page">
+            <div class="img">
+                <div class="khungAnh">
+                    <span class="khungAnhCrop">
+                        <img src="./pic/slider2.png">
+                    </span>
+                </div>
+            </div>
+            <!-- breadcrumb -->
+            <div class="link-page">
+                <div class="container text-center">
+                    <h1>Laluna Nha Trang</h1>
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="#">Trang chu</a>
+                        <a class="breadcrumb-item" href="#">về chúng tôi</a>
+                        <a class="breadcrumb-item" href="#">Laluna Nha Trang</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- end breadcrumb -->
+        </section>
+        <!-- img page end -->
+
+        <!-- page about us -->
+        <section class="page-about-us">
+
+            <!-- button nav section -->
+            <button class="navbar-toggler button-nav-section" type="button" data-toggle="collapse" data-target="#nav-section" aria-controls="nav-section"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-icon">
+                    <span></span>
+                </span>
+            </button>
+            <!-- nav section -->
+            <nav class="nav-section nav-page" id="nav-section">
+                <div class="container">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TỔNG QUAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">VỊ TRÍ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MẶT BẰNG</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">TIỆN ÍCH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIẾN ĐỘ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">THƯ VIỆN ẢNH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">VIDEO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CHƯƠNG TRÌNH BÁN HÀNG</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- nav section end -->
+
+            <!-- new detail -->
+            <section class="new-detail">
+                <div class="container">
+                    <h2 class="tile-ditail">MẶT BẰNG DỰ ÁN Laluna Nha Trang</h2>
+                    <div class="contact-detail">
+                        <div class="address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> Khu Đô Thị Vĩnh Hòa, Nha Trang, Khánh Hòa
+                        </div>
+                        <div class="social">
+                            <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                                <div class="shareItem">
+                                    <a class="addthis_button_compact"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_facebook"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_twitter"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_zingme"></a>
+                                </div>
+                                <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                                <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                            </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, "script", "facebook-jssdk"));
+                                (function () {
+                                    var po = document.createElement("script");
+                                    po.type = "text/javascript";
+                                    po.async = true;
+                                    po.src = "https://apis.google.com/js/platform.js";
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(po, s);
+                                })();
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row group-img group-video">
+                        <div class="col-12 col-md-6 col-lg-4 item-11">
+                            <div class="inner">
+                                <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/oOlmtJRB8oI" frameborder="0" allowfullscreen></iframe></div>
+                                <h2>Video dự án Laluna Nha Trang 1</h2>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 item-11">
+                            <div class="inner">
+                                <div class="video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1-xGerv5FOk" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h2>Video dự án Laluna Nha Trang 1</h2>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 item-11">
+                            <div class="inner">
+                                <div class="video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oOlmtJRB8oI" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h2>Video dự án Laluna Nha Trang 1</h2>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 item-11">
+                            <div class="inner">
+                                <div class="video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1-xGerv5FOk" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h2>Video dự án Laluna Nha Trang 1</h2>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 item-11">
+                            <div class="inner">
+                                <div class="video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oOlmtJRB8oI" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h2>Video dự án Laluna Nha Trang 1</h2>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 item-11">
+                            <div class="inner">
+                                <div class="video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1-xGerv5FOk" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h2>Video dự án Laluna Nha Trang 1</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- new detail end -->
+
+        </section>
+        <!-- page about us end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- contact -->
+            <div class="contact">
+                <div class="row">
+                    <!-- registration -->
+                    <div class="col-12 col-md-4 registration">
+                        <div class="inner-registration">
+                            <strong>ĐĂNG KÝ NHẬN BẢN TIN</strong>
+                            <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất.</p>
+                            <div class="form">
+                                <input type="text" placeholder="Nhập email của bạn...">
+                                <a href="#">Gửi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- brochure -->
+                    <div class="col-12 col-md-4 brochure">
+                        <div class="inner-brochure">
+                            <strong>Brochure Công ty</strong>
+                            <p>Download Brochure mới nhất của Virex để hiểu rõ hơn về chúng tôi</p>
+                            <a href="#">Tải brochure
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- take care of -->
+                    <div class="col-12 col-md-4 take-care-of">
+                        <div class="inner-take-care-of">
+                            <strong>chăm sóc khách hàng</strong>
+                            <p>Hotline:
+                                <b>02432047979</b>
+                            </p>
+                            <p>Email:
+                                <b>info@virex.vn</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- menu footer -->
+            <div class="menu-footer">
+                <div class="link-block">
+                    <strong>dự án</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Laluna Nha Trang</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Eden Rose</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Luxury Apartment Đà Nẵng</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án Golden City An Giang</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Dự án 28E Trần Phú  Nha Trang</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>tin tức</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin thị trường</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin Virex
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Thông tin báo chí</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Brochure công ty</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Video</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>Phát triển bền vững</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Hội đồng Phát triển bền vững</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị Công ty</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị nguồn nhân lực</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Quản trị thương hiệu Virex</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Môi trường</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Hoạt động Cộng đồng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link-block">
+                    <strong>tuyển dụng</strong>
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Chính sách nhân sự</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#">Vị trí tuyển dụng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- copyright social -->
+            <div class="copyright-social">
+                <div class="left">
+                    <p>Công ty cổ phần VIREX, 33A Bà Triệu, P.Hàng Bài, Q.Hoàn Kiếm, Hà Nội. Điện thoại: 02432047979. Email: info@virex.vn
+                    </p>
+                    <p>© 2017. Bản quyền thuộc về Công ty cổ phần VIREX. Tất cả các quyền được bảo hộ. </p>
+                </div>
+                <div class="right">
+                    <a href="#">
+                        <img src="css/icons/s1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s2.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="css/icons/s4.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>
