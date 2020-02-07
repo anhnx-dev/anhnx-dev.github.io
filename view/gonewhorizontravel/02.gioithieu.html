@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="vendor/datePicker/jquery-ui.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <!-- top bar -->
+        <div class="top-bar">
+            <div class="container">
+                <ul class="nav-tb">
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Term & Condition</a></li>
+                </ul>
+                <div class="language">
+                    <a href="#"><img src="./css/icons/vn.png" alt=""></a>
+                    <a href="#"><img src="./css/icons/en.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- header main -->
+        <div class="clear header-main">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="./pic/logo.png" alt=""></a>
+                </div>
+                <div class="link">
+                    <a href="#"><img src="./css/icons/d.png" alt=""> Privacy Policy</a>
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Booking</a>
+                </div>
+                <div class="hotline">
+                    <img src="./css/icons/phone.png" alt="">
+                    <div class="phone">
+                        <a href="tel:+84 96812 82 89" title="+84 96812 82 89">+84 96812 82 89</a>
+                        <a href="tel:+84 942 490 468" title="+84 942 490 468">+84 942 490 468</a>
+                    </div>
+                    <div class="method">(whatsApp/ WeChat/ KakaoTalk/ Line)</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+    <!-- menu main -->
+    <nav class="menu-main">
+        <div class="inner">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">demo</a></li>
+                        <li><a href="#">demo</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">demo</a></li>
+                                <li><a href="#">demo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Halong Cruise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sapa Trekking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">OTHER TOURS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">DAILY TOURS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TRAVEL TIPS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end menu main -->
+
+    <!-- breadcrumb -->
+    <section id="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <nav class="col-12 breadcrumb">
+                    <a class="breadcrumb-item" href="#">Trang chủ</a>
+                    <a class="breadcrumb-item active" href="#">Giới thiệu</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- end breadcrumb -->
+
+
+    <!-- main -->
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="left-main">
+                    <!-- new detail -->
+                    <div class="new-detail">
+                        <div class="top">
+                            <div href="#" title="" class="title-detail">
+                                <h1>ABOUT US</h1>
+                            </div>
+                            <!-- AddThis Button BEGIN -->
+                            <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                                <div class="shareItem"><a class="addthis_button_facebook"></a></div>
+                                <div class="shareItem"><a class="addthis_button_twitter"></a></div>
+                                <div class="shareItem"><a class="addthis_button_zingme"></a></div>
+                                <div class="shareItem"><a class="addthis_button_compact"></a></div>
+                                <div id="fb-root"></div>
+                                <script>
+                                    (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src =
+                                            "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10&appId=226666764204714";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));
+                                </script>
+                                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small"
+                                    data-show-faces="true" data-share="true"></div>
+                                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+                            </div>
+                            <!-- AddThis Button END -->
+                        </div>
+                        <!-- center -->
+                        <div class="noidung TextSize">
+                            <div class="nddes fRobotoB lh22 pb20">
+                                <div class="slider-about">
+                                    <div class="slider-big">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                                <img src="./pic/demo.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                        </div>
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                                        <img src="./pic/demo.jpg">
+                                                    </a>
+                                        </div>
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                                            <img src="./pic/demo.jpg">
+                                                        </a>
+                                        </div>
+                                    </div>
+                                    <div class="slider-small">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                        </div>
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                        <img src="./pic/demo.jpg">
+                                                    </a>
+                                        </div>
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                            <img src="./pic/demo.jpg">
+                                                        </a>
+                                        </div>
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                                <img src="./pic/demo.jpg">
+                                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                noi dung o day
+                            </div>
+                        </div>
+                        <!-- end center -->
+                    </div>
+                    <!-- end new detail -->
+                </div>
+                <div class="right-main">
+                    <!-- company -->
+                    <div class="company">
+                        <div class="top">COMPANY</div>
+                        <div class="inner">
+                            <div class="item"><i class="fa fa-building-o" aria-hidden="true"></i> Head office: No 25 Ly Quoc Su Str, Hoan Kiem
+                                Dist, Ha Noi, Việt Nam</div>
+                            <div class="item"><i class="fa fa-phone" aria-hidden="true"></i> Hotline : +(84) 968 128 289 / (+84) 942 490 408</div>
+                            <div class="item"><i class="fa fa-envelope" aria-hidden="true"></i> Email: vn.newhorizontravel@gmail.com</div>
+                        </div>
+                    </div>
+                    <!-- end company -->
+                    <!-- support -->
+                    <div class="support">
+                        <div class="inner">
+                            <div class="item">
+                                <strong>ONLINE SUPPORT</strong>
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/demo.jpg">
+                                </a>
+                                </div>
+                                <div class="information">
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i> +84 96812 82 89</p>
+                                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> vn.newhorizontravel@gmail.com</p>
+                                    <p><i class="fa fa-skype" aria-hidden="true"></i> newhorizontravel</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <strong>ONLINE SUPPORT</strong>
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/demo.jpg">
+                                </a>
+                                </div>
+                                <div class="information">
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i> +84 96812 82 89</p>
+                                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> vn.newhorizontravel@gmail.com</p>
+                                    <p><i class="fa fa-skype" aria-hidden="true"></i> newhorizontravel</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>WE ARE ONLINE 24/7</h3>
+                    </div>
+                    <!-- end support -->
+                    <!-- ma nhung -->
+                    <div class="code-nhung">
+                        <img src="./pic/5.png" alt="">
+                    </div>
+                    <!-- end ma nhung -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+
+
+    <!-- why us -->
+    <section class="why-us">
+        <div class="title">
+            <h2>WHY CHOOSE US ?</h2>
+        </div>
+        <div class="container inner">
+            <div class="clear group-item">
+                <div class="item">
+                    <div class="img">
+                        <img src="./pic/1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <strong>1,000+ customers</strong>
+                        <p>customers love our sevices</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./pic/1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <strong>1,000+ customers</strong>
+                        <p>customers love our sevices</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./pic/1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <strong>1,000+ customers</strong>
+                        <p>customers love our sevices</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./pic/1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <strong>1,000+ customers</strong>
+                        <p>customers love our sevices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end why us -->
+
+    <!-- adv footer -->
+    <section class="pc-footer">
+        <div class="clear inner">
+            <div class="item">
+                <div class="khungAnh">
+                    <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo.jpg">
+                            </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="khungAnh">
+                    <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo.jpg">
+                            </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="khungAnh">
+                    <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo.jpg">
+                            </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end adv footer -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="clear container footer-top">
+            <div class="block block-1">
+                <div class="top">VIETNAM TOUR</div>
+                <ul class="link">
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="">Ha Long cruise</a></li>
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="">Sapa trekking</a></li>
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="">Daily tours</a></li>
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="">Nha Trang Tours</a></li>
+                </ul>
+            </div>
+            <div class="block block-2">
+                <div class="top">HALONG CRUISE</div>
+                <ul class="link">
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="">Visa</a></li>
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="">Flight ticket</a></li>
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="">Car rental</a></li>
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="">Train ticket</a></li>
+                </ul>
+            </div>
+            <div class="block block-3">
+                <div class="top">INFORMATION</div>
+                <ul class="link">
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="">About us</a></li>
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href=""></a>Why travel with us?</li>
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href=""></a>How to book?</li>
+                    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href=""></a>Payment method</li>
+                </ul>
+            </div>
+            <div class="block block-4">
+                <div class="top">Follow Us</div>
+                <div class="social">
+                    <a href="#"><img src="./pic/f.png" alt=""><span>Facebook</span></a>
+                    <a href="#"><img src="./pic/g.png" alt=""><span>Google +</span></a>
+                    <a href="#"><img src="./pic/t.png" alt=""><span>Twitter</span></a>
+                    <a href="#"><img src="./pic/y.png" alt=""><span>youtube</span></a>
+                    <a href="#"><img src="./pic/xx.png" alt=""><span>Tripadvisor</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <strong>HEAD OFFICE</strong>
+                        <p>Address: 25B, Ly Quoc Su st, Hang Trong district, Ha Noi city, Viet Nam</p>
+                        <p>Phone: +84 466 872 875</p>
+                        <p>Hotline: +84 968 128 289 / +84 942 490 408</p>
+                        <p>Email: vn.newhorizontravel@gmail.com</p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div id="maps-footer"></div>
+                    </div>
+                    <div class="col-12 copyright">
+                        <p>Copyright @ 2017. All rights recent to go <a href="#">Newhorizontravel.com.</a> <a target="_bank"
+                                href="http://tatthanh.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!" class="fs13">Design & SEO Google by Tat Thanh</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- fixed right -->
+    <div class="fixed-right">
+        <div class="item item1">
+            <div class="icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="phone">
+                <a href="tel:+84 96812 82 89" title="+84 96812 82 89">+84.968 12 8289</a>
+                <a href="tel:+84 942 490 468" title="+84 942 490 468">+84.942 49 0468</a>
+            </div>
+        </div>
+        <div class="item item2">
+            <div class="icon">
+                <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+            </div>
+            <a href="#">BOOK NOW</a>
+        </div>
+    </div>
+    <!-- end fixed right -->
+
+    <div class="ve-top">
+            <img src="./css/icons/ve-top.png" alt="">
+        </div>
+
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+<script type="text/javascript" src="vendor/google-map/infobox.js"></script>
+<script type="text/javascript" src="vendor/google-map/GoogleMapInit.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" src="vendor/datePicker/date-vi-VN.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/tether.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+    initialize(
+        '21.00757415248039',
+        '105.80296128988266',
+        '',
+        'maps-footer',
+        ''
+    );
+</script>
+
+</html>
