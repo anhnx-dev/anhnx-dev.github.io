@@ -1,0 +1,626 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.item-01 {
+    margin-bottom: 30px;
+    position: relative;
+    .khungAnh {
+        overflow: hidden;
+        &:hover .khungAnhCrop {
+            transform: scale(1.05);
+        }
+        &::before {
+            padding-bottom: 70%;
+        }
+    }
+    h3 {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 10px 30px;
+        font-size: $font-s2;
+        text-transform: uppercase;
+        margin: 10px 0 5px 0;
+        line-height: $line-02 - 2px;
+        font-weight: 700;
+        z-index: 2;
+        a {
+            color: $color-01;
+            &:hover {
+                color: $color-05;
+            }
+        }
+    }
+}
+
+.item-02 {
+    margin-bottom: 30px;
+    .khungAnh {
+        overflow: hidden;
+        &:hover .khungAnhCrop {
+            transform: scale(1.05);
+        }
+        &::before {
+            padding-bottom: 67%;
+        }
+    }
+    .content {
+        padding: 10px 0;
+        h3 {
+            font-size: $font-s2;
+            margin-bottom: 10px;
+            font-weight: 700;
+            max-height: $line-01 * 2;
+            overflow: hidden;
+            line-height: $line-01;
+        }
+        summary {
+            color: $color-03;
+            height: $line-01 * 3;
+            overflow: hidden;
+        }
+    }
+}
+
+.item-03 {
+    margin-bottom: 30px;
+    .khungAnh {
+        overflow: hidden;
+        &:hover .khungAnhCrop {
+            transform: scale(1.05);
+        }
+        &:before {
+            padding-bottom: 66.3%;
+        }
+    }
+    .content {
+        background: $color-08;
+        padding: 15px;
+        text-align: center;
+        h3 {
+            font-size: $font-s2;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            line-height: $line-02;
+            font-family: $font-f2;
+            max-height: $line-02 * 2;
+        }
+    }
+}
+
+.item-04 {
+    margin-bottom: 30px;
+    .img {
+        transition: $time-a1;
+        margin-bottom: 5px;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    .content {
+        padding: 15px 30px;
+        text-align: center;
+        h2 {
+            font-size: $font-s2;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            line-height: $line-02;
+            font-family: $font-f2;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 60px;
+                border-bottom: 2px solid $color-06;
+                bottom: 0;
+                left: 50%;
+                margin-left: -30px;
+            }
+        }
+        summary {
+            color: $color-03;
+        }
+    }
+}
+
+.item-05 {
+    position: relative;
+    padding: 0 0.5px !important;
+    margin: -3px 0;
+    .khungAnh {
+        overflow: hidden;
+        &:hover .khungAnhCrop {
+            transform: scale(1.05);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.5);
+            pointer-events: none;
+        }
+    }
+    .content {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        padding: 0 15px;
+        h3 {
+            a {
+                color: $color-01;
+                font-size: $font-s3 - 2px;
+                text-transform: uppercase;
+                font-family: $font-f2;
+                
+            }
+            >i {
+                color: $color-01;
+                font-size: 16px;
+                margin-left: 3px;
+            }
+            &:hover a,
+            &:hover i {
+                color: $color-06;
+            }
+        }
+    }
+}
+
+.slick-current .item-05 .khungAnh::after {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.item-06 {
+    padding: 30px 15px;
+    text-align: center;
+    .khungAnh {
+        overflow: hidden;
+        &:hover .khungAnhCrop {
+            transform: scale(1.05);
+        }
+        &::before {
+            padding-bottom: 121.5%;
+        }
+        &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5) url(../css/icons/zoom.png) no-repeat center;
+            z-index: 2;
+            opacity: 0;
+            transition: $time-a1;
+        }
+    }
+    .content {
+        background: #f2f2f2;
+        padding: 10px 15px;
+        h3 {
+            color: $color-06;
+            font-size: 18px;
+            line-height: 38px;
+            margin-bottom: 0;
+        }
+        >p {
+            font-size: 14px;
+            line-height: 24px;
+            color: $color-03;
+        }
+    }
+    &:hover {
+        .khungAnh:after {
+            opacity: 1;
+        }
+        .content {
+            background: $color-06;
+            >h3,>p {
+                color: $color-01;
+            }
+        }
+    }
+}
+
+.item-07 {
+    padding-left: 20px;
+    padding-right: 20px;
+    .khungAnh {
+        overflow: hidden;
+        &:hover .khungAnhCrop {
+            transform: scale(1.05);
+        }
+        &::before {
+            padding-bottom: 66%;
+        }
+    }
+    .content {
+        margin-bottom: 15px;
+        .time {
+            color: $color-05;
+            border-bottom: 2px solid $color-05;
+            font-size: $font-s2 + 2px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+        .text {
+            line-height: $line-01 + 1px;
+            font-size: $font-s1 - 1px;
+            span {
+                color: $color-06;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.group-item-08 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.item-08 {
+    margin-bottom: 30px;
+    .khungAnh {
+        overflow: hidden;
+        &:hover .khungAnhCrop {
+            transform: scale(1.05);
+        }
+        &::before {
+            padding-bottom: 66%;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(../css/icons/zoom.png) rgba(0, 0, 0, 0.6) no-repeat center;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transition: $time-a2;
+            transform: scale(0);
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+    &:hover .khungAnh::after {
+        transform: scale(1);
+        opacity: 1;
+    }
+    .content {
+        background: #f2f2f2;
+        padding: 15px;
+        h2 {
+            font-size: $font-s2;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            line-height: $line-02;
+            font-family: $font-f2;
+            max-height: $line-02 * 2;
+            overflow: hidden;
+        }
+        summary {
+            color: $color-03;
+            height: $line-01 * 3;
+            overflow: hidden;
+        }
+    }
+    .inner{
+        transition: $time-a2;
+        &:hover {
+            box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+        }
+    }
+}
+
+.item-09 {
+    margin-bottom: 1px;
+    position: relative;
+    color: $color-01;
+    overflow: hidden;
+    .khungAnh {
+        overflow: hidden;
+        .khungAnhCrop {
+            transition: $time-a1;
+        }
+        &:hover .khungAnhCrop {
+            transform: scale(1.05);
+        }
+        &::before {
+            padding-bottom: 55%;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+        pointer-events: none;
+        transition: $time-a2;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .content {
+        position: absolute;
+        padding: 20px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        line-height: $line-01 + 1px;
+        overflow: auto;
+        max-height: 100%;
+        >strong {
+            display: block;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        >p {
+            transform: translateY(100px) scale(0);
+            height: 0px;
+            opacity: 0;
+            transition: $time-a2;
+        }
+    }
+    &:hover {
+        &::before {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .content >p {
+            transform: translateY(0) scale(1);
+            height: auto;
+            opacity: 1;
+        }
+    }
+}
+
+.item-10 {
+    margin-bottom: 30px;
+    position: relative;
+    .khungAnh {
+        overflow: hidden;
+        &:hover .khungAnhCrop {
+            transform: scale(1.05);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(../css/icons/zoom.png) rgba(0, 0, 0, 0.6) no-repeat center;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transition: $time-a2;
+            transform: scale(0);
+            opacity: 0;
+            pointer-events: none;
+        }
+        .khungAnhCrop {
+            display: none;
+            &:nth-child(1) {
+                display: block;
+            }
+        }
+    }
+    h2 {
+        position: absolute;
+        padding: 15px 30px;
+        font-size: $font-s2;
+        line-height: $line-01 + 1px;
+        color: $color-01;
+        font-weight: bold;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        margin-bottom: 0;
+        width: 100%;
+        pointer-events: none;
+        >i {
+            margin-left: 5px;
+        }
+    }
+    &:hover {
+        .khungAnh::after {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+.item-11 {
+    margin-bottom: 30px;
+    .inner {
+        position: relative;
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 97%;
+        //     background: url(../css/icons/p1.png) no-repeat center;
+        //     top: 0;
+        //     left: 0;
+        //     z-index: 2;
+        //     transition: $time-a2;
+        // }
+        h2 {
+            padding: 10px 0;
+            font-size: $font-s2;
+            line-height: $line-01 + 1px;
+            font-weight: bold;
+            bottom: 3%;
+            left: 0;
+            z-index: 3;
+            margin-bottom: 0;
+            width: 100%;
+            pointer-events: none;
+            >i {
+                margin-left: 5px;
+            }
+        }
+        // &:hover::after {
+        //     background: url(../css/icons/p2.png) rgba(0, 0, 0, 0.6) no-repeat center;
+        // }
+    }
+    // &.active .inner {
+    //     h2,
+    //     &:after {
+    //         display: none;
+    //     }
+    // }
+}
+
+.group-item-12 .container {
+    column-count: 3;
+    column-gap: 30px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.item-12 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    .khungAnh {
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(../css/icons/zoom.png) rgba(0, 0, 0, 0.6) no-repeat center;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transition: $time-a2;
+            opacity: 0;
+            pointer-events: none;
+        }
+        &::before {
+            padding-bottom: 65%;
+        }
+    }
+    &:hover .khungAnh::after {
+        opacity: 1;
+    }
+    display: inline-block;
+    .content {
+        background: #f4f4f4;
+        padding: 15px;
+        line-height: $line-02;
+        h2 {
+            font-size: $font-s2;
+            text-transform: uppercase;
+            line-height: $line-02;
+            a:hover {
+                color: $color-05;
+            }
+        }
+        summary {
+            color: $color-03;
+        }
+    }
+}
+
+.item-13 {
+    padding: 15px 0;
+    border-bottom: 1px solid $color-09;
+    &:last-of-type {
+        border: none;
+    }
+    &::after {
+        @include clear;
+    }
+    .khungAnh {
+        width: 100px;
+        height: 67px;
+        float: left;
+        margin-right: 10px;
+    }
+    >a {
+        display: block;
+        line-height: 18px;
+        max-height: 72px;
+        overflow: hidden;
+    }
+}
+
+.item-14 {
+    background: $color-01;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: $color-03;
+    .copyright {
+        margin-bottom: 25px;
+        &::after {
+            @include clear;
+        }
+        .khungAnh {
+            width: 80px;
+            height: 80px;
+            float: left;
+            margin-right: 20px;
+        }
+        .name {
+            font-size: 16px;
+            font-family: $font-f2;
+            padding-top: 10px;
+            color: $color-02;
+        }
+    }
+    .content {
+        max-height: 94px;
+        overflow: hidden;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 28px;
+            height: 24px;
+            background: url(../css/icons/text2.png) no-repeat center;
+            margin-right: 4px;
+        }
+    }
+    .btn-14 {
+        margin-top: 15px;
+        color: $color-06;
+        >span {
+            cursor: pointer;
+            &:hover {
+                color: $color-05;
+            }
+        }
+        .closed {
+            display: none;
+        }
+    }
+    &.active {
+        .content {
+            max-height: none;
+        }
+        .btn-14 {
+            .open {
+                display: none;
+            }
+            .closed {
+                display: inline-block;
+            }
+        }
+    }
+}
+

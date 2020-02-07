@@ -1,0 +1,225 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.btn-01 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $color-01 !important;
+    padding: 8.5px 30px;
+    border: 1px solid $color-01;
+    border-radius: 20px;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    &:hover {
+        border: 1px solid $color-05;
+        &::before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        }
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $color-05;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        border-radius: 20px;
+    }
+}
+
+.btn-02 {
+    min-width: 130px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 18px;
+    background: $color-06;
+    margin-right: 10px;
+    color: $color-01;
+    &:hover {
+        background: $color-05;
+    }
+}
+
+.btn-03 {
+    min-width: 130px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 18px;
+    background: $color-05;
+    color: $color-01 !important;
+    padding: 0 35px;
+    &:hover {
+        background: $color-06;
+    }
+}
+
+.btn-04 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ebebeb;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    &:hover {
+        background: $color-05;
+    }
+}
+
+.btn-05 {
+    float: right;
+    line-height: 40px;
+    width: 80px;
+    text-align: center;
+    background: #faaf3f;
+    color: $color-01 !important;
+    font-weight: bold;
+    &:hover {
+        background: $color-05;
+    }
+}
+
+.btn-06 {
+    width: 76px;
+    line-height: 26px;
+    text-align: center;
+    float: right;
+    background: $color-08;
+    color: $color-02 !important;
+    &:hover {
+        background: $color-06;
+        color: $color-01 !important;
+        &::before {
+            background: url(../css/icons/m5.png) no-repeat center;
+        }
+    }
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 11px;
+        height: 12px;
+        margin-right: 5px;
+        background: url(../css/icons/m4.png) no-repeat center;
+        transform: translateY(1px);
+    }
+}
+
+.btn-07 {
+    margin-top: 20px;
+    width: 215px;
+    line-height: 40px;
+    text-align: center;
+    background: #f12f31;
+    text-transform: uppercase;
+    color: $color-01;
+    &:hover {
+        background: $color-05;
+        &::after {
+            background: url(../css/icons/m4.png) no-repeat center;
+        }
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 11px;
+        height: 12px;
+        margin-left: 5px;
+        background: url(../css/icons/m5.png) no-repeat center;
+        transform: translateY(1px);
+    }
+}
+
+.btn-08,.btn-09 {
+    width: 76px;
+    line-height: 26px;
+    text-align: center;
+    &:hover {
+        background: #f12f31;
+        color: $color-01 !important;
+        &::before {
+            background: url(../css/icons/m6.png) no-repeat center;
+        }
+    }
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 11px;
+        height: 12px;
+        margin-right: 5px;
+        background: url(../css/icons/m5.png) no-repeat center;
+        transform: translateY(1px);
+    }
+}
+
+.btn-08 {
+    &::before {
+        display: none;
+    }
+}
+
+.btn-10 {
+    line-height: 36px;
+    border-radius: $radius;
+    color: $color-01;
+    padding: 0 20px;
+    background: $color-05;
+    min-width: 105px;
+    text-align: center;
+    font-weight: bold;
+    &:hover {
+        background: $color-06;
+        color: $color-01;
+    }
+}
+
+.btn-11 {
+    margin-top: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    background: $color-06;
+    color: $color-01;
+    padding: 8px 25px;
+    &:hover {
+        background: $color-05;
+        color: $color-01;
+    }
+}
+
+.btn-ct {
+    color: $color-01;
+    border: 1px solid $color-01;
+    text-transform: uppercase;
+    min-width: 115px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 15px;
+    &:hover {
+        background: $color-06;
+        border-color: $color-06;
+        color: $color-01;
+    }
+}

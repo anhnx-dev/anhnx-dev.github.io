@@ -1,0 +1,887 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+// Large devices (desktops, less than up)
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+    .navbar-icon {
+        display: none;
+        border: 1px solid $color-04;
+        border-radius: $radius;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        span,
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            width: 22px;
+            height: 2px;
+            background: $color-03;
+            top: 0;
+            left: 50%;
+            margin-left: -11px;
+            border-radius: 1px;
+            transition: $time-a2;
+        }
+        span {
+            top: 50%;
+            margin-top: -2px;
+        }
+        &:before {
+            top: 6px;
+        }
+        &:after {
+            top: 20px;
+        }
+        &.active {
+            span {
+                transform: scale(0);
+                opacity: 0;
+            }
+            &:before {
+                top: 50%;
+                margin-top: -1px;
+                transform: rotate(-45deg);
+            }
+            &:after {
+                top: 50%;
+                margin-top: -1px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .slider-home .item .content {
+        display: none;
+    }
+    #header .top-bar .contact>a {
+        margin-right: 15px;
+    }
+    .button-nav-section {
+        display: block;
+    }
+    .sell-home,
+    .customer-reviews {
+        .slick-arrow {
+            left: -20px;
+            z-index: 1;
+        }
+        .slick-next {
+            left: unset;
+            right: -20px;
+        }
+    }
+    .navbar-toggler {
+        float: right;
+        padding: 0;
+        margin-top: 40px;
+        .navbar-icon {
+            display: block;
+            border: none;
+        }
+        &.button-nav-section {
+            position: fixed;
+            z-index: 99;
+            top: 5px;
+            right: 15px;
+            display: none;
+            margin-top: 0;
+            background: $color-05;
+            &.active {
+                display: block;
+            }
+            .navbar-icon span,
+            .navbar-icon::after,
+            .navbar-icon::before {
+                background: $color-01;
+            }
+        }
+    }
+    #header .main-bar {
+        .menu-main {
+            float: none;
+            position: absolute;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            left: 0;
+            top: 100%;
+            display: none;
+            margin-top: 0;
+            &.collapse.show {
+                display: block;
+            }
+            .inner {
+                background: $color-06;
+                .nav {
+                    display: block;
+                    margin-right: 0;
+                    padding: 10px 0;
+                    .nav-item {
+                        position: relative;
+                        padding: 0;
+                        &:after {
+                            content: "";
+                            display: block;
+                            border-top: 1px solid #0e233e;
+                            border-bottom: 1px solid #2a69ba;
+                        }
+                        &:last-of-type::after {
+                            display: none;
+                        }
+                        .nav-link {
+                            padding-top: 10px;
+                            padding-bottom: 9px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            display: inline-block;
+                            color: $color-01;
+                            border-bottom: none;
+                        }
+                        &.dropdown {
+                            .btn-dropdown {
+                                position: absolute;
+                                width: 60px;
+                                height: 40px;
+                                top: 0;
+                                right: 15px;
+                                background: url(../css/icons/m9.png) no-repeat right;
+                            }
+                            &.active-dd {
+                                >.btn-dropdown {
+                                    background: url(../css/icons/m10.png) no-repeat right;
+                                }
+                                >.dropdown-menu {
+                                    display: block;
+                                }
+                            }
+                            .dropdown-menu {
+                                position: unset;
+                                float: none;
+                                padding: 5px 0;
+                                display: none;
+                                background: unset;
+                                .nav-item {
+                                    padding-left: 25px;
+                                    padding-right: 25px;
+                                    .nav-link {
+                                        padding: 0;
+                                        color: $color-01;
+                                        font-weight: 400;
+                                    }
+                                    &::after,
+                                    &::before {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .search {
+            right: 65px;
+        }
+    }
+    .event-home {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 15px;
+            bottom: 0;
+            left: 0;
+            background: $color-01;
+        }
+        .container {
+            max-width: 720px;
+        }
+        .item-01 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .inner {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        .slick-arrow {
+            left: -5px;
+        }
+        .slick-next {
+            left: unset;
+            right: -5px;
+        }
+    }
+    .news-home {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        .right .inner .top h3 {
+            border-bottom: 1px solid #e2e2e2;
+        }
+        .right {
+            .row {
+                margin: 0;
+            }
+            .inner .item {
+                padding-left: 10px;
+                padding-right: 10px;
+                margin: 15px 0;
+                &:nth-child(2n+2) {
+                    border-left: 1px solid #e2e2e2;
+                    border-right: 1px solid #e2e2e2;
+                }
+                .content {
+                    border: none;
+                    padding: 0;
+                    h3 {
+                        max-height: $line-02 * 4;
+                    }
+                }
+            }
+        }
+    }
+    .sell-home {
+        padding-top: 45px;
+        padding-bottom: 0px;
+    }
+    .introduce {
+        padding-top: 45px;
+        padding-bottom: 0;
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    }
+    .item-04 .content {
+        padding: 15px 0;
+    }
+    .about-us {
+        padding-top: 45px;
+        padding-bottom: 20px;
+        .col-12 {
+            margin-bottom: 20px;
+        }
+    }
+    .project-home {
+        padding-top: 45px;
+        .slick-arrow {
+            left: 35px;
+        }
+        .slick-next {
+            right: 35px;
+            left: unset;
+        }
+        .top-section {
+            max-width: 720px;
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 30px;
+        }
+    }
+    .customer-reviews {
+        padding-top: 45px;
+    }
+    #footer {
+        .statistics {
+            display: none;
+        }
+    }
+    .breadcrumb-page {
+        height: auto;
+    }
+    .breadcrumb-page .img {
+        position: unset;
+    }
+    .breadcrumb-page .img .khungAnh {
+        height: auto;
+        &::before {
+            padding-bottom: 40%;
+        }
+    }
+    .nav-section {
+        position: fixed;
+        width: 250px;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        left: unset;
+        display: none !important;
+        &.fixed-top.collapse.show {
+            display: block !important;
+        }
+        .nav {
+            display: block;
+            justify-content: unset !important;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            .nav-item {
+                padding: 0;
+                .nav-link {
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+    .page-about-us .general-introduction .text {
+        padding-right: 15px;
+    }
+    .page-about-us .general-introduction .video {
+        padding-left: 15px;
+    }
+    .page-about-us .slick-arrow {
+        left: 0;
+    }
+    .page-about-us .slick-next {
+        left: unset;
+        right: 0;
+    }
+    .page-about-us .manifesto {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .page-about-us .leader .inner {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .page-about-us .leader .item-06 {
+        padding: 30px 15px;
+    }
+    .group-item-12 .container {
+        column-count: 2;
+    }
+    .page-contact .form-contact .container {
+        background: none;
+    }
+    .page-contact .form-contact .inner {
+        width: auto;
+        float: none;
+    }
+    .other-document .table-responsive {
+        overflow-x: auto;
+    }
+    .other-document .table-responsive .table thead tr>th:nth-child(2) {
+        min-width: 385px;
+    }
+    .page-feel .left {
+        padding-right: 15px;
+    }
+    .page-feel .form-feel {
+        margin-right: 0;
+    }
+    .page-feel .right {
+        padding-left: 15px;
+    }
+    .welcome .inner .item {
+        width: 41.5%;
+    }
+    .welcome .inner {
+        width: 605px;
+        position: relative;
+        height: 725px;
+    }
+    .welcome .inner .item {
+        position: absolute;
+    }
+    .welcome .inner .item:nth-child(1) {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .welcome .inner .item:nth-child(2) {
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .welcome .inner .item:nth-child(3) {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .welcome .inner .item:nth-child(4) {
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .welcome {
+        padding-bottom: 40px;
+    }
+    .accordion .item-01:nth-child(4n+1) {
+        width: auto;
+        float: none;
+        height: auto;
+    }
+    .accordion .item-01:nth-child(4n+2),
+    .accordion .item-01:nth-child(4n+3) {
+        width: 50%;
+        height: auto;
+    }
+    .accordion .item-01:nth-child(4n+4) {
+        float: none;
+        width: auto;
+        height: auto;
+        .khungAnh::before {
+            padding-bottom: 35%;
+        }
+    }
+    .project-highlights {
+        background-size: auto 100%;
+    }
+    .accordion .header>a {
+        padding: 0 13px;
+        font-size: 13px;
+    }
+    .news-event .item-02 {
+        display: none;
+        &:nth-child(1),
+        &:nth-child(2) {
+            display: block;
+        }
+    }
+    .inner-registration {
+        margin-top: 20px;
+        display: inline-block;
+    }
+    #footer .sociat {
+        float: right;
+        padding-top: 55hhpx;
+    }
+    #header .top-bar .language>a {
+        font-size: 0;
+    }
+    .page-about-us .general-introduction .inner .khungAnh {
+        display: none;
+    }
+    .page-about-us .general-introduction .inner .text {
+        padding-right: 15px;
+        text-align: center;
+    }
+    .life .group-item .item:nth-child(3n+2) .content,
+    .life .group-item .item:nth-child(3n+1) .content {
+        padding: 15px;
+    }
+    .item-09 .khungAnh::before {
+        padding-bottom: 80%;
+    }
+    .pay .container:after {
+        display: none;
+    }
+    .pay {
+        margin-top: 0;
+    }
+    .inner-right {
+        margin-top: 30px;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+    #header .top-bar .contact>a {
+        display: none;
+        &:nth-child(1) {
+            display: inline-block;
+        }
+    }
+    .slider-home .item .khungAnh:before {
+        padding-bottom: 57.83%;
+    }
+    .event-home {
+        .slick-arrow {
+            width: 40px;
+            height: 40px;
+            top: -41px;
+            left: 0;
+        }
+        .slick-next {
+            left: unset;
+            right: 0;
+        }
+        .container {
+            background: none;
+            transform: translateY(-40px);
+            max-width: 100%;
+        }
+        .top-section {
+            padding: 0 15px;
+            h2 {
+                font-size: 15px;
+                background: $color-01;
+            }
+        }
+        .inner {
+            margin: 0;
+            background: $color-01;
+            padding: 20px 10px;
+        }
+    }
+    .news-home .right .inner .item {
+        padding: 15px 10px;
+        margin: 0;
+    }
+    .news-home .right .inner .item:nth-child(2n+2) {
+        border: none;
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .sell-home .slick-arrow,
+    .customer-reviews .slick-arrow {
+        left: 0;
+    }
+    .sell-home .slick-next,
+    .customer-reviews .slick-next {
+        left: unset;
+        right: 0;
+    }
+    .item-05 .content h3 a {
+        font-size: $font-s1;
+    }
+    .project-home .slick-arrow {
+        left: 5px;
+    }
+    .project-home .slick-next {
+        right: 5px;
+        left: unset;
+    }
+    #footer .contact .brochure {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+    }
+    #footer .contact .brochure .inner-brochure>a {
+        padding-top: 15px;
+    }
+    #footer .contact .inner-registration .form {
+        display: block;
+    }
+    #footer .contact .inner-registration .form input {
+        width: 100%;
+    }
+    .take-care-of {
+        margin-bottom: 25px;
+    }
+    #footer .menu-footer {
+        padding-bottom: 55px;
+        .link-block {
+            width: auto !important;
+            float: none;
+            margin-bottom: 5px;
+            >strong {
+                background: #e0e0e0 url(../css/icons/m11.png) no-repeat right 10px center;
+                line-height: 40px;
+                border-radius: $radius;
+                padding: 0 10px;
+                &:hover {
+                    background: $color-05 url(../css/icons/m12.png) no-repeat right 10px center;
+                    color: $color-01;
+                }
+            }
+            ul {
+                display: none;
+                padding: 0 10px;
+                margin-bottom: 20px;
+            }
+            &:hover ul {
+                display: block;
+            }
+        }
+    }
+    #footer .copyright-social .left {
+        width: auto;
+        display: block;
+        font-size: 14px;
+    }
+    #footer .copyright-social .right {
+        float: none;
+    }
+    .breadcrumb-page .img .khungAnh::before {
+        padding-bottom: 65%;
+    }
+    .breadcrumb-page .link-page h1 {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .breadcrumb-page .link-page .breadcrumb {
+        padding: 0;
+    }
+    .breadcrumb-page .link-page .breadcrumb .breadcrumb-item {
+        font-size: 14px;
+    }
+    #header .main-bar {
+        padding: 5px 0;
+    }
+    .page-about-us .history .inner {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .page-about-us .vision-mission .col-12 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .group-item-08 {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .new-detail .ground .card .floor .header>a {
+        display: block;
+    }
+    .item-09 .content {
+        padding: 10px;
+    }
+    .new-detail {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .new-detail .contact-detail .address {
+        margin-bottom: 10px;
+    }
+    .new-detail .contact-detail .social {
+        float: none;
+    }
+    .new-detail .form>.inner .input input {
+        float: none;
+        width: 100%;
+    }
+    .new-detail .form>.inner .input a {
+        width: 150px;
+    }
+    .pay .container {
+        background: unset;
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+    .group-item-12 .container {
+        column-count: 1;
+    }
+    .page-news .inner-left {
+        padding: 15px;
+    }
+    .page-news .comments>.inner {
+        padding: 15px 10px;
+    }
+    .new-detail .welfare .item>strong {
+        float: none;
+        display: block;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .new-detail .welfare .item>ul {
+        width: auto;
+        float: none;
+    }
+    .new-detail .welfare .item>ul>li {
+        margin-left: 0;
+    }
+    .inner-right {
+        margin-top: 30px;
+    }
+    .page-news {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+    .page-contact .form-contact .inner .row-i input {
+        width: 100%;
+        float: none;
+    }
+    .block-document .table-responsive .table tr td:nth-child(1) {
+        min-width: 200px;
+    }
+    .page-document .right {
+        margin-top: 0;
+    }
+    .result-search {
+        line-height: 24px;
+    }
+    .detail-ground {
+        padding: 0 15px;
+    }
+    .detail-ground .group-item .item {
+        margin-bottom: 20px;
+    }
+    .modal-ground .modal-content {
+        padding: 0;
+    }
+    .modal-ground .form>.inner .input>p {
+        float: none;
+        width: auto;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .form-recruitment .inner>p {
+        width: auto;
+        float: none;
+    }
+    .form-recruitment .inner>p:last-of-type>input {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .form-search .inner {
+        transform: unset;
+    }
+    .form-search .inner>p {
+        width: auto;
+        float: none;
+        padding: 0;
+    }
+    .top-section-1 h2::after,
+    .top-section-1 h2::before {
+        display: none;
+    }
+    #header .top-bar .name {
+        display: none;
+    }
+    #header .main-bar .logo img {
+        height: 63px;
+    }
+    .navbar-toggler {
+        margin-top: 14px;
+    }
+    .top-section-1 h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .top-section-1>strong {
+        font-size: 18px;
+    }
+    .welcome .inner {
+        height: auto;
+        position: unset;
+        overflow: hidden;
+        padding-top: 0;
+    }
+    .welcome .inner .item {
+        position: relative;
+        width: 100%;
+        float: none;
+        padding: 0;
+        transform: none !important;
+        left: unset !important;
+        right: unset !important;
+        top: unset !important;
+        bottom: unset !important;
+    }
+    #footer .inner-registration,
+    #footer .inner-registration .form {
+        display: block;
+    }
+    #footer .sociat {
+        float: none;
+    }
+    #footer .nav-footer .block {
+        float: none;
+        padding-right: 0;
+        width: auto;
+    }
+    .welcome .inner .item .img {
+        transform: rotate(-45deg) scale(0.7);
+    }
+    .welcome .inner .item h3 {
+        width: 100%;
+    }
+    .accordion .item-01 {
+        height: auto !important;
+        float: none !important;
+        width: auto !important;
+        .khungAnh::before {
+            padding-bottom: 60% !important;
+        }
+    }
+    .item-01 {
+        margin-bottom: 20px;
+    }
+    .accordion .header {
+        .slick-arrow {
+            background: url(../css/icons/m13.png) no-repeat left;
+            margin-top: -35px;
+        }
+    }
+    .news-event {
+        padding-top: 40px;
+    }
+    .top-section-2 h2 {
+        font-size: 21px;
+    }
+    .library .images .item>a {
+        width: 100%;
+        text-align: center;
+    }
+    .partner .top-section-2 {
+        margin-bottom: 20px;
+    }
+    .tatthanh {
+        display: none;
+    }
+    .ve-top {
+        right: 15px;
+        bottom: 15px;
+    }
+    #header .top-bar .language>a {
+        padding: 0;
+        background: unset !important;
+    }
+    .page-about-us .general-introduction .inner {
+        padding: 35px 0;
+    }
+    .top-section-3 h2,
+    .top-section-4 h2 {
+        font-size: 22px;
+    }
+    .page-about-us .leader {
+        padding: 35px 0;
+    }
+    .accordion.real-estate {
+        padding: 35px 15px;
+    }
+    .accordion.real-estate .header {
+        padding-bottom: 30px;
+    }
+    .life .group-item .item {
+        width: auto !important;
+        float: none !important;
+        .khungAnh {
+            height: auto !important;
+            &::before {
+                padding-bottom: 70%;
+            }
+        }
+    }
+    .life .group-item .item .content {
+        width: 100% !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        max-height: 100% !important;
+        overflow: auto;
+        padding: 15px !important;
+    }
+    .new-detail .ground .card .floor .body .card-body {
+        padding: 10px;
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {}

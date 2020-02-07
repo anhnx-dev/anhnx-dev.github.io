@@ -1,0 +1,30 @@
+@mixin clear {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@mixin offset60 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+@mixin row0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@mixin row10 {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@mixin col0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@mixin col10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}

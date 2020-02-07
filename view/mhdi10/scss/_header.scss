@@ -1,0 +1,155 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+#header {
+    position: relative;
+    z-index: 9;
+    .top-bar {
+        background: $color-05;
+        .container::after {
+            @include clear;
+        }
+        .name {
+            font-weight: 500;
+            text-transform: uppercase;
+            display: inline-block;
+            font-size: 14px;
+            color: $color-01;
+            margin: 0;
+            overflow: hidden;
+            line-height: 32px;
+            transform: translateY(2px);
+            float: left;
+            >span {
+                animation: animation-name 6s linear infinite;
+                display: inline-block;
+            }
+        }
+        .language {
+            float: right;
+            >a {
+                color: $color-01;
+                line-height: 32px;
+                padding: 0 15px;
+                &:hover,
+                &.active {
+                    background: #990b0b;
+                }
+            }
+        }
+    }
+    .main-bar {
+        background: $color-01;
+        box-shadow: 0 4px 9px 1px rgba(0, 0, 0, 0.3);
+        transition: $time-a2;
+        .container {
+            position: relative;
+        }
+        .logo {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        .menu-main {
+            float: right;
+            margin-top: 30px;
+            .inner {
+                position: relative;
+            }
+            .nav {
+                margin-right: 45px;
+                >.nav-item {
+                    padding: 10px 15px;
+                    >.nav-link {
+                        text-transform: uppercase;
+                        color: $color-06;
+                        padding: 5px 0;
+                        font-weight: 700;
+                        &:hover {
+                            color: $color-05;
+                            border-bottom: 2px solid $color-05;
+                        }
+                    }
+                    &.active>.nav-link {
+                        color: $color-05;
+                        border-bottom: 2px solid $color-05;
+                    }
+                    &.dropdown {
+                        .dropdown-menu {
+                            background: rgba(190, 30, 45, 0.8);
+                            border: none;
+                            border-radius: 0;
+                            margin: 0;
+                            padding: 10px 0;
+                            left: 15px;
+                            min-width: 195px;
+                            >.dropdown .dropdown-menu {
+                                left: 100%;
+                                top: 0;
+                            }
+                            .nav-link {
+                                padding: 0 15px;
+                                line-height: 30px;
+                                color: #c5c4c4;
+                                font-weight: 500;
+                                &:hover {
+                                    color: $color-01;
+                                }
+                            }
+                        }
+                        &:hover>.dropdown-menu {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .search {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            .form-search {
+                 ::-webkit-input-placeholder {
+                    color: $color-01;
+                }
+                 ::-moz-placeholder {
+                    color: $color-01;
+                }
+                position: relative;
+                input {
+                    transition: $time-a1;
+                    transform: translateY(50px) scale(0) translateX(25px);
+                    opacity: 0;
+                    background: $color-05;
+                    color: $color-01;
+                    border: none;
+                    padding: 2.5px 10px;
+                    position: absolute;
+                    z-index: 2;
+                    right: 100%;
+                    top: 50%;
+                }
+                &:hover>input {
+                    opacity: 1;
+                    transform: translateY(-50%) scale(1) translateX(25px);
+                }
+                a {
+                    transform: translateY(-4px);
+                    display: inline-block;
+                    text-align: right;
+                    width: 50px;
+                }
+            }
+        }
+        &.fixed-top {
+            padding: 5px 0;
+            .logo img {
+                height: 55px;
+            }
+            .menu-main {
+                margin-top: 5px;
+            }
+        }
+    }
+}

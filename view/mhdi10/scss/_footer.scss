@@ -1,0 +1,184 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+#footer {
+    padding-top: 60px;
+    background: $color-09;
+    color: $color-03;
+    line-height: $line-02;
+    .header-f {
+        display: block;
+        color: $color-06;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 10px;
+        font-size: $font-s2;
+    }
+    .nav-footer {
+        .block {
+            float: left;
+            width: 50%;
+            padding-right: 30px;
+            margin-bottom: 15px;
+            ul {
+                li {
+                    &:before {
+                        content: "";
+                        display: inline-block;
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background: $color-06;
+                        margin-right: 9px;
+                        transform: translateY(-2px);
+                    }
+                    a {
+                        color: $color-03;
+                        &:hover {
+                            color: $color-06;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .maps {
+        margin-top: 10px;
+    }
+    .right {
+        margin-bottom: 15px;
+    }
+    .contact-f {
+        >p {
+            position: relative;
+            padding-left: 26px;
+            >img {
+                position: absolute;
+                left: 0;
+                top: 4px;
+            }
+        }
+    }
+    .inner-registration {
+        margin-bottom: 30px;
+        clear: both;
+        .form {
+            position: relative;
+            display: inline-block;
+            input {
+                width: 435px;
+                max-width: 100%;
+                border: 1px solid #c0ddff;
+                height: 36px;
+                padding-right: 80px;
+                padding-left: 10px;
+            }
+            a {
+                position: absolute;
+                width: 58px;
+                line-height: 36px;
+                background: $color-06;
+                text-align: center;
+                color: $color-01;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 14px;
+                right: 0;
+                top: 0;
+                &:hover {
+                    background: $color-05;
+                }
+
+            }
+        }
+    }
+    .sociat {
+        margin-left: -4.5px;
+        margin-right: -4.5px;
+        padding-top: 10px;
+        &:after {
+            @include clear;
+        }
+        >a {
+            width: 28px;
+            line-height: 28px;
+            height: 28px;
+            float: left;
+            margin: 0 4.5px;
+            border: 1px solid #999;
+            color: $color-04;
+            text-align: center;
+            border-radius: 50%;
+            &:hover {
+                color: $color-06;
+                border-color: $color-06;
+            }
+        }
+    }
+    .copyright {
+        background: $color-05;
+        padding: 7px 0;
+        color: #f1bcbc;
+        a {
+            color: #f1bcbc;
+        }
+        .statistics {
+            >span {
+                margin-left: 50px;
+                &:before {
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 13px;
+                    background: url(../css/icons/online.png) no-repeat bottom;
+                    display: inline-block;
+                }
+                &:nth-child(2):before {
+                    background: url(../css/icons/tong-onlile.png) no-repeat bottom;
+                }
+            }
+        }
+    }
+}
+
+.ve-top {
+    position: fixed;
+    z-index: 999;
+    right: 5%;
+    bottom: 15%;
+    cursor: pointer;
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+.modal-map {
+    display: block !important;
+    transform: scale(0);
+    &.fade.show {
+        transform: scale(1);
+    }
+    .modal-dialog {
+        max-width: 1170px;
+    }
+    .modal-content {
+        background: unset;
+        border: none;
+        border-radius: unset;
+    }
+    #map-footer {
+        height: 90vh;
+    }
+    .modal-body {
+        padding: 0;
+    }
+    .close {
+        position: absolute;
+        top: -25px;
+        right: 0;
+        color: $color-01;
+        opacity: 1;
+        cursor: pointer;
+    }
+}
