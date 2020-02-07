@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- top bar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <a href="#" class="mail">Email: info@asiantravel.com.vn</a>
+                        <a href="#" class="hotline">Hotline:
+                            <b>028.39.339.888 - 028.39.309.188</b>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-right">
+                        <a href="#" class="request">Đặt tour theo yêu cầu</a>
+                        <a href="$" class="sitemap">Site map</a>
+                        <span class="language">
+                            <a href="#">
+                                <img src="./css/icons/vn.png" alt="vn">
+                            </a>
+                            <a href="#">
+                                <img src="./css/icons/en.png" alt="en">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu main -->
+        <nav class="navbar navbar-expand-lg navbar-main">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./pic/logo1.png" alt="">
+                </a>
+                <!-- button responsive -->
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">lỊCH KHỞI HÀNH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tour nước ngoài</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Tour trong nước</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Demo</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Demo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--search-->
+                <div class="search">
+                    <div class="form-search">
+                        <input type="text" placeholder="Từ khóa tìm kiếm">
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main id="main">
+        <!-- pge image -->
+        <section class="page-image">
+            <div class="framed-image">
+                <a class="cut" href="#">
+                    <img src="./pic/s3.png">
+                </a>
+            </div>
+        </section>
+        <!-- pge image end -->
+
+        <!-- search tour -->
+        <section class="search-tour">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <p class="col-12 id-01">TÌM KIẾM TOUR DU LỊCH PHÙ HỢP</p>
+                        <p class="col-12 col-md-4 col-lg-3 id-02">
+                            <select>
+                                <option value="">Điểm khởi hành</option>
+                                <option value="HỒ CHÍ MINH">HỒ CHÍ MINH</option>
+                                <option value="NewYork">NewYork</option>
+                                <option value="TP HỒ CHÍ MINH">TP HỒ CHÍ MINH</option>
+                            </select>
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-03">
+                            <select>
+                                <option value="">Điểm đến</option>
+                                <option value=" Los Angeles"> Los Angeles</option>
+                                <option value="HÀN QUỐC">HÀN QUỐC</option>
+                                <option value="NHẬT BẢN">NHẬT BẢN</option>
+                            </select>
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-04">
+                            <input type="text" placeholder="Ngày khởi hành" class="datepicker2" id="tbBirthDay">
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-05">
+                            <a href="#">Tìn kiếm</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search tour end -->
+
+        <!-- breadcrumb -->
+        <section class="link-page">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item" href="#">Trang chủ</a>
+                    <a class="breadcrumb-item" href="#">Tour nước ngoài</a>
+                    <a class="breadcrumb-item" href="#">Tour du lịch Nhật Bản</a>
+                    <a class="breadcrumb-item" href="#">Du lịch Nhật Bản Mùa Đông 2018 trải nghiệm trượt tuyết từ Tp.HCM</a>
+                </nav>
+            </div>
+        </section>
+        <!-- end breadcrumb -->
+
+        <!-- body page -->
+        <section class="body-page page-tour-detail">
+            <div class="container header">
+                <div class="row">
+                    <h2 class="col-12">Du lịch Nhật Bản Mùa Đông 2018 trải nghiệm trượt tuyết từ Tp.HCM</h2>
+                    <div class="col-12 img">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/td1.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 info">
+                        <summary>Du lịch Nhật Bản 2018 - Trải nghiệm trượt tuyết mùa đông tại khu trượt tuyết đẳng cấp Fujiten Snow
+                            Resort. Du lịch Nhật Bản vào mùa đông du khách có cơ hội được chiêm ngưỡng khung cảnh</summary>
+                        <div class="social-detail">
+                            <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                                <div class="shareItem">
+                                    <a class="addthis_button_compact"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_facebook"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_twitter"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_zingme"></a>
+                                </div>
+                                <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                                <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                            </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, "script", "facebook-jssdk"));
+                                (function () {
+                                    var po = document.createElement("script");
+                                    po.type = "text/javascript";
+                                    po.async = true;
+                                    po.src = "https://apis.google.com/js/platform.js";
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(po, s);
+                                })();
+                            </script>
+                        </div>
+                        <div class="detail">
+                            <p>
+                                <span>
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i> Mã tour</span>
+                                <span>
+                                    <span class="code">SP 001</span>
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-tags" aria-hidden="true"></i> Giá</span>
+                                <span>
+                                    <span class="price-01">2.200.000đ</span>
+                                    <span class="price-02">2.000.000đ</span>
+                                </span>
+                            </p>
+                            <p><span><i class="fa fa-clock-o" aria-hidden="true"></i> Thời gian</span><span>2 ngày 1 đêm</span></p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> Ngày đi</span>
+                                <span>15/ 12/2017</span>
+                            </p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> ngày về</span>
+                                <span>17/ 12/2017</span>
+                            </p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i> Khởi hành</span>
+                                <span>Hà Nội</span>
+                            </p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-car" aria-hidden="true"></i> Phương tiện</span>
+                                <span>Tàu hỏa, ô tô, xe đạp</span>
+                            </p>
+                        </div>
+                        <a class="btn-07" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">ĐẶT TOUR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container body">
+                <div class="row">
+                    <div class="col-12 col-lg-9 left-section">
+                        <!-- info detail -->
+                        <div class="accordion info-detail">
+                            <div class="header">
+                                <a class="active" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">Chương trình tour</a>
+                                <a class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">Điều kiện tour</a>
+                                <a class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">Đặt tour</a>
+                            </div>
+                            <div class="body" id="accordion" role="tablist">
+                                <!-- card 1 -->
+                                <div class="card">
+                                    <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading-01" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="inner">
+                                                <div style="line-height: 27px; color: #666;">
+                                                    <p>Nhắc đến xứ sở mặt trời mọc, những tín đồ du lịch không chỉ nghĩ đến
+                                                        thủ đô Tokyo, mùa hoa anh đào nở rộ hay nền văn hóa và ẩm thực vô
+                                                        cùng phong phú mà còn nhớ đến một trong những địa điểm mang tính
+                                                        biểu tượng của nước Nhật: núi Phú Sĩ (Fuji). Được mệnh danh là “ngọn
+                                                        núi thần” che chở cho nước Nhật, Fuji quanh năm tuyết phủ còn nổi
+                                                        tiếng bởi cảnh quan hùng vỹ với đỉnh núi trắng xóa, thích hợp cho
+                                                        những hoạt động leo núi, trượt tuyết, rất được du khách ưa chuộng.
+                                                        Tại Nhật Bản, mùa Đông bắt đầu từ tháng 12 đến đầu tháng 4, đây là
+                                                        thời điểm lý tưởng nhất cho kế hoạch du lịch trượt tuyết của bạn.
+                                                        Nhật Bản có rất nhiều khu vực thích hợp với các trò chơi tuyết và
+                                                        trải nghiệm nhiều hoạt động thể thao mùa đông.</p>
+                                                    <br>
+                                                    <p>Ngày 1 : Bạn được đón tại địa điểm Trần Quang Khải đưa ra Sân Bay</p>
+                                                    <br>
+                                                    <p>Ngày 2 : Sapa – Thác Bạc – đỉnh đèo Ô Quy Hồ – Mường Hoa</p>
+                                                    <br>
+                                                    <p>
+                                                        <img src="./pic/td2.png" alt="" style="width: 100%;">
+                                                    </p>
+                                                    <br>
+                                                    <p>Đến Sapa khoảng 7h00, bạn gửi hành lý tại khách sạn. Bạn có thể thuê
+                                                        xe máy, thuê ô tô nếu đi đoàn đông. Do có một hành trình dài trong
+                                                        đêm nên ngày 1 bạn nên đi sao cho thoải mái, nhẹ nhàng, không phải
+                                                        đi bộ nhiều.</p>
+                                                    <br>
+                                                    <p>8h00 : lên đỉnh đèo Ô Quy Hồ ngắm nhìn những biển mây cuồn cuộn, buổi
+                                                        sáng sớm lên đỉnh đèo sẽ có cảm giác thật dễ chịu.</p>
+                                                    <br>
+                                                    <p>9h15 : trên đường trở về lại Sapa, bạn dành thời gian thăm quan Thác
+                                                        Bạc, khoảng 1 tiếng tại đây. Nếu bạn thích có thể ngồi ăn nhẹ tại
+                                                        mấy quán Nướng ven đường.</p>
+                                                    <br>
+                                                    <p>11h00 : về tới Sapa, nhận phòng khách sạn, có thể tắm qua cho đỡ mệt.
+                                                        Sau đó đi ăn trưa, nên dành khoảng 30 phút để nghỉ trưa.
+                                                    </p>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <div class="group-btn">
+                                                <a id="ac-02" class="btn-08" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">Điều kiện tour</a>
+                                                <a id="ac-03" class="btn-08" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">Đặt tour</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end card 1 -->
+                                <!-- card 2 -->
+                                <div class="card">
+                                    <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading-02" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="inner">
+                                                <div style="line-height: 27px;">
+                                                    <p>Các điều kiện đăng ký tour:</p>
+                                                    <p>- Hộ chiếu của Quý khách phải còn thời hạn trên 6 tháng tính đến ngày
+                                                        về.
+                                                    </p>
+                                                    <p>- Giá trẻ em áp dụng từ 2 tuổi cho đến dưới 12 tuổi.</p>
+                                                    <p>- Khi đến đăng ký, Quý khách vui lòng mang hộ chiếu bản gốc và đóng cọc
+                                                        50% giá tour </p>
+                                                    <p>- Nếu yêu cầu ở phòng đơn, Quý khách vui lòng thanh toán tiền phụ thu.</p>
+                                                    <p>- Trường hợp khách quốc tịch nước ngoài có visa vào Việt Nam 1 lần, phí
+                                                        làm visa tái nhập Việt Nam 1.480.000 VND/khách + 1 </p>
+                                                    <p>hình 4*6/ khách + hộ chiếu gốc + visa Vn gốc. Riêng visa tái nhập Việt
+                                                        Nam làm tại cửa khẩu là 650.000 VNĐ/ khách.</p>
+                                                    <p>- Riêng khách quốc tịch Mỹ có visa vào Việt Nam 1 lần thì phí làm visa
+                                                        tái nhập Việt Nam 1.480.000VNĐ/khách + 1 hình 4*6/ khách </p>
+                                                    <p>+ hộ chiếu gốc + visa Vn gốc làm tại cơ quan xuất nhập cảnh tp HCM. Nếu
+                                                        làm visa tại cửa khẩu Tân Sơn Nhất phí visa 3.150.000VNĐ (khách chuẩn
+                                                        bị 2 tấm hình 4*6) visa sẽ được 1 năm nhiều lần.</p>
+                                                    <p>- Nếu khách là Việt Kiều hoặc nước ngoài có visa rời phải mang theo lúc
+                                                        đi tour.
+                                                    </p>
+                                                    <p>- Quý khách mang 2 Quốc tịch hoặc Travel document (chưa nhập quốc tịch)
+                                                        vui lòng thông báo với nhân viên bán tour ngay thời điểm đăng ký
+                                                        tour và nộp bản gốc kèm các giấy tờ có liên quan (nếu có). </p>
+                                                    <p>- Quý khách chỉ mang thẻ xanh (thẻ tạm trú tại nước ngoài) và không còn
+                                                        hộ chiếu VN còn hiệu lực thì không đăng ký du lịch sang nước thứ
+                                                        ba được.</p>
+                                                    <p>- Quý khách dưới 18 tuổi phải có Bố Mẹ hoặc người nhà trên 18 tuổi đi
+                                                        cùng. Trường hợp đi với người nhà phải nộp kèm giấy ủy quyền được
+                                                        chính quyền địa phương xác nhận (được Bố Mẹ ủy quyến để dắt đi tour)</p>
+                                                    <p>- Khách nữ từ 55 tuổi trở lên và khách nam từ 60 trở lên nên có người
+                                                        thân dưới 55 tuổi (đầy đủ sức khỏe) đi cùng. Riêng khách từ 70 tuổi
+                                                        trở lên: Bắt buộc phải có giấy xác nhận đầy đủ sức khỏe để đi du
+                                                        lịch của bác sĩ + Giấy cam kết sức khỏe của công ty.</p>
+                                                    <p>- Quý khách mang thai vui lòng báo cho nhân viên bán tour ngay tại thời
+                                                        điểm đăng ký. Lưu ý phải có ý kiến của bác sĩ trước khi đi tour.
+                                                        Cam kết tự chịu trách nhiệm về sức khỏe của mình và thai nhi trong
+                                                        suốt thời gian tham gia chương trình du lịch.</p>
+                                                </div>
+                                            </div>
+                                            <div class="group-btn">
+                                                <a id="ac-01" class="btn-08" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">Chương trình tour</a>
+                                                <a id="ac-03" class="btn-08" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">Đặt tour</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end card 2 -->
+                                <!-- card 3 -->
+                                <div class="card">
+                                    <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading-03" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="inner">
+                                                <div class="row form-register form">
+                                                    <div class="col-12">
+                                                        <strong>THÔNG TIN KHÁCH HÀNG</strong>
+                                                        <p>
+                                                            <i>Trường thông tin có dấu
+                                                                <span>*</span> là bắt buộc </i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Họ tên
+                                                            <span>*</span>:</p>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Giới tính :</p>
+                                                        <select>
+                                                            <option>Nam</option>
+                                                            <option>Nữ</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Ngày sinh :</p>
+                                                        <input type="text" placeholder="ngày / tháng/ năm" class="datepicker2">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Quốc tịch :</p>
+                                                        <select>
+                                                            <option>Việt Nam</option>
+                                                            <option>Nhật</option>
+                                                            <option>Hàn Quốc</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Điện thoại
+                                                            <span>*</span>:</p>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Số hộ chiếu/CMND:</p>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Địa chỉ:</p>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Email
+                                                            <span>*</span>:</p>
+                                                        <input type="text">
+                                                    </div>
+
+                                                    <div class="col-12 padding-t10">
+                                                        <strong>THÔNG TIN ĐẶT TOUR</strong>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <p>Số lượng người lớn (> 12t) :</p>
+                                                        <p class="number">
+                                                            <input id="tbNum" type="text" value="1">
+                                                            <a class="tang_sl"></a>
+                                                            <a class="giam_sl"></a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <p>Số lượng trẻ em (2 - 12t) :</p>
+                                                        <p class="number">
+                                                            <input id="tbNum" type="text" value="1">
+                                                            <a class="tang_sl"></a>
+                                                            <a class="giam_sl"></a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <p>Số lượng trẻ em (
+                                                            < 2t) :</p>
+                                                                <p class="number">
+                                                                    <input id="tbNum" type="text" value="1">
+                                                                    <a class="tang_sl"></a>
+                                                                    <a class="giam_sl"></a>
+                                                                </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Ngày đi
+                                                            <span>*</span>:</p>
+                                                        <input type="text" placeholder="ngày / tháng/ năm" class="datepicker2">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Ngày về
+                                                            <span>*</span>:</p>
+                                                        <input type="text" placeholder="ngày / tháng/ năm" class="datepicker2">
+                                                    </div>
+                                                    <div class="col-12 col-md-6 price">
+                                                        <span>Thành tiền:</span>
+                                                        <span>2.500.000 Đ</span>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p>Yêu cầu khác:</p>
+                                                        <textarea rows="6"></textarea>
+                                                    </div>
+                                                    <div class="col-12 padding-t10">
+                                                        <strong>HÌNH THỨC THANH TOÁN</strong>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <select>
+                                                            <option>Chuyển khoản</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 info">
+                                                        <p>Thông tin tài khoản:</p>
+                                                        <p>
+                                                            <i>- Vietcombank chi nhánh Ba Đình: 0611001779562, chủ tk: Nguyễn
+                                                                Văn A</i>
+                                                        </p>
+                                                        <p>
+                                                            <i>- Agribank chi nhánh Ba Đình: 0611001779562, chủ tk: Nguyễn Văn
+                                                                A
+                                                            </i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 group-btn">
+                                                        <a class="btn-08" href="#">Hoàn thành</a>
+                                                        <a class="btn-08" href="#">NHẬP LẠI</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end card 3 -->
+                            </div>
+                        </div>
+                        <!-- other tour -->
+                        <div class="other-tour">
+                            <strong>TOUR LIÊN QUAN</strong>
+                            <div class="slider group-item">
+                                <article class="item-01">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/nb1.png" class="wide">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="#">Du lịch Tour Hà Nội - Sapa- Hà Giang</a>
+                                        </h3>
+                                        <div class="row time-vehicle">
+                                            <span class="col-12 time">
+                                                <span>3 ngày 2 đêm</span>
+                                            </span>
+                                            <span class="col-12 vehicle">
+                                                <span>Phương tiện: Máy bay</span>
+                                            </span>
+                                        </div>
+                                        <summary>Tham quan vườn thực vật Garden by the bay, Công viên sư tử biển, Nhà hát Opera với
+                                            hình dáng trái sầu riêng
+                                        </summary>
+                                        <div class="row price">
+                                            <span class="col-7 real">
+                                                <span>1.200.000 vnđ</span>
+                                            </span>
+                                            <span class="col-5 fake">
+                                                <span>1.320.000 vnđ</span>
+                                            </span>
+                                        </div>
+                                        <div class="group-btn">
+                                            <a href="#" class="btn-01">Chi tiết
+                                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="#" class="btn-02">Đặt tour</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-01">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/nb1.png" class="wide">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="#">Du lịch Nhật Bản mùa lá đỏ 2017 Giá tốt nhất</a>
+                                        </h3>
+                                        <div class="row time-vehicle">
+                                            <span class="col-12 time">
+                                                <span>3 ngày 2 đêm</span>
+                                            </span>
+                                            <span class="col-12 vehicle">
+                                                <span>Phương tiện: Máy bay</span>
+                                            </span>
+                                        </div>
+                                        <summary>Tham quan vườn thực vật Garden by the bay, Công viên sư tử biển, Nhà hát Opera với
+                                            hình dáng trái sầu riêng
+                                        </summary>
+                                        <div class="row price">
+                                            <span class="col-7 real">
+                                                <span>1.200.000 vnđ</span>
+                                            </span>
+                                            <span class="col-5 fake">
+                                                <span>1.320.000 vnđ</span>
+                                            </span>
+                                        </div>
+                                        <div class="group-btn">
+                                            <a href="#" class="btn-01">Chi tiết
+                                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="#" class="btn-02">Đặt tour</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-01">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/nb1.png" class="wide">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="#">Du Lịch Nhật Bản Mùa Đông 4 ngày 3 đêm giá tốt 2017</a>
+                                        </h3>
+                                        <div class="row time-vehicle">
+                                            <span class="col-12 time">
+                                                <span>3 ngày 2 đêm</span>
+                                            </span>
+                                            <span class="col-12 vehicle">
+                                                <span>Phương tiện: Máy bay</span>
+                                            </span>
+                                        </div>
+                                        <summary>Tham quan vườn thực vật Garden by the bay, Công viên sư tử biển, Nhà hát Opera với
+                                            hình dáng trái sầu riêng
+                                        </summary>
+                                        <div class="row price">
+                                            <span class="col-7 real">
+                                                <span>1.200.000 vnđ</span>
+                                            </span>
+                                            <span class="col-5 fake">
+                                                <span>1.320.000 vnđ</span>
+                                            </span>
+                                        </div>
+                                        <div class="group-btn">
+                                            <a href="#" class="btn-01">Chi tiết
+                                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="#" class="btn-02">Đặt tour</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-01">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/nb1.png" class="wide">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="#">Du lịch Nhật Bản mùa lá đỏ 2017 Giá tốt nhất</a>
+                                        </h3>
+                                        <div class="row time-vehicle">
+                                            <span class="col-12 time">
+                                                <span>3 ngày 2 đêm</span>
+                                            </span>
+                                            <span class="col-12 vehicle">
+                                                <span>Phương tiện: Máy bay</span>
+                                            </span>
+                                        </div>
+                                        <summary>Tham quan vườn thực vật Garden by the bay, Công viên sư tử biển, Nhà hát Opera với
+                                            hình dáng trái sầu riêng
+                                        </summary>
+                                        <div class="row price">
+                                            <span class="col-7 real">
+                                                <span>1.200.000 vnđ</span>
+                                            </span>
+                                            <span class="col-5 fake">
+                                                <span>1.320.000 vnđ</span>
+                                            </span>
+                                        </div>
+                                        <div class="group-btn">
+                                            <a href="#" class="btn-01">Chi tiết
+                                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="#" class="btn-02">Đặt tour</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 right-section">
+                        <!-- support right -->
+                        <div class="support-right">
+                            <div class="top">Gọi
+                                <span>0962.33.4949</span> để được tư vấn</div>
+                            <div class="group-item">
+                                <div class="item">
+                                    <div class="top">
+                                        <div class="framed-image">
+                                            <a class="cut" href="#">
+                                                <img src="./pic/sp1.png">
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Nguyễn Ngọc Ánh</div>
+                                            <div class="link">
+                                                <a href="#">
+                                                    <img src="./css/icons/i7.png" alt="">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="./css/icons/i8.png" alt="">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="./css/icons/i9.png" alt="">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="./css/icons/i10.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="email">thoangyen210@gmail.com</div>
+                                        <div class="phone">0123.580.9668 / 0981 552 379</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="top">
+                                        <div class="framed-image">
+                                            <a class="cut" href="#">
+                                                <img src="./pic/sp1.png">
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Nguyễn Ngọc Ánh</div>
+                                            <div class="link">
+                                                <a href="#">
+                                                    <img src="./css/icons/i7.png" alt="">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="./css/icons/i8.png" alt="">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="./css/icons/i9.png" alt="">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="./css/icons/i10.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="email">thoangyen210@gmail.com</div>
+                                        <div class="phone">0123.580.9668 / 0981 552 379</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tour right -->
+                        <div class="block-right tour-right">
+                            <div class="top">TOUR BÁN CHẠY NHẬT BẢN</div>
+                            <div class="group-item">
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/r1.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Du Lịch Sapa: Cát Cát - Hàm Rồng 1 Ngày</a>
+                                        <div class="prive">Giá từ:
+                                            <span>2.500.000đ</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/r2.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Du Lịch Sapa: Cát Cát - Hàm Rồng 1 Ngày</a>
+                                        <div class="prive">Giá từ:
+                                            <span>2.500.000đ</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/r3.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Du Lịch Sapa: Cát Cát - Hàm Rồng 1 Ngày</a>
+                                        <div class="prive">Giá từ:
+                                            <span>2.500.000đ</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/r4.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Du Lịch Sapa: Cát Cát - Hàm Rồng 1 Ngày</a>
+                                        <div class="prive">Giá từ:
+                                            <span>2.500.000đ</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/r5.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Du Lịch Sapa: Cát Cát - Hàm Rồng 1 Ngày</a>
+                                        <div class="prive">Giá từ:
+                                            <span>2.500.000đ</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- news right -->
+                        <div class="block-right news-right">
+                            <div class="top">Tin tức liên quan</div>
+                            <div class="group-item">
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/r6.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/r7.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/r8.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/r9.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/r10.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- body page end -->
+        
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer" style="background-image: url(./css/bg/4.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-8 text-center info">
+                    <img src="./pic/logo2.png" alt="">
+                    <p> Giấy phép số 75/GP-ICP-STTTT do Ủy ban nhân dân Thành phố Hồ Chí Minh - Sở Thông Tin và Truyền Thông cấp
+                        ngày 04/10/2012</p>
+                    <p>Không đơn thuần chọn đơn vị tổ chức tour, hành trình đến Mỹ đòi hỏi du khách phải chọn đúng bạn đường tin
+                        cậy, có thể hỗ trợ bất cứ lúc nào, giúp họ yên tâm tận hưởng hành trình.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 page-facebook">
+                    <div id="fb-root"></div>
+                    <script>
+                        (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src =
+                                'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=226666764204714';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="370" data-height="240"
+                        data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/facebook">Facebook</a>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-12 road"></div>
+                <div class="col-12 col-md-4 info-contact">
+                    <strong>Trụ sở tại Hồ chí minh</strong>
+                    <div class="contact">
+                        <p>Địa Chỉ : 21-23 Nguyễn Công Hoan, Ngọc Khánh, Ba Đình</p>
+                        <p>Điện Thoại : 024 3941 1026, 024 39411018</p>
+                        <p>E-mail : hanoi@asiantravel.com.vn</p>
+                    </div>
+                    <a href="" class="btn-maps" data-toggle="modal" data-target="#model-maps">Bản đồ</a>
+                </div>
+                <div class="col-12 col-md-4 info-contact">
+                    <strong>Chi nhánh tại Hà Nội</strong>
+                    <div class="contact">
+                        <p>Địa Chỉ : 107A Đào Tấn, Q. Ba Đình, Hà Nội</p>
+                        <p>Điện Thoại : +84.024.39411026 / 3941 1018</p>
+                        <p>E-mail : hanoi@asiantravel.com.vn</p>
+                    </div>
+                    <a href="" class="btn-maps" data-toggle="modal" data-target="#model-maps">Bản đồ</a>
+                </div>
+                <div class="col-12 col-md-4 info-contact">
+                    <strong>Chi Nhánh tại Mỹ</strong>
+                    <div class="contact">
+                        <p>Địa Chỉ : 9121 Central Ave, Garden Grove, CA 92844</p>
+                        <p>Điện Thoại : Tel / Fax: +1.714 927 4361</p>
+                    </div>
+                    <a href="" class="btn-maps" data-toggle="modal" data-target="#model-maps">Bản đồ</a>
+                </div>
+                <div class="col-12 road"></div>
+                <div class="col-12 facebook-mobine"></div>
+                <div class="col-12 copyright">
+                    <span class="info">Copyright © 2017 asiantravel.com.vn. All rights reserved.</span>
+                    <a target="_bank" href="http://tatthanh.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!" class="tatthanh">Thiết kế website và SEO - Tất Thành</a>
+                    <span class="statistics">
+                        <span class="online">Đang online: 20</span>
+                        <span class="total">Tổng truy cập: 125890</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- fixed bottom -->
+    <div class="fixed-bottom">
+        <div class="container">
+            <span class="hotline">
+                <a href="tel: 0972 825 988" title="0972 825 988">
+                    <i class="fa fa-phone" aria-hidden="true"></i> 0972 825 988</a>
+            </span>
+        </div>
+    </div>
+    <!-- fixed bottom end -->
+
+    <!-- Modal maps footer -->
+    <div class="modal fade" id="model-maps" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a href="#" data-dismiss="modal" aria-label="Close">Đóng</a>
+                    <div class="container-fluid">
+                        <div id="maps-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal maps footer end -->
+
+    <div class="ve-top">
+        <img src="/./css/icons/ve-top.png" alt="">
+    </div>
+
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+<script type="text/javascript" src="vendor/google-map/infobox.js"></script>
+<script type="text/javascript" src="vendor/google-map/GoogleMapInit.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="vendor/jquery.dotdotdot.js"></script>
+<script type="text/javascript" src="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/date-vi-VN.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a44652dd53617be"></script>
+
+<!-- maps -->
+<script>
+    initialize(
+        '21.00757415248039',
+        '105.80296128988266',
+        '',
+        'maps-footer',
+        ''
+    );
+</script>
+
+</html>

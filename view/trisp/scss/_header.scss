@@ -1,0 +1,124 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+        
+#header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    .topbar {
+        padding: 10px 0;
+        background: $color-01;
+        .col-12>a {
+            color: $color-03;
+            position: relative;
+            display: inline-block;
+            margin-right: 15px;
+            padding-left: 20px;
+            line-height: 20px;
+            text-decoration: none;
+            > b {
+                font-weight: 700;
+                color: $color-05;
+                font-size: $font-s1 + 1px;
+            }
+            &::before {
+                content: "";
+                display: block;
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+            &.mail::before {
+                background: url(.././css/icons/i1.png) no-repeat bottom 4px left;
+            }
+            &.hotline::before {
+                background: url(.././css/icons/i2.png) no-repeat bottom 4px left;
+            }
+            &.request {
+                padding-left: 15px;
+                &::before {
+                    background: url(.././css/icons/i3.png) no-repeat bottom 4px left;
+                }
+            }
+            &.sitemap::before {
+                background: url(.././css/icons/i4.png) no-repeat bottom 4px left;
+            }
+        }
+    }
+    .navbar-main {
+        padding: 0;
+        .container {
+            position: relative;
+            z-index: 1000;
+        }
+        &::before {
+            content: "";
+            position: absolute;;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), transparent)
+        }
+        .navbar-brand {
+            padding: 0;
+            max-height: 100px;
+        }
+        .navbar-collapse {
+            .navbar-nav {
+                padding-right: 30px;
+                .nav-item {
+                    .nav-link {
+                        text-transform: uppercase;
+                        color: $color-01;
+                        font-size: $font-s2;
+                        padding: 5px 10px;
+                        margin: 0 5px;
+                        border-radius: 17px;
+                    }
+                    &.active .nav-link,
+                    &:hover .nav-link {
+                        background: $color-05;
+                    }
+                }
+            }
+        }
+    }
+    .form-search {
+        position: relative;
+        >a {
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            background: $color-05 url(.././css/icons/search.png) no-repeat center;
+            display: block;
+            transition: $time-a2;
+        }
+        >input {
+            position: absolute;
+            right: 0;
+            top: 30px;
+            border: none;
+            border-radius: 15px;
+            line-height: 30px;
+            min-height: 30px;
+            padding: 0 10px;
+            transition: $time-a2;
+            opacity: 0;
+            height: 0;
+            outline: none;
+        }
+        &:hover {
+            >a {
+                transform: scale(1.1);
+            }
+            >input {
+                opacity: 1;
+                width: auto;
+            }
+        }
+    }
+}

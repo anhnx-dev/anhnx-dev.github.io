@@ -1,0 +1,126 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+#footer {
+    padding-top: 70px;
+    background-color: #fbeff9;
+    background-size: 100% auto;
+    &::after {
+        display: block;
+        content: "";
+        background: #ffb3e1;
+        height: 40px;
+    }
+    .info {
+        margin-bottom: 25px;
+        font-size: $font-s1 + 1px;
+        img {
+            margin-bottom: 15px;
+        }
+    }
+    .page-facebook {
+        margin-bottom: 30px;
+    }
+    .road::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #d7abcc;
+    }
+    .info-contact {
+        padding-top: 25px;
+        margin-bottom: 25px;
+        >strong {
+            font-size: $font-s3;
+            font-family: $font-f5;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $color-05;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .contact {
+            line-height: 30px;
+            min-height: 90px;
+        }
+    }
+    .copyright {
+        color: $color-03;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        a {
+            color: $color-03;
+        }
+        .statistics {
+            margin-left: 20px;
+            >span {
+                margin-right: 35px;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 7px;
+                    background: url(.././css/icons/online.png) no-repeat left bottom;
+                    transform: translateY(4px);
+                }
+                &.total::before {
+                    background: url(.././css/icons/tong-onlile.png) no-repeat left bottom;
+                }
+            }
+        }
+    }
+}
+
+.fixed-bottom {
+    z-index: 2;
+    .hotline {
+        display: inline-block;
+        border: 1px solid $color-05;
+        border-bottom: none;
+        a {
+            display: inline-block;
+            border: 3px solid #ffb4e1;
+            background: $color-05;
+            border-bottom: none;
+            color: $color-01;
+            line-height: 40px;
+            padding: 0 25px;
+            font-size: 18px;
+            font-weight: 700;
+            i {
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+#model-maps {
+    display: block !important;
+    transform: scale(0);
+    &.show {
+        transform: scale(1);
+    }
+    .modal-dialog {
+        max-width: 1200px;
+    }
+    .modal-content {
+        background: unset;
+        border: none;
+    }
+    .modal-body {
+        padding: 0;
+        >a {
+            position: absolute;
+            right: 15px;
+            top: -25px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $color-01;
+        }
+    }
+    #maps-footer {
+        height: 600px;
+        max-height: 80vh;
+    }
+}

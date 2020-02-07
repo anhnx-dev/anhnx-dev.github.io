@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- top bar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <a href="#" class="mail">Email: info@asiantravel.com.vn</a>
+                        <a href="#" class="hotline">Hotline:
+                            <b>028.39.339.888 - 028.39.309.188</b>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-right">
+                        <a href="#" class="request">Đặt tour theo yêu cầu</a>
+                        <a href="$" class="sitemap">Site map</a>
+                        <span class="language">
+                            <a href="#">
+                                <img src="./css/icons/vn.png" alt="vn">
+                            </a>
+                            <a href="#">
+                                <img src="./css/icons/en.png" alt="en">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu main -->
+        <nav class="navbar navbar-expand-lg navbar-main">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./pic/logo1.png" alt="">
+                </a>
+                <!-- button responsive -->
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">lỊCH KHỞI HÀNH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tour nước ngoài</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Tour trong nước</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Demo</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Demo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--search-->
+                <div class="search">
+                    <div class="form-search">
+                        <input type="text" placeholder="Từ khóa tìm kiếm">
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+
+    <!-- main -->
+    <main id="main">
+        <!-- pge image -->
+        <section class="page-image">
+            <div class="framed-image">
+                <a class="cut" href="#">
+                    <img src="./pic/s3.png">
+                </a>
+            </div>
+        </section>
+        <!-- pge image end -->
+
+        <!-- search tour -->
+        <section class="search-tour">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <p class="col-12 id-01">TÌM KIẾM TOUR DU LỊCH PHÙ HỢP</p>
+                        <p class="col-12 col-md-4 col-lg-3 id-02">
+                            <select>
+                                <option value="">Điểm khởi hành</option>
+                                <option value="HỒ CHÍ MINH">HỒ CHÍ MINH</option>
+                                <option value="NewYork">NewYork</option>
+                                <option value="TP HỒ CHÍ MINH">TP HỒ CHÍ MINH</option>
+                            </select>
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-03">
+                            <select>
+                                <option value="">Điểm đến</option>
+                                <option value=" Los Angeles"> Los Angeles</option>
+                                <option value="HÀN QUỐC">HÀN QUỐC</option>
+                                <option value="NHẬT BẢN">NHẬT BẢN</option>
+                            </select>
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-04">
+                            <input type="text" placeholder="Ngày khởi hành" class="datepicker2" id="tbBirthDay">
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-05">
+                            <a href="#">Tìn kiếm</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search tour end -->
+
+        <!-- breadcrumb -->
+        <section class="link-page">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item" href="#">Trang chủ</a>
+                    <a class="breadcrumb-item" href="#">Đặt tour theo yêu vầu</a>
+                </nav>
+            </div>
+        </section>
+        <!-- end breadcrumb -->
+
+        <!-- body page -->
+        <section class="body-page">
+            <div class="container">
+                <h1 class="heading-form-register">Đặt tour theo yêu cầu</h1>
+                <div class="warpper-form-register">
+                    <div class="form-register2 tour">
+                        <div class="row form">
+                            <div class="col-12">
+                                <strong>THÔNG TIN KHÁCH HÀNG</strong>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Họ tên
+                                    <span>*</span>:</p>
+                                <input type="text">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Giới tính
+                                    <span>*</span>:</p>
+                                <select>
+                                    <option>Nam</option>
+                                    <option>Nữ</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Ngày sinh
+                                    <span>*</span>:</p>
+                                <input type="text" placeholder="ngày / tháng/ năm" class="datepicker2 hasDatepicker" id="dp1517969387293">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Quốc tịch
+                                    <span>*</span>:</p>
+                                <select>
+                                    <option>Việt Nam</option>
+                                    <option>Nhật</option>
+                                    <option>Hàn Quốc</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Địa chỉ:</p>
+                                <input type="text">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Điện thoại
+                                    <span>*</span>:</p>
+                                <input type="text">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Email
+                                    <span>*</span>:</p>
+                                <input type="text">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Fax:</p>
+                                <input type="text">
+                            </div>
+                            <div class="col-12">
+                                <strong>THÔNG TIN ĐẶT TOUR</strong>
+                            </div>
+                            <div class="col-12">
+                                <div class="name"><b>ĐIỂM ĐẾN <span>*</span>:</b></div>
+                                <div class="inner-form-01">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Sapa
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Lào Cai
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Hà Giang
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Hà Nội
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Điện Biên
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Sapa
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Lào Cai
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Hà Giang
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Hà Nội
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Điện Biên
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Sapa
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Lào Cai
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Hà Giang
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Hà Nội
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Điện Biên
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Sapa
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Lào Cai
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Hà Giang
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Hà Nội
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Điện Biên
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Sapa
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Lào Cai
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Hà Giang
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Hà Nội
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Điện Biên
+                                    </label>
+                
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p><b>Nơi khác:</b></p>
+                                <input type="text">
+                            </div>
+                            <div class="col-12">
+                                <div class="name"><b>LOẠI TOUR
+                                <span>*</span>:</b></div>
+                                <div class="inner-form-02">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Du lịch sinh thái
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Du lịch MICE Hội họp, hội thảo
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Du lịch mạo hiểm, khám phá
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Tour hành hương
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Du lịch văn hóa
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Tour mua sắm – shopping
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Team building
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Loại khác
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p>Số lượng người lớn (&gt; 12t)
+                                    <span>*</span>:</p>
+                                <p class="number">
+                                    <input id="tbNum" type="text" value="1">
+                                    <a class="tang_sl"></a>
+                                    <a class="giam_sl"></a>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p>Số lượng trẻ em (2 - 12t)
+                                    <span>*</span>:</p>
+                                <p class="number">
+                                    <input id="tbNum" type="text" value="1">
+                                    <a class="tang_sl"></a>
+                                    <a class="giam_sl"></a>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p>Số lượng trẻ em ( &lt; 2t)
+                                    <span>*</span>:</p>
+                                <p class="number">
+                                    <input id="tbNum" type="text" value="1">
+                                    <a class="tang_sl"></a>
+                                    <a class="giam_sl"></a>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Ngày đi
+                                    <span>*</span>:</p>
+                                <input type="text" placeholder="ngày / tháng/ năm" class="datepicker2 hasDatepicker" id="dp1517969387294">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Ngày về
+                                    <span>*</span>:</p>
+                                <input type="text" placeholder="ngày / tháng/ năm" class="datepicker2 hasDatepicker" id="dp1517969387295">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Cấp khách sạn
+                                    <span>*</span>:</p>
+                                <select>
+                                    <option>5 sao</option>
+                                    <option>4 sao</option>
+                                    <option>3 sao</option>
+                                    <option>2 sao</option>
+                                    <option>1 sao</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Loại phòng
+                                    <span>*</span>:</p>
+                                <select>
+                                    <option>Standard</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p>Số lượng phòng đơn
+                                    <span>*</span>:</p>
+                                <p class="number">
+                                    <input id="tbNum" type="text" value="1">
+                                    <a class="tang_sl"></a>
+                                    <a class="giam_sl"></a>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p>Số lượng phòng đôi
+                                    <span>*</span>:</p>
+                                <p class="number">
+                                    <input id="tbNum" type="text" value="1">
+                                    <a class="tang_sl"></a>
+                                    <a class="giam_sl"></a>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p>Số lượng phòng ba
+                                    <span>*</span>:</p>
+                                <p class="number">
+                                    <input id="tbNum" type="text" value="1">
+                                    <a class="tang_sl"></a>
+                                    <a class="giam_sl"></a>
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <p>Thêm bữa ăn
+                                    <span>*</span>:</p>
+                                <div class="inner-form-01">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Bữa trưa
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value=""> Bữa tối
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Ngày về
+                                    <span>*</span>:</p>
+                                <input type="text" placeholder="Xe du lịch">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Ngày về
+                                    <span>*</span>:</p>
+                                <input type="text" placeholder="Tiếng Việt">
+                            </div>
+                            <div class="col-12">
+                                <p>Yêu cầu khác:</p>
+                                <textarea rows="6"></textarea>
+                            </div>
+                            <div class="col-12 btn-12">
+                                <a href="#">Đặt tour</a>
+                                <a href="#">NHẬP LẠI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- body page end -->
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer" style="background-image: url(./css/bg/4.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-8 text-center info">
+                    <img src="./pic/logo2.png" alt="">
+                    <p> Giấy phép số 75/GP-ICP-STTTT do Ủy ban nhân dân Thành phố Hồ Chí Minh - Sở Thông Tin và Truyền Thông cấp
+                        ngày 04/10/2012</p>
+                    <p>Không đơn thuần chọn đơn vị tổ chức tour, hành trình đến Mỹ đòi hỏi du khách phải chọn đúng bạn đường tin
+                        cậy, có thể hỗ trợ bất cứ lúc nào, giúp họ yên tâm tận hưởng hành trình.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 page-facebook">
+                    <div id="fb-root"></div>
+                    <script>
+                        (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src =
+                                'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=226666764204714';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="370" data-height="240"
+                        data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/facebook">Facebook</a>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-12 road"></div>
+                <div class="col-12 col-md-4 info-contact">
+                    <strong>Trụ sở tại Hồ chí minh</strong>
+                    <div class="contact">
+                        <p>Địa Chỉ : 21-23 Nguyễn Công Hoan, Ngọc Khánh, Ba Đình</p>
+                        <p>Điện Thoại : 024 3941 1026, 024 39411018</p>
+                        <p>E-mail : hanoi@asiantravel.com.vn</p>
+                    </div>
+                    <a href="" class="btn-maps" data-toggle="modal" data-target="#model-maps">Bản đồ</a>
+                </div>
+                <div class="col-12 col-md-4 info-contact">
+                    <strong>Chi nhánh tại Hà Nội</strong>
+                    <div class="contact">
+                        <p>Địa Chỉ : 107A Đào Tấn, Q. Ba Đình, Hà Nội</p>
+                        <p>Điện Thoại : +84.024.39411026 / 3941 1018</p>
+                        <p>E-mail : hanoi@asiantravel.com.vn</p>
+                    </div>
+                    <a href="" class="btn-maps" data-toggle="modal" data-target="#model-maps">Bản đồ</a>
+                </div>
+                <div class="col-12 col-md-4 info-contact">
+                    <strong>Chi Nhánh tại Mỹ</strong>
+                    <div class="contact">
+                        <p>Địa Chỉ : 9121 Central Ave, Garden Grove, CA 92844</p>
+                        <p>Điện Thoại : Tel / Fax: +1.714 927 4361</p>
+                    </div>
+                    <a href="" class="btn-maps" data-toggle="modal" data-target="#model-maps">Bản đồ</a>
+                </div>
+                <div class="col-12 road"></div>
+                <div class="col-12 facebook-mobine"></div>
+                <div class="col-12 copyright">
+                    <span class="info">Copyright © 2017 asiantravel.com.vn. All rights reserved.</span>
+                    <a target="_bank" href="http://tatthanh.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!" class="tatthanh">Thiết kế website và SEO - Tất Thành</a>
+                    <span class="statistics">
+                        <span class="online">Đang online: 20</span>
+                        <span class="total">Tổng truy cập: 125890</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- fixed bottom -->
+    <div class="fixed-bottom">
+        <div class="container">
+            <span class="hotline">
+                <a href="tel: 0972 825 988" title="0972 825 988">
+                    <i class="fa fa-phone" aria-hidden="true"></i> 0972 825 988</a>
+            </span>
+        </div>
+    </div>
+    <!-- fixed bottom end -->
+
+    <!-- Modal maps footer -->
+    <div class="modal fade" id="model-maps" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a href="#" data-dismiss="modal" aria-label="Close">Đóng</a>
+                    <div class="container-fluid">
+                        <div id="maps-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal maps footer end -->
+
+    <div class="ve-top">
+        <img src="/./css/icons/ve-top.png" alt="">
+    </div>
+
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+<script type="text/javascript" src="vendor/google-map/infobox.js"></script>
+<script type="text/javascript" src="vendor/google-map/GoogleMapInit.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="vendor/jquery.dotdotdot.js"></script>
+<script type="text/javascript" src="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/date-vi-VN.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a44652dd53617be"></script>
+
+<!-- maps -->
+<script>
+    initialize(
+        '21.00757415248039',
+        '105.80296128988266',
+        '',
+        'maps-footer',
+        ''
+    );
+</script>
+
+</html>
