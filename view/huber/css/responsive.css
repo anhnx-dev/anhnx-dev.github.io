@@ -1,0 +1,352 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 991px) {
+  .slider-small {
+    display: none;
+  }
+  .menu-responsive .text,
+  .menu-responsive .khungAnh {
+    display: none;
+  }
+  #section-slider .slider-big .khungAnh {
+    height: auto;
+  }
+  #section-slider .slider-big .khungAnh:before {
+    padding-bottom: 22%;
+  }
+  .menu-responsive.active .group {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+  }
+  .menu-responsive .nav-link {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 9px 0;
+  }
+  .menu-responsive .nav {
+    display: block;
+  }
+  .menu-responsive .group {
+    position: absolute;
+    background: #fff;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    -webkit-box-shadow: -3px 1px 6px 3px rgba(0, 0, 0, 0.32);
+    box-shadow: -3px 1px 6px 3px rgba(0, 0, 0, 0.32);
+    overflow: hidden;
+    -webkit-transform: translateX(350px) scale(0);
+    transform: translateX(350px) scale(0);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    z-index: 999;
+  }
+  .menu-responsive .group .top {
+    padding: 5px 15px;
+  }
+  .menu-responsive .group .top .nav-item {
+    display: inline-block;
+  }
+  .menu-responsive .group .top .close-menu {
+    float: right;
+    text-transform: uppercase;
+    padding: 9px 10px;
+  }
+  .menu-responsive .group .search-menu {
+    background: #d9dde2;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .menu-responsive .group .search-menu .form-search {
+    position: relative;
+  }
+  .menu-responsive .group .search-menu .form-search input {
+    width: 100%;
+    height: 31px;
+    border: none;
+    padding-left: 31px;
+  }
+  .menu-responsive .group .search-menu .form-search a {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+  .menu-responsive .group .search-menu .form-search a img {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  .menu-responsive .group>.inner {
+    padding: 0 15px;
+  }
+  .menu-responsive .group>.inner .nav-item {
+    border-bottom: 1px solid #f3f3f3;
+    position: relative;
+  }
+  .menu-responsive .group>.inner.active .nav .nav-item {
+    display: none;
+  }
+  .menu-responsive .group>.inner.active .nav .nav-item.active-dropdown {
+    display: block;
+  }
+  .menu-responsive .group>.inner .dropdown-nav {
+    position: relative;
+  }
+  .menu-responsive .group>.inner .dropdown-nav .inner {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left: 300px;
+    top: 100%;
+    padding: 0 15px;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  .menu-responsive .group>.inner .next-prev {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    background: url(../css/icons/m7.png) no-repeat center;
+  }
+  .menu-responsive .group .block-link .link a {
+    text-transform: uppercase;
+    display: block;
+    padding: 9px 0;
+  }
+  .menu-responsive .group .active-dropdown .nav-link {
+    padding-left: 30px;
+    color: #009ee0;
+  }
+  .menu-responsive .group .active-dropdown .next-prev {
+    right: initial;
+    left: 0;
+    -webkit-transform: scale(-1);
+    transform: scale(-1);
+  }
+  .menu-responsive .group .active-dropdown .dropdown-nav .inner {
+    left: -15px;
+  }
+  .menu-responsive .group .active-dropdown .dropdown-nav .block-link {
+    position: relative;
+  }
+  .menu-responsive .group .active-dropdown .dropdown-nav .block-link .name {
+    text-transform: uppercase;
+    display: block;
+    padding: 9px 0;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .menu-responsive .group .active-dropdown .dropdown-nav .block-link .next-prev02 {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    background: url(../css/icons/m7.png) no-repeat center;
+  }
+  .menu-responsive .group .active-dropdown .dropdown-nav .block-link .link {
+    display: none;
+  }
+  .menu-responsive .group .active-dropdown .dropdown-nav .block-link.active-dropdown .name {
+    padding-left: 30px;
+    color: #009ee0;
+  }
+  .menu-responsive .group .active-dropdown .dropdown-nav .block-link.active-dropdown .next-prev02 {
+    right: initial;
+    left: 0;
+    -webkit-transform: scale(-1);
+    transform: scale(-1);
+  }
+  .menu-responsive .group .active-dropdown .dropdown-nav .block-link.active-dropdown .link {
+    display: block;
+  }
+  .menu-responsive .group>.inner .dropdown-nav .inner.active .block-link {
+    display: none;
+  }
+  .menu-responsive .group>.inner .dropdown-nav .inner.active .block-link.active-dropdown {
+    display: block;
+  }
+  .group-item .item {
+    text-transform: uppercase;
+    padding: 9px 0;
+  }
+  .at-menu {
+    width: 23px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -10px;
+    -webkit-transform: translateY(22px);
+    transform: translateY(22px);
+  }
+  .at-menu span,
+  .at-menu:after,
+  .at-menu:before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    background: #004278;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .at-menu::after {
+    top: 50%;
+    margin-top: -2px;
+  }
+  .at-menu::before {
+    top: 100%;
+    margin-top: -4px;
+  }
+  .at-menu.active span {
+    top: 50%;
+    margin-top: -2px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .at-menu.active:after {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  .at-menu.active:before {
+    top: 50%;
+    margin-top: -2px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  #header .top-bar {
+    height: 50px;
+  }
+  #header .top-bar .container {
+    position: relative;
+  }
+  #header .main {
+    height: 90px;
+  }
+  .item-02 .khungAnh {
+    width: 36%;
+  }
+  .item-02 .content {
+    width: 64%;
+  }
+  .search,
+  #section-slider .content .inner,
+  #breadcrumb .container:before {
+    display: none;
+  }
+  .menu-left {
+    display: none;
+  }
+  .contact {
+    margin-bottom: 30px;
+  }
+  .contact .maps .inner-maps {
+    height: 330px;
+  }
+  .top-bar .container>span {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    right: 48px;
+    top: 9px;
+  }
+  #section-slider .content {
+    display: none;
+  }
+  #section-slider .img .khungAnh {
+    height: auto;
+  }
+  #section-slider .img .khungAnh:before {
+    padding-bottom: 22%;
+  }
+}
+
+@media (max-width: 767px) {
+  .item-02 .khungAnh,
+  .cochu,
+  .footer .btn-page {
+    display: none;
+  }
+  .item-02 .content {
+    width: auto;
+    float: none;
+    padding-right: 0;
+  }
+  #breadcrumb .inner {
+    position: unset;
+  }
+  .thongke-ngay {
+    margin-left: 5px;
+    font-size: 11px;
+    padding-left: 15px;
+  }
+  .thongke-luotxem {
+    font-size: 11px;
+    margin-left: 10px;
+  }
+  #breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  #breadcrumb .inner .breadcrumb .breadcrumb-item {
+    margin-right: 5px;
+  }
+  .content-other .a-tab a {
+    display: block;
+  }
+  .content-other .link-x1 a,
+  .content-other .link-x1 p {
+    padding-left: 0;
+  }
+  .content-other .link-x2 .link-item {
+    margin-left: 0;
+  }
+  .detail-product .khungAnh {
+    width: auto;
+    float: none;
+    height: auto;
+    margin-left: 0;
+  }
+  .detail-product .khungAnh:before {
+    padding-bottom: 60%;
+  }
+  .detail-product .khungAnh img {
+    margin-left: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .detail-product img {
+    max-width: 100%;
+  }
+  .SplitPages a {
+    border: 1px solid #e3e3e3 !important;
+    border-radius: 0 !important;
+    display: inline-block;
+    float: none;
+    margin-bottom: 3px;
+  }
+  .SplitPages {
+    display: block;
+    text-align: center;
+  }
+  .contact .form-contact,
+  .contact .maps {
+    float: none;
+    width: auto;
+  }
+  .contact .form-contact {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+}
