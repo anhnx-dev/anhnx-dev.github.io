@@ -1,0 +1,1661 @@
+@font-face {
+  font-family: 'UTM DAX';
+  src: url("../css/fonts/UTM DAX.eot");
+  src: url("../css/fonts/UTM DAX.woff") format("woff"), url("../css/fonts/UTM DAX.woff2") format("woff2"), url("../css/fonts/UTM DAX.ttf") format("truetype"), url("../css/fonts/UTM DAX.svg#iciel") format("svg"), url("../css/fonts/UTM DAX.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'UTM DAXBOLD';
+  src: url("../css/fonts/UTM DAXBOLD.eot");
+  src: url("../css/fonts/UTM DAXBOLD.woff") format("woff"), url("../css/fonts/UTM DAXBOLD.woff2") format("woff2"), url("../css/fonts/UTM DAXBOLD.ttf") format("truetype"), url("../css/fonts/UTM DAXBOLD.svg#iciel") format("svg"), url("../css/fonts/UTM DAXBOLD.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'subset-OfficinaSanITC-Bold';
+  src: url("../css/fonts/subset-OfficinaSanITC-Bold.eot");
+  src: url("../css/fonts/subset-OfficinaSanITC-Bold.woff") format("woff"), url("../css/fonts/subset-OfficinaSanITC-Bold.woff2") format("woff2"), url("../css/fonts/subset-OfficinaSanITC-Bold.ttf") format("truetype"), url("../css/fonts/subset-OfficinaSanITC-Bold.svg#iciel") format("svg"), url("../css/fonts/subset-OfficinaSanITC-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background: #f9f9f9;
+  line-height: 22px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "UTM DAX"; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+ol,
+ul,
+dl,
+pre,
+blockquote {
+  margin: 0;
+  padding: 0; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0; }
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0; }
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+embed,
+object,
+video,
+iframe {
+  width: 100%;
+  height: auto; }
+
+img {
+  width: auto;
+  height: auto;
+  max-height: 100%; }
+
+a {
+  color: #333;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in; }
+  a:focus, a:hover {
+    color: #f27124;
+    text-decoration: none; }
+
+select {
+  color: #333;
+  background: #fff url(../css/icons/m4.png) no-repeat right 10px center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none; }
+  select::-ms-expand {
+    display: none; }
+
+.btn-01 {
+  display: inline-block;
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: #fff; }
+  .btn-01 img {
+    margin-left: 8px;
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in; }
+  .btn-01:hover {
+    color: #fff; }
+  .btn-01:hover img {
+    margin-left: 40px;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+.btn-02 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #bfbfbf;
+  color: #fff;
+  font-size: 13px;
+  width: 91px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+  border-left: 2px solid #898989;
+  text-transform: uppercase; }
+  .btn-02:hover {
+    background: #f27124;
+    border-color: #0e4488;
+    color: #fff; }
+
+.btn-03 {
+  position: absolute;
+  top: 5px;
+  right: 0; }
+  .btn-03 img {
+    margin-left: 5px;
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in; }
+  .btn-03:hover img {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg); }
+
+.item-01 {
+  color: #fff;
+  margin-bottom: 30px; }
+  .item-01 .inner {
+    background: #09774a; }
+    .item-01 .inner:hover {
+      background: #f27124; }
+    .item-01 .inner .content {
+      padding: 22px; }
+      .item-01 .inner .content h3 a {
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        font-family: "UTM DAXBOLD";
+        margin-bottom: 15px; }
+      .item-01 .inner .content .summary {
+        height: 66px;
+        overflow: hidden; }
+    .item-01 .inner .khungAnh:before {
+      padding-bottom: 63%; }
+
+.group-item-02 > .inner {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.item-02 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  overflow: hidden; }
+  .item-02:hover > .inner .content {
+    top: 0;
+    background: rgba(242, 113, 36, 0.8); }
+  .item-02 > .inner {
+    position: relative; }
+    .item-02 > .inner .khungAnh:before {
+      padding-bottom: 67%; }
+    .item-02 > .inner .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 53%;
+      left: 0;
+      z-index: 2;
+      color: #fff;
+      background: rgba(242, 113, 36, 0);
+      -webkit-transition: 0.5s ease-in;
+      -o-transition: 0.5s ease-in;
+      transition: 0.5s ease-in; }
+      .item-02 > .inner .content .inner {
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 50%;
+        left: 0;
+        z-index: 2;
+        padding: 10px; }
+        .item-02 > .inner .content .inner h3 {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-family: "UTM DAXBOLD";
+          margin-bottom: 15px; }
+        .item-02 > .inner .content .inner a {
+          color: #fff;
+          line-height: 32px;
+          width: 115px;
+          background: #09774a;
+          display: inline-block;
+          border-radius: 3px; }
+          .item-02 > .inner .content .inner a:hover {
+            background: #f27124; }
+          .item-02 > .inner .content .inner a img {
+            margin-left: 8px; }
+
+.item-03 {
+  margin-bottom: 20px;
+  position: relative;
+  background: #fff; }
+  .item-03:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .item-03 .khungAnh {
+    width: 33%;
+    float: left; }
+    .item-03 .khungAnh:before {
+      padding-bottom: 62%; }
+  .item-03 .content {
+    width: 67%;
+    float: left;
+    padding: 15px; }
+    .item-03 .content h3 {
+      font-size: 18px;
+      font-family: "UTM DAXBOLD";
+      max-height: 44px;
+      overflow: hidden; }
+    .item-03 .content .summary {
+      max-height: 66px;
+      overflow: hidden; }
+
+.item-04 {
+  margin-bottom: 20px; }
+  .item-04 .khungAnh {
+    border-radius: 3px;
+    overflow: hidden; }
+  .item-04 h3 {
+    font-family: "UTM DAXBOLD";
+    font-size: 15px;
+    margin-top: 10px; }
+
+.item-img .khungAnh:after, .item-video .khungAnh:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: url(../css/icons/v1.png) no-repeat center; }
+
+.item-img .khungAnh .album, .item-video .khungAnh .album {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: rgba(242, 113, 36, 0.8);
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in; }
+  .item-img .khungAnh .album span, .item-video .khungAnh .album span {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 0;
+    font-family: "UTM DAXBOLD";
+    color: #fff;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.item-img .khungAnh:hover .album, .item-video .khungAnh:hover .album {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.item-img .khungAnh:after {
+  background: url(../css/icons/i1.png) no-repeat left 10px bottom 10px; }
+
+.header {
+  color: #fff; }
+  .header .top-bar {
+    background-image: url(../css/bg/1.png);
+    background-size: cover;
+    min-height: 47px; }
+    .header .top-bar .right {
+      display: inline-block;
+      float: right; }
+    .header .top-bar .contact {
+      display: inline-block;
+      padding-top: 7px;
+      font-size: 14px; }
+      .header .top-bar .contact a {
+        color: #fff; }
+      .header .top-bar .contact img {
+        margin-right: 5px;
+        -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        transform: translateY(-3px); }
+      .header .top-bar .contact .hotline {
+        display: inline-block;
+        margin-right: 40px; }
+      .header .top-bar .contact .email {
+        display: inline-block; }
+    .header .top-bar .search {
+      display: inline-block;
+      width: 150px;
+      line-height: 40px;
+      position: relative; }
+      .header .top-bar .search:after, .header .top-bar .search:before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 38px;
+        background: url(../css/bg/7.png);
+        left: 0;
+        top: 1px; }
+      .header .top-bar .search:after {
+        left: unset;
+        right: 0; }
+      .header .top-bar .search input {
+        background: transparent;
+        border: none;
+        width: 110px;
+        padding-left: 10px;
+        outline: none;
+        color: #fff; }
+      .header .top-bar .search .form-search ::-webkit-input-placeholder {
+        color: #fff; }
+      .header .top-bar .search .form-search ::-moz-placeholder {
+        color: #fff; }
+      .header .top-bar .search a {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        display: inline-block;
+        float: right; }
+        .header .top-bar .search a img {
+          -webkit-transform: translateY(-2px);
+          -ms-transform: translateY(-2px);
+          transform: translateY(-2px); }
+    .header .top-bar .social {
+      display: inline-block;
+      position: relative;
+      line-height: 40px;
+      padding: 0 15px; }
+      .header .top-bar .social:after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 38px;
+        background: url(../css/bg/7.png);
+        right: 0;
+        top: 1px; }
+      .header .top-bar .social a {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        line-height: 20px;
+        text-align: center;
+        background: #03472b;
+        -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        transform: translateY(-2px); }
+        .header .top-bar .social a:hover {
+          background: #249b6a; }
+
+.logo {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  height: 70px; }
+  .logo img {
+    height: 70px; }
+
+.menu-main .nav .nav-item {
+  padding-top: 15px;
+  padding-bottom: 25px; }
+  .menu-main .nav .nav-item .nav-link {
+    font-family: "UTM DAXBOLD";
+    font-size: 16px;
+    padding: 3px 20px;
+    border-radius: 17px; }
+  .menu-main .nav .nav-item.active .nav-link, .menu-main .nav .nav-item:hover .nav-link {
+    color: #fff;
+    background: #09774a; }
+
+.menu-main .nav .dropdown .dropdown-menu {
+  display: block;
+  background: rgba(9, 119, 74, 0.7);
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  margin-top: -10px;
+  min-width: 15em;
+  opacity: 0;
+  -webkit-transform: translateY(50px) scale(0);
+  -ms-transform: translateY(50px) scale(0);
+  transform: translateY(50px) scale(0);
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in; }
+  .menu-main .nav .dropdown .dropdown-menu a {
+    color: #fff;
+    padding: 7px 15px;
+    display: block; }
+    .menu-main .nav .dropdown .dropdown-menu a:hover {
+      background: #03472b; }
+
+.menu-main .nav .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  -webkit-transform: translateY(0) scale(1);
+  -ms-transform: translateY(0) scale(1);
+  transform: translateY(0) scale(1); }
+
+.slider-home .khungAnh:before {
+  padding-bottom: 37%; }
+
+.slick-arrow {
+  position: absolute;
+  z-index: 2;
+  width: 37px;
+  height: 37px;
+  font-size: 0;
+  border: none;
+  outline: none;
+  background: url(../css/icons/m1.png) no-repeat center;
+  top: 50%;
+  left: 30px; }
+  .slick-arrow:hover {
+    background: rgba(9, 119, 74, 0.7) url(../css/icons/m1.png) no-repeat center; }
+
+.slick-prev {
+  left: unset;
+  right: 30px;
+  -webkit-transform: scale(-1);
+  -ms-transform: scale(-1);
+  transform: scale(-1); }
+
+.adv-home {
+  position: relative;
+  color: #fff; }
+  .adv-home .inner {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: 100%;
+    background: rgba(242, 113, 36, 0.9); }
+    .adv-home .inner .item {
+      position: relative;
+      padding-left: 100px; }
+      .adv-home .inner .item .time-02 {
+        position: absolute;
+        width: 100px;
+        height: 80px;
+        top: 0;
+        left: 0;
+        padding: 15px 15px;
+        text-align: center; }
+        .adv-home .inner .item .time-02 span {
+          display: block; }
+          .adv-home .inner .item .time-02 span:nth-child(1) {
+            font-size: 40px;
+            font-family: "UTM DAXBOLD";
+            margin-bottom: 10px; }
+          .adv-home .inner .item .time-02 span:nth-child(2) {
+            font-size: 17px; }
+      .adv-home .inner .item h3 a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        display: block;
+        margin: 8px 0;
+        max-height: 66px;
+        overflow: hidden; }
+        .adv-home .inner .item h3 a:hover {
+          text-shadow: 4px 4px 5px #333; }
+
+.title-section {
+  margin-bottom: 30px; }
+  .title-section h2 {
+    text-transform: uppercase;
+    font-family: "UTM DAXBOLD"; }
+
+.what-us {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: #fff;
+  position: relative; }
+  .what-us:before {
+    content: "";
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: 100%;
+    background-image: url(../css/bg/4.png);
+    background-size: contain;
+    -webkit-transform: rotateX();
+    transform: rotateX(); }
+  .what-us .item {
+    margin-bottom: 20px; }
+    .what-us .item h3 {
+      color: #f27124;
+      font-size: 18px;
+      font-family: "UTM DAXBOLD"; }
+    .what-us .item:nth-child(1) {
+      margin-bottom: 60px; }
+
+.program {
+  padding-top: 40px;
+  padding-bottom: 15px; }
+
+.procedure {
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  position: relative; }
+  .procedure:after {
+    content: "";
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url(../css/bg/4.png);
+    background-size: cover;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg); }
+  .procedure .group-item:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .procedure .group-item .item {
+    float: left;
+    width: 20%; }
+    .procedure .group-item .item .inner {
+      position: relative; }
+      .procedure .group-item .item .inner strong {
+        position: absolute;
+        left: 50%;
+        top: 40px;
+        font-size: 30px;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        font-family: "UTM DAXBOLD"; }
+      .procedure .group-item .item .inner .content {
+        margin-top: 35px; }
+        .procedure .group-item .item .inner .content p:nth-child(1) {
+          margin-bottom: 15px; }
+        .procedure .group-item .item .inner .content P:nth-child(2) {
+          font-size: 18px; }
+          .procedure .group-item .item .inner .content P:nth-child(2) span {
+            color: #f27124;
+            font-size: 22px;
+            font-family: "UTM DAXBOLD";
+            margin-right: 5px; }
+
+.time-view {
+  font-size: 12px;
+  color: #999; }
+  .time-view span::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../css/icons/time.png) no-repeat center;
+    margin-right: 5px;
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px); }
+  .time-view .time {
+    margin-right: 10px; }
+  .time-view .view::before {
+    background: url(../css/icons/view.png) no-repeat center; }
+
+.news-event {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #fff; }
+  .news-event .group-item {
+    margin-left: -10px;
+    margin-right: -10px; }
+    .news-event .group-item:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .news-event .group-item .item {
+      width: 50%;
+      float: right;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 20px; }
+      .news-event .group-item .item .khungAnh {
+        width: 33%;
+        float: left;
+        border-radius: 3px;
+        overflow: hidden; }
+        .news-event .group-item .item .khungAnh:before {
+          padding-bottom: 67%; }
+      .news-event .group-item .item .content {
+        width: 67%;
+        float: left;
+        padding-left: 20px; }
+        .news-event .group-item .item .content h3 {
+          font-family: "UTM DAXBOLD";
+          font-size: 16px;
+          max-height: 44px;
+          line-height: 22px;
+          overflow: hidden; }
+        .news-event .group-item .item .content .summary {
+          max-height: 44px;
+          overflow: hidden; }
+      .news-event .group-item .item:nth-child(4n+1) {
+        float: left;
+        position: relative; }
+        .news-event .group-item .item:nth-child(4n+1) .khungAnh {
+          float: none;
+          width: auto;
+          margin-bottom: 10px; }
+          .news-event .group-item .item:nth-child(4n+1) .khungAnh:before {
+            padding-bottom: 55%; }
+        .news-event .group-item .item:nth-child(4n+1) .content {
+          padding-left: 0;
+          float: none;
+          width: auto; }
+          .news-event .group-item .item:nth-child(4n+1) .content h3 {
+            font-size: 18px; }
+        .news-event .group-item .item:nth-child(4n+1) .time-01 {
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          top: 0;
+          left: 10px;
+          z-index: 2;
+          background: #03452a;
+          color: #fff;
+          text-align: center;
+          padding: 5px;
+          font-family: "subset-OfficinaSanITC-Bold";
+          font-weight: bold;
+          border-radius: 3px 0 0 0; }
+          .news-event .group-item .item:nth-child(4n+1) .time-01 span:nth-child(1) {
+            font-size: 19px; }
+          .news-event .group-item .item:nth-child(4n+1) .time-01 span:nth-child {
+            font-size: 12px; }
+
+.btn-registration {
+  position: fixed;
+  z-index: 99;
+  background: #f27124;
+  color: #fff !important;
+  right: -71px;
+  top: 20vh;
+  padding: 10px 15px;
+  border-radius: 3px 3px 0 0;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-family: "UTM DAXBOLD";
+  text-transform: uppercase;
+  font-size: 18px; }
+  .btn-registration img {
+    -webkit-transform: rotate(90deg) translateY(2px) rotatex(0);
+    -ms-transform: rotate(90deg) translateY(2px) rotatex(0);
+    transform: rotate(90deg) translateY(2px) rotatex(0);
+    margin-left: 10px;
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in; }
+  .btn-registration:hover img {
+    -webkit-transform: rotate(90deg) translateY(2px) rotatex(360deg);
+    -ms-transform: rotate(90deg) translateY(2px) rotatex(360deg);
+    transform: rotate(90deg) translateY(2px) rotatex(360deg); }
+
+.modal {
+  display: block !important;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
+  .modal .modal-content {
+    background: transparent;
+    border: none; }
+  .modal .modal-dialog {
+    min-width: 870px; }
+  .modal .modal-body {
+    padding: 0;
+    border-radius: 3px;
+    overflow: hidden; }
+  .modal .close {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    top: 0;
+    right: 0;
+    background: #dc6823;
+    opacity: 1;
+    text-align: center;
+    line-height: 35px;
+    z-index: 9; }
+
+.fade.show {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.form-registration {
+  color: #fff; }
+  .form-registration .form {
+    background-image: url(../css/bg/6.png);
+    padding: 30px 40px;
+    background-size: cover;
+    padding-right: 240px;
+    margin-bottom: 10px; }
+    .form-registration .form:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .form-registration .form .top {
+      text-align: center;
+      margin-bottom: 15px; }
+      .form-registration .form .top h2 {
+        font-family: "UTM DAXBOLD";
+        text-transform: uppercase; }
+  .form-registration input, .form-registration select {
+    width: 100%;
+    line-height: 38px;
+    height: 38px;
+    padding: 0 15px;
+    border: 1px solid #00502f; }
+  .form-registration .d1 {
+    width: 50%;
+    float: left;
+    margin-bottom: 6px;
+    padding: 0 3px; }
+  .form-registration .d2 {
+    margin-bottom: 6px;
+    padding: 0 3px; }
+    .form-registration .d2 > input {
+      width: 135px;
+      margin-right: 6px; }
+    .form-registration .d2 > img {
+      height: 36px;
+      -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+      transform: translateY(-1px);
+      margin-right: 6px; }
+    .form-registration .d2 .btn-reset {
+      margin-right: 25px; }
+    .form-registration .d2 .btn-regist {
+      color: #fff;
+      background: #f27124;
+      display: inline-block;
+      line-height: 38px;
+      width: calc(50% - 3px);
+      float: right;
+      text-align: center;
+      text-transform: uppercase; }
+      .form-registration .d2 .btn-regist:hover {
+        background: #09774a; }
+      .form-registration .d2 .btn-regist img {
+        margin-right: 10px;
+        -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        transform: translateY(-2px); }
+  .form-registration .support {
+    background: #df6b26;
+    padding: 30px 40px;
+    border-radius: 3px; }
+    .form-registration .support:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .form-registration .support .text {
+      width: 51%;
+      float: left;
+      line-height: 30px; }
+    .form-registration .support .hotline {
+      width: 49%;
+      float: left;
+      padding-left: 95px;
+      line-height: 30px;
+      position: relative;
+      border-radius: 3px; }
+      .form-registration .support .hotline:before {
+        content: "";
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        background: #09774a url(../css/icons/1.png) no-repeat center;
+        border-radius: 3px;
+        left: 30px;
+        top: 10px; }
+      .form-registration .support .hotline strong {
+        font-size: 20px; }
+
+#maps {
+  height: 500px; }
+
+.id-page {
+  position: relative;
+  margin-bottom: 50px;
+  height: 270px; }
+  .id-page .khungAnh {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .id-page .inner {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .id-page .inner .breadcrumb {
+      padding: 0 15px;
+      background: transparent; }
+      .id-page .inner .breadcrumb .breadcrumb-item {
+        color: #fff;
+        float: none;
+        font-size: 16px; }
+        .id-page .inner .breadcrumb .breadcrumb-item:before {
+          color: #fff; }
+    .id-page .inner .name-page {
+      color: #fff;
+      text-transform: uppercase; }
+      .id-page .inner .name-page h1 {
+        font-family: "UTM DAXBOLD";
+        font-size: 40px; }
+      .id-page .inner .name-page:after {
+        content: "";
+        width: 100px;
+        height: 6px;
+        display: inline-block;
+        background: url(../css/bg/8.png); }
+
+.main {
+  padding-bottom: 40px; }
+
+.title-page-x1 {
+  margin-bottom: 40px; }
+  .title-page-x1 h2 {
+    font-family: "UTM DAXBOLD";
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f27124; }
+
+.menu-left {
+  background: #dcf9ed;
+  border: 1px solid #98e2c4;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  margin-bottom: 30px; }
+
+.menu-left .top {
+  line-height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #09774a;
+  font-family: "UTM DAXBOLD"; }
+
+.menu-left li {
+  position: relative; }
+
+.menu-left li a {
+  padding-bottom: 10px;
+  display: inline-block;
+  padding-top: 10px; }
+  .menu-left li a:hover {
+    color: #f59320; }
+
+.menu-left li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#cae2f5), to(#f2f9ff));
+  background: -webkit-linear-gradient(left, #cae2f5, #f2f9ff);
+  background: -o-linear-gradient(left, #cae2f5, #f2f9ff);
+  background: linear-gradient(to right, #cae2f5, #f2f9ff); }
+
+.menu-left li:last-of-type:after {
+  display: none; }
+
+.menu-left > ul > li:before {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  margin-right: 10px;
+  background: url(../css/icons/g1.png) no-repeat;
+  float: left;
+  -webkit-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  transform: translateY(15px);
+  margin-left: 15px; }
+
+.menu-left > ul > li:hover:before,
+.menu-left > ul > li.active:before {
+  background: url(../css/icons/g2.png) no-repeat; }
+
+.menu-left > ul > li.active a {
+  color: #f27124; }
+
+.left-main {
+  padding-right: 5px; }
+
+.top-left {
+  margin-bottom: 10px; }
+  .top-left a {
+    font-size: 20px;
+    color: #09774a;
+    text-transform: uppercase;
+    font-family: "UTM DAXBOLD"; }
+
+.program-left {
+  margin-bottom: 30px; }
+  .program-left .item {
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden; }
+    .program-left .item .khungAnh {
+      height: 60px; }
+      .program-left .item .khungAnh:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(242, 113, 36, 0.2);
+        z-index: 2;
+        -webkit-transition: 0.5s ease-in;
+        -o-transition: 0.5s ease-in;
+        transition: 0.5s ease-in; }
+    .program-left .item:hover .khungAnh:after {
+      background: rgba(242, 113, 36, 0.8); }
+    .program-left .item > a {
+      color: #fff;
+      font-family: "UTM DAXBOLD";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: 3;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-size: 18px;
+      padding: 8px 10px; }
+      .program-left .item > a:hover {
+        -webkit-transform: translateY(-50%) scale(1.05);
+        -ms-transform: translateY(-50%) scale(1.05);
+        transform: translateY(-50%) scale(1.05); }
+
+.project-left {
+  margin-bottom: 30px; }
+  .project-left .item .khungAnh {
+    border-radius: 3px;
+    overflow: hidden; }
+    .project-left .item .khungAnh:before {
+      padding-bottom: 67%; }
+  .project-left .item > a {
+    font-family: "UTM DAXBOLD";
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    margin-top: 10px; }
+  .project-left .slick-arrow {
+    left: 0;
+    margin-top: -40px; }
+  .project-left .slick-prev {
+    left: unset;
+    right: 0; }
+
+.new-detail .title h1 {
+  font-family: "UTM DAXBOLD";
+  color: #f27124;
+  font-size: 26px; }
+
+.new-detail {
+  margin-bottom: 30px; }
+
+.other {
+  margin-bottom: 30px; }
+  .other > strong {
+    font-family: 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px; }
+  .other .slick-arrow {
+    left: unset;
+    right: 32px;
+    top: -40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background: #cccccc url(../css/icons/m5.png) no-repeat center; }
+    .other .slick-arrow:hover {
+      background: #81b8a1 url(../css/icons/m5.png) no-repeat center; }
+  .other .slick-prev {
+    right: 0; }
+
+.other-01 .item {
+  margin-bottom: 20px;
+  padding-right: 15px; }
+  .other-01 .item:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .other-01 .item .khungAnh {
+    width: 115px;
+    height: 70px;
+    float: left; }
+  .other-01 .item .content {
+    margin-left: 125px; }
+    .other-01 .item .content h3 {
+      font-size: 15px; }
+  .other-01 .item .time {
+    display: block; }
+
+.title-page-x2 h2 {
+  text-transform: uppercase;
+  color: #333;
+  font-size: 26px; }
+
+.video-left {
+  margin-bottom: 30px; }
+  .video-left .group-item {
+    margin-left: -1px;
+    margin-right: -1px; }
+    .video-left .group-item:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .video-left .group-item .item {
+      width: 33.3333%;
+      float: left;
+      padding: 1px; }
+      .video-left .group-item .item:nth-child(1) {
+        width: auto;
+        float: none; }
+        .video-left .group-item .item:nth-child(1) .khungAnh:after {
+          display: none; }
+      .video-left .group-item .item .khungAnh:before {
+        padding-bottom: 57%; }
+      .video-left .group-item .item .khungAnh:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        pointer-events: none;
+        background: rgba(0, 0, 0, 0.5) url(../css/icons/p2.png) no-repeat center; }
+
+.procedure-detail {
+  margin-bottom: 30px; }
+  .procedure-detail:after {
+    display: none; }
+  .procedure-detail .group-item .item .inner .content P:nth-child(2) {
+    font-size: 16px; }
+    .procedure-detail .group-item .item .inner .content P:nth-child(2) span {
+      font-size: 16px; }
+  .procedure-detail .title-section h2 {
+    font-size: 26px; }
+
+.form-registration-detail {
+  margin-bottom: 30px; }
+
+.form-comment .form {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e7e3e3; }
+
+.form-comment .content-commen {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e7e3e3; }
+
+.form-comment .content-commen .item {
+  padding-bottom: 30px; }
+
+.form-comment .content-commen .item .name {
+  font-size: 15px;
+  font-weight: 500; }
+
+.form-comment .content-commen .item .name .qt {
+  font-size: 10px;
+  margin-left: 10px;
+  background: #f3aeae;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 2px 5px;
+  border-radius: 4px; }
+
+.form-comment .content-commen .item .name .email {
+  font-size: 14px;
+  color: #999; }
+
+.form-comment .content-commen .item-qt {
+  padding: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 30px;
+  border: 1px solid #e7e3e3; }
+
+.form-comment .content-commen .item-qt .name {
+  color: #f27124; }
+
+.btn-commen {
+  display: block;
+  line-height: 40px;
+  border-radius: 4px;
+  background: #a9a9a9;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px; }
+
+.btn-commen:hover {
+  background: #1e77c0;
+  color: #fff; }
+
+.form-comment .form .d1 {
+  width: 35%;
+  margin-right: 1%; }
+
+.form-comment .form .d2 {
+  width: 12%;
+  margin-right: 1%; }
+
+.form-comment .form .d3 {
+  width: 13%;
+  display: inline-block; }
+
+.form-comment .form .d3 > img {
+  width: 69px;
+  height: 26px; }
+
+.form-comment .form .d3 > a {
+  margin-left: 10px; }
+
+.form-comment .form input,
+.form-comment .form textarea {
+  background: #fafafa;
+  border: 1px solid #e6e2e2;
+  line-height: 35px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  height: 35px; }
+
+.form-comment .form textarea {
+  width: 100%;
+  height: 90px; }
+
+.form-comment .form .btn-bl {
+  float: right;
+  width: 120px;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  background: #09774a;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 3px; }
+
+.form-comment .form .btn-bl:hover {
+  background: #1e77c0; }
+
+.form-comment .form:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.comment-facebook, .form-comment {
+  margin-bottom: 30px; }
+
+.comment-facebook > strong, .form-comment > strong {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "UTM DAXBOLD";
+  margin-bottom: 15px;
+  color: #f27124; }
+
+.fb-comments {
+  display: block;
+  background: #fff; }
+
+.menu-program {
+  margin-top: 30px;
+  margin-bottom: 0;
+  line-height: 24px; }
+  .menu-program nav {
+    margin-bottom: 30px; }
+    .menu-program nav .name {
+      font-size: 20px;
+      color: #f27124;
+      font-family: "UTM DAXBOLD";
+      margin-bottom: 10px; }
+      .menu-program nav .name:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+        background: url(../css/icons/g2.png) center no-repeat; }
+    .menu-program nav > strong {
+      font-family: "UTM DAXBOLD";
+      padding-left: 23px;
+      display: block; }
+    .menu-program nav > ul {
+      padding-left: 23px; }
+      .menu-program nav > ul strong {
+        font-family: "UTM DAXBOLD"; }
+
+.send-success {
+  margin-bottom: 20px;
+  margin-top: 10px; }
+
+.send-success img {
+  margin-bottom: 10px; }
+
+.send-success h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #f27124;
+  margin-bottom: 20px; }
+
+.send-success > span {
+  color: #000;
+  margin-bottom: 15px;
+  display: block; }
+
+.send-success p {
+  max-width: 680px;
+  margin: auto;
+  margin-bottom: 20px; }
+
+.send-success p > span {
+  font-family: "UTM DAXBOLD";
+  color: #f27124;
+  font-size: 18px; }
+
+.send-success > a {
+  font-family: "UTM DAXBOLD";
+  line-height: 40px;
+  width: 180px;
+  margin: auto;
+  background: #f27124;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block; }
+
+.send-success > a:hover {
+  background: #09774a; }
+
+.splitPages {
+  text-align: center;
+  padding-top: 15px; }
+
+.SplitPages {
+  display: inline-block; }
+
+.SplitPages a {
+  border: 1px solid #dddddd;
+  line-height: 32px;
+  padding: 0 12px;
+  float: left;
+  border-right: 0; }
+
+.SplitPages a:hover,
+.SplitPages a.hientai {
+  background: #f27124;
+  border-color: #f27124;
+  color: #fff; }
+
+.SplitPages a.dau {
+  border-radius: 4px 0 0 4px; }
+
+.SplitPages a.cuoi {
+  border-radius: 0 4px 4px 0;
+  border-right: 1px solid #dddddd; }
+
+.block-project {
+  margin-bottom: 10px; }
+  .block-project .top {
+    margin-bottom: 10px;
+    position: relative; }
+    .block-project .top h2 {
+      font-family: "UTM DAXBOLD";
+      font-size: 26px; }
+      .block-project .top h2 a {
+        color: #f27124; }
+  .block-project .group-item {
+    margin-left: -10px;
+    margin-right: -10px; }
+    .block-project .group-item .col-3 {
+      padding-left: 10px;
+      padding-right: 10px; }
+
+.new-event {
+  margin-bottom: 30px; }
+  .new-event .group-item .item {
+    padding: 10px 0;
+    border-bottom: 1px solid #dfdfdf; }
+    .new-event .group-item .item:nth-child(1) {
+      border-top: 1px solid #dfdfdf; }
+  .new-event .group-item a {
+    display: block;
+    margin-bottom: 5px; }
+
+.other-02 .slider {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .other-02 .slider .slick-arrow {
+    right: 42px; }
+  .other-02 .slider .slick-prev {
+    right: 10px; }
+
+.menu-consultant {
+  margin-bottom: 30px; }
+  .menu-consultant h2 {
+    font-size: 28px;
+    font-family: "UTM DAXBOLD";
+    color: #09774a;
+    text-transform: uppercase; }
+  .menu-consultant .menu-consultant a {
+    padding: 2px 15px;
+    display: inline-block;
+    background: #eaeaea;
+    text-transform: uppercase; }
+    .menu-consultant .menu-consultant a:hover {
+      background: #09774a;
+      color: #fff; }
+
+.form-consultant {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 28.8%;
+  -ms-flex: 0 0 28.8%;
+  flex: 0 0 28.8%;
+  max-width: 28.8%; }
+  .form-consultant .inner {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 15px; }
+    .form-consultant .inner > p {
+      font-size: 13px;
+      color: #666; }
+      .form-consultant .inner > p > span {
+        color: #ff0000; }
+  .form-consultant .top {
+    margin-bottom: 25px; }
+    .form-consultant .top strong {
+      color: #f27124;
+      font-family: "UTM DAXBOLD";
+      font-size: 20px;
+      display: block;
+      margin-bottom: 15px; }
+    .form-consultant .top p {
+      font-size: 14px; }
+      .form-consultant .top p > span {
+        color: #f27124;
+        font-family: "UTM DAXBOLD"; }
+  .form-consultant .form {
+    margin-bottom: 25px; }
+    .form-consultant .form input, .form-consultant .form textarea {
+      width: 100%;
+      margin-bottom: 5px;
+      border: 1px solid #dbdbdb;
+      padding: 5px 10px;
+      min-height: 38px; }
+    .form-consultant .form .btn-form a {
+      display: inline-block;
+      width: 105px;
+      height: 38px;
+      background: #888888;
+      line-height: 38px;
+      font-family: "UTM DAXBOLD";
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 3px; }
+      .form-consultant .form .btn-form a:hover {
+        background: #f27124; }
+
+.group-consultant {
+  padding-left: 0; }
+  .group-consultant .card {
+    border-radius: 0;
+    border: 1px solid #d9d9d9;
+    border-top: none; }
+    .group-consultant .card:nth-child(1) {
+      border-top: 1px solid #d9d9d9; }
+    .group-consultant .card .mb-0 a {
+      font-family: "UTM DAXBOLD";
+      font-size: 15px;
+      display: block;
+      padding: 11.5px 10px;
+      padding-right: 40px;
+      background: #f8f8f8;
+      position: relative; }
+      .group-consultant .card .mb-0 a:after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: url(../css/icons/c2.png) no-repeat center;
+        right: 0;
+        top: 0; }
+    .group-consultant .card .card-header {
+      border: none;
+      padding: 0; }
+    .group-consultant .card .card-body {
+      padding: 0 10px;
+      padding-bottom: 15px; }
+      .group-consultant .card .card-body .copyright-consultant {
+        font-size: 12px;
+        color: #9b9b9b;
+        margin-bottom: 20px; }
+        .group-consultant .card .card-body .copyright-consultant .name {
+          margin-right: 30px; }
+        .group-consultant .card .card-body .copyright-consultant span > img {
+          -webkit-transform: translateY(-2px);
+          -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+          margin-right: 5px; }
+      .group-consultant .card .card-body .question {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #d9d9d9; }
+        .group-consultant .card .card-body .question > strong {
+          font-size: 16px;
+          font-family: "UTM DAXBOLD";
+          display: block;
+          margin-bottom: 5px; }
+      .group-consultant .card .card-body .reply {
+        padding-top: 15px; }
+        .group-consultant .card .card-body .reply > strong {
+          font-size: 16px;
+          font-family: "UTM DAXBOLD";
+          display: block;
+          margin-bottom: 5px; }
+          .group-consultant .card .card-body .reply > strong > span {
+            color: #f27124; }
+    .group-consultant .card.active .mb-0 a {
+      background: #fff;
+      color: #f27124; }
+      .group-consultant .card.active .mb-0 a:after {
+        background: url(../css/icons/c3.png) no-repeat center; }
+
+.detail-img {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .detail-img .img {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px; }
+    .detail-img .img .khungAnh {
+      border-radius: 3px;
+      overflow: hidden; }
+      .detail-img .img .khungAnh:before {
+        padding-bottom: 66%; }
+      .detail-img .img .khungAnh:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(242, 113, 36, 0.8) url(../css/icons/zoom.png) no-repeat center;
+        z-index: 2;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+        -webkit-transition: 0.5s ease-in;
+        -o-transition: 0.5s ease-in;
+        transition: 0.5s ease-in;
+        pointer-events: none; }
+      .detail-img .img .khungAnh:hover:after {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; }
+
+.khung-video:before {
+  padding-bottom: 56.6%; }
+
+.contact-page h2 {
+  font-size: 18px;
+  font-family: "UTM DAXBOLD";
+  color: #09774a;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+.contact-page {
+  margin-bottom: 20px; }
+  .contact-page .info {
+    margin-bottom: 35px; }
+    .contact-page .info p {
+      line-height: 30px; }
+      .contact-page .info p > b {
+        display: inline-block;
+        min-width: 75px;
+        font-family: "UTM DAXBOLD"; }
+  .contact-page .form-contact input, .contact-page .form-contact select, .contact-page .form-contact textarea {
+    width: 100%;
+    line-height: 38px;
+    min-height: 38px;
+    margin-bottom: 10px;
+    border: 1px solid #cbcbcb;
+    padding: 0 15px; }
+  .contact-page .form-contact select {
+    background: #fff url(../css/icons/m6.png) no-repeat right 10px center; }
+  .contact-page .btn-contact {
+    padding-top: 10px;
+    margin-left: -0.5%;
+    margin-right: -0.5%; }
+    .contact-page .btn-contact a {
+      text-align: center;
+      width: 49%;
+      float: left;
+      margin: 0.5%;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #fff;
+      background: #a3a3a3;
+      line-height: 40px;
+      border-radius: 3px; }
+      .contact-page .btn-contact a:hover {
+        background: #09774a; }
+
+#maps-contact {
+  height: 535px; }
+
+.contact-page:nth-child(1) {
+  padding-right: 35px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 45%;
+  -ms-flex: 0 0 45%;
+  flex: 0 0 45%;
+  max-width: 45%; }
+
+.contact-page:nth-child(2) {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 55%;
+  -ms-flex: 0 0 55%;
+  flex: 0 0 55%;
+  max-width: 55%; }
+
+.result-search {
+  font-size: 26px;
+  margin-bottom: 13px; }
+  .result-search span {
+    color: #09774a;
+    font-family: "UTM DAXBOLD"; }
+
+.footer {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 40px; }
+  .footer .block-f > strong, .footer .menu-f .item > a {
+    font-family: "UTM DAXBOLD";
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .footer .contact-f > p {
+    margin: 4px 0; }
+    .footer .contact-f > p > img {
+      margin-right: 10px; }
+  .footer .room {
+    background: #f27124;
+    padding: 8px 15px;
+    width: 228px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px dashed #ffa46e; }
+    .footer .room a {
+      color: #fff;
+      display: block;
+      line-height: 26px; }
+      .footer .room a > span {
+        min-width: 115px;
+        display: inline-block; }
+  .footer .menu-f {
+    content: "";
+    display: block;
+    clear: both; }
+    .footer .menu-f .item {
+      width: 50%;
+      float: left; }
+      .footer .menu-f .item .link {
+        margin-bottom: 15px; }
+        .footer .menu-f .item .link a {
+          display: block;
+          padding: 4px 0; }
+  .footer .social {
+    margin-top: 15px; }
+    .footer .social a {
+      margin-right: 5px;
+      display: inline-block; }
+      .footer .social a img {
+        height: 32px; }
+      .footer .social a:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+  .footer .copyright {
+    background: #ebebeb;
+    padding: 9px 0;
+    font-size: 15px -1; }
+    .footer .copyright span {
+      margin-right: 30px; }
+    .footer .copyright a {
+      margin-right: 30px;
+      color: #949494; }
