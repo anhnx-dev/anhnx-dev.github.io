@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="vi_VN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>P-watch</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="" type="image/png">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fonts/font-awesome/./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <!--header-->
+    <header class="header">
+        <!--top bar-->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <!--chat-->
+                    <a class="col-5 col-md-2 lc" href="#">Live chat</a>
+                    <!--phone-->
+                    <a class="col-7 col-md-3 no-gutter-l text-right phone" href="#">
+                        <i class="fa fa-phone" aria-hidden="true"></i> Hotline: <b>0981.552.369</b>
+                    </a>
+                    <!--social-->
+                    <div class="col-md-4 col-xl-5 text-right social">
+                        <span>Pwatch trên</span>
+                        <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-google-plus" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+                    </div>
+                    <!--cart-->
+                    <div class="col-md-3 col-xl-2 text-right block-cart">
+                        <span class="cart">
+							<img src="./css/icon/giohang.png" alt="">
+							<span class="soluong">5</span>
+                        </span>
+                        <span class="text">Giỏ hàng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--top main-->
+        <div class="container">
+            <div class="row">
+                <!--logo-->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-2 text-center text-md-left logo">
+                    <div class="inner">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop0" href="#">
+                                <img src="./pic/logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--quy trinh-->
+                <div class="col-lg-5 col-xl-7 text-right quytrinh">
+                    <span class="item">
+						<img src="./css/icon/30ngay.png" alt="">
+						<span class="text">Miễn phí 30 ngày đổi trả</span>
+                    </span>
+                    <span class="item">
+						<img src="./css/icon/oto.png" alt="">
+						<span class="text">Miễn phí giao hàng từ 10 triệu</span>
+                    </span>
+                    <span class="item">
+						<img src="./css/icon/vitien.png" alt="">
+						<span class="text">Thanh toán khi nhận hàng</span>
+                    </span>
+                </div>
+                <!-- search -->
+                <div class="col-9 push-3 push-md-0 col-md-6 col-lg-9 col-xl-3 text-right form-search">
+                    <input type="text" placeholder="Từ khóa tìm kiếm">
+                    <a href="#" class="fa fa-search" aria-hidden="true"></a>
+                </div>
+                <!--menu-->
+                <div class="col-3 pull-9 pull-md-0 col-md-12 menu">
+                    <nav class="col-12 navbar navbar-toggleable-md navbar-light">
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <div class="container">
+                                            <div class="row">
+                                                <ul class="col-12">
+                                                    <li class="block">
+                                                        <strong>Danh mục sản phẩm</strong>
+                                                        <ul>
+                                                            <li><a href="#">Thương hiệu</a></li>
+                                                            <li><a href="#">Đồng hồ Nam</a></li>
+                                                            <li><a href="#">Đồng hồ Nữ</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="block">
+                                                        <ul>
+                                                            <li class="item">
+                                                                <strong>Phụ kiện đồng hồ</strong>
+                                                                <ul>
+                                                                    <li><a href="#">Dây da</a></li>
+                                                                    <li><a href="#">Dây thép</a></li>
+                                                                    <li><a href="#">Mạ vàng</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="item">
+                                                                <strong>Vỏ đồng hồ</strong>
+                                                                <ul>
+                                                                    <li><a href="#">Thép không gỉ</a></li>
+                                                                    <li><a href="#">Mạ vàng</a></li>
+                                                                    <li><a href="#">Vàng nguyên khối</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="block">
+                                                        <strong>Vỏ đồng hồ</strong>
+                                                        <ul>
+                                                            <li><a href="#"> Dưới 3 triệu</a></li>
+                                                            <li><a href="#">Từ 3 đến 5 triệu</a></li>
+                                                            <li><a href="#">Từ 5 đến 7 triệu</a></li>
+                                                            <li><a href="#">Từ 7 đến 10 triệu</a></li>
+                                                            <li><a href="#">Từ 10 đến 15 triệu</a></li>
+                                                            <li><a href="#">Từ 10 đến 20 triệu</a></li>
+                                                            <li><a href="#">Từ 20 đến 30 triệu</a></li>
+                                                            <li><a href="#">Từ 30 đến 50 triệu</a></li>
+                                                            <li><a href="#">Tên 50 triệu</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Dịch vụ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Liên hệ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">giới thiệu Pwatch</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!--breadcrumb-->
+                <div class="col-12">
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="#">Trang chủ</a>
+                        <span class="breadcrumb-item active">Sản phẩm</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+        <!--san pham chi tiet-->
+        <section class="container section-spct">
+            <div class="row">
+                <!--slide-->
+                <div class="col-12 col-md-6 col-xl-5 slide-spct">
+                    <div class="row">
+                        <!--slide to-->
+                        <div class="col-12 col-md-10 slide-to">
+                            <div class="inner" id="slide-to-spct">
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img id="zoom" src="./pic/demo.jpg" data-zoom-image="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img id="zoom" src="./pic/demo.jpg" data-zoom-image="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img id="zoom" src="./pic/demo.jpg" data-zoom-image="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img id="zoom" src="./pic/demo.jpg" data-zoom-image="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img id="zoom" src="./pic/demo.jpg" data-zoom-image="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img id="zoom" src="./pic/demo.jpg" data-zoom-image="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--slide nho-->
+                        <div class="col-12 col-md-2 no-gutter slide-nho">
+                            <div class="inner" id="slide-nho-spct">
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img src="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img src="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img src="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img src="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img src="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop">
+                                            <img src="./pic/demo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--thong tin-->
+                <div class="col-12 col-md-6 col-xl-4 block-thongtin">
+                    <h2 class="name-sp">Big Bang Men's Watch</h2>
+                    <p class="gia-sp">23.569.000đ</p>
+                    <div class="tuyenngon">
+                        <p class="text">
+                            Với mục tiêu hàng hóa phục vụ đa dạng, mẫu mã mới nhất, chất lượng tốt nhất, giá cả cạnh tranh nhất, hiểu được tầm quan trọng... Với mục tiêu hàng hóa phục vụ đa dạng, mẫu mã mới nhất, chất lượng tốt nhất, giá cả cạnh tranh nhất, hiểu được tầm quan trọng... Với mục tiêu hàng hóa phục vụ đa dạng, mẫu mã mới nhất, chất lượng tốt nhất, giá cả cạnh tranh nhất, hiểu được tầm quan trọng... Với mục tiêu hàng hóa phục vụ đa dạng, mẫu mã mới nhất, chất lượng tốt nhất, giá cả cạnh tranh nhất, hiểu được tầm quan trọng... Với mục tiêu hàng hóa phục vụ đa dạng, mẫu mã mới nhất, chất lượng tốt nhất, giá cả cạnh tranh nhất, hiểu được tầm quan trọng... Với mục tiêu hàng hóa phục vụ đa dạng, mẫu mã mới nhất, chất lượng tốt nhất, giá cả cạnh tranh nhất, hiểu được tầm quan trọng...
+                        </p>
+                        <a class="xt-tn" id="xt-tn" href="#">
+                            <span class="xt">Xem thêm</span>
+                            <span class="tg">Thu gọn</span>
+                        </a>
+                    </div>
+                    <div class="thongtin-sp">
+                        <p>
+                            <b>Hãng sản xuất</b>
+                            <span>Đồng hồ Bruno Sohnle</span>
+                        </p>
+                        <p>
+                            <b>Chất liệu dây</b>
+                            <span>Dây da</span>
+                        </p>
+                        <p>
+                            <b>Chất liệu mặt</b>
+                            <span>Sapphire</span>
+                        </p>
+                        <p>
+                            <b>Chất liệu vỏ</b>
+                            <span>Thép không gỉ</span>
+                        </p>
+                        <p>
+                            <b>Xuất xứ</b>
+                            <span>Đức</span>
+                        </p>
+                        <p>
+                            <b>Bảo hành</b>
+                            <span>10 năm</span>
+                        </p>
+                    </div>
+                    <!--form-->
+                    <div class="form-sp">
+                        <b>Số lượng</b>
+                        <span class="form-sl">
+							<input type="text" value="1">
+							<a class="tang_sl"></a>
+							<a class="giam_sl"></a>
+						</span>
+                        <a class="button-gh" href="#">giỏ hàng</a>
+                        <div class="share">
+                            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.5b6375bb17bd9edb2f4e7f8f12971999.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fcss.tatthanh.vn%2Fnghiemhuuloi%2FCaggionivietnam.com%2F6.SanPham-ChiTiet.html&amp;size=m&amp;text=Hello%20world&amp;time=1493925491727&amp;type=share&amp;url=http%3A%2F%2Fcss.tatthanh.vn%2Fnghiemhuuloi%2FCaggionivietnam.com%2F6.SanPham-ChiTiet.html" style="position: static; visibility: visible; width: 60px; height: 20px;"></iframe>
+                            <script>
+                                window.twttr = (function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0],
+                                        t = window.twttr || {};
+                                    if (d.getElementById(id)) return t;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "https://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                    t._e = [];
+                                    t.ready = function(f) {
+                                        t._e.push(f);
+                                    };
+                                    return t;
+                                }(document, "script", "twitter-wjs"));
+
+                            </script>
+                            <div class="fb-like fb_iframe_widget" data-href="<%= linkFB %>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=152&amp;href=http%3A%2F%2Fcss.tatthanh.vn%2Fnghiemhuuloi%2FCaggionivietnam.com%2F%253C%25%3D%2520linkFB%2520%25%253E&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 60px; height: 20px;"><iframe name="f2eb46454dfbbd8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F87XNE1PC38r.js%3Fversion%3D42%23cb%3Df30cde0d3e4a58c%26domain%3Dcss.tatthanh.vn%26origin%3Dhttp%253A%252F%252Fcss.tatthanh.vn%252Ffca7b677c6e7f4%26relation%3Dparent.parent&amp;container_width=152&amp;href=http%3A%2F%2Fcss.tatthanh.vn%2Fnghiemhuuloi%2FCaggionivietnam.com%2F%253C%25%3D%2520linkFB%2520%25%253E&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 60px; height: 20px;" class=""></iframe></span></div>
+                            <div id="___plus_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 93px; height: 20px;">
+                                <iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 93px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1493925489475" name="I0_1493925489475" src="https://apis.google.com/u/0/se/0/_/+1/sharebutton?plusShare=true&amp;usegapi=1&amp;action=share&amp;annotation=bubble&amp;origin=http%3A%2F%2Fcss.tatthanh.vn&amp;url=http%3A%2F%2Fcss.tatthanh.vn%2Fnghiemhuuloi%2FCaggionivietnam.com%2F6.SanPham-ChiTiet.html&amp;gsrc=3p&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.vi.6MzJHgpB9oY.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCN1gvpjtCxBvNBUd4aDX5wU4h58JQ#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1493925489475&amp;parent=http%3A%2F%2Fcss.tatthanh.vn&amp;pfname=&amp;rpctoken=21535321" data-gapiattached="true" title="+Chia sẻ"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ho tro-->
+                <div class="col-12 col-xl-3 no-gutter-l hotro">
+                    <div class="inner">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-12 hotline">
+                                <a href="tel :0981552369">Hotline: <b>0981 552 369</b></a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-12 chat-now">
+                                <a href="#">CHAT NOW</a>
+                            </div>
+                            <div class="col-12 lienhequa">
+                                <ul class="row">
+                                    <li class="col-4 col-md-2 col-lg-1 col-xl-3 no-gutter">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop0" href="#">
+                                                <img src="./pic/logo.png" />
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-8 col-md-6 col-lg-3 col-xl-9 phuongthuc">
+                                        <p>Liên hệ với tôi qua:</p>
+                                        <div class="icon">
+                                            <a href="#"><img src="./css/icon/yh.png" alt=""></a>
+                                            <a href="#"><img src="./css/icon/sk.png" alt=""></a>
+                                            <a href="#"><img src="./css/icon/zl.png" alt=""></a>
+                                            <a href="#"><img src="./css/icon/vb.png" alt=""></a>
+                                            <a href="#"><img src="./css/icon/fb.png" alt=""></a>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 col-md-4 col-lg-8 col-xl-12 my-tt">
+                                        <p><b>Nguyễn Văn Vượng</b></p>
+                                        <p>HoangMinh@gmail.com</p>
+                                        <p>0986 255 850 </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 vanchuyen">
+                                <div class="images">
+                                    <img src="./css/icon/oto-d.png" alt="">
+                                </div>
+                                <span>Thời gian giao hàng <b>02</b> ngày. <b>MIỄN PHÍ VẬN CHUYỂN</b> đơn hàng nội thành Hà Nội và có giá trị từ  <b>5 triệu</b> trở lên.</p></span>
+                            </div>
+                            <div class="col-12 doitra">
+                                <div class="images">
+                                    <img src="./css/icon/7-ngay.png" alt="">
+                                </div>
+                                <span>Đổi trả trong vòng <b>07</b> ngày</span>
+                            </div>
+                            <div class="col-12 camket">
+                                <div class="images">
+                                    <img src="./css/icon/khien.png" alt="">
+                                </div>
+                                <span>Cam kết sản phẩm chính hãng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--accordion-->
+                <section class="col-12 accordion">
+                    <div class="inner" id="accordianId" role="tablist" aria-multiselectable="true">
+                        <div class="a-tab">
+                            <a class="active" data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">Chi tiết sản phẩm</a>
+                            <a data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">Hệ thống showroom</a>
+                            <a data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true" aria-controls="section3ContentId">Hướng dẫn sử dụng</a>
+                            <a data-toggle="collapse" data-parent="#accordianId" href="#section4ContentId" aria-expanded="true" aria-controls="section4ContentId">Điều kiện bảo hành</a>
+                        </div>
+                        <div class="a-content">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="section1HeaderId">
+                                    <h5 class="mb-0">
+                                        <a class="collapse" data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">Chi tiết sản phẩm</a>
+                                    </h5>
+                                </div>
+                                <div id="section1ContentId" class="collapse in show" role="tabpanel" aria-labelledby="section1HeaderId">
+                                    <div class="card-block">
+                                        <table style="width:100%">
+                                            <tr>
+                                                <th>Firstname</th>
+                                                <th>Lastname</th>
+                                                <th>Age</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Jill</td>
+                                                <td>Smith</td>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Eve</td>
+                                                <td>Jackson</td>
+                                                <td>94</td>
+                                            </tr>
+                                            <tr>
+                                                <td>John</td>
+                                                <td>Doe</td>
+                                                <td>80</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="section2HeaderId">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">Hệ thống showroom</a>
+                                    </h5>
+                                </div>
+                                <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                                    <div class="card-block">
+                                        Section 2 content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="section3HeaderId">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true" aria-controls="section3ContentId">Hướng dẫn sử dụng</a>
+                                    </h5>
+                                </div>
+                                <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                                    <div class="card-block">
+                                        Section 3 content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="section4HeaderId">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordianId" href="#section4ContentId" aria-expanded="true" aria-controls="section4ContentId">Điều kiện bảo hành</a>
+                                    </h5>
+                                </div>
+                                <div id="section4ContentId" class="collapse in" role="tabpanel" aria-labelledby="section4HeaderId">
+                                    <div class="card-block">
+                                        Section 4 content
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="col-12">
+                    <div id="CommonCuoiChiTietTin">
+                        <div class="fl apd dnmb">
+                            <a class="prevDBT" href="javascript:history.go(-1)">Về trang trước</a>
+                            <div class="fr pl20 apd dnmb">
+                                <a href="javascript:void(0)" class="email addthis_button_email">Gửi emmail</a>
+                                <a href="javascript:window.print()" class="print">In trang</a>
+                            </div>
+                        </div>
+                        <div class="fr">
+                            <!-- AddThis Button BEGIN -->
+                            <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                                <div id="fb-root"></div>
+                                <div class="fb-like" data-href="<%= linkFB %>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_facebook"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_twitter"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_zingme"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_compact"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="cb"></div>
+                </div>
+            </div>
+            <!--san pham khac-->
+            <section class="col-12 section s-cspk">
+                <div class="row inner">
+                    <!-- block item -->
+                    <div class="col-12 text-center block-item b-cspk">
+                        <div class="row">
+                            <!-- title -->
+                            <div class="col-12 title">
+                                <a href="#">
+                                    <h2>Các sản phẩm khác</h2>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <div class="row inner" id="slide-spk">
+                                    <!-- item -->
+                                    <div class="col-lg-4 item">
+                                        <div class="khungAnh img">
+                                            <a class="khungAnhCrop0" href="#">
+                                                <img src="./pic/sp1.png" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="" class="name">
+                                                <h3>Đồng hồ Bruno Sohnle 17-33085-971</h3>
+                                            </a>
+                                            <span class="old">3.2300.000</span>
+                                            <span class="price">2.650.000đ</span>
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="col-lg-4 item">
+                                        <div class="khungAnh img">
+                                            <a class="khungAnhCrop0" href="#">
+                                                <img src="./pic/sp1.png" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="" class="name">
+                                                <h3>Đồng hồ Bruno Sohnle 17-33085-971</h3>
+                                            </a>
+                                            <span class="old">3.2300.000</span>
+                                            <span class="price">2.650.000đ</span>
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="col-lg-4 item">
+                                        <div class="khungAnh img">
+                                            <a class="khungAnhCrop0" href="#">
+                                                <img src="./pic/sp2.png" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="" class="name">
+                                                <h3>Đồng hồ Bruno Sohnle 17-33085-971</h3>
+                                            </a>
+                                            <span class="old">3.2300.000</span>
+                                            <span class="price">2.650.000đ</span>
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="col-lg-4 item">
+                                        <div class="khungAnh img">
+                                            <a class="khungAnhCrop0" href="#">
+                                                <img src="./pic/sp3.png" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="" class="name">
+                                                <h3>Đồng hồ Bruno Sohnle 17-33085-971</h3>
+                                            </a>
+                                            <span class="old">3.2300.000</span>
+                                            <span class="price">2.650.000đ</span>
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="col-lg-4 item">
+                                        <div class="khungAnh img">
+                                            <a class="khungAnhCrop0" href="#">
+                                                <img src="./pic/sp3.png" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="" class="name">
+                                                <h3>Đồng hồ Bruno Sohnle 17-33085-971</h3>
+                                            </a>
+                                            <span class="old">3.2300.000</span>
+                                            <span class="price">2.650.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <!--hbsb-->
+        <div class="container hbsb">
+            <div class="row">
+                <!-- item 1 -->
+                <div class="col-6 col-md-4 col-lg-3 no-gutter-r item">
+                    <p>Hỗ trợ khách hàng</p>
+                    <ul>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                        <li><a href="#">Phương thức vận chuyển</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả hoàn tiền</a></li>
+                    </ul>
+                </div>
+                <!-- item 2 -->
+                <div class="col-lg-3 item i-bst">
+                    <p>Bộ sưu tập</p>
+                    <ul>
+                        <li><a href="#">Đàn ông muốn sở hữu nhất</a></li>
+                        <li><a href="#">Phụ nữ khao khát nhất</a></li>
+                        <li><a href="#">Đồng hồ bán chạy nhất</a></li>
+                        <li><a href="#">Bộ sưu tập đặc biệt</a></li>
+                        <li><a href="#">Sản phẩm mới nhất</a></li>
+                    </ul>
+                </div>
+                <!-- item 3 -->
+                <div class="col-6 col-md-4 col-lg-3 item social">
+                    <p>B-watch trên</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>Google +</a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a>
+                </div>
+                <!-- item 3 -->
+                <div class="col-12 col-md-4 col-lg-3 item contact">
+                    <p>B-watch trên</p>
+                    <a href="#">Địa chỉ: Tòa nhà 24t2 Hoàng Đạo Thúy, Hà Nội</a>
+                    <a href="tel: 0981552369">Hotline: 0981 552 369</a>
+                    <a href="#">Email: B-watch@gmail.com</a>
+                    <a href="#">Website: emlamua.vn</a>
+                    <a href="#" class="chat-footer">
+                        <img src="./css/icon/chat-footer.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--copyright-->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <span>© 2017 B-watch - All rights reserved.</span>
+                        <span>Đang online: 120</span>
+                        <span>Tổng truy cập: 1.567.555 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--  ve top-->
+    <div class="ve-top">
+        <img src="./css/icon/ve-top.png" alt="">
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+    <script src="js/infobox.js"></script>
+    <script src="js/GoogleMapInit.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // zoom img
+        $("#zoom").elevateZoom({
+            zoomType: "lens",
+            lensShape: "round",
+            lensSize: 150,
+            scrollZoom: true,
+        });
+
+    </script>
+    <!--so luong-->
+    <script type="text/javascript">
+        $(".tang_sl").on("click", function() {
+            var a = $(this).prev(),
+                b = parseInt(a.val());
+            isNaN(b) ? a.val(1) : a.val(b + 1);
+        });
+        $(".giam_sl").on("click", function() {
+            var a = $(this).prev().prev(),
+                b = parseInt(a.val());
+            b > 1 ? a.val(b - 1) : a.val(1);
+        });
+
+    </script>
+    <!--noi dung-->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, "script", "facebook-jssdk"));
+
+    </script>
+    <script type="text/javascript">
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src = "https://apis.google.com/js/platform.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(po, s);
+        })();
+
+    </script>
+    <script>
+        var size = parseInt(jQuery(".TextSize").css("font-size"));
+        var lineheight = parseInt(jQuery(".TextSize").css("line-height"));
+        if (!size)
+            size = 14;
+        if (!lineheight)
+            lineheight = 22;
+
+        function IncreaseTextSize() {
+            size++;
+            lineheight += 2;
+
+            jQuery(".TextSize")
+                .css('cssText',
+                    'font-size:' +
+                    size +
+                    'px !important; line-height:' +
+                    lineheight +
+                    'px !important');
+            jQuery(".TextSize")
+                .find("*")
+                .css('cssText',
+                    'font-size:' +
+                    size +
+                    'px !important; line-height:' +
+                    lineheight +
+                    'px !important');
+        }
+
+        function DecreaseTextSize() {
+            size--;
+            lineheight -= 2;
+
+            jQuery(".TextSize")
+                .css('cssText',
+                    'font-size:' +
+                    size +
+                    'px !important; line-height:' +
+                    lineheight +
+                    'px !important');
+            jQuery(".TextSize")
+                .find("*")
+                .css('cssText',
+                    'font-size:' +
+                    size +
+                    'px !important; line-height:' +
+                    lineheight +
+                    'px !important');
+        }
+
+        function ResetTextSize() {
+            size = 14;
+            lineheight = 22;
+
+            jQuery(".TextSize")
+                .css('cssText',
+                    'font-size:' +
+                    size +
+                    'px !important; line-height:' +
+                    lineheight +
+                    'px !important');
+            jQuery(".TextSize")
+                .find("*")
+                .css('cssText',
+                    'font-size:' +
+                    size +
+                    'px !important; line-height:' +
+                    lineheight +
+                    'px !important');
+        }
+
+    </script>
+</body>
+
+</html>

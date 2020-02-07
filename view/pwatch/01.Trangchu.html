@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="vi_VN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>P-watch</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="" type="image/png">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fonts/font-awesome/./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <!--header-->
+    <header class="header">
+        <!--top bar-->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <!--chat-->
+                    <a class="col-5 col-md-2 lc" href="#">Live chat</a>
+                    <!--phone-->
+                    <a class="col-7 col-md-3 no-gutter-l phone" href="#">
+                        <i class="fa fa-phone" aria-hidden="true"></i> Hotline: <b>0981.552.369</b>
+                    </a>
+                    <!--social-->
+                    <div class="col-md-4 col-xl-5 text-right social">
+                        <span>Pwatch trên</span>
+                        <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-google-plus" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+                    </div>
+                    <!--cart-->
+                    <div class="col-md-3 col-xl-2 text-right block-cart">
+                        <span class="cart">
+							<img src="./css/icon/giohang.png" alt="">
+							<span class="soluong">5</span>
+                        </span>
+                        <span class="text">Giỏ hàng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--top main-->
+        <div class="container">
+            <div class="row">
+                <!--logo-->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-2 text-center text-md-left logo">
+                    <div class="inner">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop0" href="#">
+                                <img src="./pic/logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--quy trinh-->
+                <div class="col-lg-5 col-xl-7 text-right quytrinh">
+                    <span class="item">
+						<img src="./css/icon/30ngay.png" alt="">
+						<span class="text">Miễn phí 30 ngày đổi trả</span>
+                    </span>
+                    <span class="item">
+						<img src="./css/icon/oto.png" alt="">
+						<span class="text">Miễn phí giao hàng từ <b>10</b> triệu</span>
+                    </span>
+                    <span class="item">
+						<img src="./css/icon/vitien.png" alt="">
+						<span class="text">Thanh toán khi nhận hàng</span>
+                    </span>
+                </div>
+                <!-- search -->
+                <div class="col-9 push-3 push-md-0 col-md-6 col-lg-9 col-xl-3 text-right form-search">
+                    <input type="text" placeholder="Từ khóa tìm kiếm">
+                    <a href="#" class="fa fa-search" aria-hidden="true"></a>
+                </div>
+                <!--menu-->
+                <div class="col-3 pull-9 pull-md-0 col-md-12 menu">
+                    <nav class="col-12 navbar navbar-toggleable-md navbar-light">
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <div class="container">
+                                            <div class="row">
+                                                <ul class="col-12">
+                                                    <li class="block">
+                                                        <strong>Danh mục sản phẩm</strong>
+                                                        <ul>
+                                                            <li><a href="#">Thương hiệu</a></li>
+                                                            <li><a href="#">Đồng hồ Nam</a></li>
+                                                            <li><a href="#">Đồng hồ Nữ</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="block">
+                                                        <ul>
+                                                            <li class="item">
+                                                                <strong>Phụ kiện đồng hồ</strong>
+                                                                <ul>
+                                                                    <li><a href="#">Dây da</a></li>
+                                                                    <li><a href="#">Dây thép</a></li>
+                                                                    <li><a href="#">Mạ vàng</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="item">
+                                                                <strong>Vỏ đồng hồ</strong>
+                                                                <ul>
+                                                                    <li><a href="#">Thép không gỉ</a></li>
+                                                                    <li><a href="#">Mạ vàng</a></li>
+                                                                    <li><a href="#">Vàng nguyên khối</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="block">
+                                                        <strong>Vỏ đồng hồ</strong>
+                                                        <ul>
+                                                            <li><a href="#"> Dưới 3 triệu</a></li>
+                                                            <li><a href="#">Từ 3 đến 5 triệu</a></li>
+                                                            <li><a href="#">Từ 5 đến 7 triệu</a></li>
+                                                            <li><a href="#">Từ 7 đến 10 triệu</a></li>
+                                                            <li><a href="#">Từ 10 đến 15 triệu</a></li>
+                                                            <li><a href="#">Từ 10 đến 20 triệu</a></li>
+                                                            <li><a href="#">Từ 20 đến 30 triệu</a></li>
+                                                            <li><a href="#">Từ 30 đến 50 triệu</a></li>
+                                                            <li><a href="#">Tên 50 triệu</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Dịch vụ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Liên hệ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">giới thiệu Pwatch</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- slide -->
+                <div class="col-12 slide">
+                    <!-- item -->
+                    <div class="item">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/slide1.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/slide2.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/slide3.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <!--san pham moi -->
+                <section class="col-12 section section-spm">
+                    <div class="inner">
+                        <div class="row">
+                            <!-- advertisement -->
+                            <div class="col-3 no-gutter-r advertisement">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                        <img src="./pic/qc2.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- block item -->
+                            <div class="col-12 col-lg-9 no-gutter-l text-center block-item">
+                                <div class="row">
+                                    <!-- title -->
+                                    <div class="col-12 title">
+                                        <a href="#">
+                                            <h2>Sản phẩm mới</h2>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row row-no-gutter inner" id="slide-spm">
+                                            <!-- item -->
+                                            <div class="col-6 col-md-4 no-gutter item">
+                                                <div class="khungAnh img">
+                                                    <a class="khungAnhCrop0" href="#">
+                                                        <img src="./pic/spm1.png" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="#" class="name">
+                                                        <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                    </a>
+                                                    <span class="old">3.2300.000</span>
+                                                    <span class="price">2.650.000đ</span>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="co-12 col-md-4 no-gutter item">
+                                                <div class="khungAnh img">
+                                                    <a class="khungAnhCrop0" href="#">
+                                                        <img src="./pic/spm1.png" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="" class="name">
+                                                        <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                    </a>
+                                                    <span class="old">3.2300.000</span>
+                                                    <span class="price">2.650.000đ</span>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="col-12 col-md-4 no-gutter item">
+                                                <div class="khungAnh img">
+                                                    <a class="khungAnhCrop0" href="#">
+                                                        <img src="./pic/spm2.png" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="" class="name">
+                                                        <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                    </a>
+                                                    <span class="old">3.2300.000</span>
+                                                    <span class="price">2.650.000đ</span>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="col-12 col-md-4 no-gutter item">
+                                                <div class="khungAnh img">
+                                                    <a class="khungAnhCrop0" href="#">
+                                                        <img src="./pic/spm3.png" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="" class="name">
+                                                        <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                    </a>
+                                                    <span class="old">3.2300.000</span>
+                                                    <span class="price">2.650.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- section 2 -->
+                <section class="col-12 section-advertisement">
+                    <div class="row">
+                        <div class="col-12 col-md-6 item">
+                            <div class="khungAnh item">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/pc3.png" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 item">
+                            <div class="khungAnh item">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/qc1.png" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 item">
+                            <div class="khungAnh item">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/qc4.png" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 item">
+                            <div class="khungAnh item">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/qc5.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- section 3 -->
+                <section class="col-12 section">
+                    <div class="row inner">
+                        <!-- advertisement -->
+                        <div class="col-3 no-gutter-r advertisement">
+                            <div class="content">
+                                <p>Đồng hồ</p>
+                                <p>Emporio armani</p>
+                                <p>Đồng hồ Diamond D mang đến cho khách hàng vẻ đẹp tinh tế, vĩnh cửu như những viên kim cương thuần khiết được tạo nên qua quá trình hàng triệu năm. </p>
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                            <div class="img-bg">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                        <img src="./pic/bg-quangcao.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- block item -->
+                        <div class="col-12 col-lg-9 no-gutter text-center block-item">
+                            <div class="row row-no-gutter">
+                                <!-- title -->
+                                <div class="col-12 title">
+                                    <a href="#">
+                                        <h2>Đồng hồ Epos Swiss</h2>
+                                    </a>
+                                </div>
+                                <div class="col-12 no-gutter">
+                                    <div class="row row-no-gutter inner" id="slide-1">
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp1.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp1.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp2.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp3.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- section 4 -->
+                <section class="col-12 section">
+                    <div class="row inner">
+                        <!-- advertisement -->
+                        <div class="col-3 no-gutter-r advertisement">
+                            <div class="content">
+                                <p>Đồng hồ</p>
+                                <p>Emporio armani</p>
+                                <p>Đồng hồ Diamond D mang đến cho khách hàng vẻ đẹp tinh tế, vĩnh cửu như những viên kim cương thuần khiết được tạo nên qua quá trình hàng triệu năm. </p>
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                            <div class="img-bg">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                        <img src="./pic/bg-quangcao.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- block item -->
+                        <div class="col-12 col-lg-9 no-gutter text-center block-item">
+                            <div class="row row-no-gutter">
+                                <!-- title -->
+                                <div class="col-12 title">
+                                    <a href="#">
+                                        <h2>Đồng hồ Epos Swiss</h2>
+                                    </a>
+                                </div>
+                                <div class="col-12 no-gutter">
+                                    <div class="row row-no-gutter inner" id="slide-2">
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp1.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp1.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp2.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp3.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- section 5 -->
+                <section class="col-12 section">
+                    <div class="row inner">
+                        <!-- advertisement -->
+                        <div class="col-3 no-gutter-r advertisement">
+                            <div class="content">
+                                <p>Đồng hồ</p>
+                                <p>Emporio armani</p>
+                                <p>Đồng hồ Diamond D mang đến cho khách hàng vẻ đẹp tinh tế, vĩnh cửu như những viên kim cương thuần khiết được tạo nên qua quá trình hàng triệu năm. </p>
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                            <div class="img-bg">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                        <img src="./pic/bg-quangcao.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- block item -->
+                        <div class="col-12 col-lg-9 no-gutter text-center block-item">
+                            <div class="row row-no-gutter">
+                                <!-- title -->
+                                <div class="col-12 title">
+                                    <a href="#">
+                                        <h2>Đồng hồ Epos Swiss</h2>
+                                    </a>
+                                </div>
+                                <div class="col-12 no-gutter">
+                                    <div class="row row-no-gutter inner" id="slide-3">
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp1.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp1.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp2.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp3.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- section 6 -->
+                <section class="col-12 section">
+                    <div class="row inner">
+                        <!-- advertisement -->
+                        <div class="col-3 no-gutter-r advertisement">
+                            <div class="content">
+                                <p>Đồng hồ</p>
+                                <p>Emporio armani</p>
+                                <p>Đồng hồ Diamond D mang đến cho khách hàng vẻ đẹp tinh tế, vĩnh cửu như những viên kim cương thuần khiết được tạo nên qua quá trình hàng triệu năm. </p>
+                                <a href="#">Xem chi tiết</a>
+                            </div>
+                            <div class="img-bg">
+                                <div class="khungAnh">
+                                    <a class="khungAnhCrop" href="#">
+                                        <img src="./pic/bg-quangcao.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- block item -->
+                        <div class="col-12 col-lg-9 no-gutter text-center block-item">
+                            <div class="row row-no-gutter">
+                                <!-- title -->
+                                <div class="col-12 title">
+                                    <a href="#">
+                                        <h2>Đồng hồ Epos Swiss</h2>
+                                    </a>
+                                </div>
+                                <div class="col-12 no-gutter">
+                                    <div class="row row-no-gutter inner" id="slide-4">
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp1.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp1.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp2.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="col-6 col-md-4 no-gutter item">
+                                            <div class="khungAnh img">
+                                                <a class="khungAnhCrop0" href="#">
+                                                    <img src="./pic/sp3.png" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="name">
+                                                    <h3>Đồng hồ Bruno Sohnle 17-3308</h3>
+                                                </a>
+                                                <span class="old">3.2300.000</span>
+                                                <span class="price">2.650.000đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <!--hbsb-->
+        <div class="container hbsb">
+            <div class="row">
+                <div class="col-12">
+                    <div class="nhan-bt">
+                        <span class="text">Đăng ký nhận bản tin định kỳ</span>
+                        <span class="form-nhan">
+						<input type="text" placeholder="Huyen@tatthanh.com.vn">
+						<a href="#">gửi</a>
+					</span>
+                        <span class="text-qc">Coupon <b>20.000</b> cho khách hàng đăng ký đầu tiên</span>
+                    </div>
+                </div>
+                <!-- item 1 -->
+                <div class="col-6 col-md-4 col-lg-3 no-gutter-r item">
+                    <p>Hỗ trợ khách hàng</p>
+                    <ul>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                        <li><a href="#">Phương thức vận chuyển</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả hoàn tiền</a></li>
+                    </ul>
+                </div>
+                <!-- item 2 -->
+                <div class="col-lg-3 item i-bst">
+                    <p>Bộ sưu tập</p>
+                    <ul>
+                        <li><a href="#">Đàn ông muốn sở hữu nhất</a></li>
+                        <li><a href="#">Phụ nữ khao khát nhất</a></li>
+                        <li><a href="#">Đồng hồ bán chạy nhất</a></li>
+                        <li><a href="#">Bộ sưu tập đặc biệt</a></li>
+                        <li><a href="#">Sản phẩm mới nhất</a></li>
+                    </ul>
+                </div>
+                <!-- item 3 -->
+                <div class="col-6 col-md-4 col-lg-3 item social">
+                    <p>B-watch trên</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>Google +</a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a>
+                </div>
+                <!-- item 3 -->
+                <div class="col-12 col-md-4 col-lg-3 item contact">
+                    <p>B-watch trên</p>
+                    <a href="#">Địa chỉ: Tòa nhà 24t2 Hoàng Đạo Thúy, Hà Nội</a>
+                    <a href="tel: 0981552369">Hotline: 0981 552 369</a>
+                    <a href="#">Email: B-watch@gmail.com</a>
+                    <a href="#">Website: emlamua.vn</a>
+                    <a href="#" class="chat-footer">
+                        <img src="./css/icon/chat-footer.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--copyright-->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <span>© 2017 B-watch - All rights reserved.</span>
+                        <span>Đang online: 120</span>
+                        <span>Tổng truy cập: 1.567.555 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--  ve top-->
+    <div class="ve-top">
+        <img src="./css/icon/ve-top.png" alt="">
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+    <script src="js/infobox.js"></script>
+    <script src="js/GoogleMapInit.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
