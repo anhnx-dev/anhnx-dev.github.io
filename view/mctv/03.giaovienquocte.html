@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- js -->
+    <script type="text/javascript" src="vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/tether.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/circle-progress.min.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- top bar -->
+        <section class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <!-- logo -->
+                        <div class="logo">
+                            <img src="./pic/logo.png" alt="">
+                        </div>
+                        <!-- end logo -->
+                    </div>
+                    <div class="col-9">
+                        <!-- Language -->
+                        <div class="language">
+                            <div class="language-inner">
+                                <a href="#"><img src="./css/icons/vn.png" alt=""></a>
+                                <a href="#"><img src="./css/icons/el.png" alt=""></a>
+                            </div>
+                        </div>
+                        <!-- end Language -->
+                        <!-- menu top bar -->
+                        <nav class="menu-tb">
+                            <ul class="nav-tb">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#">Về chúng tôi</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action 1</a>
+                                        <a class="dropdown-item" href="#">Action 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#">Trang học viện</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action 1</a>
+                                        <a class="dropdown-item" href="#">Action 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#">Hệ thống trường thực tập giáo viên quốc tế</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action 1</a>
+                                        <a class="dropdown-item" href="#">Action 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- end menu top bar -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end top bar -->
+        <!-- menu end search -->
+        <section class="menu-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- menu main -->
+                        <nav class="menu-main">
+                            <ul class="nav-mm">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#">Khóa học Montessori</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action 1</a>
+                                        <a class="dropdown-item" href="#">Action 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#">Hiệp hội Montessori</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action 1</a>
+                                        <a class="dropdown-item" href="#">Action 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#">Hợp tác quốc tế</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action 1</a>
+                                        <a class="dropdown-item" href="#">Action 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#">Thư viện Montessori</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action 1</a>
+                                        <a class="dropdown-item" href="#">Action 2</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- end menu main -->
+                        <!--search-->
+                        <div class="search">
+                            <div class="form-search">
+                                <input type="text" placeholder="Từ khóa tìm kiếm">
+                                <a href="#">
+                                    <img src="./css/icons/search.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!--end search-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end menu and search -->
+    </header>
+    <!-- end header -->
+
+    <!-- name training -->
+    <section id="name-training">
+        <h2>Khóa đào tạo giáo viên quốc tế (Lứa tuổi 2,5 - 6 tuổi) 2017 - 2018</h2>
+    </section>
+    <!-- end name training -->
+
+    <!-- main -->
+    <main id="main">
+        <div class="container">
+            <div class="row">
+                <!-- left -->
+                <div class="col-12 left-main">
+                    <!-- button -->
+                    <div class="btn-left">
+                        <a href="#" class="btn-dkh">đăng ký học</a>
+                    </div>
+                    <!-- end button -->
+                    <!-- contact left -->
+                    <div class="contact-left">
+                        <strong>Liên hệ ngay với chúng tôi</strong>
+                        <p>
+                            Trung tâm huấn luyện giáo viên Montessori Việt Nam (MTCV)
+                            <br> Tầng 5 tòa nhà A, Lô TH1, khu đô thị mới Dịch Vọng, phố Thọ Tháp, Cầu Giấy, Hà Nội
+                            <br> (trong khuôn viên trường mầm non quốc tế và Sakura và trường liên cấp Gate-way)
+                            <br> Phòng tư vấn tuyển sinh
+                            <br> (Ms Hồng/ Ms Huyền)
+                            <br> Số điện thoại: <b>024.6686.4650 </b>
+                            <br> Email: <span>info@mtcv.vn</span>
+                        </p>
+                    </div>
+                    <!-- end contact left -->
+                    <!-- link left -->
+                    <div class="link-left">
+                        <strong>Link quan trọng</strong>
+                        <a href="#"><span>Meet the Staff</span></a>
+                        <a href="#"><span>Schedule a Personal Tour</span></a>
+                        <a href="#"><span>Primary Application</span></a>
+                        <a href="#"><span>Reference Form</span></a>
+                        <a href="#"><span>Primary Course Handbook</span></a>
+                        <a href="#"><span>Primary Fact Sheet</span></a>
+                        <a href="#"><span>Women United Scholarship Fact Sheet</span></a>
+                        <a href="#"><span>Women United Scholarship Steps to Apply</span></a>
+                        <a href="#"><span>Women United Scholarship Application</span></a>
+                    </div>
+                    <!-- end link left -->
+                </div>
+                <!-- end left -->
+                <!-- right -->
+                <div class="col-12 right-main">
+                    <!-- content page -->
+                    <div class="content-page">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo.jpg">
+                            </a>
+                        </div>
+
+                        <div class="block-1">
+                            <h3>Thay đổi cách thức Giáo dục</h3>
+                            <p>Maria Montessori đã cách mạng hóa thế giới giáo dục vào năm 1907 với cách tiếp cận phát triển
+                                để hiểu đứa trẻ và hỗ trợ sự phát triển tối ưu. Những ai đắm mình trong khóa học này sẽ:</p>
+                            <div class="content">
+                                <div class="d"><img src="./css/icons/y.png" alt=""><span>Đạt được kiến ​​thức và kỹ năng để phục vụ trẻ em và gia đình từ 3-6 tuổi trong môi trường học tập thích hợp phát triển</span></div>
+                                <div class="d"><img src="./css/icons/y.png" alt=""><span>Học hỏi từ các giảng viên chuyên gia có nhiều năm kinh nghiệm làm việc với trẻ nhỏ trong môi trường Montessori</span></div>
+                                <div class="d"><img src="./css/icons/y.png" alt=""><span>Tham gia vào một mạng lưới các chuyên gia toàn cầu sẽ truyền cảm hứng và duy trì bạn trong suốt sự nghiệp của bạn</span></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion accordion-1">
+                            <div class="inner" id="accordion-1" role="tablist" aria-multiselectable="true">
+                                <div class="a-tab">
+                                    <a class="active" data-toggle="collapse" data-parent="#accordion-1" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">TÍnh năng nổi bật</a>
+                                    <a data-toggle="collapse" data-parent="#accordion-1" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">Bạn sẽ học ở đâu</a>
+                                    <a data-toggle="collapse" data-parent="#accordion-1" href="#section3ContentId" aria-expanded="true" aria-controls="section3ContentId">Khi nào bắt đầu</a>
+                                </div>
+                                <div class="a-content">
+                                    <div class="card">
+                                        <div id="section1ContentId" class="collapse in show" role="tabpanel" aria-labelledby="section1HeaderId">
+                                            <div class="card-block">
+                                                noi dung o day
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                                            <div class="card-block">
+                                                noi dung o day
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                                            <div class="card-block">
+                                                noi dung o day
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-2">
+                            <h3>Quy trình nộp đơn và thanh toán</h3>
+                            <div class="content">
+                                * Nếu bạn là sinh viên quốc tế, vui lòng liên hệ với MCM
+                                <br> 1 Gửi ứng dụng, tự truyện, câu trả lời viết tay, và lệ phí nộp đơn 50 đô la
+                                <br> 2 Cung cấp ba tài liệu tham khảo cho các giáo sư, đồng nghiệp, v.v. và cho họ trở lại
+                                MCM 
+                                <br>
+                                <a href="#">Nhấn để tải mẫu tham khảo</a>
+                                <br> 3 Sắp xếp bảng điểm đại học để gửi tới MCM
+                                <br> 4 Một khi tất cả các tài liệu đã nhận được bởi MCM, một cuộc phỏng vấn sẽ được lên lịch
+                                với Molly O'Shaughnessy, Giám đốc của T raining
+                                <br> 5 Khi được chấp nhận, khoản tiền học phí $ 500 là bắt buộc để giữ chỗ của bạn trong
+                                buổi tập huấn
+                                <br> 6 Một nửa học phí là vào ngày 15 tháng 8 năm 2017 (một nửa là vào ngày 15 tháng 12 năm
+                                2017)
+                                <br> 7 Bắt đầu lớp vào ngày 6 tháng 9 năm 2017!
+                            </div>
+                        </div>
+
+                        <div class="accordion accordion-2">
+                            <div class="inner" id="accordion-2" role="tablist" aria-multiselectable="true">
+                                <div class="a-tab">
+                                    <a class="active" data-toggle="collapse" data-parent="#accordion-2" href="#section1ContentId2" aria-expanded="true" aria-controls="section1ContentId2">Các môn học</a>
+                                    <a data-toggle="collapse" data-parent="#accordion-2" href="#section2ContentId2" aria-expanded="true" aria-controls="section2ContentId2">Đọc bắt buộc và nên đọc</a>
+                                    <a data-toggle="collapse" data-parent="#accordion-2" href="#section3ContentId2" aria-expanded="true" aria-controls="section3ContentId2">Học phí</a>
+                                </div>
+                                <div class="a-content">
+                                    <div class="card">
+                                        <div id="section1ContentId2" class="collapse in show" role="tabpanel" aria-labelledby="section1HeaderId2">
+                                            <div class="card-block">
+                                                noi dung o day
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div id="section2ContentId2" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId2">
+                                            <div class="card-block">
+                                                noi dung o day
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div id="section3ContentId2" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId2">
+                                            <div class="card-block">
+                                                noi dung o day
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end content page -->
+                </div>
+                <!-- end right -->
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+
+    <!-- active training -->
+    <section class="active-training">
+        <h3>Bắt đầu khóa học của bạn ngay hôm nay!</h3>
+        <p>Bây giờ chấp nhận học sinh cho năm 2017-2018 của chúng tôi</p>
+        <a href="#" class="btn-at">Bắt đầu đăng ký khoá học</a>
+    </section>
+    <!-- end active training -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="left-f">
+                        <div class="title">Tại sao chọn MTCV </div>
+                        <div class="text">MTCV là trung tâm đầu tiên mang Montessori đến Việt Nam, là đơn vị đã sát cánh bên trường mầm non
+                            quốc tế Sakura Montessori đào tạo ra những lứa giáo viên Montessori tiên phong trên cả nước.
+                            Học viên của MTCV luôn đánh giá cao sự chuyên nghiệp, giàu kinh nghiệm, hỗ trợ học viên tận tình
+                            của đội ngũ giảng viên, điều phối viên. Các khóa học quốc tế của chúng tôi có những chuyên viên
+                            Montessori làm phiên dịch luôn đảm bảo sự truyền tải tối đa kiến thức cho quý vị.</div>
+                        <a href="#"><i>Đọc thêm về chúng tôi ...</i></a>
+                    </div>
+                    <div class="center-f">
+                        <div class="title">MTCV trên mạng xã hội</div>
+                        <div class="social">
+                            <div class="inner-social">
+                                <a href="#"><img src="./css/icons/fb.png" alt=""></a>
+                                <a href="#"><img src="./css/icons/tt.png" alt=""></a>
+                                <a href="#"><img src="./css/icons/yt.png" alt=""></a>
+                                <a href="#"><img src="./css/icons/is.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-f">
+                        <div class="title">Thông tin liên hệ</div>
+                        <div class="inner">
+                            <div class="d1">
+                                <img src="./css/icons/f1.png" alt="">
+                                <p>Trung tâm huấn luyện giáo viên Montessori Việt Nam (MTCV)</p>
+                            </div>
+                            <div class="d1">
+                                <img src="./css/icons/f2.png" alt="">
+                                <p>Tầng 5 tòa nhà A, Lô TH1, KDTM Dịch Vọng, Thọ Tháp, Cầu Giấy, Hà Nội</p>
+                            </div>
+                            <div class="d1">
+                                <img src="./css/icons/f3.png" alt="">
+                                <p>024.6686.4650</p>
+                            </div>
+                            <div class="d1"><img src="./css/icons/f5.png" alt="">
+                                <p>info@mtcv.vn</p>
+                            </div>
+                            <a href="#"><img src="./css/icons/f6.png" alt=""><span>Bản đồ chỉ dẫn</span><img src="./css/icons/f7.png" alt=""></a>
+                        </div>
+                        <div class="copyright">
+                            <span>© 2017 <a href="#">MTCV</a> All Right Reserved.</span>
+                            <span><img src="./css/icons/online.png" alt=""> Online: 1.236</span>
+                            <span>Tổng truy cập: 1.000.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- hotline -->
+    <div id="hotline">
+        <div class="inner">
+            <img src="./css/icons/sp.png" alt="">
+            <span class="d1">Hotline hỗ trợ 24/7</span>
+            <span class="d2">Hotline: <span>0981.335.838</span><span> / </span><span>024.6260.4666</span></span>
+        </div>
+        <div class="ve-top">
+            <img src="./css/icons/ve-top.png" alt="">
+        </div>
+    </div>
+    <!-- end hotline -->
+
+
+</body>
+
+</html>
