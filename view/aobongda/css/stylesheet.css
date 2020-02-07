@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'segoeui';
+    src: url('../css/fonts/segoeui.eot');
+    src: url('../css/fonts/segoeui.woff') format('woff'), url('../css/fonts/segoeui.ttf') format('truetype'), url('../css/fonts/segoeui.svg#iciel') format('svg'), url('../css/fonts/segoeui.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segoeuib';
+    src: url('../css/fonts/segoeuib.eot');
+    src: url('../css/fonts/segoeuib.woff') format('woff'), url('../css/fonts/segoeuib.ttf') format('truetype'), url('../css/fonts/segoeuib.svg#iciel') format('svg'), url('../css/fonts/segoeuib.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sfu';
+    src: url('../css/fonts/sfu.eot');
+    src: url('../css/fonts/sfu.woff') format('woff'), url('../css/fonts/sfu.ttf') format('truetype'), url('../css/fonts/sfu.svg#iciel') format('svg'), url('../css/fonts/sfu.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #f5f5f5;
+    line-height: 22px;
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'segoeui';
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+dl,
+pre,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+embed,
+iframe,
+object,
+video {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    color: #333;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:focus,
+a:hover {
+    color: #004278;
+    text-decoration: none;
+}
+
+.no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-gutter-l {
+    padding-left: 0;
+}
+
+.no-gutter-r {
+    padding-right: 0;
+}
+
+.offset30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.offset45 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+
+/*khung anh*/
+
+.khungAnh {
+    position: relative;
+    z-index: 1;
+}
+
+.khungAnh:before {
+    content: "";
+    display: block;
+}
+
+.khungAnhCrop,
+.khungAnhCrop0 {
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.khungAnhCrop0 img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.khungAnhCrop0 img {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.khungAnhCrop img {
+    max-width: 150%;
+    max-height: 150%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.khungAnhCrop img {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.khungAnhCrop img.wide {
+    height: 100%;
+    max-width: none;
+}
+
+.khungAnhCrop img.tall {
+    width: 100%;
+    max-height: none
+}
