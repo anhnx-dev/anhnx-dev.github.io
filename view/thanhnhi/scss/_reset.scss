@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&subset=vietnamese');
+@import '_variables.scss';
+@import '_mixins.scss';
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../css/fonts/fontawesome-webfont.eot');
+    src: url('../css/fonts/fontawesome-webfont.woff') format('woff'),
+    url('../css/fonts/fontawesome-webfont.woff2') format('woff2'),
+    url('../css/fonts/fontawesome-webfont.ttf') format('truetype'),
+    url('../css/fonts/fontawesome-webfont.svg#iciel') format('svg'),
+    url('../css/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: $clf;
+    line-height: $lh1;
+    color: $cl3;
+    font-size: $fs1;
+    font-family: $ffa;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+dl,
+pre,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+embed,
+object,
+video,
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+summary {
+    display: block;
+}
+
+select {
+    background: $clf url(../css/icons/select.png) no-repeat right 10px center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+.framed-image {
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: "";
+        display: block;
+        padding-bottom: 60%;
+    }
+    .cut,
+    .no-cut {
+        overflow: hidden;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .cut img {
+        max-width: 150%;
+        max-height: 150%;
+        &.wide {
+            height: 100%;
+            max-width: unset;
+        }
+        &.tall {
+            width: 100%;
+            max-height: none;
+        }
+    }
+    .no-cut img {
+        max-width: 150%;
+        max-height: 150%;
+    }
+}

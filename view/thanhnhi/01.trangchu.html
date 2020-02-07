@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- top bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-md-7 col-lg-8">
+                        <!-- contact -->
+                        <div class="contact">
+                            <a class="address" href="#" title="Số 4, Ngọc Lâm, Long Biên, Hà Nội">Số 4, Ngọc Lâm, Long Biên, Hà Nội</a>
+                            <a class="phone" href="tel: 024 66 731 114" title="024 66 731 114">tư vấn:
+                                <b>024 66 731 114</b>
+                            </a>
+                            <a class="email" href="#" title="1888hanoi@gmail.com">Email: 1888hanoi@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-5 col-lg-4 text-right">
+                        <!-- social -->
+                        <span class="social">
+                            <a class="fa-facebook" href="https://www.facebook.com/"></a>
+                            <a class="fa-google-plus" href="https://plus.google.com/"></a>
+                            <a class="fa-linkedin" href="https://www.linkedin.com/"></a>
+                            <a class="fa-youtube" href="https://www.youtube.com/"></a>
+                            <a class="fa-twitter" href="https://twitter.com/"></a>
+                        </span>
+                        <!-- Language -->
+                        <span class="language">
+                            <a href="#">
+                                <img src="/./css/icons/vn.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="/./css/icons/en.jpg" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top bar end -->
+        <!-- menu main -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./pic/logo.png" alt="">
+                </a>
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SẢN PHẨM</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Demo</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Demo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DỰ ÁN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--search-->
+                <div class="search">
+                    <div class="form-search">
+                        <input type="text" placeholder="Từ khóa tìm kiếm">
+                        <a href="#" class="fa-search"></a>
+                    </div>
+                </div>
+                <!-- button responsive -->
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <!-- menu main end -->
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main id="main">
+
+        <!-- slider home -->
+        <section class="slider-home">
+            <div class="item-01">
+                <div class="framed-image">
+                    <span class="cut">
+                        <img src="./pic/slider.png">
+                    </span>
+                </div>
+                <a href="#" class="info">
+                    <p>
+                        <strong>CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ XÂY DỰNG 1888 HÀ NỘI</strong>
+                    </p>
+                    <p>“ Kính của thời đại ”</p>
+                </a>
+            </div>
+            <div class="item-01">
+                <div class="framed-image">
+                    <span class="cut">
+                        <img src="./pic/slider.png">
+                    </span>
+                </div>
+                <a href="#" class="info">
+                    <p>
+                        <strong>CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ XÂY DỰNG 1888 HÀ NỘI</strong>
+                    </p>
+                    <p>“ Kính của thời đại ”</p>
+                </a>
+            </div>
+        </section>
+        <!-- slider home end -->
+
+        <!-- introduce -->
+        <section class="introduce">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 item-02">
+                        <div class="icon">
+                            <img src="./pic/icons/i1.png" alt="">
+                            <img src="./pic/icons/i1h.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>
+                                <a href="#">Giới thiệu</a>
+                            </h2>
+                            <summary>Là công ty hàng đầu về lĩnh vực cung cấp, thi công các sản phẩm kính, kính màu xây dựng...</summary>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item-02">
+                        <div class="icon">
+                            <img src="./pic/icons/i2.png" alt="">
+                            <img src="./pic/icons/i2h.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>
+                                <a href="#">Giá trị cốt lõi</a>
+                            </h2>
+                            <summary>Là công ty hàng đầu về lĩnh vực cung cấp, thi công các sản phẩm kính, kính màu xây dựng...</summary>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item-02">
+                        <div class="icon">
+                            <img src="./pic/icons/i3.png" alt="">
+                            <img src="./pic/icons/i3h.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>
+                                <a href="#">Tầm nhìn - sứ mệnh</a>
+                            </h2>
+                            <summary>Là công ty hàng đầu về lĩnh vực cung cấp, thi công các sản phẩm kính, kính màu xây dựng...</summary>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 item-02">
+                        <div class="icon">
+                            <img src="./pic/icons/i4.png" alt="">
+                            <img src="./pic/icons/i4h.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>
+                                <a href="#">Lịch sử phát triển</a>
+                            </h2>
+                            <summary>Là công ty hàng đầu về lĩnh vực cung cấp, thi công các sản phẩm kính, kính màu xây dựng...</summary>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- introduce end -->
+
+        <!-- product home -->
+        <section class="product-home">
+            <div class="container">
+                <div class="text-center heading">
+                    <h2>
+                        <a href="#">SẢN PHẨM 1888 HÀ NỘI CUNG CẤP</a>
+                    </h2>
+                    <summary>
+                        <p style="font-size: 18px">
+                            <strong>
+                                <i>“Luôn tận tâm và hết lòng”</i>
+                            </strong>
+                        </p>
+                        <br>
+                        <p>CÔNG TY CỔ PHẦN THƯƠNG MẠI & XÂY DỰNG 1888 HÀ NỘI chuyên cung cấp và thi công những sản phẩm kính
+                            an toàn đảm bảo về chất lượng, đa dạng về chủng loại, tính năng sử dụng linh hoạt…</p>
+                    </summary>
+                </div>
+                <div class="product-slider">
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/sp1.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">Tư vấn thiết kế thi công công trình</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/sp2.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">Sơn bả</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/sp3.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">Nhôm kính, kính cường lực</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/sp4.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">Cơ khí</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/sp5.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">giấy dán tường, tranh kính</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/tt1.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">Cơ khí</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/sp1.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">Tư vấn thiết kế thi công công trình</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/sp2.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">Sơn bả</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/sp3.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">Nhôm kính, kính cường lực</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/sp4.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">Cơ khí</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/sp5.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">giấy dán tường, tranh kính</a>
+                        </h3>
+                    </div>
+                    <div class="item-03">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/tt1.png">
+                            </a>
+                        </div>
+                        <h3>
+                            <a href="#">Cơ khí</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product home end -->
+
+        <!-- project home -->
+        <section class="project-home">
+            <div class="container">
+                <div class="text-center heading">
+                    <h2>
+                        <a href="#">DỰ ÁN ĐÃ THỰC HIỆN</a>
+                    </h2>
+                    <summary>
+                        <p>CÔNG TY CỔ PHẦN THƯƠNG MẠI & XÂY DỰNG 1888 HÀ NỘI chuyên cung cấp và thi công những sản phẩm kính
+                            an toàn đảm bảo về chất lượng, đa dạng về chủng loại, tính năng sử dụng linh hoạt…</p>
+                    </summary>
+                </div>
+                <div class="project-slider">
+                    <article class="item-04">
+                        <div class="row wrapper">
+                            <div class="col-12 col-md-5 img">
+                                <div class="framed-image">
+                                    <a class="cut" href="#">
+                                        <img src="./pic/da1.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7 content">
+                                <div class="group-img">
+                                    <div class="img">
+                                        <div class="framed-image">
+                                            <span class="cut">
+                                                <img src="./pic/da2.png">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="img">
+                                        <div class="framed-image">
+                                            <span class="cut">
+                                                <img src="./pic/da3.png">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="img">
+                                        <div class="framed-image">
+                                            <span class="cut">
+                                                <img src="./pic/da4.png">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>
+                                    <a href="#">DỰ ÁN AEON MALL LONG BIÊN</a>
+                                </h3>
+                                <summary>Với đội ngũ tư vấn và thi công chuyên nghiệp, nhiệt tình, giàu kinh nghiệm, Công ty Cổ Phần
+                                    Thương Mại và Xây Dựng 1888 Hà Nội chắc chắn sẽ mang đến những sản phẩm hoàn hảo nhất
+                                    cho các công trình xây dựng của Quý khách hàng.</summary>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="item-04">
+                        <div class="row wrapper">
+                            <div class="col-12 col-md-5 img">
+                                <div class="framed-image">
+                                    <a class="cut" href="#">
+                                        <img src="./pic/da1.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7 content">
+                                <div class="group-img">
+                                    <div class="img">
+                                        <div class="framed-image">
+                                            <span class="cut">
+                                                <img src="./pic/da2.png">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="img">
+                                        <div class="framed-image">
+                                            <span class="cut">
+                                                <img src="./pic/da3.png">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="img">
+                                        <div class="framed-image">
+                                            <span class="cut">
+                                                <img src="./pic/da4.png">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>
+                                    <a href="#">DỰ ÁN AEON MALL LONG BIÊN</a>
+                                </h3>
+                                <summary>Với đội ngũ tư vấn và thi công chuyên nghiệp, nhiệt tình, giàu kinh nghiệm, Công ty Cổ Phần
+                                    Thương Mại và Xây Dựng 1888 Hà Nội chắc chắn sẽ mang đến những sản phẩm hoàn hảo nhất
+                                    cho các công trình xây dựng của Quý khách hàng.</summary>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-01">
+                    <a href="#">XEM CÁC DỰ ÁN KHÁC</a>
+                </div>
+            </div>
+        </section>
+        <!-- project home end-->
+
+        <!-- adv -->
+        <section class="section-adv adv-01" style="background-image: url(./pic/bg/1.png);">
+            <div class="text-center container info">
+                <h2>ĐĂNG KÝ TƯ VẤN THIẾT KẾ THI CÔNG CÔNG TRÌNH</h2>
+                <p>CÔNG TY CỔ PHẦN THƯƠNG MẠI & XÂY DỰNG 1888 HÀ NỘI chuyên cung cấp và thi công những sản phẩm kính an toàn
+                    đảm bảo về chất lượng, đa dạng về chủng loại, tính năng sử dụng linh hoạt…</p>
+            </div>
+            <div class="btn-01">
+                <a href="#">ĐĂNG KÝ NGAY</a>
+            </div>
+        </section>
+        <!-- adv end -->
+
+        <!-- news home -->
+        <section class="news-home">
+            <div class="container">
+                <div class="text-center heading">
+                    <h2>
+                        <a href="#">TIN TỨC - SỰ KIỆN</a>
+                    </h2>
+                    <summary>
+                        <p>CÔNG TY CỔ PHẦN THƯƠNG MẠI & XÂY DỰNG 1888 HÀ NỘI chuyên cung cấp và thi công những sản phẩm kính
+                            an toàn đảm bảo về chất lượng, đa dạng về chủng loại, tính năng sử dụng linh hoạt…</p>
+                    </summary>
+                </div>
+                <div class="row group-item">
+                    <article class="col-12 col-md-6 col-lg-4 item-05">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/tt1.png">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <a href="#">Làm cửa kính cường lực ở đâu để vừa rẻ vừa đẹp</a>
+                            </h3>
+                            <div class="time-view">
+                                <span class="time">11/7/2016</span>
+                                <span class="view">124 lượt xem</span>
+                            </div>
+                            <summary>Tầng 4 dành cho các hoạt động thể thao và chăm sóc sức khỏe như phòng tập, bể bơi, phòng spa
+                                và một khoảng sân rộng. Bể rộng 27 m2 nằm trên tầng cao nhất đòi hỏi kết cấu nhà phải vững
+                                chắc
+                            </summary>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-4 item-05">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/tt2.png">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <a href="#">Mẹo đơn giản giúp bạn vệ sinh cửa kính hiệu quả</a>
+                            </h3>
+                            <div class="time-view">
+                                <span class="time">11/7/2016</span>
+                                <span class="view">124 lượt xem</span>
+                            </div>
+                            <summary>Tầng 4 dành cho các hoạt động thể thao và chăm sóc sức khỏe như phòng tập, bể bơi, phòng spa
+                                và một khoảng sân rộng. Bể rộng 27 m2 nằm trên tầng cao nhất đòi hỏi kết cấu nhà phải vững
+                                chắc
+                            </summary>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-4 item-05">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/tt3.png">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <a href="#">Cửa nhôm Xingfa mang phong cách mới cho ngôi nhà Việt</a>
+                            </h3>
+                            <div class="time-view">
+                                <span class="time">11/7/2016</span>
+                                <span class="view">124 lượt xem</span>
+                            </div>
+                            <summary>Tầng 4 dành cho các hoạt động thể thao và chăm sóc sức khỏe như phòng tập, bể bơi, phòng spa
+                                và một khoảng sân rộng. Bể rộng 27 m2 nằm trên tầng cao nhất đòi hỏi kết cấu nhà phải vững
+                                chắc
+                            </summary>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-4 item-05">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/tt2.png">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <a href="#">Mẹo đơn giản giúp bạn vệ sinh cửa kính hiệu quả</a>
+                            </h3>
+                            <div class="time-view">
+                                <span class="time">11/7/2016</span>
+                                <span class="view">124 lượt xem</span>
+                            </div>
+                            <summary>Tầng 4 dành cho các hoạt động thể thao và chăm sóc sức khỏe như phòng tập, bể bơi, phòng spa
+                                và một khoảng sân rộng. Bể rộng 27 m2 nằm trên tầng cao nhất đòi hỏi kết cấu nhà phải vững
+                                chắc
+                            </summary>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-01">
+                    <a href="#">XEM CÁC TIN TỨC KHÁC</a>
+                </div>
+            </div>
+        </section>
+        <!-- news home end -->
+
+        <!-- accessories -->
+        <section class="accessories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 info-accessories">
+                        <h2>CÁC PHỤ KIỆN KÍNH, PHỤ KIỆN NỘI THẤT CỦA 1888 HÀ NỘI</h2>
+                        <summary>Là công ty hàng đầu về lĩnh vực cung cấp, thi công các sản phẩm kính, kính màu xây dựng . Với kinh
+                            nghiệm nhiều năm trong lĩnh vực thi công lắp đặt kính, Công Ty Cổ Phần Thương Mại và Xây Dựng
+                            1888 Hà Nội đã đúc kết được nhiều kinh nghiệm trong lĩnh vực tư vấn, thiết kế và thi công các
+                            hạng mục kính: Kính cường lực – Tempered, kính màu, kính sơn, kính cong cường lực…</summary>
+                        <a href="#" class="btn-02">XEM CHI TIẾT</a>
+                    </div>
+                    <div class="col-12 col-lg-6 slider-accessories">
+                        <div class="framed-image">
+                            <a class="cut" data-fancybox="gallery1" href="https://youtu.be/wJnBTPUQS5A">
+                                <img src="./pic/pk.png">
+                            </a>
+                        </div>
+                        <div class="framed-image">
+                            <a class="cut" data-fancybox="gallery1" href="https://youtu.be/wJnBTPUQS5A">
+                                <img src="./pic/pk.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- accessories end -->
+
+        <!-- adv -->
+        <section class="section-adv adv-02" style="background-image: url(.../pic/bg/2.png);">
+            <div class="text-center container info">
+                <h2>Hơn
+                    <span class="number">200
+                        <span>+</span>
+                    </span> khách hàng đã chọn chúng tôi.</h2>
+                <p>Hãy liên hệ ngay để được tư vấn</p>
+                <a class="phone" href="tel: 024 66 731 114">024 66 731 114</a>
+            </div>
+        </section>
+        <!-- adv end -->
+
+        <!-- why us -->
+        <section class="why-us">
+            <div class="container">
+                <div class="text-center heading">
+                    <h2>
+                        <a href="#">TẠI SAO CHỌN THÀNH NHI</a>
+                    </h2>
+                    <summary>
+                        <p>Sự chuyên nghiệp cao đến từ đội ngũ của chúng tôi</p>
+                    </summary>
+                </div>
+                <div class="row text-center group-item">
+                    <article class="col-12 col-md-6 col-lg-3 item-06">
+                        <div class="icon">
+                            <span>
+                                <img src="./pic/icons/w1.png" alt="">
+                                <img src="./pic/icons/w1h.png" alt="">
+                            </span>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                KINH NGHIỆM LÂU NĂM
+                            </h3>
+                            <summary>Với đội ngũ tư vấn và thi công chuyên nghiệp, nhiệt tình, giàu kinh nghiệm, Công ty Cổ Phần Thương
+                                Mại và Xây Dựng 1888 Hà Nội chắc chắn</summary>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-06">
+                        <div class="icon">
+                            <span>
+                                <img src="./pic/icons/w2.png" alt="">
+                                <img src="./pic/icons/w2h.png" alt="">
+                            </span>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                ĐẢM BẢO CHẤT LƯỢNG
+                            </h3>
+                            <summary>Với đội ngũ tư vấn và thi công chuyên nghiệp, nhiệt tình, giàu kinh nghiệm, Công ty Cổ Phần Thương
+                                Mại và Xây Dựng 1888 Hà Nội chắc chắn</summary>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-06">
+                        <div class="icon">
+                            <span>
+                                <img src="./pic/icons/w3.png" alt="">
+                                <img src="./pic/icons/w3h.png" alt="">
+                            </span>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                UY TÍN HÀNG ĐẦU
+                            </h3>
+                            <summary>Với đội ngũ tư vấn và thi công chuyên nghiệp, nhiệt tình, giàu kinh nghiệm, Công ty Cổ Phần Thương
+                                Mại và Xây Dựng 1888 Hà Nội chắc chắn</summary>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-06">
+                        <div class="icon">
+                            <span>
+                                <img src="./pic/icons/w4.png" alt="">
+                                <img src="./pic/icons/w4h.png" alt="">
+                            </span>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                GIÁ CẢ CẠNH TRANH
+                            </h3>
+                            <summary>Với đội ngũ tư vấn và thi công chuyên nghiệp, nhiệt tình, giàu kinh nghiệm, Công ty Cổ Phần Thương
+                                Mại và Xây Dựng 1888 Hà Nội chắc chắn</summary>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- why us end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 contact">
+                    <div class="title">CÔNG TY CỔ PHẦN THƯƠNG MẠI, SẢN XUẤT VÀ XÂY DỰNG THÀNH NHI</div>
+                    <div class="info">
+                        <p>Trụ sở chính: Số 06, ngách 51, đường nam Đuống- phường Thượng </p>
+                        <p>Thanh, quận Long Biên, Hà Nội</p>
+                        <p>Email: kinhthanhnhi@gmail.com</p>
+                        <p>Mobile: 0977980144 / 0963556991</p>
+                        <p>Website: www.thanhhnijsc.com</p>
+                    </div>
+                    <span class="social">
+                        <a class="fa-facebook" href="https://www.facebook.com/"></a>
+                        <a class="fa-google-plus" href="https://plus.google.com/"></a>
+                        <a class="fa-linkedin" href="https://www.linkedin.com/"></a>
+                        <a class="fa-youtube" href="https://www.youtube.com/"></a>
+                        <a class="fa-twitter" href="https://twitter.com/"></a>
+                    </span>
+                </div>
+                <div class="col-12 nav-footer">
+                    <div class="title">DANH MỤC SẢN PHẨM</div>
+                    <ul>
+                        <li>
+                            <a href="#">Nhôm kính, kính cường lực</a>
+                        </li>
+                        <li>
+                            <a href="#">Sơn bả</a>
+                        </li>
+                        <li>
+                            <a href="#">Tư vấn thiết kế thi công công trình</a>
+                        </li>
+                        <li>
+                            <a href="#">Cơ khí</a>
+                        </li>
+                        <li>
+                            <a href="#">Sàn gỗ, thạch cao, giấy dán tường, tranh kính</a>
+                        </li>
+                        <li>
+                            <a href="#">Phụ kiện kinh, phụ kiện nội thất</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 page-facebook">
+                    <div id="fb-root"></div>
+                    <script>
+                        (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src =
+                                'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=226666764204714';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="215" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/facebook">Facebook</a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <span class="info">Bản quyền © 2018 thuộc về www.Thanhnhi.com.vn.</span>
+                <a target="_bank" href="http://tatthanh.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!" class="tatthanh">Thiết kế website và SEO - Tất Thành</a>
+                <span class="statistics">
+                    <span class="online">Đang online: 20</span>
+                    <span class="total">Tổng truy cập: 125890</span>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- back top -->
+    <div class="ve-top">
+        <img src="/./css/icons/ve-top.png" alt="">
+    </div>
+
+    <!-- support -->
+    <div class="support">
+        <div class="wrapper-support">
+            <div class="title">HỖ TRỢ TRỰC TUYẾN</div>
+            <div class="img">
+                <div class="framed-image">
+                    <a class="cut" href="#">
+                        <img src="./pic/ht.png">
+                    </a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#" class="phone">024.66.731.114</a>
+                <a href="#" class="email">1888hanoi@gmail.com</a>
+                <a href="#" class="sky">thanhnhijsc1888hanoi</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- top bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-md-7 col-lg-8">
+                        <!-- contact -->
+                        <div class="contact">
+                            <a class="address" href="#" title="Số 4, Ngọc Lâm, Long Biên, Hà Nội">Số 4, Ngọc Lâm, Long Biên, Hà Nội</a>
+                            <a class="phone" href="tel: 024 66 731 114" title="024 66 731 114">tư vấn:
+                                <b>024 66 731 114</b>
+                            </a>
+                            <a class="email" href="#" title="1888hanoi@gmail.com">Email: 1888hanoi@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-5 col-lg-4 text-right">
+                        <!-- social -->
+                        <span class="social">
+                            <a class="fa-facebook" href="https://www.facebook.com/"></a>
+                            <a class="fa-google-plus" href="https://plus.google.com/"></a>
+                            <a class="fa-linkedin" href="https://www.linkedin.com/"></a>
+                            <a class="fa-youtube" href="https://www.youtube.com/"></a>
+                            <a class="fa-twitter" href="https://twitter.com/"></a>
+                        </span>
+                        <!-- Language -->
+                        <span class="language">
+                            <a href="#">
+                                <img src="/./css/icons/vn.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="/./css/icons/en.jpg" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top bar end -->
+        <!-- menu main -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./pic/logo.png" alt="">
+                </a>
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SẢN PHẨM</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Demo</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Demo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DỰ ÁN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--search-->
+                <div class="search">
+                    <div class="form-search">
+                        <input type="text" placeholder="Từ khóa tìm kiếm">
+                        <a href="#" class="fa-search"></a>
+                    </div>
+                </div>
+                <!-- button responsive -->
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <!-- menu main end -->
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main id="main">
+
+        <!-- breadcrumb -->
+        <section class="link-page">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item" href="#">Trang chủ</a>
+                    <a class="breadcrumb-item" href="#">Tin tức</a>
+                </nav>
+            </div>
+        </section>
+        <!-- end breadcrumb -->
+
+        <!-- page -->
+        <section class="page">
+            <div class="container">
+                <div class="row">
+                    <!-- right page -->
+                    <div class="col-12 col-lg-9 right-page-v2">
+                        <div class="row product-detail">
+                            <h2 class="col-12 name-product">Kính dán phản quang</h2>
+
+                            <div class="col-12 info-product">
+                                <div class="images">
+                                    <div class="imageZoomWrapper">
+                                        <div class="img-big">
+                                            <img id="zoom_03" class="mainImage" src="./pic/sp9.png" data-zoom-image="./pic/sp9.png">
+                                        </div>
+                                        <div id="gallery_03" class="galleryImages slick">
+                                            <div class="item">
+                                                <div class="framed-image">
+                                                    <a href="#" class="cut" data-image="./pic/sp9.png" data-zoom-image="./pic/sp9.png">
+                                                        <img src="./pic/sp9.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="framed-image">
+                                                    <a href="#" class="cut" data-image="./pic/sp1.png" data-zoom-image="./pic/sp1.png">
+                                                        <img src="./pic/sp1.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="framed-image">
+                                                    <a href="#" class="cut" data-image="./pic/sp2.png" data-zoom-image="./pic/sp2.png">
+                                                        <img src="./pic/sp2.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="framed-image">
+                                                    <a href="#" class="cut" data-image="./pic/sp3.png" data-zoom-image="./pic/sp3.png">
+                                                        <img src="./pic/sp3.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="framed-image">
+                                                    <a href="#" class="cut" data-image="./pic/sp4.png" data-zoom-image="./pic/sp4.png">
+                                                        <img src="./pic/sp4.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="framed-image">
+                                                    <a href="#" class="cut" data-image="./pic/sp5.png" data-zoom-image="./pic/sp5.png">
+                                                        <img src="./pic/sp5.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div class="code">Mã SP:
+                                        <span>TN102</span>
+                                    </div>
+                                    <div class="price">Giá:
+                                        <span>Liên hệ</span>
+                                    </div>
+                                    <summary>Kính dán phản quang là loại kính phẳng được phủ trên bề mặt 1 lớp phản quang bằng oxit
+                                        kim loại. Lớp phản quang này có tác dụng giảm luồng nhiệt dư thừa và độ chói sáng,
+                                        cân bằng những ánh sáng thông thường và ngăn chặn tia UV gây hại cho con người. Lớp
+                                        phản quang này có tác dụng giảm luồng nhiệt dư thừa và độ chói sáng, cân bằng những
+                                        ánh sáng thông thường và ngăn chặn tia UV</summary>
+                                    <div class="status">
+                                        <b>Tình trạng</b>:
+                                        <span>Còn hàng</span>
+                                    </div>
+                                    <div class="guarantee">
+                                        <b>Bảo hành</b>: 12 tháng</div>
+                                    <div class="share">
+                                        <span>Chia sẻ mạng xã hội</span>
+                                        <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+
+                                            <div class="shareItem">
+                                                <a class="addthis_button_compact"></a>
+                                            </div>
+                                            <div class="shareItem">
+                                                <a class="addthis_button_facebook"></a>
+                                            </div>
+                                            <div class="shareItem">
+                                                <a class="addthis_button_twitter"></a>
+                                            </div>
+                                            <div class="shareItem">
+                                                <a class="addthis_button_zingme"></a>
+                                            </div>
+                                            <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                                            <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                                        </div>
+                                        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+                                        <script>
+                                            (function (d, s, id) {
+                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                if (d.getElementById(id)) return;
+                                                js = d.createElement(s);
+                                                js.id = id;
+                                                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                            }(document, "script", "facebook-jssdk"));
+                                            (function () {
+                                                var po = document.createElement("script");
+                                                po.type = "text/javascript";
+                                                po.async = true;
+                                                po.src = "https://apis.google.com/js/platform.js";
+                                                var s = document.getElementsByTagName("script")[0];
+                                                s.parentNode.insertBefore(po, s);
+                                            })();
+                                        </script>
+                                    </div>
+                                    <div class="btn-05">
+                                        <a href="#">
+                                            <p>
+                                                <strong>liên hệ cửa hàng</strong>
+                                            </p>
+                                            <p>Xem hệ thống cửa hàng</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 content">
+                                <div class="inner">
+                                    <p style="font-size: 18px;color: #1a6db4;">
+                                        <strong>Đặc tính chung:</strong>
+                                    </p>
+                                    <br>
+                                    <p style="color: #666;">
+                                        Kính phản quang là loại kính phẳng được phủ trên bề mặt 1 lớp phản quang bằng oxit kim loại. Lớp phản quang này có tác dụng
+                                        giảm luồng nhiệt dư thừa và độ chói sáng, cân bằng những ánh sáng thông thường và
+                                        ngăn chặn tia UV gây hại cho con người.
+                                        <br> Kính phản quang có khả năng giảm tới gần 21% nhiệt lượng của không khí trong các
+                                        tòa nhà cao tầng. Chính nhờ khả năng giảm bức xạ nhiệt rất tốt nên kính phản quang
+                                        thường được dùng làm cửa sổ, mái kính, vách kính để giảm thiểu sự hấp thụ nhiệt của
+                                        các mảng tường phải tiếp xúc nhiều với ánh nắng mặt trời.
+                                        <br> Kính phản quang vẫn mang đầy đủ tính chất của kính thường phẳng nên ta có thể ghép
+                                        dán thành kính dán an toàn hay tôi cường lực, uốn cong…
+                                        <br>
+                                        <br> Kính Low-e là loại kính đã được sử dụng rộng rãi trên thế giới nhờ những đặc tính
+                                        vượt trội trong việc làm giảm sự hấp thụ nhiệt và quá trình truyền tải nhiệt lượng.
+                                        Loại kính này được phủ lên bề mặt lớp metalic siêu mỏng có khả năng làm chậm sự phát
+                                        tán nhiệt và ngăn ngừa sức nóng của ánh sáng mặt trời, nên nó đặc biệt phù hợp với
+                                        các công trình xây dựng tại khu vực có khí hậu nhiệt đới gió mùa như ở Việt Nam trong
+                                        việc chống nóng vào mùa hè và giữ nhiệt vào mùa đông. Với tính năng hạn chế sự truyền
+                                        nhiệt từ ngoài vào và từ trong ra ngoài, kính low-e sẽ giúp bạn có được một giải
+                                        pháp tối ưu cho việc giữ nhiệt độ trong phòng luôn ổn định theo ý muốn mà không cần
+                                        mất quá nhiều chi phí.
+                                        <br> Ngoài ra, ta còn có thể gia tăng tính năng của kính low-e bằng cách ghép dán thành
+                                        kính dán an toàn, tôi cường lực hay ghép hộp…
+                                        <br> Kính Low-E được sử dụng công nghệ thổi từ tính để phủ một hoặc nhiều lớp kim loại
+                                        hoặc hóa chất đặc biệt lên bề mặt kính. Có thể cản sức nóng mặt
+                                    </p>
+                                    <br>
+                                    <p style="font-size: 18px;color: #1a6db4;">
+                                        <strong>* Đặc điểm kỹ thuật:</strong>
+                                    </p>
+                                    <br>
+                                    <p style="color: #666;">
+                                        – Kính phản quang, kính low-e khi qua xử lý nhiệt màu của kính có thể bị nhạt đi.
+                                        <br> – Màu sắc của kính sẽ thay đổi khi ghép với các loại kính có màu sắc và độ dày khác
+                                        nhau.
+                                        <br> – Không được để rèm, màn che, đồ đạc…chạm trực tiếp kính, cần tạo cho kính có đủ
+                                        khoảng trống cho sự khuếch tán nhiệt .
+                                        <br> – Không để thông gió điều hòa thổi trực tiếp vào bề mặt kính.
+                                        <br> – Không sơn hoặc dán giấy trang trí lên bề mặt kính. – Không dán phim phản quang
+                                        lên bề mặt kính.
+                                    </p>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- comment facebook -->
+                        <div class="comment-fb">
+                            <div class="title">BÌNH LUẬN FACEBOOK</div>
+                            <div class="info">
+                                <div id="fb-root"></div>
+                                <script>
+                                    (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src =
+                                            'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=226666764204714';
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));
+                                </script>
+                                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%"
+                                    data-numposts="2"></div>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="title v2">Sản phầm liên quan</div>
+                            <div class="row group-item slider-other-v2">
+                                <article class="col-12 item-11">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/sp6.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="#">Kính dán phản quang</a>
+                                        </h3>
+                                        <div class="price">
+                                            <span>Giá: </span>
+                                            Liên hệ
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="col-12 item-11">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/sp7.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="#">Kính dán phim màu</a>
+                                        </h3>
+                                        <div class="price">
+                                            <span>Giá: </span>
+                                            Liên hệ
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="col-12 item-11">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/sp8.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="#">Gương màu các loại</a>
+                                        </h3>
+                                        <div class="price">
+                                            <span>Giá: </span>
+                                            Liên hệ
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right page end -->
+                    <!-- left page -->
+                    <div class="col-12 col-lg-3 left-page-v2">
+                        <!-- support right -->
+                        <div class="support-right">
+                            <div class="item">
+                                <div class="header">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/ht2.png">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <strong>Hỗ trợ tư vấn 01</strong>
+                                        <div class="method">
+                                            <a href="#">
+                                                <img src="./css/icons/sky.png" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="./css/icons/zalo.png" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="./css/icons/vb.png" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="./css/icons/fb.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <a class="email" href="#">hungdv@vvm.com.vn</a>
+                                    <a href="#" class="phone">0123.580.9668 / 0981 552 379</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- registration -->
+                        <div class="registration">
+                            <div class="title">ĐĂNG KÝ ĐẶT YÊU CẦU</div>
+                            <div class="inner">
+                                <p>
+                                    <input type="text" placeholder="Họ tên">
+                                </p>
+                                <p>
+                                    <input type="text" placeholder="Điện thoại">
+                                </p>
+                                <p>
+                                    <input type="text" placeholder="Email">
+                                </p>
+                                <p>
+                                    <textarea rows="3" placeholder="Nội dung"></textarea>
+                                </p>
+                                <div class="row group-btn">
+                                    <p class="col-6">
+                                        <a href="#" class="btn-04">GỬI</a>
+                                    </p>
+                                    <p class="col-6">
+                                        <a href="#" class="btn-04">NHẬP LẠI</a>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- product right -->
+                        <div class="product-right">
+                            <div class="title-right">SẢN PHẨM NỔI BẬT</div>
+                            <div class="group-item">
+                                <div class="item-08">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/pr1.png" class="tall">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">
+                                            <a href="#">Gương kính khổ max 2440×3050</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>Gía:</span>
+                                            Liên hệ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-08">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/pr1.png" class="tall">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">
+                                            <a href="#">Gương kính khổ max 2440×3050</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>Gía:</span>
+                                            Liên hệ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-08">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/pr2.png" class="tall">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">
+                                            <a href="#">Gương kính khổ max 2440×3050</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>Gía:</span>
+                                            Liên hệ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-08">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/pr3.png" class="wide">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">
+                                            <a href="#">Gương kính khổ max 2440×3050</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>Gía:</span>
+                                            Liên hệ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-08">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/pr4.png" class="tall">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">
+                                            <a href="#">Gương kính khổ max 2440×3050</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>Gía:</span>
+                                            Liên hệ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-08">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/pr5.png" class="tall">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">
+                                            <a href="#">Gương kính khổ max 2440×3050</a>
+                                        </div>
+                                        <div class="price">
+                                            <span>Gía:</span>
+                                            Liên hệ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- left page end-->
+                </div>
+            </div>
+        </section>
+        <!-- page end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 contact">
+                    <div class="title">CÔNG TY CỔ PHẦN THƯƠNG MẠI, SẢN XUẤT VÀ XÂY DỰNG THÀNH NHI</div>
+                    <div class="info">
+                        <p>Trụ sở chính: Số 06, ngách 51, đường nam Đuống- phường Thượng </p>
+                        <p>Thanh, quận Long Biên, Hà Nội</p>
+                        <p>Email: kinhthanhnhi@gmail.com</p>
+                        <p>Mobile: 0977980144 / 0963556991</p>
+                        <p>Website: www.thanhhnijsc.com</p>
+                    </div>
+                    <span class="social">
+                        <a class="fa-facebook" href="https://www.facebook.com/"></a>
+                        <a class="fa-google-plus" href="https://plus.google.com/"></a>
+                        <a class="fa-linkedin" href="https://www.linkedin.com/"></a>
+                        <a class="fa-youtube" href="https://www.youtube.com/"></a>
+                        <a class="fa-twitter" href="https://twitter.com/"></a>
+                    </span>
+                </div>
+                <div class="col-12 nav-footer">
+                    <div class="title">DANH MỤC SẢN PHẨM</div>
+                    <ul>
+                        <li>
+                            <a href="#">Nhôm kính, kính cường lực</a>
+                        </li>
+                        <li>
+                            <a href="#">Sơn bả</a>
+                        </li>
+                        <li>
+                            <a href="#">Tư vấn thiết kế thi công công trình</a>
+                        </li>
+                        <li>
+                            <a href="#">Cơ khí</a>
+                        </li>
+                        <li>
+                            <a href="#">Sàn gỗ, thạch cao, giấy dán tường, tranh kính</a>
+                        </li>
+                        <li>
+                            <a href="#">Phụ kiện kinh, phụ kiện nội thất</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 page-facebook">
+                    <div id="fb-root"></div>
+                    <script>
+                        (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src =
+                                'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=226666764204714';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="215" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/facebook">Facebook</a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <span class="info">Bản quyền © 2018 thuộc về www.Thanhnhi.com.vn.</span>
+                <a target="_bank" href="http://tatthanh.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!" class="tatthanh">Thiết kế website và SEO - Tất Thành</a>
+                <span class="statistics">
+                    <span class="online">Đang online: 20</span>
+                    <span class="total">Tổng truy cập: 125890</span>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- back top -->
+    <div class="ve-top">
+        <img src="/./css/icons/ve-top.png" alt="">
+    </div>
+
+    <!-- support -->
+    <div class="support">
+        <div class="wrapper-support">
+            <div class="title">HỖ TRỢ TRỰC TUYẾN</div>
+            <div class="img">
+                <div class="framed-image">
+                    <a class="cut" href="#">
+                        <img src="./pic/ht.png">
+                    </a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#" class="phone">024.66.731.114</a>
+                <a href="#" class="email">1888hanoi@gmail.com</a>
+                <a href="#" class="sky">thanhnhijsc1888hanoi</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="vendor/jquery.elevateZoom-3.0.8.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,137 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+#header {
+    position: relative;
+    z-index: 99;
+    .top-bar {
+        background: $cl1a;
+        color: $clf;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        a {
+            color: $clf;
+            text-decoration: none;
+        }
+        .contact {
+            a {
+                margin-right: 25px;
+                b {
+                    font-weight: 700;
+                }
+                &:before {
+                    font-family: $fffa;
+                    margin-right: 3px;
+                }
+                &.address:before {
+                    content: "\f041";
+                }
+                &.phone::before {
+                    content: "\f095";
+                }
+                &.email:before {
+                    content: "\f003";
+                }
+            }
+        }
+    }
+    .navbar {
+        padding: 4.5px 0;
+        .navbar-nav {
+            margin-right: 55px;
+            .nav-item {
+                .nav-link {
+                    padding: 8px 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: $cl6;
+                }
+                &:hover,
+                &.active {
+                    .nav-link {
+                         color: $clf5;
+                    }
+                }
+                &.dropdown {
+                    .dropdown-menu {
+                        border: none;
+                        background: rgba(26, 108, 180, 0.7);
+                        border-radius: unset;
+                        margin: 0;
+                        left: 20px;
+                        min-width: 13em;
+                        padding: 0;
+                        .nav-item {
+                            .nav-link {
+                                color: $clf;
+                                font-weight: 400;
+                                text-transform: unset;
+                                padding: 7px 15px;
+                                &:hover {
+                                    color: $clf5;
+                                }
+                            }
+                        }
+                        >.dropdown .dropdown-menu {
+                            top: 0;
+                            left: 100%;
+                            background: rgba(26, 108, 180, 0.5);
+                        }
+                    }
+                    &:hover {
+                        >.dropdown-menu {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .search {
+        .form-search {
+            position: relative;
+            ::-webkit-input-placeholder {
+                color: rgba(255, 255, 255, 0.6);
+            }
+            ::-moz-placeholder {
+                color: rgba(255, 255, 255, 0.6);
+            }
+            :-ms-input-placeholder {
+                color: rgba(255, 255, 255, 0.6);
+            }
+            :-moz-placeholder {
+                color: rgba(255, 255, 255, 0.6);
+            }
+            input {
+                position: absolute;
+                bottom: -35px;
+                right: 0;
+                background: rgba(245, 0, 0, 0.3);
+                border: none;
+                padding: 4px 10px;
+                border-radius: 17px;
+                outline: none;
+                color: $clf;
+                opacity: 0;
+                transform: translateY(30px) scale(0);
+                transition: $time-a2;
+            }
+            .fa-search {
+                text-decoration: none;
+                &::before {
+                    font-family: $fffa;
+                    content: "\f002";
+                    color: $cl6;
+                }
+            }
+        }
+        &.active .form-search input {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+    }
+}
+        
+    
+        
+            

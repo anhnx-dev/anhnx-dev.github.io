@@ -1,0 +1,157 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+#footer {
+    color: $clf1;
+    background: $cl31;
+    padding-top: 60px;
+    .title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: $fs3;
+        color: $clf;
+        margin-bottom: 10px;
+    }
+    >.container {
+        padding-bottom: 35px;
+        .col-12 {
+            margin-bottom: 20px;
+        }
+    }
+    .contact {
+        flex: 0 0 45%;
+        max-width: 45%;
+        .info {
+            margin-bottom: 5px;
+        }
+    }
+    .nav-footer {
+        flex: 0 0 30%;
+        max-width: 30%;
+        ul {
+            li {
+                a {
+                    color: $clf1;
+                    text-decoration: none;
+                    &::before {
+                        font-family: $fffa;
+                        content: "\f0da";
+                        margin-right: 5px;
+                    }
+                    &:hover {
+                        color: $clf5;
+                    }
+                }
+            }
+        }
+    }
+    .page-facebook {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .copyright {
+        background: $cl22;
+        padding: 8px 0;
+        color: $clf;
+        .tatthanh {
+            color: #5d96d3;
+            margin-left: 20px;
+        }
+        .statistics {
+            float: right;
+            color: #96cce3;
+            span {
+                margin-left: 20px;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    margin-right: 5px;
+                    transform: translateY(2px);
+                }
+                &.online::before {
+                    width: 12px;
+                    height: 16px;
+                    background: url(../css/icons/online.png) no-repeat center;
+                }
+                &.total::before {
+                    width: 16px;
+                    height: 16px;
+                    background: url(../css/icons/tong-onlile.png) no-repeat center;
+                }
+            }
+        }
+    }
+}
+
+.ve-top {
+    position: fixed;
+    z-index: 999;
+    right: 5%;
+    bottom: 15%;
+    cursor: pointer;
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+.support {
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%) rotate(-90deg) translateY(200px);
+    z-index: 9;
+    right: 0;
+    background: $cl1a;
+    color: $clf;
+    padding: 10px 20px;
+    transition: $time-a2;
+    &:hover {
+        transform: translateY(-50%);
+    }
+    .title {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: $fs2;
+        margin-bottom: 25px;
+    }
+    .img {
+        text-align: center;
+        margin-bottom: 20px;
+        .framed-image {
+            height: 102px;
+            width: 102px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid $clf;
+            display: inline-block;
+        }
+    }
+    a {
+        color: $clf;
+        display: block;
+        text-decoration: none;
+        &::before {
+            font-family: $fffa;
+            margin-right: 5px;
+        }
+    }
+    .info {
+        .phone {
+            font-weight: 700;
+            font-size: $fs3;
+            &::before {
+                content: "\f2a0";
+                font-size: $fs1;
+                font-weight: 400;
+                transform: rotate(-35deg);
+                display: inline-block;
+            }
+        }
+        .email:before {
+            content: "\f003";
+        }
+        .sky:before {
+            content: "\f17e";
+        }
+    }
+}

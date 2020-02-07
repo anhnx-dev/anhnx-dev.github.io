@@ -1,0 +1,124 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.btn-01 {
+    text-align: center;
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        color: $clf;
+        display: inline-block;
+        background: $clf5;
+        padding: 8px 33px;
+        &:hover {
+            background: $cl31;
+        }
+    }
+}
+
+.btn-02 {
+    text-decoration: none;
+    font-weight: 700;
+    color: $clf;
+    display: inline-block;
+    background: $clf5;
+    padding: 8px 33px;
+    &:hover {
+        background: $cl31;
+    }
+}
+
+.btn-03 {
+    width: 91px;
+    height: 27px;
+    text-align: center;
+    background: #bababa;
+    line-height: 30px;
+    font-size: 13px;
+    border-left: 3px solid #a4a4a4;
+    a {
+        color: $clf;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    &:hover {
+        background: $clf5;
+        border-color: #c60808;
+    }
+}
+
+.btn-04 {
+    text-align: center;
+    color: $clf;
+    background: #abacab;
+    display: block;
+    line-height: 34px;
+    &:hover {
+        text-decoration: none;
+        color: $clf;
+        background: #f61d1c;
+    }
+}
+
+.btn-05 {
+    text-align: center;
+    line-height: 18px;
+    a {
+        display: block;
+        background: $cl1a;
+        color: $clf;
+        padding: 10.5px 15px;
+        border-radius: 4px;
+        border-bottom: 3px solid #195c96;
+        text-decoration: none;
+        font-size: 13px;
+        strong {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        &:hover {
+            background: $clf5;
+            border-color: #ff0000;
+        }
+    }
+}
+
+.btn-07 {
+    padding-top: 10px;
+    margin-left: -5px;
+    margin-right: -5px;
+    .col-12 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    a {
+        display: block;
+        background: #a3a3a3;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $clf;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            background: $clf5;
+        }
+    }
+}
+
+.btn-08 {
+    padding: 8px 20px;
+    display: inline-block;
+    margin-top: 25px;
+    background: $clf5;
+    color: $clf;
+    text-transform: uppercase;
+    font-size: 13px;
+    &:hover,
+    &:focus {
+        background: $cl31;
+        color: $clf;
+        text-decoration: none;
+    }
+}
