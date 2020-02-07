@@ -1,0 +1,473 @@
+/* Extra small devices (portrait phones, less than 576px) No media query since this is the default in Bootstrap */
+
+
+/*Extra large devices (large desktops full hd, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+
+/*Extra large devices (large desktops no full hd, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 991px) {
+    .header .phone {
+        display: none;
+    }
+    .nav-link {
+        font-size: 14px;
+        padding: .5em 10px;
+    }
+    .species-1 .slider {
+        padding-left: 85px;
+        padding-right: 85px;
+        margin-bottom: 30px;
+    }
+    .species-1 .slick-arrow {
+        left: 100px;
+    }
+    .species-1 .slick-prev {
+        left: initial;
+        right: 100px;
+    }
+    .menu-main {
+        padding-right: 0;
+    }
+    .header .logo img {
+        height: 50px;
+    }
+    .menu-main {
+        margin-top: 7px;
+    }
+    .species-4 .item .img img {
+        height: 180px;
+    }
+    .register .inner {
+        width: 475px;
+        margin: auto;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .footer .copyright .menu-f {
+        display: none;
+    }
+    .page-f {
+        width: 50%;
+    }
+    .footer .logo-f,
+    .footer .contact {
+        width: auto;
+        float: none;
+        padding-left: 0;
+        min-height: initial;
+    }
+    .footer .contact::before {
+        display: none;
+    }
+    .header.no-fixed {
+        height: auto;
+    }
+    .header>.container>.dropdown-menu {
+        top: 70px;
+    }
+    .header>.container>.dropdown-menu.fixed {
+        top: 10px;
+    }
+    .species-7 .slider {
+        margin-bottom: 30px;
+    }
+    .btn-s2 {
+        text-align: center;
+    }
+    .species-8 .item .content,
+    .species-8 .item .slider {
+        float: none !important;
+        width: auto;
+    }
+    #accordion-1 .card .top .name {
+        width: auto;
+        float: none;
+        text-align: center;
+        padding: 15px;
+    }
+    #accordion-1 .card .top .group-tab {
+        margin-left: 0;
+        border-top: 1px solid #e2e2e2;
+        border-left: none;
+    }
+    #accordion-1 .card .top .group-tab a {
+        width: 10%;
+    }
+    #accordion-1 .card .top .group-tab a:nth-child(15n+1) {
+        border-left: 1px solid #e2e2e2;
+    }
+    #accordion-1 .card .top .group-tab a:nth-child(10n+1) {
+        border-left: none;
+    }
+    .species-10 .col-12 {
+        margin-bottom: 30px;
+    }
+    .species-11 .group-item .item:nth-child(2n+1) .img {
+        right: initial;
+    }
+    .species-11 .item:nth-child(2n+1) .content {
+        padding-left: 110px;
+        text-align: left;
+        padding-right: 15px;
+    }
+    .form-contact {
+        background: #f2f3f8;
+    }
+    .form-contact .form {
+        float: none;
+        width: 100%;
+    }
+    .species-1 .content {
+        padding-left: 15px;
+    }
+    .ve-top {
+        right: 0;
+        bottom: 20px;
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+    }
+}
+
+
+/*Small devices (landscape phones, 0px and up)*/
+
+@media (max-width: 767px) {
+    .offset30,
+    .offset45 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .fixed-right {
+        display: none;
+    }
+    .species-1 .slider {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .species-1 .slick-arrow {
+        display: none !important;
+    }
+    .species-1 .content strong {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .species-1 .content h1,
+    .species-1 .content h2,
+    .title-species2 h2 {
+        font-size: 29px;
+    }
+    .title-species2 {
+        overflow: hidden;
+    }
+    .title-species2 img {
+        max-width: 100%;
+    }
+    .btn-s a {
+        line-height: 22px;
+        padding: 7px 15px;
+        width: 100%;
+        -webkit-animation: none;
+        animation: none;
+    }
+    .species-3 .content {
+        width: auto;
+        float: none;
+    }
+    .species-3 {
+        background: #fff !important;
+    }
+    .species-3 .text {
+        height: auto;
+        max-height: 420px;
+    }
+    .species-3 .content h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .form-adv .inner {
+        padding: 15px;
+    }
+    .form-adv .text {
+        padding-top: 0;
+    }
+    .form-adv .text h2 {
+        font-size: 23px;
+    }
+    .form-adv strong {
+        font-size: 18px;
+    }
+    .form-adv .text a {
+        display: none;
+    }
+    .form-adv .form input {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .form-adv .form {
+        padding: 15px 0;
+    }
+    .form-adv .form a {
+        width: 110px;
+    }
+    .species-4 .item {
+        margin-bottom: 30px;
+    }
+    .species-4 .item .img img {
+        height: 240px;
+    }
+    .species-5 .item .img {
+        position: initial;
+        width: auto;
+        margin-bottom: 15px;
+    }
+    .species-5 .item .content {
+        padding-left: 0;
+        text-align: center;
+    }
+    .species-5 .item {
+        padding-bottom: 15px;
+        border-bottom: 1px dashed #e2e2e2;
+        margin-bottom: 20px;
+    }
+    .species-6 .link a {
+        float: none;
+        width: auto;
+        height: auto;
+        line-height: 24px;
+        padding: 0;
+    }
+    .species-6 .link {
+        padding-right: 0;
+    }
+    .register .inner {
+        text-align: center;
+        padding: 15px;
+    }
+    .register .inner .form a {
+        float: none;
+    }
+    .page-f {
+        width: auto;
+        float: none;
+    }
+    .footer .logo-f {
+        text-align: center;
+        padding-right: 0;
+    }
+    .footer .contact {
+        padding-top: 30px;
+    }
+    .footer .contact p {
+        line-height: 24px;
+    }
+    .species-7 .content .text {
+        height: auto;
+        max-height: 380px;
+    }
+    #accordion-1>.a-tab>a {
+        width: 100%;
+        margin: 0;
+    }
+    #accordion-1 .card .top .group-tab a {
+        width: 20%;
+    }
+    #accordion-1 .card .top .group-tab a {
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    #accordion-1 .card .top .group-tab a:nth-child(5n+1) {
+        border-left: none;
+    }
+    .species-11 .item:nth-child(2n+1) .content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .species-5 .item .content {
+        text-align: center !important;
+    }
+    .cochu {
+        display: none;
+    }
+    .thongke-ngay,
+    .thongke-luotxem {
+        font-size: 10px;
+    }
+    #CommonCuoiChiTietTin .apd a {
+        margin-right: 15px;
+    }
+    .other-new strong {
+        margin-bottom: 15px;
+    }
+    .form-contact .form .d input {
+        width: 100%
+    }
+    .section-contact {
+        margin-top: 0;
+    }
+    #maps-contact {
+        margin-bottom: 30px;
+    }
+    .menu-main {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        margin-top: 0 !important;
+        display: none;
+    }
+    .menu-main.active {
+        display: block;
+    }
+    .header .logo img {
+        height: 40px !important;
+    }
+    .menu-main .nav {
+        display: block;
+    }
+    .header {
+        height: 50px;
+        padding: 5px 0;
+        background: #2c388a;
+        border: none;
+        position: fixed !important;
+    }
+    .header .container {
+        position: initial;
+    }
+    .header .phone {
+        display: inline-block;
+        height: 30px;
+        top: 10px !important;
+        right: 80px;
+        line-height: 30px;
+        width: auto;
+        padding: 0 10px;
+    }
+    .header .phone a {
+        font-size: 15px;
+    }
+    .header .phone a img {
+        margin-right: 0;
+        -webkit-transform: scale(0.7) translateY(-3px);
+        transform: scale(0.7) translateY(-3px);
+    }
+    .at-menu {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        margin-top: -15px;
+        background: #151d44;
+        border-radius: 4px;
+    }
+    .at-menu span,
+    .at-menu:after,
+    .at-menu:before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        background: #fff;
+        top: 9px;
+        left: 50%;
+        margin-left: -9px;
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+    .at-menu::after {
+        top: 14px;
+    }
+    .at-menu::before {
+        top: 19px;
+    }
+    .at-menu.active span {
+        top: 50%;
+        margin-top: -2px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .at-menu.active:after {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    .at-menu.active:before {
+        top: 50%;
+        margin-top: -2px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .menu-main .inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .nav-item {
+        background: #2c388a;
+        margin-top: 1px;
+        border-radius: 4px;
+    }
+    .dropdown-menu {
+        position: initial;
+        min-width: 100%;
+        background: initial;
+        float: none;
+        border: none;
+        display: none;
+        background: #f4f4f4;
+        border-radius: 0;
+        padding: 0;
+    }
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+    .nav-link:hover {
+        color: #fff;
+    }
+    .nav-link {
+        display: inline-block;
+    }
+    .dropdown-menu li {
+        padding: 7px 0;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .dropdown-menu li:last-of-type {
+        border: none;
+    }
+    .dropdown-menu li a {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .dropdown::after {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 11px;
+        background: url(.././css/icons/m3.png) no-repeat center;
+        right: 10px;
+        top: 15px;
+    }
+    .dropdown.active::after {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    body {
+        margin-top: 50px;
+    }
+    .register .inner p {
+        text-align: left;
+    }
+}

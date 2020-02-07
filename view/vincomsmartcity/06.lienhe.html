@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- js -->
+    <script type="text/javascript" src="vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/perfect-scrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/tether.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header" id="header">
+        <div class="clear container">
+            <!-- logo -->
+            <div class="logo">
+                <a href=""><img src="./pic/logo.png" alt=""></a>
+            </div>
+            <!-- menu main -->
+            <nav class="menu-main">
+                <div class="inner">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MẶT BẰNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CHÍNH SÁCH BÁN HÀNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- menu main -->
+            <!-- phone -->
+            <div class="phone">
+                <a href="tel:090 498 1981" title="090 498 1981"><img src="./css/icons/phone.png" alt=""> 090 498 1981</a>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!-- section image -->
+    <div class="section-img">
+        <div class="khungAnh">
+            <a class="khungAnhCrop" href="#">
+                <img src="./pic/slider.png">
+            </a>
+        </div>
+    </div>
+    <!-- end section image -->
+
+    <!-- breadcrumb -->
+    <section id="breadcrumb">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <nav class="col-12 breadcrumb">
+                        <a class="breadcrumb-item" href="#">Trang chủ</a>
+                        <a class="breadcrumb-item active" href="#">Giới thiệu</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end breadcrumb -->
+
+    <!-- section contact -->
+    <section class="section-contact">
+        <div class="text-center container">
+            <div class="text">
+                <p>Địa chỉ: Tầng 18, Toà nhà Center Building, Số 1 Nguyễn Huy Tưởng, Phường Thanh Xuân Trung, Quận Thanh Xuân,
+                    Hà Nội, Việt Nam</p>
+                <p>Hotline: <b>0904 981 981</b></p>
+                <p>Giám đốc Sàn: <b>Nguyễn Trọng Minh</b></p>
+            </div>
+            <div id="maps-contact">
+                <!-- maps -->
+                <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+                <script type="text/javascript" src="vendor/google-map/infobox.js"></script>
+                <script type="text/javascript" src="vendor/google-map/GoogleMapInit.js"></script>
+                <script>
+                    initialize(
+                        '21.00757415248039',
+                        '105.80296128988266',
+                        '',
+                        'maps-contact',
+                        ''
+                    );
+                </script>
+            </div>
+        </div>
+        <div class="offset30 form-contact">
+            <div class="clear container">
+                <div class="form">
+                    <strong>FORM LIÊN HỆ</strong>
+                    <p>Vui lòng nhập đầy đủ các trường có dấu *</p>
+                    <input type="text" placeholder="Họ tên (*)">
+                    <input type="text" placeholder="Email của bạn (*)">
+                    <input type="text" placeholder="Số điện thoại (*)">
+                    <input type="text" placeholder="Địa chỉ (*)">
+                    <textarea rows="4" placeholder="Vui lòng nhập nội dung (*)"></textarea>
+                    <div class="d">
+                        <input type="text" placeholder="Nhập mã xác nhận (*)">
+                        <img src="./css/icons/code.png" alt="">
+                        <a href="#" class="reset"><i class="fa fa-undo" aria-hidden="true"></i></a>
+                        <a href="#" class="send">Gửi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section contact -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="clear container">
+            <div class="page-f">
+                <div id="fb-root"></div>
+                <script>
+                    (function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10&appId=226666764204714";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                </script>
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="190" data-small-header="true"
+                    data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                </div>
+            </div>
+            <div class="logo-f"><a href="#"><img src="./pic/logo2.png" alt=""></a></div>
+            <div class="contact">
+                <strong>Địa chỉ dự án</strong>
+                <p>233 -235 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                <p>Điện thoại: 0904.981.981</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="clear container">
+                <span>© Copyright 2017 Vinhomes Smart City. All rights reserved</span>
+                <ul class="menu-f">
+                    <li><a href="#">TRANG CHỦ</a></li>
+                    <li><a href="#">MẶT BẰNG</a></li>
+                    <li><a href="#">CHÍNH SÁCH BÁN HÀNG</a></li>
+                    <li><a href="#">TIN TỨC</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <div class="ve-top">
+        <img src="/./css/icons/ve-top.png" alt="">
+    </div>
+
+    <div class="fixed-right">
+        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i><span>Liên hệ đặt mua</span></a>
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span>facebook</span></a>
+        <a href="tel:090 498 1981" title="090 498 1981"><i class="fa fa-phone" aria-hidden="true"></i><span>0904 981 981</span></a>
+    </div>
+
+
+
+
+</body>
+
+</html>
