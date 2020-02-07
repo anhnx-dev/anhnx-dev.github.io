@@ -1,0 +1,88 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+// .navbar-icon {
+//     display: inline-block;
+//     border: 1px solid $color-04;
+//     border-radius: $radius;
+//     width: 30px;
+//     height: 30px;
+//     position: relative;
+//     span,&:after,&:before {
+//         content: "";
+//         position: absolute;
+//         width: 22px;
+//         height: 2px;
+//         background: $color-03;
+//         top: 0;
+//         left: 50%;
+//         margin-left: -11px;
+//         border-radius: 1px;
+//         transition: $time-a2;
+//     }
+//     span {
+//         top: 50%;
+//         margin-top: -1px;
+//     }
+//     &:before {
+//         top: 6px;
+//     }
+
+//     &:after {
+//         top: 20px;
+//     }
+//     &.active {
+//         span {
+//             transform: scale(0);
+//             opacity: 0;
+//         }
+
+//         &:before {
+//             top: 50%;
+//             margin-top: -1px;
+//             transform: rotate(-45deg);
+//         }
+
+//         &:after {
+//             top: 50%;
+//             margin-top: -1px;
+//             transform: rotate(45deg);
+//         }
+//     }
+// }
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+    z-index: 9;
+    .logo {
+        padding-top: 15px;
+    }
+    .text {
+        display: inline-block;
+        padding-right: 30px;
+        color: $color-01;
+        padding-top: 30px;
+        font-size: $font-s2;
+        b {
+            text-transform: uppercase;
+            font-family: $font-f4;
+        }
+    }
+    .btn-group {
+        float: right;
+        .btn-01:nth-child(2n+2) {
+            background: $color-05;
+            &:hover {
+                background: $color-06;
+            }
+        }
+    }
+}
+        
+    
+        
+            

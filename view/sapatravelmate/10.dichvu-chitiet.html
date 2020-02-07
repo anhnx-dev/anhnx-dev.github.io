@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/./css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="./css/csstt.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <!-- logo -->
+                <div class="col-4 col-md-2 logo">
+                    <a href="#">
+                        <img src="./pic/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-8 col-md-10 text-right function">
+                    <div class="text">
+                        <b>SAPA TRAVEL MATE</b>
+                        <span>chuyên tổ chức tour du lịch Sapa chuyên nghiệp:</span>
+                        <p>
+                            <b>TOUR ĐÔNG - TÂY BẮC - SAPA</b>
+                        </p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="btn-01">
+                            <span class="icon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                            <span class="name">Đặt tour
+                                <br> theo yêu cầu</span>
+                        </a>
+                        <a href="#" class="btn-01">
+                            <span class="icon">
+                                <i class="fa faone" aria-hidden="true"></i>
+                            </span>
+                            <span class="name">Yêu cầu
+                                <br> tư vấn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main>
+        <!-- breadcrumb page -->
+        <section class="breadcrumb-page">
+            <div class="img">
+                <div class="framed-image">
+                    <a class="cut" href="#">
+                        <img src="./pic/slider1.png">
+                    </a>
+                </div>
+            </div>
+            <div class="link-page">
+                <div class="container text-center">
+                    <h1>Vé tàu hỏa</h1>
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="#">Trang chu</a>
+                        <a class="breadcrumb-item" href="#">Dịch vụ</a>
+                        <a class="breadcrumb-item" href="#">Vé tàu hỏa</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- img page end -->
+
+        <!-- search tour -->
+        <section class="search-tour">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <p class="col-12 id-01">TÌM KIẾM TOUR DU LỊCH PHÙ HỢP</p>
+                        <p class="col-12 col-md-4 col-lg-3 id-02">
+                            <select>
+                                <option value="">Điểm khởi hành</option>
+                                <option value="HỒ CHÍ MINH">HỒ CHÍ MINH</option>
+                                <option value="NewYork">NewYork</option>
+                                <option value="TP HỒ CHÍ MINH">TP HỒ CHÍ MINH</option>
+                            </select>
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-03">
+                            <select>
+                                <option value="">Điểm đến</option>
+                                <option value=" Los Angeles"> Los Angeles</option>
+                                <option value="HÀN QUỐC">HÀN QUỐC</option>
+                                <option value="NHẬT BẢN">NHẬT BẢN</option>
+                            </select>
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-04">
+                            <input type="text" placeholder="Ngày khởi hành" class="datepicker2" id="tbBirthDay">
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-05">
+                            <a href="#">
+                                <span>93 tour</span> đang chờ bạn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search tour end -->
+
+        <!-- menu main -->
+        <nav class="navbar navbar-expand-lg navbar-main">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./pic/logo.png" alt="">
+                </a>
+                <!-- button responsive -->
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Khách sạn</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Khách sạn tại Sapa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Khách sạn tại Hà Giang</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Khách sạn tại Lào Cai</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Khách sạn tại Lai Châu</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nhà hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">vé tàu hỏa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">vé bus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">vé máy bay</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- menu main end -->
+
+        <!-- page news -->
+        <section class="page-news page-service-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-9 left-section">
+                        <!-- new detail -->
+                        <div class="new-detail">
+                            <h2 class="title-ditail">Vé tàu hỏa</h2>
+                            <div class="contact-detail">
+                                <div class="time-view">
+                                    <span class="time">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                    <span class="view">
+                                        <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                </div>
+                                <div class="social">
+                                    <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                                        <div class="shareItem">
+                                            <a class="addthis_button_compact"></a>
+                                        </div>
+                                        <div class="shareItem">
+                                            <a class="addthis_button_facebook"></a>
+                                        </div>
+                                        <div class="shareItem">
+                                            <a class="addthis_button_twitter"></a>
+                                        </div>
+                                        <div class="shareItem">
+                                            <a class="addthis_button_zingme"></a>
+                                        </div>
+                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                                        <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                                    </div>
+                                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+                                    <script>
+                                        (function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (d.getElementById(id)) return;
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }(document, "script", "facebook-jssdk"));
+                                        (function () {
+                                            var po = document.createElement("script");
+                                            po.type = "text/javascript";
+                                            po.async = true;
+                                            po.src = "https://apis.google.com/js/platform.js";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(po, s);
+                                        })();
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="noidung TextSize">
+                                <div class="nddes fRobotoB lh22 pb20">
+                                    <div style="color: #666;">
+                                        <p>
+                                            <b>Bạn đang muốn đến Sapa bằng phương tiện tàu hỏa nhưng chưa biết mua vé tàu như
+                                                thế nào? Và làm thế nào để mua được vé tàu rẻ? Dưới đây là những kinh nghiệm
+                                                mà Du lịch Sapa xin chia sẻ để giúp bạn có thể mua được vé tàu thành công
+                                                và giá rẻ.</b>
+                                        </p>
+                                        <br>
+                                        <p>
+                                            <img src="./pic/td3.png" alt="">
+                                        </p>
+                                        <br>
+                                        <p>Vì địa hình chủ yếu là đèo dốc tre leo lên phương tiên đi lại chủ yếu của các du
+                                            khách là bằng tàu hỏa, do đó tuyến tàu luôn khan hiếm vé, du Ga Hà Nội đã chạy
+                                            cả chục đôi tàu một ngày nhưng vẫn không đáp ứng được như cầu đi lại của du khách,</p>
+                                        <br>
+                                        <p>Thành phố Lào Cai không chỉ cuốn hút du khách bởi những bởi vẻ đẹp hoang sơ và thuần
+                                            khiết của núi rừng tây bắc, với nhưng dãy núi hùng vĩ, nhưng thửa ruộng bậc thang
+                                            trải dài và thiên nhiên nơi đây thật tuyệt vời cho một chuyến nghỉ dưỡng cưới
+                                            tuần
+                                        </p>
+                                        <br>
+                                        <p>Hơn thế nữa thành phố lào cai còn tập trung nhiều các khu di tích tâm linh tin ngưỡng
+                                            thu hút rất đông du khách đi lễ cầu lộc cầu tài.. hàng năm</p>
+                                        <br>
+                                        <p> Lên các quầy bán vé tàu tuyến Hà Nội – Lào Cai của Ga Hà Nội thường rất đông, song
+                                            phần lớn khách hàng mua vé đều thất vọng vì chỉ còn vé ngồi cứng, không còn vé
+                                            nằm cho cả chiều đi và chiều về lưới bao che công trình, sở dĩ là vì tuyến tàu
+                                            Hà Nội – Lào Cai – Hà Nội luôn trong tình trạng quá tải, hơn thế nữa tất cả các
+                                            toa giường nằm của các mác tàu SP ( Tàu nhanh ) đều được các công ty du lịch
+                                            đứng lên ký hợp đồng trọn gói. Còn lại một số lượng rất ít các toa công vụ của
+                                            đường sắt có hạng giường nằm nhưng thường được bán hết từ rất sớm, do đó khách
+                                            hàng ra ga mà cũng ko mua được cá loaị vé ứng ý cũng vì</p>
+                                        <br>
+                                        <p>Do vậy tôi xin mạo phép chia sẻ với mọi người một số kinh nghiệm khi đi mua vé tàu
+                                            tuyến Hà Nội – Lào Cai mà luôn được giá vé rẻ mà chất lượng như ý.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- form service -->
+                        <div class="form-service">
+                            <div class="row">
+                                <div class="col-12">
+                                    <strong>ĐẶT DỊCH VỤ</strong>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Họ tên <span>*</span>:</p>
+                                    <input type="text">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Địa chỉ <span>*</span>:</p>
+                                    <input type="text">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Email <span>*</span>:</p>
+                                    <input type="text">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Điện thoại <span>*</span>:</p>
+                                    <input type="text">
+                                </div>
+                                <div class="col-12">
+                                    <p>Nội dung <span>*</span>:</p>
+                                    <textarea rows="6"></textarea>
+                                </div>
+                                <div class="col-12 btn-05">
+                                    <a href="#">ĐẶT DỊCH VỤ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- comment facebook -->
+                        <div class="comment-facebook">
+                            <strong>BÌNH LUẬN FACEBOOK</strong>
+                            <div id="fb-root"></div>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src =
+                                        'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=226666764204714';
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                            </script>
+                            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%"
+                                data-numposts="2"></div>
+                        </div>
+                        <!-- comment -->
+                        <div class="form-comment">
+                            <strong>Bình luận</strong>
+                            <div class="row form">
+                                <p class="col-12 col-md-6">
+                                    <input type="text" placeholder="Họ và tên">
+                                </p>
+                                <p class="col-12 col-md-6">
+                                    <input type="text" placeholder="Email">
+                                </p>
+                                <p class="col-12">
+                                    <textarea rows="6" placeholder="Nội dung"></textarea>
+                                </p>
+                                <p class="col-12">
+                                    <a href="#" class="btn-02">GỬI BÌNH LUẬN</a>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <div class="item">
+                                    <div class="name">Thế Anh
+                                        <span class="email">- Theanh@gmail.com</span>
+                                    </div>
+                                    <div class="content">
+                                        Tôi muốn đặt món ăn thì làm ntn?
+                                    </div>
+                                    <div class="traloi">Trả lời
+                                        <span>1 giờ trước</span>
+                                    </div>
+                                </div>
+                                <div class="item item-qt">
+                                    <div class="name">Sapatravelmate
+                                        <span class="qt">Quản trị viên</span>
+                                    </div>
+                                    <div class="content">
+                                        Chào bạn !
+                                        <br> Nếu bạn có nhu cầu mua sản phẩm, mình khuyên bạn nên "đặt mua, giao tận nơi", điền
+                                        đầy đủ thông tin, nhân viên bên mình sẽ liên lạc cho bạn trong vòng 5 phút và nhân
+                                        viên giao hàng sẽ mang sản phẩm cho bạn trong khoảng thời gian sớm nhất ngay khi
+                                        có hàng và sẽ thanh toán ngay tại
+                                    </div>
+                                    <div class="traloi">Trả lời
+                                        <span>1 giờ trước</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">Nguyễn Lương Tài
+                                        <span class="email">- Luongtai90@gmail.com</span>
+                                    </div>
+                                    <div class="content">
+                                        Với những hoạt động và chương trình khuyến mại, thì cửa hàng có nhiều khuyến mại cho combo gia đình
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 right-section">
+                        <!-- navbar right -->
+                        <div class="block-right navbar-right">
+                            <div class="top">DỊCH VỤ</div>
+                            <ul>
+                                <li class="active">
+                                    <a href="#">Vé tàu hỏa</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vé xe bus</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vé máy bay</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- news right -->
+                        <div class="block-right news-right">
+                            <div class="top">TIN TỨC Nổi bật</div>
+                            <div class="group-item">
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr2.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr1.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr3.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr4.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr5.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                        <div class="block-right news-right">
+                            <div class="top">TIN TỨC liên quan</div>
+                            <div class="group-item">
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr2.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr1.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr3.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr4.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr5.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Ngon ngây ngất với đặc sản trứng nướng Sapa</a>
+                                        <div class="time-view">
+                                            <span class="time">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> 11/7/2016</span>
+                                            <span class="view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i> 256 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- page tour detail -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 id-01">
+                    <div class="info">
+                        <strong class="name-block">SAPA TRAVEL MATE</strong>
+                        <div class="text">
+                            <p>Head office: 05 Muong Hoa street - Sapa Dist - Lao Cai Province</p>
+                            <p>Hotline: +84.912.346.693/986.059.929 - Tel: (+84).203.873.625/626</p>
+                            <p>Fax: (+84).203.873.669</p>
+                            <p>Email: daiphongsapa@yahoo.com/ info@sapatravelmate.com</p>
+                        </div>
+                        <!-- để ảnh sau khách hàng tự nhũng code vào vì đây là dịch vụ mất tiền -->
+                        <div class="tripadvisor">
+                            <img src="./pic/ma.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 id-02">
+                    <div class="link">
+                        <strong class="name-block">tour</strong>
+                        <ul>
+                            <li>
+                                <a href="">Tour Sapa</a>
+                            </li>
+                            <li>
+                                <a href="">Tour Đông Sapa</a>
+                            </li>
+                            <li>
+                                <a href="">Tour Tây Bắc Sapa</a>
+                            </li>
+                            <li>
+                                <a href="">Tour Sapa Trekking</a>
+                            </li>
+                            <li>
+                                <a href="">Tour Sapa Market</a>
+                            </li>
+                            <li>
+                                <a href="">Tour Sapa Advanced</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <strong class="name-block">dịch vụ</strong>
+                        <ul>
+                            <li>
+                                <a href="">Khách sạn</a>
+                            </li>
+                            <li>
+                                <a href="">Nhà hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Vé tàu hỏa</a>
+                            </li>
+                            <li>
+                                <a href="">Vé bus</a>
+                            </li>
+                            <li>
+                                <a href="">Vé máy bay</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 id-03">
+                    <div class="page-facebook">
+                        <div id="fb-root"></div>
+                        <script>
+                            (function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src =
+                                    'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=226666764204714';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="200" data-small-header="false"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/facebook">Facebook</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 info">
+                        <span>Copyright © 2017 SapaTravelMate.com.vn. </span>
+                        <a target="_bank" href="http://tatthanh.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!" class="tatthanh">Thiết kế website và SEO - Tất Thành</a>
+                    </div>
+                    <div class="col-12 col-md-6 statistics">
+                        <span class="online">
+                            <img src="./css/icons/online.png" alt=""> Đang online: 20
+                        </span>
+                        <span class="total-online">
+                            <img src="./css/icons/tong-onlile.png" alt=""> Tổng truy cập: 125890
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <div class="ve-top">
+        <img src="/./css/icons/ve-top.png" alt="">
+    </div>
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/date-vi-VN.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

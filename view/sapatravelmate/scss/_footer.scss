@@ -1,0 +1,58 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+#footer {
+    background: $color-09;
+    color: $color-14;
+    line-height: $line-02;
+    font-size: $font-s1 - 1px;
+    .name-block {
+        color: $color-01;
+        font-family: $font-f4;
+        text-transform: uppercase;
+        font-size: $font-s2;
+        display: block;
+        margin-bottom: 10px;
+    }
+    >.container {
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+    .link {
+        width: 50%;
+        float: left;
+        ul a {
+            color: $color-14;
+            &:hover {
+                color: $color-06;
+            }
+        }
+    }
+    .id-01 {
+        flex: 0 0 35.333333%;
+        max-width: 35.333333%;
+    }
+    .id-02 {
+        flex: 0 0 31.333333%;
+        max-width: 31.333333%;
+    }
+    .tripadvisor {
+        margin-top: 20px;
+    }
+    .copyright {
+        background: $color-10;
+        color: $color-05;
+        padding: 10px 0;
+        a {
+            color: $color-05;
+        }
+        .statistics {
+            span {
+                margin-right: 15px;
+                img {
+                    margin-right: 4px;
+                    transform: translateY(-3px);
+                }
+            }
+        }
+    }
+}

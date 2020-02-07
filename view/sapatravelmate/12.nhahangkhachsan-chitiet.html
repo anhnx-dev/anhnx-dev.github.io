@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/./css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="./css/csstt.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <!-- logo -->
+                <div class="col-4 col-md-2 logo">
+                    <a href="#">
+                        <img src="./pic/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-8 col-md-10 text-right function">
+                    <div class="text">
+                        <b>SAPA TRAVEL MATE</b>
+                        <span>chuyên tổ chức tour du lịch Sapa chuyên nghiệp:</span>
+                        <p>
+                            <b>TOUR ĐÔNG - TÂY BẮC - SAPA</b>
+                        </p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="btn-01">
+                            <span class="icon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                            <span class="name">Đặt tour
+                                <br> theo yêu cầu</span>
+                        </a>
+                        <a href="#" class="btn-01">
+                            <span class="icon">
+                                <i class="fa faone" aria-hidden="true"></i>
+                            </span>
+                            <span class="name">Yêu cầu
+                                <br> tư vấn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main>
+        <!-- breadcrumb page -->
+        <section class="breadcrumb-page">
+            <div class="img">
+                <div class="framed-image">
+                    <a class="cut" href="#">
+                        <img src="./pic/slider1.png">
+                    </a>
+                </div>
+            </div>
+            <div class="link-page">
+                <div class="container text-center">
+                    <h1>KHÁCH SẠN</h1>
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="#">Trang chu</a>
+                        <a class="breadcrumb-item" href="#">Khách sạn</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- img page end -->
+
+        <!-- search tour -->
+        <section class="search-tour">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <p class="col-12 id-01">TÌM KIẾM TOUR DU LỊCH PHÙ HỢP</p>
+                        <p class="col-12 col-md-4 col-lg-3 id-02">
+                            <select>
+                                <option value="">Điểm khởi hành</option>
+                                <option value="HỒ CHÍ MINH">HỒ CHÍ MINH</option>
+                                <option value="NewYork">NewYork</option>
+                                <option value="TP HỒ CHÍ MINH">TP HỒ CHÍ MINH</option>
+                            </select>
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-03">
+                            <select>
+                                <option value="">Điểm đến</option>
+                                <option value=" Los Angeles"> Los Angeles</option>
+                                <option value="HÀN QUỐC">HÀN QUỐC</option>
+                                <option value="NHẬT BẢN">NHẬT BẢN</option>
+                            </select>
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-04">
+                            <input type="text" placeholder="Ngày khởi hành" class="datepicker2" id="tbBirthDay">
+                        </p>
+                        <p class="col-12 col-md-4 col-lg-3 id-05">
+                            <a href="#">
+                                <span>93 tour</span> đang chờ bạn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search tour end -->
+
+        <!-- menu main -->
+        <nav class="navbar navbar-expand-lg navbar-main">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./pic/logo.png" alt="">
+                </a>
+                <!-- button responsive -->
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Khách sạn</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Khách sạn tại Sapa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Khách sạn tại Hà Giang</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Khách sạn tại Lào Cai</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Khách sạn tại Lai Châu</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nhà hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">vé tàu hỏa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">vé bus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">vé máy bay</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- menu main end -->
+
+        <!-- page tour detail -->
+        <section class="page-tour-detail page-hotel-detail">
+            <div class="container header">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-7 img">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/td1.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 info">
+                        <h2>Sapa Sun Hotel</h2>
+                        <summary>Du lịch Sapa Hàm Rồng - Lao Chải Tả Van 1 Ngày du khách sẽ cảm nhận được phong cảnh thiên nhiên của
+                            SaPa kết hợp với sức sáng tạo của con người cùng với địa hình của núi đồi, màu xanh của rừng,
+                            như bức tranh có sự sắp xếp theo một bố cục hài hoà tạo nên một vùng có nhiều cảnh sắc thơ mộng
+                            hấp dẫn.</summary>
+                        <div class="social-detail">
+                            <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                                <div class="shareItem">
+                                    <a class="addthis_button_compact"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_facebook"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_twitter"></a>
+                                </div>
+                                <div class="shareItem">
+                                    <a class="addthis_button_zingme"></a>
+                                </div>
+                                <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                                <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                            </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, "script", "facebook-jssdk"));
+                                (function () {
+                                    var po = document.createElement("script");
+                                    po.type = "text/javascript";
+                                    po.async = true;
+                                    po.src = "https://apis.google.com/js/platform.js";
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(po, s);
+                                })();
+                            </script>
+                        </div>
+                        <div class="detail">
+                            <p>
+                                <span>
+                                    <i class="fa fa-tags" aria-hidden="true"></i> Giá</span>
+                                <span>
+                                    <span class="price-02">2.000.000đ</span>
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ</span>
+                                <span>5, Alley Hung Ho, Sapa Town, Lao Cai</span>
+                            </p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-phone" aria-hidden="true"></i> Điện thoại</span>
+                                <span>
+                                    <a href="tel: 0944 747 444" title="0944 747 444">0944 747 444</a>
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>Email</span>
+                                <span>info@sapasunhotel.com</span>
+                            </p>
+                        </div>
+                        <a href="#" class="btn-02">ĐẶT DỊCH VỤ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container body">
+                <div class="row">
+                    <div class="col-12 col-lg-9 left-section">
+                        <!-- info detail -->
+                        <div class="accordion info-detail">
+                            <div class="header">
+                                <a class="active" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">Giới thiệu</a>
+                                <a class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">Hình ảnh</a>
+                                <a class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">Bản đồ chỉ đường</a>
+                                <a class="collapsed" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">Đặt dịch vụ</a>
+                            </div>
+                            <div class="body" id="accordion" role="tablist">
+                                <div class="card">
+                                    <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading-01" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="inner tongquan">
+                                                <p>Quý khách tập trung tại điểm hẹn, khởi động bằng một cuộc leo núi Lao Chải
+                                                    Tả Vanlên đỉnh Hàm Rồng, từ đây, du khách có thể ngắm nhìn Sapa từ trên
+                                                    cao. Khu du lịch Hàm Rồng gồm có: Vườn Lan 1-2, vườn Lê, vườn Táo Mèo,
+                                                    Vườn hoa Trung Tâm, Hòn Đá Gãy, Cổng Trời, Đầu Rồng, Hòn Cá Sấu, Khu
+                                                    Thiên Thách Lâm, Hòn Phật Bà, Sân Mây, tháp truyền hình... Khi trở xuống,
+                                                    Quý khách sẽ được tham gia một chương trình biểu diễn ca múa nhạc của
+                                                    các dân tộc miền núi vô cùng đặc sắc. Trưa: Dùng bữa trưa tại khách sạn.</p>
+                                                <p>Chiều: tham quan Bản Lao Chải Tả Van – tại đây Quý khách sẽ có cơ hội tìm
+                                                    hiểu về đời sống cộng đồng của các dân tộc thiểu số để hiểu sâu sắc hơn
+                                                    về những nét đặc trưng văn hoá cổ truyền của người dân nơi đây. Với những
+                                                    Hướng dẫn viên đầy kinh nghiệm và nhiệt tình Quý khách sẽ dễ dàng vượt
+                                                    qua rào cản ngôn ngữ để giao lưu cùng người dân hồn hậu và mến khách.
+                                                    Trở về điểm hẹn, chia tay và hẹn gặp lại Qúy khách trong những chương
+                                                    trình du lịch Sapa tiếp theo.
+                                                </p>
+                                                <br>
+                                                <p>
+                                                    <img src="./pic/td2.png" alt="">
+                                                </p>
+                                                <br>
+                                                <p>Quý khách tập trung tại điểm hẹn, khởi động bằng một cuộc leo núi Lao Chải
+                                                    Tả Vanlên đỉnh Hàm Rồng, từ đây, du khách có thể ngắm nhìn Sapa từ trên
+                                                    cao. Khu du lịch Hàm Rồng gồm có: Vườn Lan 1-2, vườn Lê, vườn Táo Mèo,
+                                                    Vườn hoa Trung Tâm, Hòn Đá Gãy, Cổng Trời, Đầu Rồng, Hòn Cá Sấu, Khu
+                                                    Thiên Thách Lâm, Hòn Phật Bà, Sân Mây, tháp truyền hình... Khi trở xuống,
+                                                    Quý khách sẽ được tham gia một chương trình biểu diễn ca múa nhạc của
+                                                    các dân tộc miền núi vô cùng đặc sắc. Trưa: Dùng bữa trưa tại khách sạn.</p>
+                                                <p>Chiều: tham quan Bản Lao Chải Tả Van – tại đây Quý khách sẽ có cơ hội tìm
+                                                    hiểu về đời sống cộng đồng của các dân tộc thiểu số để hiểu sâu sắc hơn
+                                                    về những nét đặc trưng văn hoá cổ truyền của người dân nơi đây. Với những
+                                                    Hướng dẫn viên đầy kinh nghiệm và nhiệt tình Quý khách sẽ dễ dàng vượt
+                                                    qua rào cản ngôn ngữ để giao lưu cùng người dân hồn hậu và mến khách.
+                                                    Trở về điểm hẹn, chia tay và hẹn gặp lại Qúy khách trong những chương
+                                                    trình du lịch Sapa tiếp theo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading-02" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="inner images">
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i1.png">
+                                                            <img src="./pic/i1.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i2.png">
+                                                            <img src="./pic/i2.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i3.png">
+                                                            <img src="./pic/i3.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i4.png">
+                                                            <img src="./pic/i4.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i5.png">
+                                                            <img src="./pic/i5.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i1.png">
+                                                            <img src="./pic/i1.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i2.png">
+                                                            <img src="./pic/i2.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i3.png">
+                                                            <img src="./pic/i3.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i4.png">
+                                                            <img src="./pic/i4.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i5.png">
+                                                            <img src="./pic/i5.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i1.png">
+                                                            <img src="./pic/i1.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i2.png">
+                                                            <img src="./pic/i2.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i3.png">
+                                                            <img src="./pic/i3.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i4.png">
+                                                            <img src="./pic/i4.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i5.png">
+                                                            <img src="./pic/i5.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i1.png">
+                                                            <img src="./pic/i1.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i2.png">
+                                                            <img src="./pic/i2.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i3.png">
+                                                            <img src="./pic/i3.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i4.png">
+                                                            <img src="./pic/i4.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="img">
+                                                    <div class="framed-image">
+                                                        <a class="cut" data-fancybox="gallery" data-caption="name image" href="./pic/i5.png">
+                                                            <img src="./pic/i5.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading-03" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="inner map">
+                                                <div id="maps-01"></div>
+                                                <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+                                                <script type="text/javascript" src="vendor/google-map/infobox.js"></script>
+                                                <script type="text/javascript" src="vendor/google-map/GoogleMapInit.js"></script>
+                                                <!-- maps -->
+                                                <script>
+                                                    initialize(
+                                                        '21.00757415248039',
+                                                        '105.80296128988266',
+                                                        '',
+                                                        'maps-01',
+                                                        ''
+                                                    );
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading-04" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="inner form-register tour">
+                                                <div class="row form">
+                                                    <div class="col-12">
+                                                        <strong>THÔNG TIN KHÁCH HÀNG</strong>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Họ tên
+                                                            <span>*</span>:</p>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Giới tính
+                                                            <span>*</span>:</p>
+                                                        <select>
+                                                            <option>Nam</option>
+                                                            <option>Nữ</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Ngày sinh
+                                                            <span>*</span>:</p>
+                                                        <input type="text" placeholder="ngày / tháng/ năm" class="datepicker2">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Quốc tịch
+                                                            <span>*</span>:</p>
+                                                        <select>
+                                                            <option>Việt Nam</option>
+                                                            <option>Nhật</option>
+                                                            <option>Hàn Quốc</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Địa chỉ:</p>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Điện thoại
+                                                            <span>*</span>:</p>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Email
+                                                            <span>*</span>:</p>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Fax:</p>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <strong>THÔNG TIN ĐẶT TOUR</strong>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <p>Số lượng người lớn (> 12t)
+                                                            <span>*</span>:</p>
+                                                        <p class="number">
+                                                            <input id="tbNum" type="text" value="1">
+                                                            <a class="tang_sl"></a>
+                                                            <a class="giam_sl"></a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <p>Số lượng trẻ em (2 - 12t)
+                                                            <span>*</span>:</p>
+                                                        <p class="number">
+                                                            <input id="tbNum" type="text" value="1">
+                                                            <a class="tang_sl"></a>
+                                                            <a class="giam_sl"></a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <p>Số lượng trẻ em (
+                                                            < 2t) <span>*</span>:</p>
+                                                        <p class="number">
+                                                            <input id="tbNum" type="text" value="1">
+                                                            <a class="tang_sl"></a>
+                                                            <a class="giam_sl"></a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Ngày đi
+                                                            <span>*</span>:</p>
+                                                        <input type="text" placeholder="ngày / tháng/ năm" class="datepicker2">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p>Ngày về
+                                                            <span>*</span>:</p>
+                                                        <input type="text" placeholder="ngày / tháng/ năm" class="datepicker2">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <span>Thành tiền:</span>
+                                                        <span class="price">2.500.000 Đ</span>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p>Yêu cầu khác:</p>
+                                                        <textarea rows="6"></textarea>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <strong>HÌNH THỨC THANH TOÁN</strong>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <select>
+                                                            <option>Chuyển khoản</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            <b>Thông tin tài khoản:</b>
+                                                        </p>
+                                                        <p>
+                                                            <i>- Vietcombank chi nhánh Ba Đình: 0611001779562, chủ tk: Nguyễn
+                                                                Văn A</i>
+                                                        </p>
+                                                        <p>
+                                                            <i>- Agribank chi nhánh Ba Đình: 0611001779562, chủ tk: Nguyễn Văn
+                                                                A
+                                                            </i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 btn-05">
+                                                        <a href="#">Đặt dịch vụ</a>
+                                                        <a href="#">NHẬP LẠI</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- comment facebook -->
+                        <div class="comment-facebook">
+                            <strong>BÌNH LUẬN FACEBOOK</strong>
+                            <div id="fb-root"></div>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src =
+                                        'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=226666764204714';
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                            </script>
+                            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%"
+                                data-numposts="2"></div>
+                        </div>
+                        <!-- comment -->
+                        <div class="form-comment">
+                            <strong>Bình luận</strong>
+                            <div class="row form">
+                                <p class="col-12 col-md-6">
+                                    <input type="text" placeholder="Họ và tên">
+                                </p>
+                                <p class="col-12 col-md-6">
+                                    <input type="text" placeholder="Email">
+                                </p>
+                                <p class="col-12">
+                                    <textarea rows="6" placeholder="Nội dung"></textarea>
+                                </p>
+                                <p class="col-12">
+                                    <a href="#" class="btn-02">GỬI BÌNH LUẬN</a>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <div class="item">
+                                    <div class="name">Thế Anh
+                                        <span class="email">- Theanh@gmail.com</span>
+                                    </div>
+                                    <div class="content">
+                                        Tôi muốn đặt món ăn thì làm ntn?
+                                    </div>
+                                    <div class="traloi">Trả lời
+                                        <span>1 giờ trước</span>
+                                    </div>
+                                </div>
+                                <div class="item item-qt">
+                                    <div class="name">Sapatravelmate
+                                        <span class="qt">Quản trị viên</span>
+                                    </div>
+                                    <div class="content">
+                                        Chào bạn !
+                                        <br> Nếu bạn có nhu cầu mua sản phẩm, mình khuyên bạn nên "đặt mua, giao tận nơi", điền
+                                        đầy đủ thông tin, nhân viên bên mình sẽ liên lạc cho bạn trong vòng 5 phút và nhân
+                                        viên giao hàng sẽ mang sản phẩm cho bạn trong khoảng thời gian sớm nhất ngay khi
+                                        có hàng và sẽ thanh toán ngay tại
+                                    </div>
+                                    <div class="traloi">Trả lời
+                                        <span>1 giờ trước</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">Nguyễn Lương Tài
+                                        <span class="email">- Luongtai90@gmail.com</span>
+                                    </div>
+                                    <div class="content">
+                                        Với những hoạt động và chương trình khuyến mại, thì cửa hàng có nhiều khuyến mại cho combo gia đình
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- other tour -->
+                        <div class="other-tour">
+                            <strong>TOUR LIÊN QUAN</strong>
+                            <div class="row group-item">
+                                <article class="col-12 col-md-6 col-lg-4 item-03">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#" tabindex="0">
+                                            <img src="./pic/h1.png" class="wide">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h2>
+                                            <a href="#" tabindex="0">Sapa Sun Hotel</a>
+                                        </h2>
+                                        <p class="address">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i> Số 5, ngõ Hùng Hồ, Sapa, Lào Cai</p>
+                                        <p class="price">
+                                            <i class="fa fa-tags" aria-hidden="true"></i> Giá từ:
+                                            <span>800.000 đ</span>
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 item-03">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#" tabindex="0">
+                                            <img src="./pic/h2.png" class="wide">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h2>
+                                            <a href="#" tabindex="0">Sapa Sun Hotel</a>
+                                        </h2>
+                                        <p class="address">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i> Số 5, ngõ Hùng Hồ, Sapa, Lào Cai</p>
+                                        <p class="price">
+                                            <i class="fa fa-tags" aria-hidden="true"></i> Giá từ:
+                                            <span>800.000 đ</span>
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 item-03">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#" tabindex="0">
+                                            <img src="./pic/h3.png" class="wide">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <h2>
+                                            <a href="#" tabindex="0">Sapa Sun Hotel</a>
+                                        </h2>
+                                        <p class="address">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i> Số 5, ngõ Hùng Hồ, Sapa, Lào Cai</p>
+                                        <p class="price">
+                                            <i class="fa fa-tags" aria-hidden="true"></i> Giá từ:
+                                            <span>800.000 đ</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 right-section">
+                        <!-- navbar right -->
+                        <div class="block-right navbar-right">
+                            <div class="top">DANH MỤC KHÁCH SẠN</div>
+                            <ul>
+                                <li class="active">
+                                    <a href="#">Khách sạn tại Sapa</a>
+                                </li>
+                                <li>
+                                    <a href="#">Khách sạn tại Lào Cai</a>
+                                </li>
+                                <li>
+                                    <a href="#">Khách sạn tại Hà Giang</a>
+                                </li>
+                                <li>
+                                    <a href="#">Khách sạn tại Điện Biên</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- tour right -->
+                        <div class="block-right tour-right">
+                            <div class="top">TOUR BÁN CHẠY</div>
+                            <div class="group-item">
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr1.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Du Lịch Sapa: Cát Cát - Hàm Rồng 1 Ngày</a>
+                                        <div class="prive">Giá từ:
+                                            <span>2.500.000đ</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr2.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Du Lịch Sapa: Cát Cát - Hàm Rồng 1 Ngày</a>
+                                        <div class="prive">Giá từ:
+                                            <span>2.500.000đ</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr3.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Du Lịch Sapa: Cát Cát - Hàm Rồng 1 Ngày</a>
+                                        <div class="prive">Giá từ:
+                                            <span>2.500.000đ</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr4.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Du Lịch Sapa: Cát Cát - Hàm Rồng 1 Ngày</a>
+                                        <div class="prive">Giá từ:
+                                            <span>2.500.000đ</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item-07">
+                                    <div class="framed-image">
+                                        <a class="cut" href="#">
+                                            <img src="./pic/bcr5.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#">Du Lịch Sapa: Cát Cát - Hàm Rồng 1 Ngày</a>
+                                        <div class="prive">Giá từ:
+                                            <span>2.500.000đ</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- page tour detail -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 id-01">
+                    <div class="info">
+                        <strong class="name-block">SAPA TRAVEL MATE</strong>
+                        <div class="text">
+                            <p>Head office: 05 Muong Hoa street - Sapa Dist - Lao Cai Province</p>
+                            <p>Hotline: +84.912.346.693/986.059.929 - Tel: (+84).203.873.625/626</p>
+                            <p>Fax: (+84).203.873.669</p>
+                            <p>Email: daiphongsapa@yahoo.com/ info@sapatravelmate.com</p>
+                        </div>
+                        <!-- để ảnh sau khách hàng tự nhũng code vào vì đây là dịch vụ mất tiền -->
+                        <div class="tripadvisor">
+                            <img src="./pic/ma.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 id-02">
+                    <div class="link">
+                        <strong class="name-block">tour</strong>
+                        <ul>
+                            <li>
+                                <a href="">Tour Sapa</a>
+                            </li>
+                            <li>
+                                <a href="">Tour Đông Sapa</a>
+                            </li>
+                            <li>
+                                <a href="">Tour Tây Bắc Sapa</a>
+                            </li>
+                            <li>
+                                <a href="">Tour Sapa Trekking</a>
+                            </li>
+                            <li>
+                                <a href="">Tour Sapa Market</a>
+                            </li>
+                            <li>
+                                <a href="">Tour Sapa Advanced</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <strong class="name-block">dịch vụ</strong>
+                        <ul>
+                            <li>
+                                <a href="">Khách sạn</a>
+                            </li>
+                            <li>
+                                <a href="">Nhà hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Vé tàu hỏa</a>
+                            </li>
+                            <li>
+                                <a href="">Vé bus</a>
+                            </li>
+                            <li>
+                                <a href="">Vé máy bay</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 id-03">
+                    <div class="page-facebook">
+                        <div id="fb-root"></div>
+                        <script>
+                            (function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src =
+                                    'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=226666764204714';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="200" data-small-header="false"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/facebook">Facebook</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 info">
+                        <span>Copyright © 2017 SapaTravelMate.com.vn. </span>
+                        <a target="_bank" href="http://tatthanh.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!" class="tatthanh">Thiết kế website và SEO - Tất Thành</a>
+                    </div>
+                    <div class="col-12 col-md-6 statistics">
+                        <span class="online">
+                            <img src="./css/icons/online.png" alt=""> Đang online: 20
+                        </span>
+                        <span class="total-online">
+                            <img src="./css/icons/tong-onlile.png" alt=""> Tổng truy cập: 125890
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <div class="ve-top">
+        <img src="/./css/icons/ve-top.png" alt="">
+    </div>
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/date-vi-VN.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

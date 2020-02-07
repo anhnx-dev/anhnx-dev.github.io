@@ -1,0 +1,194 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.btn-01 {
+    width: 90px;
+    height: 110px;
+    text-align: center;
+    padding: 12px 5px;
+    font-size: 13px;
+    color: $color-01 !important;
+    background: $color-06;
+    margin-left: 10px;
+    border-radius: 0 0 3px 3px;
+    line-height: 18px;
+    .icon {
+        display: block;
+        width: 36px;
+        height: 36px;
+        border: 1px solid $color-01;
+        border-radius: 50%;
+        font-size: 16px;
+        line-height: 33px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 10px;
+    }
+    &:hover {
+        background: $color-05;
+    }
+}
+
+.btn-03 {
+    border: 1px solid $color-01;
+    line-height: 36px;
+    height: 36px;
+    min-width: 130px;
+    text-decoration: none;
+    color: $color-01;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #2098D1;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    &:hover,
+    &:focus {
+        color: $color-01;
+        border: none;
+        &::before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        }
+    }
+}
+
+.btn-04 {
+    width: 40px;
+    height: 100%;
+    min-height: 40px;
+    background: $color-03 url(.././css/icons/m3.png) no-repeat center;
+    &:hover {
+        background: $color-06 url(.././css/icons/m3.png) no-repeat center;
+    }
+}
+
+.btn-02 {
+    padding: 8px 33px;
+    background: $color-09;
+    color: $color-01;
+    font-family: $font-f4;
+    &:hover {
+        color: $color-01;
+        background: $color-06;
+    }
+}
+
+.btn-05 {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    a {
+        padding: 8px 15px;
+        min-width: 155px;
+        font-family: $font-f4;
+        font-size: $font-s2;
+        color: $color-01;
+        background: #909090;
+        margin: 0 8px;
+        display: inline-block;
+        text-transform: uppercase;
+        &:hover,
+        &:focus {
+            color: $color-01;
+            background: $color-09;
+        }
+    }
+}
+
+.btn-06 {
+    text-align: center;
+    display: inline-block;
+    width: 140px;
+    border: 1px solid $color-19;
+    line-height: 38px;
+    color: #888;
+    &:hover {
+        background: $color-05;
+        border-color: $color-05;
+        color: $color-01;
+    }
+}
+
+.btn-07 {
+    padding-top: 10px;
+    margin-left: -5px;
+    margin-right: -5px;
+    .col-12 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    a {
+        display: block;
+        background: #a3a3a3;
+        line-height: 40px;
+        text-align: center;
+        font-family: $font-f4;
+        text-transform: uppercase;
+        color: $color-01;
+        &:hover,
+        &:focus {
+            background: $color-09;
+            color: $color-01;
+        }
+    }
+}
+
+.btn-08 {
+    padding: 8px 20px;
+    display: inline-block;
+    margin-top: 25px;
+    background: $color-09;
+    color: $color-01;
+    text-transform: uppercase;
+    font-size: 13px;
+    &:hover,
+    &:focus {
+        background: $color-06;
+        color: $color-01;
+    }
+}
+
+.btn-11 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: $font-s3;
+    background: $color-05;
+    color: $color-01;
+    padding: 8px 25px;
+    display: block;
+    text-align: center;
+    &:hover {
+        background: $color-06;
+        color: $color-01;
+    }
+}
