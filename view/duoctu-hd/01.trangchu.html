@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/tether.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+    <script type="text/javascript" src="vendor/google-map/infobox.js"></script>
+    <script type="text/javascript" src="vendor/google-map/GoogleMapInit.js"></script>
+    <script type="text/javascript" src="js/addthis_widget.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="vendor/perfect-scrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/jsdotdotdot/jquery.dotdotdot.min.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!--header-->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <!--logo-->
+                <div class="logo">
+                    <div class="inner">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop0" href="#">
+                                <img src="./pic/logo.png">
+                            </a>
+                        </div>
+                        <h1>trường cao đẳng dược trung ương hải dương</h1>
+                    </div>
+                </div>
+                <!--end logo-->
+                <!--menu and top bar-->
+                <div class="menu-topbar">
+                    <div class="inner">
+                        <!--top bar-->
+                        <div class="topbar">
+                            <span class="hotline-t"><i class="fa fa-phone" aria-hidden="true"></i>Hotline: <b>0320.3.890.944 - 0320.3.890.486</b></span>
+                            <span class="email-t"><i class="fa fa-envelope" aria-hidden="true"></i>Email: caodangduoctwhd@moet.edu.vn</span>
+                            <!--search-->
+                            <div class="form-search">
+                                <input type="text" placeholder="Từ khóa tìm kiếm">
+                                <a href="#" class="fa fa-search" aria-hidden="true"></a>
+                            </div>
+                            <!--end search-->
+                        </div>
+                        <!--end top bar-->
+                        <!--menu main-->
+                        <nav class="navbar navbar-toggleable-md navbar-light menu-main">
+                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <b></b>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">quản lý điểm thi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">ElearningHCCP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">giới thiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">đơn vị chứ năng</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">khoa & bộ môn</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">tuyển trinh</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle">Đào tạo</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">Đại học chính quy</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Đại học liên thông từ trung cấp</a>
+                                            </li>
+                                            <li class="dropdown-item dropdown">
+                                                <a class="dropdown-toggle">Đại học liên thông từ cao đẳng</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Thông báo</a></li>
+                                                    <li><a class="dropdown-item" href="#">Lịch thi</a></li>
+                                                    <li><a class="dropdown-item" href="#">Lịch học</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Đại học văn bằng 2</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Hệ cao đẳng</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Hệ đào tạo chất lượng cao</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!--end menu main-->
+                    </div>
+                </div>
+                <!--end menu and top bar-->
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+
+    <!--slider top-->
+    <section class="slider-top">
+        <div class="inner">
+            <div class="item">
+                <div class="inner-item">
+                    <div class="img">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="inner-cs">
+                                        <h3 class="title">
+                                            <a href="#">trường cao đẳng dược trung ương hải dương</a>
+                                        </h3>
+                                        <div class="summary">
+                                            Trường Cao đẳng Dược Trung ương - Hải Dương là cơ sở đào tạo công lập, có sứ mạng tiên phong trong việc đào tạo đội ngũ Cán bộ Dược trình độ Cao đẳng và các bậc thấp hơn có uy tín, chất lượng cho ngành Y tế Việt Nam kdsfnsdk kdsjfksd ksdhfksd odhfn ksf nkdsf ksfn ksvn ksvn sv ksvn ksv knsvolam
+                                            <a href="#" class="btn-xts">Xem thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner-item">
+                    <div class="img">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="inner-cs">
+                                        <h3 class="title">
+                                            <a href="#">trường cao đẳng dược trung ương hải dương</a>
+                                        </h3>
+                                        <div class="summary">
+                                            Trường Cao đẳng Dược Trung ương - Hải Dương là cơ sở đào tạo công lập, có sứ mạng tiên phong trong việc đào tạo đội ngũ Cán bộ Dược trình độ Cao đẳng và các bậc thấp hơn có uy tín, chất lượng cho ngành Y tế Việt Nam
+                                            <a href="#" class="btn-xts">Xem thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner-item">
+                    <div class="img">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="inner-cs">
+                                        <h3 class="title">
+                                            <a href="#">trường cao đẳng dược trung ương hải dương</a>
+                                        </h3>
+                                        <div class="summary">
+                                            Trường Cao đẳng Dược Trung ương - Hải Dương là cơ sở đào tạo công lập, có sứ mạng tiên phong trong việc đào tạo đội ngũ Cán bộ Dược trình độ Cao đẳng và các bậc thấp hơn có uy tín, chất lượng cho ngành Y tế Việt Nam
+                                            <a href="#" class="btn-xts">Xem thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end slide top-->
+
+    <!--news new end notification-->
+    <section class="news-notification">
+        <div class="container">
+            <div class="row">
+                <!--news new-->
+                <div class="col-12 col-lg-8 news-new">
+                    <div class="inner">
+                        <div class="top-s">
+                            <div class="title-s">
+                                <h2><img src="./css/icons/icon-title.png" alt=""><a href="#">TIN TỨC MỚI</a></h2>
+                            </div>
+                            <div class="menu-s">
+                                <ul id="slider-s">
+                                    <li><a href="#">tin tức nhà trường</a></li>
+                                    <li><a href="#">thông tin giáo dục</a></li>
+                                    <li><a href="#">trao đổi kiến thức</a></li>
+                                    <li><a href="#">văn hóa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-s">
+                            <div class="item">
+                                <div class="inner-item">
+                                    <div class="img">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                <img src="./pic/demo.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#"> TỌA ĐÀM “Công tác hướng nghiệp, tư vấn việc làm”</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="inner-item">
+                                    <div class="img">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                <img src="./pic/demo.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#">Ra mắt Câu lạc bộ (CLB) Tiếng anh của Đoàn trường CĐ Dược TW Hải Dương</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="inner-item">
+                                    <div class="img">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                <img src="./pic/demo.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#">Ra mắt Câu lạc bộ (CLB) Tiếng anh của Đoàn trường CĐ Dược TW Hải Dương</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="inner-item">
+                                    <div class="img">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                <img src="./pic/demo.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#">Ra mắt Câu lạc bộ (CLB) Tiếng anh của Đoàn trường CĐ Dược TW Hải Dương</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="inner-item">
+                                    <div class="img">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                <img src="./pic/demo.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <a href="#">Ra mắt Câu lạc bộ (CLB) Tiếng anh của Đoàn trường CĐ Dược TW Hải Dương</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end news new-->
+                <!--notification-->
+                <div class="col-12 col-lg-4 notification">
+                    <div class="top-block-right">
+                        <strong>Thông báo</strong>
+                        <a href="#" class="btn-xt">xem thêm</a>
+                    </div>
+                    <div class="inner">
+                        <div class="item">
+                            <div class="wednesday">
+                                1
+                            </div>
+                            <div class="text">
+                                Kế hoạch thi kết thúc học phần lý thuyết DSTC - CQ Khóa 49 - Thi lần 1 - Kỳ IV
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="wednesday">
+                                2
+                            </div>
+                            <div class="text">
+                                Kế hoạch thi kết thúc học phần lý thuyết DSTC - CQ Khóa 49 - Thi lần 1 - Kỳ IV
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="wednesday">
+                                3
+                            </div>
+                            <div class="text">
+                                Kế hoạch thi kết thúc học phần lý thuyết DSTC - CQ Khóa 49 - Thi lần 1 - Kỳ IV
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="wednesday">
+                                4
+                            </div>
+                            <div class="text">
+                                Kế hoạch thi kết thúc học phần lý thuyết DSTC - CQ Khóa 49 - Thi lần 1 - Kỳ IV
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="wednesday">
+                                5
+                            </div>
+                            <div class="text">
+                                Kế hoạch thi kết thúc học phần lý thuyết DSTC - CQ Khóa 49 - Thi lần 1 - Kỳ IV
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end notification-->
+            </div>
+        </div>
+    </section>
+    <!--end news new and notification-->
+
+    <!--Advertisement-->
+    <section class="advertisement">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 item">
+                    <div class="khungAnh">
+                        <a class="khungAnhCrop" href="#">
+                            <img src="./pic/demo.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 item">
+                    <div class="khungAnh">
+                        <a class="khungAnhCrop" href="#">
+                            <img src="./pic/demo.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Advertisement-->
+
+    <!--main-->
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <!--section left-->
+                <section class="section-left">
+                    <!--section 1-->
+                    <div class="section-1">
+                        <div class="inner">
+                            <div class="top-s">
+                                <div class="title-s">
+                                    <h2><img src="./css/icons/icon-title.png" alt=""><a href="#">hoạt động</a></h2>
+                                </div>
+                            </div>
+                            <div class="main-s">
+                                <div class="item-to">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">
+                                                <a href="#">Cuộc thi "Trường Dược trong tim tôi" hướng tới kỉ niệm 50 thành lập trường Cao đẳng Dược Trung ương - Hải dương </a>
+                                            </h3>
+                                            <div class="summary">Hướng tới kỷ niệm 50 năm ngày thành lập Trường Cao đẳng Dược Trung ương - Hải Dương (03/11/1965 – 03/11/2015); Thực hiện chương trình công tác năm học 2014 - 2015, Ban Giám hiệu Nhà trường triển khai Kế hoạch tổ...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="row block-item-be">
+                                    <li class="col-12 col-lg-6"><a href="#">Khoa Kinh tế tổ chức tọa đàm “Nâng cao chất lượng học tập và nghiên cứu khoa học của sinh viên”</a></li>
+                                    <li class="col-12 col-lg-6"><a href="#">Khoa Kinh tế tổ chức tọa đàm “Nâng cao chất lượng học tập và nghiên cứu khoa học của sinh viên”</a></li>
+                                    <li class="col-12 col-lg-6"><a href="#">Khoa Kinh tế tổ chức tọa đàm “Nâng cao chất lượng học tập và nghiên cứu khoa học của sinh viên”</a></li>
+                                    <li class="col-12 col-lg-6"><a href="#">Khoa Kinh tế tổ chức tọa đàm “Nâng cao chất lượng học tập và nghiên cứu khoa học của sinh viên”</a></li>
+                                    <li class="col-12 col-lg-6"><a href="#">Khoa Kinh tế tổ chức tọa đàm “Nâng cao chất lượng học tập và nghiên cứu khoa học của sinh viên”</a></li>
+                                    <li class="col-12 col-lg-6"><a href="#">Khoa Kinh tế tổ chức tọa đàm “Nâng cao chất lượng học tập và nghiên cứu khoa học của sinh viên”</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end section 1-->
+                    <!--section 2-->
+                    <div class="section-2">
+                        <div class="inner">
+                            <div class="top-s">
+                                <div class="title-s">
+                                    <h2><img src="./css/icons/icon-title.png" alt=""><a href="#">Tuyển sinh</a></h2>
+                                </div>
+                                <div class="menu-s">
+                                    <ul>
+                                        <li><a href="#">Kế hoạch tuyển sinh</a></li>
+                                        <li><a href="#">Danh sách trúng tuyển hệ Cao đẳng</a></li>
+                                        <li><a href="#">Danh sách trúng tuyển hệ TCCN</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-s">
+                                <div class="item-to">
+                                    <div class="inner">
+                                        <div class="img">
+                                            <div class="khungAnh">
+                                                <a class="khungAnhCrop" href="#">
+                                                    <img src="./pic/demo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">
+                                                <a href="#">Quy chế 40 về đào tạo Trung cấp chuyên nghiệp hệ Chính quy</a>
+                                            </h3>
+                                            <div class="summary">Hướng tới kỷ niệm 50 năm ngày thành lập Trường Cao đẳng Dược Trung ương - Hải Dương (03/11/1965 – 03/11/2015); Thực hiện chương trình công tác năm học 2014 - 2015, Ban Giám hiệu Nhà trường triển khai Kế hoạch tổ...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="row block-item-be">
+                                    <li class="col-12 col-lg-6 item">
+                                        <div class="inner">
+                                            <div class="img">
+                                                <div class="khungAnh">
+                                                    <a class="khungAnhCrop" href="#">
+                                                        <img src="./pic/demo.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="title"><a href="#">Quy chế 40 về đào tạo Trung cấp chuyên nghiệp hệ Chính quy</a></h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 col-lg-6 item">
+                                        <div class="inner">
+                                            <div class="img">
+                                                <div class="khungAnh">
+                                                    <a class="khungAnhCrop" href="#">
+                                                        <img src="./pic/demo.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="title"><a href="#">Quy chế 40 về đào tạo Trung cấp chuyên nghiệp hệ Chính quy</a></h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 col-lg-6 item">
+                                        <div class="inner">
+                                            <div class="img">
+                                                <div class="khungAnh">
+                                                    <a class="khungAnhCrop" href="#">
+                                                        <img src="./pic/demo.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="title"><a href="#">Quy chế 40 về đào tạo Trung cấp chuyên nghiệp hệ Chính quy</a></h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 col-lg-6 item">
+                                        <div class="inner">
+                                            <div class="img">
+                                                <div class="khungAnh">
+                                                    <a class="khungAnhCrop" href="#">
+                                                        <img src="./pic/demo.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="title"><a href="#">Quy chế 40 về đào tạo Trung cấp chuyên nghiệp hệ Chính quy</a></h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end section 2-->
+                    <!--section 3-->
+                    <div class="section-3">
+                        <div class="inner">
+                            <div class="top-s">
+                                <div class="title-s">
+                                    <h2><img src="./css/icons/icon-title.png" alt=""><a href="#">thư viện tài liệu</a></h2>
+                                </div>
+                                <div class="menu-s">
+                                    <ul>
+                                        <li><a href="#">văn bản quản lý nhà nước</a></li>
+                                        <li><a href="#">VĂN BẢN QUẢN LÝ CẤP TRƯỜNG</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-s">
+                                <ul>
+                                    <li class="hang1">Số hiệu</li>
+                                    <li class="hang2">Ngày ban hành</li>
+                                    <li class="hang3">Cơ quan ban hành</li>
+                                    <li class="hang4">Trích yếu nội dung</li>
+                                </ul>
+                                <ul>
+                                    <li class="hang1"><a href="#">906/BGDĐT-VP</a></li>
+                                    <li class="hang2">20/06/2015</li>
+                                    <li class="hang3">Bộ Giáo dục và Đào tạo</li>
+                                    <li class="hang4">Công văn của Bộ Giáo dục và Đào tạo về việc đôn đốc thực hiện nhiệm vụ sau kỳ nghỉ Tết nguyên đán Ất Mùi 2015</li>
+                                </ul>
+                                <ul>
+                                    <li class="hang1"><a href="#">906/BGDĐT-VP</a></li>
+                                    <li class="hang2">20/06/2015</li>
+                                    <li class="hang3">Bộ Giáo dục và Đào tạo</li>
+                                    <li class="hang4">Công văn của Bộ Giáo dục và Đào tạo về cảnh báo hiện tượng mạo danh cán bộ thanh tra</li>
+                                </ul>
+                                <ul>
+                                    <li class="hang1"><a href="#">906/BGDĐT-VP</a></li>
+                                    <li class="hang2">20/06/2015</li>
+                                    <li class="hang3">Bộ Giáo dục và Đào tạo</li>
+                                    <li class="hang4">Công văn của Bộ Giáo dục và Đào tạo về cảnh báo hiện tượng mạo danh cán bộ thanh tra</li>
+                                </ul>
+                                <ul>
+                                    <li class="hang1"><a href="#">906/BGDĐT-VP</a></li>
+                                    <li class="hang2">20/06/2015</li>
+                                    <li class="hang3">Bộ Giáo dục và Đào tạo</li>
+                                    <li class="hang4">Công văn của Bộ Giáo dục và Đào tạo về cảnh báo hiện tượng mạo danh cán bộ thanh tra</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end section 3-->
+                </section>
+                <!--end section left-->
+                <!--section right-->
+                <aside class="section-right">
+                    <!--video right-->
+                    <div class="video-right">
+                        <div class="top-block-right">
+                            <strong>Thư viện video</strong>
+                            <a href="#" class="btn-xt">xem thêm</a>
+                        </div>
+                        <div class="inner">
+                            <div class="item">
+                                <div class="inner">
+                                    <div class="img">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                <img src="./pic/demo.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title"><a href="#">Cơ sở vật chất Trường cao đẳng dược trung ương Hải Dương</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="inner">
+                                    <div class="img">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                <img src="./pic/demo.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title"><a href="#">Tuyên dương khen thưởng 8 đảng viên xuất sắc tiêu biểu 2016</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="inner">
+                                    <div class="img">
+                                        <div class="khungAnh">
+                                            <a class="khungAnhCrop" href="#">
+                                                <img src="./pic/demo.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title"><a href="#">Tuyên dương khen thưởng 8 đảng viên xuất sắc tiêu biểu 2016</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end video right-->
+                    <!--lich-->
+                    <div class="lich">
+                        <div class="inner">
+                            <ul>
+                                <li><img src="./css/icons/tkb.png" alt="">
+                                    <a href="#">THỜI KHÓA BIỂU</a>
+                                </li>
+                                <li><img src="./css/icons/tcdt.png" alt="">
+                                    <a href="#">TRA CỨU ĐIỂM Thi</a>
+                                </li>
+                                <li><img src="./css/icons/hccp.png" alt="">
+                                    <a href="#">Elearning HCCP</a>
+                                </li>
+                                <li><img src="./css/icons/kvbm.png" alt="">
+                                    <a href="#">Khoa & bộ môn</a>
+                                </li>
+                                <li><img src="./css/icons/dvcn.png" alt="">
+                                    <a href="#">Đơn vị chức năng</a>
+                                </li>
+                                <li><img src="./css/icons/tdt.png" alt="">
+                                    <a href="#">THƯ ĐIỆN TỬ / EMAIL</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end lich-->
+                    <!--images right-->
+                    <div class="images-right">
+                        <div class="top-block-right">
+                            <strong>HÌNH ẢNH - HOẠT ĐỘNG</strong>
+                            <a href="#" class="btn-xt">xem thêm</a>
+                        </div>
+                        <div class="inner">
+                            <div class="images">
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                            <img src="./pic/demo.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                            <img src="./pic/demo.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                            <img src="./pic/demo.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                            <img src="./pic/demo.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                            <img src="./pic/demo.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                            <img src="./pic/demo.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                            <img src="./pic/demo.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                            <img src="./pic/demo.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" data-fancybox="gallery" href="./pic/demo.jpg">
+                                            <img src="./pic/demo.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title-images-right">
+                                <a href="#">Ra mắt Câu lạc bộ (CLB) Tiếng anh của Đoàn trường CĐ Dược TW Hải Dương</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end images right-->
+                </aside>
+                <!--end section right-->
+            </div>
+        </div>
+    </main>
+    <!--end main-->
+
+    <!--slide logo-->
+    <sectoion class="slider-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner">
+                        <div class="item">
+                            <img src="./pic/logo2.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./pic/logo3.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./pic/logo4.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./pic/logo5.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./pic/logo3.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./pic/logo4.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./pic/logo5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </sectoion>
+    <!--end slide logo-->
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 block-f1">
+                    <strong>THÔNG TIN LIÊN HỆ</strong>
+                    <ul>
+                        <li><a href="#">Trường Cao đẳng Dược Trung ương Hải Dương</a></li>
+                        <li><a href="#">324 Nguyễn Lương bằng - TP.Hải Dương</a></li>
+                        <li><a href="#">Điện thoại: 0320.3.890.944</a></li>
+                        <li><a href="#">Fax: 0320.3.890.486</a></li>
+                        <li><a href="#">Email: caodangduoctwhd@moet.edu.vn</a></li>
+                        <li><a href="#">Website: www.duoctu-hd.edu.vn</a></li>
+                    </ul>
+                    <a href="#"><img src="./css/icons/google-maps.png" alt=""></a>
+                </div>
+                <div class="col-12 col-lg-4 block-f2">
+                    <strong>Tuyển sinh - Đào tạo</strong>
+                    <ul>
+                        <li><a href="#">Hệ đào tạo DSĐH liên thông</a></li>
+                        <li><a href="#">Hệ đào tạo DSCĐ hệ chính quy</a></li>
+                        <li><a href="#">Tuyển Sinh</a></li>
+                        <li><a href="#">Hệ đào tạo DSCĐ hệ liên thông</a></li>
+                        <li><a href="#">Hệ đào tạo DSTC hệ chính quy</a></li>
+                        <li><a href="#">Hệ đào tạo DSTC hệ VLVH</a></li>
+                    </ul>
+                    <div class="nhan-email">
+                        <p>Đăng ký nhận bản tin từ nhà trường</p>
+                        <div class="form-ne">
+                            <input type="text" placeholder="Email của bạn..">
+                            <a href="#" class="btn-send-en">Gửi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 block-f1">
+                    <strong>Tuyển sinh - Đào tạo</strong>
+                    <div class="block-fb">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=226666764204714" width="100%" height="230" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--copyright-->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <span>© Bản quyền 2017 thuộc về Trường Cao đẳng Dược Trung ương Hải Dương.</span>
+                        <span>
+                            <span class="online">Đang online: 332</span>
+                        <span class="t-onlile">Tổng truy cập: 1.020.000</span>
+                        </span>
+                        <span class="social">
+                            <span>Theo dõi nhà trường qua:</span>
+                        <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-google-plus" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+
+    <div class="ve-top">
+        <img src="./css/icons/ve-top.png" alt="">
+    </div>
+
+</body>
+
+</html>
