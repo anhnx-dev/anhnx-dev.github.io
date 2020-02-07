@@ -1,0 +1,14 @@
+/* Extra small devices (portrait phones, less than 576px) No media query since this is the default in Bootstrap */
+
+/*Extra large devices (large desktops full hd, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+
+/*Extra large devices (large desktops no full hd, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 991px) {}
+
+/*Small devices (landscape phones, 0px and up)*/
+@media (max-width: 767px) {}
