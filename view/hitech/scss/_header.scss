@@ -1,0 +1,183 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+#header {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: $time-a2;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 252px;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+        pointer-events: none;
+    }
+}
+
+.navbar {
+    padding: 0;
+    .container {
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .btn-link {
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
+    .id-mobile {
+        display: none;
+    }
+    .search,
+    .language,
+    .navbar-collapse {
+        padding-top: 35px;
+    }
+    .navbar-brand {
+        padding: 0;
+        img {
+            height: 64px;
+            &.logo-fixed {
+                display: none;
+            }
+        }
+    }
+}
+
+.warpper-btn-link {
+    >a {
+        background: $cl1;
+        color: $clfff;
+        font-weight: 700;
+        display: inline-block;
+        padding: 6.5px 15px 6.5px 15px;
+        border-radius: 0 0 4px 4px;
+        .fa {
+            margin-right: 5px;
+            background: $clfff;
+            line-height: 11px;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            border-radius: 3px;
+            text-align: center;
+            transform: translateY(-2px);
+        }
+        &.btn-l1 .fa::before {
+            content: "\f002";
+            font-size: 10px;
+            color: $cl1;
+        }
+        &.btn-l2 .fa::before {
+            content: "\f040";
+            font-size: 10px;
+            color: $cl1;
+        }
+    }
+}
+
+.language-inner img {
+    width: 22px;
+    height: 16px;
+}
+
+.search .form-search {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 20px;
+    .fa {
+        text-decoration: none;
+        &::before {
+            content: "\f002";
+            color: $cl1;
+        }
+    }
+    .input {
+        display: none;
+        position: absolute;
+        width: 970px;
+        right: 10px;
+        top: -8px;
+        input {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            border: none;
+            border-radius: 4px;
+            padding: 9px 55px 9px 15px;
+        }
+        .fa {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+    &.active,
+    &:hover {
+        .input {
+            display: block;
+        }
+    }
+}
+
+.navbar-collapse {
+    .navbar-nav {
+        >.nav-item {
+            margin: 0 15px;
+            .nav-link {
+                color: $clfff;
+                padding: 7px 0;
+            }
+        }
+        >.nav-item>.nav-link {
+            border-top: 2px solid transparent;
+        }
+        >.nav-item.active>.nav-link,
+        >.nav-item:hover>.nav-link {
+            border-color: $cl1;
+            color: $cl1;
+        }
+    }
+}
+
+.dropdown {
+    .dropdown-menu {
+        background: rgba(34, 150, 80, 0.6);
+        border-radius: unset;
+        border: none;
+        min-width: 240px;
+        padding: 0;
+        margin: 0;
+        left: -22px;
+        .nav-item {
+            padding: 8px 22px;
+            border-top: 1px solid #146e39;
+            &:nth-child(1) {
+                border-top: none;
+            }
+            &:hover {
+                background: #2aa65d;
+            }
+        }
+        >.dropdown>.dropdown-menu {
+            left: 100%;
+            top: 0;
+        }
+    }
+    &:hover,
+    &.active-dd {
+        >.dropdown-menu {
+            display: block;
+        }
+    }
+}

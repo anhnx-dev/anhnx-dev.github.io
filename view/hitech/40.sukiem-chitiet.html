@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- menu main -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img class="logo-nofixed" src="./pic/logo.png" alt="">
+                    <img class="logo-fixed" src="./pic/logo2.png" alt="">
+                </a>
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <div class="id-mobile">
+                        <div class="btn-link-mobile"></div>
+                        <div class="language-mobile"></div>
+                        <div class="search-mobile"></div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Giới thiệu chung</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Lịch sử phát triển</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sơ đồ tổ chức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Cơ sở vật chất</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Đội ngũ giảng viên</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tuyển sinh</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Thông tin tuyển sinh</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hệ Cao đẳng</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hệ Trung cấp</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hệ sơ cấp</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hệ liên thông</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Quy chế tuyển sinh</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tư vấn tuyển sinh</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Đăng ký tuyển sinh</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Câu hỏi thường gặp</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đào tạo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Phòng - Khoa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trung tâm COSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thư viện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Việc làm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quan hệ cổ đông</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--search-->
+                <div class="search">
+                    <div class="form-search">
+                        <a href="#" class="fa"></a>
+                        <div class="input">
+                            <input type="text" placeholder="Từ khóa tìm kiếm">
+                            <a href="#" class="fa"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Language -->
+                <div class="language">
+                    <div class="language-inner">
+                        <a href="#">
+                            <img src="./css/icons/vi.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./css/icons/en.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- link page -->
+                <div class="btn-link">
+                    <div class="warpper-btn-link">
+                        <a href="#" class="btn-l1">
+                            <span class="fa"></span> Tra cứu điểm thi học phần</a>
+                        <a href="#" class="btn-l2">
+                            <span class="fa"></span> Đăng ký xét tuyển</a>
+                    </div>
+                    <!-- button responsive -->
+                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+        <!-- menu main end -->
+    </header>
+    <!-- header end -->
+
+    <!-- breadcrumb -->
+    <section class="link-page">
+        <div class="img-auto">
+            <a href="#" class="img-warpper cover">
+                <img src="./pic/slider3.png" alt="">
+            </a>
+        </div>
+        <div class="warpper-breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item" href="#">Trang chủ</a>
+                    <a class="breadcrumb-item" href="#">Sự kiện sắp diễn ra</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- end breadcrumb -->
+
+    <!-- main -->
+    <main id="main" class="main-page page-news">
+        <div class="container">
+            <div class="row">
+
+                <section class="col-12 col-lg-9 left-main">
+                    <div class="block-news">
+                        <!-- new detail -->
+                        <div class="new-detail">
+                            <!-- title -->
+                            <div class="title">
+                                <h1>Học ngành nghề nào có thể làm việc cho các tập đoàn Nhật Bản?</h1>
+                            </div>
+                            <!-- top -->
+                            <div class="thongke">
+                                <div class="thongke-ngay">
+                                    <span>Ngày đăng: 08:32 - 20/10/2017</span>
+                                </div>
+                                <div class="thongke-luotxem">
+                                    <span>Lượt xem: 1.999</span>
+                                </div>
+                                <div class="cochu">
+                                    <a class="ResetSize" href="javascript:ResetTextSize()">Cỡ chữ</a>
+                                    <a class="SmallSize" href="javascript:DecreaseTextSize()"></a>
+                                    <a class="LargeSize" href="javascript:IncreaseTextSize()"></a>
+                                </div>
+                            </div>
+                            <!-- center -->
+                            <div class="noidung TextSize">
+                                <div class="nddes fRobotoB lh22 pb20">
+                                    Nội dung ở đây
+                                </div>
+                            </div>
+                            <!-- buttom -->
+                            <div id="CommonCuoiChiTietTin">
+                                <div class="fl apd dnmb">
+                                    <a class="prevDBT" href="javascript:history.go(-1)">Về trang trước</a>
+                                    <div class="fr pl20 apd dnmb">
+                                        <a href="javascript:void(0)" class="email addthis_button_email">Gửi emmail</a>
+                                        <a href="javascript:window.print()" class="print">In trang</a>
+                                    </div>
+                                </div>
+                                <div class="fr">
+                                    <!-- AddThis Button BEGIN -->
+                                    <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                                        <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                                        <div class="shareItem">
+                                            <a class="addthis_button_facebook"></a>
+                                        </div>
+                                        <div class="shareItem">
+                                            <a class="addthis_button_twitter"></a>
+                                        </div>
+                                        <div class="shareItem">
+                                            <a class="addthis_button_zingme"></a>
+                                        </div>
+                                        <div class="shareItem">
+                                            <a class="addthis_button_compact"></a>
+                                        </div>
+                                        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5299e3fd219dc19f"></script>
+                                    </div>
+                                    <script>
+                                        (function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (d.getElementById(id)) return;
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }(document, "script", "facebook-jssdk"));
+                                        (function () {
+                                            var po = document.createElement("script");
+                                            po.type = "text/javascript";
+                                            po.async = true;
+                                            po.src = "https://apis.google.com/js/platform.js";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(po, s);
+                                        })();
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end new detail -->
+                        <div class="other">
+                            <div class="title-other">Các bài viết khác</div>
+                            <div class="group-item slider-other-v1">
+                                <article class="item item-05">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <img src="./pic/cb1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a class="title" href="#">Tầm nhìn - Sứ mệnh</a>
+                                        <div class="time-view">
+                                            <span class="fa time">Ngày đăng: 11/7/2016</span>
+                                            <span class="fa view">Lượt xem: 2.658</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item item-05">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <img src="./pic/cb2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a class="title" href="#">Đối tác - kinh doanh</a>
+                                        <div class="time-view">
+                                            <span class="fa time">Ngày đăng: 11/7/2016</span>
+                                            <span class="fa view">Lượt xem: 2.658</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item item-05">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <img src="./pic/cb3.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a class="title" href="#">Vị trí trung tâm</a>
+                                        <div class="time-view">
+                                            <span class="fa time">Ngày đăng: 11/7/2016</span>
+                                            <span class="fa view">Lượt xem: 2.658</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item item-05">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <img src="./pic/cb4.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a class="title" href="#">Triết lý kinh doanh</a>
+                                        <div class="time-view">
+                                            <span class="fa time">Ngày đăng: 11/7/2016</span>
+                                            <span class="fa view">Lượt xem: 2.658</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="item item-05">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <img src="./pic/cb4.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a class="title" href="#">Triết lý kinh doanh</a>
+                                        <div class="time-view">
+                                            <span class="fa time">Ngày đăng: 11/7/2016</span>
+                                            <span class="fa view">Lượt xem: 2.658</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="col-12 col-lg-3 right-main">
+                    <div class="block-right notification-right news-right">
+                        <div class="heading-right">
+                            <a href="#">Tin nhiều người quan tâm</a>
+                        </div>
+                        <div class="group-item">
+                            <div class="item">
+                                <div class="fa view">1.236 lượt xem</div>
+                                <a href="#" class="title">Thông báo tuyển sinh chương trình liên kết doanh nghiệp trong nước và Nhật bản</a>
+                            </div>
+                            <div class="item">
+                                <div class="fa view">1.236 lượt xem</div>
+                                <a href="#" class="title">Thông báo tuyển sinh chương trình liên kết doanh nghiệp trong nước và Nhật bản</a>
+                            </div>
+                            <div class="item">
+                                <div class="fa view">1.236 lượt xem</div>
+                                <a href="#" class="title">Thông báo tuyển sinh chương trình liên kết doanh nghiệp trong nước và Nhật bản</a>
+                            </div>
+                            <div class="item">
+                                <div class="fa view">1.236 lượt xem</div>
+                                <a href="#" class="title">Thông báo tuyển sinh chương trình liên kết doanh nghiệp trong nước và Nhật bản</a>
+                            </div>
+                            <div class="item">
+                                <div class="fa view">1.236 lượt xem</div>
+                                <a href="#" class="title">Thông báo tuyển sinh chương trình liên kết doanh nghiệp trong nước và Nhật bản</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-right library-right library-right-video">
+                        <div class="heading-right">
+                            <a href="#">Thư viện video</a>
+                        </div>
+                        <div class="content">
+                            <div class="warpper">
+                                <div class="img">
+                                    <div class="img-auto">
+                                        <a class="img-warpper cover" data-fancybox="gallery-video" href="https://youtu.be/C3UJBMAy5xE">
+                                            <img src="./pic/gt1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <div class="img-auto">
+                                        <a class="img-warpper cover" data-fancybox="gallery-video" href="https://youtu.be/C3UJBMAy5xE">
+                                            <img src="./pic/gt2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <div class="img-auto">
+                                        <a class="img-warpper cover" data-fancybox="gallery-video" href="https://youtu.be/C3UJBMAy5xE">
+                                            <img src="./pic/gt3.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <div class="img-auto">
+                                        <a class="img-warpper cover" data-fancybox="gallery-video" href="https://youtu.be/C3UJBMAy5xE">
+                                            <img src="./pic/gt4.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="name" href="#">Giới thiệu về Trường Cao đẳng Công nghệ Hà Nội</a>
+                        </div>
+                    </div>
+                    <div class="block-right library-right library-right-img">
+                        <div class="heading-right">
+                            <a href="#">Thư viện ảnh</a>
+                        </div>
+                        <div class="content">
+                            <div class="warpper">
+                                <div class="img">
+                                    <div class="img-auto">
+                                        <a class="img-warpper cover" data-fancybox="gallery-video" href="./pic/gt1.png">
+                                            <img src="./pic/gt1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <div class="img-auto">
+                                        <a class="img-warpper cover" data-fancybox="gallery-video" href="./pic/gt2.png">
+                                            <img src="./pic/gt2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <div class="img-auto">
+                                        <a class="img-warpper cover" data-fancybox="gallery-video" href="./pic/gt3.png">
+                                            <img src="./pic/gt3.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <div class="img-auto">
+                                        <a class="img-warpper cover" data-fancybox="gallery-video" href="./pic/gt3.png">
+                                            <img src="./pic/gt4.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </aside>
+
+                </div>
+            </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="slider-log">
+            <div class="container">
+                <div class="warpper">
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i7.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i8.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i7.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i8.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i7.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i8.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 contact">
+                        <div class="content">
+                            <p>
+                                <strong>Trường Cao đẳng Công nghệ Hà Nội</strong>
+                            </p>
+                            <p>Km12 - Đ.Cầu Diễn - Phúc Diễn - Bắc Từ Liêm - Hà Nội</p>
+                            <p>Điện thoại: Phòng tuyển sinh: 04.62952832</p>
+                            <p>Fax: 04.37805042</p>
+                            <p>Email: tuyensinh@hitech.edu.vn</p>
+                        </div>
+                        <div class="social">
+                            <a class="fa fa-facebook" href=""></a>
+                            <a class="fa fa-google-plus" href=""></a>
+                            <a class="fa fa-twitter" href=""></a>
+                            <a class="fa fa-youtube" href=""></a>
+                        </div>
+                    </div>
+                    <nav class="col-12 col-md-6 col-lg-4 nav-footer">
+                        <ul>
+                            <li>
+                                <a class="fa" href="#">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Trung tâm COSS</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Thư viện</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Tuyển sinh</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Việc làm</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Đào tạo</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Quan hệ cổ đông</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Phòng - Khoa</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="col-12 col-md-6 col-lg-4 page-facebook">
+                        <div id="fb-root"></div>
+                        <script>
+                            (function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src =
+                                    'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.12&appId=226666764204714&autoLogAppEvents=1';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="130" data-small-header="false"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/facebook">Facebook</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 copyright">
+                        <span class="name">© Bản quyền 2017 thuộc về Trường Cao đẳng công nghệ Hà Nội </span>
+                        <span class="statistics">
+                            <span class="online">Đang online: 332</span>
+                            <span class="total">Tổng truy cập: 1.020.000</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/date-vi-VN.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</html>

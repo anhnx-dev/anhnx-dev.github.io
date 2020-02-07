@@ -1,0 +1,94 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+#footer {
+    background: #f3f3f3;
+    .slider-log {
+        background: $clfff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .warpper {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        .img {
+            margin-left: 5px;
+            margin-right: 5px;
+            border: 1px solid #eee;
+            padding: 0 10px;
+        }
+    }
+    .info {
+        padding-top: 55px;
+        line-height: 27px;
+        .social {
+            margin-top: 20px;
+            a {
+                color: $cl333;
+                margin-right: 15px;
+                font-size: 18px;
+                &:hover {
+                    color: $cl1;
+                    text-decoration: none;
+                }
+            }
+            .fa-facebook::before {
+                content: "\f09a";
+            }
+            .fa-google-plus::before {
+                content: "\f0d5";
+            }
+            .fa-twitter:before {
+                content: "\f099";
+            }
+            .fa-youtube::before {
+                content: "\f16a";
+            }
+        }
+    }
+    .nav-footer {
+        ul {
+            &::after {
+                @include clear;
+            }
+            li {
+                width: 50%;
+                float: left;
+                padding-right: 15px;
+                a {
+                    color: $cl333;
+                    text-decoration: none;
+                    &::before {
+                        content: "\f054";
+                        margin-right: 4px;
+                        font-size: 12px;
+                    }
+                    &:hover {
+                        color: $cl1;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        padding-top: 40px;
+        color: $cl666;
+        font-size: 13px;
+        padding-bottom: 5px;
+        .name {
+            margin-right: 25px;
+        }
+        .statistics {
+            .online {
+                margin-right: 15px;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 12px;
+                    height: 13px;
+                    margin-right: 5px;
+                    background: url(../css/icons/online.png) no-repeat center;
+                }
+            }
+        }
+    }
+}

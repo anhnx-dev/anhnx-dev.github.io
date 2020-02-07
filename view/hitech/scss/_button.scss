@@ -1,0 +1,120 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+.btn-01 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: $cl666;
+    .fa::before {
+        content: "\f054";
+        font-size: 10px;
+    }
+    &:hover {
+        color: $cl1;
+    }
+}
+
+.btn-02 {
+    padding: 6.5px 27px;
+    text-align: center;
+    color: $cl333;
+    background: #e6e6e6;
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    bottom: 0;
+    right: 0;
+    &::before {
+        content: "\f105";
+        float: right;
+        margin-left: 4px
+    }
+    &:hover,
+    &:focus {
+        background: $cl1;
+        color: $clfff !important;
+    }
+}
+
+.btn-03 {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 16px;
+    border-radius: 4px;
+    background: $cl1;
+    margin-top: 20px;
+    color: $clfff;
+    text-transform: uppercase;
+    font-weight: 700;
+    >.fa {
+        width: 11px;
+        height: 12px;
+        display: inline-block;
+        margin-left: 4px;
+        background: url(../css/icons/i6.png) no-repeat center;
+        transform: translateY(2px);
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $clfff;
+        transform: scale(1.05);
+    }
+}
+
+.btn-04 {
+    background: unset;
+    border: none;
+    color: $cl1;
+    outline: none;
+    cursor: pointer;
+    .fa::before {
+        content: "\f0de";
+        display: inline-block;
+        transform: translateY(5px);
+    }
+}
+
+.btn-06 {
+    padding: 11.5px 45px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $clfff;
+    background: $cl999;
+    margin-right: 7px;
+    display: inline-block;
+    &:hover {
+        text-decoration: none;
+        background: $cl1;
+        color: $clfff;
+    }
+    &.btn-07 {
+        padding: 14px 45px;
+        margin-right: 0;
+        font-size: $fs2;
+    }
+}
+
+.btn-08 {
+    display: block;
+    margin-top: 10px;
+}
+
+.btn-09 {
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: $clfff;
+    background: $cl1;
+    display: inline-block;
+    min-width: 185px;
+    text-align: center;
+    font-size: 14px;
+    &:hover,
+    &:focus {
+        color: $clfff;
+    }
+}

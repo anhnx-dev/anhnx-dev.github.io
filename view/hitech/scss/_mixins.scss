@@ -1,0 +1,15 @@
+@mixin clear {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@mixin row10 {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@mixin col10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}

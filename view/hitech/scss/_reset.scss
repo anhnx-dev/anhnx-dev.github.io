@@ -1,0 +1,124 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=vietnamese');
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../css/fonts/fontawesome-webfont.eot');
+    src: url('../css/fonts/fontawesome-webfont.woff') format('woff'), url('../css/fonts/fontawesome-webfont.woff2') format('woff2'), url('../css/fonts/fontawesome-webfont.ttf') format('truetype'), url('../css/fonts/fontawesome-webfont.svg#iciel') format('svg'), url('../css/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: $clfff;
+    line-height: $lh1;
+    color: $cl333;
+    font-size: $fs1;
+    font-family: $ff1;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+dl,
+pre,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+embed,
+object,
+video,
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+summary {
+    display: block;
+}
+
+select {
+    background: $clfff url(../css/icons/select.png) no-repeat right 10px center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+.fa::before {
+    font-family: $fffa;
+}
+
+.table-responsive {
+    overflow-x: unset;
+}
+
+@media (max-width: 1199px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
+
+.img-auto {
+    position: relative;
+    padding-bottom: 57%;
+    overflow: hidden;
+    .img-warpper {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+        >img {
+            width: 100%;
+            height: auto;
+        }
+        &.cover {
+            height: 100%;
+            >img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+}

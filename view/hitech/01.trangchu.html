@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <!-- menu main -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img class="logo-nofixed" src="./pic/logo.png" alt="">
+                    <img class="logo-fixed" src="./pic/logo2.png" alt="">
+                </a>
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <div class="id-mobile">
+                        <div class="btn-link-mobile"></div>
+                        <div class="language-mobile"></div>
+                        <div class="search-mobile"></div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Giới thiệu chung</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Lịch sử phát triển</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sơ đồ tổ chức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Cơ sở vật chất</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Đội ngũ giảng viên</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tuyển sinh</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Thông tin tuyển sinh</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hệ Cao đẳng</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hệ Trung cấp</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hệ sơ cấp</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hệ liên thông</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Quy chế tuyển sinh</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tư vấn tuyển sinh</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Đăng ký tuyển sinh</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Câu hỏi thường gặp</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đào tạo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Phòng - Khoa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trung tâm COSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thư viện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Việc làm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quan hệ cổ đông</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--search-->
+                <div class="search">
+                    <div class="form-search">
+                        <a href="#" class="fa"></a>
+                        <div class="input">
+                            <input type="text" placeholder="Từ khóa tìm kiếm">
+                            <a href="#" class="fa"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Language -->
+                <div class="language">
+                    <div class="language-inner">
+                        <a href="#">
+                            <img src="./css/icons/vi.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./css/icons/en.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- link page -->
+                <div class="btn-link">
+                    <div class="warpper-btn-link">
+                        <a href="#" class="btn-l1">
+                            <span class="fa"></span> Tra cứu điểm thi học phần</a>
+                        <a href="#" class="btn-l2">
+                            <span class="fa"></span> Đăng ký xét tuyển</a>
+                    </div>
+                    <!-- button responsive -->
+                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                    </button>
+                </div>
+                
+            </div>
+        </nav>
+        <!-- menu main end -->
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main id="main" class="main-home">
+
+        <!-- slider home -->
+        <section class="slider-home">
+            <div class="img-auto">
+                <a href="#" class="img-warpper cover">
+                    <img class="pc-img" src="./pic/slider.png" alt="">
+                    <img class="tablet-img" src="./pic/slider1.png" alt="">
+                    <img class="mobile-img" src="./pic/slider2.png" alt="">
+                </a>
+            </div>
+            <div class="img-auto">
+                <a href="#" class="img-warpper cover">
+                    <img class="pc-img" src="./pic/slider.png" alt="">
+                    <img class="tablet-img" src="./pic/slider1.png" alt="">
+                    <img class="mobile-img" src="./pic/slider2.png" alt="">
+                </a>
+            </div>
+        </section>
+        <!-- slider home end -->
+
+        <!-- group block news -->
+        <section class="group-block-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 right">
+                        <div class="warpper">
+                            <div class="block-report">
+                                <div class="heading">
+                                    <h1 class="title">
+                                        <a href="#">Thông báo</a>
+                                    </h1>
+                                </div>
+                                <div class="group-item">
+                                    <article class="item">
+                                        <div class="fa time">Ngày đăng: 22/12/2017</div>
+                                        <h2 class="title">
+                                            <a href="#">Thông báo kế hoạch học Giáo dục quốc phòng, an ninh đợt 1 - khóa 11</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item">
+                                        <div class="fa time">Ngày đăng: 22/12/2017</div>
+                                        <h2 class="title">
+                                            <a href="#">Thông báo kế hoạch học Giáo dục quốc phòng, an ninh đợt 1 - khóa 11</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item">
+                                        <div class="fa time">Ngày đăng: 22/12/2017</div>
+                                        <h2 class="title">
+                                            <a href="#">Thông báo kế hoạch học Giáo dục quốc phòng, an ninh đợt 1 - khóa 11</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item">
+                                        <div class="fa time">Ngày đăng: 22/12/2017</div>
+                                        <h2 class="title">
+                                            <a href="#">Thông báo kế hoạch học Giáo dục quốc phòng, an ninh đợt 1 - khóa 11</a>
+                                        </h2>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="block-event">
+                                <div class="heading">
+                                    <h1 class="title">
+                                        <a href="#">Sự kiện sắp diễn ra</a>
+                                    </h1>
+                                </div>
+                                <div class="group-item">
+                                    <article class="item">
+                                        <div class="time">
+                                            <div class="day">22</div>
+                                            <div class="month">Tháng 2</div>
+                                        </div>
+                                        <div class="content">
+                                            <h2 class="title">
+                                                <a href="#">Kế hoạch học học kỳ phụ, học hè năm 2017</a>
+                                            </h2>
+                                            <summary>Thông báo kế hoạch học Giáo dục quốc phòng, an ninh đợt 1 - khóa 11</summary>
+                                        </div>
+                                    </article>
+                                    <article class="item">
+                                        <div class="time">
+                                            <div class="day">21</div>
+                                            <div class="month">Tháng 2</div>
+                                        </div>
+                                        <div class="content">
+                                            <h2 class="title">
+                                                <a href="#">Kế hoạch học học kỳ phụ, học hè năm 2017</a>
+                                            </h2>
+                                            <summary>Thông báo kế hoạch học Giáo dục quốc phòng, an ninh đợt 1 - khóa 11</summary>
+                                        </div>
+                                    </article>
+                                    <article class="item">
+                                        <div class="time">
+                                            <div class="day">20</div>
+                                            <div class="month">Tháng 2</div>
+                                        </div>
+                                        <div class="content">
+                                            <h2 class="title">
+                                                <a href="#">Kế hoạch học học kỳ phụ, học hè năm 2017</a>
+                                            </h2>
+                                            <summary>Thông báo kế hoạch học Giáo dục quốc phòng, an ninh đợt 1 - khóa 11</summary>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 left">
+                        <div class="row warpper">
+                            <div class="col-12 col-md-6 block-admissions">
+                                <div class="heading">
+                                    <h1 class="title">
+                                        <a href="#">Tuyển sinh</a>
+                                    </h1>
+                                </div>
+                                <div class="group-item">
+                                    <article class="item">
+                                        <span class="number">1</span>
+                                        <h2 class="title">
+                                            <a href="">Thông báo tuyển sinh CĐ Công nghệ Hà Nội năm học 2017 - 2018
+                                                <span class="act new">MỚI</span>
+                                            </a>
+                                        </h2>
+                                    </article>
+                                    <article class="item">
+                                        <span class="number">2</span>
+                                        <h2 class="title">
+                                            <a href="">Mẫu giấy báo nhập học (Đợt 2) dành cho thí sinh bị thất lạc giấy báo</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item">
+                                        <span class="number">3</span>
+                                        <h2 class="title">
+                                            <a href="">Thông báo V/v công bố điểm trúng tuyển đại học, cao đẳng năm 2017 (Đợt 2)
+                                                <span class="act emergency">KHẨN</span>
+                                            </a>
+                                        </h2>
+                                    </article>
+                                    <article class="item">
+                                        <span class="number">4</span>
+                                        <h2 class="title">
+                                            <a href="">Hướng dẫn đăng ký xét tuyển cao đẳng hệ chính quy năm 2017</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item">
+                                        <span class="number">5</span>
+                                        <h2 class="title">
+                                            <a href="">Thông báo tuyển sinh CĐ Công nghệ Hà Nội năm học 2017 - 2018</a>
+                                        </h2>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 block-center">
+                                <div class="heading">
+                                    <h1 class="title">
+                                        <a href="#">Trung tâm COSS</a>
+                                    </h1>
+                                </div>
+                                <div class="group-item">
+                                    <article class="item item-01">
+                                        <div class="img-auto">
+                                            <a href="#" class="img-warpper cover">
+                                                <img src="./pic/tt1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <h2 class="title">
+                                            <a href="#">Kỷ niệm 10 năm thành lập trường, chào mừng ngày 20-11 và khai giảng năm học mới</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item item-01">
+                                        <div class="img-auto">
+                                            <a href="#" class="img-warpper cover">
+                                                <img src="./pic/tt2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <h2 class="title">
+                                            <a href="#">Chất lượng đào tạo nghề được khẳng định qua chính những đối tác</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item item-01">
+                                        <div class="img-auto">
+                                            <a href="#" class="img-warpper cover">
+                                                <img src="./pic/tt3.png" alt="">
+                                            </a>
+                                        </div>
+                                        <h2 class="title">
+                                            <a href="#">Nhiều trường cao đẳng cam kết chất lượng đào tạo cũng như việc làm nhưng vẫn
+                                                lo vắng sinh viên</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item item-01">
+                                        <div class="img-auto">
+                                            <a href="#" class="img-warpper cover">
+                                                <img src="./pic/tt4.png" alt="">
+                                            </a>
+                                        </div>
+                                        <h2 class="title">
+                                            <a href="#">Thông báo kế hoạch học Giáo dục quốc phòng, an ninh đợt 1 - khóa 11</a>
+                                        </h2>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-12 block-news-Latest">
+                                <div class="heading">
+                                    <h1 class="title">
+                                        <a href="#">Tin tức mới nhất</a>
+                                    </h1>
+                                </div>
+                                <div class="group-item">
+                                    <article class="item item-01">
+                                        <div class="img-auto">
+                                            <a href="#" class="img-warpper cover">
+                                                <img src="./pic/tt1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <h2 class="title">
+                                            <a href="#">Kỷ niệm 10 năm thành lập trường, chào mừng ngày 20-11 và khai giảng năm học mới</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item item-01">
+                                        <div class="img-auto">
+                                            <a href="#" class="img-warpper cover">
+                                                <img src="./pic/tt2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <h2 class="title">
+                                            <a href="#">Chất lượng đào tạo nghề được khẳng định qua chính những đối tác</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item item-01">
+                                        <div class="img-auto">
+                                            <a href="#" class="img-warpper cover">
+                                                <img src="./pic/tt3.png" alt="">
+                                            </a>
+                                        </div>
+                                        <h2 class="title">
+                                            <a href="#">Nhiều trường cao đẳng cam kết chất lượng đào tạo cũng như việc làm nhưng vẫn
+                                                lo vắng sinh viên</a>
+                                        </h2>
+                                    </article>
+                                    <article class="item item-01">
+                                        <div class="img-auto">
+                                            <a href="#" class="img-warpper cover">
+                                                <img src="./pic/tt4.png" alt="">
+                                            </a>
+                                        </div>
+                                        <h2 class="title">
+                                            <a href="#">Thông báo kế hoạch học Giáo dục quốc phòng, an ninh đợt 1 - khóa 11</a>
+                                        </h2>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- group block news end -->
+
+        <!-- why -->
+        <section class="why" style="background-image: url(../hitech.edu.vn/./pic/bg/bg1.png);">
+            <div class="container">
+                <div class="heading">
+                    <h1 class="title">Tại sao chọn Hitech?</h1>
+                    <p class="text">Chúng tôi luôn cung ứng các ứng viên, thực tập sinh, cử nhân tài năng, có chất lượng cho các trường đại
+                        học, cao đẳng hàng đầu thế giới tại các thị trường Nhật Bản, Hàn Quốc, cộng hòa liên bang Đức.</p>
+                </div>
+                <div class="group-item">
+                    <article class="item-02" style="background-color: #5dc186;">
+                        <div class="icon">
+                            <img src="./pic/icons/i1.png" alt="">
+                        </div>
+                        <div class="content">
+                            Chương trình học song song ngoại ngữ trong quá trình theo học tại trường đối với HS SV có nhu cầu đi du học hoặc xuất khẩu
+                            lao động
+                        </div>
+                    </article>
+                    <article class="item-02" style="background-color: #e97f7f;">
+                        <div class="icon">
+                            <img src="./pic/icons/i2.png" alt="">
+                        </div>
+                        <div class="content">
+                            Học sinh, sinh viên trong quá trình học tập và rèn luyện tại trường đảm bảo thi đỗ 100% chứng chỉ KLPT, đội, kết quả học
+                            tập loại giỏi được xét cấp học bổng, học liên thông lên đại học theo quy chế đào tạo
+                        </div>
+                    </article>
+                    <article class="item-02" style="background-color: #a1acfe;">
+                        <div class="icon">
+                            <img src="./pic/icons/i3.png" alt="">
+                        </div>
+                        <div class="content">
+                            Hỗ trợ sinh viên thủ tục vay vốn, miễn giảm học phí cho sinh viên thuộc diện gia đình chính sách. Cung cấp hồ sơ vay vốn
+                            cho các em có nhu cầu đi nước ngoài làm viêc theo hợp đồng
+                        </div>
+                    </article>
+                    <article class="item-02" style="background-color: #e8bc95;">
+                        <div class="icon">
+                            <img src="./pic/icons/i4.png" alt="">
+                        </div>
+                        <div class="content">
+                            Hỗ trợ sinh viên thủ tục vay vốn, miễn giảm học phí cho sinh viên thuộc diện gia đình chính sách. Cung cấp hồ sơ vay vốn
+                            cho các em có nhu cầu đi nước ngoài làm viêc theo hợp đồng
+                        </div>
+                    </article>
+                    <article class="item-02" style="background-color: #5dc186;">
+                        <div class="icon">
+                            <img src="./pic/icons/i1.png" alt="">
+                        </div>
+                        <div class="content">
+                            Chương trình học song song ngoại ngữ trong quá trình theo học tại trường đối với HS SV có nhu cầu đi du học hoặc xuất khẩu
+                            lao động
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- why end -->
+
+        <!-- library -->
+        <section class="library">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 library-image">
+                        <div class="heading">
+                            <h1 class="title">
+                                <a href="#">Thư viện ảnh</a>
+                            </h1>
+                            <a href="#" class="btn-01">Xem thêm
+                                <span class="fa"></span>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="warpper">
+                                <div class="img-auto">
+                                    <a class="img-warpper cover" data-fancybox="gallery-img" data-caption="<span class='name-image-fancybox'>name image</span>"
+                                        href="./pic/tva1.png">
+                                        <img src="./pic/tva1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img-auto">
+                                    <a class="img-warpper cover" data-fancybox="gallery-img" data-caption="<span class='name-image-fancybox'>name image</span>"
+                                        href="./pic/tva2.png">
+                                        <img src="./pic/tva2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img-auto">
+                                    <a class="img-warpper cover" data-fancybox="gallery-img" data-caption="<span class='name-image-fancybox'>name image</span>"
+                                        href="./pic/tva3.png">
+                                        <img src="./pic/tva3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img-auto">
+                                    <a class="img-warpper cover" data-fancybox="gallery-img" data-caption="<span class='name-image-fancybox'>name image</span>"
+                                        href="./pic/tva4.png">
+                                        <img src="./pic/tva4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img-auto">
+                                    <a class="img-warpper cover" data-fancybox="gallery-img" data-caption="<span class='name-image-fancybox'>name image</span>"
+                                        href="./pic/tva4.png">
+                                        <img src="./pic/tva4.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <h2 class="name">
+                                <a href="#">Giới thiệu về Trường Cao đẳng Công nghệ Hà Nội</a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 library-video">
+                        <div class="heading">
+                            <h1 class="title">
+                                <a href="#">Thư viện video</a>
+                            </h1>
+                            <a href="#" class="btn-01">Xem thêm
+                                <span class="fa"></span>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="warpper">
+                                <div class="img-auto">
+                                    <a class="img-warpper cover" data-fancybox="gallery-video" href="https://youtu.be/C3UJBMAy5xE">
+                                        <img src="./pic/tvv1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img-auto">
+                                    <a class="img-warpper cover" data-fancybox="gallery-video" href="https://youtu.be/C3UJBMAy5xE">
+                                        <img src="./pic/tvv1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img-auto">
+                                    <a class="img-warpper cover" data-fancybox="gallery-video" href="https://youtu.be/C3UJBMAy5xE">
+                                        <img src="./pic/tvv1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img-auto">
+                                    <a class="img-warpper cover" data-fancybox="gallery-video" href="https://youtu.be/C3UJBMAy5xE">
+                                        <img src="./pic/tvv1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img-auto">
+                                    <a class="img-warpper cover" data-fancybox="gallery-video" href="https://youtu.be/C3UJBMAy5xE">
+                                        <img src="./pic/tvv1.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <h2 class="name">
+                                <a href="#">Giới thiệu về Trường Cao đẳng Công nghệ Hà Nội</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- library end -->
+
+        <!-- job -->
+        <section class="job">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8 info">
+                        <div class="heading">
+                            <h1 class="title">
+                                <a href="#">Thông tin việc làm</a>
+                            </h1>
+                        </div>
+                        <div class="row group-item">
+                            <article class="col-12 col-md-6 item item-03">
+                                <div class="warpper">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper">
+                                            <img src="./pic/vl1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Công ty cổ phần Thể thao Quốc tế Donex thông báo tuyển dụng</a>
+                                    </h2>
+                                </div>
+                            </article>
+                            <article class="col-12 col-md-6 item item-03">
+                                <div class="warpper">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper">
+                                            <img src="./pic/vl2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Công ty cổ phần Thể thao Quốc tế Donex thông báo tuyển dụng</a>
+                                    </h2>
+                                </div>
+                            </article>
+                            <article class="col-12 col-md-6 item item-03">
+                                <div class="warpper">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper">
+                                            <img src="./pic/vl3.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Công ty cổ phần Thể thao Quốc tế Donex thông báo tuyển dụng</a>
+                                    </h2>
+                                </div>
+                            </article>
+                            <article class="col-12 col-md-6 item item-03">
+                                <div class="warpper">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper">
+                                            <img src="./pic/vl4.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Công ty cổ phần Thể thao Quốc tế Donex thông báo tuyển dụng</a>
+                                    </h2>
+                                </div>
+                            </article>
+                            <article class="col-12 col-md-6 item item-03">
+                                <div class="warpper">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper">
+                                            <img src="./pic/vl5.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Công ty cổ phần Thể thao Quốc tế Donex thông báo tuyển dụng</a>
+                                    </h2>
+                                </div>
+                            </article>
+                            <article class="col-12 col-md-6 item item-03">
+                                <div class="warpper">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper">
+                                            <img src="./pic/vl6.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Công ty cổ phần Thể thao Quốc tế Donex thông báo tuyển dụng</a>
+                                    </h2>
+                                </div>
+                            </article>
+                            <article class="col-12 col-md-6 item item-03">
+                                <div class="warpper">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper">
+                                            <img src="./pic/vl7.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Công ty cổ phần Thể thao Quốc tế Donex thông báo tuyển dụng</a>
+                                    </h2>
+                                </div>
+                            </article>
+                            <article class="col-12 col-md-6 item item-03">
+                                <div class="warpper">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper">
+                                            <img src="./pic/vl8.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Công ty cổ phần Thể thao Quốc tế Donex thông báo tuyển dụng</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 counseling">
+                        <div class="heading">
+                            <h1 class="title">
+                                <a href="#">Tư vấn hướng nghiệp</a>
+                            </h1>
+                        </div>
+                        <div class="warpper">
+                            <article class="item item-01">
+                                <div class="img-auto">
+                                    <a href="#" class="img-warpper cover">
+                                        <img src="./pic/tt5.png" alt="">
+                                    </a>
+                                </div>
+                                <h2 class="title">
+                                    <a href="">Học nghề để vượt lên chính mình và tlàm nghề để khẳng định mình</a>
+                                </h2>
+                            </article>
+                            <ul class="group-link">
+                                <li class="link-item">
+                                    <a href="#">Ngành Điện Công nghiệp lương cao nhưng thiếu nhân lực trầm trọng</a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="#">Hơn 120.000 thí sinh từ chối nhập học: Đại học không còn là “học đại“!</a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="#">Lập nghiệp với ngành Công nghệ kỹ thuật Môi trường không khó</a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="#">Hòn ngọc Viễn đông cần nhu cầu nhân lực lao động như thế nào giai đoạn 2017 - 2020?</a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="#">Ngành Điện Công nghiệp lương cao nhưng thiếu nhân lực trầm trọng</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- job end -->
+
+        <!-- document -->
+        <section class="documet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 block">
+                        <div class="heading">
+                            <h1 class="title">
+                                <a href="#">Tài liệu dành cho Sinh viên</a>
+                            </h1>
+                            <a href="" class="btn-01">Xem thêm
+                                <span class="fa"></span>
+                            </a>
+                        </div>
+                        <div class="documet-table">
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i1.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                            <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i2.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                            <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i3.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                            <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i1.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                            <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i2.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                            <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i2.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                            <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i2.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                            <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i2.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                            <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 block">
+                        <div class="heading">
+                            <h1 class="title">
+                                <a href="#">Tài liệu dành cho Giảng viên</a>
+                            </h1>
+                            <a href="" class="btn-01">Xem thêm
+                                <span class="fa"></span>
+                            </a>
+                        </div>
+                        <div class="documet-table">
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i1.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                        <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i2.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                        <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i3.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                        <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i1.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                        <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i2.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                        <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i2.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                        <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i2.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                        <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="left">
+                                    <span class="img">
+                                        <img src="./css/icons/i2.png" alt="">
+                                    </span>
+                                    <span class="name">
+                                        <a href="#">Kế hoạch học kỳ phụ, học hè năm 2017</a>
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="size">
+                                        <span>2KB</span>
+                                    </span>
+                                    <span class="dowload">
+                                        <a href="#" class="fa">Tải về</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- document end -->
+
+        <!-- activity -->
+        <section class="activity">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 block block-01">
+                        <div class="heading">
+                            <h1 class="title">
+                                <a href="#">Hoạt động chuyên môn</a>
+                            </h1>
+                        </div>
+                        <div class="group-item">
+                            <article class="item item-01">
+                                <div class="img-auto">
+                                    <a href="#" class="img-warpper cover">
+                                        <img src="./pic/tt1.png" alt="">
+                                    </a>
+                                </div>
+                                <h2 class="title">
+                                    <a href="#">Buổi giao lưu tuyển sinh của nhà trường với các em học sinh của tỉnh Nghệ An và Thanh
+                                        Hóa
+                                    </a>
+                                </h2>
+                            </article>
+                            <article class="item item-01">
+                                <div class="img-auto">
+                                    <a href="#" class="img-warpper cover">
+                                        <img src="./pic/tt1.png" alt="">
+                                    </a>
+                                </div>
+                                <h2 class="title">
+                                    <a href="#">Một số hình ảnh trong Hội thi nấu ăn chào mừng ngày quốc tế phụ nữ 8/3</a>
+                                </h2>
+                            </article>
+                            <article class="item item-01">
+                                <div class="img-auto">
+                                    <a href="#" class="img-warpper cover">
+                                        <img src="./pic/tt1.png" alt="">
+                                    </a>
+                                </div>
+                                <h2 class="title">
+                                    <a href="#">Hoạt động tình nguyện tại SapaHoạt động tình nguyện tại Sapa</a>
+                                </h2>
+                            </article>
+                            <article class="item item-01">
+                                <div class="img-auto">
+                                    <a href="#" class="img-warpper cover">
+                                        <img src="./pic/tt1.png" alt="">
+                                    </a>
+                                </div>
+                                <h2 class="title">
+                                    <a href="#">Học nghề để vượt lên chính mình và làm nghề để khẳng định mình</a>
+                                </h2>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 block block-02">
+                        <div class="heading">
+                            <h1 class="title">
+                                <a href="#">Ngoài giờ</a>
+                            </h1>
+                        </div>
+                        <div class="group-item">
+                            <article class="item item-01">
+                                <div class="img-auto">
+                                    <a href="#" class="img-warpper cover">
+                                        <img src="./pic/tt1.png" alt="">
+                                    </a>
+                                </div>
+                                <h2 class="title">
+                                    <a href="#">Buổi giao lưu tuyển sinh của nhà trường với các em học sinh của tỉnh Nghệ An và Thanh
+                                        Hóa
+                                    </a>
+                                </h2>
+                            </article>
+                            <article class="item item-01">
+                                <div class="img-auto">
+                                    <a href="#" class="img-warpper cover">
+                                        <img src="./pic/tt1.png" alt="">
+                                    </a>
+                                </div>
+                                <h2 class="title">
+                                    <a href="#">Một số hình ảnh trong Hội thi nấu ăn chào mừng ngày quốc tế phụ nữ 8/3</a>
+                                </h2>
+                            </article>
+                            <article class="item item-01">
+                                <div class="img-auto">
+                                    <a href="#" class="img-warpper cover">
+                                        <img src="./pic/tt1.png" alt="">
+                                    </a>
+                                </div>
+                                <h2 class="title">
+                                    <a href="#">Hoạt động tình nguyện tại SapaHoạt động tình nguyện tại Sapa</a>
+                                </h2>
+                            </article>
+                            <article class="item item-01">
+                                <div class="img-auto">
+                                    <a href="#" class="img-warpper cover">
+                                        <img src="./pic/tt1.png" alt="">
+                                    </a>
+                                </div>
+                                <h2 class="title">
+                                    <a href="#">Học nghề để vượt lên chính mình và làm nghề để khẳng định mình</a>
+                                </h2>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 block block-03">
+                        <div class="heading">
+                            <h1 class="title">
+                                <a href="#">Đoàn thể</a>
+                            </h1>
+                        </div>
+                        <div class="group-item">
+                            <div class="row warpper">
+                                <article class="col-12 col-md-6 col-lg-12 item item-01">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <img src="./pic/tt1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Buổi giao lưu tuyển sinh của nhà trường với các em học sinh của tỉnh Nghệ An và Thanh
+                                            Hóa
+                                        </a>
+                                    </h2>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-12 item item-01">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <img src="./pic/tt1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Một số hình ảnh trong Hội thi nấu ăn chào mừng ngày quốc tế phụ nữ 8/3</a>
+                                    </h2>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-12 item item-01">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <img src="./pic/tt1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Hoạt động tình nguyện tại SapaHoạt động tình nguyện tại Sapa</a>
+                                    </h2>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-12 item item-01">
+                                    <div class="img-auto">
+                                        <a href="#" class="img-warpper cover">
+                                            <img src="./pic/tt1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <h2 class="title">
+                                        <a href="#">Học nghề để vượt lên chính mình và làm nghề để khẳng định mình</a>
+                                    </h2>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- activity end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="slider-log">
+            <div class="container">
+                <div class="warpper">
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i7.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i8.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i7.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i8.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i7.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-auto">
+                            <a href="#" class="img-warpper">
+                                <img src="./pic/icons/i8.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 contact">
+                        <div class="content">
+                            <p>
+                                <strong>Trường Cao đẳng Công nghệ Hà Nội</strong>
+                            </p>
+                            <p>Km12 - Đ.Cầu Diễn - Phúc Diễn - Bắc Từ Liêm - Hà Nội</p>
+                            <p>Điện thoại: Phòng tuyển sinh: 04.62952832</p>
+                            <p>Fax: 04.37805042</p>
+                            <p>Email: tuyensinh@hitech.edu.vn</p>
+                        </div>
+                        <div class="social">
+                            <a class="fa fa-facebook" href=""></a>
+                            <a class="fa fa-google-plus" href=""></a>
+                            <a class="fa fa-twitter" href=""></a>
+                            <a class="fa fa-youtube" href=""></a>
+                        </div>
+                    </div>
+                    <nav class="col-12 col-md-6 col-lg-4 nav-footer">
+                        <ul>
+                            <li>
+                                <a class="fa" href="#">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Trung tâm COSS</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Thư viện</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Tuyển sinh</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Việc làm</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Đào tạo</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Quan hệ cổ đông</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Phòng - Khoa</a>
+                            </li>
+                            <li>
+                                <a class="fa" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="col-12 col-md-6 col-lg-4 page-facebook">
+                        <div id="fb-root"></div>
+                        <script>
+                            (function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src =
+                                    'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.12&appId=226666764204714&autoLogAppEvents=1';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="130" data-small-header="false"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/facebook">Facebook</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 copyright">
+                        <span class="name">© Bản quyền 2017 thuộc về Trường Cao đẳng công nghệ Hà Nội </span>
+                        <span class="statistics">
+                            <span class="online">Đang online: 332</span>
+                            <span class="total">Tổng truy cập: 1.020.000</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="vendor/datePicker/date-vi-VN.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</html>
