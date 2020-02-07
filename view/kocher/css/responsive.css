@@ -1,0 +1,663 @@
+/* Extra large devices (large desktops) */
+
+
+/* No media query since the extra-large breakpoint has no upper bound on its width */
+
+.header .all>a.email,
+.header .all>a.mobile {
+  font-size: 14px;
+}
+
+
+/* Large devices (desktops, less than up) */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px
+  }
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199px) {}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991px) {
+  .row {
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  .col,
+  .col-1,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-lg,
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-md,
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-sm,
+  .col-sm-1,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-xl,
+  .col-xl-1,
+  .col-xl-10,
+  .col-xl-11,
+  .col-xl-12,
+  .col-xl-2,
+  .col-xl-3,
+  .col-xl-4,
+  .col-xl-5,
+  .col-xl-6,
+  .col-xl-7,
+  .col-xl-8,
+  .col-xl-9 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .header .all {
+    margin-right: 80px;
+    margin-top: 20px;
+    position: relative;
+  }
+  .header .all>a {
+    display: block;
+  }
+  .header .all .language {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .at-menu {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -20px;
+    background: #0056a7;
+    border-radius: 4px;
+  }
+  .at-menu span,
+  .at-menu:after,
+  .at-menu:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background: #fff;
+    top: 13px;
+    left: 50%;
+    margin-left: -17.5px;
+    transition: all 0.4s;
+  }
+  .at-menu::after {
+    top: 50%;
+    margin-top: -2px;
+  }
+  .at-menu::before {
+    top: 49px;
+    margin-top: -4px;
+  }
+  .at-menu.active span {
+    top: 50%;
+    margin-top: -2px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .at-menu.active:after {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  .at-menu.active:before {
+    top: 50%;
+    margin-top: -2px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .menu-main {
+    position: absolute;
+    width: 300px;
+    height: calc(100% - 115px);
+    z-index: 9999;
+    right: -300px;
+    top: 115px;
+    transition: 0.5s ease-out;
+    transform: scale(0);
+    opacity: 0;
+  }
+  .menu-main.active {
+    right: 0;
+    opacity: 1;
+    transform: scale(1)
+  }
+  .menu-main .container {
+    width: auto;
+    padding: 0;
+  }
+  .menu-main .nav {
+    display: block;
+    padding: 20px 0;
+  }
+  .menu-main .nav-item:nth-child(1) .nav-link img {
+    display: none;
+    font-size: 15px;
+  }
+  .menu-main .nav-item:nth-child(1) .nav-link {
+    transform: none;
+  }
+  .menu-main .nav-item:nth-child(1) {
+    padding-left: 12px;
+    font-size: 15px;
+  }
+  .menu-main .nav-link,
+  .menu-main .dropdown .dropdown-menu li a {
+    display: inline-block;
+    line-height: 22px;
+    padding: 8.5px 12px;
+    background: transparent;
+    width: 100%;
+  }
+  .menu-main .dropdown .dropdown-menu li a {
+    padding-left: 20px;
+  }
+  .menu-main .dropdown .dropdown-menu {
+    background: #f18d38;
+  }
+  .menu-main .dropdown .dropdown-menu li {
+    padding: 0;
+    position: relative;
+  }
+  .menu-main .nav-item,
+  .menu-main .nav-item:nth-child(1) {
+    background: #136ecb !important;
+    position: relative;
+    padding: 0;
+  }
+  .menu-main .nav-item:after,
+  .menu-main .dropdown .dropdown-menu li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #4594e3;
+    border-bottom: 1px solid #0f60b9;
+  }
+  .menu-main .dropdown .dropdown-menu li:after {
+    bottom: unset;
+    top: 0;
+    border-top: 1px solid #ffb16e;
+    border-bottom: 1px solid #c97b33;
+  }
+  .menu-main .dropdown .dropdown-menu {
+    position: unset;
+    opacity: 1;
+    transform: none;
+    float: none;
+    padding: 0;
+    display: none;
+  }
+  .menu-main .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown:before {
+    content: "+";
+    position: absolute;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    line-height: 11.5px;
+    text-align: center;
+    border-radius: 50%;
+    right: 10px;
+    top: 10px;
+  }
+  .dropdown:hover:before {
+    content: "_";
+    line-height: 0px;
+  }
+  .search select {
+    width: 30%;
+  }
+  .search .btn-search {
+    width: 20%;
+  }
+  .what .text,
+  .what .group-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .what .text {
+    margin-bottom: 25px;
+  }
+  .footer .top .registration .form .btn-regist {
+    width: 60px;
+  }
+  .footer .top .registration .form input {
+    width: 180px;
+  }
+  .footer .center .group-link {
+    display: none;
+  }
+  .footer .center .contact {
+    width: 60%;
+    padding-right: 25px;
+  }
+  .footer .facebook {
+    width: 40%;
+  }
+  .footer .facebook .append-f {
+    margin-left: -50px;
+    margin-top: 15px;
+  }
+  .footer .facebook .append-f .number {
+    font-size: 14px;
+    color: #666;
+  }
+  .footer .facebook .append-f .link.link2>span {
+    text-transform: uppercase;
+  }
+  .footer .center {
+    margin-bottom: 30px;
+  }
+  .slider-home .item .text {
+    width: 355px;
+    height: 85px;
+  }
+  .slider-home .item .text .inner p {
+    display: none;
+  }
+  .slider-home .item .text .inner {
+    left: 50px;
+  }
+  .slider-home .item .text .inner h3 {
+    font-size: 22px;
+  }
+  .right-main {
+    display: none;
+  }
+  .left-main {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .information-produce .top .information .price .old {
+    display: block;
+    margin-left: 0;
+  }
+  .block-news-01 .group-item .item-05,
+  .other-03 .item-img,
+  .other-03 .item-video,
+  .detail-img .img {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .other-02 .group-item-02 {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .my-product .center .item .khungAnh {
+    width: 15%;
+  }
+  .my-product .center .item .name {
+    width: 35%;
+  }
+  .btn-send, .btn-new {
+    margin-bottom: 10px
+  };
+  .form-product .right {
+    padding-top: 0;
+  }
+  .my-product .bottom .right {
+    padding-right: 10px;
+  }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767px) {
+  .slider-home .item .text {
+    width: 138px;
+    height: 38px;
+    background-size: 100% 100%;
+  }
+  .slider-home .item .text .inner {
+    left: 25px;
+    padding: 0;
+  }
+  .slider-home .item .text .inner h3 {
+    font-size: 12px;
+  }
+  .slider-home .item .khungAnh:before {
+    padding-bottom: 39.5%;
+  }
+  .header .logo img {
+    height: 30px;
+  }
+  .footer .center .contact,
+  .footer .facebook {
+    width: auto;
+    float: none;
+    padding-right: 0;
+  }
+  .footer .facebook .append-f {
+    margin-left: 0;
+  }
+  .co-operate .slider .slick-arrow {
+    left: 0;
+  }
+  .co-operate .slider .slick-prev {
+    left: unset;
+    right: 0;
+  }
+  .append-h {
+    background: #0057a7;
+    height: 30px;
+  }
+  .append-h .mobile {
+    color: #fff;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .append-h .mobile span {
+    font-weight: bold;
+  }
+  .append-h .mobile:before {
+    content: "";
+    display: inline-block;
+    margin-right: 14px;
+    background: url(../css/icons/phone.png);
+    transform: translateY(4px);
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-size: 100% 100% !important;
+  }
+  .at-menu {
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+  .at-menu span, .at-menu:after, .at-menu:before {
+    height: 2px;
+    width: 22px;
+  }
+  .at-menu::before {
+    top: 25px;
+  }
+  .at-menu span {
+    top: 6px;
+  }
+  .at-menu:after {
+    top: 15.5px;
+  }
+  .header .container {
+    min-height: 80px;
+  }
+  .header .logo {
+    top: 30px;
+  }
+  .header .all {
+    margin-right: 0;
+    margin-top: 28px;
+  }
+  .header .all .language {
+    bottom: 30px
+  }
+  .header .all>a.email {
+    font-size: 12px;
+  }
+  .header .all > a:before {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-size: 100% 100% !important;
+  }
+  .search select,
+  .search input,
+  .search .btn-search {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+  }
+  .search .btn-search {
+    margin-bottom: 0;
+  }
+  .product-home h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .co-operate .slider .item .test {
+    margin: 0;
+    font-size: 14px;
+  }
+  .co-operate .slider .item {
+    margin: 0 2.5px;
+  }
+  .co-operate .slider {
+    margin: 0 -2.5px;
+  }
+  .what .group-item .item {
+    margin-bottom: 20px;
+  }
+  .what .group-item .item > p {
+    font-size: 15px;
+  }
+  .top-x1 h2 {
+    font-size: 20px;
+  }
+  .footer .top .social {
+    position: unset;
+    margin-top: 10px;
+  }
+  .footer .top .registration .form {
+    display: block;
+  }
+  .footer .top .registration .form input {
+    width: 100%;
+  }
+  .footer .top .registration .form .btn-regist {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .footer .top .registration > strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer .copyright {
+    font-size: 13px;
+  }
+  .menu-main {
+    overflow-y: auto;
+  }
+  .item-03 .khungAnh {
+    width: auto;
+    float: none;
+  }
+  .item-03 {
+    padding-bottom: 20px;
+  }
+  .item-04 .content .price .old {
+    float: none;
+  }
+  .information-produce .top .images {
+    float: none;
+    width: auto;
+  }
+  .information-produce .top .information {
+    float: none;
+    padding-left: 0;
+    margin-top: 15px;
+    width: auto;
+  }
+  .information-produce .top .information h2 {
+    font-size: 18px;
+  }
+  .information-produce .tab-information .a-tab a {
+    display: block;
+    text-align: center;
+  }
+  .other .item-04 .content .price .old {
+    float: right;
+  }
+  .item-06 .khungAnh {
+    float: none;
+    width: auto;
+  }
+  .item-06 .content {
+    float: none;
+    width: auto;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  .item-07 .content {
+    margin-left: 0;
+  }
+  .item-07 .thutu {
+    margin-right: 10px;
+  }
+  .my-product .top {
+    display: none;
+  }
+  .my-product .center .item {
+    padding: 0;
+    border: none;
+    margin-bottom: 10px;
+  }
+  .my-product .center .item .khungAnh,
+  .my-product .center .item .name,
+  .my-product .center .item .don-price,
+  .my-product .center .item .number,
+  .my-product .center .item .price,
+  .my-product .center .item .delete {
+    width: auto;
+    float: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 10px
+  }
+  .my-product .center .item .don-price:before,
+  .my-product .center .item .number:before,
+  .my-product .center .item .price::before,
+  .my-product .center .item .delete {
+    font-family: 'segoeui';
+    color: #333;
+  }
+  .my-product .center .item .don-price:before {
+    content: "Đơn giá:";
+  }
+  .my-product .center .item .number:before {
+    content: "Số lượng:";
+  }
+  .my-product .center .item .price::before {
+    content: "Thành tiền:";
+  }
+  .my-product .center .item .delete::before {
+    content: "Xóa sản phẩm:";
+  }
+  .my-product .bottom {
+    padding: 10px;
+  }
+  .my-product .bottom .left,
+  .my-product .bottom .right,
+  .form-product .left,
+  .form-product .right {
+    float: none;
+    width: auto;
+    padding-right: 0;
+  }
+  .my-product .bottom .left {
+    margin-bottom: 10px;
+  }
+  .my-product .bottom .left span:nth-child(1) {
+    margin-right: 30px;
+  }
+  .btn-send, .btn-new {
+    display: block;
+    text-align: center;
+  }
+  /* them moi */
+  .splitPages .SplitPages a {
+    float: none;
+    border: 1px solid #dddddd !important;
+    margin-bottom: 5px;
+  }
+  .ad-02 .a-tab a {
+    width: auto;
+    float: none;
+    display: block;
+  }
+  .item-08 .khungAnh {
+    width: auto;
+    float: none;
+    margin-right: 0;
+    height: auto;
+  }
+  .form-registration {
+    padding-right: 0;
+  }
+  .form-registration .inner .rows > span:nth-child(1),
+  .form-registration .inner .rows > span:nth-child(2) {
+    float: none;
+    display: block;
+    width: auto;
+    text-align: left;
+  }
+  .btn-05 {
+    padding-left: 0;
+  }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {}
