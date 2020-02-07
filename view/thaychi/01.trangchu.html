@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- js -->
+    <script type="text/javascript" src="vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/tether.min.js"></script>
+    <!--<script type="text/javascript" src="vendor/js/addthis_widget.js"></script>-->
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="vendor/perfect-scrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery.elevateZoom-3.0.8.min.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <!--top bar-->
+        <section class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 inner">
+                        <ul class="navtb">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">tin tức-Sự kiện</a></li>
+                            <li>
+                                <a href="#">Thư viện</a>
+                                <ul class="con1">
+                                    <li><a href="#">Thư viện hình ảnh</a></li>
+                                    <li><a href="#">Thư viện video</a></li>
+                                    <li><a href="#">Thư viện tài liệu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                        <div class="acc-2"></div>
+                        <div class="search-2"></div>
+                        <div class="lienhe">
+                            <div class="inner">
+                                <p>nguyenquocchi@thaychi.vn</p>
+                                <strong>0988 933 452</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end top bar-->
+        <!--header main-->
+        <section class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!--logo-->
+                        <div class="logo">
+                            <div class="inner">
+                                <img src="./pic/logo.png" alt="">
+                            </div>
+                        </div>
+                        <!--end logo-->
+                        <!--search-->
+                        <div class="search">
+                            <div class="form-search">
+                                <p><img src="./css/icons/search1.png" alt=""> Từ khóa: Sách bộ đề 12 đề thi >>8 điểm</p>
+                                <input type="text" placeholder="Nhập từ khóa tìm kiếm ...">
+                                <a href="#"><img src="./css/icons/search.png" alt=""></a>
+                            </div>
+                        </div>
+                        <!--end search-->
+                        <!--acc-->
+                        <div class="acc">
+                            <div class="inner-acc">
+                                <a href="#">Đăng ký</a>
+                                <a href="#">Đăng nhập</a>
+                            </div>
+                        </div>
+                        <!--end acc-->
+                        <!--cart-->
+                        <div class="cart">
+                            <div class="inner-cart">
+                                <a href="#">
+                                    <img src="./css/icons/cart.png" alt="">
+                                    <span>10</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!--end cart-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end header main-->
+        <!--menu main-->
+        <nav class="menu-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="danh-muc">
+                            <div class="top">danh mục sách</div>
+                            <ul class="inner">
+                                <li><img src="./css/icons/dm1.png" alt=""><a href="#">Sách toán 10</a><span class="dm-active"></span></li>
+                                <li>
+                                    <img src="./css/icons/dm2.png" alt="">
+                                    <a href="#">Sách toán 11</a>
+                                    <ul class="con">
+                                        <li><a href="#">Hàm số</a></li>
+                                        <li><a href="#">Hình không gian</a></li>
+                                        <li><a href="#">Lượng giác</a></li>
+                                    </ul>
+                                    <span class="dm-active"></span>
+                                </li>
+                                <li><img src="./css/icons/dm3.png" alt=""><a href="#">Sách toán 12</a><span class="dm-active"></span></li>
+                                <li><img src="./css/icons/dm4.png" alt=""><a href="#">Bộ đề thi đại học</a><span class="dm-active"></span></li>
+                                <li><img src="./css/icons/dm5.png" alt=""><a href="#">Bộ sách khối A</a><span class="dm-active"></span></li>
+                                <li><img src="./css/icons/dm6.png" alt=""><a href="#">Bộ phương pháp học</a><span class="dm-active"></span></li>
+                                <li><img src="./css/icons/dm7.png" alt=""><a href="#">Bộ đề thi lớp 10</a><span class="dm-active"></span></li>
+                                <li><img src="./css/icons/dm8.png" alt=""><a href="#">Bộ đề thi lớp 11</a><span class="dm-active"></span></li>
+                                <li><img src="./css/icons/dm9.png" alt=""><a href="#">Bộ đề thi lớp 12</a><span class="dm-active"></span></li>
+                                <div class="xem-tc"><a href="#">Xem Tất cả</a></div>
+                            </ul>
+                        </div>
+                        <div class="menu-noibat">
+                            <ul class="inner">
+                                <li><a href="#">Sách mới</a></li>
+                                <li><a href="#">Sách bán chạy</a></li>
+                                <li><a href="#">Sách giảm giá</a></li>
+                                <li><a href="#">Tài liệu hay</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--end menu main-->
+    </header>
+
+    <!--slider home page-->
+    <section class="container" id="slider-hp">
+        <div class="row">
+            <div class="col-12 inner">
+                <div class="item">
+                    <div class="khungAnh">
+                        <a class="khungAnhCrop" href="#">
+                            <img src="./pic/slide.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="khungAnh">
+                        <a class="khungAnhCrop" href="#">
+                            <img src="./pic/slide2.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end slider home page-->
+
+    <!--huong dan-->
+    <section class="container" id="huongdan">
+        <div class="row inner">
+            <div class="col-12 col-md-6 col-lg-3 item i1">
+                <a href="#" class="a1">
+                    <img src="./pic/buoc1.png">
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 item i2">
+                <a href="#" class="a2">
+                    <img src="./pic/buoc2.png">
+                </a>
+            </div>
+            <div class="col-12 col-lg-3 item i3">
+                <a href="#" class="a3">
+                    <img src="./pic/buoc3.png">
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--end huong dan-->
+
+    <!--main -->
+    <main class="container" id="main">
+        <div class="row inner-main">
+            <section class="col-12 section-sp">
+                <div class="top-ssp">
+                    <div class="name-ssp">
+                        <h2><a href="#">Lớp 10</a></h2>
+                    </div>
+                    <ul class="menu-ssp">
+                        <li><a href="#">Sách mới</a></li>
+                        <li><a href="#">Sách bán chạy</a></li>
+                        <li><a href="#">Sách giảm giá</a></li>
+                        <div class="xemthem-ssp"><a href="#">Xem thêm</a></div>
+                    </ul>
+                </div>
+                <div class="main-ssp">
+                    <div class="left">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo3.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-12 section-sp">
+                <div class="top-ssp">
+                    <div class="name-ssp">
+                        <h2><a href="#">Lớp 11</a></h2>
+                    </div>
+                    <ul class="menu-ssp">
+                        <li><a href="#">Sách mới</a></li>
+                        <li><a href="#">Sách bán chạy</a></li>
+                        <li><a href="#">Sách giảm giá</a></li>
+                        <div class="xemthem-ssp"><a href="#">Xem thêm</a></div>
+                    </ul>
+                </div>
+                <div class="main-ssp">
+                    <div class="left">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo3.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-12 section-sp">
+                <div class="top-ssp">
+                    <div class="name-ssp">
+                        <h2><a href="#">Lớp 12</a></h2>
+                    </div>
+                    <ul class="menu-ssp">
+                        <li><a href="#">Sách mới</a></li>
+                        <li><a href="#">Sách bán chạy</a></li>
+                        <li><a href="#">Sách giảm giá</a></li>
+                        <div class="xemthem-ssp"><a href="#">Xem thêm</a></div>
+                    </ul>
+                </div>
+                <div class="main-ssp">
+                    <div class="left">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo3.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-12 section-sp">
+                <div class="top-ssp">
+                    <div class="name-ssp">
+                        <h2><a href="#">Bộ đề luyện thi ĐH</a></h2>
+                    </div>
+                    <ul class="menu-ssp">
+                        <li><a href="#">Sách mới</a></li>
+                        <li><a href="#">Sách bán chạy</a></li>
+                        <li><a href="#">Sách giảm giá</a></li>
+                        <div class="xemthem-ssp"><a href="#">Xem thêm</a></div>
+                    </ul>
+                </div>
+                <div class="main-ssp">
+                    <div class="left">
+                        <div class="khungAnh">
+                            <a class="khungAnhCrop" href="#">
+                                <img src="./pic/demo3.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                        <div class="item-sp">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop0" href="#">
+                                    <img src="./pic/demo.png">
+                                </a>
+                            </div>
+                            <div class="event-sp active">17%</div>
+                            <div class="content-sp">
+                                <div class="name-sp"><a href="#">Sách  bộ đề thi ôn lớp 10</a></div>
+                                <div class="giaban-sp">390.000 Đ</div>
+                                <div class="tietkiem-sp">Tiết kiệm: 200.000 Đ</div>
+                                <div class="giagoc-sp">590.000 Đ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-12 new-hp">
+                <div class="top">
+                    <h2><a href="#">Tin Tức</a></h2>
+                    <a href="#">Xem Thêm</a>
+                </div>
+                <div class="main-nhp">
+                    <div class="left">
+                        <div class="row">
+                            <div class="col-12 col-md-6 item-nhp">
+                                <div class="inner">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" href="#">
+                                            <img src="./pic/demo2.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <div class="tv">(23/11/2015 - 323 lượt xem)</div>
+                                        <a href="#">
+                                            <h3 class="title">Khai giảng lớp luyện thi mới dành cho khóa 2000 - 2001</h3>
+                                        </a>
+                                        <div class="summary">Ngoài việc xét công nhận tốt nghiệp, thí sinh còn phải chuẩn bị sẵn sàng cho giai đoạn điều chỉnh nguyện vọng xét tuyển vào các trường ĐH, CĐ. Theo dự kiến, năm nay các trường ĐH, CĐ sẽ lấy 70% chỉ tiêu nguyện vọng 1 (NV1). Thí sinh cần lưu ý những điều sau khi làm hồ sơ xét tuyển NV1:</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 item-nhp">
+                                <div class="inner">
+                                    <div class="khungAnh">
+                                        <a class="khungAnhCrop" href="#">
+                                            <img src="./pic/demo2.png">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <div class="tv">(23/11/2015 - 323 lượt xem)</div>
+                                        <a href="#">
+                                            <h3 class="title">Khai giảng lớp luyện thi mới dành cho khóa 2000 - 2001</h3>
+                                        </a>
+                                        <div class="summary">Ngoài việc xét công nhận tốt nghiệp, thí sinh còn phải chuẩn bị sẵn sàng cho giai đoạn điều chỉnh nguyện vọng xét tuyển vào các trường ĐH, CĐ. Theo dự kiến, năm nay các trường ĐH, CĐ sẽ lấy 70% chỉ tiêu nguyện vọng 1 (NV1). Thí sinh cần lưu ý những điều sau khi làm hồ sơ xét tuyển NV1:</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="inner">
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/qc1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/pc2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="khungAnh">
+                                <a class="khungAnhCrop" href="#">
+                                    <img src="./pic/qc3.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- end main -->
+
+    <!--quy trinh dat khang-->
+    <section id="qtdh">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner">
+                        <img src="./pic/quytrinh.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end quy trinh dat khang-->
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7 left-f">
+                    <div class="row">
+                        <div class="col-12 col-md-7 lienhe">
+                            <div class="top">Thaychy.net</div>
+                            <div class="content">
+                                <div>
+                                    <p>Địa chỉ: Số 66 Trần Đại Nghĩa, Đồng Tâm, Hai Bà Trưng, Hà Nội</p>
+                                </div>
+                                <div>
+                                    <p>Hotline: 0988 933 452</p>
+                                </div>
+                                <div>
+                                    <p>Email: nguyenquocchi@thaychi.net</p>
+                                </div>
+                                <div>
+                                    <p>Website: www.thaychi.net</p>
+                                </div>
+                            </div>
+                            <div class="nbt">
+                                <p>nhận bản tin từ chúng tôi</p>
+                                <div class="form">
+                                    <input type="text" placeholder="thaychi.net">
+                                    <a href="#"><img src="./css/icons/gmail.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 link">
+                            <div class="top">Chính Sách công ty</div>
+                            <ul>
+                                <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                                <li><a href="#">Phương thức thanh toán</a></li>
+                                <li><a href="#">Phương thức giao hàng</a></li>
+                                <li><a href="#">Quy định bảo hành</a></li>
+                                <li><a href="#">Quy định đổi trả hàng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 text-right right-f">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=226666764204714" width="340" height="210" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    <a href="#"><img src="./css/icons/google-map.png" alt=""> Bản đồ chỉ dẫn <img src="./css/icons/google-map2.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+
+    <!--copyright-->
+    <secction id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <span class="tc">Bản quyền thuộc về <a href="#">Thaychi.net</a></span>
+                    <span class="tt">Thiết kế web và SEO - Google <a href="http://tatthanh.com.vn/">Tất Thành</a></span>
+                </div>
+                <div class="col-12 col-md-6">
+                    <span class="online">Đang online: <b>40</b></span>
+                    <span class="t-online">Tổng lượt truy cập: <b>1.092.000</b></span>
+                </div>
+            </div>
+        </div>
+    </secction>
+    <!--end copyright-->
+
+
+
+
+</body>
+
+</html>
