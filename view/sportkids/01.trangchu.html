@@ -1,0 +1,3355 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>HTML-CSS-JS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="css/csstt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+
+        <!-- top bar -->
+        <div class="container top-bar">
+            <!-- logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="./pic/logo/1.png" alt="">
+                    <img src="./pic/logo/2.png" alt="">
+                </a>
+            </div>
+            <!-- function -->
+            <div class="function">
+                <span class="search">
+                    <input type="text" placeholder="Từ khóa tìm kiếm">
+                    <a href="#" class="fa">Tìm Kiếm</a>
+                </span>
+                <a href="#" class="cart">
+                    <img src="./css/icons/i1.png">
+                    <span>10</span>
+                </a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- menu main -->
+        <nav class="navbar navbar-expand-lg navbar-main">
+            <div class="container">
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Khuyến mại</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Demo</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Demo</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Demo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức - Sự kiện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chính sách đại lý</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main id="main">
+
+        <!-- slider home -->
+        <section class="slider-home">
+            <div class="item-01">
+                <div class="framed-image">
+                    <a class="cut" href="#">
+                        <img src="./pic/sl.png">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="warpper">
+                        <div class="name">Khuyến mãi lớn</div>
+                        <div class="info">Sale 20%</div>
+                        <a href="#" class="btn-01">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-01">
+                <div class="framed-image">
+                    <a class="cut" href="#">
+                        <img src="./pic/sl.png">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="warpper">
+                        <div class="name">Khuyến mãi lớn</div>
+                        <div class="info">Sale 20%</div>
+                        <a href="#" class="btn-01">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider home end -->
+
+        <!-- policy -->
+        <section class="policy">
+            <div class="warpper-policy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 item-02">
+                            <div class="warpper" style="background: #00a04b;">
+                                <div class="icon">
+                                    <img src="./pic/icons/1.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Giao hàng trên toàn quốc</h3>
+                                    <p>Miễn phí giao hàng với các đơn hàng trên 500k</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 item-02">
+                            <div class="warpper" style="background: #a2238d;">
+                                <div class="icon">
+                                    <img src="./pic/icons/2.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Đổi trả hàng trong 3 ngày</h3>
+                                    <p>Đối với các sản phẩm lỗi, hỏng do nhà sản xuất</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 item-02">
+                            <div class="warpper" style="background: #f48022;">
+                                <div class="icon">
+                                    <img src="./pic/icons/3.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Giảm giá đặc biệt</h3>
+                                    <p>Tri ân khách hàng vào các dịp đặc biệt, lễ Tết</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- policy end -->
+
+        <!-- trading -->
+        <section class="trading">
+            <div class="container">
+                <h2 class="heading">
+                    <span>khuyến mại
+                        <span class="color">trong tuần</span>
+                    </span>
+                </h2>
+                <div class="row group-item">
+                    <article class="col-12 col-md-6 item-03">
+                        <div class="images">
+                            <div class="slider-01" id="sd01">
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp5.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp1.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp2.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp3.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp4.png">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-02" id="sd02">
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp5.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp1.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp2.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp3.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp4.png">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event">-50%</div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá arsenal xám hồng trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="price">
+                                <span class="price-01">15.000.000 đ</span>
+                                <span class="price-02">16.000.000 đ</span>
+                            </div>
+                            <div class="content">
+                                <p>Xuất xứ: THÁI LAN</p>
+                                <p>Loại: vali xách tay lên máy bay</p>
+                                <p>Đơn vị tính: cm</p>
+                                <p>Size: Free Size</p>
+                            </div>
+                            <a href="#" class="btn-02">thêm vào giỏ</a>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 item-03">
+                        <div class="images">
+                            <div class="slider-01" id="sd03">
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp10.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp6.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp7.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp8.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp9.png">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-02" id="sd04">
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp10.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp6.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp7.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp8.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="framed-image">
+                                        <span class="no-cut">
+                                            <img src="./pic/sp9.png">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event">-50%</div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo Bóng Đá Đẹp - Bộ Ba Lỗ Trẻ Em Aresenal màu Xám</a>
+                            </h3>
+                            <div class="price">
+                                <span class="price-01">15.000.000 đ</span>
+                                <span class="price-02">16.000.000 đ</span>
+                            </div>
+                            <div class="content">
+                                <p>Xuất xứ: THÁI LAN</p>
+                                <p>Loại: vali xách tay lên máy bay</p>
+                                <p>Đơn vị tính: cm</p>
+                                <p>Size: Free Size</p>
+                            </div>
+                            <a href="#" class="btn-02">thêm vào giỏ</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- trading end -->
+
+        <div class="adv-01">
+            <div class="container">
+                <a href="#">
+                    <img src="./pic/adv1.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- section product -->
+        <section class="section-product pd-01">
+            <div class="container">
+                <h2 class="heading">
+                    <a href="#">Sản phẩm đồ bóng đá</a>
+                </h2>
+                <ul class="tab">
+                    <li class="active">
+                        <a href="#">GIày Bóng đá</a>
+                    </li>
+                    <li>
+                        <a href="#">Quần bóng đá</a>
+                    </li>
+                    <li>
+                        <a href="#">Áo bóng đá</a>
+                    </li>
+                </ul>
+                <div class="row group-item">
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp11.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp12.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp13.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp14.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp15.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp16.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp17.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp18.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp19.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp20.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp21.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp11.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-03">
+                    <a href="#">Xem thêm
+                        <span class="color-ee">30</span> sản phẩm khác</a>
+                </div>
+            </div>
+        </section>
+        <!-- section product end -->
+
+        <!-- section product -->
+        <section class="section-product pd-02">
+            <div class="container">
+                <h2 class="heading">
+                    <a href="#">Sản phẩm đồ bóng rổ</a>
+                </h2>
+                <ul class="tab">
+                    <li class="active">
+                        <a href="#">GIày Bóng rổ</a>
+                    </li>
+                    <li>
+                        <a href="#">Quần bóng rổ</a>
+                    </li>
+                    <li>
+                        <a href="#">Áo bóng rổ</a>
+                    </li>
+                </ul>
+                <div class="row group-item">
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp22.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp23.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp24.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp25.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp26.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp27.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp28.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp29.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-03">
+                    <a href="#">Xem thêm
+                        <span class="color-ee">30</span> sản phẩm khác</a>
+                </div>
+            </div>
+        </section>
+        <!-- section product end -->
+
+        <!-- section product -->
+        <section class="section-product pd-03">
+            <div class="container">
+                <h2 class="heading">
+                    <a href="#">sẢN PHẨM ĐỒ BƠI</a>
+                </h2>
+                <div class="row group-item">
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp22.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp23.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp24.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp25.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp26.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp27.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp28.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp29.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-03">
+                    <a href="#">Xem thêm
+                        <span class="color-ee">30</span> sản phẩm khác</a>
+                </div>
+            </div>
+        </section>
+        <!-- section product end -->
+
+        <!-- section product -->
+        <section class="section-product pd-04">
+            <div class="container">
+                <h2 class="heading">
+                    <a href="#">sẢN PHẨM Giày dép</a>
+                </h2>
+                <div class="row group-item">
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp22.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp23.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp24.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp25.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp26.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp27.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp28.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp29.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-03">
+                    <a href="#">Xem thêm
+                        <span class="color-ee">30</span> sản phẩm khác</a>
+                </div>
+            </div>
+        </section>
+        <!-- section product end -->
+
+        <!-- section product -->
+        <section class="section-product pd-05">
+            <div class="container">
+                <h2 class="heading">
+                    <a href="#">Mũ, phụ kiện</a>
+                </h2>
+                <div class="row group-item">
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp30.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp31.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp32.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp33.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp34.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp35.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp36.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp37.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-03">
+                    <a href="#">Xem thêm
+                        <span class="color-ee">30</span> sản phẩm khác</a>
+                </div>
+            </div>
+        </section>
+        <!-- section product end -->
+
+        <!-- section product -->
+        <section class="section-product pd-06">
+            <div class="container">
+                <h2 class="heading">
+                    <a href="#">Trang phục thể thao người lớn</a>
+                </h2>
+                <div class="row group-item">
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp30.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp31.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp32.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp33.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp34.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp35.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp36.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp37.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-03">
+                    <a href="#">Xem thêm
+                        <span class="color-ee">30</span> sản phẩm khác</a>
+                </div>
+            </div>
+        </section>
+        <!-- section product end -->
+
+        <!-- section product -->
+        <section class="section-product pd-07">
+            <div class="container">
+                <h2 class="heading">
+                    <a href="#">Các sản phẩm khác</a>
+                </h2>
+                <div class="row group-item">
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp30.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp31.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp32.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp33.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp34.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp35.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp36.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 item-04">
+                        <div class="warpper-item">
+                            <div class="framed-image">
+                                <a class="cut" href="#">
+                                    <img src="./pic/sp37.png">
+                                </a>
+                            </div>
+                            <div class="event">-50%</div>
+                            <div class="cover">
+                                <h3 class="name">
+                                    <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                                </h3>
+                                <div class="price">
+                                    <span class="price-01">100.000 đ</span>
+                                    <span class="price-02">110.000 đ</span>
+                                </div>
+                                <div class="info-event">
+                                    <span class="color-ee">Khuyến mại:</span>
+                                    Miễn phí in áo, túi rút tặng bóng, găng, giày, áo body, băng c, túi rút, phiếu 68k,...
+                                </div>
+                                <div class="phone">
+                                    <p>Gọi ngay:
+                                        <b class="color-ee">046 686 9134</b>
+                                    </p>
+                                    <p>Để có giá tốt hơn</p>
+                                </div>
+                                <div class="btn-item">
+                                    <a href="#" class="btn-02">thêm vào giỏ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">
+                                <a href="#">Áo bóng đá Brasil lính trẻ em năm 2017-2018</a>
+                            </h3>
+                            <div class="origin">Xuất xứ: THÁI LAN</div>
+                            <div class="price">
+                                <span class="price-01">100.000 đ</span>
+                                <span class="price-02">110.000 đ</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-03">
+                    <a href="#">Xem thêm
+                        <span class="color-ee">30</span> sản phẩm khác</a>
+                </div>
+            </div>
+        </section>
+        <!-- section product end -->
+
+        <div class="adv-02">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <a href="">
+                            <img src="./pic/adv2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a href="">
+                            <img src="./pic/adv3.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- news home -->
+        <section class="news-home">
+            <div class="container">
+                <h2 class="heading">
+                    <a href="#">
+                        Tin tức
+                        <span class="color">nổi bật</span>
+                    </a>
+                </h2>
+                <div class="warpper">
+                    <article class="item-05">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/n1.png">
+                            </a>
+                        </div>
+                        <div class="time">
+                            <div class="warpper">DEC 15
+                                <span>2016</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <a href="#">3 yếu tố tạo nên đôi giày trẻ em tốt bạn đã biết ?</a>
+                            </h3>
+                            <summary>Giày bóng đá trẻ em là một trợ thủ đắc lực dành cho các cầu thủ nhí đặc biệt trong những pha
+                                sút và tranh giành bóng, bổ trợ tốt các kỹ thuật đá bóng mà còn giúp sự phát triển của trẻ....</summary>
+                            <a href="#" class="btn-04">XEM THÊM</a>
+                        </div>
+                    </article>
+                    <article class="item-05">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/n2.png">
+                            </a>
+                        </div>
+                        <div class="time">
+                            <div class="warpper">DEC 15
+                                <span>2016</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <a href="#">Khi chọn mua áo bóng đá trẻ em nên chọn tiêu chí này</a>
+                            </h3>
+                            <summary>Bóng đá là một môn thể thao lành mạnh rèn luyện sức khỏe đòi hỏi sự bền bỉ và dẻo dai về sức
+                                khỏe.Trang phục bóng đá đó là những chiếc áo bóng đá trẻ em hay những phụ kiện như giày đá
+                                bóng bóng ...</summary>
+                            <a href="#" class="btn-04">XEM THÊM</a>
+                        </div>
+                    </article>
+                    <article class="item-05">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/n1.png">
+                            </a>
+                        </div>
+                        <div class="time">
+                            <div class="warpper">DEC 15
+                                <span>2016</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <a href="#">3 yếu tố tạo nên đôi giày trẻ em tốt bạn đã biết ?</a>
+                            </h3>
+                            <summary>Giày bóng đá trẻ em là một trợ thủ đắc lực dành cho các cầu thủ nhí đặc biệt trong những pha
+                                sút và tranh giành bóng, bổ trợ tốt các kỹ thuật đá bóng mà còn giúp sự phát triển của trẻ....</summary>
+                            <a href="#" class="btn-04">XEM THÊM</a>
+                        </div>
+                    </article>
+                    <article class="item-05">
+                        <div class="framed-image">
+                            <a class="cut" href="#">
+                                <img src="./pic/n2.png">
+                            </a>
+                        </div>
+                        <div class="time">
+                            <div class="warpper">DEC 15
+                                <span>2016</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <a href="#">Khi chọn mua áo bóng đá trẻ em nên chọn tiêu chí này</a>
+                            </h3>
+                            <summary>Bóng đá là một môn thể thao lành mạnh rèn luyện sức khỏe đòi hỏi sự bền bỉ và dẻo dai về sức
+                                khỏe.Trang phục bóng đá đó là những chiếc áo bóng đá trẻ em hay những phụ kiện như giày đá
+                                bóng bóng ...</summary>
+                            <a href="#" class="btn-04">XEM THÊM</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- news home end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 registration">
+                        <span>Đăng ký nhận bản tin</span>
+                        <div class="input">
+                            <input type="text" placeholder="Email của bạn...">
+                            <a href="#">Đăng ký</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 content">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="./pic/logo/3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="text">
+                            Bóng đá là một môn thể thao lành mạnh rèn luyện sức khỏe đòi hỏi sự bền bỉ và dẻo dai về sức khỏe.Trang phục bóng đá đó là
+                            những chiếc áo bóng đá trẻ em hay những phụ kiện như giày đá bóng
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 navbar-footer">
+                        <div class="title">Trợ giúp mua hàng</div>
+                        <ul>
+                            <li>
+                                <a href="#">Câu hỏi thường gặp</a>
+                            </li>
+                            <li>
+                                <a href="#">Hướng dẫn chọn túi</a>
+                            </li>
+                            <li>
+                                <a href="#">Chính sách giao hàng và đổi trả hàng</a>
+                            </li>
+                            <li>
+                                <a href="#">Thông tin đặt hàng và chuyển khoản</a>
+                            </li>
+                            <li>
+                                <a href="#">Trợ giúp mua hàng trực tuyến</a>
+                            </li>
+                            <li>
+                                <a href="#">Hướng dẫn mua hàng trực tuyến</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 navbar-footer">
+                        <div class="title">Danh mục sản phẩm</div>
+                        <ul>
+                            <li>
+                                <a href="#">Quần áo thể thao</a>
+                            </li>
+                            <li>
+                                <a href="#">Giày nữ trẻ em</a>
+                            </li>
+                            <li>
+                                <a href="#">Giày nam trẻ em</a>
+                            </li>
+                            <li>
+                                <a href="#">Phụ kiện đồ thể thao trẻ em</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 page-facebook">
+                        <div class="title">Fanpage Facebook</div>
+                        <div class="warpper">
+                            <div id="fb-root"></div>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src =
+                                        'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=226666764204714';
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                            </script>
+                            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="185" data-small-header="false"
+                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                                    <a href="https://www.facebook.com/facebook">Facebook</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="address-all">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 title">Sport Kids</div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <p class="name">Sport Kids Đống Đa</p>
+                        <p class="address">Địa chỉ: 116C1 Lương Đình Của, Đống Đa, Hà Nội</p>
+                        <p class="hotline">Hotline: 0869 656 116</p>
+                        <p class="email">Email: info@sportkid.com</p>
+                        <a href="javascript://" onclick="showmap(21.00757415248039, 105.80296128988266);" class="map">Bản đồ đường đi</a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <p class="name">Sport Kids Thanh Xuân</p>
+                        <p class="address">Địa chỉ: 116C1 Lương Đình Của, Đống Đa, Hà Nội</p>
+                        <p class="hotline">Hotline: 0869 656 116</p>
+                        <p class="email">Email: info@sportkid.com</p>
+                        <a href="javascript://" onclick="showmap(21.00757415248039, 105.80296128988266);" class="map">Bản đồ đường đi</a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 item">
+                        <p class="name">Sport Kids Cầu Giấy</p>
+                        <p class="address">Địa chỉ: 116C1 Lương Đình Của, Đống Đa, Hà Nội</p>
+                        <p class="hotline">Hotline: 0869 656 116</p>
+                        <p class="email">Email: info@sportkid.com</p>
+                        <a href="javascript://" onclick="showmap(21.00757415248039, 105.80296128988266);" class="map">Bản đồ đường đi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <span class="info-copyright">Bản quyền thuộc về Sportkids.vn -
+                    <a target="_bank" href="http://tatthanh.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!"
+                        class="tatthanh">Thiết kế website và SEO - Tất Thành</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <div class="ve-top">
+        <img src="/./css/icons/ve-top.png" alt="">
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade modal-map" id="modal-map" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="warpper">
+                        <div id="maps-f"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- support fix -->
+    <div class="support-fix">
+        <div class="wrapper-support">
+            <div class="title">Hỗ trợ trực tuyến</div>
+            <div class="img">
+                <div class="framed-image">
+                    <a class="cut" href="#">
+                        <img src="./pic/ht.png">
+                    </a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#" class="phone">024.66.731.114</a>
+                <a href="#" class="email">1888hanoi@gmail.com</a>
+                <a href="#" class="sky">thanhnhijsc1888hanoi</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- hotline fix -->
+    <div class="hotline-fix">
+        <div class="title">HOTLINE</div>
+        <a href="tel:0943.039.054">0943.039.054</a>
+        <a href="tel:0943.039.054">0943.039.054</a>
+    </div>
+
+</body>
+
+<!-- js -->
+<script type="text/javascript" src="vendor/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBd0CRmUEi0rqasieRwBmdjh1a8J9IkYLU"></script>
+<script type="text/javascript" src="vendor/google-map/infobox.js"></script>
+<script type="text/javascript" src="vendor/google-map/GoogleMapInit.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="vendor/jquery.elevateZoom-3.0.8.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

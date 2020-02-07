@@ -1,0 +1,155 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+.btn-01 {
+    display: inline-block;
+    width: 185px;
+    height: 57px;
+    border: 2px solid $clf;
+    color: $clf;
+    line-height: 50px;
+    font-size: 20px;
+    &:hover {
+        background: $clee;
+        border-color: $clee;
+        text-decoration: none;
+        color: $clf;
+    }
+}
+
+.btn-02 {
+    border-radius: $radius;
+    color: $clf;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    background: $cl9;
+    display: inline-block;
+    padding: 9px 25px;
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 13px;
+        background: url(../css/icons/i2.png) no-repeat center;
+        margin-right: 5px;
+    }
+    &:hover {
+        text-decoration: none;
+        background: $clee;
+        color: $clf;
+    }
+}
+
+.btn-03 {
+    text-align: center;
+    line-height: 38px;
+    a {
+        min-width: 288px;
+        border: 1px solid $clc;
+        display: inline-block;
+        text-align: none;
+        color: $cl3;
+        span {
+            font-weight: bold;
+        }
+        &:hover {
+            color: $clf;
+            background: $cl9;
+            text-decoration: none;
+        }
+    }
+}
+
+.btn-04 {
+    color: $cl9;
+    &:hover {
+        text-decoration: none;
+        color: $clee;
+    }
+}
+
+.btn-05 {
+    font-size: $fs1+1px;
+    font-weight: bold;
+    color: $clec;
+    margin-left: 25px;
+    &:hover {
+        color: $cl9;
+        text-decoration: none;
+    }
+}
+
+  
+.btn-06 {
+    display: block;
+    background: $clee;
+    color: #fff;
+    padding: 10.5px 15px;
+    border-radius: 4px;
+    border-bottom: 3px solid #96130b;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 15px;
+    strong {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    &:hover {
+        border-color: $clee;
+        text-decoration: none;
+        color: $clf;
+    }
+}
+
+.btn-07 {
+    line-height: 34px;
+    background: #d3d3d3;
+    border-radius: $radius;
+    display: inline-block;
+    padding: 0 27px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: $clf;
+    font-weight: bold;
+    &:hover {
+        color: $clf;
+        background: $clee;
+        text-decoration: none;
+    }
+}
+
+.btn-08 {
+    line-height: 29px;
+    padding: 0 10px;
+    color: $clf;
+    background: #ff3333;
+    float: right;
+    border-radius: 3px;
+    &:hover {
+        text-decoration: none;
+        background: $cl9;
+        color: $clf;
+    }
+}
+
+.btn-09 {
+    padding: 8px 20px;
+    display: inline-block;
+    margin-top: 25px;
+    background: $cl6;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 3px;
+    &:hover,
+    &:focus {
+        background: #316eae;
+        color: #fff;
+        text-decoration: none;
+    }
+}

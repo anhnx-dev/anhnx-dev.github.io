@@ -1,0 +1,519 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.item-01 {
+    position: relative;
+    .framed-image {
+        height: calc(100vh - 158px);
+    }
+    .content {
+        position: absolute;
+        width: 1200px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        text-align: right;
+        .warpper {
+            text-align: center;
+            display: inline-block;
+            padding-left: 80px;
+            padding-right: 80px;
+            color: $clf;
+            .name {
+                font-size: 30px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                line-height: 30px;
+                &::before,
+                &::after {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    background: rgba(255, 255, 255, 0.5);
+                    display: inline-block;
+                    border-radius: 50%;
+                    margin-right: 30px;
+                }
+                &::after {
+                    margin-right: 0;
+                    margin-left: 30px;
+                }
+            }
+            .info {
+                font-size: 100px;
+                font-weight: bold;
+                line-height: 100px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.item-02 {
+    color: $clf;
+    line-height: $lh1 - 2px;
+    .warpper {
+        padding: 15px 18px;
+        position: relative;
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 18px;
+            transform: translateY(-50%);
+        }
+        .info {
+            padding-left: 50px;
+            h3 {
+                font-size: $fs1;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.item-03 {
+    margin-bottom: 30px;
+    .images {
+        width: 275px;
+        float: left;
+        position: relative;
+        .framed-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: calc(100% - 16px);
+            transform: translate(-50%, -50%);
+            &::before {
+                padding-bottom: 115%;
+            }
+        }
+        .event {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: $cl00;
+            color: $clf;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 0 10px;
+            line-height: 23px;
+        }
+        .slider-01 {
+            float: left;
+            width: 50px;
+            .item{
+                width: 50px;
+                height: 65px;
+                margin-bottom: 10px;
+                background: $clf7;
+                padding: 7px;
+                border: 1px solid $clf7;
+                position: relative;
+                &:hover,
+                &.slick-current {
+                    border-color: $clee;
+                }
+            }
+        }
+        .slider-02 {
+            margin-left: 60px;
+            width: 215px;
+            .item {
+                height: 290px;
+                background: $clf7;
+                padding: 13px;
+            }
+        }
+    }
+    .info {
+        margin-left: 295px;
+        .name {
+            font-size: $fs2;
+            line-height: $lh2;
+            font-weight: bold;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed $cle0;
+            a {
+                color: $cl3;
+                text-decoration: none;
+                &:hover {
+                    color: $cl00;
+                }
+            }
+        }
+        .price {
+            margin-bottom: 10px;
+            .price-01 {
+                color: $clff;
+                font-weight: bold;
+                font-size: $fs2;
+                margin-right: 10px;
+            }
+            .price-02 {
+                color: $cl9;
+                font-size: $fs1 - 1px;
+                text-decoration: line-through;
+            }
+        }
+        .content {
+            height: 147px;
+            overflow: hidden;
+        }
+    }
+}
+
+.item-04 {
+    margin-bottom: 30px;
+    &.item-04-v2 {
+        margin-bottom: 20px;
+        .warpper-item {
+            margin-bottom: 10px;
+        }
+    }
+    .warpper-item {
+        position: relative;
+        margin-bottom: 20px;
+        color: $cl6;
+        overflow: hidden;
+        .framed-image {
+            &::before {
+                padding-bottom: 118%;
+            }
+        }
+        .event {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: $cl00;
+            color: $clf;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 0 10px;
+            line-height: 23px;
+            z-index: 2;
+        }
+        .cover {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            border: 1px solid $clea;
+            background: $clf;
+            padding: 14px;
+            opacity: 0;
+            transition: $time-a2;
+            .name {
+                font-size: $fs2;
+                line-height: $lh1;
+                font-weight: bold;
+                margin-bottom: 5px;
+                a {
+                    color: $cl3;
+                    text-decoration: none;
+                    &:hover {
+                        color: $cl00;
+                    }
+                }
+            }
+            .price {
+                padding-bottom: 7px;
+                margin-bottom: 7px;
+                border-bottom: 1px solid $cle0;
+                .price-01 {
+                    color: $clff;
+                    font-weight: bold;
+                    font-size: $fs2;
+                }
+                .price-02 {
+                    color: $cl9;
+                    font-size: $fs1 - 1px;
+                    text-decoration: line-through;
+                    float: right;
+                }
+            }
+            .info-event {
+                padding-bottom: 7px;
+                margin-bottom: 7px;
+                border-bottom: 1px solid $cle0;
+                height: 74px;
+                overflow: hidden;
+                >span {
+                    font-weight: 500;
+                }
+            }
+            .phone {
+                margin-bottom: 7px;
+            }
+            .btn-item {
+                text-align: center;
+            }
+        }
+        &:hover .cover {
+            top: 0;
+            opacity: 1;
+        }
+    }
+    .info {
+        .name {
+            font-size: $fs1;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #e0e0e0;
+            a {
+                color: $cl3;
+                text-decoration: none;
+            }
+        }
+        .price {
+            .price-01 {
+                color: $clff;
+                font-weight: bold;
+                font-size: $fs2;
+            }
+            .price-02 {
+                color: $cl9;
+                font-size: $fs1 - 1px;
+                text-decoration: line-through;
+                float: right;
+            }
+        }
+    }
+}
+
+.item-05 {
+    padding: 20px;
+    position: relative;
+    &::after {
+        @include clear;
+    }
+    .framed-image {
+        width: 260px;
+        height: 260px;
+        float: left;
+    }
+    .time {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $cla2;
+        z-index: 2;
+        color: $clf;
+        font-size: $fs2;
+        box-shadow: 3px 4px rgba(0, 0, 0, 0.2);
+        .warpper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            >span {
+                font-size: $fs4;
+                display: block;
+            }
+        }
+        
+    }
+    .content {
+        margin-left: 280px;
+        position: relative;
+        padding-top: 20px; 
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 42px;
+            height: 4px;
+            background: $cl00;
+        }
+        h3 {
+            font-family: $ffsus;
+            font-size: $fs3;
+            text-transform: uppercase;
+            a {
+                color: $cl3;
+                text-decoration: none;
+            }
+        }
+        summary {
+            max-height: $lh1 * 5;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.item-06,
+.item-07 {
+    line-height: 18px;
+    padding-top: 20px;
+    &::after {
+        @include clear;
+        padding-top: 20px;
+        border-bottom: 1px solid $cle2;
+    }
+    &:last-of-type::after {
+        padding: 0;
+        border: 0;
+    }
+    .framed-image {
+        width: 81px;
+        height: 54px;
+        float: left;
+        margin-right: 10px;
+    }
+    .content {
+        .title {
+            text-decoration: none;
+            color: $cl3;
+            display: block;
+            max-height: 36px;
+            overflow: hidden;
+            &:hover {
+                color: $clec;
+            }
+        }
+    }
+}
+
+.item-07 {
+    line-height: $lh1;
+    &:last-of-type::after {
+        padding-top: 20px;
+        border-bottom: 1px solid $cle2;
+    }
+    .framed-image {
+        height: 100px;
+        width: 100px;
+    }
+    .content {
+        .name {
+            text-decoration: none;
+            color: $cl3;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    .price {
+        .p01 {
+            font-size: $fs2;
+            font-weight: bold;
+            color: $clff;
+        }
+        .p02 {
+            color: $cl9;
+            font-size: 13px;
+            text-decoration: line-through;
+        }
+    }
+}
+
+.item-08 {
+    margin-bottom: 25px;
+    background: $clf8;
+    position: relative;
+    &::after {
+        @include clear;
+    }
+    .framed-image {
+        height: 175px;
+        width: 265px;
+        float: left;
+        margin-right: 20px;
+    }
+    .content {
+        padding-top: 10px;
+        h2 {
+            font-weight: bold;
+            font-size: $fs2;
+            margin-bottom: 15px;
+            a {
+                color: $cl3;
+                text-decoration: none;
+                &:hover {
+                    color: $clec;
+                }
+            }
+        }
+        .summary {
+            margin-top: 5px;
+            max-height: $lh1*3;
+            overflow: hidden;
+        }
+    }
+    .btn-5 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 27px;
+        line-height: 27px;
+        width: 91px;
+        text-align: center;
+        color: $clf;
+        background: #bfbfbf;
+        border-left: 3px solid #a19f9f;
+        font-size: 13px;
+        &:hover {
+            background: $clec;
+            border-color: #cf060e;
+            text-decoration: none;
+        }
+    }
+}
+
+.item-09 {
+    margin-bottom: 25px;
+    .framed-image {
+        width: 140px;
+        height: 93px;
+        float: left;
+        margin-right: 15px;
+    }
+    .content {
+        .title {
+            font-size: $fs1+1px;
+            font-weight: bold;
+            color: $cl3;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            &:hover {
+                color: $clec;
+            }
+        }
+        summary {
+            max-height: $lh1*2;
+            overflow: hidden;   
+        }
+    }
+    &.item-09-v2 {
+        .title {
+            font-size: 15px;
+            font-weight: 400;
+            text-transform: unset;
+        }
+    }
+}
+
+.item-10 {
+    margin-bottom: 20px;
+    h3 {
+        font-size: $fs1+1px;
+        margin-top: 10px;
+        a {
+            color: $cl3;
+            &:hover {
+                text-decoration: none;
+                color: $clee;
+            }
+        }
+    }
+}

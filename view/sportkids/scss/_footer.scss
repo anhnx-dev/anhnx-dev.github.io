@@ -1,0 +1,222 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+#footer {
+    background: $clf9;
+    color: $clf;
+    a {
+        color: $clf;
+        text-decoration: none;
+        &:hover {
+            color: $clee;
+        }
+    }
+    .info {
+        padding-bottom: 50px;
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .col-12 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .title {
+            font-size: $fs3+2px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        .registration {
+            padding-top: 35px;
+            &::after {
+                @include clear;
+                border-bottom: 1px solid #f26f16;
+                border-top: 1px solid #ffa053;
+                margin-bottom: 35px;
+                margin-top: 40px;
+            }
+            >span {
+                text-transform: uppercase;
+                font-size: $fs3 + 2px;
+                display: inline-block;
+                transform: translateY(7px);
+            }
+            .input {
+                float: right;
+                width: 875px;
+                position: relative;
+                 ::-webkit-input-placeholder {
+                    color: $cl9;
+                    font-style: italic;
+                }
+                 ::-moz-placeholder {
+                    color: $cl9;
+                    font-style: italic;
+                }
+                 :-ms-input-placeholder {
+                    color: $cl9;
+                    font-style: italic;
+                }
+                 :-moz-placeholder {
+                    color: $cl9;
+                    font-style: italic;
+                }
+                input {
+                    width: 100%;
+                    border: none;
+                    padding: 9px 185px 9px 15px;
+                }
+                a {
+                    position: absolute;
+                    line-height: 40px;
+                    width: 170px;
+                    text-align: center;
+                    top: 0;
+                    right: 0;
+                    background: $cl00;
+                    text-transform: uppercase;
+                    font-size: $fs3+2px;
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        width: 19px;
+                        height: 14px;
+                        background: url(../css/icons/i3.png) no-repeat;
+                        margin-right: 5px;
+                    }
+                    &:hover {
+                        color: $clf;
+                        background: $cla2;
+                    }
+                }
+            }
+        }
+        .content {
+            .logo {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+        .navbar-footer {
+            ul {
+                li {
+                    padding-top: 6px;
+                    &::after {
+                        content: "";
+                        display: block;
+                        margin-top: 6px;
+                        border-bottom: 1px solid #f26f16;
+                        border-top: 1px solid #ffa053;
+                    }
+                    a {
+                        &::before {
+                            font-family: $fffa;
+                            content: "\f105";
+                            font-weight: 700;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .address-all {
+        background: #dc6709 url(../css/bg/2.png) no-repeat center top 30px;
+        padding-bottom: 25px;
+        &::before {
+            height: 25px;
+            background: url(../css/bg/1.png);
+            content: "";
+            display: block;
+            transform: translateY(-25px);
+            position: relative;
+            z-index: 3;
+        }
+        .title {
+            padding-top: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: $fs4;
+            margin-bottom: 30px;
+        }
+        .item {
+            margin-bottom: 20px;
+            line-height: $lh1+2px;
+            p {
+                position: relative;
+                padding-left: 20px;
+                &::before {
+                    font-family: $fffa;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            .name {
+                font-size: 15px;
+                color: #f6ff00;
+                font-weight: 700;
+                padding-left: 0;
+            }
+            .address {
+                &::before {
+                    content: "\f041";
+                }
+            }
+            .hotline {
+                &::before {
+                    content: "\f095";
+                }
+            }
+            .email {
+                &::before {
+                    content: "\f0e0";
+                }
+            }
+            .map {
+                &::before {
+                    content: "";
+                    width: 22px;
+                    height: 21px;
+                    margin-right: 5px;
+                    display: inline-block;
+                    background: url(../css/icons/i4.png) no-repeat center;
+                    transform: translateY(5px);
+                }
+            }
+        }
+    }
+    .copyright {
+        padding: 6px 0;
+        background: #c05702;
+    }
+}
+
+.modal-map {
+    display: block !important;
+    transform: scale(0);
+    &.show {
+        transform: scale(1);
+    }
+    .modal-dialog {
+        max-width: 1180px;
+        .modal-content {
+            background: unset;
+            border: none;
+            .modal-body {
+                padding: 0;
+            }
+        }
+    }
+    .close {
+        position: absolute;
+        opacity: 1;
+        top: -30px;
+        right: 0;
+        color: $clf;
+    }
+}
+
+#maps-f {
+    height: 500px;
+    max-height: 80vh;
+}
