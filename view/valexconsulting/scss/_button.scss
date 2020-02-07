@@ -1,0 +1,153 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+.btn-01,
+.btn-02,
+.btn-03,
+.btn-04,
+.btn-05,
+.btn-06,
+.btn-08 {
+    font-size: 24px;
+    padding: 14.5px 40px;
+    border: 3px solid $cle9;
+    display: inline-block;
+    font-family: $ff3;
+    color: $clf;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+    transition-property: color;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $cle9;
+        border-radius: 100%;
+        transform: scale(0);
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+    &:hover {
+        text-decoration: none;
+        color: $clf;
+        &::before {
+            transform: scale(2);
+        }
+    }
+}
+
+.btn-02,
+.btn-03 {
+    font-size: $fs3;
+    padding: 3px 30px;
+    border: 2px solid $clf;
+    &:hover {
+        color: $cle9;
+        &::before {
+            background: $clf;
+        }
+    }
+}
+
+.btn-03 {
+    text-transform: initial;
+    font-size: $fs3;
+    font-family: $ff1;
+    font-weight: 700;
+    padding: 3px 35px;
+}
+
+.btn-04 {
+    font-size: $fs3;
+    padding: 14px 30px;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+
+.btn-05 {
+    padding: 14px 118px;
+    color: $cl6;
+}
+
+.btn-06 {
+    color: $cldf;
+    font-size: 13px;
+    border: 2px solid $cldf;
+    font-family: $ff1;
+    padding: 7px 38px;
+}
+
+.btn-07 {
+    display: inline-block;
+    padding: 9px 28px;
+    color: $clf;
+    font-size: $fs2;
+    font-weight: 700;
+    background: $cldf;
+    &:hover {
+        text-decoration: none;
+        color: $clf;
+        background: $cl92;
+    }
+}
+
+.btn-08 {
+    border: 1px solid #e2e2e2;
+    padding: 7px 25px;
+    font-size: $fs2;
+    font-family: $ff1;
+    font-weight: 400;
+    color: $cl6;
+    .fa::before {
+        content:"\f178";
+    }
+}
+
+.btn-09 {
+    padding-top: 10px;
+    margin-left: -5px;
+    margin-right: -5px;
+    .col-12 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    a {
+        display: block;
+        background: #a3a3a3;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $clf;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            background: $cldf;
+        }
+    }
+}
+
+.btn-10 {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 7.5px 30px;
+    text-transform: uppercase;
+    color: $clf;
+    background: #151515;
+    &:hover,
+    &:focus {
+        color: $clf;
+        text-decoration: none;
+        background: $cldf;
+    }
+}

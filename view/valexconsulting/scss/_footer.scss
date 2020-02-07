@@ -1,0 +1,34 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+#footer {
+    background: #151515;
+    color: $clf;
+    .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .info {
+            padding-top: 5px;
+            position: relative;
+            font-size: $fs3;
+            line-height: $lh2;
+            strong {
+                font-family: $ff2;
+                font-size: 22px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+            .social {
+                position: absolute;
+                top: 5px;
+                right: 0;
+                float: none;
+                a {
+                    color: $clf;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

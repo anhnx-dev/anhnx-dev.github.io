@@ -1,0 +1,193 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.navbar-toggler {
+    display: none;
+}
+
+#header {
+    background: $cl05;
+    border-bottom: 1px solid $cl92;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    .top-bar {
+        border-bottom: 1px solid $cl6;
+        padding: 9px 0;
+        a {
+            color: $clf;
+            text-decoration: none;
+        }
+        .email {
+            margin-right: 30px;
+            &::before {
+                content:"\f0e0";
+                margin-right: 4px;
+            }
+        }
+        .hotline::before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 16px;
+            background: url(../css/icons/i1.png) no-repeat center;
+            margin-right: 4px;
+            transform: translateY(2px);
+        }
+    }
+}
+
+.nav-main {
+    position: relative;
+    min-height: 158px;
+    .search {
+        position: absolute;
+        right: 0;
+        top: 85px;
+    }
+    .navbar-brand {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        img {
+            height: 127px;
+        }
+    }
+    .nav-group {
+        display: block;
+        &::after {
+            @include clear;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+            padding-right: 50px;
+        }
+    }
+    .nav {
+        margin-top: 90px;
+        .nav-item {
+            .nav-link {
+                color: $clf;
+                padding: 0;
+                margin-right: 35px;
+                font-size: 17px;
+                padding-bottom: 5px;
+            }
+            &.active,
+            &:hover {
+                .nav-link {
+                    border-bottom:  4px solid $cle9;
+                    color: $cle9;
+                }
+            }
+        }
+        .dropdown {
+            .dropdown-menu {
+                background: #cd7124;
+                border: none;
+                border-radius: 0;
+                margin: 0;
+                padding: 8px 0;
+                min-width: 280px;
+                .nav-item {
+                    position: relative;
+                    .btn-dropdown {
+                        position: absolute;
+                        width: 38px;
+                        height: 38px;
+                        top: 0;
+                        right: 0;
+                        text-align: center;
+                        &::before {
+                            font-family: $fffa;
+                            content:"\f105";
+                            color: $clf;
+                            line-height: 40px;
+                        }
+                    }
+                    .nav-link {
+                        font-size: $fs3;
+                        padding: 7.5px 17px 7.5px 17px;
+                        margin-right: 0;
+                        color: $clf;
+                        border-top: 1px solid #c4571d;
+                        border-bottom: 1px solid #dc9131;
+                    }
+                    &:last-of-type .nav-link {
+                        border-bottom: none;
+                    }
+                    &:nth-child(1) .nav-link {
+                        border-top: none;
+                    }
+                    &:hover {
+                        .nav-link {
+                            &:hover {
+                                background: $clf;
+                                color: $cle9;
+                            }
+                        }
+                        .btn-dropdown::before {
+                            color: $cle9;
+                        }
+                    }
+                }
+                .dropdown {
+                    .dropdown-menu {
+                        left: calc(100% + 2px);
+                        top: 0;
+                    }
+                }
+            }
+            &:hover>.dropdown-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+.form-search {
+    position: relative;
+    a {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid $clf;
+        display: block;
+        color: $clf;
+        text-align: center;
+        text-decoration: none;
+        &::before {
+            content:"\f002";
+            line-height: 28px;
+        }
+    }
+    input {
+        position: absolute;
+        right: 0;
+        top: 105%;
+        line-height: 30px;
+        border: none;
+        padding: 0 10px;
+        display: none;
+    }
+    &:hover {
+        input {
+            display: block;
+        }
+    }
+}
+
+
+
+        
+    
+        
+            
