@@ -1,0 +1,79 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.group-organizations {
+  background: $c-white;
+  >.row {
+    margin: 0;
+  }
+}
+
+.organizations {
+  background: $c-white;
+  min-height: 160px;
+  .headline {
+    @extend .medium-text;
+    padding: 6px 15px;
+    margin: 0;
+    background: $cl14;
+    color: $cl26;
+    text-align: center;
+  }
+  .list {
+    padding: 20px 0;
+    margin: 0;
+    .item {
+      padding-left: 15px;
+      padding-right: 15px;
+      list-style: none;
+      .wrapper {
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        .img {
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+        .name {
+          @extend .body-text;
+          margin: 10px 0 0 0;
+          position: relative;
+          height: 70px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          text-decoration: none;
+          color: $c-dark; 
+          font-weight: 500;
+        }
+      }
+
+    }
+    // li {
+    //   list-style: none;
+    // }
+    // a {
+    //   position: relative;
+    //   height: 70px;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   text-align: center;
+    //   text-decoration: none;
+    //   color: $c-dark;
+    //   img {
+    //     max-height: 70px;
+    //   }
+    //   img+span{
+    //     margin-left: 15px;
+    //   }
+    // }
+  }
+}

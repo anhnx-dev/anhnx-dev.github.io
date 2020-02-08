@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/css/main.min.css">
+
+</head>
+
+<body>
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc mở
+					JavaScript trong
+					phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app">
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- top bar -->
+			<section class="top-bar">
+				<div class="container">
+					<div class="inner">
+						<div class="contact">
+							<div class="phone"><i class="fa fa-email"></i> Email: <span>anhsangsoiduong2017@gmail.com</span></div>
+							<div class="email"><i class="fa fa-phone"></i> Phone: <span>04 62 63 1777</span></div>
+						</div> <!-- /top bar -->
+						<ul class="nav">
+							<li class="nav-item js-toggle-registration"><i class="fa fa-edit"></i>Đăng ký</li>
+							<li class="nav-item js-toggle-login"><i class="fa fa-user"></i>Đăng nhập</li>
+						</ul> <!-- nav -->
+					</div>
+				</div>
+			</section>
+			<!-- top bar end -->
+
+			<!-- navbar -->
+			<nav class="navbar">
+				<div class="container">
+					<div class="wrapper">
+						<div class="branb">
+							<a class="logo" href="http://"><img src="./images/logo.png" alt=""></a>
+						</div>
+						<ul class="nav js-navbar">
+							<li class="nav-item">
+								<a href="" class="nav-link"><i class="fa fa-home"></i></a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Giới thiệu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Giới thiệu cuộc thi</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn đăng ký</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn thi</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thông báo BTC</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tra cứu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Danh sách thí sinh</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Kết quả</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Bảng xếp hạng</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thể lệ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Văn bản</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Thông báo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Tài liệu tham khảo</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Lịnh thi</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- navbar end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+
+			<!-- breadcrumb -->
+			<nav class="section breadcrumb">
+				<div class="container">
+					<ul class="breadcrumb-list">
+						<li class="breadcrumb-item">
+							<a class="breadcrumb-link" href="#">Trang chủ</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a class="breadcrumb-link" href="#">Tra cứu</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a class="breadcrumb-link" href="#">Bảng xếp hạng</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- breadcrumb end -->
+
+			<!-- ratings -->
+			<section class="section ratings">
+				<div class="container">
+					<div class="ratings-wrapper">
+						<h1 class="headline">Top thí sinh thi</h1>
+						<form class="ratings-search" action="">
+							<select class="form-control">
+								<option>Top thành phố đã thi</option>
+							</select>
+							<button class="btn btn-primary" type="submit">Tìm kiếm</button>
+						</form>
+						<div class="content">
+							<div class="row title">
+								<div class="col-2 col-md-1"></div>
+								<div class="col-6 col-md-6">Thành phố</div>
+								<div class="col-4 col-md-5">Số lượng</div>
+							</div>
+							<ol class="list">
+								<li class="row">
+									<div class="col-2 col-md-1 top"><img src="src/./images/cuo-vang.png" alt=""></div>
+									<div class="col-6 col-md-6 name-city">Phú Thọ</div>
+									<div class="col-4 col-md-5 number">145.309</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top"><img src="src/./images/cup-bac.png" alt=""></div>
+									<div class="col-6 col-md-6 name-city">Thái Nguyên</div>
+									<div class="col-4 col-md-5 number">51.177</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top"><img src="src/./images/cup-dong.png" alt=""></div>
+									<div class="col-6 col-md-6 name-city">Hà Nội</div>
+									<div class="col-4 col-md-5 number">53.124</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">4</div>
+									<div class="col-6 col-md-6 name-city">Tp.Hồ Chí Minh</div>
+									<div class="col-4 col-md-5 number">18.672</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">5</div>
+									<div class="col-6 col-md-6 name-city">Nam Định</div>
+									<div class="col-4 col-md-5 number">26.975</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">6</div>
+									<div class="col-6 col-md-6 name-city">Nghệ An</div>
+									<div class="col-4 col-md-5 number">23.911</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">7</div>
+									<div class="col-6 col-md-6 name-city">Bắc Ninh</div>
+									<div class="col-4 col-md-5 number">23.463</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">8</div>
+									<div class="col-6 col-md-6 name-city">Bắc Giang</div>
+									<div class="col-4 col-md-5 number">22.701</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">9</div>
+									<div class="col-6 col-md-6 name-city">Quảng Ninh</div>
+									<div class="col-4 col-md-5 number">21.331</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">10</div>
+									<div class="col-6 col-md-6 name-city">Bình Định</div>
+									<div class="col-4 col-md-5 number">20.392</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">11</div>
+									<div class="col-6 col-md-6 name-city">Quảng Trị</div>
+									<div class="col-4 col-md-5 number">19.567</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">12</div>
+									<div class="col-6 col-md-6 name-city">Quảng Bình</div>
+									<div class="col-4 col-md-5 number">18.828</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">13</div>
+									<div class="col-6 col-md-6 name-city">Lào Cai</div>
+									<div class="col-4 col-md-5 number">14.942</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">14</div>
+									<div class="col-6 col-md-6 name-city">Bình Dương</div>
+									<div class="col-4 col-md-5 number">13.532</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">15</div>
+									<div class="col-6 col-md-6 name-city">Sơn La</div>
+									<div class="col-4 col-md-5 number">14.410</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">16</div>
+									<div class="col-6 col-md-6 name-city">Đà Nẵng</div>
+									<div class="col-4 col-md-5 number">10.890</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">17</div>
+									<div class="col-6 col-md-6 name-city">Hà Tĩnh</div>
+									<div class="col-4 col-md-5 number">11.251</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">18</div>
+									<div class="col-6 col-md-6 name-city">Đắk Lắk</div>
+									<div class="col-4 col-md-5 number">9.784</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">19</div>
+									<div class="col-6 col-md-6 name-city">Đồng Tháp</div>
+									<div class="col-4 col-md-5 number">7.514</div>
+								</li>
+								<li class="row">
+									<div class="col-2 col-md-1 top">20</div>
+									<div class="col-6 col-md-6 name-city">Quảng Nam</div>
+									<div class="col-4 col-md-5 number">6.797</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ratings end -->
+
+
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 info">
+						<p>THƯỜNG TRỰC BAN TỔ CHỨC</p>
+						<div class="row inner">
+							<div class="col-md-6">
+								<p class="title">BAN THANH NIÊN TRƯỜNG HỌC<br>TRUNG ƯƠNG ĐOÀN TNCS HỒ CHÍ MINH</p>
+								<ul>
+									<li>64 Bà Triệu, Quận Hoàn Kiếm, Thành Phố Hà Nội</li>
+									<li>Đồng Chí: Nguyễn Bá Cát</li>
+									<li>Cán bộ Ban Thanh Niên Trường học TW Đoàn</li>
+									<li>Điện thoại: 0912.104.345</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<p class="title">CÔNG TY CỔ PHẦN TẬP ĐOÀN GIÁO DỤC EGROUP </p>
+								<ul>
+									<li>Tầng 3, Tòa Nhà 25T1, Hoàng Đạo Thúy, Trung Hòa, Cầu Giấy, Hà Nội</li>
+									<li>Đồng Chí: Phạm Thu Huế</li>
+									<li>Phòng Cộng Đồng, Công Ty Cổ Phần Tập Đoàn Giáo Dục Egroup</li>
+									<li>ĐTDĐ: 0962 411 566</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 logo">
+						<p>ĐƠN VỊ TRUYỀN THÔNG</p>
+						<div class="inner">
+							<a href="http://"><img src="./images/mgc.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+		<!-- slide out -->
+		<div class="nav-trigger js-trigger">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+		<div class="slideout js-slideout">
+			<div class="inner">
+				<ul class="button-group">
+					<li class="button js-toggle-registration"><i class="fa fa-edit"></i>Đăng ký</li>
+					<li class="button js-toggle-login"><i class="fa fa-user"></i>Đăng nhập</li>
+				</ul> <!-- button group -->
+				<nav class="slideout-navbar">
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="" class="nav-link">Trang chủ</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Giới thiệu</a>
+							<ul>
+								<li class="nav-item">
+									<a href="" class="nav-link">Giới thiệu cuộc thi</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Hướng dẫn đăng ký</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Hướng dẫn thi</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Thông báo BTC</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Tra cứu</a>
+							<ul>
+								<li class="nav-item">
+									<a href="" class="nav-link">Danh sách thí sinh</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Kết quả</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Bảng xếp hạng</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Thể lệ</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Văn bản</a>
+							<ul>
+								<li class="nav-item">
+									<a href="" class="nav-link">Thông báo</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Tài liệu tham khảo</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Lịnh thi</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Liên hệ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contact">
+					<div class="phone"> Email: <span>anhsangsoiduong2017@gmail.com</span></div>
+					<div class="email"> Phone: <span>04 62 63 1777</span></div>
+				</div>
+			</div>
+		</div>
+		<!-- slideout end -->
+
+		<!-- popup -->
+		<div class="form-user form-login js-login">
+			<div class="logo">
+				<img src="src/./images/egroup-logo.png" alt="">
+			</div>
+			<form action="" class="form">
+				<p>Đã là thành viên?</p>
+				<div class="form-group">
+					<input type="username" class="form-control" placeholder="Email/Username">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="password">
+				</div>
+				<div class="form-group form-check">
+					<input type="checkbox" class="form-check-input">
+					<label class="form-check-label">Ghi nhớ đăng nhập</label>
+				</div>
+				<button type="submit" class="btn btn-success">Đăng nhập</button>
+			</form>
+			<div class="bottom">
+				<p>Chưa có tài khoản?</p>
+				<button class="btn btn-primary js-open-registration">Đăng ký mới</button>
+			</div>
+		</div>
+
+		<div class="form-user from-registration js-registration">
+			<div class="logo">
+				<img src="src/./images/egroup-logo.png" alt="">
+			</div>
+			<form action="" class="form">
+				<p>Thành viên mới?</p>
+				<div class="form-group">
+					<input type="username" class="form-control" placeholder="Email/Username">
+					<small>(Tên đăng nhập viết liền không dấu, không chứa kí tự đặc biệt)</small>
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Mật khẩu">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Xác nhận mật khẩu">
+				</div>
+				<div class="form-group">
+					<input type="phone" class="form-control" placeholder="Số điện thoại">
+				</div>
+				<button type="submit" class="btn btn-success">Đăng ký</button>
+			</form>
+		</div>
+		<!-- popup end -->
+
+		<div class="body-overlay js-body-overlay"></div>
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/slick.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+</body>
+
+</html>

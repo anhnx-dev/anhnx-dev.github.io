@@ -1,0 +1,126 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.notification {
+  .notification-item {
+    @extend .section;
+    position: relative;
+    background: $c-white;
+    overflow: hidden;
+    .headline {
+      position: relative;
+      padding: 11px 15px;
+      background: $cl05;
+      text-align: center;
+      @media (min-width: $breakpoints-md) {
+        text-align: left;
+      }
+      h2 {
+        @extend .medium-text;
+        position: relative;
+        margin: 0;
+        @media (min-width: $breakpoints-md) {
+          padding-left: 40px;
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 32px;
+            height: 28px;
+            margin-right: 5px;
+            background: url(../images/loa-tb.png);
+          }
+        }
+        a {
+          color: $c-white;
+          text-decoration: none;
+        }
+      }
+      .btn {
+        display: none;
+        position: absolute;
+        top: 11px;
+        right: 15px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        color: $c-white;
+        @media (min-width: $breakpoints-md) {
+          display: block;
+        }
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+    .list {
+      position: relative;
+      @media (min-width: $breakpoints-md) {
+        &::after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          left: 20%;
+          top: 0;
+          background: $cl05;
+        }
+      }
+    }
+    .list-item {
+      position: relative;
+      padding: 5px 0;
+      &:nth-child(2n + 2) {
+        background: $c-light;
+      }
+      @media (min-width: $breakpoints-md) {
+        display: flex;
+        padding: 0;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: $cl05;
+          border-radius: 50%;
+          left: 20%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .title {
+        @extend .body-text;
+        margin: 0;
+        font-weight: 400;
+        padding: 5px 15px;
+        @media (min-width: $breakpoints-md) {
+          width: 80%;
+        }
+        a {
+          color: $c-dark;
+          text-decoration: none;
+          transition: $transition;
+
+          &:hover,
+          &:focus {
+            color: $c-red2;
+          }
+        }
+      }
+      .date {
+        margin: 0;
+        width: 100%;
+        padding: 0 15px;
+        color: $c-grey;
+        @media (min-width: $breakpoints-md) {
+          width: 20%;
+          padding: 5px 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

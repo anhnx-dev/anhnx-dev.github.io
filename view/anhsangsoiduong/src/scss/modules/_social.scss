@@ -1,0 +1,36 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.social {
+  border-radius: $round1;
+  background-image: url(../images/bg-social.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: $round;
+  background-size: cover;
+  .headline {
+    padding: 30px 15px 0 130px;
+    color: $c-white;
+    h2 {
+      @extend .medium-text;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .list {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    li {
+      list-style: none;
+      margin: 0 10px;
+      transition: $transition;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}

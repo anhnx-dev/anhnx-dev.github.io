@@ -1,0 +1,60 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.footer {
+  margin-top: 30px;
+  background: $cl18;
+  color: $c-white;
+  padding: 30px 0;
+  .info {
+    @extend .small-text;
+    >p {
+      margin: 0;
+    }
+    .inner {
+      margin-top: 20px;
+      .col-md-6 {
+        margin-top: 20px;
+        @media (min-width: $breakpoints-md) {
+          margin-top: 0;
+        }
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+      }
+      .title {
+        color: $cl17;
+        margin: 0;
+        @media (min-width: $breakpoints-md) {
+          min-height: 3.2rem;
+        }
+      }
+      ul {
+        padding: 0 0 0 17px;
+        margin: 10px 0 0 0;
+        li {
+          margin-top: 5px;
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    margin-top: 20px;
+    @media (min-width: $breakpoints-md) {
+      text-align: right;
+      margin-top: 0;
+    }
+    >p {
+      margin: 0;
+    }
+    .inner {
+      margin-top: 10px;
+      @media (min-width: $breakpoints-md) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
