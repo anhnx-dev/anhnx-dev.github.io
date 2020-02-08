@@ -1,0 +1,94 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.images-videos {
+  background: $c-white;
+  border-radius: $round1;
+  overflow: hidden;
+  .headline {
+    @extend .big-text;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 6px 15px 6px 15px;
+    text-align: center;
+    background: $cl09;
+    a {
+      color: $c-white;
+      text-decoration: none;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    background: $cl14;
+    border-bottom: 1px solid $cl15;
+    li {
+      list-style: none;
+      text-transform: uppercase;
+      padding: 10px 15px;
+      border-left: 1px solid $cl15;
+      transition: $transition;
+      &:last-of-type {
+        border-right: 1px solid $cl15;
+      }
+      &:hover,
+      &.active {
+        background: $c-white;
+      }
+    }
+  }
+  .blocks {
+    .block {
+      .inner {
+        @media (min-width: $breakpoints-md) {
+          display: flex;
+        }
+        .news-item {
+          padding-left: 15px;
+          padding-right: 15px;
+          margin-top: 15px;
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+          @media (min-width: $breakpoints-md) {
+            width: 25%;
+            margin-top: 0;
+          }
+          .content {
+            margin-top: 10px;
+            .title {
+              margin: 0;
+              font-weight: 500;
+              text-align: justify;
+              line-height: 1.4;
+              a {
+                color: $cl11;
+                text-decoration: none;
+                transition: $transition;
+                &:hover,
+                &:focus {
+                  color: $c-dark;
+                }
+              }
+            }
+            .info {
+              @extend .small-text;
+              color: $cl12;
+              >span {
+                margin-top: 5px;
+                margin-right: 10px;
+                &:last-of-type {
+                  margin-right: 0;
+                }
+              }
+            }
+            .description {
+              margin-top: 5px;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}

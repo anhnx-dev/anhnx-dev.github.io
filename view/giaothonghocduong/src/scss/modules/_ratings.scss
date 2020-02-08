@@ -1,0 +1,65 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.ratings {
+  .ratings-wrapper {
+    padding: 15px;
+    border-radius: $round1;
+    background: $c-white;
+    @media (min-width: $breakpoints-md) {
+      padding: 45px 65px;
+    }
+    .headline {
+      @extend .big-text-01;
+      margin: 0;
+      text-align: center;
+      @media (min-width: $breakpoints-md) {
+        text-align: left;
+      }
+    }
+    .ratings-search {
+      margin-top: 15px;
+      text-align: center;
+      @media (min-width: $breakpoints-md) {
+        text-align: left;
+      }
+      .form-control {
+        width: 245px;
+      }
+      .btn {
+        margin-top: 10px;
+        padding: 4.5px 40px;
+        @media (min-width: $breakpoints-md) {
+          margin-top: 0;
+          margin-left: 10px;
+        }
+      }
+    }
+    .content {
+      @extend .small-text-01;
+      margin-top: 40px;
+      .title {
+        font-weight: 700;
+        border-bottom: 2px solid $bc-light;
+        >div {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+      }
+      .list {
+        margin: 0;
+        padding: 0;
+        .top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .name-city,
+        .number {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}

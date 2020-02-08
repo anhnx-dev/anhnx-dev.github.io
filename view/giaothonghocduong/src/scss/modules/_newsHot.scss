@@ -1,0 +1,111 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.news-hot {
+  background: $c-white;
+  border-radius: $round1;
+  overflow: hidden;
+  .headline {
+    @extend .big-text;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 6px 15px 6px 55px;
+    background: url(../images/icon-tin-nong.png) no-repeat center left 15px $cl08;
+    a {
+      color: $c-white;
+      text-decoration: none;
+    }
+  }
+  .inner {
+    padding: 15px;
+  }
+  .news-item {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $cl13;
+    .title {
+      margin: 0;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.4;
+      a {
+        color: $cl11;
+        text-decoration: none;
+        transition: $transition;
+        &:hover,
+        &:focus {
+          color: $c-dark;
+        }
+      }
+    }
+    .content {
+      margin-top: 10px;
+      @media (min-width: $breakpoints-md) {
+        display: flex;
+        .img-cover {
+          width: 40%;
+          min-height: 165px;
+        }
+      }
+      .wrapper {
+        margin-top: 10px;
+        @media (min-width: $breakpoints-md) {
+          width: 60%;
+          margin-top: 0;
+          padding-left: 10px;
+        }
+        .info {
+          @extend .small-text;
+          color: $cl12;
+          >span {
+            margin-right: 10px;
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+        .description {
+          margin-top: 5px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+  .list {
+    margin: 0;
+    padding: 0;
+    .item {
+      list-style: none;
+      padding: 10px 0;
+      border-bottom: 1px solid $cl13;
+      &:last-of-type {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      .title {
+        margin: 0;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 1.4;
+        a {
+          color: $cl11;
+          text-decoration: none;
+          transition: $transition;
+          &:hover,
+          &:focus {
+            color: $c-dark;
+          }
+        }
+      }
+      .info {
+        @extend .small-text;
+        color: $cl12;
+        >span {
+          margin-right: 10px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

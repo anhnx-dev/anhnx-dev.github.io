@@ -1,0 +1,79 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.form-user {
+  position: fixed;
+  z-index: 999;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: $c-white;
+  border-radius: $round;
+  width: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: $transition;
+  .logo {
+    text-align: center;
+    background: $c-light;
+    img {
+      max-width: 200px;
+    }
+  }
+  .form {
+    padding: 15px;
+    p {
+      margin: 0;
+      font-weight: 700;
+    }
+    .form-group {
+      margin-top: 15px;
+      .form-control {
+        width: 100%;
+      }
+    }
+    .btn {
+      margin-top: 15px;
+      width: 100%;
+    }
+  }
+  .bottom {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $bc-light;
+    p {
+      margin: 0;
+    }
+    .btn {
+      padding: 2px 10px;
+    }
+  }
+}
+
+.active-login {
+  .form-login {
+    top: 50%;
+    opacity: 1;
+    pointer-events: initial;
+  }
+  .body-overlay {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.active-registration {
+  .from-registration {
+    top: 50%;
+    opacity: 1;
+    pointer-events: initial;
+  }
+  .body-overlay {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

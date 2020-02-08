@@ -1,0 +1,126 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.countdown-clock {
+  position: relative;
+  background: $cl04;
+  color: $c-white;
+  padding: 15px 0;
+  text-align: center;
+  .headline {
+    @extend .medium-text;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .flip-clock-wrapper {
+    background: $c-white;
+    margin:40px 0 0 0;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    @media (min-width: $breakpoints-xl) {
+      padding: 0 40px;
+    }
+    .flip-clock-dot.top,
+    .flip-clock-dot.bottom {
+      display: none;
+    }
+    .flip-clock-divider {
+      width: 10px;
+      &:first-child {
+        width: 0;
+      }
+    }
+    .flip-clock-divider {
+      .flip-clock-label {
+        top: initial;
+        bottom: 11px;
+        right: -56px;
+        padding: 3px 5px;
+        border-radius: 9px;
+        color: $c-white;
+        min-width: 40px;
+      }
+      &:nth-child(1) .flip-clock-label {
+        background: $cl20;
+      }
+      &:nth-child(4) .flip-clock-label {
+        background: $cl21;
+      }
+      &:nth-child(7) .flip-clock-label {
+        background: $cl22;
+      }
+      &:nth-child(10) .flip-clock-label {
+        background: $cl23;
+      }
+    }
+    ul {
+      height: 45px;
+      width: 40px;
+      margin: 0 2.5px;
+      float: none;
+      display: flex;
+      margin-top: 20px;
+      padding: 0;
+      box-shadow: none;
+      background: transparent;
+      &:nth-child(2) li a div div.inn,
+      &:nth-child(3) li a div div.inn {
+        background: $cl20;
+      }
+      &:nth-child(5) li a div div.inn,
+      &:nth-child(6) li a div div.inn {
+        background: $cl21;
+      }
+      &:nth-child(8) li a div div.inn,
+      &:nth-child(9) li a div div.inn {
+        background: $cl22;
+      }
+      &:nth-child(11) li a div div.inn,
+      &:nth-child(12) li a div div.inn {
+        background: $cl23;
+      }
+      li {
+        line-height: 50px;
+        a div {
+          font-size: 35px;
+          line-height: 45px;
+          &.inn {
+            font-size: 35px;
+            line-height: 45px;
+            color: $c-white;
+          }
+        }
+      }
+    }
+  }
+  .button-group {
+    margin-top: 30px;
+    padding: 0 15px;
+    .btn {
+      @extend .big-text-01;
+      color: $c-white;
+      text-transform: uppercase;
+      background: $cl19;
+      font-weight: 700;
+      margin: 10px 5px;
+      padding: 8.5px 70px;
+      border-radius: 25px;
+      border: none;
+      &:nth-child(2) {
+        background: $c-white;
+        color: $cl19;
+      }
+      &:hover {
+        &:nth-child(1) {
+          background: $c-white;
+          color: $cl19;
+        }
+        &:nth-child(2) {
+          background: $cl19;
+          color: $c-white;
+        }
+      }
+    }
+  }
+}

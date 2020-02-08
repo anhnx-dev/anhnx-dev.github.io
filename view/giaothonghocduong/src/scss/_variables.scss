@@ -1,0 +1,111 @@
+/* Fonts */
+
+$f-theme: 'Roboto',sans-serif;
+$f-icon: 'icon';
+/* Colors - Default */
+
+$c-black: #000;
+$c-white: #fff;
+/* Body background */
+$bb: #d7e8f1;
+/* Colors - Theme */
+
+$cl01: #163f6a;
+$cl02: #e14122;
+$cl03: #2095dc;
+$cl04: rgba(0, 0, 0, 0.4);
+$cl05: #ea391c;
+$cl06: #0169b1;
+$cl07: #02a1e3;
+$cl08: #009a49;
+$cl09: #0a5690;
+$cl10: #d94421;
+$cl11: #0096db;
+$cl12: #999;
+$cl13: #f2f4f5;
+$cl14: #f3f3f3;
+$cl15: #e4e4e4;
+$cl16: #fbf9e3;
+$cl17: #172744;
+$cl18: #1c2f51;
+
+
+
+$cl19: #e92c0c;
+$cl20: #2dcb73;
+$cl21: #3498db;
+$cl22: #9b59b6;
+$cl23: #f39c12;
+$cl24: #666;
+
+$c-purple: #0791d2;
+$c-blue: #c21775;
+$c-blue1: #41c3f5;
+$c-blue2: #51b2df;
+$c-yellow: #fff000;
+$c-yellow1: #f6ff00;
+$c-yellow2: #fff76f;
+$c-green: #ffb400;
+$c-green1: #efa900;
+$c-green2: #009a49;
+$c-green3: #e57200;
+$c-red: #f07cb2;
+$c-red1: #e80088;
+$c-red2: #ff1134;
+$c-grey: #747474;
+$c-grey1: #7c7e7f;
+$c-navy: #0a5690;
+$c-navy1: #834cb1;
+$c-light: #f3f3f3;
+$c-light1: #f3f0e6;
+
+
+$c-orange: #F8953F;
+
+
+$c-dark: #3b3b3b;
+$c-dark1: #2c2c2c;
+$c-divider: #E2E2E2;
+/* Coler border */
+
+$bc-light: #d0d0d0;
+$bc-light1: #e1dbc8;
+$bc-grey: #f1f1f1;
+$bc-grey1: #dadada;
+$bc-grey2: #d2d2d4;
+$bc-grey3: #b8b8b8;
+/* Cover */
+
+$c-cover-blue: rgba(19, 99, 161, 0.5);
+$c-cover-black: rgba(0, 0, 0, 0.15);
+/* Background */
+
+$c-bg-black: rgba(0, 0, 0, 0.3);
+$c-bg-black1: rgba(0, 0, 0, 0.6);
+$c-bg-blue: rgba(0, 120, 153, 0.7);
+$c-bg-white: rgba(255, 255, 255, 0.7);
+/* Transitions */
+
+/* box shadow */
+$bs-black: rgba(0, 0, 0, 0.3);
+
+$transition: all .3s ease-in-out;
+$duration: .25s;
+$speed: 200ms;
+$ease: ease-in-out;
+/* Round */
+
+$round: 4px;
+$round1: 6px;
+/* Breakpoints */
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+$breakpoints-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$breakpoints-md: 768px;
+// Large devices (desktops, 992px and up)
+$breakpoints-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$breakpoints-xl: 1200px;

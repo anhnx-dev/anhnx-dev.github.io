@@ -1,0 +1,96 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.top-bar {
+  position: relative;
+  display: none;
+  color: $c-white;
+  @media (min-width: $breakpoints-md) {
+    display: block;
+    position: absolute;
+    background: transparent;
+    right: 0;
+    top: 35px;
+  }
+  @media (min-width: $breakpoints-lg) {
+    position: relative;
+    top: initial;
+    background: $cl01;
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  .contact {
+    @media (min-width: $breakpoints-md) {
+      display: none;
+    }
+    @media (min-width: $breakpoints-lg) {
+      display: block;
+    }
+    span {
+      @extend .small-text;
+      margin-right: 10px;
+      .fa {
+        margin-right: 5px;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    .phone {
+      color: $c-yellow;
+    }
+  }
+  .nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    .nav-item {
+      position: relative;
+      margin-left: 10px;
+      height: 36px;
+      min-width: 125px;
+      padding: 0 10px 0 52px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      list-style: none;
+      position: relative;
+      cursor: pointer;
+      background: $c-green;
+      border-radius: $round;
+      transition: $transition;
+      &:hover {
+        box-shadow: 2px 2px 2px 2px $bs-black;
+      }
+      .fa {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 40px;
+        height: 32px;
+        border-radius: $round - 1;
+        background-color: $c-green1;
+        line-height: 32px;
+      }
+      a {
+        color: $c-white;
+        text-decoration: none;
+      }
+      &:nth-child(1) {
+        background: $cl07;
+        .fa {
+          background: $cl03;
+        }
+      }
+      &:nth-child(2) {
+        background: $cl06;
+        .fa {
+          background: $cl09;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.calendar {
+  position: relative;
+  z-index: 2;
+  margin-top: 60px;
+  .calendar-row {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    >li {
+      list-style: none;
+      padding: 0 5px;
+
+      @media (min-width: $breakpoints-md) {
+        padding: 0 10px;
+      }
+    }
+
+    >.calendar-col-1 {
+      width: 10%;
+    }
+
+    >.calendar-col-2 {
+      width: 22.5%;
+    }
+
+    >.calendar-col-3 {
+      width: 22.5%;
+    }
+
+    >.calendar-col-4 {
+      width: 22.5%;
+    }
+
+    >.calendar-col-5 {
+      width: 22.5%;
+      font-weight: 700;
+      color: $cl02;
+    }
+  }
+
+  .title {
+    @extend .small-text-01;
+    background: $c-blue;
+    color: $c-white;
+    font-weight: 700;
+    padding: 7.5px 0;
+    >.calendar-col-5 {
+      color: $c-white;
+    }
+  }
+
+  .calendar-list {
+    .item {
+      position: relative;
+      padding: 7.5px 0;
+      border-bottom: 1px solid $bc-light;
+      background: $cl13;
+      &:nth-child(1) {
+        border-top: 1px solid $bc-light;
+      }
+
+      &:nth-child(2n + 1) {
+        background: $c-white;
+      }
+    }
+  }
+}
