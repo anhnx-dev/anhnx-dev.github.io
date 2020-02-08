@@ -1,0 +1,119 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+@import '../_typography.scss';
+
+.top-bar {
+  position: relative;
+  z-index: 10;
+  background: $c-purple;
+  color: $c-white;
+  border-bottom: 1px solid $c-blue1;
+  display: none;
+  @media (min-width: $breakpoints-md) {
+    display: block;
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  .contact {
+    p {
+      @extend .small-text;
+      margin: 0;
+    }
+    .phone {
+      color: $c-yellow;
+    }
+  }
+  .nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    .nav-item {
+      position: relative;
+      margin-left: 10px;
+      height: 36px;
+      min-width: 125px;
+      padding: 0 15px 0 57px;
+      line-height: 36px;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      list-style: none;
+      position: relative;
+      cursor: pointer;
+      background: $c-green;
+      border-radius: $round;
+      transition: $transition;
+      &:hover {
+        box-shadow: 2px 2px 2px 2px $bs-black;
+        .sub-menu {
+          transform: translateY(0);
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+      >i {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 40px;
+        height: 32px;
+        border-radius: $round - 1;
+        background-color: $c-green1;
+        line-height: 32px;
+      }
+      >a {
+        color: $c-white;
+        text-decoration: none;
+      }
+      .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: $c-white;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        padding: 2px;
+        border-radius: $round;
+        transform: translateY(20px);
+        opacity: 0;
+        pointer-events: none;
+        transition: $transition;
+        .nav-item {
+          @extend .small-text;
+          margin-left: 0;
+          min-width: initial;
+          padding: 0 10px 0 50px;
+          margin-top: 2px;
+          &:hover {
+            box-shadow: 0 0 1px 1px $bs-black;
+          }
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+          &:nth-child(3n+1) {
+            background: #f17db1;
+            >i{
+              background-color: #d8709f;
+            }
+          }
+          &:nth-child(3n+2) {
+            background: #41c3f5;
+            >i{
+              background-color: #3aafdc;
+            }
+          }
+          &:nth-child(3n+3) {
+            background: #41c3f5;
+            >i{
+              background-color: #3aafdc;
+            }
+          }
+        }
+      }
+    }
+  }
+}

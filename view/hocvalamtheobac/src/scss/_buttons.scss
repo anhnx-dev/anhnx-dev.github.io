@@ -1,0 +1,44 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: $transition;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $c-white;
+    background-color: $c-green3;
+    border-color: $c-green3;
+  }
+}
+
+.btn-light {
+  color: $c-dark;
+  background-color: $c-light;
+  border-color: $c-light;
+}
+
+.btn-primary {
+  color: $c-white;
+  background-color: $c-blue;
+  border-color: $c-blue;
+}
+
+
+.btn-success {
+  color: $c-white;
+  background-color: $c-green;
+  border-color: $c-green;
+}

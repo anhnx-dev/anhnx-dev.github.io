@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/bootstrap-datetimepicker/bootstrap-datetimepicker-standalone.css">
+	<link rel="stylesheet" href="src/js/vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="src/css/main.min.css">
+
+</head>
+
+<body class="home">
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc
+					mở
+					JavaScript trong
+					phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app" style="background-image: url(/./images/bg-body.png);">
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- top bar -->
+			<section class="top-bar">
+				<div class="container">
+					<div class="inner">
+						<div class="contact">
+							<p class="phone">Hỗ trợ: 02613 545 662</p>
+							<p class="email">Email: timhieubiendao@gmail.com</p>
+						</div> <!-- /top bar -->
+						<ul class="nav">
+							<li class="nav-item"><i class="ii ii-bachelor"></i><a href="http://">Vào thi</a></li>
+							<li class="nav-item js-toggle-login"><i class="fa fa-user"></i> Đăng nhập</li>
+							<li class="nav-item js-toggle-registration"><i class="fa fa-user"></i> Đăng ký</li>
+						</ul> <!-- nav -->
+					</div>
+				</div>
+			</section>
+			<!-- top bar end -->
+
+			<!-- navbar -->
+			<nav class="navbar">
+				<div class="container">
+					<div class="wrapper">
+						<div class="branb">
+							<a class="logo" href="http://"><img src="./images/logo.png" alt=""></a>
+							<div class="text">
+								<p>CUỘC THI<br>
+									TÌM HIỂU VỀ BIỂN, ĐẢO<br>
+									<b>VIỆT NAM</b></p>
+							</div>
+						</div>
+						<ul class="nav js-navbar">
+							<li class="nav-item">
+								<a href="" class="nav-link">Giới thiệu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Demo</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Demo</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tự luận</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Demo</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Demo</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tra cứu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Demo</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Demo</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Văn bản</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Demo</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Demo</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tin tức</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- navbar end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+
+			<section class="section registration">
+				<div class="container">
+					<div class="inner">
+						<h3 style="text-align: center; font-size:20px">ĐĂNG KÝ THÔNG TIN TÀI KHOẢN</h3>
+						<p style="color:red;text-align: center">Bạn cần đăng ký thông tin tài khoản để tham gia cuộc thi
+						</p>
+						<form action="http://hocvalamtheobac.vnedutech.vn/cap-nhat-thong-tin" method="post"
+							id="form-register-member">
+							<input type="hidden" name="member_id" id="member_id" value="12493754">
+							<input type="hidden" name="u_name" id="u_name" value="tuan10101995">
+							<input type="hidden" name="token" id="token"
+								value="QTN1T2hyVWtMd3ZMQzY1TDFOVWlLMWZjOFJUdjkxU0tWeElqR2xzZ2VVcVdjUnNIbDN6YnZ6L2JPN1ZxaSswY3g0cTRGMFpXazlwOHUweXFSNUpqSUZTVkIxNFlNT01EdWRpNTlwS1ZoOTQ9">
+							<p style="font-weight: bold"> Bước 1: Đăng ký thông tin thí sinh. </p>
+							<p style="color:red"> Bạn cần nhập chính xác các thông tin dưới đây.Thông tin đăng ký của
+								thí sinh chỉ được nhập 01 lần duy nhất và không thể chỉnh sửa </p>
+							<div class="form-group">
+								<label> Họ tên <small class="text-muted" style="color:red">*</small> </label>
+								<div class="input">
+									<input type="text" name="name" class="form-control" placeholder="Nhập họ tên"
+										required="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label> Số điện thoại HS/PH <small class="text-muted" style="color:red">*</small>
+								</label>
+								<div class="input">
+									<input type="number" name="phone_user" class="form-control"
+										placeholder="Nhập số điện thoại của học sinh hoặc phụ huynh" required="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Giới tính <small class="text-muted" style="color:red">*</small> </label>
+								<div class="input">
+									<label><input type="radio" name="gender" value="male" checked="">Nam</label>
+									<label><input type="radio" name="gender" value="female">Nữ</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label> Ngày sinh <small class="text-muted" style="color:red">*</small> </label>
+								<div class="input">
+									<input name="birthday" class="form-control datepicker">
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Tỉnh/ TP <small class="text-muted" style="color:red">*</small> </label>
+								<div class="input">
+									<select class="form-control" id="province_id" name="province_id" required="">
+										<option></option>
+										<option value="1">Thanh Hóa</option>
+										<option value="2">Nghệ An</option>
+										<option value="7">Hà Giang</option>
+										<option value="3">Hà Tĩnh</option>
+										<option value="10">Lạng Sơn</option>
+										<option value="4">Quảng Bình</option>
+										<option value="18">Tiền Giang</option>
+										<option value="5">Quảng Trị</option>
+										<option value="9">Bắc Kạn</option>
+										<option value="15">Quảng Ninh</option>
+										<option value="13">Bắc Giang</option>
+										<option value="19">An Giang</option>
+										<option value="16">Long An</option>
+										<option value="20">Bến Tre</option>
+										<option value="54">Yên Bái</option>
+										<option value="52">Bình Thuận</option>
+										<option value="8">Cao Bằng</option>
+										<option value="6">Thừa Thiên Huế</option>
+										<option value="55">Điện Biên</option>
+										<option value="53">Lào Cai</option>
+										<option value="58">Sơn La</option>
+										<option value="57">Lai Châu</option>
+										<option value="59">Kon Tum</option>
+										<option value="56">Hòa Bình</option>
+										<option value="60">Gia Lai</option>
+										<option value="14">Phú Thọ</option>
+										<option value="21">Vĩnh Long</option>
+										<option value="63">Lâm Đồng</option>
+										<option value="61">Đắk Lắk</option>
+										<option value="62">Đắk Nông</option>
+										<option value="17">Đồng Tháp</option>
+										<option value="11">Tuyên Quang</option>
+										<option value="37">Thái Bình</option>
+										<option value="22">Trà Vinh</option>
+										<option value="25">Sóc Trăng</option>
+										<option value="29">Bắc Ninh</option>
+										<option value="48">Bình Định</option>
+										<option value="23">Hậu Giang</option>
+										<option value="46">Quảng Nam</option>
+										<option value="30">Hà Nam</option>
+										<option value="49">Phú Yên</option>
+										<option value="47">Quảng Ngãi</option>
+										<option value="24">Kiên Giang</option>
+										<option value="26">Bạc Liêu</option>
+										<option value="34">Hưng Yên</option>
+										<option value="50">Khánh Hòa</option>
+										<option value="32">Hải Dương</option>
+										<option value="51">Ninh Thuận</option>
+										<option value="33">Hải Phòng</option>
+										<option value="45">Đà Nẵng</option>
+										<option value="40">Bình Dương</option>
+										<option value="31">Hà Nội</option>
+										<option value="42">Tây Ninh</option>
+										<option value="35">Nam Định</option>
+										<option value="38">Vĩnh Phúc</option>
+										<option value="27">Cà Mau</option>
+										<option value="39">Bình Phước</option>
+										<option value="41">Đồng Nai</option>
+										<option value="12">Thái Nguyên</option>
+										<option value="28">Cần Thơ</option>
+										<option value="43">Bà Rịa - Vũng Tàu</option>
+										<option value="36">Ninh Bình</option>
+										<option value="44">Tp.Hồ Chí Minh</option>
+									</select>
+									<input type="hidden" name="province_name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Quận/ huyện <small class="text-muted" style="color:red">*</small> </label>
+								<div class="input">
+									<select class="form-control" id="district_id" name="district_id" required="">
+										<option></option>
+									</select>
+									<input type="hidden" name="district_name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Trường <small class="text-muted" style="color:red">*</small> </label>
+								<div class="input">
+									<select class="form-control" id="school_id" name="school_id" required="">
+										<option></option>
+									</select>
+									<input type="hidden" name="school_name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label> Cấp học <small class="text-muted" style="color:red">*</small></label>
+								<div class="input">
+									<select class="form-control autoload" data-key="0" required="" name="target"
+										id="target">
+										<option></option>
+										<option value="c2" data-key="0" data-key2="0">Học sinh cấp 2</option>
+										<option value="c3" data-key="0" data-key2="1">Học sinh cấp 3</option>
+									</select>
+									<input type="hidden" name="target_name" value="">
+								</div>
+							</div>
+							<div id="area-type-0" style="margin-top:20px">
+
+							</div>
+							<div class="form-group">
+								<label> Facebook </label>
+								<div class="input">
+									<input type="text" name="facebook" class="form-control"
+										placeholder="facebook.com/abc">
+								</div>
+							</div>
+							<p style="font-weight: bold">Bước 2: Đăng ký thông tin nhận thưởng của thí sinh. </p>
+							<p style="color:red">Giải thưởng tiền mặt của thí sinh sẽ được BTC gửi về theo
+								tài khoản ngân hàng hoặc địa chỉ nhà riêng, người đại diện nhận thưởng của thí sinh.
+								BTC không chịu trách nhiệm khi thí sinh cung cấp sai những thông tin đã khai báo </p>
+							<div class="form-group">
+								<label> Tên người đại diện nhận giải <small class="text-muted"
+										style="color:red">*</small> </label>
+								<div class="input">
+									<input type="text" name="account_holder" class="form-control"
+										placeholder="Nhập Họ và tên" required="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label> Số tài khoản </label>
+								<div class="input">
+									<input type="text" name="account_number" class="form-control"
+										placeholder="Nhập số tài khoản">
+								</div>
+							</div>
+							<div class="form-group">
+								<label> Ngân hàng </label>
+								<div class="input">
+									<input type="text" name="bank_name" class="form-control"
+										placeholder="Nhập tên ngân hàng">
+								</div>
+							</div>
+							<div class="form-group">
+								<label> Chi nhánh </label>
+								<div class="input">
+									<input type="text" name="bank_agency" class="form-control"
+										placeholder="Nhập chi nhánh">
+								</div>
+							</div>
+							<div class="form-group">
+								<label> Điện thoại liên hệ <small class="text-muted" style="color:red">*</small>
+								</label>
+								<div class="input">
+									<input type="number" name="account_phone" class="form-control"
+										placeholder="Nhập số điện thoại" required="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label> Số CMT/ thẻ căn cước công dân <small class="text-muted"
+										style="color:red">*</small> </label>
+								<div class="input">
+									<input type="number" name="indenty_number" class="form-control"
+										placeholder="Nhập Số CMT hoặc thẻ căn cước công dân" required="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label> Địa chỉ nhà riêng <small class="text-muted" style="color:red">*</small> </label>
+								<div class="input">
+									<input type="text" name="address" class="form-control"
+										placeholder="Nhập địa chỉ nhà riêng" required="">
+								</div>
+							</div>
+							<p style="font-weight: bold">Bước 3: Xác nhận đăng ký: </p>
+							<p style="color:red">
+								- Tôi cam đoan thông tin tài khoản vừa đăng ký là chính xác. <br>
+								- Tôi đồng ý nhận giải thưởng của cuộc thi thông qua tài khoản trên và chịu hoàn toàn
+								trách nhiệm nếu cung cấp sai thông tin tài khoản nhận thưởng. <br>
+								- Nếu quá thời gian quy định mà thí sinh chưa cập nhật hoặc đính chính thông tin tài
+								khoản nhận thưởng thì giải thưởng của thí sinh sẽ bị hủy. <br>
+							</p>
+							<div class="form-group">
+								<label>Điều khoản <small class="text-muted" style="color:red">*</small> </label>
+								<div class="input">
+									<label><input type="checkbox" required="" name="accept_rule" value="1">Tôi đồng ý
+										với những điều khoản trên</label>
+								</div>
+							</div>
+
+							<div class="btn-group">
+								<button data-modal="#modal-registration" type="submit" class="btn btn-save">Lưu</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 branb">
+						<img src="./images/logo.png" alt="">
+						<p>CUỘC THI TÌM HIỂU VỀ
+							BIỂN, ĐẢO VIỆT NAM</p>
+					</div>
+					<div class="col-lg-10 info">
+						<div class="headline">Ban Tổ chức Cuộc thi</div>
+						<div class="info-inner">
+							<div class="block">
+								<h2 class="name">Ban Tuyên giáo Tỉnh ủy Đắk Nông<br>
+									Phòng Tuyên truyền, Báo chí – Xuất bản</h2>
+								<ul class="info-contact">
+									<li><i class="fa fa-phone"></i> 02613 545 662</li>
+									<li><i class="fa fa-email"></i> timhieubiendao@gmail.com</li>
+								</ul>
+							</div>
+							<div class="block">
+								<h2 class="name">Công ty cổ phần dịch vụ công nghệ giáo dục Việt Nam
+									(VNEDUTECH)</h2>
+								<ul class="info-contact">
+									<li><i class="fa fa-address"></i> Tầng 3, Tòa Nhà 25T1, Hoàng Đạo Thúy, Trung Hòa,
+										Cầu Giấy, Hà Nội</li>
+									<li><i class="fa fa-phone"></i> Hỗ trợ kỹ thuật: 1900636444 (8h - 22h hàng ngày)
+									</li>
+									<li><i class="fa fa-email"></i> contact@vnedutech.vn</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+
+		<!-- slide out -->
+		<div class="nav-trigger js-trigger">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+		<div class="slideout js-slideout">
+			<div class="inner">
+				<ul class="nav">
+					<li class="nav-item js-toggle-login"><i class="fa fa-user"></i> Đăng nhập</li>
+					<li class="nav-item js-toggle-registration"><i class="fa fa-user"></i> Đăng ký</li>
+				</ul>
+				<nav class="slideout-navbar">
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="" class="nav-link">Giới thiệu</a>
+							<ul>
+								<li class="nav-item">
+									<a href="" class="nav-link">Demo</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Demo</a>
+									<ul>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Tự luận</a>
+							<ul>
+								<li class="nav-item">
+									<a href="" class="nav-link">Demo</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Demo</a>
+									<ul>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Tra cứu</a>
+							<ul>
+								<li class="nav-item">
+									<a href="" class="nav-link">Demo</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Demo</a>
+									<ul>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Văn bản</a>
+							<ul>
+								<li class="nav-item">
+									<a href="" class="nav-link">Demo</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Demo</a>
+									<ul>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Tin tức</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Liên hệ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contact">
+					<p class="phone">Hỗ trợ: 02613 545 662</p>
+					<p class="email">Email: timhieubiendao@gmail.com</p>
+				</div>
+
+			</div>
+		</div>
+		<!-- slideout end -->
+
+		<!-- popup -->
+		<div class="form-user form-login js-login">
+			<div class="logo">
+				<img src="./src/img/egroup-logo.png" alt="">
+			</div>
+			<form action="" class="form">
+				<p>Đã là thành viên?</p>
+				<div class="form-group">
+					<input type="username" class="form-control" placeholder="Email/Username">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="password">
+				</div>
+				<div class="form-group form-check">
+					<input type="checkbox" class="form-check-input">
+					<label class="form-check-label">Ghi nhớ đăng nhập</label>
+				</div>
+				<button type="submit" class="btn btn-success">Đăng nhập</button>
+			</form>
+			<div class="bottom">
+				<p>Chưa có tài khoản?</p>
+				<button class="btn btn-primary js-open-registration">Đăng ký mới</button>
+			</div>
+		</div>
+
+		<div class="form-user from-registration js-registration">
+			<div class="logo">
+				<img src="./src/img/egroup-logo.png" alt="">
+			</div>
+			<form action="" class="form">
+				<p>Thành viên mới?</p>
+				<div class="form-group">
+					<input type="username" class="form-control" placeholder="Email/Username">
+					<small>(Tên đăng nhập viết liền không dấu, không chứa kí tự đặc biệt)</small>
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Mật khẩu">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Xác nhận mật khẩu">
+				</div>
+				<div class="form-group">
+					<input type="phone" class="form-control" placeholder="Số điện thoại">
+				</div>
+				<button type="submit" class="btn btn-success">Đăng ký</button>
+			</form>
+		</div>
+		<!-- popup end -->
+
+		<!-- Modal -->
+		<div class="modal" id="modal-registration">
+			<div class="modal-exit"></div>
+			<div class="modal-inner">
+				<!-- content -->
+				Culpa et esse officia ipsum incididunt consectetur ut magna occaecat commodo ad.
+			</div>
+		</div>
+
+		<div class="body-overlay js-body-overlay"></div>
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/bootstrap-datetimepicker/moment.min.js"></script>
+	<script src="src/js/vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+	<script src="src/js/vendor/jquery.appear.js"></script>
+	<script src="src/js/vendor/slick.min.js"></script>
+	<script src="src/js/vendor/fancybox/jquery.fancybox.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+</body>
+
+</html>

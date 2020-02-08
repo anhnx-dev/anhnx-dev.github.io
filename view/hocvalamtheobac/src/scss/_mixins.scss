@@ -1,0 +1,102 @@
+/* Spacing */
+@mixin margin-top ($xs, $sm, $md, $lg, $xl) {
+	margin-top: $xs;
+	@media (min-width: $breakpoints-sm) {
+		margin-top: $sm;
+	}
+	@media (min-width: $breakpoints-md) {
+		margin-top: $md;
+	}
+	@media (min-width: $breakpoints-lg) {
+		margin-top: $lg;
+	}
+	@media (min-width: $breakpoints-xl) {
+		margin-top: $xl;
+	}
+}
+
+@mixin margin-bottom ($xs, $sm, $md, $lg, $xl) {
+	margin-bottom: $xs;
+	@media (min-width: $breakpoints-sm) {
+		margin-bottom: $sm;
+	}
+	@media (min-width: $breakpoints-md) {
+		margin-bottom: $md;
+	}
+	@media (min-width: $breakpoints-lg) {
+		margin-bottom: $lg;
+	}
+	@media (min-width: $breakpoints-xl) {
+		margin-bottom: $xl;
+	}
+}
+
+@mixin padding-vertical ($xs, $sm, $md, $lg, $xl) {
+	padding: $xs 0;
+	@media (min-width: $breakpoints-sm) {
+		padding: $sm 0;
+	}
+	@media (min-width: $breakpoints-md) {
+		padding: $md 0;
+	}
+	@media (min-width: $breakpoints-lg) {
+		padding: $lg 0;
+	}
+	@media (min-width: $breakpoints-xl) {
+		padding: $xl 0;
+	}
+}
+
+@mixin padding-horizontally ($xs, $sm, $md, $lg, $xl) {
+	padding: 0 $xs;
+	@media (min-width: $breakpoints-sm) {
+		padding: 0 $sm;
+	}
+	@media (min-width: $breakpoints-md) {
+		padding: 0 $md;
+	}
+	@media (min-width: $breakpoints-lg) {
+		padding: 0 $lg;
+	}
+	@media (min-width: $breakpoints-xl) {
+		padding: 0 $xl;
+	}
+}
+
+@mixin margin-vertical ($xs, $sm, $md, $lg, $xl) {
+	margin: $xs 0;
+	@media (min-width: $breakpoints-sm) {
+		margin: $sm 0;
+	}
+	@media (min-width: $breakpoints-md) {
+		margin: $md 0;
+	}
+	@media (min-width: $breakpoints-lg) {
+		margin: $lg 0;
+	}
+	@media (min-width: $breakpoints-xl) {
+		margin: $xl 0;
+	}
+}
+
+@mixin margin-horizontally ($xs, $sm, $ml, $lg, $xl) {
+	margin: 0 $xs;
+	@media (min-width: $breakpoints-sm) {
+		margin: 0 $sm;
+	}
+	@media (min-width: $breakpoints-md) {
+		margin: 0 $ml;
+	}
+	@media (min-width: $breakpoints-lg) {
+		margin: 0 $lg;
+	}
+	@media (min-width: $breakpoints-xl) {
+		margin: 0 $xl;
+	}
+}
+
+@mixin clear {
+	content: '';
+	display: block;
+	clear: both;
+}
