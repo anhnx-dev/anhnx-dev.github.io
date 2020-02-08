@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="src/css/main.min.css">
+
+</head>
+
+<body>
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript. <br>
+					Bạn vui lòng cập nhận trình đuyệt web hoặc mở JavaScript trong phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<!-- back to top -->
+	<div class="js-back-to-top-end"></div>
+	<div class="back-to-top js-back-to-top"><i class="fa fa-chevron-up"></i></div>
+	<!-- back to top end -->
+
+	<div id="app">
+
+		<!-- top bar -->
+		<section class="top-bar">
+			<div class="container">
+				<div class="wrapper">
+					<nav class="navbar">
+						<div class="brand"><a href=""><img src="./images/logo-vnedu.png" alt=""></a></div>
+						<ul class="nav">
+							<li class="item"><a href=""><img src="src/./images/sohagame-16x16.png" alt=""><span>Chinh phục Vũ Môn</span></a></li>
+							<li class="item"><a href=""><img src="src/./images/hoc-cung-thu-khoa.png" alt=""><span>Học cùng thủ khoa</span><img
+									 src="src/./images/hot.gif" alt=""></a></li>
+						</ul>
+					</nav>
+					<div class="user">
+						<button v-on:click="openUserManege" class="login">Đăng nhập</button>
+						<button v-on:click="openUserRegistration" class="registration">Đăng ký</button>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- top bar end -->
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- menu -->
+			<nav class="menu">
+				<div class="container">
+					<div class="wrapper">
+						<div class="brand"><a href=""><img src="./images/logo.png" alt=""></a></div>
+						<a href="" class="btn"><img src="src/./images/btn.png" alt=""></a>
+						<ul class="nav js-nav">
+							<li class="nav-item">
+								<a href="" class="nav-link active">Tin Tức</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Sự kiện</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Tin tức</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Cuộc thi Chinh Phục Vũ Môn 2015 - 2016</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Echat - Phòng học VIP của CPVM</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thư viện</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hình ảnh</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Screenshot</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Wallpaper</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Hướng dấn</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn cơ bản</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Cập nhật danh sách địa điểm bán thẻ game Chinh Phục Vũ Môn</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn mua hàng</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn đăng nhập</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Học tập</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Phòng học thông minh</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn tải dữ liệu bài học khi dùng thẻ VIP học tập</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn sử dụng Winrar nén, giải nén file dữ liệu</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn kích hoạt thẻ Vip học tập</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Đấu trường</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn sử dụng Thẻ bài</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn xây tinh cầu</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Đổ xúc xắc bá đạo</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Nhiệm vụ ngày</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Cửa hàng</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Nâng cấp</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Tiến hóa Thẻ bài</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Câu hỏi thường gặp</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn nhập Giftcode</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn cài đặt bản Mobile</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn đăng ký cuộc thi Chinh Phục Vũ Môn</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Bé giỏi tiếng Anh</a>
+										<ul>
+											<li class="nav-item">
+												<a href="" class="nav-link">Bé giỏi tiếng anh - Gói học tập mới nhất trên Chinh Phục Vũ Môn</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Hướng dẫn kích hoạt sản phẩm Bé giỏi tiếng Anh</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Giới thiệu sản phẩm Bé giỏi tiếng anh lứa tuổi từ 5 - 6</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Giới thiệu sản phẩm Bé giỏi tiếng anh lứa tuổi từ 4 - 5</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link">Giới thiệu sản phẩm Bé giỏi tiếng anh lứa tuổi từ 3 - 4</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- menu end -->
+
+			<!-- button group -->
+			<section class="button-group">
+				<div class="container">
+					<div class="inner">
+						<a href="" class="btn">
+							<img class="bg" src="src/./images/download-android.png" alt="">
+							<img class="hover" src="src/./images/download-android-hover.png" alt="">
+							<img class="code-qr" src="src/./images/qr-android.png" alt="">
+						</a>
+						<a href="" class="btn">
+							<img class="bg" src="src/./images/download-ios.png" alt="">
+							<img class="hover" src="src/./images/download-ios-hover.png" alt="">
+							<img class="code-qr" src="src/./images/qr-ios2.png" alt="">
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- button group end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-4 main-left">
+
+						<!-- nav left -->
+						<nav class="section nav-left">
+							<ul class="nav js-nav">
+								<li class="nav-item active">
+									<a href="" class="nav-link">Sự kiện</a>
+									<ul>
+										<li class="nav-item active">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Tin tứ</a>
+									<ul>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+										<li class="nav-item">
+											<a href="" class="nav-link">Demo</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Cuộc thi Chinh Phục Vũ Môn 2015 - 2016</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">Echat - Phòng học VIP của CPVM</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- nav left end -->
+
+						<!-- hot news left -->
+						<section class="section hot-news-left">
+							<div class="list">
+								<div class="item">
+									<div class="img-cover">
+										<a href="#" class="img-cover__wrapper">
+											<img src="./images/origin_1442818230.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="img-cover">
+										<a href="#" class="img-cover__wrapper">
+											<img src="./images/origin_1449136902.jpg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- hot news left end -->
+
+					</div> <!-- /main left -->
+
+					<div class="col-8 main-right">
+						<div class="wrapper">
+							<div class="inner">
+
+								<h2 class="headline"><span>Tin tức</span></h2> <!-- /headline -->
+
+								<nav class="breadcrumb">
+									<ul class="breadcrumb-list">
+										<li class="breadcrumb-item">
+											<a class="breadcrumb-link" href="#">Trang chủ</a>
+										</li>
+										<li class="breadcrumb-item">
+											<a class="breadcrumb-link" href="#">Tin tức</a>
+										</li>
+									</ul>
+								</nav> <!-- /breadcrumb -->
+
+								<!-- news detail -->
+								<section class="news-detail">
+									<h1 class="title">Do deserunt eiusmod sint incididunt incididunt sint proident nisi cupidatat proident ea.</h1>
+									<div class="date">09/04/2015</div>
+									<div class="content">
+										<p><strong>Officia nulla culpa duis irure nisi elit minim cupidatat ut laboris adipisicing tempor.</strong></p>
+										<p><img src="./images/origin_1442818230.png" alt=""></p>
+										<p>Culpa anim voluptate ullamco tempor irure proident aliquip est proident fugiat. Consectetur nostrud est
+											dolor consectetur nulla ullamco culpa nostrud elit nostrud in. Sit proident cillum nulla ex esse ullamco
+											proident quis in sit. In laborum veniam pariatur culpa adipisicing. Esse dolor nisi voluptate elit proident
+											reprehenderit elit proident aliqua quis ad laboris ut.
+
+											Ea non id magna commodo mollit tempor commodo proident sunt. Adipisicing et ad ut incididunt laborum ex
+											dolor adipisicing sunt voluptate do eiusmod. Eiusmod proident ea irure esse nostrud nisi sint proident
+											aliquip.
+
+											Quis nisi non sint adipisicing sit consequat ut. Commodo exercitation elit enim ullamco exercitation amet id
+											do aliquip ea laboris. Enim ad Lorem proident occaecat ipsum nisi sit. Officia ea in nostrud velit elit ad
+											labore ea. Sint sunt adipisicing enim laborum proident.
+
+											Dolore qui mollit non duis Lorem sit. Eiusmod quis quis quis in esse nulla exercitation cupidatat sint
+											Lorem. Nisi consequat magna aliquip consequat adipisicing ut officia culpa reprehenderit sint.
+
+											Laboris labore exercitation non in dolore ipsum proident laborum dolore sint. Ea reprehenderit fugiat
+											deserunt amet cillum laboris magna nostrud sit ad. Sint adipisicing culpa laboris sit esse. Nostrud
+											voluptate dolore nisi esse est consectetur aliquip.</p>
+										<p>Aliquip sunt eu enim nostrud id eu consectetur deserunt reprehenderit ipsum. Consequat ullamco veniam sit
+											pariatur sunt reprehenderit proident deserunt in ullamco. Amet laborum ullamco amet voluptate. Est non ut
+											anim est minim ad aliqua cupidatat anim cillum minim esse ipsum consectetur. Veniam ullamco aliqua laborum
+											exercitation sit ex qui deserunt.
+
+											Magna sint ipsum dolore quis magna nostrud proident. Qui do esse veniam fugiat anim. Lorem ex anim Lorem
+											culpa esse eu irure dolore qui mollit sit. Id voluptate qui nulla magna id aliquip anim laborum occaecat
+											esse dolor cillum dolore do.
+
+											Ut quis ad est culpa id laboris aliquip magna. Nostrud aliquip ut proident dolore do. Labore dolore ut ea ex
+											dolore laboris culpa in reprehenderit ullamco tempor magna.
+
+											Ad Lorem dolore in duis Lorem ex nisi ad sunt nulla aliqua Lorem adipisicing eu. Pariatur minim ex magna
+											occaecat aute ipsum consectetur ipsum tempor. Veniam dolor culpa nostrud est nisi dolor in ipsum sit
+											adipisicing qui qui ut id.
+
+											Et cillum consectetur labore aliquip velit laborum reprehenderit in cupidatat duis exercitation. Duis aute
+											culpa minim aliquip dolor labore fugiat exercitation. Amet voluptate nisi incididunt cupidatat nostrud.
+
+											Qui nulla officia proident adipisicing deserunt est sint pariatur culpa in aute. Sint ut eu aute
+											exercitation. Velit ipsum id esse veniam. Sunt aliquip eiusmod veniam amet nostrud sunt ullamco id.
+
+											Consequat sunt ut consequat officia veniam in laboris ullamco ut dolor cupidatat ut ex. Magna incididunt ad
+											do ad do aute qui qui in minim. Do mollit commodo eu sint dolore nostrud aliquip consectetur ad. Nulla dolor
+											in proident exercitation deserunt proident commodo aute officia excepteur minim officia. Commodo et nisi qui
+											adipisicing in mollit velit laboris laborum proident esse.
+
+											Ea Lorem cupidatat nostrud cupidatat adipisicing in ipsum eu magna. Cillum ex fugiat aliqua do. Deserunt
+											commodo quis deserunt ea proident eiusmod tempor fugiat consectetur enim.
+
+											Quis ad culpa veniam ullamco. In anim laborum pariatur sint ad ad ex cillum. Occaecat esse minim est mollit
+											nulla enim adipisicing aute magna aute adipisicing aliqua quis. Minim do adipisicing aliquip occaecat
+											officia deserunt dolor ea sit tempor nostrud consectetur cillum velit.
+
+											Consectetur eiusmod incididunt proident nisi sunt. Minim dolor consequat dolore anim exercitation enim. Anim
+											ex consectetur do enim nulla ad mollit reprehenderit anim.</p>
+									</div>
+								</section>
+								<!-- news detail end -->
+
+							</div>
+						</div>
+					</div> <!-- /main right -->
+
+				</div>
+			</div>
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 footer-contact">
+						<div class="inner">
+							<h4 class="title">CÔNG TY CỔ PHẦN DỊCH VỤ CÔNG NGHỆ GIÁO DỤC VIỆT NAM (VNEDUTECH)</h4>
+							<div class="content">
+								Tầng 4, tòa nhà 25T1, đường Hoàng Đạo Thúy, phường Trung Hòa, quận Cầu Giấy, TP. Hà Nội<br>
+								Hỗ trợ đối tác: 098 800 8000 - Hỗ trợ kỹ thuật: 0967 345 456 - 0985758223<br>
+								Website: www.vnedutech.vn.vn - Email: <a href="">contact@vnedutech.vn</a>
+							</div>
+						</div>
+					</div>
+					<nav class="col-6 nav-footer">
+						<ul class="nav">
+							<li class="nav-item"><a href="" class="nav-link">Trang chủ</a></li>
+							<li class="nav-item"><a href="" class="nav-link">Tin tức</a></li>
+							<li class="nav-item"><a href="" class="nav-link">Thư viện</a></li>
+							<li class="nav-item"><a href="" class="nav-link">Hưỡng dẫn</a></li>
+							<li class="nav-item"><a href="" class="nav-link">Liên hệ</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+		<!-- social right -->
+		<ul class="social-right">
+			<li class="item">
+				<a href=""><img src="src/./images/link_z.png" alt=""></a>
+			</li>
+			<li class="item">
+				<a href=""><img src="src/./images/link_f.png" alt=""></a>
+				<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=58&layout=box_count&action=like&size=small&show_faces=true&share=true&height=65&appId=226666764204714"
+				 width="58" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+				 allow="encrypted-media"></iframe>
+			</li>
+			<li class="item">
+				<a href=""><img src="src/./images/youtube.png" alt=""></a>
+			</li>
+		</ul>
+		<!-- social right end -->
+
+		<!-- user manege -->
+		<div v-if="userManege" class="user-manege">
+			<div v-on:click="closeUserManege" class="over"></div> <!-- /over -->
+			<div class="form">
+				<div class="top">
+					<img src="src/./images/egame-logo2.png" alt="">
+					<div v-on:click="closeUserManege" class="closed"></div>
+				</div>
+				<div class="center">
+					<form v-if="userLogIn" class="log-in">
+						<strong><i class="fa fa-group"></i> Đã là thành viên?</strong>
+						<small class="form-text">Không tồn tại tài khoản hoặc mật khẩu sai</small>
+						<div class="form-group">
+							<input class="form-control" type="user" placeholder="Tài khoản">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="password" placeholder="Mật khẩu">
+						</div>
+						<div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label">Ghi nhớ đăng nhập <a href="http://">Quên mật khẩu?</a></label>
+						</div>
+						<button class="btn" type="submit">Đăng nhập</button>
+					</form>
+					<form v-if="userRegistration" class="registration">
+						<strong><i class="fa fa-group"></i> Thành viên mới?</strong>
+						<small class="form-text">Xác nhận mật khẩu sai</small>
+						<div class="form-group">
+							<input class="form-control" type="user" placeholder="Tài khoản">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="password" placeholder="Mật khẩu">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="password" placeholder="Xác nhận mật khẩu">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="phone" placeholder="Số điện thoại">
+						</div>
+						<div class="form-group form-select">
+							<label>Bạn biết CPVM từ</label>
+							<select class="form-control">
+								<option selected disabled>Nguồn nào?</option>
+								<option>Nhà trường</option>
+								<option>Người quen giới thiệu</option>
+								<option>Khác</option>
+							</select>
+						</div>
+						<button class="btn" type="submit">Đăng nhập</button>
+					</form>
+				</div>
+				<div v-if="userLogIn" class="bottom">
+					<div class="inner">
+						Chưa có tài khoản?
+						<button v-on:click="openUserRegistration" class="btn btn-e">Đăng ký ngay</button>
+						Hoặc chơi bằng
+						<button class="btn btn-z"><img src="src/./images/zingme.jpg" alt=""></button>
+					</div>
+				</div>
+			</div> <!-- /form -->
+		</div>
+		<!-- user manege end -->
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/jquery.fancybox.min.js"></script>
+	<script src="src/js/vendor/vue.min.js"></script>
+	<script src="src/js/vendor/flickity.pkgd.min.js"></script>
+	<script src="src/js/app.js"></script>
+
+</body>
+
+</html>
