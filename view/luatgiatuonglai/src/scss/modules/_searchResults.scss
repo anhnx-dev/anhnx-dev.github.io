@@ -1,0 +1,20 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.search-results {
+  .results {
+    @extend .small-text-01;
+    font-weight: 700;
+    color: $c-blue;
+    text-align: center;
+    @media (min-width: $breakpoints-md) {
+      text-align: left;
+    }
+    >span {
+      color: $c-red2;
+    }
+  }
+  .table-responsive {
+    margin-top: 30px;
+  }
+}

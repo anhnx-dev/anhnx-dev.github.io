@@ -1,0 +1,26 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.news-detail {
+  .wrapper {
+    padding: 10px;
+    background: $c-white;
+    border-radius: $round;
+    @media (min-width: $breakpoints-md) {
+      padding: 20px;
+    }
+    .title {
+      @extend .medium-text;
+      margin: 0;
+    }
+    .date {
+      margin: 0;
+      color: $c-grey;
+    }
+    .content {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
