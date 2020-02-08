@@ -1,0 +1,214 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.btn {
+  display: inline-block;
+  color: $c-dark;
+  text-decoration: none;
+  transition: $transition;
+}
+
+.btn-contact {
+  min-width: 165px;
+  padding: 5.5px 15px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: $round;
+  background: $c-white;
+  border: 2px solid $c-white;
+  &:hover,
+  &:focus {
+    color: $c-white;
+    border-color: $c-green;
+    background: transparent;
+  }
+}
+
+@keyframes btn-play {
+  0% {
+    transform: translateX(10%);
+  }
+  45% {
+    transform: translateX(30%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+.btn-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: $c-blue;
+  outline: none;
+  cursor: pointer;
+  z-index: 3;
+  &::after {
+    content: '';
+    display: block;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 30px solid $c-white;
+    transform: translateX(10%);
+  }
+  &:hover {
+    &::after {
+      animation: btn-play 1s infinite;
+    }
+  }
+}
+
+.btn-ask-reply {
+  position: absolute;
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 4px;
+  background: $c-blue;
+  border-radius: $round;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 3px;
+    background: $c-white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: $transition;
+  }
+}
+
+.active .btn-ask-reply {
+  &::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+.btn-news-item {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 2px 18px;
+  background: $c-blue;
+  color: $c-white;
+  border: 1px solid $c-blue;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: $c-blue;
+  }
+}
+
+.btn-item-01 {
+  margin-top: 10px;
+  color: $c-blue;
+  font-size: .875rem;
+  line-height: 1.429;
+  &::after {
+    content: '\e904';
+    font-family: $f-icon;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 3px;
+  }
+  &:hover {
+    &::after {
+      animation: btn-item-01 .5s infinite;
+    }
+  }
+}
+
+@keyframes btn-item-01 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.btn-comments {
+  margin-top: 20px;
+  font-size: .8125rem;
+  padding: 10px 45px;
+  border-radius: $round;
+  background: $c-green;
+  text-transform: uppercase;
+  border: none;
+  color: $c-white;
+  cursor: pointer;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    background: $c-blue;
+  }
+}
+
+.btn-message {
+  margin-top: 15px;
+  padding: 7px 29px;
+  text-transform: uppercase;
+  border-radius: $round;
+  color: $c-white;
+  background: $c-green;
+  border: 1px solid $c-green;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: $c-green;
+  }
+}
+
+.btn-academic-calendar {
+  width: 100%;
+  margin-top: 10px;
+  padding: 4px 10px;
+  background: $c-red2;
+  color: $c-white;
+  border-radius: $round;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    background: $c-blue;
+  }
+}
+
+.btn-contact-info {
+  margin-top: 10px;
+  padding: 11px 25px;
+  background: $c-blue;
+  color: $c-white;
+  border: none;
+  &::after {
+    content: '\e912';
+    font-family: $f-icon;
+    display: inline-block;
+    margin-left: 3px;
+  }
+  &:hover {
+    &::after {
+      animation: btn-item-01 .5s infinite;
+    }
+  }
+}
