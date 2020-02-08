@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="src/css/main.css">
+
+</head>
+
+<body class="home">
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc mở
+					JavaScript trong
+					phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app">
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- navbar -->
+			<nav class="navbar js-navbar">
+				<div class="container">
+
+					<div class="branb">
+						<a href="http://"><img src="images/logo.png" alt=""></a>
+					</div>
+
+					<div class="nav-trigger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+
+					<div class="wrapper">
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="" class="nav-link">Trang chủ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Giới thiệu</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Hưỡng dẫn</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thông báo</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tra cứu</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Số tay rèn luyện</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+
+						<div class="search js-search">
+							<div class="icon"><img src="./src/images/ic-search.svg" alt=""></div>
+							<form class="form-search">
+								<input class="form-control" type="search">
+								<button class="btn" type="submit"><img src="./src/images/ic-search.svg" alt=""></button>
+							</form>
+						</div>
+
+						<div class="btn-group">
+							<a class="btn" href="#">Đăng ký</a>
+							<a class="btn" href="#">Đăng nhập</a>
+						</div>
+					</div>
+
+
+				</div>
+			</nav>
+			<!-- navbar end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+
+			<div class="container">
+				<div class="c-title-page">
+
+					<div class="wrapper">
+						<h1>Tra cứu danh sách thi sinh</h1>
+					</div>
+				</div>
+			</div>
+
+			<!-- search -->
+			<section class="section search">
+				<div class="container">
+					<div class="search-wrapper">
+						<div class="headline"><i class="fa fa-search"></i> Tra cứu danh sách thí sinh</div>
+						<form action="" class="search-form">
+							<div class="wrapper">
+								<div class="form-group col-12">
+									<label for="bangThi">Chọn bảng</label>
+									<select class="form-control">
+										<option>Chọn bảng</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="id">Tên đăng nhập</label>
+									<input type="id" class="form-control" placeholder="Tên đăng nhập">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="name">Họ tên</label>
+									<input type="name" class="form-control" placeholder="Họ tên">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="provinceCity">Chọn tỉnh/thành phố</label>
+									<select class="form-control">
+										<option>Chọn tỉnh/thành phố</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="district">Quận/huyện</label>
+									<select class="form-control">
+										<option>Chọn quận/huyện</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="school">Trường</label>
+									<select class="form-control">
+										<option>Chọn trường</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="class">Lớp</label>
+									<select class="form-control">
+										<option>Chọn lớp</option>
+									</select>
+								</div>
+							</div>
+							<button class="btn btn-primary" type="submit">Tìm kiếm</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- search end -->
+
+			<!-- search results -->
+			<section class="section search-results">
+				<div class="container">
+					<div class="wrapper">
+						<div class="detail">
+							<ul class="title">
+								<li>STT</li>
+								<li>Họ tên</li>
+								<li>Tên đăng nhập</li>
+								<li>Lớp</li>
+								<li>Trường</li>
+								<li>Quận/Huyện</li>
+								<li>Thành phố</li>
+								<li>Thời gian</li>
+								<li>Điểm</li>
+							</ul>
+							<div class="detail-list">
+								<ul class="item">
+									<li>1</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>2</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>3</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>4</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>5</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>6</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>7</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>8</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+							</div>
+						</div>
+						<div class="results">Tổng só: <span>1.965.697</span> lượt thi</div>
+						<!-- pagination -->
+						<nav class="c-pagination">
+							<ul class="pagination">
+								<li class="page-item">
+									<a class="page-link disabled" href="#"><img src="./src/images/ic-chevron-double-left.svg" alt=""></a>
+								</li>
+								<li class="page-item">
+									<a class="page-link disabled" href="#"><img src="./src/images/ic-arrow-left.svg" alt=""></a>
+								</li>
+								<li class="page-item">
+									<a class="page-link active" href="#">1</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">2</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">3</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">4</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#"><img src="./src/images/ic-arrow-right-1.svg" alt=""></a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#"><img src="./src/images/ic-chevron-double-right.svg" alt=""></a>
+								</li>
+							</ul>
+						</nav>
+						<!-- pagination end -->
+					</div>
+
+				</div>
+			</section>
+			<!-- search results end -->
+
+
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-info">
+					<div class="footer-contact">
+						<p><img src="images/logo.png" width="115" alt=""></p>
+						<h4 class="title">Hỗ trợ nội dung rèn luyện hội đồng đội trung ương</h4>
+						<ul>
+							<li><i class="icon ic-address"></i>62 Bà Triệu, Quận Hoàn kiếm, Hà Nội</li>
+							<li><i class="icon ic-email"></i>renluyendoivien@gmail.com</li>
+							<li><i class="icon ic-phone"></i>1900 636 444 (Trong giờ Hành chính từ Thứ 2 - Thứ 6) <br> 1900 636 228
+								(Ngoài giờ Hành chính, T7 + CN và các ngày Lễ, Tết)</li>
+						</ul>
+					</div>
+					<div class="footer-facebook">
+						<iframe
+							src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=230&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+							width="340" height="230" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+							allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright © 2019 Egroup. Design by VNEDUTECH. All rights reserved.</p>
+					<div class="group-icon">
+						<a href="#"><img src="./src/images/ic-www.svg" alt=""></a>
+						<a href="#"><img src="./src/images/ic-fb.svg" alt=""></a>
+						<a href="#"><img src="./src/images/ic-youtube.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/slick.min.js"></script>
+	<script src="src/js/vendor/fancybox/jquery.fancybox.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+</body>
+
+</html>

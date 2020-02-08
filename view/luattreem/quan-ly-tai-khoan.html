@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="src/css/main.css">
+
+</head>
+
+<body class="home">
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc mở
+					JavaScript trong
+					phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app">
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- navbar -->
+			<nav class="navbar js-navbar">
+				<div class="container">
+
+					<div class="branb">
+						<a href="http://"><img src="images/logo.png" alt=""></a>
+					</div>
+
+					<div class="nav-trigger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+
+					<div class="wrapper">
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="" class="nav-link">Trang chủ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Giới thiệu</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Hưỡng dẫn</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thông báo</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tra cứu</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Số tay rèn luyện</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+
+						<div class="search js-search">
+							<div class="icon"><img src="./src/images/ic-search.svg" alt=""></div>
+							<form class="form-search">
+								<input class="form-control" type="search">
+								<button class="btn" type="submit"><img src="./src/images/ic-search.svg" alt=""></button>
+							</form>
+						</div>
+
+						<div class="btn-group">
+							<a class="btn" href="#">Đăng ký</a>
+							<a class="btn" href="#">Đăng nhập</a>
+						</div>
+					</div>
+
+
+				</div>
+			</nav>
+			<!-- navbar end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+
+			<div class="container">
+				<section class="section my-user">
+					<div class="headline">
+						<h2 class="title">Thông tin cá nhân</h2>
+					</div>
+					<div class="tab js-tab-user">
+						<div class="tab-list">
+							<h3 class="item active" data-tab="#info-user">Sửa thông tin</h3>
+							<h3 class="item" data-tab="#achievements">Xem kết quả rèn luyện</h3>
+							<h3 class="item" data-tab="#password">Đổi mật khẩu</h3>
+						</div>
+						<div class="tab-body">
+							<div class="item info-user show" id="info-user">
+								<div class="row">
+									<div class="col-12 col-lg-4">
+										<div class="avatar js-avatar">
+											<div class="img">
+												<div class="img-wrapper">
+													<img class="profile-pic" src="images/user.png">
+												</div>
+											</div>
+											<input class="file-upload" type="file" accept="image/*">
+											<div class="text">Click đổi avatar</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-8">
+										<div class="info">
+											<div class="item">
+												<span>Họ và tên:</span>
+												<span><b>Nguyễn Văn Sơn</b></span>
+											</div>
+											<div class="item">
+												<span>Lớp:</span>
+												<span><b>7</b></span>
+											</div>
+											<div class="item">
+												<span>Địa chỉ:</span>
+												<span><b>Tây Hồ, Hà Nộ</b></span>
+											</div>
+											<div class="item form-group">
+												<span>SĐT:</span>
+												<input type="phone" class="form-control" id="exampleInputPhone" placeholder="chưa cập nhập">
+											</div>
+											<div class="item form-group">
+												<span>Email:</span>
+												<input type="email" class="form-control" id="exampleInputEmail" placeholder="chưa cập nhập">
+											</div>
+											<div class="item form-group">
+												<span>Địa chỉ:</span>
+												<input type="address" class="form-control" id="exampleInputAddress" placeholder="chưa cập nhập"
+													value="398 Hồ Tùng Mậu">
+											</div>
+											<div class="item">
+												<div class="btn-group">
+													<a href="" class="btn btn-save"><img src="./src/images/ic-check.svg" alt=""> Lưu</a>
+													<a href="" class="btn btn-back"><img src="./src/images/ic-arrow-back.svg" alt=""> Quay lại</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item achievements" id="achievements">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>
+													<div class="appellation">Chuyên hiệu</div>
+												</th>
+												<th>Vòng</th>
+												<th>Lần thi</th>
+												<th>Thời gian</th>
+												<th>Điểm</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="appellation">Vô đối</div>
+												</td>
+												<td>1</td>
+												<td>2</td>
+												<td>35 phút</td>
+												<td>21</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="item password" id="password">
+								<form>
+									<div class="inner">
+										<div class="form-group">
+											<input type="password" class="form-control" id="exampleInputPasswordOld"
+												placeholder="Nhập mật khẩu cũ">
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control" id="exampleInputPasswordNew"
+												placeholder="Nhập mật khẩu mới">
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control" id="exampleInputPasswordNewConfirm"
+												placeholder="Nhập lại mật khẩu mới">
+											<small>Mật khẩu mới phải từ 6 ký tự trở lên bao gồm cả chữ và số</small>
+										</div>
+										<div class="btn-group">
+											<button type="submit" class="btn btn-yes"><img src="./src/images/ic-check.svg" alt=""> Xác
+												nhận</button>
+											<button type="submit" class="btn btn-no"><img src="./src/images/ic-exit.svg" alt=""> Hủy</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-info">
+					<div class="footer-contact">
+						<p><img src="images/logo.png" width="115" alt=""></p>
+						<h4 class="title">Hỗ trợ nội dung rèn luyện hội đồng đội trung ương</h4>
+						<ul>
+							<li><i class="icon ic-address"></i>62 Bà Triệu, Quận Hoàn kiếm, Hà Nội</li>
+							<li><i class="icon ic-email"></i>renluyendoivien@gmail.com</li>
+							<li><i class="icon ic-phone"></i>1900 636 444 (Trong giờ Hành chính từ Thứ 2 - Thứ 6) <br> 1900 636 228
+								(Ngoài giờ Hành chính, T7 + CN và các ngày Lễ, Tết)</li>
+						</ul>
+					</div>
+					<div class="footer-facebook">
+						<iframe
+							src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=230&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+							width="340" height="230" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+							allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright © 2019 Egroup. Design by VNEDUTECH. All rights reserved.</p>
+					<div class="group-icon">
+						<a href="#"><img src="./src/images/ic-www.svg" alt=""></a>
+						<a href="#"><img src="./src/images/ic-fb.svg" alt=""></a>
+						<a href="#"><img src="./src/images/ic-youtube.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/slick.min.js"></script>
+	<script src="src/js/vendor/fancybox/jquery.fancybox.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+</body>
+
+</html>

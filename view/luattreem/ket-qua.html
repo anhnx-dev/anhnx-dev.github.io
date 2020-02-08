@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="src/css/main.css">
+
+</head>
+
+<body class="home">
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc mở
+					JavaScript trong
+					phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app">
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- navbar -->
+			<nav class="navbar js-navbar">
+				<div class="container">
+
+					<div class="branb">
+						<a href="http://"><img src="images/logo.png" alt=""></a>
+					</div>
+
+					<div class="nav-trigger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+
+					<div class="wrapper">
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="" class="nav-link">Trang chủ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Giới thiệu</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Hưỡng dẫn</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thông báo</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tra cứu</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Số tay rèn luyện</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+
+						<div class="search js-search">
+							<div class="icon"><img src="./src/images/ic-search.svg" alt=""></div>
+							<form class="form-search">
+								<input class="form-control" type="search">
+								<button class="btn" type="submit"><img src="./src/images/ic-search.svg" alt=""></button>
+							</form>
+						</div>
+
+						<div class="btn-group">
+							<a class="btn" href="#">Đăng ký</a>
+							<a class="btn" href="#">Đăng nhập</a>
+						</div>
+					</div>
+
+
+				</div>
+			</nav>
+			<!-- navbar end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+
+			<div class="container">
+				<div class="c-title-page">
+
+					<div class="wrapper">
+						<h1>Tìm kiếm kết quả</h1>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- search -->
+			<section class="section search">
+				<div class="container">
+					<div class="search-wrapper">
+						<div class="headline"><i class="fa fa-search"></i> Tìm kiếm kết quả</div>
+						<form action="" class="search-form">
+							<div class="wrapper">
+								<div class="form-group">
+									<label for="id">Tên đăng nhập</label>
+									<input type="id" class="form-control" placeholder="Tên đăng nhập">
+								</div>
+								<div class="form-group">
+									<label for="name">Họ tên</label>
+									<input type="name" class="form-control" placeholder="Họ tên">
+								</div>
+								<div class="form-group">
+									<label for="vongThi">Vòng thi</label>
+									<select class="form-control">
+										<option>Chọn vòng thi</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="bangThi">Chọn bảng</label>
+									<select class="form-control">
+										<option>Chọn bảng</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="provinceCity">Chọn tỉnh/thành phố</label>
+									<select class="form-control">
+										<option>Chọn tỉnh/thành phố</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="district">Quận/huyện</label>
+									<select class="form-control">
+										<option>Chọn quận/huyện</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="school">Trường</label>
+									<select class="form-control">
+										<option>Chọn trường</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="class">Lớp</label>
+									<select class="form-control">
+										<option>Chọn lớp</option>
+									</select>
+								</div>
+							</div>
+							<button class="btn btn-primary" type="submit">Tìm kiếm</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- search end -->
+
+			<!-- search results -->
+			<section class="section search-results">
+				<div class="container">
+					<div class="wrapper">
+						<div class="detail">
+							<ul class="title">
+								<li>STT</li>
+								<li>Họ tên</li>
+								<li>Tên đăng nhập</li>
+								<li>Lớp</li>
+								<li>Trường</li>
+								<li>Quận/Huyện</li>
+								<li>Thành phố</li>
+								<li>Thời gian</li>
+								<li>Điểm</li>
+							</ul>
+							<div class="detail-list">
+								<ul class="item">
+									<li>1</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>2</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>3</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>4</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>5</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>6</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>7</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+								<ul class="item">
+									<li>8</li>
+									<li><b>Nguyễn Gia Thế</b></li>
+									<li>theng0606</li>
+									<li>Trường Đại học Sư phạm Hà Nội</li>
+									<li>12A1</li>
+									<li>TP.Hà Nội</li>
+									<li>Cầu Giấy</li>
+									<li>00:15:018</li>
+									<li>200</li>
+								</ul>
+							</div>
+						</div>
+						<div class="results">Tổng só: <span>1.965.697</span> lượt thi</div>
+						<!-- pagination -->
+						<nav class="c-pagination">
+							<ul class="pagination">
+								<li class="page-item">
+									<a class="page-link disabled" href="#"><img src="./src/images/ic-chevron-double-left.svg" alt=""></a>
+								</li>
+								<li class="page-item">
+									<a class="page-link disabled" href="#"><img src="./src/images/ic-arrow-left.svg" alt=""></a>
+								</li>
+								<li class="page-item">
+									<a class="page-link active" href="#">1</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">2</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">3</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">4</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#"><img src="./src/images/ic-arrow-right-1.svg" alt=""></a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#"><img src="./src/images/ic-chevron-double-right.svg" alt=""></a>
+								</li>
+							</ul>
+						</nav>
+						<!-- pagination end -->
+					</div>
+
+				</div>
+			</section>
+			<!-- search results end -->
+
+			<section class="section search-results">
+				<div class="container">
+					<div class="results">Tổng số: <span> 984433</span> lượt thi</div>
+					<!-- pagination -->
+					<ul class="pagination">
+
+						<li class="page-item disabled"><span class="page-link">«</span></li>
+
+
+
+
+
+						<li class="page-item active"><span class="page-link">1</span></li>
+						<li class="page-item"><a class="page-link" href="ket-qua?page=1&amp;page=2">2</a></li>
+						<li class="page-item"><a class="page-link" href="ket-qua?page=1&amp;page=3">3</a></li>
+						<li class="page-item"><a class="page-link" href="ket-qua?page=1&amp;page=4">4</a></li>
+						<li class="page-item"><a class="page-link" href="ket-qua?page=1&amp;page=5">5</a></li>
+						<li class="page-item"><a class="page-link" href="ket-qua?page=1&amp;page=6">6</a></li>
+						<li class="page-item"><a class="page-link" href="ket-qua?page=1&amp;page=7">7</a></li>
+						<li class="page-item"><a class="page-link" href="ket-qua?page=1&amp;page=8">8</a></li>
+
+						<li class="page-item disabled"><span class="page-link">...</span></li>
+
+
+
+
+
+						<li class="page-item"><a class="page-link" href="ket-qua?page=1&amp;page=49221">49221</a></li>
+						<li class="page-item"><a class="page-link" href="ket-qua?page=1&amp;page=49222">49222</a></li>
+
+
+						<li class="page-item"><a class="page-link" href="ket-qua?page=1&amp;page=2" rel="next">»</a></li>
+					</ul>
+
+					<!-- pagination end -->
+					<div class="table-responsive detail">
+						<table class="table">
+							<thead>
+								<tr class="detail-row title">
+									<th class="detail-col-1">STT</th>
+									<th class="detail-col-2">Họ tên</th>
+									<th class="detail-col-3">Tên đăng nhập</th>
+									<th class="detail-col-4">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">Tỉnh/ TP</font>
+										</font>
+									</th>
+									<th class="detail-col-5">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">Trường</font>
+										</font>
+									</th>
+									<th class="detail-col-6">Điểm thi</th>
+									<th class="detail-col-7">Thời gian</th>
+								</tr>
+							</thead>
+							<tbody class="detail-list">
+								<tr class="detail-row item">
+									<td class="detail-col-1">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">1</font>
+										</font>
+									</td>
+									<td class="detail-col-1">lê nữ lu ly</td>
+									<td class="detail-col-1">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">lenululy12a8thpttxqt</font>
+										</font>
+									</td>
+									<td class="detail-col-1">Quảng Trị</td>
+									<td class="detail-col-1">THPT Thị Xã Quảng Trị</td>
+									<td class="detail-col-1">40</td>
+									<td class="detail-col-1">15:00.000</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-2">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">2</font>
+										</font>
+									</td>
+									<td class="detail-col-2">tran dinh chuong</td>
+									<td class="detail-col-2">chuongtran12b1</td>
+									<td class="detail-col-2">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">Quảng Trị</font>
+										</font>
+									</td>
+									<td class="detail-col-2">THPT Gio Linh</td>
+									<td class="detail-col-2">100</td>
+									<td class="detail-col-2">04:20.098</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-3">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">3</font>
+										</font>
+									</td>
+									<td class="detail-col-3">võ duy toàn</td>
+									<td class="detail-col-3">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">toanvo11b2</font>
+										</font>
+									</td>
+									<td class="detail-col-3">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">Quảng Trị</font>
+										</font>
+									</td>
+									<td class="detail-col-3">THPT Lê Lợi</td>
+									<td class="detail-col-3">10</td>
+									<td class="detail-col-3">02:47.588</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-4">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">4</font>
+										</font>
+									</td>
+									<td class="detail-col-4">trần thị hành</td>
+									<td class="detail-col-4">tran_thi_hanh</td>
+									<td class="detail-col-4">Tuyên Quang</td>
+									<td class="detail-col-4">THPT Đông Thọ</td>
+									<td class="detail-col-4">0</td>
+									<td class="detail-col-4">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">15:00.000</font>
+										</font>
+									</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-5">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">5</font>
+										</font>
+									</td>
+									<td class="detail-col-5">Trịnh Công Sơn</td>
+									<td class="detail-col-5">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">tiếng anhvodoi10a2</font>
+										</font>
+									</td>
+									<td class="detail-col-5">Hà Nam</td>
+									<td class="detail-col-5">THPT C Kim Bảng</td>
+									<td class="detail-col-5">80</td>
+									<td class="detail-col-5">06:29.967</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-6">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">6</font>
+										</font>
+									</td>
+									<td class="detail-col-6">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">lê nữ lu ly</font>
+										</font>
+									</td>
+									<td class="detail-col-6">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">lenululy12a8thpttxqt</font>
+										</font>
+									</td>
+									<td class="detail-col-6">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">Quảng Trị</font>
+										</font>
+									</td>
+									<td class="detail-col-6">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">THPT Thị Xã Quảng Trị</font>
+										</font>
+									</td>
+									<td class="detail-col-6">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">40</font>
+										</font>
+									</td>
+									<td class="detail-col-6">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">15:00.000</font>
+										</font>
+									</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-7">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">7</font>
+										</font>
+									</td>
+									<td class="detail-col-7">Võ Nhật Tâm</td>
+									<td class="detail-col-7">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">tâm8a1</font>
+										</font>
+									</td>
+									<td class="detail-col-7">Bình Phước</td>
+									<td class="detail-col-7">THCS Đồng Tâm</td>
+									<td class="detail-col-7">20</td>
+									<td class="detail-col-7">01:04.798</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-8">8</td>
+									<td class="detail-col-8">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">buitrunghieu (12N)</font>
+										</font>
+									</td>
+									<td class="detail-col-8">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">buitrunghieu12nk56</font>
+										</font>
+									</td>
+									<td class="detail-col-8">Hà Tĩnh</td>
+									<td class="detail-col-8">THPT Hương Sơn</td>
+									<td class="detail-col-8">160</td>
+									<td class="detail-col-8">11:40.769</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-9">9</td>
+									<td class="detail-col-9">Võ Thị Hoài Linh</td>
+									<td class="detail-col-9">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">ontimyhang12a5thpttxqt19</font>
+										</font>
+									</td>
+									<td class="detail-col-9">Quảng Trị</td>
+									<td class="detail-col-9">THPT Thị Xã Quảng Trị</td>
+									<td class="detail-col-9">60</td>
+									<td class="detail-col-9">06:19.140</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-10">10</td>
+									<td class="detail-col-10">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">TranVuQuangHuy</font>
+										</font>
+									</td>
+									<td class="detail-col-10">quanghuy_6b</td>
+									<td class="detail-col-10">Phú Thọ</td>
+									<td class="detail-col-10">THCS Đoan Hạ</td>
+									<td class="detail-col-10">40</td>
+									<td class="detail-col-10">06:20.266</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-11">11</td>
+									<td class="detail-col-11">nguyễn thúy ngần</td>
+									<td class="detail-col-11">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">c3andyourworld12a2</font>
+										</font>
+									</td>
+									<td class="detail-col-11">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">Phú Thọ</font>
+										</font>
+									</td>
+									<td class="detail-col-11">Trường THPT Yển Khê</td>
+									<td class="detail-col-11">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">10</font>
+										</font>
+									</td>
+									<td class="detail-col-11">03:21.071</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-12">12</td>
+									<td class="detail-col-12">Thạch Thị Mỹ Dung</td>
+									<td class="detail-col-12">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">mydung1101</font>
+										</font>
+									</td>
+									<td class="detail-col-12">Trà Vinh</td>
+									<td class="detail-col-12">THPT Nhị Trường</td>
+									<td class="detail-col-12">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">10</font>
+										</font>
+									</td>
+									<td class="detail-col-12">09:38.947</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-13">13</td>
+									<td class="detail-col-13">Nguyễn Hữu Hùng</td>
+									<td class="detail-col-13">nguyenhung12b1</td>
+									<td class="detail-col-13">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">Quảng Trị</font>
+										</font>
+									</td>
+									<td class="detail-col-13">THPT Bùi Dục Tài</td>
+									<td class="detail-col-13">50</td>
+									<td class="detail-col-13">05:22.835</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-14">14</td>
+									<td class="detail-col-14">Pham Dinh Trung</td>
+									<td class="detail-col-14">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">phamdinhtrung2822003</font>
+										</font>
+									</td>
+									<td class="detail-col-14">Hưng Yên</td>
+									<td class="detail-col-14">THPT Phù Cừ</td>
+									<td class="detail-col-14">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">20</font>
+										</font>
+									</td>
+									<td class="detail-col-14">04:44.593</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-15">15</td>
+									<td class="detail-col-15">Ngô Văn Nhựt</td>
+									<td class="detail-col-15">ngovannhut2012</td>
+									<td class="detail-col-15">Quảng Ngãi</td>
+									<td class="detail-col-15">THPT Võ Nguyên Giáp</td>
+									<td class="detail-col-15">140</td>
+									<td class="detail-col-15">15:00.000</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-16">16</td>
+									<td class="detail-col-16">Vũ Lan Anh</td>
+									<td class="detail-col-16">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">lananhlananh12345</font>
+										</font>
+									</td>
+									<td class="detail-col-16">Hà Nam</td>
+									<td class="detail-col-16">THPT C Thanh Liêm</td>
+									<td class="detail-col-16">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">40</font>
+										</font>
+									</td>
+									<td class="detail-col-16">08:46.815</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-17">17</td>
+									<td class="detail-col-17">Nguyễn Anh Dũng</td>
+									<td class="detail-col-17">nguyenanhdung34</td>
+									<td class="detail-col-17">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">Phú Thọ</font>
+										</font>
+									</td>
+									<td class="detail-col-17">Trường THPT Thanh Sơn</td>
+									<td class="detail-col-17">0</td>
+									<td class="detail-col-17">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">15:00.000</font>
+										</font>
+									</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-18">18</td>
+									<td class="detail-col-18">Tu Van Luong</td>
+									<td class="detail-col-18">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">Tuvanluong</font>
+										</font>
+									</td>
+									<td class="detail-col-18">Bình Dương</td>
+									<td class="detail-col-18">THCS Tân Đông Hiệp</td>
+									<td class="detail-col-18">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">10</font>
+										</font>
+									</td>
+									<td class="detail-col-18">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">15:00.000</font>
+										</font>
+									</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-19">19</td>
+									<td class="detail-col-19">Nguyễn Thị Quỳnh Như</td>
+									<td class="detail-col-19">thcsnguyentrai_quynhnhu20</td>
+									<td class="detail-col-19">Đồng Nai</td>
+									<td class="detail-col-19">THCS Nguyễn Trãi</td>
+									<td class="detail-col-19">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">10</font>
+										</font>
+									</td>
+									<td class="detail-col-19">01:26.431</td>
+								</tr>
+								<tr class="detail-row item">
+									<td class="detail-col-20">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">20</font>
+										</font>
+									</td>
+									<td class="detail-col-20">hoàng thị tuyết</td>
+									<td class="detail-col-20">hoangthituyet11b2</td>
+									<td class="detail-col-20">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">Quảng Trị</font>
+										</font>
+									</td>
+									<td class="detail-col-20">THPT Triệu Phong</td>
+									<td class="detail-col-20">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">160</font>
+										</font>
+									</td>
+									<td class="detail-col-20">11:47.109</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-info">
+					<div class="footer-contact">
+						<p><img src="images/logo.png" width="115" alt=""></p>
+						<h4 class="title">Hỗ trợ nội dung rèn luyện hội đồng đội trung ương</h4>
+						<ul>
+							<li><i class="icon ic-address"></i>62 Bà Triệu, Quận Hoàn kiếm, Hà Nội</li>
+							<li><i class="icon ic-email"></i>renluyendoivien@gmail.com</li>
+							<li><i class="icon ic-phone"></i>1900 636 444 (Trong giờ Hành chính từ Thứ 2 - Thứ 6) <br> 1900 636 228
+								(Ngoài giờ Hành chính, T7 + CN và các ngày Lễ, Tết)</li>
+						</ul>
+					</div>
+					<div class="footer-facebook">
+						<iframe
+							src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=230&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+							width="340" height="230" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+							allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright © 2019 Egroup. Design by VNEDUTECH. All rights reserved.</p>
+					<div class="group-icon">
+						<a href="#"><img src="./src/images/ic-www.svg" alt=""></a>
+						<a href="#"><img src="./src/images/ic-fb.svg" alt=""></a>
+						<a href="#"><img src="./src/images/ic-youtube.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/slick.min.js"></script>
+	<script src="src/js/vendor/fancybox/jquery.fancybox.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+</body>
+
+</html>
