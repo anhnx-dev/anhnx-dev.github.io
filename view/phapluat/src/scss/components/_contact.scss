@@ -1,0 +1,58 @@
+@import '../variables';
+
+.c-contact {
+  border: 1px solid #d3d5d8;
+  background: $c-white;
+  padding: 15px 10px 100px 10px;
+  margin-top: 40px;
+  @media (min-width: $breakpoints-md) {
+    padding: 50px 20px 100px 20px;
+  }
+  .headline {
+    font-size: 16px;
+    color: #555;
+  }
+  .maps {
+    margin-top: 25px;
+  }
+  .block {
+    margin-top: 30px;
+    h3 {
+      @include no-spacing;
+      font-size: 16px;
+    }
+    p {
+      margin: 5px 0 0 0;
+    }
+  }
+  .form-contact {
+    margin-top: 30px;
+    max-width: 540px;
+    h3 {
+      @include no-spacing;
+      font-size: 16px;
+    }
+    .form {
+      .form-group {
+        margin: 20px 0 0 0;
+        .form-control {
+          padding: 11px 15px;
+          height: auto;
+          border-radius: 0;
+          border: 1px solid #d3d5d8;
+        }
+      }
+    }
+    .btn {
+      background: #73c7f3;
+      text-transform: uppercase;
+      color: $c-white;
+      border-radius: 0;
+      font-weight: 500;
+      padding: 10px 50px;
+      &:hover {
+        background: #3b5179;
+      }
+    }
+  }
+}

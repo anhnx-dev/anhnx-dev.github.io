@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="src/vendor/flipclock/flipclock.css">
+    <link rel="stylesheet" href="src/vendor/slick/slick.css">
+    <link rel="stylesheet" href="src/vendor/bootstrap-4.3.1-dist/bootstrap.min.css">
+    <link rel="stylesheet" href="src/main.min.css">
+</head>
+
+<body class="page-search">
+
+
+    <div id="app">
+
+        <a id="back-top"></a>
+
+        <!-- header -->
+        <header class="header" id="header">
+
+            <div class="c-navbar">
+                <div class="container">
+
+                    <nav class="navbar navbar-expand-lg">
+
+                        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+
+                        <div class="collapse navbar-collapse" id="menu_main">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tra cứu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Văn bản</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <a href="#" class="btn active">Vào thi</a>
+                            <a href="#" class="btn" data-toggle="modal" data-target="#user_login">Đăng nhập</a>
+                            <a href="#" class="btn" data-toggle="modal" data-target="#user_registration">Đăng ký</a>
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_main"
+                            aria-controls="menu_main" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+
+                </div> <!-- / container -->
+            </div>
+            <!-- navbar end -->
+
+        </header>
+        <!-- header end -->
+
+        <!-- main -->
+        <main class="main" id="main">
+
+            <section class="c-hero">
+                <div class="slider">
+                    <ul class="list js-hero-slider">
+                        <li class="item"><a href="#"><img src="./images/hero.png" alt=""></a></li>
+                        <li class="item"><a href="#"><img src="./images/hero.png" alt=""></a></li>
+                        <li class="item"><a href="#"><img src="./images/hero.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- hero -->
+
+            <div class="container">
+
+                <section class="c-search">
+                    <div class="search-header">
+                        <h2 class="tab-title active" data-tab="#part_user">TRA CỨU DANH SÁCH THÍ SINH</h2>
+                        <h2 class="tab-title" data-tab="#part_result">TRA CỨU KẾT QUẢ THI</h2>
+                        <h2 class="tab-title" data-tab="#part_ranking">TRA CỨU BẢNG XẾP HẠNG</h2>
+                    </div>
+                    <div class="search-main">
+                        <div class="part user active" id="part_user">
+                            <form class="form">
+                                <div class="form-group">
+                                    <label for="exampleInputSearchUser">Tên tài khoản</label>
+                                    <input type="text" class="form-control" id="exampleInputSearchUser">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputSearchName">Họ tên</label>
+                                    <input type="text" class="form-control" id="exampleInputSearchName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleSelectSearchTable">Chọn Bảng</label>
+                                    <select class="form-control" id="exampleSelectSearchTable">
+                                        <option>Chọn Bảng</option>
+                                        <option>Trường THPT Chuyên Hùng Vương</option>
+                                        <option>Trường THPT Chuyên Hùng Vương</option>
+                                        <option>Trường THPT Chuyên Hùng Vương</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-btn">
+                                    <button type="submit" class="btn">TÌM KIẾM</button>
+                                </div>
+                            </form>
+                            <div class="info">
+                                <div class="number">Tổng số: <span>53991</span> thí sinh</div>
+                                <nav class="c-pagination">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link disabled" href="#"><i class="fa fa-angle-left"></i></a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link active" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">STT</th>
+                                            <th scope="col">Họ tên</th>
+                                            <th scope="col">Tên đăng nhập</th>
+                                            <th scope="col">Tỉnh/TP</th>
+                                            <th scope="col">Quận/Huyện</th>
+                                            <th scope="col">Trường</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">13</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">14</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">15</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">16</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">17</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">18</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">19</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">20</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="part result" id="part_result">
+                            <form class="form">
+                                <div class="form-group">
+                                    <label for="exampleSelectResultRing">Vòng thi</label>
+                                    <select class="form-control" id="exampleSelectResultRing">
+                                        <option>Vòng loại</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleSelectResultSt">Đợt thi</label>
+                                    <select class="form-control" id="exampleSelectResultSt">
+                                        <option>Tất cả</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputResulthUser">Tên tài khoản</label>
+                                    <input type="text" class="form-control" id="exampleInputResultUser">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputResultName">Họ tên</label>
+                                    <input type="text" class="form-control" id="exampleInputResultName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleSelectResultTable">Chọn Bảng</label>
+                                    <select class="form-control" id="exampleSelectResultTable">
+                                        <option>Chọn Bảng</option>
+                                        <option>Trường THPT Chuyên Hùng Vương</option>
+                                        <option>Trường THPT Chuyên Hùng Vương</option>
+                                        <option>Trường THPT Chuyên Hùng Vương</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-btn">
+                                    <button type="submit" class="btn">TÌM KIẾM</button>
+                                </div>
+                            </form>
+                            <div class="info">
+                                <div class="number">Tổng số: <span>53991</span> thí sinh</div>
+                                <nav class="c-pagination">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link disabled" href="#"><i class="fa fa-angle-left"></i></a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link active" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">STT</th>
+                                            <th scope="col">Họ tên</th>
+                                            <th scope="col">Tên đăng nhập</th>
+                                            <th scope="col">Tỉnh/TP</th>
+                                            <th scope="col">Quận/Huyện</th>
+                                            <th scope="col">Trường</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">13</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">14</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">15</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">16</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">17</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">18</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">19</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">20</th>
+                                            <td>NGUYỄN QUANG THÁI</td>
+                                            <td>quangthai12hoachv</td>
+                                            <td>Phú Thọ</td>
+                                            <td>Tp. Việt Trì</td>
+                                            <td>@Trường THPT Chuyên Hùng Vương</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="part ranking" id="part_ranking">
+                            <form class="form user">
+                                <div class="form-group">
+                                    <label for="exampleSelectSearchTable">Top thí sinh đăng ký</label>
+                                    <select class="form-control" id="exampleSelectSearchTable">
+                                        <option>Top trường</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleSelectSearchTable">Chọn Bảng</label>
+                                    <select class="form-control" id="exampleSelectSearchTable">
+                                        <option>Tất cả các bảng</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-btn">
+                                    <button type="submit" class="btn">TÌM KIẾM</button>
+                                </div>
+                            </form>
+                            <div class="info">
+                                <div class="number">Tổng số: <span>53991</span> thí sinh</div>
+                                <nav class="c-pagination">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link disabled" href="#"><i class="fa fa-angle-left"></i></a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link active" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">STT</th>
+                                            <th scope="col">Tỉnh - Thành Phố</th>
+                                            <th scope="col">Số lượng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Phú Thọ</td>
+                                            <td>21450</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- search -->
+
+            </div>
+
+        </main>
+        <!-- main end -->
+
+        <!-- footer -->
+        <footer class="footer" id="footer">
+
+            <div class="container">
+
+                <div class="row copyright">
+                    <div class="col-12 col-lg-8 block">
+                        <h3 class="title">BỘ GIÁO DỤC VÀ ĐÀO TẠO VỤ GIÁO DỤC CHÍNH TRỊ VÀ CÔNG TÁC HỌC SINH - SINH VIÊN
+                        </h3>
+                        <div class="contact">
+                            35 Đại Cồ Việt - Quận Hai Bà Trưng - Hà Nội.
+                            <br>
+                            Hotline hỗ trợ: 0243.689.4984 / 083.748.5979
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 block">
+                        <h3 class="title">TẬP ĐOÀN GIÁO DỤC EGROUP</h3>
+                        <div class="contact">
+                            Tầng 3 - Tòa Nhà 25T1 - Hoàng Đạo Thúy, - Trung Hòa - Cầu Giấy - Hà Nội
+                            <br>
+                            Hỗ trợ kỹ thuật: 1900.636.444 / 1900.636.228 (8h - 22h hàng ngày)
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+        <!-- footer end -->
+
+        <!-- Modal login -->
+        <div class="modal fade" id="user_login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="c-user login">
+                        <div class="headline">
+                            <h2 style="color: #109b8c;">ĐĂNG NHẬP</h2>
+                            <span>Kích hoạt thành công mời bạn đăng nhập!</span>
+                        </div>
+                        <form class="from">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputLoginUserName"
+                                    placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputLoginPassword"
+                                    placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group">
+                                <img src="./src/img/xac-thuc.png" alt="">
+                            </div>
+                            <button type="submit" class="btn">ĐĂNG NHẬP</button>
+                        </form>
+                        <div class="other">
+                            <span>Đăng nhập bằng:</span>
+                            <div class="icon-group">
+                                <a class="icon" href=""><img src="./src/img/ic-facebook.png" alt=""></a>
+                                <a class="icon" href=""><img src="./src/img/ic-google.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="link">Nếu bạn chưa có tài khoản? <button data-dismiss="modal" aria-label="Close"
+                                data-toggle="modal" data-target="#user_registration">ĐĂNG KÝ NGAY !</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal registration -->
+        <div class="modal fade" id="user_registration" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="c-user registration">
+                        <div class="headline">
+                            <h2 style="color: #4d699c;">ĐĂNG NHẬP</h2>
+                            <span>Kích hoạt thành công mời bạn đăng nhập!</span>
+                        </div>
+                        <form class="from">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputRegistrationUserName"
+                                    placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="exampleInputRegistrationUserTel"
+                                    placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputRegistrationUserEmail"
+                                    placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputRegistrationPassword"
+                                    placeholder="Mật khẩu">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control"
+                                    id="exampleInputRegistrationAccuracyPassword" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <div class="form-group">
+                                <img src="./src/img/xac-thuc.png" alt="">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheckRegistration">
+                                <label class="form-check-label" for="exampleCheckRegistration"> Tôi đồng ý với các <a
+                                        href="#">Điều khoản sử dụng</a></label>
+                            </div>
+                            <button type="submit" class="btn">HOÀN TẤT</button>
+                        </form>
+                        <div class="link">Nếu bạn chưa có tài khoản? <button data-dismiss="modal" aria-label="Close"
+                                data-toggle="modal" data-target="#user_login">ĐĂNG KÝ NGAY !</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Forgot password -->
+        <div class="modal fade" id="user_forgot-password" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="c-user forgot-password">
+                        <div class="headline">
+                            <h2 style="color: #e36454;">LẤY LẠI MẬT KHẨU</h2>
+                            <span>Email không chính xác!</span>
+                        </div>
+                        <form class="from">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputForgotPassword"
+                                    placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <img src="./src/img/xac-thuc.png" alt="">
+                            </div>
+                            <button type="submit" class="btn">ĐỒNG Ý</button>
+                        </form>
+                        <div class="link">Nếu bạn đã có tài khoản? <button data-dismiss="modal" aria-label="Close"
+                                data-toggle="modal" data-target="#user_login">ĐĂNG NHẬP NGAY !</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fix-contact">
+            <div class="icon">
+                <img src="./src/img/ic-phone.png" alt="">
+            </div>
+            <div class="info">
+                <div class="phone">1900.636 .228 - 1900.636 .444</div>
+                <div class="email">Email: hocvalamtheobac@egroup.vn</div>
+            </div>
+        </div>
+
+        <div class="back-top" data-scroll="#back-top"><img src="./src/img/back-top.png" alt=""></div>
+
+    </div>
+
+
+
+    <!-- js -->
+    <script defer src="src/vendor/fontawesome/js/all.min.js"></script>
+    <script src="src/vendor/jquery-3.3.1.min.js"></script>
+    <script src="src/vendor/popper.min.js"></script>
+    <script src="src/vendor/bootstrap-4.3.1-dist/bootstrap.min.js"></script>
+    <script src="src/vendor/slick/slick.min.js"></script>
+    <script src="src/main.js"></script>
+
+
+</body>
+
+</html>

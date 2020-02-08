@@ -1,0 +1,45 @@
+@import '../variables';
+
+.c-pagination {
+  .pagination {
+    @include no-spacing;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: -1px;
+    margin-right: -1px;
+    @media (min-width: $breakpoints-md) {
+      margin-top: 0;
+    }
+    
+
+    .page-item {
+      padding-left: 1px;
+      padding-right: 1px;
+
+      .page-link {
+        @include flex-center;
+        min-width: 40px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 0;
+        font-size: 16px;
+        color: $c-dark;
+        background: #ecf0f6;
+        border: 0;
+        @media (min-width: $breakpoints-md) {
+          min-width: 45px;
+        height: 45px;
+        }
+        &:hover,
+        &.active {
+          background: #a1d6d8;
+          color: $c-white;
+        }
+        &.disabled {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

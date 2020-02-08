@@ -1,0 +1,152 @@
+@import '../variables';
+
+.c-news {
+  margin-top: 30px;
+  .headline {
+    background: #6a87bb;
+    text-align: center;
+    margin: 0;
+    color: $c-white;
+    font-size: 18px;
+    padding: 25px 10px;
+
+    a {
+      color: $c-white;
+    }
+  }
+
+  .wrapper {
+    padding: 15px;
+    border: 1px solid #abaaaa;
+    border-top: 0;
+    background: $c-white;
+  }
+
+  .btn {
+    display: block;
+    background: #f1f1f1;
+    font-weight: 700;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #929292;
+    padding: 9px 15px;
+    margin-top: 30px;
+    border-radius: 0;
+
+    @media (min-width: $breakpoints-md) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $breakpoints-lg) {
+      font-size: 16px;
+      padding: 14px 15px;
+      margin-top: 10px;
+    }
+
+    &:hover {
+      background: #5eafd9;
+      color: $c-white;
+    }
+  }
+
+  .list {
+    @include no-spacing;
+
+    .item {
+      list-style: none;
+      padding: 15px 0;
+      border-bottom: 1px dashed #d9d9d9;
+
+      &:nth-child(1) {
+        padding-top: 0;
+      }
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+
+      @media (min-width: $breakpoints-md) {
+        .inner {
+          position: relative;
+          padding-left: 245px;
+          min-height: 140px;
+        }
+      }
+
+      .img {
+        @extend .img-cover;
+
+        a {
+          @extend .img-cover__wrapper;
+        }
+
+        @media (min-width: $breakpoints-md) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 225px;
+          height: 140px;
+        }
+      }
+
+      .info {
+        margin-top: 15px;
+
+        .title {
+          @include no-spacing;
+          font-size: 15px;
+          line-height: 1.5;
+          max-height: 6em;
+          overflow: hidden;
+          @media (min-width: $breakpoints-md) {
+            font-style: 14px;
+            max-height: 3em;
+          }
+
+          a {
+            color: $c-dark;
+            transition: $transition;
+            text-decoration: none;
+
+            &:hover {
+              color: #6a87bb
+            }
+          }
+        }
+
+        .description {
+          margin-top: 10px;
+          font-size: 13px;
+          max-height: 7.5em;
+          @media (min-width: $breakpoints-md) {
+            max-height: 4.5em;
+          }
+        }
+
+        .date {
+          text-align: right;
+          color: #999;
+          font-size: 11px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  &.v1 {
+    margin-top: 0;
+    .list {
+      .item {
+        &:nth-child(1) {
+          padding-top: 15px;
+        }
+        .info {
+          margin-top: 0;
+        }
+      }
+    }
+    .c-pagination {
+      margin-top: 30px;
+    }
+  }
+}

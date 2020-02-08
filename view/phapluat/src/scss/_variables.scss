@@ -1,0 +1,29 @@
+/* Fonts */
+$f-theme: 'Roboto', sans-serif;
+$f-title: 'Oswald', sans-serif;
+
+/* Color */
+$c-dark: #343a40;
+$c-white: #fff;
+
+/* Transitions */
+
+$transition: all .3s ease-in-out;
+$duration: .25s;
+$speed: 200ms;
+$ease: ease-in-out;
+
+/* Breakpoints */
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+$breakpoints-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$breakpoints-md: 768px;
+// Large devices (desktops, 992px and up)
+$breakpoints-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$breakpoints-xl: 1200px;
+// Extra large devices (large desktops, 1900px and up)
+$breakpoints-xxl: 1900px;

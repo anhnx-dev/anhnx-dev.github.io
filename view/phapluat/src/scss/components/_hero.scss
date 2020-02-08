@@ -1,0 +1,26 @@
+@import '../variables';
+
+.c-hero {
+  margin-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (min-width: $breakpoints-md) {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .slider {
+    .list {
+      @include no-spacing;
+    }
+    .item {
+      @extend .img-cover;
+      &::after {
+        padding-bottom: 20%;
+      }
+      a {
+        @extend .img-cover__wrapper;
+      }
+    }
+  }
+}

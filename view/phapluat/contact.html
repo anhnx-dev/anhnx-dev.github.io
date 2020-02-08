@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="src/vendor/flipclock/flipclock.css">
+    <link rel="stylesheet" href="src/vendor/slick/slick.css">
+    <link rel="stylesheet" href="src/vendor/bootstrap-4.3.1-dist/bootstrap.min.css">
+    <link rel="stylesheet" href="src/main.min.css">
+</head>
+
+<body class="page-contact">
+
+
+    <div id="app">
+
+        <a id="back-top"></a>
+
+        <!-- header -->
+        <header class="header" id="header">
+
+            <div class="c-navbar">
+                <div class="container">
+
+                    <nav class="navbar navbar-expand-lg">
+
+                        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+
+                        <div class="collapse navbar-collapse" id="menu_main">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tra cứu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Văn bản</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <a href="#" class="btn active">Vào thi</a>
+                            <a href="#" class="btn" data-toggle="modal" data-target="#user_login">Đăng nhập</a>
+                            <a href="#" class="btn" data-toggle="modal" data-target="#user_registration">Đăng ký</a>
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_main"
+                            aria-controls="menu_main" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+
+                </div> <!-- / container -->
+            </div>
+            <!-- navbar end -->
+
+        </header>
+        <!-- header end -->
+
+        <!-- main -->
+        <main class="main" id="main">
+
+            <section class="c-hero">
+                <div class="slider">
+                    <ul class="list js-hero-slider">
+                        <li class="item"><a href="#"><img src="./images/hero.png" alt=""></a></li>
+                        <li class="item"><a href="#"><img src="./images/hero.png" alt=""></a></li>
+                        <li class="item"><a href="#"><img src="./images/hero.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- hero -->
+
+            <div class="container">
+
+                <section class="c-contact">
+                    <h2 class="headline">THÔNG TIN LIÊN HỆ</h2>
+
+                    <div class="maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.636887588784!2d105.7986806158529!3d21.007187793888164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca1431935d1%3A0xd6f455aacf8f7bf7!2zMjVUMSwgVHJ1bmcgSG_DoCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1566374400645!5m2!1svi!2s"
+                            width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="block">
+                                <h3>BỘ GIÁO DỤC VÀ ĐÀO TẠO</h3>
+                                <p>Đồng Chí: <strong>Nguyễn Việt Hà</strong> Vụ Công tác HS-SV, Bộ Giáo Dục và Đào Tạo.
+                                    35 Đại Cồ Việt - Hai Bà Trưng - Hà Nội.</p>
+                            </div>
+                            <div class="block">
+                                <h3>CÔNG TY CỔ PHẦN TẬP ĐOÀN GIÁO DỤC EGROUP</h3>
+                                <p>Tầng 3 - Tòa Nhà 25T1 - Hoàng Đạo Thúy - Trung Hòa - Cầu Giấy - Hà Nội.</p>
+                            </div>
+                            <div class="block">
+                                <h3>THƯỜNG TRỰC BAN TỔ CHỨC:</h3>
+                                <p>Email: hocvalamtheobac@egroup.vn
+                                    <br>
+                                    Hotline: 1900.636.444 hoặc 1900.636.228 (8h00 - 22h00)</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-contact">
+                                <h3>Liên hệ với chúng tôi:</h3>
+                                <form class="row form">
+
+                                    <div class="col-12 col-md-6 form-group">
+                                        <input type="text" class="form-control" id="exampleInputContactName"
+                                            placeholder="Họ và tên">
+                                    </div>
+                                    <div class="col-12 col-md-6 form-group">
+                                        <input type="email" class="form-control" id="exampleInputContactEmail"
+                                            placeholder="Email của bạn">
+                                    </div>
+                                    <div class="col-12 form-group">
+                                        <textarea class="form-control" id="exampleInputContactContent" rows="5"
+                                            placeholder="Nhập nội dung..."></textarea>
+                                    </div>
+                                    <div class="col-12 form-group">
+                                        <button type="submit" class="btn">GỬI THÔNG TIN</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- contact -->
+
+            </div>
+
+        </main>
+        <!-- main end -->
+
+        <!-- footer -->
+        <footer class="footer" id="footer">
+
+            <div class="container">
+
+                <div class="row copyright">
+                    <div class="col-12 col-lg-8 block">
+                        <h3 class="title">BỘ GIÁO DỤC VÀ ĐÀO TẠO VỤ GIÁO DỤC CHÍNH TRỊ VÀ CÔNG TÁC HỌC SINH - SINH VIÊN
+                        </h3>
+                        <div class="contact">
+                            35 Đại Cồ Việt - Quận Hai Bà Trưng - Hà Nội.
+                            <br>
+                            Hotline hỗ trợ: 0243.689.4984 / 083.748.5979
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 block">
+                        <h3 class="title">TẬP ĐOÀN GIÁO DỤC EGROUP</h3>
+                        <div class="contact">
+                            Tầng 3 - Tòa Nhà 25T1 - Hoàng Đạo Thúy, - Trung Hòa - Cầu Giấy - Hà Nội
+                            <br>
+                            Hỗ trợ kỹ thuật: 1900.636.444 / 1900.636.228 (8h - 22h hàng ngày)
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+        <!-- footer end -->
+
+        <!-- Modal login -->
+        <div class="modal fade" id="user_login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="c-user login">
+                        <div class="headline">
+                            <h2 style="color: #109b8c;">ĐĂNG NHẬP</h2>
+                            <span>Kích hoạt thành công mời bạn đăng nhập!</span>
+                        </div>
+                        <form class="from">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputLoginUserName"
+                                    placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputLoginPassword"
+                                    placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group">
+                                <img src="./src/img/xac-thuc.png" alt="">
+                            </div>
+                            <button type="submit" class="btn">ĐĂNG NHẬP</button>
+                        </form>
+                        <div class="other">
+                            <span>Đăng nhập bằng:</span>
+                            <div class="icon-group">
+                                <a class="icon" href=""><img src="./src/img/ic-facebook.png" alt=""></a>
+                                <a class="icon" href=""><img src="./src/img/ic-google.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="link">Nếu bạn chưa có tài khoản? <button data-dismiss="modal" aria-label="Close"
+                                data-toggle="modal" data-target="#user_registration">ĐĂNG KÝ NGAY !</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal registration -->
+        <div class="modal fade" id="user_registration" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="c-user registration">
+                        <div class="headline">
+                            <h2 style="color: #4d699c;">ĐĂNG NHẬP</h2>
+                            <span>Kích hoạt thành công mời bạn đăng nhập!</span>
+                        </div>
+                        <form class="from">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputRegistrationUserName"
+                                    placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="exampleInputRegistrationUserTel"
+                                    placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputRegistrationUserEmail"
+                                    placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputRegistrationPassword"
+                                    placeholder="Mật khẩu">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control"
+                                    id="exampleInputRegistrationAccuracyPassword" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <div class="form-group">
+                                <img src="./src/img/xac-thuc.png" alt="">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheckRegistration">
+                                <label class="form-check-label" for="exampleCheckRegistration"> Tôi đồng ý với các <a
+                                        href="#">Điều khoản sử dụng</a></label>
+                            </div>
+                            <button type="submit" class="btn">HOÀN TẤT</button>
+                        </form>
+                        <div class="link">Nếu bạn chưa có tài khoản? <button data-dismiss="modal" aria-label="Close"
+                                data-toggle="modal" data-target="#user_login">ĐĂNG KÝ NGAY !</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Forgot password -->
+        <div class="modal fade" id="user_forgot-password" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="c-user forgot-password">
+                        <div class="headline">
+                            <h2 style="color: #e36454;">LẤY LẠI MẬT KHẨU</h2>
+                            <span>Email không chính xác!</span>
+                        </div>
+                        <form class="from">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputForgotPassword"
+                                    placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <img src="./src/img/xac-thuc.png" alt="">
+                            </div>
+                            <button type="submit" class="btn">ĐỒNG Ý</button>
+                        </form>
+                        <div class="link">Nếu bạn đã có tài khoản? <button data-dismiss="modal" aria-label="Close"
+                                data-toggle="modal" data-target="#user_login">ĐĂNG NHẬP NGAY !</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fix-contact">
+            <div class="icon">
+                <img src="./src/img/ic-phone.png" alt="">
+            </div>
+            <div class="info">
+                <div class="phone">1900.636 .228 - 1900.636 .444</div>
+                <div class="email">Email: hocvalamtheobac@egroup.vn</div>
+            </div>
+        </div>
+
+        <div class="back-top" data-scroll="#back-top"><img src="./src/img/back-top.png" alt=""></div>
+
+    </div>
+
+
+
+    <!-- js -->
+    <script defer src="src/vendor/fontawesome/js/all.min.js"></script>
+    <script src="src/vendor/jquery-3.3.1.min.js"></script>
+    <script src="src/vendor/popper.min.js"></script>
+    <script src="src/vendor/bootstrap-4.3.1-dist/bootstrap.min.js"></script>
+    <script src="src/vendor/slick/slick.min.js"></script>
+    <script src="src/main.js"></script>
+
+
+</body>
+
+</html>

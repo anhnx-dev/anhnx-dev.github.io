@@ -1,0 +1,135 @@
+@import '../variables';
+
+.c-user {
+  padding-left: 45px;
+  padding-right: 45px;
+  .headline {
+    padding-top: 25px;
+    text-align: center;
+    h2,
+    h3 {
+      @include no-spacing;
+      font-weight: normal;
+      font-size: 30px;
+    }
+    span {
+      color: #e57264;
+      font-size: 13px;
+    }
+  }
+  .from {
+    .form-group {
+      margin-top: 10px;
+      .form-control {
+        padding: 29px 15px;
+        border-radius: 0;
+        border: 1px solid #8d8e8f;
+      }
+      &.form-check {
+        padding-left: 0;
+
+        input[type=checkbox]+label {
+          display: block;
+          cursor: pointer;
+          color: #5e5e5e;
+          font-style: 16px;
+          font-weight: 500;
+          a {
+            text-decoration: underline;
+            color: #4d699c;
+            transition: $transition;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+
+        input[type=checkbox] {
+          display: none;
+        }
+
+        input[type=checkbox]+label:before {
+          content: "\2022";
+          border: 1px solid #929292;
+          border-radius: 50%;
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          text-align: center;
+          font-size: 80px;
+          line-height: 30px;
+          vertical-align: bottom;
+          color: transparent;
+          transition: $transition;
+        }
+
+        input[type=checkbox]+label:active:before {
+          transform: scale(0);
+        }
+
+        input[type=checkbox]:checked+label:before {
+          background-color: $c-white;
+          border-color: #929292;
+          color: #929292;
+        }
+
+      }
+    }
+    .btn {
+      border-radius: 0;
+      display: block;
+      background: #e36454;
+      font-weight: normal;
+      width: 100%;
+      color: $c-white;
+      font-size: 24px;
+      padding: 11px 25px;
+      margin-top: 20px;
+      &:hover {
+        background: #5eafd9;
+      }
+    }
+  }
+  .other {
+    text-align: center;
+    margin-top: 15px;
+    span {
+      color: #555;
+      font-size: 16px;
+    }
+    .icon-group {
+      @include no-spacing;
+      margin-top: 10px;
+      
+      .icon {
+        margin: 0 10px;
+      }
+    }
+  }
+  .link {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 35px;
+    border-top: 1px solid #d5d5d5;
+    padding: 18px 0;
+    button {
+      @include no-spacing;
+      border: 0;
+      background: transparent;
+      color: #109b8c;
+      text-decoration: underline;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+  &.login {
+    .from .btn {
+      background: #109b8c;
+      &:hover {
+        background: #5eafd9;
+      }
+    }
+  }
+}
