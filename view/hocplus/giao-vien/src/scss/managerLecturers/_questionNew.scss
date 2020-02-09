@@ -1,0 +1,206 @@
+@import '../variables';
+
+.ml-question-new {
+    box-shadow: $bs-01;
+
+    >.headline {
+        padding: 20px 20px 15px 20px;
+
+        .title {
+            @extend .big-text;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    >.inner {
+        background: $c-white;
+        padding: 30px 20px 30px 20px;
+        border-top: 1px solid $bc-01;
+
+        .grid {
+            display: flex;
+            margin-top: 20px;
+            margin-left: -10px;
+            margin-right: -10px;
+
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+
+            .grid-right {
+                width: 75%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .grid-left {
+                width: 25%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .grid-50 {
+                width: 50%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .grid-60 {
+                width: 60%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .grid-66 {
+                width: 66%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .grid-33 {
+                width: 33%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .grid-40 {
+                width: 40%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .grid-mg15 {
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+
+            .grid-mg7 {
+                margin-right: -7.5px;
+                margin-left: -7.5px;
+            }
+
+            .grid-p15 {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .grid-p7 {
+                padding-left: 7.5px;
+                padding-right: 7.5px;
+            }
+        }
+        .form-group {
+            margin-top: 20px;
+            label {
+                padding: 7px 0;
+                display: block;
+            }
+            &.check {
+                display: flex;
+                margin-top: 10px;
+                .form-check {
+                    display: block;
+                    position: relative;
+                    padding-left: 20px;
+                    margin-right: 30px;
+                    cursor: pointer;
+                    user-select: none;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+
+                    .form-check-label {
+                        cursor: pointer;
+                        padding: 0;
+                    }
+
+                    .form-check-input {
+                        position: absolute;
+                        opacity: 0;
+                        top: 5px;
+                        left: 0;
+                        cursor: pointer;
+
+                        &:checked~.checkmark {
+                            background-color: $c-white;
+
+                            &::after {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .checkmark {
+                        position: absolute;
+                        top: 2px;
+                        left: 0;
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 50%;
+                        border: 1px solid $cl-04;
+                        pointer-events: none;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                            top: 2px;
+                            left: 2px;
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 50%;
+                            background: $cl-04;
+                        }
+                    }
+                }
+            }
+            .function {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 15px;
+                .form-check {
+                    display: flex;
+                    align-items: center;
+                    .form-check-label {
+                        padding: 0 0 0 5px;
+                    }
+                }
+            }
+        }
+        .form-control {
+            width: 100%;
+            padding: 7px 10px;
+            border-radius: 0;
+            border: 1px solid $bc-01;
+        }
+        .form-group-btn {
+            margin: 30px -20px 0 -20px;
+            padding-top: 10px;
+            text-align: center;
+            border-top: 1px solid $bc-01;
+        }
+        .btn-trash {
+            cursor: pointer;
+        }
+        .btn {
+            padding: 5.5px 20px;
+            color: $c-white;
+            border: 0;
+            margin-top: 20px;
+            &.btn-blue {
+                background: $cl-09;
+                &:hover {
+                    background: $cl-04;
+                }
+            }
+            &.btn-red {
+                background: $cl-04;
+                &:hover {
+                    background: $cl-09;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import '_fonts.scss';
+@import '_reset.scss';
+@import '_variables.scss';
+@import '_typography.scss';
+@import '_wysiwyg.scss';
+
+// Modules
+@import './modules/_topBar.scss';
+@import './modules/_videoTeacher.scss';
+@import './modules/_videoStudent.scss';
+@import './modules/_work.scss';
+@import './modules/_chatContent.scss';
+@import './modules/_notification.scss';
+
+// drawing
+@import './modules/_drawing.scss';
+
+
+// file manager
+@import './modules/_fileManager.scss';

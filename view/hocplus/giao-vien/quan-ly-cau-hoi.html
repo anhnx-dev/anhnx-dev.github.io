@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker-standalone.css">
+  <link rel="stylesheet" href="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" href="src/css/main.min.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <header class="header">
+
+      <div class="c-topbar">
+        <div class="container topbar-container">
+          <div class="banner">
+            <a href="index.html">
+              <img src="images/Logo HocPlus.svg" alt="">
+            </a>
+          </div>
+          <div class="my-user">
+            <div class="user-inner">
+              <div class="avatar">
+                <img src="images/avatar-02.png" alt="avatar">
+              </div>
+              <div class="name">Âu Hà My</div>
+            </div>
+            <div class="dropdown">
+              <ul class="list">
+                <li class="item"><a href="quan-ly-bang-thong-tin.html"><i class="fa fa-dashboard"></i> <span>Bảng thông
+                      tin</span></a></li>
+                <li class="item"><a href="quan-ly-khoa-hoc-cua-toi.html"><i class="fa fa-briefcase"></i> <span>Khóa học
+                      của tôi</span></a></li>
+                <li class="item"><a href="quan-ly-tai-khoa.html"><i class="fa fa-gear"></i> <span>Quản lý tài khoản</span></a></li>
+                <li class="item"><a href=""><i class="fa fa-log-out"></i> <span>Đăng xuất</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / Topbar -->
+
+      <nav class="c-navbar">
+        <div class="container navbar-container">
+          <ul class="nav">
+            <li class="nav-item active">
+              <a href="" class="nav-link"><i class="fa fa-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </nav> <!-- / Navbar -->
+
+    </header> <!-- / Header -->
+
+    <main class="main">
+
+      <div class="container section">
+        <div class="row">
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="ml-info">
+              <div class="inner-info">
+                <div class="info">
+                  <a href="" class="btn-modify">Sửa</a>
+                  <div class="avatar">
+                    <img src="images/avatar-02.png" alt="avatar">
+                  </div>
+                  <div class="content">
+                    <div class="name">Âu Hà My</div>
+                    <div class="work">Giảng viên ĐH Hà Nội</div>
+                  </div>
+                  <div class="info-class">
+                    <div class="degree">
+                      <div class="title">Học vị</div>
+                      <div class="content">Thạc sỹ</div>
+                    </div>
+                    <div class="class">
+                      <div class="title">Bộ môn giảng dạy</div>
+                      <div class="content">Tiếng Anh, Toán</div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="list">
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="quan-ly-bang-thong-tin.html" class="nav-link">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Bảng thông tin</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-khoa-hoc-cua-toi.html" class="nav-link">
+                        <i class="fa fa-briefcase"></i>
+                        <span>Khóa học của tôi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-vi.html" class="nav-link">
+                        <i class="fa fa-money"></i>
+                        <span>Ví của tôi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-tai-lieu.html" class="nav-link">
+                        <i class="fa fa-folder-open"></i>
+                        <span>Quản lý tài liệu</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-de-thi.html" class="nav-link">
+                        <i class="fa fa-layers"></i>
+                        <span>Quản lý bộ đề</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-cau-hoi.html" class="nav-link">
+                        <i class="fa fa-question"></i>
+                        <span>Quản lý câu hỏi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-tai-khoa.html" class="nav-link">
+                        <i class="fa fa-gear"></i>
+                        <span>Quản lý tài khoản</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-binh-luan.html" class="nav-link">
+                        <i class="fa fa-comments"></i>
+                        <span>Quản lý bình luận</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div> <!-- / col-3 -->
+
+          <div class="col-12 col-md-8 col-lg-9">
+            <div class="ml-exam ml-manager-question js-ml-manager-question">
+              <div class="exam-headline">
+                <h2 class="title">Quản lý câu hỏi</h2>
+              </div>
+              <div class="exam-bar">
+                <div class="search">
+                  <div class="form-group">
+                    <input class="form-control" type="text" id="exampleInputExamTag" name="exampleInputExamTag"
+                      placeholder="Chọn tag">
+                  </div>
+                  <button type="submit" class="btn">Tìm câu hỏi</button>
+                </div>
+                <div class="function">
+                  <a class="btn" href="quan-ly-them-cau-hoi.html"><i class="fa fa-add"></i> <span>Thêm câu
+                      hỏi</span></a>
+                  <div class="dropdown">
+                    <span>Tác vụ <i class="fa fa-arrow-right"></i></span>
+                    <div class="inner">
+                      <ul>
+                        <li>
+                          <button class="btn-download"><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                        </li>
+                        <li>
+                          <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                        </li>
+                        <li>
+                          <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                </div>
+              </div>
+              <div class="exam-inner">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">
+                          <div class="text-left">Câu hỏi</div>
+                        </th>
+                        <th scope="col">Loại câu hỏi</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Nhiều đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Một đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Nhiều đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Một đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Nhiều đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Một đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Nhiều đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Một đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Nhiều đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Một đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Nhiều đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Một đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">13</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Nhiều đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">14</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Một đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">15</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Nhiều đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">16</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Một đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">17</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Nhiều đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">18</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Một đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">19</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Nhiều đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">20</th>
+                        <td>
+                          <div class="title text-left">
+                            <a class="btn-open-popup" href="">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn
+                              đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="w-110">Một đáp án</div>
+                        </td>
+                        <td>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-pencil"></i> <span>Sửa</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <nav class="c-navigation">
+                  <div class="container">
+                    <ul class="pagination">
+                      <li class="page-item active"><span class="page-link">1</span></li>
+                      <li class="page-item"><a class="page-link" href="">2</a></li>
+                      <li class="page-item"><a class="page-link" href="">3</a></li>
+                      <li class="page-item"><a class="page-link" href="" rel="next">»</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <div class="popup-question">
+                <div class="exit"></div>
+                <div class="inner">
+                  <div class="title">Triều Nguyễn chính thức xem việc dựng bia chủ quyền của Việt Nam trên từng hòn đảo của hai quần đảo Hoàng Sa và Trường Sa bắt đầu từ thời gian nào?</div>
+                  <div class="content">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Câu trả lời</th>
+                            <th scope="col">Loại</th>
+                            <th scope="col">Đúng</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>đáp án</td>
+                            <td>text</td>
+                            <td><span class="yes">Đúng</span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>đáp án</td>
+                            <td>text</td>
+                            <td>Sai</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>đáp án</td>
+                            <td>text</td>
+                            <td>Sai</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>đáp án</td>
+                            <td>text</td>
+                            <td>Sai</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row info">
+                    <div class="col-12 tags">
+                      <div class="tag-item"># Thi thử vòng 2</div>
+                    </div>
+                    <div class="col-6">Người tạo: <b>Quyết</b></div>
+                    <div class="col-6">Ngày tạo: <b>2018-09-28 10:07:54</b></div>
+                    <div class="col-6">Người cập nhập: <b>Quyết</b></div>
+                    <div class="col-6">Ngày cập nhập: <b>2018-09-28 10:07:54</b></div>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-export">
+                <div class="inner">
+                  <div class="headline">Xem trước khi export</div>
+                  <div class="list">
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="stt">Câu 1:</div>
+                      <h3 class="question">Sint et tempor ipsum pariatur mollit pariatur.</h3>
+                      <div class="row answers">
+                        <div class="col-12 col-lg-6 answer yes">A. Officia nostrud non nulla irure est tempor culpa amet anim sunt pariatur.</div>
+                        <div class="col-12 col-lg-6 answer">B. Excepteur reprehenderit fugiat labore quis aliqua reprehenderit ipsum.</div>
+                        <div class="col-12 col-lg-6 answer">C. Incididunt esse ea non ipsum veniam exercitation nostrud nulla.</div>
+                        <div class="col-12 col-lg-6 answer">D. Cupidatat incididunt dolore enim sunt velit consectetur aliquip ut pariatur sint commodo duis anim fugiat.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <input class="form-control name-file" type="text" placeholder="Nhập tên file">
+                    <div class="btn-group">
+                      <button class="btn btn-export">Xuất ra word</button>
+                      <button class="btn btn-close">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- / col-9 -->
+
+
+        </div> <!-- / row -->
+      </div> <!-- / container -->
+    </main> <!-- / main -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12 col-md-6 col-lg-3 block">
+            <div class="block-headline">Hỗ trợ khách hàng</div>
+            <div class="contact">
+              <div class="item">
+                <a class="item-wrapper" href="tel: +849006675">
+                  <img src="src/images/icon-phone.png" alt="">
+                  <span><b>1900 6675</b></span>
+                </a>
+              </div>
+              <div class="item">
+                <a class="item-wrapper" href="mailto: info@hocplus.vn">
+                  <img src="src/images/icon-mail.png" alt="">
+                  <span>info@hocplus.vn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Về HocPlus</div>
+              <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="http://">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Chính sách bảo mật</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Điều khoản sử dụng</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Hướng dẫn mua khóa học</a></li>
+              </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Tải về</div>
+              <div class="link-app">
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/app-store.png" alt=""></a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/google-play.png" alt=""></a>
+              </div>
+              <div class="img"><img src="images/bocongthuong.png" alt=""></div>
+              <div class="img"><img src="images/DMCA.jpg" alt=""></div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Kết nối với chúng tôi</div>
+              <div class="social">
+                <a class="social-item" href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/facebook.png" alt="">
+                </a>
+                <a class="social-item" href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/youtube.png" alt="">
+                </a>
+              </div>
+              <div class="link-forum">
+                <a href="http://" target="_blank" rel="noopener noreferrer">Forum hocplus</a>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </footer> <!-- / footer -->
+
+    <!-- Thông báo xóa 1 câu hỏi -->
+    <div class="notification-delete">
+      <div class="content">Bạn có Đồng ý xóa câu hỏi không?</div>
+      <div class="btn-group">
+        <button class="btn btn-yes">Đồng ý</button>
+        <button class="btn btn-no">Hủy</button>
+      </div>
+    </div>
+
+    <div class="over-body"></div>
+    <!-- / over body -->
+
+  </div> <!-- / App -->
+
+  <!-- js -->
+  <script src="src/js/jquery-3.3.1.min.js"></script>
+  <script src="src/js/jquery-ui.min.js"></script>
+
+  <script src="src/js/bootstrap-datetimepicker/moment.min.js"></script>
+  <script src="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+
+  <script src="src/js/Chart.min.js"></script>
+  <script src="src/js/dropzone.js"></script>
+  <script src="src/js/jquery.multiselect.js"></script>
+  <script src="src/js/slick.min.js"></script>
+  <script src="src/js/main.js"></script>
+
+
+</body>
+
+</html>

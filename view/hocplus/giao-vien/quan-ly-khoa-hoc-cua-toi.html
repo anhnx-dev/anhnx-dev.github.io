@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker-standalone.css">
+  <link rel="stylesheet" href="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" href="src/css/main.min.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <header class="header">
+
+      <div class="c-topbar">
+        <div class="container topbar-container">
+          <div class="banner">
+            <a href="index.html">
+              <img src="images/Logo HocPlus.svg" alt="">
+            </a>
+          </div>
+          <div class="my-user">
+            <div class="user-inner">
+              <div class="avatar">
+                <img src="images/avatar-02.png" alt="avatar">
+              </div>
+              <div class="name">Âu Hà My</div>
+            </div>
+            <div class="dropdown">
+              <ul class="list">
+                <li class="item"><a href="quan-ly-bang-thong-tin.html"><i class="fa fa-dashboard"></i> <span>Bảng thông
+                      tin</span></a></li>
+                <li class="item"><a href="quan-ly-khoa-hoc-cua-toi.html"><i class="fa fa-briefcase"></i> <span>Khóa học
+                      của tôi</span></a></li>
+                <li class="item"><a href="quan-ly-tai-khoa.html"><i class="fa fa-gear"></i> <span>Quản lý tài khoản</span></a></li>
+                <li class="item"><a href=""><i class="fa fa-log-out"></i> <span>Đăng xuất</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / Topbar -->
+
+      <nav class="c-navbar">
+        <div class="container navbar-container">
+          <ul class="nav">
+            <li class="nav-item active">
+              <a href="" class="nav-link"><i class="fa fa-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </nav> <!-- / Navbar -->
+
+    </header> <!-- / Header -->
+
+    <main class="main">
+
+      <div class="container section">
+        <div class="row">
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="ml-info">
+              <div class="inner-info">
+                <div class="info">
+                  <a href="" class="btn-modify">Sửa</a>
+                  <div class="avatar">
+                    <img src="images/avatar-02.png" alt="avatar">
+                  </div>
+                  <div class="content">
+                    <div class="name">Âu Hà My</div>
+                    <div class="work">Giảng viên ĐH Hà Nội</div>
+                  </div>
+                  <div class="info-class">
+                    <div class="degree">
+                      <div class="title">Học vị</div>
+                      <div class="content">Thạc sỹ</div>
+                    </div>
+                    <div class="class">
+                      <div class="title">Bộ môn giảng dạy</div>
+                      <div class="content">Tiếng Anh, Toán</div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="list">
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="quan-ly-bang-thong-tin.html" class="nav-link">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Bảng thông tin</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-khoa-hoc-cua-toi.html" class="nav-link">
+                        <i class="fa fa-briefcase"></i>
+                        <span>Khóa học của tôi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-vi.html" class="nav-link">
+                        <i class="fa fa-money"></i>
+                        <span>Ví của tôi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-tai-lieu.html" class="nav-link">
+                        <i class="fa fa-folder-open"></i>
+                        <span>Quản lý tài liệu</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-de-thi.html" class="nav-link">
+                        <i class="fa fa-layers"></i>
+                        <span>Quản lý bộ đề</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-cau-hoi.html" class="nav-link">
+                        <i class="fa fa-question"></i>
+                        <span>Quản lý câu hỏi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-tai-khoa.html" class="nav-link">
+                        <i class="fa fa-gear"></i>
+                        <span>Quản lý tài khoản</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-binh-luan.html" class="nav-link">
+                        <i class="fa fa-comments"></i>
+                        <span>Quản lý bình luận</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div> <!-- / col-3 -->
+
+          <div class="col-12 col-md-8 col-lg-9">
+            <section class="ml-list js-ml-list">
+              <div class="headline">
+                <h2 class="title">Khóa học của tôi</h2>
+                <a href="quan-ly-khoi-tao-khoa-hoc.html" class="btn">Khởi tạo khóa học</a>
+              </div>
+              <div class="list-course js-list-course">
+                <div class="inner">
+                  <div class="grid title">
+                    <div class="grid-col col-07">STT</div>
+                    <div class="grid-col col-30">Tên khóa học</div>
+                    <div class="grid-col col-15">Giá</div>
+                    <div class="grid-col col-20">Sỹ số</div>
+                    <div class="grid-col col-13">Số buổi</div>
+                    <div class="grid-col col-15">Action</div>
+                  </div>
+                  <div class="group-item">
+                    <div class="item">
+                      <div class="grid">
+                        <div class="grid-col col-07">1</div>
+                        <div class="grid-col col-30">
+                          <div class="name"><a href="chi-tiet-khoa-hoc.html">Khóa học bồi dưỡng học sinh giỏi lớp 10 -
+                              Chuyên Sinh</a></div>
+                        </div>
+                        <div class="grid-col col-15">
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </div>
+                        <div class="grid-col col-20">Sỹ số tối đa: 450<br>Sỹ số thực tế: 154</div>
+                        <div class="grid-col col-13"><span class="btn-detail">Chi tiết <span class="status"></span></span></div>
+                        <div class="grid-col col-15">
+                          <div class="action">
+                            <div class="edit">
+                              <i class="fa fa-gear"></i>
+                              <i class="fa fa-arrow-right"></i>
+                              <ul class="list">
+                                <li><a href=""><i class="fa fa-pencil"></i><span>Sửa</span></a></li>
+                                <li><a class="btn-delete js-btn-delete" href=""><i class="fa fa-trash"></i><span>Xóa</span></a></li>
+                              </ul>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <h4 class="detail-title">Khóa học bồi dưỡng học sinh giỏi lớp 11 - Môn Anh</h4>
+                        <div class="info">
+                          <div class="grid info-title">
+                            <div class="grid-col col-20">Buổi học</div>
+                            <div class="grid-col col-25">Ngày</div>
+                          </div>
+                          <div class="info-group">
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 1</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-cyan">Học lại</a></div>
+                            </div>
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 2</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-blue">Vào học</a></div>
+                            </div>
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 3</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-red">Buổi học chưa diễn ra</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="grid">
+                        <div class="grid-col col-07">2</div>
+                        <div class="grid-col col-30">
+                          <div class="name"><a href="chi-tiet-khoa-hoc.html">Khóa học bồi dưỡng học sinh giỏi lớp 10 -
+                              Chuyên Sinh</a></div>
+                        </div>
+                        <div class="grid-col col-15">
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </div>
+                        <div class="grid-col col-20">Sỹ số tối đa: 450<br>Sỹ số thực tế: 154</div>
+                        <div class="grid-col col-13"><span class="btn-detail">Chi tiết <span class="status"></span></span></div>
+                        <div class="grid-col col-15">
+                          <div class="action">
+                            <div class="edit">
+                              <i class="fa fa-gear"></i>
+                              <i class="fa fa-arrow-right"></i>
+                              <ul class="list">
+                                <li><a href=""><i class="fa fa-pencil"></i><span>Sửa</span></a></li>
+                                <li><a class="btn-delete js-btn-delete" href=""><i class="fa fa-trash"></i><span>Xóa</span></a></li>
+                              </ul>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <h4 class="detail-title">Khóa học bồi dưỡng học sinh giỏi lớp 11 - Môn Anh</h4>
+                        <div class="info">
+                          <div class="grid info-title">
+                            <div class="grid-col col-20">Buổi học</div>
+                            <div class="grid-col col-25">Ngày</div>
+                          </div>
+                          <div class="info-group">
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 1</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-cyan">Học lại</a></div>
+                            </div>
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 2</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-blue">Vào học</a></div>
+                            </div>
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 3</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-red">Buổi học chưa diễn ra</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="grid">
+                        <div class="grid-col col-07">3</div>
+                        <div class="grid-col col-30">
+                          <div class="name"><a href="chi-tiet-khoa-hoc.html">Khóa học bồi dưỡng học sinh giỏi lớp 10 -
+                              Chuyên Sinh</a></div>
+                        </div>
+                        <div class="grid-col col-15">
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </div>
+                        <div class="grid-col col-20">Sỹ số tối đa: 450<br>Sỹ số thực tế: 154</div>
+                        <div class="grid-col col-13"><span class="btn-detail">Chi tiết <span class="status"></span></span></div>
+                        <div class="grid-col col-15">
+                          <div class="action">
+                            <div class="edit">
+                              <i class="fa fa-gear"></i>
+                              <i class="fa fa-arrow-right"></i>
+                              <ul class="list">
+                                <li><a href=""><i class="fa fa-pencil"></i><span>Sửa</span></a></li>
+                                <li><a class="btn-delete js-btn-delete" href=""><i class="fa fa-trash"></i><span>Xóa</span></a></li>
+                              </ul>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <h4 class="detail-title">Khóa học bồi dưỡng học sinh giỏi lớp 11 - Môn Anh</h4>
+                        <div class="info">
+                          <div class="grid info-title">
+                            <div class="grid-col col-20">Buổi học</div>
+                            <div class="grid-col col-25">Ngày</div>
+                          </div>
+                          <div class="info-group">
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 1</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-cyan">Học lại</a></div>
+                            </div>
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 2</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-blue">Vào học</a></div>
+                            </div>
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 3</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-red">Buổi học chưa diễn ra</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="grid">
+                        <div class="grid-col col-07">4</div>
+                        <div class="grid-col col-30">
+                          <div class="name"><a href="chi-tiet-khoa-hoc.html">Khóa học bồi dưỡng học sinh giỏi lớp 10 -
+                              Chuyên Sinh</a></div>
+                        </div>
+                        <div class="grid-col col-15">
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </div>
+                        <div class="grid-col col-20">Sỹ số tối đa: 450<br>Sỹ số thực tế: 154</div>
+                        <div class="grid-col col-13"><span class="btn-detail">Chi tiết <span class="status"></span></span></div>
+                        <div class="grid-col col-15">
+                          <div class="action">
+                            <div class="edit">
+                              <i class="fa fa-gear"></i>
+                              <i class="fa fa-arrow-right"></i>
+                              <ul class="list">
+                                <li><a href=""><i class="fa fa-pencil"></i><span>Sửa</span></a></li>
+                                <li><a class="btn-delete js-btn-delete" href=""><i class="fa fa-trash"></i><span>Xóa</span></a></li>
+                              </ul>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <h4 class="detail-title">Khóa học bồi dưỡng học sinh giỏi lớp 11 - Môn Anh</h4>
+                        <div class="info">
+                          <div class="grid info-title">
+                            <div class="grid-col col-20">Buổi học</div>
+                            <div class="grid-col col-25">Ngày</div>
+                          </div>
+                          <div class="info-group">
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 1</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-cyan">Học lại</a></div>
+                            </div>
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 2</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-blue">Vào học</a></div>
+                            </div>
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 3</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-red">Buổi học chưa diễn ra</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="grid">
+                        <div class="grid-col col-07">5</div>
+                        <div class="grid-col col-30">
+                          <div class="name"><a href="chi-tiet-khoa-hoc.html">Khóa học bồi dưỡng học sinh giỏi lớp 10 -
+                              Chuyên Sinh</a></div>
+                        </div>
+                        <div class="grid-col col-15">
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </div>
+                        <div class="grid-col col-20">Sỹ số tối đa: 450<br>Sỹ số thực tế: 154</div>
+                        <div class="grid-col col-13"><span class="btn-detail">Chi tiết <span class="status"></span></span></div>
+                        <div class="grid-col col-15">
+                          <div class="action">
+                            <div class="edit">
+                              <i class="fa fa-gear"></i>
+                              <i class="fa fa-arrow-right"></i>
+                              <ul class="list">
+                                <li><a href=""><i class="fa fa-pencil"></i><span>Sửa</span></a></li>
+                                <li><a class="btn-delete js-btn-delete" href=""><i class="fa fa-trash"></i><span>Xóa</span></a></li>
+                              </ul>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-detail">
+                        <h4 class="detail-title">Khóa học bồi dưỡng học sinh giỏi lớp 11 - Môn Anh</h4>
+                        <div class="info">
+                          <div class="grid info-title">
+                            <div class="grid-col col-20">Buổi học</div>
+                            <div class="grid-col col-25">Ngày</div>
+                          </div>
+                          <div class="info-group">
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 1</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-cyan">Học lại</a></div>
+                            </div>
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 2</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-blue">Vào học</a></div>
+                            </div>
+                            <div class="grid item-info">
+                              <div class="grid-col col-20">Buổi 3</div>
+                              <div class="grid-col col-25"><b>18/02/2019</b><br>
+                                - Bắt đầu: 14h00<br>
+                                - Kết thúc: 15h30</div>
+                              <div class="grid-col col-30"><a href="" class="btn btn-red">Buổi học chưa diễn ra</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <nav class="c-navigation">
+                  <div class="container">
+                    <ul class="nav">
+                      <li class="nav-item"><a class="nav-link active" href="#">1</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">2</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">3</a></li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span>»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav> <!-- / navigation -->
+              </div>
+            </section>
+            <section class="section-01 ml-list js-ml-list">
+              <div class="headline">
+                <h2 class="title">Khóa học đã diễn ra</h2>
+              </div>
+              <div class="list">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Tên khóa học</th>
+                        <th scope="col">Giá</th>
+                        <th scope="col">Sỹ số</th>
+                        <th scope="col">Thời gian kết thúc</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>
+                          <div class="title">Khóa học bồi dưỡng học sinh giỏi lớp 10 - Chuyên Sinh</div>
+                        </td>
+                        <td>
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </td>
+                        <td>
+                          <div class="number number-student">25</div>
+                        </td>
+                        <td>
+                          <div class="date">05/01/2019</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>
+                          <div class="title">Khóa học bồi dưỡng học sinh giỏi lớp 10 - Chuyên Sinh</div>
+                        </td>
+                        <td>
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </td>
+                        <td>
+                          <div class="number number-student">25</div>
+                        </td>
+                        <td>
+                          <div class="date">05/01/2019</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>
+                          <div class="title">Khóa học bồi dưỡng học sinh giỏi lớp 10 - Chuyên Sinh</div>
+                        </td>
+                        <td>
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </td>
+                        <td>
+                          <div class="number number-student">25</div>
+                        </td>
+                        <td>
+                          <div class="date">05/01/2019</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>
+                          <div class="title">Khóa học bồi dưỡng học sinh giỏi lớp 10 - Chuyên Sinh</div>
+                        </td>
+                        <td>
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </td>
+                        <td>
+                          <div class="number number-student">25</div>
+                        </td>
+                        <td>
+                          <div class="date">05/01/2019</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>
+                          <div class="title">Khóa học bồi dưỡng học sinh giỏi lớp 10 - Chuyên Sinh</div>
+                        </td>
+                        <td>
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </td>
+                        <td>
+                          <div class="number number-student">25</div>
+                        </td>
+                        <td>
+                          <div class="date">05/01/2019</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>
+                          <div class="title">Khóa học bồi dưỡng học sinh giỏi lớp 10 - Chuyên Sinh</div>
+                        </td>
+                        <td>
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </td>
+                        <td>
+                          <div class="number number-student">25</div>
+                        </td>
+                        <td>
+                          <div class="date">05/01/2019</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>
+                          <div class="title">Khóa học bồi dưỡng học sinh giỏi lớp 10 - Chuyên Sinh</div>
+                        </td>
+                        <td>
+                          <div class="price">1.500.000<span>đ</span></div>
+                        </td>
+                        <td>
+                          <div class="number number-student">25</div>
+                        </td>
+                        <td>
+                          <div class="date">05/01/2019</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <nav class="c-navigation">
+                  <div class="container">
+                    <ul class="nav">
+                      <!-- <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <span>&laquo;</span>
+                          </a>
+                        </li> -->
+                      <li class="nav-item"><a class="nav-link active" href="#">1</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">2</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">3</a></li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span>»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav> <!-- / navigation -->
+              </div>
+            </section>
+          </div> <!-- / col-9 -->
+
+        </div>
+
+      </div> <!-- / container -->
+
+    </main> <!-- / main -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12 col-md-6 col-lg-3 block">
+            <div class="block-headline">Hỗ trợ khách hàng</div>
+            <div class="contact">
+              <div class="item">
+                <a class="item-wrapper" href="tel: +849006675">
+                  <img src="src/images/icon-phone.png" alt="">
+                  <span><b>1900 6675</b></span>
+                </a>
+              </div>
+              <div class="item">
+                <a class="item-wrapper" href="mailto: info@hocplus.vn">
+                  <img src="src/images/icon-mail.png" alt="">
+                  <span>info@hocplus.vn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Về HocPlus</div>
+              <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="http://">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Chính sách bảo mật</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Điều khoản sử dụng</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Hướng dẫn mua khóa học</a></li>
+              </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Tải về</div>
+              <div class="link-app">
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/app-store.png" alt=""></a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/google-play.png" alt=""></a>
+              </div>
+              <div class="img"><img src="images/bocongthuong.png" alt=""></div>
+              <div class="img"><img src="images/DMCA.jpg" alt=""></div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Kết nối với chúng tôi</div>
+              <div class="social">
+                <a class="social-item" href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/facebook.png" alt="">
+                </a>
+                <a class="social-item" href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/youtube.png" alt="">
+                </a>
+              </div>
+              <div class="link-forum">
+                <a href="http://" target="_blank" rel="noopener noreferrer">Forum hocplus</a>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </footer> <!-- / footer -->
+
+    <!-- Thông báo xóa 1 khóa học -->
+    <div class="notification-delete">
+      <div class="content">Bạn có Đồng ý xóa khóa học không?</div>
+      <div class="btn-group">
+        <button class="btn btn-yes">Đồng ý</button>
+        <button class="btn btn-no">Hủy</button>
+      </div>
+    </div>
+
+  </div> <!-- / App -->
+
+  <!-- js -->
+  <script src="src/js/jquery-3.3.1.min.js"></script>
+  <script src="src/js/jquery-ui.min.js"></script>
+
+  <script src="src/js/bootstrap-datetimepicker/moment.min.js"></script>
+  <script src="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+
+  <script src="src/js/Chart.min.js"></script>
+  <script src="src/js/dropzone.js"></script>
+  <script src="src/js/jquery.multiselect.js"></script>
+  <script src="src/js/slick.min.js"></script>
+  <script src="src/js/main.js"></script>
+
+
+</body>
+
+</html>

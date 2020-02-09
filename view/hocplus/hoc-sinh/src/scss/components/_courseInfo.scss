@@ -1,0 +1,52 @@
+@import '../variables';
+
+.c-course-info {
+    .price {
+        font-size: 25px;
+        font-weight: 700;
+        color: $cl-04;
+        small {
+            color: $c-dark;
+        }
+    }
+    .info {
+        margin-top: 20px;
+        padding: 25px 20px;
+        border: 1px solid $bc-03;
+        border-radius: $round;
+        >ol {
+            padding: 0;
+            margin: 0;
+            >li {
+                position: relative;
+                padding-left: 30px;
+                list-style: none;
+                margin-top: 20px;
+                &:nth-child(1) {
+                    margin-top: 0;
+                }
+                >img {
+                    position: absolute;
+                    left: 0;
+                    top: 3px;
+                }
+            }
+        }
+    }
+    .btn-registration {
+        @extend .big-text-01;
+        height: 50px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $c-white;
+        border: 0;
+        background: $cl-04;
+        &:hover {
+            background: $c-blue;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import '../variables';
+
+.ms-recharge {
+    .headline {
+        @extend .big-text-01;
+        margin: 0;
+        font-weight: 700;
+        color: $cl-04;
+        text-transform: uppercase;
+    }
+    >.value {
+        margin-top: 20px;
+        .form-control {
+            width: 360px;
+            max-width: 100%;
+            padding: 11px 15px;
+            border-color: $bc-01;
+        }
+    }
+    .pay-pay .online-pay .list {
+        margin-right: -7.5px;
+        margin-left: -7.5px;
+
+        .item {
+            width: 50%;
+
+            @media (min-width: $breakpoints-md) {
+                width: 33.3333%;
+            }
+
+            @media (min-width: $breakpoints-lg) {
+                width: 20%;
+                padding: 0 7.5px;
+
+                >a {
+                    width: calc(100% - 15px);
+                }
+            }
+        }
+    }
+}

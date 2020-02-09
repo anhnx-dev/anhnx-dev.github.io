@@ -1,0 +1,78 @@
+@import '../variables';
+
+.c-related-courses {
+    @extend .section;
+    border: 1px solid $bc-03;
+    border-radius: $round $round 0 0;
+    overflow: hidden;
+    >.title {
+        @extend .big-text;
+        margin: 0;
+        padding: 10px 15px;
+        color: $c-white;
+        background: $cl-06;
+        font-weight: 400;
+    }
+    .list {
+        margin: 0;
+        padding: 15px;
+        .item {
+            position: relative;
+            list-style: none;
+            padding-left: 120px;
+            min-height: 90px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $bc-03;
+            margin-bottom: 15px;
+            &:last-of-type {
+                min-height: 70px;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: 0;
+            }
+            .img {
+                @extend .img-cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 105px;
+                height: 70px;
+                >a {
+                    @extend .img-cover__wrapper;
+                }
+            }
+            .inner {
+                .title {
+                    @extend .body-text;
+                    margin: 0;
+                    font-weight: 400;
+                    >a {
+                        color: $c-dark;
+                        text-decoration: none;
+                        transition: $transition;
+                        &:hover {
+                            color: $c-blue;
+                        }
+                    }
+                }
+                .price {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 5px;
+                    >img {
+                        height: 15px;
+                    }
+                    span {
+                        @extend .big-text;
+                        margin-left: 5px;
+                        color: $cl-04;
+                        font-weight: 700;
+                        >small {
+                            color: $c-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

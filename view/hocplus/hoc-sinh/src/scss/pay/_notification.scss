@@ -1,0 +1,52 @@
+@import '../variables';
+
+.pay-notification {
+    padding-bottom: 50px;
+    .container {
+        text-align: center;
+        &::before {
+            content: '';
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            border-top: 1px solid $bc-01;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+
+        .inner {
+            font-size: 15px;
+            width: 810px;
+            max-width: 100%;
+            text-align: center;
+
+            .code {
+                font-size: 24px;
+                font-weight: 700;
+                color: $cl-04;
+
+                @media (min-width: $breakpoints-lg) {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .btn {
+        max-width: 100%;
+        width: 360px;
+        text-align: center;
+        padding: 12px 25px;
+        border: 0;
+        border-radius: 0;
+        color: $c-white;
+        background: $cl-04;
+        margin-top: 20px;
+        text-transform: uppercase;
+        &:hover {
+            background: $cl-09;
+        }
+    }
+}

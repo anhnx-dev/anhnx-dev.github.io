@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker-standalone.css">
+  <link rel="stylesheet" href="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" href="src/css/main.min.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <header class="header">
+
+      <div class="c-topbar">
+        <div class="container topbar-container">
+          <div class="banner">
+            <a href="index.html">
+              <img src="images/Logo HocPlus.svg" alt="">
+            </a>
+          </div>
+          <div class="my-user">
+            <div class="user-inner">
+              <div class="avatar">
+                <img src="images/avatar-02.png" alt="avatar">
+              </div>
+              <div class="name">Âu Hà My</div>
+            </div>
+            <div class="dropdown">
+              <ul class="list">
+                <li class="item"><a href="quan-ly-bang-thong-tin.html"><i class="fa fa-dashboard"></i> <span>Bảng thông
+                      tin</span></a></li>
+                <li class="item"><a href="quan-ly-khoa-hoc-cua-toi.html"><i class="fa fa-briefcase"></i> <span>Khóa học
+                      của tôi</span></a></li>
+                <li class="item"><a href="quan-ly-tai-khoa.html"><i class="fa fa-gear"></i> <span>Quản lý tài khoản</span></a></li>
+                <li class="item"><a href=""><i class="fa fa-log-out"></i> <span>Đăng xuất</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / Topbar -->
+
+      <nav class="c-navbar">
+        <div class="container navbar-container">
+          <ul class="nav">
+            <li class="nav-item active">
+              <a href="" class="nav-link"><i class="fa fa-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </nav> <!-- / Navbar -->
+
+    </header> <!-- / Header -->
+
+    <main class="main">
+
+      <div class="container section">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="ml-info">
+              <div class="inner-info">
+                <div class="info">
+                  <a href="" class="btn-modify">Sửa</a>
+                  <div class="avatar">
+                    <img src="images/avatar-02.png" alt="avatar">
+                  </div>
+                  <div class="content">
+                    <div class="name">Âu Hà My</div>
+                    <div class="work">Giảng viên ĐH Hà Nội</div>
+                  </div>
+                  <div class="info-class">
+                    <div class="degree">
+                      <div class="title">Học vị</div>
+                      <div class="content">Thạc sỹ</div>
+                    </div>
+                    <div class="class">
+                      <div class="title">Bộ môn giảng dạy</div>
+                      <div class="content">Tiếng Anh, Toán</div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="list">
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="quan-ly-bang-thong-tin.html" class="nav-link">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Bảng thông tin</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-khoa-hoc-cua-toi.html" class="nav-link">
+                        <i class="fa fa-briefcase"></i>
+                        <span>Khóa học của tôi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-vi.html" class="nav-link">
+                        <i class="fa fa-money"></i>
+                        <span>Ví của tôi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-tai-lieu.html" class="nav-link">
+                        <i class="fa fa-folder-open"></i>
+                        <span>Quản lý tài liệu</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-de-thi.html" class="nav-link">
+                        <i class="fa fa-layers"></i>
+                        <span>Quản lý bộ đề</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-cau-hoi.html" class="nav-link">
+                        <i class="fa fa-question"></i>
+                        <span>Quản lý câu hỏi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-tai-khoa.html" class="nav-link">
+                        <i class="fa fa-gear"></i>
+                        <span>Quản lý tài khoản</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-binh-luan.html" class="nav-link">
+                        <i class="fa fa-comments"></i>
+                        <span>Quản lý bình luận</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div> <!-- / col-3 -->
+
+          <div class="col-12 col-md-8 col-lg-9">
+            <div class="ml-user js-content-show-hide">
+              <div class="headline js-btn-toggle">Hồ sơ cá nhân</div>
+              <div class="user-block js-content">
+                <div class="status"><i>Trạng thái! Tài khoản chưa cập nhật thông tin</i></div>
+                <div class="grid avatar js-avatar">
+                  <div class="grid-25">
+                    <div class="avatar-inner">
+                      <input class="file-upload" type="file" id="exampleInputManagerAvatar" name="exampleInputManagerAvatar" accept="image/png, image/jpeg">
+                      <div class="img">
+                        <img class="profile-pic" src="images/avatar-02.png" alt="">
+                      </div>
+                      <span>Thay Avatar</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerName">Họ và tên của bạn<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerName" name="exampleInputManagerName"
+                      placeholder="Vui lòng nhập họ và tên của bạn">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerSex">Giới tính<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <div class="grid form-group check">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleInputManagerSex" id="exampleInputManagerNam"
+                          value="option1" checked="">
+                        <label class="form-check-label" for="exampleInputManagerNam">Nam</label>
+                        <span class="checkmark"></span>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleInputManagerSex" id="exampleInputManagerFemale"
+                          value="option2">
+                        <label class="form-check-label" for="exampleInputManagerFemale">Nữ</label>
+                        <span class="checkmark"></span>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleInputManagerSex" id="exampleInputManagerOther"
+                          value="option3">
+                        <label class="form-check-label" for="exampleInputManagerOther">Khác</label>
+                        <span class="checkmark"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerBirthday">Ngày sinh<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <div class="grid">
+                      <div class="grid-30">
+                        <select class="form-control" name="exampleInputManagerDay">
+                          <option selected="true" disabled="disabled">Ngày</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                          <option>24</option>
+                          <option>25</option>
+                          <option>26</option>
+                          <option>27</option>
+                          <option>28</option>
+                          <option>29</option>
+                          <option>30</option>
+                          <option>31</option>
+                        </select>
+                      </div>
+                      <div class="grid-30">
+                        <select class="form-control" name="exampleInputManagerMonth">
+                          <option selected="true" disabled="disabled">Tháng</option>
+                          <option>Tháng 1</option>
+                          <option>Tháng 2</option>
+                          <option>Tháng 3</option>
+                          <option>Tháng 4</option>
+                          <option>Tháng 5</option>
+                          <option>Tháng 6</option>
+                          <option>Tháng 7</option>
+                          <option>Tháng 8</option>
+                          <option>Tháng 9</option>
+                          <option>Tháng 10</option>
+                          <option>Tháng 11</option>
+                          <option>Tháng 12</option>
+                        </select>
+                      </div>
+                      <div class="grid-30">
+                        <select class="form-control" name="exampleInputManagerYear">
+                          <option selected="true" disabled="disabled">Năm</option>
+                          <option>2019</option>
+                          <option>2018</option>
+                          <option>2017</option>
+                          <option>2018</option>
+                          <option>2015</option>
+                          <option>2014</option>
+                          <option>2013</option>
+                          <option>2012</option>
+                          <option>2011</option>
+                          <option>2010</option>
+                          <option>2009</option>
+                          <option>2008</option>
+                          <option>2007</option>
+                          <option>2006</option>
+                          <option>2005</option>
+                          <option>2004</option>
+                          <option>2003</option>
+                          <option>2002</option>
+                          <option>2001</option>
+                          <option>2000</option>
+                          <option>1999</option>
+                          <option>1998</option>
+                          <option>1997</option>
+                          <option>1996</option>
+                          <option>1995</option>
+                          <option>1994</option>
+                          <option>1993</option>
+                          <option>1992</option>
+                          <option>1991</option>
+                          <option>1990</option>
+                          <option>1989</option>
+                          <option>1988</option>
+                          <option>1987</option>
+                          <option>1986</option>
+                          <option>1985</option>
+                          <option>1984</option>
+                          <option>1983</option>
+                          <option>1982</option>
+                          <option>1981</option>
+                          <option>1980</option>
+                          <option>1979</option>
+                          <option>1978</option>
+                          <option>1977</option>
+                          <option>1976</option>
+                          <option>1975</option>
+                          <option>1974</option>
+                          <option>1973</option>
+                          <option>1972</option>
+                          <option>1971</option>
+                          <option>1970</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerAddress">Địa chỉ<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerAddress" name="exampleInputManagerAddress"
+                      placeholder="Vui lòng nhập địa chỉ của bạn">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerPhone">Số điện thoại<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerPhone" name="exampleInputManagerPhone"
+                      placeholder="Vui lòng nhập số điện thoại của bạn">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerText">Câu nói yêu thích</label>
+                  </div>
+                  <div class="grid-75">
+                    <textarea class="form-control" rows="6" id="exampleInputManagerText" name="exampleInputManagerText"
+                      placeholder="Nhập vào câu nói yêu thích hoặc phương châm giảng dạy của bạn."></textarea>
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerSchool">Trường học<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerSchool" name="exampleInputManagerSchool"
+                      placeholder="Vui lòng nhập tên trường học bạn đang giảng dạy">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerExperience">Kinh nghiệm<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerExperience" name="exampleInputManagerExperience"
+                      placeholder="Vui lòng nhập số năm bạn đã tham gia giảng dạy">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerSubjectsClass">Bộ môn giảng dạy, lớp<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <div class="form-control-multiselect">
+                      <select class="multiselect" name="exampleInputManagerSubjectsClass" multiple="multiple">
+                        <optgroup label="Bộ môn giảng dạy">
+                          <option>Toán</option>
+                          <option>Văn</option>
+                          <option>Anh</option>
+                          <option>Hóa</option>
+                          <option>Sinh</option>
+                          <option>Toán</option>
+                        </optgroup>
+                        <optgroup label="Giảng dạy các lớp">
+                          <option>Lớp 1</option>
+                          <option>Lớp 2</option>
+                          <option>Lớp 3</option>
+                          <option>Lớp 4</option>
+                          <option>Lớp 5</option>
+                          <option>Lớp 6</option>
+                          <option>Lớp 7</option>
+                          <option>Lớp 8</option>
+                          <option>Lớp 9</option>
+                          <option>Lớp 10</option>
+                          <option>Lớp 11</option>
+                          <option>Lớp 12</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerPosition">Học vị</label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerPosition" name="exampleInputManagerPosition"
+                      placeholder="Vui lòng nhập học hàm, học vị của bạn">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerTimeZone">Múi thời gian hiện tại</label>
+                  </div>
+                  <div class="grid-75">
+                    <div class="grid">
+                      <div class="grid-70">
+                        <select class="form-control" name="exampleInputManagerTimeZone">
+                          <option value="">(UTC+07:00) Bangkok, Hanoi, Jakarta</option>
+                        </select>
+                      </div>
+                      <div class="grid-30">
+                        <button type="submit" class="btn btn-update">Cập nhật</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- / user -->
+
+            <div class="ml-user js-content-show-hide">
+              <div class="headline js-btn-toggle">Xác thực hình ảnh</div>
+              <div class="user-block js-content">
+                  <div class="status"><i>Trạng thái! Tài khoản chưa cập nhật thông tin</i></div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerCmndBefore">Ảnh CMND (Trước)<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <div class="grid">
+                      <div class="grid-70">
+                        <div class="form-control file">
+                          <span>Nhấp vào đây để tải ảnh lên</span>
+                          <input type="file" id="exampleInputManagerCmndBefore" name="exampleInputManagerCmndBefore"
+                            accept="image/png, image/jpeg">
+                        </div>
+                      </div>
+                      <div class="grid-30">
+                        <button type="submit" class="btn btn-update">Cập nhật</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagercmndAfter">Ảnh CMND (Sau)<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <div class="grid">
+                      <div class="grid-70">
+                        <div class="form-control file">
+                          <span>Nhấp vào đây để tải ảnh lên</span>
+                          <input type="file" id="exampleInputManagercmndAfter" name="exampleInputManagercmndAfter"
+                            accept="image/png, image/jpeg">
+                        </div>
+                      </div>
+                      <div class="grid-30">
+                        <button type="submit" class="btn btn-update">Cập nhật</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / block -->
+            </div> <!-- / user -->
+
+            <div class="ml-user js-content-show-hide">
+              <div class="headline js-btn-toggle">Thông tin tài khoản</div>
+              <div class="user-block js-content">
+                <div class="status"><i>Trạng thái! Tài khoản chưa cập nhật thông tin</i></div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerBank">Tên ngân hàng<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerBank" name="exampleInputManagerBank"
+                      placeholder="VD: Ngân hàng Techcombank">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerBankAddress">Chi nhánh ngân hàng<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerBankAddress" name="exampleInputManagerBankAddress"
+                      placeholder="VD: Chi nhánh Hà Nội">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerBankName">Tên tài khoản ngân hàng<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerBankName" name="exampleInputManagerBankName"
+                      placeholder="VD: Nguyễn Văn A">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerBankNumber">Số tài khoản ngân hàng<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <div class="grid">
+                      <div class="grid-70">
+                        <input class="form-control" type="text" id="exampleInputManagerBankNumber" name="exampleInputManagerBankNumber"
+                          placeholder="VD: 1900251251">
+                      </div>
+                      <div class="grid-30">
+                        <button type="submit" class="btn btn-update">Cập nhật</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / block -->
+            </div> <!-- / user -->
+
+            <div class="ml-user js-content-show-hide">
+              <div class="headline js-btn-toggle">Thay đổi mật khẩu</div>
+              <div class="user-block js-content">
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerPassword">Mật khẩu hiện tại<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerPassword" name="exampleInputManagerPassword"
+                      placeholder="Vui lòng nhập tên trường học bạn đang giảng dạy">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerPasswordNew">Mật khẩu mới<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <input class="form-control" type="text" id="exampleInputManagerPasswordNew" name="exampleInputManagerPasswordNew"
+                      placeholder="Nhập mật khẩu hiện tại của bạn">
+                  </div>
+                </div>
+                <div class="grid form-group">
+                  <div class="grid-25">
+                    <label for="exampleInputManagerPasswordConfirm">Nhập lại mật khẩu<span class="star">*</span></label>
+                  </div>
+                  <div class="grid-75">
+                    <div class="grid">
+                      <div class="grid-70">
+                        <input class="form-control" type="text" id="exampleInputManagerPasswordConfirm" name="exampleInputManagerPasswordConfirm"
+                          placeholder="Nhập mật khẩu mới">
+                      </div>
+                      <div class="grid-30">
+                        <button type="submit" class="btn btn-update">Cập nhật</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / block -->
+            </div> <!-- / user -->
+
+
+          </div> <!-- / col-9 -->
+        </div>
+      </div> <!-- / container -->
+    </main> <!-- / main -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12 col-md-6 col-lg-3 block">
+            <div class="block-headline">Hỗ trợ khách hàng</div>
+            <div class="contact">
+              <div class="item">
+                <a class="item-wrapper" href="tel: +849006675">
+                  <img src="src/images/icon-phone.png" alt="">
+                  <span><b>1900 6675</b></span>
+                </a>
+              </div>
+              <div class="item">
+                <a class="item-wrapper" href="mailto: info@hocplus.vn">
+                  <img src="src/images/icon-mail.png" alt="">
+                  <span>info@hocplus.vn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Về HocPlus</div>
+              <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="http://">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Chính sách bảo mật</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Điều khoản sử dụng</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Hướng dẫn mua khóa học</a></li>
+              </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Tải về</div>
+              <div class="link-app">
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/app-store.png" alt=""></a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/google-play.png" alt=""></a>
+              </div>
+              <div class="img"><img src="images/bocongthuong.png" alt=""></div>
+              <div class="img"><img src="images/DMCA.jpg" alt=""></div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Kết nối với chúng tôi</div>
+              <div class="social">
+                <a class="social-item" href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/facebook.png" alt="">
+                </a>
+                <a class="social-item" href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/youtube.png" alt="">
+                </a>
+              </div>
+              <div class="link-forum">
+                <a href="http://" target="_blank" rel="noopener noreferrer">Forum hocplus</a>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </footer> <!-- / footer -->
+
+  </div> <!-- / App -->
+
+  <!-- js -->
+  <script src="src/js/jquery-3.3.1.min.js"></script>
+  <script src="src/js/jquery-ui.min.js"></script>
+
+  <script src="src/js/bootstrap-datetimepicker/moment.min.js"></script>
+  <script src="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+
+  <script src="src/js/Chart.min.js"></script>
+  <script src="src/js/dropzone.js"></script>
+  <script src="src/js/jquery.multiselect.js"></script>
+  <script src="src/js/slick.min.js"></script>
+  <script src="src/js/main.js"></script>
+
+
+</body>
+
+</html>

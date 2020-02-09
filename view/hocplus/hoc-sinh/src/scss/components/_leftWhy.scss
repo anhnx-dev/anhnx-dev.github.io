@@ -1,0 +1,23 @@
+@import '../variables';
+
+.c-left-why {
+    margin-top: 25px;
+    .item {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        padding: 15px 10px;
+        border: 1px solid $bc-01;
+        border-radius: $round1;
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+        .content {
+            margin-left: 10px;
+            .title {
+                @extend .medium-text;
+                font-weight: 500;
+            }
+        }
+    }
+}

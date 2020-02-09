@@ -1,0 +1,414 @@
+@import '../_variables.scss';
+
+.file-manager-over,
+.file-manager-notification-over {
+    position: fixed;
+    z-index: 999996;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: $cv03;
+    transform: scale(0) translate3d(-100%, 0, 0);
+    transition: $transition;
+}
+
+.file-manager-open {
+    .file-manager-over {
+        transform: scale(1) translate3d(0, 0, 0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .file-manager {
+        transform: scale(1) translate3d(-50%, 0, 0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.file-manager {
+    position: fixed;
+    z-index: 999997;
+    top: 80px;
+    left: 50%;
+    transform: scale(0) translate3d(-50%, -50px, 0);
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: $transition;
+    .exit-file-manager {
+        position: absolute;
+        z-index: 2;
+        top: 15px;
+        right: 35px;
+        cursor: pointer;
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 2px;
+            background: $cl04;
+        }
+        &::after {
+            transform: rotate(45deg);
+        }
+        &::before {
+            transform: rotate(-45deg);
+        }
+    }
+    .wrapper {
+        display: flex;
+        background: $c-white;
+        border-radius: $round;
+        padding: 15px 0;
+        .left {
+            flex: 0 0 20%;
+            max-width: 20%;
+            padding: 0 15px;
+            .inner {
+                position: relative;
+                height: 100%;
+                padding-bottom: 20px;
+                >.title {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                }
+                .navbar {
+                    margin-top: 20px;
+                    margin-left: -15px;
+                    .nav {
+                        margin: 0;
+                        padding: 0;
+                        .nav-item {
+                            list-style: none;
+                            cursor: pointer;
+                            .nav-item__inner {
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 10px 15px;
+                            }
+                            >ul {
+                                margin: 0;
+                                padding: 0;
+                                max-height: 0;
+                                transition: $transition;
+                                opacity: 0;
+                                pointer-events: none;
+                                .nav-item__inner {
+                                    padding: 10px 15px 10px 30px;
+                                }
+                            }
+                            &.active {
+                                >.nav-item__inner {
+                                    background: $cl10;
+                                    .title .fa::before {
+                                        content: '\e910';
+                                    }
+                                }
+                                >ul {
+                                    max-height: 1000px;
+                                    opacity: 1;
+                                    pointer-events: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+                .new-folder {
+                    position: absolute;
+                    left: 0;
+                    bottom: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 125px;
+                    height: 30px;
+                    background: $cl10;
+                    border-radius: $round;
+                    overflow: hidden;
+                    cursor: pointer;
+                    span {
+                        margin-right: 5px;
+                        color: $cl07;
+                    }
+                    input {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+                }
+                .waning {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    color: $cl07;
+                }
+            }
+        }
+        .right {
+            flex: 0 0 80%;
+            max-width: 80%;
+            padding: 0 15px;
+            .header {
+                display: flex;
+                align-items: center;
+                .title {
+                    font-size: 1.25rem;
+                    margin-right: 20px;
+                    font-weight: 700;
+                }
+                .new-folder {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 125px;
+                    height: 30px;
+                    background: $cl10;
+                    border-radius: $round;
+                    overflow: hidden;
+                    cursor: pointer;
+                    span {
+                        margin-right: 5px;
+                        color: $cl07;
+                    }
+                    input {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .main {
+                margin-top: 20px;
+                .tab-folder {
+                    .tab-header {
+                        display: flex;
+                        .item {
+                            margin-right: 15px;
+                            text-align: center;
+                            position: relative;
+                            cursor: pointer;
+                            &::before {
+                                display: block;
+                                content: '\e90f';
+                                font-family: $f-icon;
+                                font-size: 55px;
+                                line-height: .8em;
+                            }
+                            .title {
+                                margin-top: 10px;
+                            }
+                            .number {
+                                position: absolute;
+                                left: 4px;
+                                top: 2px;
+                                color: $c-white;
+                                font-size: .75rem;
+                            }
+                            &.active {
+                                &::before {
+                                    content: '\e910';
+                                }
+                            }
+                        }
+                    }
+                    .upload-file {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 180px;
+                        border: 2px dashed $cl10;
+                        margin-top: 50px;
+                        .btn-upload {
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 215px;
+                            height: 36px;
+                            overflow: hidden;
+                            border: 1px solid $cl10;
+                            transition: $transition;
+                            font-weight: 700;
+                            input {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                opacity: 0;
+                                cursor: pointer;
+                            }
+                            &:hover {
+                                background: $cl10;
+                            }
+                        }
+                    }
+                    .tab-body {
+                        margin-top: 50px;
+                        .item {
+                            display: none;
+                            &.active {
+                                display: block;
+                            }
+                        }
+                    }
+                    .container-file {
+                        height: 180px;
+                        margin-top: 30px;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+                        .inner {
+                            display: flex;
+                            flex-wrap: wrap;
+                            .file-item {
+                                position: relative;
+                                width: 16.666667%;
+                                max-width: 16.666667%;
+                                padding: 0 7.5px;
+                                margin-top: 15px;
+                                &:nth-child(1),
+                                &:nth-child(2),
+                                &:nth-child(3),
+                                &:nth-child(4),
+                                &:nth-child(5),
+                                &:nth-child(6) {
+                                    margin-top: 0;
+                                }
+                                .clear-file {
+                                    position: absolute;
+                                    z-index: 2;
+                                    top: 3px;
+                                    right: 10px;
+                                    cursor: pointer;
+                                    width: 20px;
+                                    height: 20px;
+                                    &::after,
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        width: 14px;
+                                        height: 2px;
+                                        top: 50%;
+                                        left: 50%;
+                                        background: $cl04;
+                                    }
+                                    &::after {
+                                        transform: translate3d(-50%,-50%,0) rotate(45deg);
+                                    }
+                                    &::before {
+                                        transform: translate3d(-50%,-50%,0) rotate(-45deg);
+                                    }
+                                }
+                                .image {
+                                    position: relative;
+                                    overflow: hidden;
+                                    background: $cv03;
+                                    &::before {
+                                        content: '';
+                                        display: block;
+                                        padding-bottom: 110.25%;
+                                    }
+                                    .image-wrapper {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        top: 0;
+                                        left: 0;
+                                        transition: $transition;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.file-maneger-notification {
+    position: fixed;
+    z-index: 999999;
+    width: 515px;
+    max-width: 100%;
+    background: $c-white;
+    border-radius: $round;
+    top: 80px;
+    left: 50%;
+    padding: 15px;
+    transform: translate3d(-50%, -50px, 0);
+    opacity: 0;
+    pointer-events: none;
+    transition: $transition;
+    .inner {
+        .content {
+            h4 {
+                margin-top: 0;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        .form-check {
+            display: flex;
+            align-items: center;
+            input {
+                margin-right: 5px;
+            }
+        }
+        .group-btn {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            button {
+                display: flexl;
+                justify-content: center;
+                align-items: center;
+                width: 124px;
+                height: 40px;
+                border: none;
+                text-transform: uppercase;
+                background: transparent;
+                border-radius: $round;
+                cursor: pointer;
+                transition: $transition;
+                &:hover {
+                    background: $cl01;
+                    color: $c-white;
+                }
+            }
+        }
+    }
+}
+
+.show-file-notification {
+    .file-manager-notification-over {
+        z-index: 999998;
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .file-maneger-notification {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate3d(-50%, 0, 0);
+    }
+}

@@ -1,0 +1,70 @@
+/* Fonts */
+
+$f-theme: 'Roboto',sans-serif;
+$f-icon: 'icon';
+/* Colors - Default */
+
+$c-black: #000;
+$c-dark: #222;
+$c-white: #fff;
+/* Body background */
+$bb: #d7e8f1;
+/* Colors - Theme */
+
+$cl01: #2a9fff;
+$cl02: #383838;
+$cl03: #6f6f6f;
+$cl04: #535353;
+$cl05: #ea3e4e;
+$cl06: #fff000;
+$cl07: #dbdbdb;
+$cl08: #198ceb;
+$cl09: #636363;
+$cl10: #dcefff;
+
+/* Coler border */
+
+$bc01: #6f6f6f;
+$bc02: #63b9ff;
+$bc03: #f1f1f1;
+/* Cover */
+
+$cv01: rgba(19, 99, 161, 0.5);
+$cv02: rgba(0, 0, 0, 0.15);
+$cv03: rgba(0, 0, 0, 0.4);
+
+/* Box shadow */
+$bs01: rgba(0, 0, 0, 0.2);
+
+/* Background */
+
+$c-bg-black: rgba(0, 0, 0, 0.3);
+$c-bg-black1: rgba(0, 0, 0, 0.6);
+$c-bg-blue: rgba(0, 120, 153, 0.7);
+$c-bg-white: rgba(255, 255, 255, 0.7);
+/* Transitions */
+
+/* box shadow */
+$bs-black: rgba(0, 0, 0, 0.3);
+
+/* transition */
+$transition: all .3s ease-in-out;
+
+/* Round */
+
+$round: 3px;
+$round1: 6px;
+/* Breakpoints */
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+$breakpoints-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$breakpoints-md: 768px;
+// Large devices (desktops, 992px and up)
+$breakpoints-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$breakpoints-xl: 1200px;
+// Extra large devices (large desktops, 1920px and up)
+$breakpoints-xxl: 1900px;

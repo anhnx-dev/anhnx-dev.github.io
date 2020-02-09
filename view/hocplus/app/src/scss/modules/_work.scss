@@ -1,0 +1,205 @@
+@import '../_variables.scss';
+
+.work {
+  background: $cl04;
+  color: $c-white;
+  margin-top: 20px;
+}
+
+.tab {
+  position: relative;
+  padding-top: 33px;
+  background: $cl02;
+
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+
+  .tab-item {
+    .inner {
+      height: 255px;
+      overflow-y: auto;
+      display: none;
+      @media (min-width: $breakpoints-xxl) {
+        height: 335px;
+      }
+    }
+
+    &.active {
+      background: $cl04;
+
+      .title {
+        background: $cl04;
+      }
+
+      .inner {
+        display: block;
+      }
+    }
+
+    &.chat {
+      .title {
+        width: 65px;
+      }
+
+      .list {
+        margin: 0;
+        padding: 0;
+
+        .item {
+          padding: 10px;
+          border-bottom: 1px solid $bc01;
+          list-style: none;
+
+          .name {
+            color: $cl05;
+          }
+
+          .content {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    &.user {
+      .title {
+        left: 65px;
+      }
+
+      .number {
+        padding: 10px;
+
+        >span {
+          color: $cl06;
+        }
+      }
+
+      .list {
+        margin: 0;
+        padding: 0;
+      }
+
+      .item {
+        padding: 0 10px;
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        .info {
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          .statu {
+            position: absolute;
+            top: -2px;
+            left: 21px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: $cl07;
+
+            &.active {
+              background: $cl06;
+            }
+          }
+
+          .avatar {
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 1px solid $cl02;
+            margin-right: 10px;
+
+            img {
+              height: 100%;
+              width: auto;
+            }
+          }
+        }
+
+        .btn {
+          position: relative;
+          border: 0;
+          background: transparent;
+          color: $cl07;
+          font-size: 1.3rem;
+          outline: none;
+          cursor: pointer;
+          pointer-events: none;
+          margin-left: 10px;
+          transition: $transition;
+          &:hover {
+            transform: scale(1.1);
+          }
+          &:nth-child(1) {
+            margin-left: 0;
+          }
+
+          &::after {
+            content: '\e908';
+            font-family: $f-icon;
+            font-size: .85rem;
+            color: $cl05;
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+          }
+
+          &.notification {
+            pointer-events: auto;
+            animation: camera-notification 1s infinite;
+          }
+
+          &.active {
+            color: $cl06;
+            pointer-events: auto;
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes camera-notification {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-30deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}

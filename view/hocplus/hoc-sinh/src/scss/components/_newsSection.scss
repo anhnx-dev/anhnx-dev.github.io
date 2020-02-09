@@ -1,0 +1,14 @@
+@import '../variables';
+
+.c-news-section {
+    .headline {
+        @extend .title-text;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: $c-dark;
+        }
+    }
+}

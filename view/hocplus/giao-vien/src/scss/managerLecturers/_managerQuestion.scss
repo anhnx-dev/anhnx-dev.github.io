@@ -1,0 +1,188 @@
+@import '../variables';
+
+.ml-manager-question {
+    .exam-inner .table {
+        .title {
+            width: auto;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+            >a,
+            >span {
+                text-decoration: none;
+                color: $cl-09;
+                display: block;
+                font-weight: 400;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        .w-110 {
+            width: 110px;
+        }
+        .text-left {
+            text-align: left;
+        }
+    }
+    .popup-question {
+        position: fixed;
+        z-index: 9999;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0) scale(0);
+        background: $c-white;
+        box-shadow: $bs-01;
+        padding: 30px;
+        width: 810px;
+        max-width: calc(100% - 30px);
+        opacity: 0;
+        transition: $transition;
+        .exit {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 2px;
+                background: $cl-07;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%,-50%,0) rotate(45deg);
+            }
+            &::after {
+                transform: translate3d(-50%,-50%,0) rotate(-45deg);
+            }
+        }
+        .title {
+            @extend .big-text;
+            font-weight: 500;
+        }
+        .table {
+            border: 1px solid $bc-01;
+            width: 100%;
+            text-align: left;
+            margin-top: 20px;
+            .yes {
+                color: $cl-06;
+            }
+    
+            tr {
+                border-bottom: 1px solid $bc-01;
+                border-spacing: 0;
+            }
+    
+            td,
+            th {
+                border-right: 1px solid $bc-01;
+                padding: 10px 14px;
+            }
+        }
+        .info {
+            margin-top: 30px;
+            .tags {
+                .tag-item {
+                    color: $cl-06;
+                    >a {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .col-6 {
+                margin-top: 10px;
+            }
+        }
+    }
+    .popup-export {
+        position: fixed;
+        z-index: 9999;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0) scale(0);
+        background: $c-white;
+        box-shadow: $bs-01;
+        padding: 30px;
+        width: 1140px;
+        max-height: 100vh;
+        max-width: calc(100% - 30px);
+        opacity: 0;
+        transition: $transition;
+        .headline {
+            font-weight: 700;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $bc-01;
+        }
+        .list {
+            overflow-y: auto;
+            max-height: 70vh;
+            overflow-x: hidden;
+            .item {
+                margin-top: 30px;
+                .question {
+                    @extend .big-text;
+                    margin: 10px 0 0 0;
+                }
+                .answers {
+                    .answer {
+                        margin-top: 10px;
+                        &.yes {
+                            color: $cl-06;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            .name-file {
+                border: 1px solid $bc-01;
+            }
+            .btn-group {
+                .btn {
+                    background: $cl-06;
+                    color: $c-white;
+                    border: 0;
+                    padding: 5px 20px;
+                    &:hover {
+                        background: $cl-04;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ml-manager-question-active {
+    .over-body {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .popup-question {
+        transform: translate3d(-50%, -50%, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+.ml-manager-question-export-active {
+    .over-body {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .popup-export {
+        transform: translate3d(-50%, -50%, 0) scale(1);
+        opacity: 1;
+    }
+}

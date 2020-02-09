@@ -1,0 +1,81 @@
+@import '../variables';
+
+.c-item-news-01 {
+    margin-top: 30px;
+    &:nth-child(1) {
+        margin-top: 0;
+    }
+    @media (min-width: $breakpoints-md) {
+        &:nth-child(1) {
+            margin-top: 30px;
+        }
+    }
+    .inner {
+        @media (min-width: $breakpoints-md) {
+            display: flex;
+        }
+        .img {
+            @extend .img-cover;
+            @media (min-width: $breakpoints-md) {
+                width: 42%;
+            }
+            &::before {
+                padding-bottom: 66%;
+            }
+            >a {
+                @extend .img-cover__wrapper;
+            }
+        }
+        .info {
+            @media (min-width: $breakpoints-md) {
+                width: 58%;
+                padding-left: 15px;
+            }
+            .title {
+                @extend .big-text-01;
+                margin: 10px 0 0 0;
+                >a {
+                    color: $c-dark;
+                    text-decoration: none;
+                    transition: $transition;
+                    &:hover {
+                        color: $c-blue;
+                    }
+                }
+            }
+            .description {
+                margin-top: 10px;
+            }
+            .btn {
+                position: relative;
+                @extend .small-text;
+                padding: 0;
+                margin-top: 10px;
+                color: $cl-04;
+                border: none;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    left: 0;
+                    bottom: 0;
+                    background: $c-blue;
+                    transition: $transition;
+                }
+                >.fa {
+                    display: inline-block;
+                    margin-left: 3px;
+                    transform: translateY(1px);
+                }
+                &:hover {
+                    color: $cl-04;
+                    background: transparent;
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+@import '../variables';
+
+.ml-info {
+    position: relative;
+    height: 100%;
+    background: $c-white;
+    box-shadow: $bs-01;
+    .info {
+        position: relative;
+        top: 20px;
+        .btn-modify {
+            @extend .big-text;
+            position: absolute;
+            top: 0;
+            right: 20px;
+            text-transform: uppercase;
+            color: $cl-04;
+            text-decoration: none;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 1px;
+                left: 0;
+                bottom: 0;
+                background: $cl-04;
+                transition: $transition;
+                line-height: 1.2;
+            }
+            &:hover::before {
+                width: 100%;
+            }
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 15px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        >.content {
+            margin-top: 15px;
+            padding: 0 20px;
+            .name {
+                @extend .big-text-01;
+                font-weight: 700;
+            }
+            .work {
+                color: $bc-02;
+            }
+        }
+        .info-class {
+            display: flex;
+            margin-top: 20px;
+            border-top: 1px solid $bc-06;
+            border-bottom: 1px solid $bc-06;
+            .title {
+                @extend .small-text;
+                color: $cl-05;
+            }
+            .content {
+                @extend .big-text;
+                margin-top: 5px;
+            }
+            .degree {
+                width: 40%;
+                padding: 25px 15px 25px 20px;
+                border-right: 1px solid $bc-06;
+            }
+            .class {
+                width: 60%;
+                padding: 25px 15px;
+            }
+        }
+    }
+    .list {
+        margin-top: 30px;
+        .nav {
+            margin: 0;
+            padding: 0;
+            .nav-item {
+                list-style: none;
+                .nav-link {
+                    @extend .big-text;
+                    display: block;
+                    position: relative;
+                    text-decoration: none;
+                    padding: 10px 20px 10px 55px;
+                    color: $c-dark;
+                    transition: $transition;
+                    .fa {
+                        @extend .title-text;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 20px;
+                    }
+                    &:hover {
+                        color: $cl-04;
+                    }
+                }
+            }
+        }
+    }
+}

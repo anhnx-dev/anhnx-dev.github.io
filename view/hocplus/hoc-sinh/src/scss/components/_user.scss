@@ -1,0 +1,451 @@
+@import '../variables';
+
+.c-user {
+    position: fixed;
+    z-index: 99991;
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 20px);
+    max-width: 810px;
+    transform: translate3d(-50%, 50px, 0);
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: $bs-02;
+    transition: $transition;
+
+    .exit {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        background: $c-cyan;
+        cursor: pointer;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 1px;
+            top: 50%;
+            left: 50%;
+            background: $c-white;
+        }
+
+        &::after {
+            transform: translate3d(-50%, -50%, 0) rotate(45deg);
+        }
+
+        &::before {
+            transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+        }
+    }
+
+    .inner {
+        @media (min-width: $breakpoints-lg) {
+            display: flex;
+        }
+
+        .left,
+        .right {
+            @media (min-width: $breakpoints-lg) {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        .left {
+            display: none;
+
+            @media (min-width: $breakpoints-lg) {
+                display: flex;
+            }
+
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .bg {
+                @extend .img-cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: $cl-16;
+                }
+
+                >span {
+                    @extend .img-cover__wrapper;
+                }
+            }
+
+            .wrapper {
+                position: relative;
+                z-index: 2;
+                color: $c-white;
+                text-align: center;
+
+                .content {
+                    display: none;
+
+                    &.show {
+                        display: block;
+                    }
+
+                    >strong {
+                        @extend .title-text;
+                    }
+                }
+
+                .btn {
+                    width: 250px;
+                    padding: 7px 50px;
+                    border-color: $c-white;
+                    color: $c-white;
+                    background: transparent;
+
+                    &:hover,
+                    &:focus {
+                        background: $c-blue;
+                        border-color: $c-blue;
+                    }
+                }
+            }
+        }
+
+        .right {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 35px 15px;
+            background: $c-white;
+            text-align: center;
+
+            .right-inner {
+                width: 270px;
+                max-width: 100%;
+
+                .title {
+                    @extend .title-text;
+                    font-weight: 700;
+                }
+
+                .content {
+                    margin-top: 15px;
+                    color: $cl-17;
+                }
+
+                .form {
+                    display: none;
+
+                    &.show {
+                        display: block;
+                    }
+
+                    .form-group {
+                        position: relative;
+                        margin-top: 20px;
+
+                        >.star {
+                            color: $c-red;
+                            position: absolute;
+                            top: 50%;
+                            right: -15px;
+                            transform: translateY(-50%);
+                        }
+
+                        &.form-check {
+                            display: flex;
+                            justify-content: space-between;
+
+                            >span {
+                                display: flex;
+                                align-items: center;
+                                color: $cl-17;
+
+                                .form-check-input {
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+
+                        &.notification {
+                            position: relative;
+                            background: $cl-18;
+                            border: 1px solid $bc-05;
+                            border-radius: $round;
+                            padding: 10px;
+
+                            .text {
+                                @extend .small-text;
+                                color: $cl-19;
+                            }
+
+                            .closed {
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                top: 0;
+                                right: 0;
+                                cursor: pointer;
+                                background: transparent;
+                                border: 0;
+
+                                &::after,
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    height: 1px;
+                                    width: 10px;
+                                    background: $cl-17;
+                                    top: 50%;
+                                    left: 50%;
+                                }
+
+                                &::after {
+                                    transform: translate3d(-50%, -50%, 0) rotate(45deg);
+                                }
+
+                                &::before {
+                                    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+                                }
+                            }
+                        }
+
+                        .form-control {
+                            width: 100%;
+                            padding: 11px 15px 11px 40px;
+                            border: 1px solid $bc-02;
+                        }
+
+                        &.email .form-control {
+                            background: url(../images/mail.png) no-repeat left 15px top 12px;
+                        }
+
+                        &.password .form-control {
+                            background: url(../images/pass.png) no-repeat left 15px top 9px;
+                        }
+
+                        &.phone .form-control {
+                            background: url(../images/phone.png) no-repeat left 15px top 9px;
+                        }
+
+                        &.check {
+                            display: flex;
+                            .form-check {
+                                display: block;
+                                position: relative;
+                                padding-left: 20px;
+                                margin-right: 30px;
+                                cursor: pointer;
+                                user-select: none;
+                                &:last-of-type {
+                                    margin-right: 0;
+                                }
+
+                                .form-check-label {
+                                    cursor: pointer;
+                                }
+
+                                .form-check-input {
+                                    position: absolute;
+                                    opacity: 0;
+                                    top: 5px;
+                                    left: 0;
+                                    cursor: pointer;
+
+                                    &:checked~.checkmark {
+                                        background-color: $c-white;
+
+                                        &::after {
+                                            display: block;
+                                        }
+                                    }
+                                }
+
+                                .checkmark {
+                                    position: absolute;
+                                    top: 2px;
+                                    left: 0;
+                                    height: 15px;
+                                    width: 15px;
+                                    border-radius: 50%;
+                                    border: 1px solid $cl-04;
+                                    pointer-events: none;
+
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        display: none;
+                                        top: 2px;
+                                        left: 2px;
+                                        width: 9px;
+                                        height: 9px;
+                                        border-radius: 50%;
+                                        background: $cl-04;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .btn {
+                        width: 100%;
+                        margin-top: 20px;
+                        background: $cl-04;
+                        color: $c-white;
+                        padding: 7px 25px;
+
+                        &:hover,
+                        &:focus {
+                            background: $c-blue;
+                            border-collapse: $c-blue;
+                        }
+                    }
+
+                    .btn-forgot-password {
+                        position: relative;
+                        border: none;
+                        background: transparent;
+                        font-style: italic;
+                        color: $cl-17;
+                        cursor: pointer;
+                        padding: 0;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 0;
+                            height: 1px;
+                            background: $cl-17;
+                            transition: $transition;
+                        }
+
+                        &:hover {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    &.form-log-in {
+                        padding-top: 20px;
+                        .tabs {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            display: flex;
+                            background: $cl-38;
+                            .tabs-item {
+                                @extend .big-text;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 50%;
+                                height: 50px;
+                                border-top: 3px solid transparent;
+                                transition: $transition;
+                                color: $cl-17;
+                                cursor: pointer;
+                                &.tabs-active {
+                                    background: $c-white;
+                                    border-color: $cl-04;
+                                    color: $cl-04;
+                                }
+                            }
+                        }
+                    }
+                    .parents-student,
+                    .teacher {
+                        display: none;
+                        &.show {
+                            display: block;
+                        }
+                    }
+                    .teacher {
+                        min-height: 341px;
+                    }
+                }
+
+                .other {
+                    display: none;
+
+                    &.show {
+                        display: block;
+                    }
+
+                    >p {
+                        color: $c-secondary;
+                        margin: 10px 0;
+                    }
+
+                    .btn {
+                        width: 100%;
+                        color: $c-white;
+                        padding: 7px 25px;
+
+                        &:hover,
+                        &:focus {
+                            opacity: .8;
+                        }
+                    }
+
+                    .btn-facebook {
+                        background: #3b5998;
+                    }
+
+                    .btn-goole {
+                        background: #dc4a38;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.user-anage-active {
+    .c-user {
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .over-body {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 99990;
+    }
+
+    &.slideout-active {
+        .c-user {
+            z-index: 999999;
+            transform: translate3d(-50%, -50%, 0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .over-body {
+            z-index: 999998;
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+}

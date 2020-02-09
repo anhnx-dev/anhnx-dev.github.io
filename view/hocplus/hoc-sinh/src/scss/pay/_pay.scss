@@ -1,0 +1,505 @@
+@import '../variables';
+
+.pay-pay {
+    .container::before {
+        content: '';
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-top: 1px solid $bc-01;
+    }
+
+    .pay-headline {
+        @extend .big-text-01;
+        text-transform: uppercase;
+        color: $cl-04;
+        margin: 0;
+    }
+
+    .species {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -7.5px;
+        margin-right: -7.5px;
+        @media (min-width: $breakpoints-lg) {
+            width: 83.33333%;
+        }
+
+        .item {
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+            margin-top: 20px;
+            width: 50%;
+            @media (min-width: $breakpoints-md) {
+              width: 33.33333%;
+            }
+            @media (min-width: $breakpoints-lg) {
+              width: 20%;
+            }
+
+            .wrapper {
+                position: relative;
+                border: 1px solid $bc-01;
+                border-radius: $round1;
+                cursor: pointer;
+                transition: $transition;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    padding-bottom: 100%;
+                }
+
+                .inner {
+                    position: absolute;
+                    width: calc(100% - 30px);
+                    max-height: calc(100% - 30px);
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 15px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    @media (min-width: $breakpoints-lg) {
+                      display: block;
+                      height: calc(100% - 30px);
+                    }
+
+                    .icon {
+                        height: 50px;
+                        width: 100%;
+                        position: relative;
+                        @media (min-width: $breakpoints-lg) {
+                          height: 75px;
+                        }
+                        >img {
+                            position: absolute;
+                            max-height: 100%;
+                            max-width: 100%;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate3d(-50%, -50%, 0);
+                            transition: $transition;
+
+                            &.hover {
+                                opacity: 0;
+                            }
+                        }
+                    }
+
+                    .title {
+                        width: 100%;
+                        text-align: center;
+                        transition: $transition;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            &:hover,
+            &.species-active {
+                .wrapper {
+                    box-shadow: $bs-01;
+                    border: 1px solid transparent;
+
+                    .inner {
+                        .icon {
+                            >img {
+                                opacity: 0;
+
+                                &.hover {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        .title {
+                            color: $cl-09;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .class {
+        position: relative;
+        padding-left: 35px;
+        margin-top: 35px;
+        cursor: pointer;
+        .status {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid $bc-02;
+            &::after {
+                content: '';
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                transition: $transition;
+            }
+        }
+        &.species-active .status {
+            border-color: $cl-06;
+            &::after {
+                background: $cl-06;
+            }
+        }
+    }
+
+    .form-control {
+        border: 1px solid $bc-01;
+        border-radius: 0;
+        padding: 9px 15px;
+        &.form-control-img {
+            padding: 0;
+            border: 0;
+        }
+    }
+
+    .btn-buying,
+    .btn-recharge {
+        display: block;
+        margin-top: 25px;
+        width: 100%;
+        height: 40px;
+        max-width: 100%;
+        text-transform: uppercase;
+        border-radius: 0;
+        color: $c-white;
+        background: $cl-04;
+        border-radius: 0;
+        border: 0;
+        @media (min-width: $breakpoints-md) {
+            width: 280px;
+        }
+        &:hover {
+            background: $cl-09;
+            
+        }
+    }
+
+    .btn-recharge {
+        display: inline-block;
+        width: auto;
+        border-radius: $round;
+        padding: 8px 50px;
+    }
+
+    .cod {
+        margin-top: 30px;
+        display: none;
+        @media (min-width: $breakpoints-lg) {
+            width: 750px;
+        }
+        &.pay-active {
+            display: block;
+        }
+
+        .form-group {
+            margin-top: 15px;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .form-control {
+                width: 100%;
+            }
+            &.select-list {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -15px;
+                margin-right: -15px;
+                .item {
+                    width: 100%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin-top: 10px;
+                    &:nth-child(1) {
+                        margin-top: 0;
+                    }
+                    @media (min-width: $breakpoints-md) {
+                        width: 33.33333%;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .online-pay {
+        display: none;
+        &.pay-active {
+            display: block;
+        }
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            margin-left: -7.5px;
+            margin-right: -7.5px;
+            @media (min-width: $breakpoints-lg) {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            .item {
+                position: relative;
+                padding: 0 7.5px;
+                margin-top: 30px;
+                list-style: none;
+                width: 50%;
+                @media (min-width: $breakpoints-md) {
+                    width: 33.3333%;
+                }
+                @media (min-width: $breakpoints-lg) {
+                    width: 14.28%;
+                    padding: 0 15px;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    padding-bottom: 58.4%;
+                }
+                >a {
+                    position: absolute;
+                    width: calc(100% - 15px);
+                    height: 100%;
+                    top: 0;
+                    left: 7.5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px dashed $bc-01;
+                    background: $c-white;
+                    transition: $transition;
+                    @media (min-width: $breakpoints-lg) {
+                        width: calc(100% - 30px);
+                        left: 15px;
+                    }
+                    &::before {
+                        content: '\e90a';
+                        font-family: $f-icon;
+                        position: absolute;
+                        width: 26px;
+                        height: 26px;
+                        background: $cl-04;
+                        color: $c-white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        right: -8px;
+                        top: -9px;
+                        opacity: 0;
+                        transition: $transition;
+                    }
+                }
+                &.online-pay-active,
+                &:hover {
+                    >a {
+                        border: 2px solid $cl-04;
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bank {
+        margin-top: 30px;
+        display: none;
+        &.pay-active {
+            display: block;
+        }
+        @media (min-width: $breakpoints-lg) {
+            width: 750px;
+        }
+        .grid {
+            @media (min-width: $breakpoints-md) {
+                display: flex;
+            }
+        }
+        .grid-1 {
+            @media (min-width: $breakpoints-md) {
+                width: 20%;
+                padding-left: 15px;
+                padding-right: 15px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .grid-2 {
+            @media (min-width: $breakpoints-md) {
+                width: 55%;
+                padding-left: 15px;
+                padding-right: 15px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .grid-3 {
+            @media (min-width: $breakpoints-md) {
+                width: 25%;
+                padding-left: 15px;
+                padding-right: 15px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .inner {
+            border: 1px solid $bc-01;
+            background: $c-white;
+            
+            .headline {
+                @extend .medium-text;
+                padding: 10px 15px;
+                .grid-1 {
+                    padding: 0;
+                    margin-right: 5px;
+                }
+                .title {
+                        font-weight: 700;
+                    >span {
+                        font-weight: 400;
+                    }
+                }
+            }
+            >.title {
+                border-top: 1px solid $bc-01;
+                padding: 10px 0;
+                display: none;
+                @media (min-width: $breakpoints-md) {
+                  display: flex;
+                }
+            }
+            .list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                .item {
+                    @extend .medium-text;
+                    align-items: center;
+                    padding: 10px 15px;
+                    @media (min-width: $breakpoints-md) {
+                      padding: 10px 0;
+                    }
+                    border-top: 1px solid $bc-01;
+                    .icon {
+                        margin-bottom: 5px;
+                        @media (min-width: $breakpoints-md) {
+                          margin-bottom: 0;
+                        }
+                        >img {
+                            display: block;
+                            height: 29px;
+                        }
+                    }
+                    .number {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .bank-card {
+        max-width: 555px;
+        margin-top: 30px;
+        display: none;
+        &.pay-active {
+            display: block;
+        }
+        .tabs {
+            .tabs-inner {
+                display: flex;
+                margin-left: -15px;
+                margin-right: -15px;
+                .tabs-item {
+                    display: flex;
+                    justify-content: center;
+                    width: 33.33333%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    .wrapper {
+                        position: relative;
+                        height: 100%;
+                        border: 1px solid $bc-01;
+                        text-align: center;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5px 10px;
+                        border-radius: $round;
+                        transition: $transition;
+                        background: $c-white;
+                        cursor: pointer;
+                    }
+                    &.tabs-active {
+                        .wrapper {
+                            border: 2px solid $cl-04;
+                            .text {
+                                color: $cl-04;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .form {
+            margin-top: 30px;
+            display: none;
+            .form-group {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: -15px;
+                margin-right: -15px;
+                margin-top: 15px;
+                &:nth-child(1) {
+                    margin-top: 0;
+                }
+                label {
+                    width: 33.3333%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                .form-control {
+                    width: calc(66.6666% - 30px);
+                    margin-right: 15px;
+                }
+            }
+            &.bank-card-active {
+                display: block;
+            }
+        }
+    }
+
+    .visa {
+        margin-top: 30px;
+        display: none;
+        &.pay-active {
+            display: block;
+        }
+        .inner {
+            @media (min-width: $breakpoints-lg) {
+              width: 83.3333333%;
+            }
+        }
+    }
+}

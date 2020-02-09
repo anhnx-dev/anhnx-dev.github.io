@@ -1,0 +1,64 @@
+@import '../variables';
+
+.c-item-lecturers {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+    outline: none;
+
+    .inner {
+        .avatar-certificate {
+            display: flex;
+            justify-content: center;
+
+            .wrapper {
+                @extend .img-cover;
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                border: 3px solid $cl-06;
+
+                >a {
+                    @extend .img-cover__wrapper;
+                }
+
+                .certificate {
+                    position: absolute;
+                    left: 0;
+                    bottom: 30px;
+                    width: 135px;
+                    padding: 9px 10px;
+                    color: $c-white;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    background: $cl-06;
+                    border-radius: 0 19px 19px 0;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .name {
+            @extend .big-text;
+            font-weight: 700;
+            margin: 15px 0 0 0;
+
+            >a {
+                color: $c-dark;
+                text-decoration: none;
+            }
+        }
+
+        .star {
+            margin-top: 10px;
+            color: $cl-04;
+        }
+
+        .summary {
+            margin-top: 10px;
+            height: 4.5em;
+            overflow: hidden;
+        }
+    }
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker-standalone.css">
+  <link rel="stylesheet" href="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" href="src/css/main.min.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <header class="header">
+
+      <div class="c-topbar">
+        <div class="container topbar-container">
+          <div class="banner">
+            <a href="index.html">
+              <img src="images/Logo HocPlus.svg" alt="">
+            </a>
+          </div>
+          <div class="my-user">
+            <div class="user-inner">
+              <div class="avatar">
+                <img src="images/avatar-02.png" alt="avatar">
+              </div>
+              <div class="name">Âu Hà My</div>
+            </div>
+            <div class="dropdown">
+              <ul class="list">
+                <li class="item"><a href="quan-ly-bang-thong-tin.html"><i class="fa fa-dashboard"></i> <span>Bảng thông
+                      tin</span></a></li>
+                <li class="item"><a href="quan-ly-khoa-hoc-cua-toi.html"><i class="fa fa-briefcase"></i> <span>Khóa học
+                      của tôi</span></a></li>
+                <li class="item"><a href="quan-ly-tai-khoa.html"><i class="fa fa-gear"></i> <span>Quản lý tài khoản</span></a></li>
+                <li class="item"><a href=""><i class="fa fa-log-out"></i> <span>Đăng xuất</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / Topbar -->
+
+      <nav class="c-navbar">
+        <div class="container navbar-container">
+          <ul class="nav">
+            <li class="nav-item active">
+              <a href="" class="nav-link"><i class="fa fa-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </nav> <!-- / Navbar -->
+
+    </header> <!-- / Header -->
+
+    <main class="main">
+
+      <div class="container section">
+        <div class="row">
+
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="ml-info">
+              <div class="inner-info">
+                <div class="info">
+                  <a href="" class="btn-modify">Sửa</a>
+                  <div class="avatar">
+                    <img src="images/avatar-02.png" alt="avatar">
+                  </div>
+                  <div class="content">
+                    <div class="name">Âu Hà My</div>
+                    <div class="work">Giảng viên ĐH Hà Nội</div>
+                  </div>
+                  <div class="info-class">
+                    <div class="degree">
+                      <div class="title">Học vị</div>
+                      <div class="content">Thạc sỹ</div>
+                    </div>
+                    <div class="class">
+                      <div class="title">Bộ môn giảng dạy</div>
+                      <div class="content">Tiếng Anh, Toán</div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="list">
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="quan-ly-bang-thong-tin.html" class="nav-link">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Bảng thông tin</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-khoa-hoc-cua-toi.html" class="nav-link">
+                        <i class="fa fa-briefcase"></i>
+                        <span>Khóa học của tôi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-vi.html" class="nav-link">
+                        <i class="fa fa-money"></i>
+                        <span>Ví của tôi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-tai-lieu.html" class="nav-link">
+                        <i class="fa fa-folder-open"></i>
+                        <span>Quản lý tài liệu</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-de-thi.html" class="nav-link">
+                        <i class="fa fa-layers"></i>
+                        <span>Quản lý bộ đề</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-cau-hoi.html" class="nav-link">
+                        <i class="fa fa-question"></i>
+                        <span>Quản lý câu hỏi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-tai-khoa.html" class="nav-link">
+                        <i class="fa fa-gear"></i>
+                        <span>Quản lý tài khoản</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-binh-luan.html" class="nav-link">
+                        <i class="fa fa-comments"></i>
+                        <span>Quản lý bình luận</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div> <!-- / col-3 -->
+
+          <div class="col-12 col-md-8 col-lg-9">
+            <section class="ml-template">
+              <div class="headline">
+                <h2 class="title">Khởi tạo khóa học</h2>
+                <div class="steps">
+                  <ul class="steps-nav">
+                    <li class="steps-nav__item active">
+                      <a href="quan-ly-khoi-tao-khoa-hoc.html">
+                        <span class="number">1</span>
+                        <span class="title">Bước 1: Thông tin chung</span>
+                      </a>
+                    </li>
+                    <li class="steps-nav__item active">
+                      <a href="quan-ly-mo-ta-chi-tiet.html">
+                        <span class="number">2</span>
+                        <span class="title">Bước 2: Mô tả chi tiết</span>
+                      </a>
+                    </li>
+                    <li class="steps-nav__item active">
+                      <a href="quan-ly-xem-lai-khoa-hoc.html">
+                        <span class="number">3</span>
+                        <span class="title">Bước 3: Xem lại khóa học</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ml-detail ml-fix js-ml-fix">
+                <div class="detail-wrapper">
+                  <a href="" class="btn-edit"><i class="fa fa-pencil"></i> Sửa</a>
+                  <div class="headline">
+                    <h2 class="title">
+                      <textarea class="fix-content" id="templateFixTitle" name="templateFixTitle">Khóa học bồi dưỡng học sinh giỏi lớp 10 - chuyên văn</textarea>
+                    </h2>
+                  </div>
+                  <div class="link-video">
+                    <input class="fix-content" id="templateFixlinkVideo" name="templateFixlinkVideo" type="text" placeholder="Coppy link youtube vào đây.">
+                  </div>
+                  <div class="media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JsYPP588n5Y" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="info">
+                    <ul class="row list">
+                      <li class="col-6 item"><i class="fa fa-book-open"></i> Môn học: <input class="fix-content" id="templateFixSubjects" name="templateFixSubjects" type="text" value="Văn"></li>
+                      <li class="col-6 item"><i class="fa fa-clock"></i> Thời lượng: <input class="fix-content" id="templateFixTime" name="templateFixTime" type="text" value="2 tiếng"></li>
+                      <li class="col-6 item"><i class="fa fa-bookmark"></i> Khối lớp: <input class="fix-content" id="templateFixClass" name="templateFixClass" type="text" value="10"></li>
+                      <li class="col-6 item"><i class="fa fa-group"></i> Số lượng HS tối đa: <input class="fix-content" id="templateFixNumberUser" name="templateFixNumberUser" type="text" value="50 người"></li>
+                      <li class="col-6 item"><i class="fa fa-chalkboard-teacher"></i> Số buổi: <input class="fix-content" id="templateFixNumberSession" name="templateFixNumberSession" type="text" value="10 buổi"></li>
+                    </ul>
+                  </div>
+                  <div class="ingredient">
+                    <div class="ingredient-headline">
+                      <h3 class="title">Bạn sẽ được học</h3>
+                    </div>
+                    <textarea class="fix-content width-100 mt-15" id="templateFixSkill" name="templateFixSkill" rows="4"></textarea>
+                  </div>
+                  <div class="ingredient">
+                    <div class="ingredient-headline">
+                      <h3 class="title">Mục tiêu khóa học:</h3>
+                    </div>
+                    <textarea class="fix-content width-100 mt-15" id="templateFixiIngredient" name="templateFixiIngredient" rows="4"></textarea>
+                  </div>
+                  <div class="ingredient">
+                    <div class="ingredient-headline">
+                      <h3 class="title">Các yêu cầu khóa học:</h3>
+                    </div>
+                    <textarea class="fix-content width-100 mt-15" id="templateFixiRequest" name="templateFixiRequest" rows="4"></textarea>
+                  </div>
+                  <div class="ingredient">
+                    <div class="ingredient-headline">
+                      <h3 class="title">Nội dung khóa học:</h3>
+                    </div>
+                    <div class="calendar">
+                      <div class="row">
+                        <div class="col-2"><b>Lịch học</b></div>
+                        <div class="col-7"><b>Thời gian biểu</b></div>
+                        <div class="col-3"><b>Vào lớp</b></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2"><b>Buổi 1</b></div>
+                        <div class="col-7">
+                          <p><b><input class="fix-content" id="templateFixNumberSessionTitle1" name="templateFixNumberSessionTitle1" type="text" value="Văn học trung đại"></b></p>
+                          <p><textarea class="fix-content" id="templateFixSessionContent1" name="templateFixSessionContent1">Từ thế kỉ thứ X đén trước khi hình thành văn học Việt Nam chỉ có văn học dân gian. Đầu thế kỉ thứ X đánh dấu sự ra đời của dòng văn học Việt Nam. Văn học còn được gọi là: Văn học trung đại</textarea></p>
+                        </div>
+                        <div class="col-3">
+                          <p><input class="fix-content" id="templateFixTimeBegin1" name="templateFixTimeBegin1"></p>
+                          <p><input class="fix-content" id="templateFixTimeFinish1" name="templateFixTimeFinish1"></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2"><b>Buổi 2</b></div>
+                        <div class="col-7">
+                          <p><b><input class="fix-content" id="templateFixNumberSessionTitle2" name="templateFixNumberSessionTitle2" type="text" value="Văn học hiện đại 1"></b></p>
+                          <p><textarea class="fix-content" id="templateFixSessionContent2" name="templateFixSessionContent2">Từ thế kỉ thứ X đén trước khi hình thành văn học Việt Nam chỉ có văn học dân gian. Đầu thế kỉ thứ X đánh dấu sự ra đời của dòng văn học Việt Nam. Văn học còn được gọi là: Văn học trung đại</textarea></p>
+                        </div>
+                        <div class="col-3">
+                          <p><input class="fix-content" id="templateFixTimeBegin2" name="templateFixTimeBegin2"></p>
+                          <p><input class="fix-content" id="templateFixTimeFinish2" name="templateFixTimeFinish2"></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2"><b>Buổi 3</b></div>
+                        <div class="col-7">
+                          <p><b><input class="fix-content" id="templateFixNumberSessionTitle3" name="templateFixNumberSessionTitle3" type="text" value="Văn học hiện đại 2"></b></p>
+                          <p><textarea class="fix-content" id="templateFixSessionContent3" name="templateFixSessionContent3">Từ thế kỉ thứ X đén trước khi hình thành văn học Việt Nam chỉ có văn học dân gian. Đầu thế kỉ thứ X đánh dấu sự ra đời của dòng văn học Việt Nam. Văn học còn được gọi là: Văn học trung đại</textarea></p>
+                        </div>
+                        <div class="col-3">
+                          <p><input class="fix-content" id="templateFixTimeBegin3" name="templateFixTimeBegin3"></p>
+                          <p><input class="fix-content" id="templateFixTimeFinish3" name="templateFixTimeFinish3"></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2"><b>Buổi 4</b></div>
+                        <div class="col-7">
+                          <p><b><input class="fix-content" id="templateFixNumberSessionTitle4" name="templateFixNumberSessionTitle4" type="text" value="Văn học nước ngoài"></b></p>
+                          <p><textarea class="fix-content" id="templateFixSessionContent4" name="templateFixSessionContent4">Từ thế kỉ thứ X đén trước khi hình thành văn học Việt Nam chỉ có văn học dân gian. Đầu thế kỉ thứ X đánh dấu sự ra đời của dòng văn học Việt Nam. Văn học còn được gọi là: Văn học trung đại</textarea></p>
+                        </div>
+                        <div class="col-3">
+                          <p><input class="fix-content" id="templateFixTimeBegin4" name="templateFixTimeBegin4"></p>
+                          <p><input class="fix-content" id="templateFixTimeFinish4" name="templateFixTimeFinish4"></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2"><b>Buổi 5</b></div>
+                        <div class="col-7">
+                          <p><b><input class="fix-content" id="templateFixNumberSessionTitle5" name="templateFixNumberSessionTitle5" type="text" value="Văn học nước ngoài"></b></p>
+                          <p><textarea class="fix-content" id="templateFixSessionContent5" name="templateFixSessionContent5">Từ thế kỉ thứ X đén trước khi hình thành văn học Việt Nam chỉ có văn học dân gian. Đầu thế kỉ thứ X đánh dấu sự ra đời của dòng văn học Việt Nam. Văn học còn được gọi là: Văn học trung đại</textarea></p>
+                        </div>
+                        <div class="col-3">
+                          <p><input class="fix-content" id="templateFixTimeBegin5" name="templateFixTimeBegin5"></p>
+                          <p><input class="fix-content" id="templateFixTimeFinish5" name="templateFixTimeFinish5"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="" class="btn btn-next">Đăng khóa học</i></a>
+              </div>
+            </section>
+          </div> <!-- / col-9 -->
+        </div>
+      </div> <!-- / container -->
+    </main> <!-- / main -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12 col-md-6 col-lg-3 block">
+            <div class="block-headline">Hỗ trợ khách hàng</div>
+            <div class="contact">
+              <div class="item">
+                <a class="item-wrapper" href="tel: +849006675">
+                  <img src="src/images/icon-phone.png" alt="">
+                  <span><b>1900 6675</b></span>
+                </a>
+              </div>
+              <div class="item">
+                <a class="item-wrapper" href="mailto: info@hocplus.vn">
+                  <img src="src/images/icon-mail.png" alt="">
+                  <span>info@hocplus.vn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Về HocPlus</div>
+              <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="http://">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Chính sách bảo mật</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Điều khoản sử dụng</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Hướng dẫn mua khóa học</a></li>
+              </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Tải về</div>
+              <div class="link-app">
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/app-store.png" alt=""></a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/google-play.png" alt=""></a>
+              </div>
+              <div class="img"><img src="images/bocongthuong.png" alt=""></div>
+              <div class="img"><img src="images/DMCA.jpg" alt=""></div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Kết nối với chúng tôi</div>
+              <div class="social">
+                <a class="social-item" href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/facebook.png" alt="">
+                </a>
+                <a class="social-item" href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/youtube.png" alt="">
+                </a>
+              </div>
+              <div class="link-forum">
+                <a href="http://" target="_blank" rel="noopener noreferrer">Forum hocplus</a>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </footer> <!-- / footer -->
+
+  </div> <!-- / App -->
+
+  <!-- js -->
+  <script src="src/js/jquery-3.3.1.min.js"></script>
+  <script src="src/js/jquery-ui.min.js"></script>
+
+  <script src="src/js/bootstrap-datetimepicker/moment.min.js"></script>
+  <script src="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+
+  <script src="src/js/Chart.min.js"></script>
+  <script src="src/js/dropzone.js"></script>
+  <script src="src/js/jquery.multiselect.js"></script>
+  <script src="src/js/slick.min.js"></script>
+  <script src="src/js/main.js"></script>
+
+  <!-- value thời gian -->
+  <script type="text/javascript">
+    $(function () {
+        $('#templateFixTimeBegin1').datetimepicker({
+            defaultDate: "3/13/2019 00:00",
+        });
+        $('#templateFixTimeFinish1').datetimepicker({
+            defaultDate: "3/13/2019 00:00",
+        });
+        $('#templateFixTimeBegin2').datetimepicker({
+            defaultDate: "3/13/2019 00:00",
+        });
+        $('#templateFixTimeFinish2').datetimepicker({
+            defaultDate: "3/13/2019 00:00",
+        });
+        $('#templateFixTimeBegin3').datetimepicker({
+            defaultDate: "3/13/2019 00:00",
+        });
+        $('#templateFixTimeFinish3').datetimepicker({
+            defaultDate: "3/13/2019 00:00",
+        });
+        $('#templateFixTimeBegin4').datetimepicker({
+            defaultDate: "3/13/2019 00:00",
+        });
+        $('#templateFixTimeFinish4').datetimepicker({
+            defaultDate: "3/13/2019 00:00",
+        });
+        $('#templateFixTimeBegin5').datetimepicker({
+            defaultDate: "3/13/2019 00:00",
+        });
+        $('#templateFixTimeFinish5').datetimepicker({
+            defaultDate: "3/13/2019 00:00",
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

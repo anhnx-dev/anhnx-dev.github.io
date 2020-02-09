@@ -1,0 +1,422 @@
+@import '../variables';
+
+.ml-list {
+    padding-top: 5px;
+
+    .headline {
+        text-align: center;
+
+        @media (min-width: $breakpoints-md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        .title {
+            @extend .big-text-01;
+            margin: 0;
+            color: $cl-04;
+            text-transform: uppercase;
+
+            @media (min-width: $breakpoints-md) {
+                padding-right: 165px;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            background: $cl-04;
+            color: $c-white;
+            padding: 8px 25px;
+            border: 0;
+            margin-top: 10px;
+
+            @media (min-width: $breakpoints-md) {
+                display: flex;
+                width: 150px;
+                padding: 0;
+                height: 40px;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .action {
+        display: flex;
+        align-items: center;
+
+        .edit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            align-items: center;
+            width: 54px;
+            height: 32px;
+            border-radius: $round;
+            border: 1px solid $bc-01;
+            cursor: pointer;
+
+            .fa-arrow-right {
+                transform: rotate(90deg);
+            }
+
+            .list {
+                @extend .body-text;
+                display: none;
+                position: absolute;
+                z-index: 2;
+                padding: 0;
+                margin: 0;
+                top: 100%;
+                right: 0;
+                width: 195px;
+                padding-top: 10px;
+
+                >li {
+                    list-style: none;
+                    background: $c-white;
+                    border: 1px solid $bc-01;
+                    border-top: 0;
+                    overflow: hidden;
+
+                    &:nth-child(1) {
+                        border-top: 1px solid $bc-01;
+                        border-radius: $round $round 0 0;
+                    }
+
+                    &:last-of-type {
+                        border-radius: 0 0 $round $round;
+                    }
+
+                    >a {
+                        display: block;
+                        padding: 9px 14px;
+                        text-decoration: none;
+                        color: $c-dark;
+                        transition: $transition;
+
+                        .fa {
+                            margin-right: 8px;
+                            color: $cl-07;
+                        }
+
+                        &:hover {
+                            color: $c-white;
+                            background: $cl-05;
+
+                            .fa {
+                                color: $c-white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .list {
+                    display: block;
+                }
+            }
+
+        }
+
+        .form-check-input {
+            margin-left: 15px;
+        }
+    }
+
+    >.list {
+        @extend .big-text;
+        margin-top: 20px;
+        background: $c-white;
+        box-shadow: $bs-01;
+        padding-bottom: 25px;
+
+        >.c-navigation {
+            padding-top: 25px;
+        }
+
+        .table-responsive {
+            max-height: 457px;
+            border: 1px solid $bc-01;
+
+            .table {
+                thead {
+                    background: $cl-06;
+                    color: $c-white;
+
+                    tr {
+                        th {
+                            text-align: left;
+                            padding: 14.5px 15px;
+
+                            &:nth-child(1) {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        border-top: 1px solid $bc-01;
+
+                        th,
+                        td {
+                            padding: 16px 15px;
+                            vertical-align: initial;
+                        }
+                    }
+                }
+            }
+        }
+
+        .number {
+            width: 140px;
+
+            &.number-student {
+                width: auto;
+            }
+        }
+
+        .title {
+            width: 295px;
+            font-weight: 500;
+
+            a {
+                color: $cl-06;
+                text-decoration: none;
+            }
+        }
+
+        .price {
+            color: $cl-10;
+            font-weight: 700;
+
+            >span {
+                @extend .body-text;
+                font-weight: 400;
+                color: $c-dark;
+            }
+        }
+    }
+
+    .list-course {
+        @extend .big-text;
+        background: $c-white;
+        box-shadow: $bs-01;
+        margin-top: 25px;
+
+        .c-navigation {
+            padding: 25px 15px;
+        }
+
+        .name {
+            font-weight: 500;
+
+            a {
+                color: $cl-06;
+                text-decoration: none;
+            }
+        }
+
+        .price {
+            color: $cl-10;
+            font-weight: 700;
+
+            >span {
+                @extend .body-text;
+                font-weight: 400;
+                color: $c-dark;
+            }
+        }
+
+        .grid {
+            display: flex;
+
+            .grid-col {
+                padding-left: 7.5px;
+                padding-right: 7.5px;
+                flex: initial;
+                max-width: initial;
+            }
+
+            .col-07 {
+                width: 7%;
+            }
+            .col-10 {
+                width: 10%;
+            }
+
+            .col-13 {
+                width: 13%;
+            }
+
+            .col-15 {
+                width: 15%;
+            }
+
+            .col-20 {
+                width: 20%;
+            }
+
+            .col-25 {
+                width: 25%;
+            }
+
+            .col-30 {
+                width: 30%;
+            }
+
+        }
+
+        .title {
+            background: $cl-06;
+            color: $c-white;
+            font-weight: 700;
+            padding: 13px 0;
+
+            .grid-col:nth-child(1) {
+                text-align: center;
+            }
+        }
+
+        .group-item {
+            .item {
+                >.grid {
+                    border-bottom: 1px solid $bc-01;
+                    padding: 13px 0;
+
+                    .grid-col:nth-child(1) {
+                        text-align: center;
+                        font-weight: 700;
+                    }
+                }
+
+                .item-detail {
+                    background: $bc-04;
+                    padding: 0;
+                    max-height: 0;
+                    opacity: 0;
+                    overflow: hidden;
+                    transition: $transition;
+
+                    .detail-title {
+                        @extend .big-text-01;
+                        text-align: center;
+                        color: $cl-06;
+                        margin: 0;
+                        padding: 0 15px 25px 15px;
+                    }
+
+                    .info {
+                        background: $c-white;
+
+                        .info-title {
+                            background: $cl-06;
+                            color: $c-white;
+                            font-weight: 700;
+                            padding: 13px 0;
+
+                            .grid-col:nth-child(1) {
+                                padding-left: 30px;
+                            }
+                        }
+
+                        .item-info {
+                            border-bottom: 1px solid $bc-01;
+                            padding: 13px 0;
+
+                            .grid-col:nth-child(1) {
+                                padding-left: 30px;
+                            }
+
+                            .btn {
+                                min-width: 150px;
+                                max-width: 100%;
+                                margin-top: 10px;
+                                padding: 8px 20px;
+                                border: 0;
+                                color: $c-white;
+
+                                &.btn-cyan {
+                                    background: $cl-07;
+
+                                    &:hover {
+                                        background: $cl-04;
+                                    }
+                                }
+
+                                &.btn-blue {
+                                    background: $cl-06;
+
+                                    &:hover {
+                                        background: $cl-04;
+                                    }
+                                }
+
+                                &.btn-red {
+                                    background: $cl-04;
+
+                                    &:hover {
+                                        background: $cl-06;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .btn-detail {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    .status {
+                        position: relative;
+                        margin-left: 10px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: $cl-06;
+
+                        &::after,
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 1px;
+                            background: $c-white;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate3d(-50%, -50%, 0);
+                            transition: $transition;
+                        }
+
+                        &::after {
+                            transform: translate3d(-50%, -50%, 0) rotate(90deg);
+                        }
+                    }
+                }
+
+                &.item-active {
+                    .item-detail {
+                        padding: 25px 25px 35px 25px;
+                        max-height: 999px;
+                        opacity: 1;
+                        overflow: initial;
+                    }
+                    .btn-detail .status {
+                        &::after {
+                            transform: translate3d(-50%, -50%, 0) rotate(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

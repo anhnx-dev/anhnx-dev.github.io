@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker-standalone.css">
+  <link rel="stylesheet" href="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" href="src/css/main.min.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <header class="header">
+
+      <div class="c-topbar">
+        <div class="container topbar-container">
+          <div class="banner">
+            <a href="index.html">
+              <img src="images/Logo HocPlus.svg" alt="">
+            </a>
+          </div>
+          <div class="my-user">
+            <div class="user-inner">
+              <div class="avatar">
+                <img src="images/avatar-02.png" alt="avatar">
+              </div>
+              <div class="name">Âu Hà My</div>
+            </div>
+            <div class="dropdown">
+              <ul class="list">
+                <li class="item"><a href="quan-ly-bang-thong-tin.html"><i class="fa fa-dashboard"></i> <span>Bảng thông
+                      tin</span></a></li>
+                <li class="item"><a href="quan-ly-khoa-hoc-cua-toi.html"><i class="fa fa-briefcase"></i> <span>Khóa học
+                      của tôi</span></a></li>
+                <li class="item"><a href="quan-ly-tai-khoa.html"><i class="fa fa-gear"></i> <span>Quản lý tài khoản</span></a></li>
+                <li class="item"><a href=""><i class="fa fa-log-out"></i> <span>Đăng xuất</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / Topbar -->
+
+      <nav class="c-navbar">
+        <div class="container navbar-container">
+          <ul class="nav">
+            <li class="nav-item active">
+              <a href="" class="nav-link"><i class="fa fa-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </nav> <!-- / Navbar -->
+
+    </header> <!-- / Header -->
+
+    <main class="main">
+
+      <div class="container section">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="ml-info">
+              <div class="inner-info">
+                <div class="info">
+                  <a href="" class="btn-modify">Sửa</a>
+                  <div class="avatar">
+                    <img src="images/avatar-02.png" alt="avatar">
+                  </div>
+                  <div class="content">
+                    <div class="name">Âu Hà My</div>
+                    <div class="work">Giảng viên ĐH Hà Nội</div>
+                  </div>
+                  <div class="info-class">
+                    <div class="degree">
+                      <div class="title">Học vị</div>
+                      <div class="content">Thạc sỹ</div>
+                    </div>
+                    <div class="class">
+                      <div class="title">Bộ môn giảng dạy</div>
+                      <div class="content">Tiếng Anh, Toán</div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="list">
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="quan-ly-bang-thong-tin.html" class="nav-link">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Bảng thông tin</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-khoa-hoc-cua-toi.html" class="nav-link">
+                        <i class="fa fa-briefcase"></i>
+                        <span>Khóa học của tôi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-vi.html" class="nav-link">
+                        <i class="fa fa-money"></i>
+                        <span>Ví của tôi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-tai-lieu.html" class="nav-link">
+                        <i class="fa fa-folder-open"></i>
+                        <span>Quản lý tài liệu</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-de-thi.html" class="nav-link">
+                        <i class="fa fa-layers"></i>
+                        <span>Quản lý bộ đề</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-cau-hoi.html" class="nav-link">
+                        <i class="fa fa-question"></i>
+                        <span>Quản lý câu hỏi</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-tai-khoa.html" class="nav-link">
+                        <i class="fa fa-gear"></i>
+                        <span>Quản lý tài khoản</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="quan-ly-binh-luan.html" class="nav-link">
+                        <i class="fa fa-comments"></i>
+                        <span>Quản lý bình luận</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div> <!-- / col-3 -->
+
+          <div class="col-12 col-md-8 col-lg-9">
+            <section class="ml-file">
+              <div class="file-header">
+                <div class="btn-group">
+                  <button class="btn btn-new"><i class="fa fa-add"></i> <span>Tạo folder</span></button>
+                  <button class="btn btn-upload"><i class="fa fa-upload"></i> <span>Upload</span></button>
+                  <button class="btn btn-delete"><i class="fa fa-trash"></i> <span>Xóa folder</span></button>
+                </div>
+                <div class="function">
+                  <div class="dropdown">
+                    <span>Tác vụ <i class="fa fa-arrow-right"></i></span>
+                    <div class="inner">
+                      <ul>
+                        <li>
+                          <button><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                        </li>
+                        <li>
+                          <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                        </li>
+                        <li>
+                          <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                </div>
+              </div>
+              <div class="file-main">
+                <div class="left">
+                  <nav class="file-navbar js-file-navbar">
+                    <ul class="nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="">
+                          <span class="title">Ngữ Văn</span>
+                          <span class="number">78</span>
+                        </a>
+                        <ul>
+                          <li class="nav-item">
+                            <a class="nav-link" href="">
+                              <span class="title">Lớp 9</span>
+                              <span class="number">10</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="">
+                              <span class="title">Lớp 8</span>
+                              <span class="number">12</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="">
+                              <span class="title">Lớp 7</span>
+                              <span class="number">21</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="">
+                          <span class="title">Toán</span>
+                          <span class="number">78</span>
+                        </a>
+                        <ul>
+                          <li class="nav-item">
+                            <a class="nav-link" href="">
+                              <span class="title">Lớp 9</span>
+                              <span class="number">10</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="">
+                              <span class="title">Lớp 8</span>
+                              <span class="number">12</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="">
+                              <span class="title">Lớp 7</span>
+                              <span class="number">21</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="attention">Kích thước file tối đa: 25MB</div>
+                  </nav>
+                </div>
+                <div class="right">
+                  <div class="file-category">
+                    <nav class="navbar">
+                      <ul class="nav">
+                        <li class="item">
+                          <a href="">
+                            <div class="number">
+                              <span>10</span>
+                            </div>
+                            <div class="title">Lớp 9</div>
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="">
+                            <div class="number">
+                              <span>12</span>
+                            </div>
+                            <div class="title">Lớp 8</div>
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="">
+                            <div class="number">
+                              <span>21</span>
+                            </div>
+                            <div class="title">Lớp 7</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <div class="group">
+                      <figure class="file-item file-pdf">
+                        <div class="inner">
+                          <div class="content">
+                            <h3 class="title"><a href="">Tài liệu ôn thi học sinh giỏi văn 10</a></h3>
+                            <div class="info">Upload ngày: 16/1/2018 - 343.6KB</div>
+                          </div>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                                  </li>
+                                  <li>
+                                    <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </div>
+                      </figure> <!-- / item -->
+                      <figure class="file-item file-powerpoint">
+                        <div class="inner">
+                          <div class="content">
+                            <h3 class="title"><a href="">Tài Liệu Ôn Thi Học Sinh Giỏi Môn Ngữ Văn Lớp 10</a></h3>
+                            <div class="info">Upload ngày: 16/1/2018 - 343.6KB</div>
+                          </div>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                                  </li>
+                                  <li>
+                                    <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </div>
+                      </figure> <!-- / item -->
+                      <figure class="file-item file-word">
+                        <div class="inner">
+                          <div class="content">
+                            <h3 class="title"><a href="">Đề thi minh họa THPT quốc gia năm 2018 môn Ngữ Văn</a></h3>
+                            <div class="info">Upload ngày: 16/1/2018 - 343.6KB</div>
+                          </div>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                                  </li>
+                                  <li>
+                                    <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </div>
+                      </figure> <!-- / item -->
+                      <figure class="file-item file-pdf">
+                        <div class="inner">
+                          <div class="content">
+                            <h3 class="title"><a href="">Tài liệu ôn thi học sinh giỏi văn 10</a></h3>
+                            <div class="info">Upload ngày: 16/1/2018 - 343.6KB</div>
+                          </div>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                                  </li>
+                                  <li>
+                                    <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </div>
+                      </figure> <!-- / item -->
+                      <figure class="file-item file-powerpoint">
+                        <div class="inner">
+                          <div class="content">
+                            <h3 class="title"><a href="">Tài Liệu Ôn Thi Học Sinh Giỏi Môn Ngữ Văn Lớp 10</a></h3>
+                            <div class="info">Upload ngày: 16/1/2018 - 343.6KB</div>
+                          </div>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                                  </li>
+                                  <li>
+                                    <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </div>
+                      </figure> <!-- / item -->
+                      <figure class="file-item file-word">
+                        <div class="inner">
+                          <div class="content">
+                            <h3 class="title"><a href="">Đề thi minh họa THPT quốc gia năm 2018 môn Ngữ Văn</a></h3>
+                            <div class="info">Upload ngày: 16/1/2018 - 343.6KB</div>
+                          </div>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                                  </li>
+                                  <li>
+                                    <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </div>
+                      </figure> <!-- / item -->
+                      <figure class="file-item file-powerpoint">
+                        <div class="inner">
+                          <div class="content">
+                            <h3 class="title"><a href="">Tài Liệu Ôn Thi Học Sinh Giỏi Môn Ngữ Văn Lớp 10</a></h3>
+                            <div class="info">Upload ngày: 16/1/2018 - 343.6KB</div>
+                          </div>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                                  </li>
+                                  <li>
+                                    <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </div>
+                      </figure> <!-- / item -->
+                      <figure class="file-item file-word">
+                        <div class="inner">
+                          <div class="content">
+                            <h3 class="title"><a href="">Đề thi minh họa THPT quốc gia năm 2018 môn Ngữ Văn</a></h3>
+                            <div class="info">Upload ngày: 16/1/2018 - 343.6KB</div>
+                          </div>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                                  </li>
+                                  <li>
+                                    <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </div>
+                      </figure> <!-- / item -->
+                      <figure class="file-item file-pdf">
+                        <div class="inner">
+                          <div class="content">
+                            <h3 class="title"><a href="">Tài liệu ôn thi học sinh giỏi văn 10</a></h3>
+                            <div class="info">Upload ngày: 16/1/2018 - 343.6KB</div>
+                          </div>
+                          <div class="function">
+                            <div class="dropdown">
+                              <span><i class="fa fa-gear"></i> <i class="fa fa-arrow-right"></i></span>
+                              <div class="inner">
+                                <ul>
+                                  <li>
+                                    <button><i class="fa fa-upload"></i> <span>Tải về</span></button>
+                                  </li>
+                                  <li>
+                                    <button><i class="fa fa-arrows"></i> <span>Di chuyển</span></button>
+                                  </li>
+                                  <li>
+                                    <button class="btn-delete js-btn-delete"><i class="fa fa-trash"></i> <span>Xóa</span></button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input" id="mlFunctionFileCheckbox">
+                          </div>
+                        </div>
+                      </figure> <!-- / item -->
+                    </div>
+                    <nav class="c-navigation">
+                      <div class="container">
+                        <ul class="pagination">
+                          <li class="page-item active"><span class="page-link">1</span></li>
+                          <li class="page-item"><a class="page-link" href="">2</a></li>
+                          <li class="page-item"><a class="page-link" href="">3</a></li>
+                          <li class="page-item"><a class="page-link" href="" rel="next">»</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div> <!-- / col-9 -->
+        </div>
+      </div> <!-- / container -->
+    </main> <!-- / main -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12 col-md-6 col-lg-3 block">
+            <div class="block-headline">Hỗ trợ khách hàng</div>
+            <div class="contact">
+              <div class="item">
+                <a class="item-wrapper" href="tel: +849006675">
+                  <img src="src/images/icon-phone.png" alt="">
+                  <span><b>1900 6675</b></span>
+                </a>
+              </div>
+              <div class="item">
+                <a class="item-wrapper" href="mailto: info@hocplus.vn">
+                  <img src="src/images/icon-mail.png" alt="">
+                  <span>info@hocplus.vn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Về HocPlus</div>
+              <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="http://">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Chính sách bảo mật</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Điều khoản sử dụng</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://">Hướng dẫn mua khóa học</a></li>
+              </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Tải về</div>
+              <div class="link-app">
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/app-store.png" alt=""></a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/google-play.png" alt=""></a>
+              </div>
+              <div class="img"><img src="images/bocongthuong.png" alt=""></div>
+              <div class="img"><img src="images/DMCA.jpg" alt=""></div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 block">
+              <div class="block-headline">Kết nối với chúng tôi</div>
+              <div class="social">
+                <a class="social-item" href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/facebook.png" alt="">
+                </a>
+                <a class="social-item" href="http://" target="_blank" rel="noopener noreferrer">
+                  <img src="src/images/youtube.png" alt="">
+                </a>
+              </div>
+              <div class="link-forum">
+                <a href="http://" target="_blank" rel="noopener noreferrer">Forum hocplus</a>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </footer> <!-- / footer -->
+
+    <!-- thông báo xóa tài liệu -->
+    <div class="notification-delete">
+      <div class="content">Bạn có Đồng ý xóa tài liệu không?</div>
+      <div class="btn-group">
+        <button class="btn btn-yes">Đồng ý</button>
+        <button class="btn btn-no">Hủy</button>
+      </div>
+    </div>
+
+  </div> <!-- / App -->
+
+  <!-- js -->
+  <script src="src/js/jquery-3.3.1.min.js"></script>
+  <script src="src/js/jquery-ui.min.js"></script>
+
+  <script src="src/js/bootstrap-datetimepicker/moment.min.js"></script>
+  <script src="src/js/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+
+  <script src="src/js/Chart.min.js"></script>
+  <script src="src/js/dropzone.js"></script>
+  <script src="src/js/jquery.multiselect.js"></script>
+  <script src="src/js/slick.min.js"></script>
+  <script src="src/js/main.js"></script>
+
+
+</body>
+
+</html>

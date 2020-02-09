@@ -1,0 +1,186 @@
+@import '../variables';
+
+.ml-detail {
+    img {
+        max-width: 100%;
+    }
+
+    .btn-next {
+        @extend .medium-text;
+        padding: 9.5px 25px;
+        border-radius: $round;
+        background: $cl-04;
+        color: $c-white;
+        border: 0;
+        margin-top: 30px;
+
+        .fa {
+            @extend .small-text;
+        }
+
+        &:hover {
+            background: $cl-09;
+        }
+    }
+
+    .btn-edit {
+        position: relative;
+        @extend .small-text;
+        text-decoration: none;
+        color: $cl-04;
+
+        .fa {
+            @extend .medium-text;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: $cl-04;
+            left: 0;
+            bottom: 0;
+            transition: $transition;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+    .detail-wrapper {
+        background: $c-white;
+        box-shadow: $bs-01;
+        padding: 25px;
+        margin-top: 30px;
+
+        .headline {
+            .title {
+                @extend .title-text;
+                margin: 0;
+                display: inline-block;
+                text-transform: uppercase;
+            }
+
+            .btn-edit {
+                margin-left: 15px;
+            }
+        }
+
+        .media {
+            margin-top: 15px;
+        }
+
+        .info {
+            position: relative;
+            padding-right: 40px;
+
+            .btn-edit {
+                position: absolute;
+                top: 20px;
+                right: 0;
+            }
+
+            .list {
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 0;
+
+                .item {
+                    margin-top: 25px;
+                    list-style: none;
+                }
+            }
+        }
+
+        .ingredient {
+            margin-top: 30px;
+
+            .ingredient-headline {
+                .title {
+                    @extend .big-text;
+                    margin: 0;
+                    display: inline-block;
+                }
+
+                .btn-edit {
+                    margin-left: 15px;
+                }
+
+            }
+
+            >ol {
+                margin: 15px 0 0 0;
+                padding: 0;
+                >li {
+                    position: relative;
+                    padding-left: 30px;
+                    list-style: none;
+                    margin-top: 10px;
+                    &::before {
+                        content: '\e90a';
+                        font-family: $f-icon;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        color: $cl-09;
+                    }
+                }
+            }
+            >ul {
+                margin: 15px 0 0 0;
+                padding: 0;
+                >li {
+                    position: relative;
+                    padding-left: 17px;
+                    list-style: none;
+                    margin-top: 5px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        background: $cl-09;
+                        top: 6px;
+                        left: 0;
+                    }
+                }
+            }
+            .calendar {
+                border: 1px solid $bc-01;
+                margin: 20px 0 0 0;
+                .row {
+                    margin: 0;
+                    border-top: 1px solid $bc-01;
+                    &:nth-child(1) {
+                        border-top: 0;
+                    }
+                    .col-2,
+                    .col-3 {
+                        text-align: center;
+                    }
+                    .col-2,
+                    .col-7,
+                    .col-3 {
+                        padding: 14px 15px;
+                        p {
+                            margin: 5px 0 0 0;
+                            &:nth-child(1) {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                    .col-2,
+                    .col-7 {
+                        border-right: 1px solid $bc-01;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

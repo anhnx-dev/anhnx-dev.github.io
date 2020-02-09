@@ -1,0 +1,337 @@
+@import '../variables';
+
+.c-user {
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(0);
+    width: calc(100% - 30px);
+    overflow: hidden;
+    border-radius: $round1;
+    background: $c-white;
+    text-align: center;
+    box-shadow: $bs-01;
+    opacity: 0;
+    transition: $transition;
+
+    @media (min-width: $breakpoints-lg) {
+        width: 1000px;
+    }
+
+    .exit {
+        position: absolute;
+        z-index: 3;
+        width: 21px;
+        height: 21px;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 25px;
+            background: $c-white;
+            border-radius: 999px;
+            top: 50%;
+            left: 50%;
+        }
+
+        &::after {
+            transform: translate3d(-50%, -50%, 0) rotate(45deg);
+        }
+
+        &::before {
+            transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+        }
+    }
+
+    .user-inner {
+        @media (min-width: $breakpoints-lg) {
+            display: flex;
+        }
+
+        .left {
+            max-width: initial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+
+            @media (min-width: $breakpoints-lg) {
+                max-width: 50%;
+            }
+
+            .inner {
+                max-width: 100%;
+
+                >.content {
+                    .welcome {
+                        text-transform: uppercase;
+                    }
+
+                    .img {
+                        margin-top: 5px;
+                    }
+
+                    .text {
+                        @extend .medium-text;
+                        margin-top: 10px;
+                    }
+
+                    display: none;
+
+                    &.show {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .right {
+            position: relative;
+            padding: 0;
+            display: none;
+
+            @media (min-width: $breakpoints-lg) {
+                display: block;
+            }
+
+            .bg {
+                @extend .img-cover;
+
+                &::before {
+                    padding-bottom: 110%;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: $cl-04;
+                    opacity: .8;
+                }
+
+                >span {
+                    @extend .img-cover__wrapper;
+                }
+            }
+
+            .content {
+                @extend .title-text;
+                position: absolute;
+                z-index: 2;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                color: $c-white;
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+        .form-log-in,
+        .form-restore-password,
+        .form-new-password {
+            margin-top: 10px;
+            display: none;
+            justify-content: center;
+
+            form {
+                width: 300px;
+                max-width: 100%;
+            }
+
+            &.show {
+                display: flex;
+            }
+        }
+
+        .form-restore-password,
+        .form-new-password {
+            .title {
+                @extend .title-text;
+                font-weight: 700;
+                color: $cl-04;
+            }
+
+            .content {
+                margin-top: 15px;
+                color: $cl-17;
+            }
+
+            .closed {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+
+                &::after,
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    width: 10px;
+                    background: $cl-17;
+                    top: 50%;
+                    left: 50%;
+                }
+
+                &::after {
+                    transform: translate3d(-50%, -50%, 0) rotate(45deg);
+                }
+
+                &::before {
+                    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+                }
+            }
+        }
+
+        .notification {
+            margin-top: 20px;
+            position: relative;
+            background: $cl-18;
+            border: 1px solid $bc-05;
+            border-radius: 4px;
+            padding: 10px;
+
+            .text {
+                @extend .small-text;
+                color: $cl-19;
+            }
+
+            .closed {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+            }
+        }
+
+        .form-otp {
+            .title {
+                @extend .big-text;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .form-group {
+                .form-control {
+                    width: 100%;
+                    padding: 11px 15px;
+                    text-align: center;
+                    min-width: 200px;
+                    max-width: 100%;
+                }
+            }
+
+            .btn {
+                margin-top: 15px;
+                
+                border: 0;
+                border-radius: 999px;
+                color: $c-white;
+                background: $cl-04;
+                padding: 7.5px 50px;
+                outline: none;
+
+                &:hover {
+                    background: $cl-06;
+                }
+            }
+        }
+
+        .form-group {
+            position: relative;
+            margin-top: 20px;
+
+            >.star {
+                color: $c-red;
+                position: absolute;
+                top: 50%;
+                right: -15px;
+                transform: translateY(-50%);
+            }
+        }
+
+        .form-control {
+            border-radius: 999px;
+            border: 1px solid #f8f9fa;
+            background: #fff;
+            width: 100%;
+            padding: 11px 15px 11px 40px;
+            border: 1px solid #9b9b9b;
+            outline: none;
+
+            &.form-control-user {
+                background: url(../images/mail.png) no-repeat left 15px top 12px;
+            }
+
+            &.form-control-password {
+                background: url(../images/pass.png) no-repeat left 15px top 9px;
+            }
+        }
+
+        .form-check {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            color: $cl-17;
+
+            .btn-forgot-password {
+                font-style: italic;
+                text-decoration: underline;
+                cursor: pointer;
+                transition: $transition;
+
+                &:hover {
+                    color: $cl-06;
+                }
+            }
+        }
+
+        .btn-log-in,
+        .btn-next,
+        .btn-finish {
+            margin-top: 15px;
+            width: 100%;
+            border: 0;
+            border-radius: 999px;
+            color: $c-white;
+            background: $cl-04;
+            padding: 7.5px 25px;
+            outline: none;
+
+            &:hover {
+                background: $cl-06;
+            }
+        }
+    }
+}
+
+.user-popup-active {
+    .over-body {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .c-user {
+        transform: translate3d(-50%, -50%, 0) scale(1);
+        opacity: 1;
+    }
+}

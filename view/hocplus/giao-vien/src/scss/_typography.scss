@@ -1,0 +1,51 @@
+@import '_variables';
+@import '_mixins';
+
+.body-text {
+  font-size: .75rem; // 12px
+  @media (min-width: $breakpoints-md) {
+    font-size: .875rem; // 14px
+  }
+}
+
+.small-text {
+  font-size: .6875rem; // 11px
+  @media (min-width: $breakpoints-md) {
+    font-size: .8125rem; // 13px
+  }
+}
+
+.medium-text {
+  font-size: .8125rem; // 13px
+  @media (min-width: $breakpoints-md) {
+    font-size: .9375rem; // 15px
+  }
+}
+
+.big-text {
+  font-size: .875rem; // 14px
+  @media (min-width: $breakpoints-md) {
+    font-size: 1rem; // 16px
+  }
+}
+
+.big-text-01 {
+  font-size: 1rem; // 16px
+  @media (min-width: $breakpoints-md) {
+    font-size: 1.125rem; // 18px
+  }
+}
+
+.title-text {
+  font-size: 1rem; // 16px
+  @media (min-width: $breakpoints-md) {
+    font-size: 1.25rem; // 20px
+  }
+}
+
+.title-text-01 {
+  font-size: 1.25rem; // 20px
+  @media (min-width: $breakpoints-md) {
+    font-size: 1.5rem; // 24px
+  }
+}

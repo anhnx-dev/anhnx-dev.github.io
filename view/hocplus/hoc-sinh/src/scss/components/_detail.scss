@@ -1,0 +1,562 @@
+@import '../variables';
+
+
+.c-detail {
+    img {
+        max-width: 100%;
+    }
+
+    .headline {
+        margin-left: -5px;
+        margin-right: -5px;
+
+        .title {
+            @extend .title-text;
+            display: inline-block;
+            margin: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .number-evaluate {
+            display: inline-block;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .name {
+            @extend .small-text;
+            color: $cl-04;
+        }
+    }
+
+    >.info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        @extend .small-text;
+
+        .copyright-date {
+            .copyright {
+                color: $cl-04;
+                font-weight: 700;
+            }
+        }
+
+        .view-commit {
+            .commit {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .tags {
+        position: relative;
+        margin: 20px -5px 0 -5px;
+        border-top: 1px solid $bc-02;
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &::before {
+            content: '\e91e';
+            transform: scale(-1) rotate(-90deg) translateX(3px);
+            font-family: $f-icon;
+            font-size: 20px;
+            margin: 0 5px;
+        }
+
+        .tag-item {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: $cl-23;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-radius: $round;
+            color: $c-dark;
+            text-decoration: none;
+            transition: $transition;
+
+            &:hover {
+                background: $c-blue;
+                color: $c-white;
+            }
+        }
+    }
+
+    .media {
+        margin-top: 15px;
+    }
+
+    .feature {
+        @extend .section;
+        padding: 20px;
+        border: 1px solid $bc-01;
+
+        .title {
+            @extend .small-text;
+            font-weight: 700;
+            border-bottom: 1px solid $bc-01;
+            padding-bottom: 10px;
+        }
+
+        .list {
+            padding: 0;
+
+            .item {
+                position: relative;
+                padding-left: 20px;
+                list-style: none;
+                margin-top: 10px;
+
+                .fa {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: $cl-06;
+                }
+            }
+        }
+    }
+
+    .result,
+    .request {
+        @extend .section;
+
+        .title {
+            @extend .big-text;
+            color: $cl-04;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .list {
+            margin: 10px 0 0 0;
+            padding: 0;
+
+            .item {
+                position: relative;
+                padding-left: 15px;
+                margin-top: 5px;
+                list-style: none;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 6px;
+                    left: 0;
+                    width: 6px;
+                    height: 6px;
+                    background: $cl-06;
+                }
+            }
+        }
+    }
+
+    .calendar {
+        @extend .section;
+
+        >.title {
+            @extend .big-text;
+            color: $cl-04;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .inner {
+            margin-top: 15px;
+            border-left: 1px solid $bc-01;
+            border-bottom: 1px solid $bc-01;
+
+            .top {
+                @extend .big-text;
+                font-weight: 700;
+            }
+
+            .col-grid-2,
+            .title {
+                font-weight: 700;
+            }
+
+            .info {
+                margin-top: 10px;
+            }
+
+            .statu {
+                width: 100%;
+                font-weight: 700;
+                color: $c-white;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: $round;
+                text-decoration: none;
+            }
+
+            .statu-cyan {
+                background: $cl-07;
+            }
+
+            .statu-blue {
+                background: $cl-06;
+            }
+
+            .statu-red {
+                background: $cl-04;
+            }
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+
+            .col-grid-2 {
+                flex: 0 0 16.666667%;
+                max-width: 16.666667%;
+                text-align: center;
+                padding: 5px;
+
+                @media (min-width: $breakpoints-lg) {
+                    padding: 15px;
+                }
+
+                border-right: 1px solid $bc-01;
+                border-top: 1px solid $bc-01;
+            }
+
+            .col-grid-7 {
+                flex: 0 0 58.333333%;
+                max-width: 58.333333%;
+                padding: 5px;
+
+                @media (min-width: $breakpoints-lg) {
+                    padding: 15px;
+                }
+
+                border-right: 1px solid $bc-01;
+                border-top: 1px solid $bc-01;
+            }
+
+            .col-grid-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+                text-align: center;
+                padding: 5px;
+
+                @media (min-width: $breakpoints-lg) {
+                    padding: 15px;
+                }
+
+                border-right: 1px solid $bc-01;
+                border-top: 1px solid $bc-01;
+            }
+        }
+
+    }
+
+    .addthis_inline_share_toolbox_8swg {
+        @extend .section;
+    }
+
+    .evaluate {
+        @extend .section;
+
+        >.btn-evaluate {
+            @extend .big-text;
+            .text {
+                margin-right: 10px;
+                color: $cl-04;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .stars {
+                .fa {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .inner {
+            margin-top: 15px;
+
+            .fa-star {
+                @extend .title-text;
+                color: $cl-12;
+
+                &.active {
+                    color: $cl-11;
+                }
+            }
+
+            .left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .inner {
+                    text-align: center;
+
+                    .number {
+                        font-size: 75px;
+                        font-weight: 900;
+                        line-height: 1.2;
+                        color: $cl-04;
+                    }
+                }
+            }
+
+            .center {
+                margin-top: 20px;
+
+                @media (min-width: $breakpoints-lg) {
+                    margin-top: 0;
+                }
+
+                .progress {
+                    display: flex;
+                    height: 20px;
+                    overflow: hidden;
+                    font-size: .75rem;
+                    background-color: $cl-13;
+                    border-radius: $round1;
+                    margin-top: 15px;
+
+                    &:nth-child(1) {
+                        margin-top: 0;
+                    }
+
+                    .progress-bar {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: #fff;
+                        text-align: center;
+                        white-space: nowrap;
+                        background-color: $cl-07;
+                        transition: width .6s ease;
+                    }
+                }
+            }
+
+            .right {
+                margin-top: 20px;
+                padding-left: 0;
+
+                @media (min-width: $breakpoints-lg) {
+                    margin-top: 0;
+                    padding-left: 15px;
+                }
+
+                .statistic {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 20px;
+                    margin-top: 15px;
+
+                    &:nth-child(1) {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-commit {
+        @extend .section;
+
+        >.title {
+            @extend .big-text;
+            color: $cl-04;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        >p {
+            margin: 5px 0 0 0;
+        }
+
+        .form {
+            .form-group {
+                margin-top: 20px;
+
+                .form-control {
+                    width: 100%;
+                    padding: 11px 15px;
+                    border-color: $bc-03;
+                    border-radius: 0;
+                }
+            }
+
+            .submit {
+                margin-top: 15px;
+
+                @media (min-width: $breakpoints-lg) {
+                    margin-top: 30px;
+                }
+
+                .inner {
+                    @media (min-width: $breakpoints-lg) {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .btn-red {
+                        width: 125px;
+                        height: 40px;
+                        text-transform: uppercase;
+                        color: $c-white;
+                        background: $cl-04;
+                        border: 0;
+                        margin-top: 10px;
+
+                        @media (min-width: $breakpoints-lg) {
+                            margin-top: 0;
+                        }
+
+                        ;
+
+                        &:hover {
+                            background: $c-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .user-commit {
+        .list {
+            margin: 0;
+            padding: 0;
+
+            .item {
+                position: relative;
+                padding-left: 70px;
+
+                @media (min-width: $breakpoints-lg) {
+                    padding-left: 85px;
+                }
+
+                list-style: none;
+                margin-top: 10px;
+
+                @media (min-width: $breakpoints-md) {
+                    margin-top: 20px;
+                }
+
+                .avatar {
+                    @extend .img-cover;
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: $round;
+                    top: 0;
+                    left: 0;
+
+                    >.img {
+                        @extend .img-cover__wrapper;
+                    }
+                }
+
+                .info {
+                    padding: 15px;
+                    border: 1px solid $bc-03;
+
+                    .top {
+                        @extend .small-text;
+
+                        @media (min-width: $breakpoints-lg) {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        .date {
+                            color: $c-gray;
+                        }
+                    }
+
+                    .content {
+                        margin-top: 10px;
+                    }
+
+                    .prefer {
+                        margin-top: 10px;
+
+                        >span {
+                            @extend .small-text;
+                            color: $cl-06;
+                            margin-left: 5px;
+                        }
+                    }
+
+                    .comments {
+                        margin: 10px 0 0 10px;
+                    }
+                }
+
+                >.list {
+                    padding-left: 15px;
+
+                    @media (min-width: $breakpoints-md) {
+                        padding-left: 30px;
+                    }
+
+                    .item {
+                        padding-left: 0;
+                        background: $cl-13;
+
+                        .info {
+                            border: none;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    &.news {
+        margin-top: 20px;
+
+        .form-commit {
+            @media (min-width: $breakpoints-lg) {
+                width: 85%;
+            }
+
+            .title {
+                color: $cl-09;
+            }
+        }
+
+        .user-commit {
+            margin-top: 50px;
+
+            @media (min-width: $breakpoints-lg) {
+                width: 85%;
+            }
+        }
+    }
+}

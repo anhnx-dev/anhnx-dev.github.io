@@ -1,0 +1,185 @@
+@import '../variables';
+
+.ml-session {
+    .headline {
+        text-align: center;
+
+        @media (min-width: $breakpoints-md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        .title {
+            @extend .big-text-01;
+            margin: 0;
+            color: $cl-04;
+            text-transform: uppercase;
+
+            @media (min-width: $breakpoints-md) {
+                padding-right: 165px;
+            }
+        }
+    }
+
+    >.list {
+        @extend .big-text;
+        margin-top: 20px;
+        background: $c-white;
+        box-shadow: $bs-01;
+        padding-bottom: 25px;
+
+        >.c-navigation {
+            padding-top: 25px;
+        }
+
+        .table-responsive {
+            max-height: 854px;
+            border: 1px solid $bc-01;
+
+            .table {
+                thead {
+                    background: $cl-06;
+                    color: $c-white;
+
+                    tr {
+                        th {
+                            text-align: left;
+                            padding: 15px;
+
+                            &:nth-child(1) {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        border-top: 1px solid $bc-01;
+
+                        th,
+                        td {
+                            padding: 15px;
+                            vertical-align: initial;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-list {
+            @extend .big-text;
+            color: $cl-06;
+            cursor: pointer;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 1px;
+                left: 0;
+                bottom: 0;
+                background: $cl-06;
+                transition: $transition;
+            }
+            &:hover::before {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .list-student {
+        position: fixed;
+        z-index: 9999;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0) scale(0);
+        background: $c-white;
+        box-shadow: $bs-01;
+        padding: 0 30px;
+        width: 810px;
+        max-width: calc(100% - 30px);
+        opacity: 0;
+        transition: $transition;
+        .exit {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 2px;
+                background: $cl-07;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%,-50%,0) rotate(45deg);
+            }
+            &::after {
+                transform: translate3d(-50%,-50%,0) rotate(-45deg);
+            }
+        }
+        .title {
+            @extend .title-text;
+            padding: 35px 0;
+            font-weight: 500;
+            text-align: center;
+        }
+        .item {
+            margin-bottom: 30px;
+            .inner {
+                position: relative;
+                padding-left: 75px;
+                min-height: 60px;
+                .avatar {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .name {
+                    font-weight: 500;
+                    a {
+                        text-decoration: none;
+                        color: $c-dark;
+                        transition: $transition;
+                        &:hover {
+                            color: $cl-06;
+                        }
+                    }
+                }
+                .time {
+                    @extend .small-text;
+                }
+            }
+        }
+    }
+}
+
+.ml-session-active {
+    .over-body {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .list-student {
+        transform: translate3d(-50%, -50%, 0) scale(1);
+        opacity: 1;
+    }
+}

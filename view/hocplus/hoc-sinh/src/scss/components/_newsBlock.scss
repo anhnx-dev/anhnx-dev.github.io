@@ -1,0 +1,48 @@
+@import '../variables';
+
+.c-news-block {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid $bc-01;
+    >.title {
+        @extend .big-text;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .group-item {
+        .item {
+            margin-top: 20px;
+            .inner {
+                position: relative;
+                min-height: 62px;
+                padding-left: 77px;
+                .img {
+                    @extend .img-cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 62px;
+                    height: 62px;
+                    >a {
+                        @extend .img-cover__wrapper;
+                    }
+                }
+                .info {
+                    .title {
+                        @extend .small-text;
+                        margin: 0;
+                        font-weight: 400;
+                        a {
+                            text-decoration: none;
+                            color: $c-dark;
+                            transition: $transition;
+                            &:hover {
+                                color: $c-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

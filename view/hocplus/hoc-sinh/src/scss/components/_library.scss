@@ -1,0 +1,105 @@
+@import '../variables';
+
+.c-library {
+    overflow: hidden;
+
+    .headline {
+        @extend .title-text;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+
+        a {
+            text-decoration: none;
+            color: $c-dark;
+
+            >span {
+                color: $cl-04;
+            }
+        }
+    }
+
+    .img {
+        @extend .img-cover;
+
+        >a {
+            @extend .img-cover__wrapper;
+        }
+    }
+
+
+    .carousel {
+        margin-top: 20px;
+        margin-left: -5px;
+        margin-right: -5px;
+        @media (min-width: $breakpoints-lg) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .item {
+            padding: 0 10px;
+            .title {
+                margin: 10px  0 0 0;
+                text-align: center;
+            }
+        }
+        
+
+        @media (min-width: $breakpoints-lg) {
+            padding-top: 80px;
+            padding-bottom: 50px;
+            margin-left: -130px;
+            margin-right: -130px;
+
+            .inner {
+                .slick-list {
+                    overflow: initial;
+                }
+
+                .slick-arrow {
+                    &.slick-prev {
+                        left: 60px;
+                    }
+
+                    &.slick-next {
+                        right: 60px;
+                    }
+                }
+
+                .item {
+                    opacity: 0;
+                    transition: all .5s ease-in-out;
+                    padding: 0 35px;
+                    pointer-events: none;
+                    >.img {
+                        box-shadow: $bs-02;
+                    }
+
+                    >.title {
+                        text-align: center;
+                        margin: 10px 10px 0 10px;
+                    }
+
+                    &.slick-slide {
+                        transform: scale(.75);
+                    }
+
+                    &.slick-active {
+                        opacity: 1;
+                        pointer-events: auto;
+                    }
+
+                    &.slick-center {
+                        transform: scale(1.5);
+                        >.title {
+                            transform: scale(0.5);
+                            margin-top: 0;
+                            margin-left: -50px;
+                            margin-right: -50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

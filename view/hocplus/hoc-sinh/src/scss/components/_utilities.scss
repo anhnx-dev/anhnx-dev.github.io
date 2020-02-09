@@ -1,0 +1,243 @@
+@import '../_variables';
+
+.c-utilities {
+    background: $cl-08;
+    padding-top: 30px;
+
+    .headline {
+        @extend .title-text;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        color: $cl-04;
+    }
+
+    .utilities-main {
+        margin: 0;
+
+        @media (min-width: $breakpoints-lg) {
+            height: 470px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: url(../images/vongcung.png) no-repeat center top;
+            }
+        }
+
+        .video {
+            position: relative;
+            margin-top: 20px;
+
+            @media (min-width: $breakpoints-lg) {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 0;
+            }
+
+            >img {
+                max-width: 100%;
+            }
+
+            .btn-video {
+                @media (min-width: $breakpoints-lg) {
+                    border-top: 23px solid transparent;
+                    border-bottom: 23px solid transparent;
+                    border-left: 42px solid $cl-04;
+                }
+
+                position: absolute;
+                left: 50%;
+                top: 32%;
+                transform: translate3d(-50%, -50%, 0);
+                background: transparent;
+                border: 0;
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+                border-left: 27px solid $cl-04;
+                cursor: pointer;
+                animation: btn-video 1s infinite;
+
+                &:hover {
+                    animation: none;
+                }
+            }
+        }
+    }
+
+    .group-item {
+        position: relative;
+        margin: 50px 0 0 0;
+        padding: 0;
+
+        .item {
+            margin-top: 20px;
+            position: relative;
+            min-height: 70px;
+
+            @media (min-width: $breakpoints-lg) {
+                position: absolute;
+                margin-top: 0;
+                min-height: 95px;
+            }
+
+            list-style: none;
+
+            .icon {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background: $cl-04;
+                transition: $transition;
+
+                @media (min-width: $breakpoints-lg) {
+                    width: 95px;
+                    height: 95px;
+                }
+            }
+
+            .content {
+                padding-left: 85px;
+
+                @media (min-width: $breakpoints-lg) {
+                    padding-left: 110px;
+                }
+
+                .title {
+                    @extend .body-text;
+                    margin: 0;
+                    color: $cl-04;
+                }
+
+                .info {
+                    margin-top: 10px;
+                }
+            }
+
+            &:nth-child(1) {
+                @media (min-width: $breakpoints-lg) {
+                    width: 25.5%;
+                    top: 245px;
+
+                    .icon {
+                        position: absolute;
+                        right: 0;
+                        left: auto;
+                    }
+                }
+
+                .content {
+                    @media (min-width: $breakpoints-lg) {
+                        text-align: right;
+                        padding-right: 110px;
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                @media (min-width: $breakpoints-lg) {
+                    width: 32%;
+                    top: 0;
+                    left: 85px;
+
+                    .icon {
+                        position: absolute;
+                        right: 0;
+                        left: auto;
+                    }
+                }
+
+                .content {
+                    @media (min-width: $breakpoints-lg) {
+                        text-align: right;
+                        padding-right: 110px;
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                @media (min-width: $breakpoints-lg) {
+                    width: 32%;
+                    top: 0;
+                    right: 85px;
+
+                    .icon {
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+
+                .content {
+                    @media (min-width: $breakpoints-lg) {
+                        text-align: left;
+                        padding-left: 110px;
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                @media (min-width: $breakpoints-lg) {
+                    width: 25.5%;
+                    top: 245px;
+                    right: 0;
+
+                    .icon {
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+
+                .content {
+                    @media (min-width: $breakpoints-lg) {
+                        text-align: left;
+                        padding-left: 110px;
+                    }
+                }
+            }
+
+            &:hover {
+                .icon {
+                    background: $cl-06;
+                    top: -10px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes btn-video {
+    0% {
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    25% {
+        transform: translate3d(-42%, -50%, 0);
+    }
+
+    50% {
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    75% {
+        transform: translate3d(-58%, -50%, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, -50%, 0);
+    }
+}

@@ -1,0 +1,137 @@
+@import '../variables';
+
+.c-about-lecturers {
+    .headline {
+        text-align: center;
+        .title {
+            @extend .title-text;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .text {
+            @extend .big-text;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            .inner {
+                @media (min-width: $breakpoints-lg) {
+                  width: 83.333333%;
+                }
+            }
+        }
+    }
+    .group {
+        margin-top: 30px;
+        @media (min-width: $breakpoints-lg) {
+          margin-top: 50px;
+        }
+        .item {
+            .inner {
+                .img {
+                    .img-inner {
+                        position: relative;
+                        padding: 15px;
+                        .bar {
+                            width: 100px;
+                            height: 100px;
+                            position: absolute;
+                            &:nth-child(1) {
+                                top: 0;
+                                left: 0;
+                                border-top: 3px solid $cl-25;
+                                border-left: 3px solid $cl-25;
+                            }
+                            &:nth-child(2) {
+                                top: 0;
+                                right: 0;
+                                border-top: 3px solid $cl-25;
+                                border-right: 3px solid $cl-25;
+                            }
+                            &:nth-child(3) {
+                                bottom: 0;
+                                right: 0;
+                                border-bottom: 3px solid $cl-25;
+                                border-right: 3px solid $cl-25;
+                            }
+                            &:nth-child(4) {
+                                bottom: 0;
+                                left: 0;
+                                border-bottom: 3px solid $cl-25;
+                                border-left: 3px solid $cl-25;
+                            }
+                        }
+                        .img-wrapper {
+                            @extend .img-cover;
+                            border: 3px solid $cl-25;
+                            z-index: 2;
+                            &::before {
+                                padding-bottom: 100%;
+                            }
+                            >a {
+                                @extend .img-cover__wrapper;
+                            }
+                        }
+                    }
+                }
+                .info {
+                    .name {
+                        @extend .title-text;
+                        margin: 10px 0 0 0;
+                        color: $cl-04;
+                    }
+                    .position {
+                        @extend .big-text;
+                        margin-top: 10px;
+                        font-style: italic;
+                    }
+                    .description {
+                        margin-top: 20px;
+                        padding-top: 15px;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 100px;
+                            height: 3px;
+                            top: 0;
+                            left: 0;
+                            background: $cl-25;
+                        }
+                    }
+                    .btn {
+                        margin-top: 20px;
+                        width: 360px;
+                        max-width: 100%;
+                        background: $cl-06;
+                        color: $c-white;
+                        border-radius: 0;
+                        text-transform: uppercase;
+                        padding: 13px 25px;
+                        border: 0;
+                        &:hover {
+                            background: $cl-04;
+                        }
+                    }
+                }
+            }
+        }
+        .slick-dots {
+            position: relative;
+            margin-top: 55px;
+            display: flex;
+            justify-content: center;
+            li {
+                button {
+                    width: 15px;
+                    height: 15px;
+                    background: $cl-26;
+                }
+                &.slick-active {
+                    button {
+                        background: $cl-25;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import '../variables';
+
+.c-featured-news {
+    margin-top: 5px;
+    .row {
+        margin-left: -7.5px;
+        margin-right: -7.5px;
+        .col-12,
+        .col-6 {
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import '../variables';
+
+.c-item-new {
+    margin-top: 20px;
+    @media (min-width: $breakpoints-lg) {
+      margin-top: 30px;
+    }
+    .inner {
+        position: relative;
+        height: 100%;
+        background: $c-white;
+        box-shadow: $bs-01;
+        .img {
+            @extend .img-cover;
+            >a {
+                @extend .img-cover__wrapper;
+            }
+        }
+        .content {
+            padding: 15px 15px 50px 15px;
+            .title {
+                @extend .body-text;
+                text-transform: uppercase;
+                margin: 0;
+                a {
+                    color: $c-dark;
+                    text-decoration: none;
+                    transition: $transition;
+                    &:hover {
+                        color: $c-blue;
+                    }
+                }
+            }
+            .summary {
+                margin-top: 10px;
+            }
+        }
+        .btn-more {
+            @extend .small-text;
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            color: $cl-05;
+            text-decoration: none;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 1px;
+                background: $cl-05;
+                transition: $transition;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

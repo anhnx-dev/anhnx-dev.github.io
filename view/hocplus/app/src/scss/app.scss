@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+@font-face {
+  font-family: 'icon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#iciel") format("svg"), url("../fonts/icomoon.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$f-theme: 'Roboto',
+sans-serif;
+$f-icon: 'icon';
+
+$c-blue: #007bff;
+$c-indigo: #6610f2;
+$c-purple: #6f42c1;
+$c-pink: #e83e8c;
+$c-red: #dc3545;
+$c-orange: #fd7e14;
+$c-yellow: #ffc107;
+$c-green: #28a745;
+$c-teal: #20c997;
+$c-cyan: #17a2b8;
+$c-white: #fff;
+$c-gray: #868e96;
+$c-gray-dark: #343a40;
+$c-primary: #007bff;
+$c-secondary: #868e96;
+$c-success: #28a745;
+$c-info: #17a2b8;
+$c-warning: #ffc107;
+$c-danger: #dc3545;
+$c-light: #f8f9fa;
+$c-dark: #343a40;
+
+
+.drawing {
+  padding-left: 50px;
+
+  .toolset {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: $c-gray-dark;
+    border: 1px solid $c-dark;
+    padding: 15px 3px;
+    font-size: 1rem;
+
+    &.active {
+      display: block;
+    }
+
+    .tool-item {
+      position: relative;
+      margin-top: 10px;
+      list-style: none;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      >.btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 32px;
+        height: 25px;
+        color: $c-white;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+
+        &.btn-image,
+        &.btn-pdf {
+          .fa {
+            display: block;
+          }
+
+          input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            opacity: 0;
+          }
+        }
+      }
+
+      &.active,
+      &:hover {
+        .btn {
+          background: $c-dark;
+          border: 1px solid $c-light;
+        }
+
+        .setting {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+          pointer-events: initial;
+
+          .btn-group {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            .btn {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 30px;
+              height: 30px;
+              cursor: pointer;
+
+              &:hover {
+                background: $c-blue;
+                border-color: $c-blue;
+              }
+            }
+          }
+        }
+      }
+
+      .setting {
+        z-index: 9999;
+        position: absolute;
+        color: $c-white;
+        background: $c-gray;
+        top: 0;
+        left: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        width: 200px;
+        opacity: 0;
+        transform: translate3d(0, 10px, 0);
+        pointer-events: none;
+        transition: all .3s ease-in-out;
+
+        .setting-list {
+          margin: 0;
+          padding: 0;
+
+          .item {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin-top: 10px;
+
+            &:nth-child(1) {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .canvas {
+    position: relative;
+    background: $c-gray-dark;
+    padding: 8px;
+    border: 1px solid $c-dark;
+    overflow: auto;
+    height: 100%;
+
+    .overlay {
+      display: none;
+      position: absolute;
+      z-index: 9;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .wrapper {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+      background: $c-white;
+
+      .tool-pdf {
+        position: absolute;
+        display: none;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        font-size: 18px;
+        background: $c-blue;
+        padding: 10px;
+        color: $c-white;
+
+        .btn-group {
+          margin-left: 10px;
+
+          .btn {
+            transition: all .3 ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+              color: $c-red;
+            }
+          }
+        }
+
+        &.active {
+          display: flex;
+        }
+      }
+
+      .canvas-drawing {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }
+}

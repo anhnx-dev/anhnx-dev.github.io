@@ -1,0 +1,96 @@
+@import '../variables';
+
+.c-advisory {
+    position: fixed;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(0);
+    background: $c-white;
+    box-shadow: $bs-01;
+    width: 420px;
+    max-width: calc(100% - 30px);
+    padding: 25px 75px 35px 75px;
+    opacity: 0;
+    transition: $transition;
+
+    .exit {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        top: 10px;
+        right: 10px;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 1px;
+            background: $cl-39;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+        }
+
+        &::after {
+            transform: translate3d(-50%, -50%, 0) rotate(45deg);
+        }
+    }
+
+    .title {
+        @extend .title-text;
+        font-weight: 700;
+        color: $cl-04;
+        text-align: center;
+    }
+
+    .form-group {
+        position: relative;
+        margin-top: 20px;
+
+        .star {
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $cl-04;
+        }
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 11px 15px;
+        border-color: $bc-01;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 20px;
+        border: 0;
+        padding: 8px 25px;
+        text-transform: uppercase;
+        background: $cl-04;
+        color: $c-white;
+
+        &:hover {
+            background: $cl-06;
+        }
+    }
+}
+
+.advisory-active {
+    .c-advisory {
+        transform: translate3d(-50%, -50%, 0) scale(1);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .over-body {
+        z-index: 99990;
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+}

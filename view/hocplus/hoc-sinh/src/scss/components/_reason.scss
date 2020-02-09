@@ -1,0 +1,56 @@
+@import '../variables';
+
+.c-reason {
+    .headline {
+        text-align: center;
+        .title {
+            @extend .title-text;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .text {
+            @extend .big-text;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            .inner {
+                @media (min-width: $breakpoints-lg) {
+                  width: 83.333333%;
+                }
+            }
+        }
+    }
+    .group {
+        .item {
+            margin-top: 15px;
+            @media (min-width: $breakpoints-lg) {
+              margin-top: 30px;
+            }
+            .inner {
+                text-align: center;
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    >span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 95px;
+                        width: 95px;
+                        border-radius: 50%;
+                    }
+                }
+                .info {
+                    margin-top: 25px;
+                    .title {
+                        @extend .body-text;
+                        margin: 0;
+                    }
+                    .description {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

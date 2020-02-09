@@ -1,0 +1,27 @@
+@import '../variables';
+
+.c-search {
+    margin-top: 20px;
+    .result {
+        .title {
+            @extend .big-text-01;
+            font-weight: 400;
+            margin: 0;
+            >.key-word {
+                @extend .title-text-01;
+                font-weight: 700;
+            }
+        }
+        .list-item-course {
+            margin-top: 21px;
+        }
+    }
+    .new {
+        margin-top: 40px;
+        .title {
+            @extend .big-text-01;
+            margin: 0;
+            color: $cl-04;
+        }
+    }
+}

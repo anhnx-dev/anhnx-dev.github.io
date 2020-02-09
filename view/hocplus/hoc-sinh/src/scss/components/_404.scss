@@ -1,0 +1,58 @@
+@import '../variables';
+
+.c-404 {
+    padding: 30px 0;
+    @media (min-width: $breakpoints-lg) {
+        padding: 150px 0;
+    }
+    .img {
+        display: none;
+        @media (min-width: $breakpoints-lg) {
+            display: block;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        .title {
+            font-size: 30px;
+            color: $cl-06;
+            margin: 0;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .form {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            .form-control {
+                padding: 11.5px 15px;
+                border: 1px solid $bc-01;
+                width: auto;
+                border-radius: 0;
+                margin-right: 15px;
+                @media (min-width: $breakpoints-md) {
+                    width: 420px;
+                }
+            }
+            .btn {
+                border: 0;
+                border-radius: 0;
+                padding: 8px 15px;
+                color: $c-white;
+                background: $cl-06;
+                @media (min-width: $breakpoints-lg) {
+                    padding: 8px 35px;
+                }
+                &:hover {
+                    background: $cl-04;
+                }
+            }
+        }
+    }
+}

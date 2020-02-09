@@ -1,0 +1,247 @@
+@import '../variables';
+
+.pay-course {
+    min-height: 500px;
+    .container::before {
+        content: '';
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-top: 1px solid $bc-01;
+    }
+
+    .right {
+        margin-top: 20px;
+        @media (min-width: $breakpoints-lg) {
+          margin-top: 0;
+        }
+    }
+
+    .group {
+        border: 1px solid $bc-01;
+        background: $c-white;
+        .headline {
+            @extend .medium-text;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 14px 20px;
+            display: none;
+            @media (min-width: $breakpoints-md) {
+              display: block;
+            }
+        }
+    }
+
+
+    .item {
+
+        .inner {
+            background: $cl-30;
+            padding: 25px 20px;
+
+            .content {
+                &::after {
+                    @include clear;
+                }
+
+                .img {
+                    @extend .img-cover;
+                    width: 110px;
+                    height: 85px;
+                    border: 1px solid $bc-01;
+                    float: left;
+
+                    >a {
+                        @extend .img-cover__wrapper;
+                    }
+                }
+
+                .info {
+                    margin-left: 125px;
+
+                    @media (min-width: $breakpoints-md) {
+                        max-width: 260px;
+                    }
+
+                    .name {
+                        @extend .body-text;
+                        margin: 0;
+                        font-weight: 400;
+
+                        a {
+                            text-decoration: none;
+                            color: $c-dark;
+                            transition: $transition;
+
+                            &:hover {
+                                color: $c-blue;
+                            }
+                        }
+                    }
+
+                    .lecturers {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+
+                        .avatar {
+                            position: relative;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            margin-right: 5px;
+                            overflow: hidden;
+
+                            >img {
+                                position: absolute;
+                                width: auto;
+                                height: 100%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate3d(-50%, -50%, 0);
+                            }
+                        }
+
+                        .name-lecturers {
+                            @extend .small-text;
+                            color: $cl-04;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .price {
+            margin-top: 10px;
+            @media (min-width: $breakpoints-lg) {
+              margin-top: 0;
+            }
+            .real {
+                @extend .big-text-01;
+                font-weight: 700;
+                color: $cl-04;
+
+                >span {
+                    @extend .body-text;
+                    color: $c-dark;
+                }
+            }
+
+            .fake {
+                @extend .small-text;
+                text-decoration: line-through;
+                color: $cl-31;
+            }
+
+            .events {
+                @extend .small-text;
+                display: inline-block;
+                background: $cl-09;
+                color: $c-white;
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .buying {
+        .price-detail {
+            background: $c-white;
+            border: 1px solid $bc-01;
+
+            .inner {
+                padding: 15px;
+
+                .price,
+                .sale {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .text {
+                        @extend .medium-text;
+                    }
+
+                    .number {
+                        font-weight: 700;
+
+                        >span {
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .sale {
+                    margin-top: 10px;
+                }
+            }
+
+            .total-price {
+                @extend .big-text-01;
+                display: flex;
+                justify-content: space-between;
+                padding: 15px;
+                border-top: 1px solid $bc-01;
+                font-weight: 700;
+
+                .number {
+                    color: $cl-04;
+                    >span {
+                        @extend .body-text;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        .discount-code {
+            margin-top: 20px;
+            background: $cl-30;
+            border: 1px solid $bc-01;
+            padding: 20px 15px;
+            form {
+                position: relative;
+            }
+            .form-group {
+                label {
+                    display: block;
+                }
+                .form-control {
+                    margin-top: 10px;
+                    width: 100%;
+                    padding: 9px 80px 9px 10px;
+                    border: 1px solid $bc-01;
+                    border-radius: 0;
+                    height: 35px;
+                }
+            }
+            .btn {
+                @extend .small-text;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 70px;
+                height: 35px;
+                border: 0;
+                border-radius: 0;
+                background: $cl-09;
+                color: $c-white;
+                &:hover {
+                    background: $cl-04;
+                }
+            }
+        }
+        .btn-buying {
+            margin-top: 15px;
+            display: block;
+            border-radius: 0;
+            padding: 13px 50px;
+            border-right: 0;
+            text-transform: uppercase;
+            background: $cl-04;
+            color: $c-white;
+            border: 0;
+            &:hover {
+                background: $cl-09;
+            }
+        }
+    }
+}

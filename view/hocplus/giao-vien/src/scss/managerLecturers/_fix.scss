@@ -1,0 +1,57 @@
+@import '../variables';
+
+.ml-fix {
+    .detail-wrapper {
+        position: relative;
+        padding-top: 35px;
+        >.btn-edit {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .headline .title {
+            display: block;
+        }
+        .info {
+            padding-right: 0;
+            .list .item .fix-content {
+                width: auto;
+            }
+        }
+        .ingredient .calendar .row .col-6 {
+            border-right: 1px solid $bc-01;
+        }
+        .ingredient .calendar .row .col-4,
+        .ingredient .calendar .row .col-6 {
+            padding: 14px 15px;
+        }
+    }
+    
+
+    .fix-content {
+        border: 0;
+        width: 100%;
+        border: 1px solid transparent;
+        &:hover {
+            border-color: $cl-06;
+        }
+    }
+    .col-3 .fix-content {
+        text-align: center;
+    }
+    .width-100 {
+        width: 100%;
+    }
+    .mt-15 {
+        margin-top: 15px;
+    }
+}
+
+.ml-fix-active {
+    .detail-wrapper >.btn-edit::before {
+        width: 100%;
+    }
+    .fix-content {
+        border-color: $cl-06;
+    }
+}

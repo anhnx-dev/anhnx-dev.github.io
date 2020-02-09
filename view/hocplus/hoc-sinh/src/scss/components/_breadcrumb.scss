@@ -1,0 +1,43 @@
+@import '../variables';
+
+.c-breadcrumb {
+    margin-top: 100px;
+    @media (min-width: $breakpoints-lg) {
+      margin-top: 120px;
+    }
+    .breadcrumb-list {
+        margin: 0;
+        padding: 0;
+        .breadcrumb-item {
+            list-style: none;
+            color: $c-dark;
+            display: inline;
+            >a {
+                color: $c-dark;
+                text-decoration: none;
+            }
+            &.active {
+                color: $cl-06;
+            }
+        }
+    }
+}
+
+.breadcrumb-item + .breadcrumb-item {
+    position: relative;
+    padding-left: 20px;
+    &::after,
+    &::before {
+        content: '\e903';
+        font-family: $f-icon;
+        position: absolute;
+        color: $c-dark;
+        top: -2px;
+    }
+    &::after {
+        left: 0;
+    }
+    &::before {
+        left: 4px;
+    }
+}

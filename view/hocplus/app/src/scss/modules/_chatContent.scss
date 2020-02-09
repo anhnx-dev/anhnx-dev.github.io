@@ -1,0 +1,46 @@
+@import '../_variables.scss';
+
+.chat-content {
+  .funtion {
+    position: relative;
+    background: $cl02;
+    padding: 7px 10px;
+    display: flex;
+    .user {
+      margin: 0 10px;
+    }
+    select {
+      color: $c-white;
+      background: $cl04;
+      border-radius: $round;
+      padding: 1px 5px;
+      &.user {
+        width: 115px;
+      }
+    }
+    .send {
+      background: $cl05;
+      border: 0;
+      border-radius: $round;
+      color: $c-white;
+      line-height: 20px;
+      padding: 0 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  }
+  .content {
+    textarea {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      padding: 10px;
+      height: 95px;
+      outline: none;
+      color: $c-white;
+      @media (min-width: $breakpoints-xxl) {
+        height: 135px;
+      }
+    }
+  }
+}

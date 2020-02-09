@@ -1,0 +1,19 @@
+@import '../variables';
+
+.c-evaluation {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: $cl-08;
+    .headline {
+        @extend .title-text;
+        text-align: center;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: $c-dark;
+            >span {
+                color: $cl-04;
+            }
+        }
+    }
+}

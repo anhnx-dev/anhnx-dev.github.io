@@ -1,0 +1,104 @@
+@import '../variables';
+
+.c-app {
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%;
+    margin-bottom: -40px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .app-wrapper {
+        position: relative;
+        z-index: 1;
+    }
+    .headline {
+        @extend .big-text-01;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        color: $c-white;
+    }
+    .app-inner {
+        display: flex;
+        justify-content: center;
+    }
+    .app-main {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        .qr {
+            .title {
+                @extend .big-text;
+                color: $c-white;
+                font-weight: 700;
+            }
+            >img {
+                display: block;
+                margin-top: 10px;
+            }
+            
+        }
+        .or {
+            position: relative;
+            padding-left: 31px;
+            padding-right: 31px;
+            &::before {
+                content: '';
+                position: absolute;
+                height: 40px;
+                width: 2px;
+                background: $c-white;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                height: 40px;
+                width: 2px;
+                background: $c-white;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            >span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%,-50%,0);
+                width: 30px;
+                height: 30px;
+                background: $c-white;
+                border-radius: 50%;
+            }
+        }
+        .link {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            a {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+                transition: $transition;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

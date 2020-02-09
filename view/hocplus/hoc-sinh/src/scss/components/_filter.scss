@@ -1,0 +1,55 @@
+@import '../variables';
+
+.c-filter {
+    margin-bottom: 30px;
+    display: none;
+    @media (min-width: $breakpoints-lg) {
+      display: block;
+    }
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $bc-01;
+        .left {
+            display: flex;
+            align-items: center;
+            .form-check {
+                display: flex;
+                align-items: center;
+                margin-left: 15px;
+                .form-check-label {
+                    margin-left: 5px;
+                }
+            }
+            .form-control {
+                margin-left: 15px;
+                border: 1px solid $bc-03;
+                border-radius: $round;
+                width: 130px;
+                padding: 6px 10px;
+            }
+            .btn-filter {
+                @extend .small-text;
+                background: $cl-06;
+                border: 0;
+                color: $c-white;
+                padding: 5.5px 15px;
+                &:hover {
+                    background: $cl-04;
+                }
+            }
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            .form-control {
+                margin-left: 15px;
+                border: 1px solid $bc-03;
+                border-radius: $round;
+                width: 130px;
+                padding: 6px 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import '../variables';
+
+.c-new-letter {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid $bc-01;
+    .title {
+        @extend .big-text;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .text {
+        @extend .small-text;
+        margin-top: 5px;
+        color: $cl-21;
+    }
+    .form {
+        .form-group {
+            margin-top: 15px;
+            .form-control {
+                width: 100%;
+                border-radius: 0;
+                border-color: $bc-03;
+            }
+            &.form-check {
+                @extend .small-text;
+                display: flex;
+                align-items: center;
+                .form-check-label {
+                    margin-left: 5px;
+                }
+            }
+        }
+        .btn {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 0;
+            color: $c-white;
+            background: $cl-04;
+            text-transform: uppercase;
+            &:hover {
+                background: $c-blue;
+            }
+        }
+    }
+}

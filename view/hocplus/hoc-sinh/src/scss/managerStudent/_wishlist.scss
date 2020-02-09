@@ -1,0 +1,26 @@
+@import '../variables';
+
+.ms-wishlist {
+    position: relative;
+    z-index: 3;
+
+    .headline {
+        @extend .big-text-01;
+        margin: 0;
+        font-weight: 700;
+        color: $cl-04;
+        text-transform: uppercase;
+    }
+
+    .c-item-course {
+        margin-bottom: 6px;
+        margin-top: 30px;
+
+        .inner {
+            padding-bottom: 50px;
+            .name {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+
+    <title>Canvas Designer</title>
+
+    <link rel="stylesheet" href="src/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="src/css/main.min.css">
+    <link rel="stylesheet" href="src/css/app.min.css">
+</head>
+
+<body>
+
+
+    <div id="app">
+
+        <header class="topbar">
+            <div class="topbar-wrapper">
+
+                <div class="logo">
+                    <a href="">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div> <!-- / logo -->
+
+                <div class="status">
+                    <div class="group-function streamer">
+                        <div class="toggle active"><span><b></b></span>REC</div>
+                        <div class="microphone" data-modal="#microphoneTest"><i class="fa fa-microphone"></i></div>
+                        <div class="camera" data-modal="#cameraTest"><i class="fa fa-camera"></i></div>
+                    </div>
+                    <div class="function microphone active">
+                        <button class="btn" title="Đóng microphone học sinh."><i class="fa fa-microphone"></i></button>
+                    </div>
+                    <div class="function handraising js-handraising">
+                        <button class="btn" title="Cho cho phép học sinh dơ tay."><i class="fa fa-hand"></i></button>
+                    </div>
+                    <div class="function upload-img">
+                        <i class="fa fa-folder-upload"></i>
+                        <input class="input-upload-img" type="file">
+                    </div>
+                    <div class="function file-notification js-file-notification">
+                        <div class="icon btn-toggle">
+                            <i class="fa fa-folder-open"></i>
+                            <span class="number">4</span>
+                        </div>
+                        <div class="block">
+                            <div class="block-inner">
+                                <ul class="notification-list">
+                                    <li class="item">
+                                        <div class="info">
+                                            <div class="name-student">Nguyễn Thị Ngọc</div>
+                                            <div class="name-file">Bài tập hóa</div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a class="btn btn-view" a data-fancybox="gallery"
+                                                href="./images/6136.jpg_wh300.jpg">Xem trước</a>
+                                            <button class="btn btn-no">Thêm vào bảng</button>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="info">
+                                            <div class="name-student">Nguyễn Thị Ngọc</div>
+                                            <div class="name-file">Bài tập hóa</div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a class="btn btn-view" a data-fancybox="gallery"
+                                                href="./images/6136.jpg_wh300.jpg">Xem trước</a>
+                                            <button class="btn btn-no">Thêm vào bảng</button>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="info">
+                                            <div class="name-student">Nguyễn Thị Ngọc</div>
+                                            <div class="name-file">Bài tập hóa</div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a class="btn btn-view" a data-fancybox="gallery"
+                                                href="./images/6136.jpg_wh300.jpg">Xem trước</a>
+                                            <button class="btn btn-no">Thêm vào bảng</button>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="info">
+                                            <div class="name-student">Nguyễn Thị Ngọc</div>
+                                            <div class="name-file">Bài tập hóa</div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a class="btn btn-view" a data-fancybox="gallery"
+                                                href="./images/6136.jpg_wh300.jpg">Xem trước</a>
+                                            <button class="btn btn-no">Thêm vào bảng</button>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="info">
+                                            <div class="name-student">Nguyễn Thị Ngọc</div>
+                                            <div class="name-file">Bài tập hóa</div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a class="btn btn-view" a data-fancybox="gallery"
+                                                href="./images/6136.jpg_wh300.jpg">Xem trước</a>
+                                            <button class="btn btn-no">Thêm vào bảng</button>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="info">
+                                            <div class="name-student">Nguyễn Thị Ngọc</div>
+                                            <div class="name-file">Bài tập hóa</div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a class="btn btn-view" a data-fancybox="gallery"
+                                                href="./images/6136.jpg_wh300.jpg">Xem trước</a>
+                                            <button class="btn btn-no">Thêm vào bảng</button>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="info">
+                                            <div class="name-student">Nguyễn Thị Ngọc</div>
+                                            <div class="name-file">Bài tập hóa</div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a class="btn btn-view" a data-fancybox="gallery"
+                                                href="./images/6136.jpg_wh300.jpg">Xem trước</a>
+                                            <button class="btn btn-no">Thêm vào bảng</button>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="info">
+                                            <div class="name-student">Nguyễn Thị Ngọc</div>
+                                            <div class="name-file">Bài tập hóa</div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a class="btn btn-view" a data-fancybox="gallery"
+                                                href="./images/6136.jpg_wh300.jpg">Xem trước</a>
+                                            <button class="btn btn-no">Thêm vào bảng</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- / status -->
+
+                <div class="exit">
+                    <form action="/logout" method="post">
+                        <input type="hidden" name="userId" value="112">
+                        <input type="hidden" name="lessonId" value="221">
+                        <input type="hidden" name="date" value="2019-08-12">
+                        <input type="hidden" name="type" value="student">
+                        <button class="btn btn-large btn-danger" id="autoDisconnect" type="submit"
+                            onclick="disconnect();" style="background:#198ceb;color:#FFF;border:none;">
+                            <i class="fa fa-log-out" style="font-size:25px;"></i>
+                        </button>
+                    </form>
+                </div> <!-- / exit -->
+
+            </div> <!-- / inner -->
+        </header> <!-- / Top bar -->
+
+        <main class="main">
+            <div class="main-wrapper">
+
+                <div class="drawing">
+
+                    <ul class="toolset">
+                        <li class="tool-item">
+                            <button class="btn btn-move"><i class="fa fa-move"></i></button>
+                        </li>
+                        <li class="tool-item">
+                            <button class="btn btn-brush">
+                                <i class="fa fa-pencil"></i>
+                            </button>
+                            <div class="setting">
+                                <ul class="setting-list">
+                                    <li class="item">
+                                        <span>Line color:</span>
+                                        <input class="drawing-color" type="color" value="#005E7A">
+                                    </li>
+                                    <li class="item">
+                                        <span>Line width:</span>
+                                        <input class="drawing-line-width" type="number" value="5" min="0" max="150">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="tool-item">
+                            <button class="btn btn-addtext">
+                                <i class="fa fa-type"></i>
+                            </button>
+                            <div class="setting">
+                                <ul class="setting-list">
+                                    <li class="item">
+                                        <span>Text color:</span>
+                                        <input class="text-color" type="color" value="#333333">
+                                    </li>
+                                    <li class="item">
+                                        <span>Background color:</span>
+                                        <input class="text-bg-color" type="color">
+                                    </li>
+                                    <li class="item">
+                                        <span>Font size:</span>
+                                        <input class="text-font-size" type="number" value="25" min="1" max="120">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="tool-item">
+                            <span class="btn btn-image">
+                                <i class="fa fa-image"></i>
+                                <input class="imageLoader" type="file">
+                            </span>
+                        </li>
+                        <li class="tool-item">
+                            <span class="btn btn-pdf">
+                                <i class="fa fa-pdf"></i>
+                                <input class="pdfLoader" id="btn" type="file">
+                            </span>
+                        </li>
+                        <li class="tool-item">
+                            <button class="btn btn-undo">
+                                <i class="fa fa-undo"></i>
+                            </button>
+                        </li>
+                        <li class="tool-item">
+                            <button class="btn btn-redo">
+                                <i class="fa fa-redo"></i>
+                            </button>
+                        </li>
+                        <li class="tool-item">
+                            <button class="btn btn-clear">
+                                <i class="fa fa-refresh"></i>
+                            </button>
+                        </li>
+                        <li class="tool-item">
+                            <button class="btn btn-clear-img">
+                                <i class="fa fa-trash-can"></i>
+                            </button>
+                        </li>
+                    </ul> <!-- / toolset -->
+
+                    <div class="canvas">
+                        
+                        <div class="wrapper">
+                            <div class="tool-pdf" id="tool-pdf">
+                                <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+                                <div class="btn-group">
+                                    <span class="btn" id="prev"><i class="fa fa-arrow-left"></i></span>
+                                    <span class="btn" id="next"><i class="fa fa-arrow-right"></i></span>
+                                    <span class="btn" id="zoominbutton"><i class="fa fa-zoom-in"></i></span>
+                                    <span class="btn" id="zoomoutbutton"><i class="fa fa-zoom-out"></i></span>
+                                </div>
+                            </div>
+                            <div class="canvas-pdf">
+                                <canvas></canvas>
+                            </div>
+                            <div class="canvas-drawing">
+                                <div class="overlay"></div>
+                                <canvas id="the-canvas"></canvas>
+                            </div>
+                        </div>
+                    </div> <!-- / canvas -->
+
+                </div> <!-- / drawing -->
+
+                <div class="streamer">
+
+                    <section class="video-teacher js-video-teacher">
+                        <div class="title">Live stream</div>
+                        <div class="inner">
+                            <!-- Đây là vị trí video của giáo viên -->
+                            <img src="images/video.png" width="100%" alt="">
+                        </div>
+                        <button class="btn-full-display"><img src="./src/images/expand-arrows-alt-solid.svg"
+                                alt=""></button>
+                        <div class="full-display">
+                            <div class="exit-full-display"><img src="./src/images/compress-arrows-alt-solid.svg" alt="">
+                            </div>
+                            <!-- video full display -->
+                            <img src="images/video.png" width="100%" alt="">
+                        </div>
+                    </section> <!-- / video teacher -->
+
+                    <section class="video-student">
+                        <div class="name">Nguyễn Thu Trang</div>
+                        <div class="closed"></div>
+                        <div class="inner">
+                            <!-- Đây là vị trí video học sinh -->
+                            <img src="images/video1.png" alt="">
+                        </div>
+                    </section> <!-- / video student -->
+
+                    <section class="work">
+                        <div class="wrapper">
+
+                            <div class="tab js-tab">
+                                <div class="tab-item chat active">
+                                    <div class="title">Chat</div>
+                                    <div class="inner">
+                                        <ul class="list">
+                                            <li class="item">
+                                                <div class="name">
+                                                    Phạm Thị Yến
+                                                </div>
+                                                <div class="content">
+                                                    Làm cách nào để nhớ chi tiết các tác phẩm lâu ạ. Em đọc mà
+                                                    vẫn
+                                                    hay quên.
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="name">
+                                                    Phạm Thị Yến
+                                                </div>
+                                                <div class="content">
+                                                    Làm cách nào để nhớ chi tiết các tác phẩm lâu ạ. Em đọc mà
+                                                    vẫn
+                                                    hay quên.
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="name">
+                                                    Phạm Thị Yến
+                                                </div>
+                                                <div class="content">
+                                                    Làm cách nào để nhớ chi tiết các tác phẩm lâu ạ. Em đọc mà
+                                                    vẫn
+                                                    hay quên.
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="name">
+                                                    Phạm Thị Yến
+                                                </div>
+                                                <div class="content">
+                                                    Làm cách nào để nhớ chi tiết các tác phẩm lâu ạ. Em đọc mà
+                                                    vẫn
+                                                    hay quên.
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="name">
+                                                    Phạm Thị Yến
+                                                </div>
+                                                <div class="content">
+                                                    Làm cách nào để nhớ chi tiết các tác phẩm lâu ạ. Em đọc mà
+                                                    vẫn
+                                                    hay quên.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- / chat -->
+                                <div class="tab-item user">
+                                    <div class="title">Danh sách học viên (25)</div>
+                                    <div class="inner">
+                                        <div class="number">Số học viên tham gia hôm nay: <span>18</span></div>
+                                        <ul class="list">
+                                            <li class="item">
+                                                <div class="info">
+                                                    <div class="avatar"><img src="images/user.png" alt=""></div>
+                                                    <div class="statu active"></div>
+                                                    <div class="name">User 01</div>
+                                                </div>
+                                                <div class="function">
+                                                    <button class="btn microphone active"><i
+                                                            class="fa fa-microphone"></i></button>
+                                                    <button class="btn handraising active"><i
+                                                            class="fa fa-hand"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="info">
+                                                    <div class="avatar"><img src="images/user.png" alt=""></div>
+                                                    <div class="statu"></div>
+                                                    <div class="name">User 02</div>
+                                                </div>
+                                                <div class="function">
+                                                    <button class="btn microphone notification"><i
+                                                            class="fa fa-microphone"></i></button>
+                                                    <button class="btn handraising notification"><i
+                                                            class="fa fa-hand"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="info">
+                                                    <div class="avatar"><img src="images/user.png" alt=""></div>
+                                                    <div class="statu active"></div>
+                                                    <div class="name">User 03</div>
+                                                </div>
+                                                <div class="function">
+                                                    <button class="btn microphone notification"><i
+                                                            class="fa fa-microphone"></i></button>
+                                                    <button class="btn handraising notification"><i
+                                                            class="fa fa-hand"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="info">
+                                                    <div class="avatar"><img src="images/user.png" alt=""></div>
+                                                    <div class="statu active"></div>
+                                                    <div class="name">User 04</div>
+                                                </div>
+                                                <div class="function">
+                                                    <button class="btn microphone"><i
+                                                            class="fa fa-microphone"></i></button>
+                                                    <button class="btn handraising"><i class="fa fa-hand"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="info">
+                                                    <div class="avatar"><img src="images/user.png" alt=""></div>
+                                                    <div class="statu active"></div>
+                                                    <div class="name">User 05</div>
+                                                </div>
+                                                <div class="function">
+                                                    <button class="btn microphone"><i
+                                                            class="fa fa-microphone"></i></button>
+                                                    <button class="btn handraising"><i class="fa fa-hand"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="info">
+                                                    <div class="avatar"><img src="images/user.png" alt=""></div>
+                                                    <div class="statu"></div>
+                                                    <div class="name">User 06</div>
+                                                </div>
+                                                <div class="function">
+                                                    <button class="btn microphone"><i
+                                                            class="fa fa-microphone"></i></button>
+                                                    <button class="btn handraising"><i class="fa fa-hand"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="info">
+                                                    <div class="avatar"><img src="images/user.png" alt=""></div>
+                                                    <div class="statu active"></div>
+                                                    <div class="name">User 07</div>
+                                                </div>
+                                                <div class="function">
+                                                    <button class="btn microphone"><i
+                                                            class="fa fa-microphone"></i></button>
+                                                    <button class="btn handraising"><i class="fa fa-hand"></i></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- / user -->
+                            </div> <!-- / tab -->
+
+                            <div class="chat-content">
+                                <div class="funtion">
+                                    <span>Gửi:</span>
+                                    <button class="send"><i class="fa fa-paper"></i></button>
+                                </div>
+                                <div class="content">
+                                    <textarea placeholder="Nhập bình luận tại đây"></textarea>
+                                </div>
+                            </div>
+
+                        </div> <!-- / wrapper -->
+                    </section> <!-- / work -->
+
+                </div> <!-- / streamer -->
+
+
+            </div> <!-- / row -->
+        </main> <!-- / main app -->
+
+        <div class="modal" id="cameraTest">
+            <div class="modal-exit"></div>
+            <div class="modal-inner">
+                <div class="test-media">
+                    <video id="testcamera" width="100%" autoplay=""></video>
+                    <div class="btn-group">
+                        <button type="button" id="startCameraTest" class="btn btn-red">Bắt đầu</button>
+                        <button type="button" id="stopCameraTest" class="btn">Dừng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="microphoneTest">
+            <div class="modal-exit"></div>
+            <div class="modal-inner">
+                <div class="test-media">
+                    <audio autoplay="" id="testmicrophone"></audio>
+                    <div class="btn-group">
+                        <button type="button" id="startMicroTest" class="btn btn-red">Bắt đầu</button>
+                        <button type="button" id="stopMicroTest" class="btn">Dừng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="get-input-test">
+            <input type="text" id="value-text">
+            <div class="btn-group">
+                <button class="btn btn-agree">Đồng ý</button>
+                <button class="btn btn-exit">Hủy</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+    <!-- / Script -->
+    <script src="src/js/jquery-3.3.1.min.js"></script>
+    <script src="src/js/jquery.fancybox.min.js"></script>
+    <script src="src/js/fabric.min.js"></script>
+    <script src="src/js/pdf.min.js"></script>
+    <script src="src/js/pdf.worker.min.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/app.js"></script>
+
+
+</body>
+
+</html>

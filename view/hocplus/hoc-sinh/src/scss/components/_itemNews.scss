@@ -1,0 +1,75 @@
+@import '../variables';
+
+.c-item-news {
+    margin-top: 15px;
+    .inner {
+        position: relative;
+    }
+    .img {
+        @extend .img-cover;
+        @media (min-width: $breakpoints-md) {
+            &::before {
+                padding-bottom: 76%;
+            }
+        }
+        >a {
+            @extend .img-cover__wrapper;
+        }
+    }
+    .info {
+        @media (min-width: $breakpoints-md) {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 10px;
+            width: 100%;
+            background: $cl-20;
+        }
+        .title {
+            @extend .body-text;
+            margin: 10px 0 0 0;
+            @media (min-width: $breakpoints-md) {
+              margin: 0;
+            }
+            a {
+                @media (min-width: $breakpoints-md) {
+                    color: $c-white;
+                }
+                text-decoration: none;
+                transition: $transition;
+                &:hover {
+                    color: $c-blue;
+                }
+            }
+        }
+        h2.title {
+            @extend .medium-text;
+        }
+        .description {
+            margin-top: 10px;
+            @media (min-width: $breakpoints-md) {
+                color: $c-white;
+            }
+        }
+    }
+}
+
+.group-item {
+    .c-item-news {
+        .img {
+            &::before {
+                @media (min-width: $breakpoints-md) {
+                    padding-bottom: calc(76% - 2px);
+                }
+            }
+        }
+        .title {
+            margin-top: 5px;
+            font-weight: 400;
+            @media (min-width: $breakpoints-md) {
+              margin-top: 10px;
+              font-weight: 700;
+            }
+        }
+    }
+}

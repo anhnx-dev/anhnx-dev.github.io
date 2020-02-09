@@ -1,0 +1,58 @@
+@import '../variables';
+
+.c-navigation {
+    .nav,
+    .pagination {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: -10px -4px 0 -4px;
+        .nav-item,
+        .page-item {
+            list-style: none;
+            padding: 0 4px;
+            margin-top: 10px;
+            .nav-link,
+            .page-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 5px;
+                text-decoration: none;
+                min-width: 25px;
+                height: 25px;
+                border-radius: $round;
+                border: 1px solid $bc-01;
+                color: $c-dark;
+                transition: $transition;
+                &:hover,
+                &.active {
+                    background: $cl-06;
+                    color: $c-white;
+                    border-color: $cl-06;
+                }
+            }
+            &.active {
+                .nav-link,
+                .page-link {
+                    background: $cl-06;
+                    color: $c-white;
+                    border-color: $cl-06;
+                }
+            }
+        }
+    }
+    &.v1 {
+        .nav .nav-item .nav-link {
+            border-radius: 0;
+            border-color: $c-dark;
+            &.active,
+            &:hover {
+                background: transparent;
+                color: $cl-06;
+                border-color: $cl-06;
+            }
+        }
+    }
+}

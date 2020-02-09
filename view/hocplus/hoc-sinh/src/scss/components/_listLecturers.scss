@@ -1,0 +1,71 @@
+@import '../variables';
+
+.c-list-lecturers {
+    .title {
+        @extend .title-text-01;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .list-lecturers {
+        margin-bottom: 20px;
+    }
+
+    .search {
+        margin-top: 20px;
+
+        .inner {
+            position: relative;
+
+            .form-control-option {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border-radius: 0;
+                border: 1px solid $bc-01;
+                padding: 7.5px 10px;
+                @media (min-width: $breakpoints-lg) {
+                    position: absolute;
+                    width: 130px;
+                }
+            }
+
+            .form-group-input {
+                .form-control {
+                    width: 100%;
+                    padding: 9px 135px 9px 15px;
+                    border: 1px solid $bc-01;
+                    border-radius: 0;
+                    margin-top: 15px;
+                    @media (min-width: $breakpoints-lg) {
+                        padding: 9px 135px 9px 145px;
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .btn {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 120px;
+                height: 33px;
+                @media (min-width: $breakpoints-md) {
+                  height: 36px;
+                }
+                @media (min-width: $breakpoints-lg) {
+                    height: 100%;
+                }
+                border-radius: 0;
+                color: $c-white;
+                background: $cl-06;
+                border-color: $cl-06;
+                &:hover {
+                    background: $cl-04;
+                    border-color: $cl-04;
+                }
+            }
+        }
+    }
+}

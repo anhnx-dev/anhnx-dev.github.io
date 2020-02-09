@@ -1,0 +1,46 @@
+@import '../variables';
+
+.ms-history {
+    .headline {
+        @extend .big-text-01;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        color: $cl-04;
+    }
+    .list {
+        margin-top: 25px;
+        background: $c-white;
+        .title {
+            width: 180px;
+            a {
+                text-decoration: none;
+                color: $cl-06;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .table-responsive {
+            th,
+            td {
+                padding: 15px;
+                text-align: left;
+
+                &:nth-child(1) {
+                    text-align: center;
+                }
+            }
+
+            tr {
+                border-bottom: 1px solid $bc-01;
+            }
+
+            thead {
+                background: $cl-06;
+                color: $c-white;
+            }
+        }
+    }
+}

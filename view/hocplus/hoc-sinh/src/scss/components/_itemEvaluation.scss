@@ -1,0 +1,55 @@
+@import '../variables';
+
+.c-item-evaluation {
+    margin-top: 20px;
+    @media (min-width: $breakpoints-lg) {
+      margin-top: 30px;
+    }
+    .inner {
+        background: $c-white;
+        box-shadow: $bs-01;
+        padding: 20px 15px;
+        .info-user {
+            margin: 0 -10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            >div {
+                padding: 0 10px;
+            }
+            .info {
+                position: relative;
+                padding-left: 55px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 10px;
+                    width: 34px;
+                    height: 21px;
+                    background: url(../images/dongngoac.png) no-repeat top;
+                }
+                .name {
+                    @extend .big-text;
+                    font-weight: 700;
+                    color: $cl-04;
+                    text-transform: uppercase;
+                }
+            }
+            .avatar {
+                .wrapper {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

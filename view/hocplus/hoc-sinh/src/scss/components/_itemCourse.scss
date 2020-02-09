@@ -1,0 +1,384 @@
+@import '../variables';
+
+.c-item-course {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+    outline: none;
+    position: relative;
+
+    .btn {
+        @extend .small-text;
+        padding: 4px 15px;
+        color: $c-white;
+        border-radius: 12px;
+        background: $cl-04;
+        text-transform: uppercase;
+        border: 0;
+        line-height: 19px;
+
+        &:hover {
+            background: $cl-06;
+        }
+
+        &.btn-manage {
+            background: $cl-06;
+
+            &:hover {
+                background: $cl-04;
+            }
+        }
+    }
+
+    .inner {
+        position: relative;
+        height: 100%;
+        border: 1px solid $bc-03;
+        background: $c-white;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid $bc-03;
+            background: $c-white;
+
+        }
+
+        &::before {
+            z-index: -1;
+            bottom: -6px;
+            width: calc(100% - 6px);
+        }
+
+        &::after {
+            z-index: -2;
+            bottom: -10px;
+            width: calc(100% - 12px);
+        }
+
+        .img {
+            @extend .img-cover;
+
+            >a {
+                @extend .img-cover__wrapper;
+            }
+        }
+
+        .event {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            pointer-events: none;
+        }
+
+        .name {
+            @extend .big-text;
+            margin: 0;
+            padding: 10px 15px 135px 15px;
+            background: $c-white;
+
+            a {
+                text-decoration: none;
+                color: $c-dark;
+                transition: $transition;
+
+                &:hover {
+                    color: $c-blue;
+                }
+            }
+        }
+
+        .info {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            padding: 0 15px 15px 15px;
+            background: $c-white;
+            border-bottom: 1px solid $bc-03;
+
+            .info-lecturers,
+            .subjects-class,
+            .registration-time,
+            .lecturers {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-flow: wrap;
+            }
+
+            .info-lecturers {
+                .lecturers {
+                    .avatar {
+                        position: relative;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        margin-right: 5px;
+                        overflow: hidden;
+
+                        >img {
+                            position: absolute;
+                            width: auto;
+                            height: 100%;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate3d(-50%, -50%, 0);
+                        }
+                    }
+
+                    .name-lecturers {
+                        font-size: 10px;
+                        color: $cl-04;
+                        text-decoration: none;
+                    }
+                }
+
+                .star {
+                    font-size: 10px;
+                    color: $cl-04;
+                }
+            }
+
+            .subjects-class {
+                margin-top: 10px;
+
+                >a {
+                    color: $cl-05;
+                    text-decoration: none;
+                }
+
+
+                .subjects,
+                .class {
+
+                    >span,
+                    >a {
+                        color: $cl-05;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .registration-time {
+                @extend .small-text;
+                margin-top: 10px;
+                padding-top: 15px;
+                border-top: 1px solid $bc-03;
+
+                .time {
+                    color: $cl-03;
+                }
+
+                .price {
+                    @extend .big-text;
+                    color: $cl-04;
+                    font-weight: 700;
+
+                    >span {
+                        @extend .body-text;
+                        color: $c-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    .tooltip {
+        display: none;
+
+        @media (min-width: $breakpoints-xl) {
+            display: block;
+        }
+
+        position: absolute;
+        width: 100%;
+        height: calc(100% + 10px);
+        top: 0;
+        left: calc(100% - 7.5px);
+        pointer-events: none;
+        transform: translate3d(50px, 0, 0);
+        opacity: 0;
+        transition: $transition;
+        padding-right: 7.5px;
+
+        .tooltip-wrappwe {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            padding: 25px 15px 55px 15px;
+            background: $c-white;
+            border: 1px solid $bc-03;
+            border-radius: $round;
+
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                height: 18px;
+                width: 9px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -8px;
+                background: url(../images/arr.png)
+            }
+
+            .tooltip-name {
+                @extend .medium-text;
+                margin: 0;
+
+                >a {
+                    color: $c-dark;
+                    text-decoration: none;
+                    transition: $transition;
+
+                    &:hover {
+                        color: $c-blue;
+                    }
+                }
+
+                >.fa {
+                    margin-left: 10px;
+                    cursor: pointer;
+                    color: $cl-06;
+
+                    &.active {
+                        &:before {
+                            content: '\e934';
+                        }
+                    }
+                }
+            }
+
+            .tooltip-info {
+                @extend .small-text;
+                display: flex;
+                margin-top: 20px;
+
+                .info-class a {
+                    color: $c-dark;
+                    text-decoration: none;
+                }
+            }
+
+            .info-time+.info-class {
+                margin-left: 15px;
+            }
+
+            .tooltip-describe {
+                margin-top: 20px;
+
+                .describe-title {
+                    @extend .small-text;
+                    font-weight: 700;
+                    color: $cl-04;
+                }
+
+                .describe-content {
+                    margin-top: 10px;
+                    max-height: 10.5em;
+                    overflow: hidden;
+                }
+            }
+
+            .btn-registration {
+                position: absolute;
+                left: 15px;
+                bottom: 27px;
+            }
+        }
+    }
+
+    &:hover {
+        .tooltip {
+            pointer-events: auto;
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+    }
+}
+
+.col-lg-3.c-item-course {
+    &:nth-child(4n+1) {
+        z-index: 4;
+    }
+
+    &:nth-child(4n+2) {
+        z-index: 3;
+    }
+
+    &:nth-child(4n+3) {
+        z-index: 2;
+    }
+
+    &:nth-child(4n+4) {
+        z-index: 1;
+
+        .tooltip {
+            left: initial;
+            right: calc(100% - 15.5px);
+
+            .tooltip-wrappwe::before {
+                left: initial;
+                right: -8px;
+                transform: scale(-1);
+            }
+        }
+
+        &:hover {
+            z-index: 4;
+        }
+    }
+}
+
+.list-item-course {
+    .c-item-course {
+        &:nth-child(3n+1) {
+            z-index: 3;
+        }
+
+        &:nth-child(3n+2) {
+            z-index: 2;
+        }
+
+        &:nth-child(3n+3) {
+            .tooltip {
+                left: initial;
+                right: calc(100% - 15.5px);
+
+                .tooltip-wrappwe::before {
+                    left: initial;
+                    right: -8px;
+                    transform: scale(-1);
+                }
+            }
+
+            &:hover {
+                z-index: 3;
+            }
+        }
+    }
+}
+
+.c-course-group {
+    .c-item-course.slick-current {
+        .tooltip {
+            left: initial;
+            right: calc(100% - 15.5px);
+
+            .tooltip-wrappwe::before {
+                left: initial;
+                right: -8px;
+                transform: scale(-1);
+            }
+        }
+
+        &:hover {
+            z-index: 2;
+        }
+    }
+}

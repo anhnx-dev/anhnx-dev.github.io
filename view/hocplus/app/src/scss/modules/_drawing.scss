@@ -1,0 +1,131 @@
+@import '../_variables.scss';
+
+.drawing {
+    .toolset {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        background: $cl04;
+        border: 1px solid $cl02;
+        padding: 15px 3px;
+        font-size: 1rem;
+
+        &.active {
+            display: block;
+        }
+
+        .tool-item {
+            position: relative;
+            margin-top: 10px;
+            list-style: none;
+
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+
+            >.btn {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: 32px;
+                height: 25px;
+                color: $c-white;
+                background: transparent;
+                border: 1px solid transparent;
+                border-radius: $round;
+                transition: $transition;
+                cursor: pointer;
+
+                &.btn-image,
+                &.btn-pdf {
+                    .fa {
+                        display: block;
+                    }
+
+                    input {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        overflow: hidden;
+                        opacity: 0;
+                    }
+                }
+            }
+
+            &.active,
+            &:hover {
+                .btn {
+                    background: $cl02;
+                    border: 1px solid $bc03;
+                }
+
+                .setting {
+                    opacity: 1;
+                    transform: translate3d(0, 0, 0);
+                    pointer-events: initial;
+                }
+            }
+
+            .setting {
+                z-index: 9999;
+                position: absolute;
+                color: $c-white;
+                background: $cl03;
+                top: 0;
+                left: 100%;
+                padding: 10px;
+                border-radius: $round;
+                width: 200px;
+                opacity: 0;
+                transform: translate3d(0, 10px, 0);
+                pointer-events: none;
+                transition: $transition;
+
+                .setting-list {
+                    margin: 0;
+                    padding: 0;
+
+                    .item {
+                        display: flex;
+                        justify-content: space-between;
+                        list-style: none;
+                        margin-top: 10px;
+
+                        &:nth-child(1) {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .canvas {
+        background: $cl04;
+        padding: 8px;
+        border: 1px solid $cl02;
+
+        .inner {
+            position: relative;
+
+            .canvas-pdf {
+                background: $c-white;
+            }
+
+            .canvas-drawing {
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+}

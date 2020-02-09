@@ -1,0 +1,74 @@
+@import '../variables';
+
+.c-target {
+    background: $cl-24;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .headline {
+        text-align: center;
+        .title {
+            @extend .title-text;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .text {
+            @extend .big-text;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            .inner {
+                @media (min-width: $breakpoints-lg) {
+                  width: 83.333333%;
+                }
+            }
+        }
+    }
+    .group {
+        .item {
+            margin-top: 15px;
+            @media (min-width: $breakpoints-lg) {
+              margin-top: 30px;
+            }
+            .inner {
+                text-align: center;
+                .icon {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    height: 110px;
+                    span {
+                        display: block;
+                    }
+                    img {
+                        display: block;
+                        max-height: 100%;
+                    }
+                }
+                .info {
+                    margin-top: 15px;
+                    .title {
+                        @extend .big-text;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        @media (min-width: $breakpoints-lg) {
+          margin-top: 30px;
+        }
+        .inner {
+            @extend .title-text;
+            @media (min-width: $breakpoints-md) {
+                width: 50%;
+                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}

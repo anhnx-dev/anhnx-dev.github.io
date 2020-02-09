@@ -1,0 +1,47 @@
+@import '../variables';
+
+.c-follow {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid $bc-01;
+    .title {
+        @extend .big-text;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .group-item {
+        .item {
+            position: relative;
+            margin-top: 10px;
+            height: 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px 0 60px;
+            background: $cl-08;
+            .icon {
+                position: absolute;
+                height: 100%;
+                width: 48px;
+                left: 0;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $c-white;
+                &.mail {
+                    background: #ee9410;
+                }
+                &.facebook {
+                    background: #536da6;
+                }
+                &.twitter {
+                    background: #5cade1;
+                }
+            }
+            .text {
+                color: $cl-22;
+            }
+        }
+    }
+}

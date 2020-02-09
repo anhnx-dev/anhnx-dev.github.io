@@ -1,0 +1,15 @@
+@import '../variables';
+
+.c-carousel {
+    .item {
+        .img {
+            @extend .img-cover;
+            &::before {
+                padding-bottom: 40%;
+            }
+            >a {
+                @extend .img-cover__wrapper;
+            }
+        }
+    }
+}

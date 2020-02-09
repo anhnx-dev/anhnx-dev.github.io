@@ -1,0 +1,205 @@
+@import '../variables';
+
+.c-topbar {
+    padding: 10px 0;
+    @media (min-width: $breakpoints-lg) {
+        padding: 15px 0;
+    }
+    .topbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner {
+        max-height: 50px;
+        width: auto;
+        img {
+            height: 50px;
+        }
+    }
+    .btn-group {
+        text-align: right;
+        .btn {
+            font-weight: 500;
+            text-transform: uppercase;
+            border: 1px solid transparent;
+            background: transparent;
+            border-radius: 999px;
+            &.btn-registration {
+                position: relative;
+                color: $cl-05;
+                padding: 0;
+                @media (min-width: $breakpoints-lg) {
+                    margin-left: 25px;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    left: 0;
+                    bottom: 0;
+                    background: $cl-05;
+                    transition: $transition;
+                }
+                &:hover {
+                    opacity: .9;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+                @media (min-width: $breakpoints-lg) {
+                    border: 1px solid $cl-04;
+                    padding: 10px 30px;
+                    color: $cl-04;
+                    &::after {
+                        display: none;
+                    }
+                    &:hover {
+                        background: $cl-04;
+                        color: $c-white;
+                    }
+                }
+            }
+            &.btn-log-in {
+                position: relative;
+                color: $cl-05;
+                padding: 0;
+                margin-left: 15px;
+                @media (min-width: $breakpoints-lg) {
+                    margin-left: 25px;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    left: 0;
+                    bottom: 0;
+                    background: $cl-05;
+                    transition: $transition;
+                }
+                &:hover {
+                    opacity: .9;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .my-user {
+        position: relative;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: -5px;
+        @media (min-width: $breakpoints-lg) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .user-inner {
+            display: flex;
+            align-items: center;
+
+            .avatar {
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+                overflow: hidden;
+                @media (min-width: $breakpoints-lg) {
+                  height: 45px;
+                  width: 45px;
+                }
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .name {
+                margin-left: 10px;
+                color: $cl-05;
+                display: none;
+                align-items: center;
+                @media (min-width: $breakpoints-md) {
+                  display: flex;
+                }
+                &::after {
+                    content: '\e903';
+                    font-family: $f-icon;
+                    display: inline-block;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        .dropdown {
+            position: absolute;
+            z-index: 2;
+            padding-top: 10px;
+            right: -15px;
+            transition: $transition;
+            opacity: 0;
+            pointer-events: none;
+            transform: translate3d(0,20px,0);
+            .list {
+                position: relative;
+                width: 195px;
+                border: 1px solid $bc-01;
+                background: $c-white;
+                margin: 0;
+                padding: 0;
+                border-radius: $round;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 15px;
+                    height: 10px;
+                    top: -9px;
+                    right: 13px;
+                    background: url(../images/arrow.png);
+                }
+                .item {
+                    list-style: none;
+                    border-top: 1px solid $bc-01;
+                    transition: $transition;
+                    &:nth-child(1) {
+                        border-top: 0;
+                        border-radius: $round $round 0 0;
+                    }
+                    &:last-of-type {
+                        border-radius: 0 0 $round $round;
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        padding: 11px 19px;
+                        color: $c-dark;
+                        text-decoration: none;
+                        .fa {
+                            @extend .big-text;
+                            margin-right: 10px;
+                            color: $cl-28;
+                        }
+                    }
+                    &:hover {
+                        background: $cl-05;
+                        span,
+                        .fa {
+                            color: $c-white;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            .dropdown {
+                opacity: 1;
+                pointer-events: auto;
+                transform: translate3d(0,0,0);
+            }
+        }
+    }
+}

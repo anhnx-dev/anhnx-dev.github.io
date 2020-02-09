@@ -1,0 +1,33 @@
+@import '../variables';
+
+.c-tag {
+    @extend .big-text;
+    margin-top: 25px;
+    .title {
+        padding-bottom: 15px;
+    border-bottom: 1px solid $bc-04;
+    }
+    .list {
+        margin: 5px -5px 0 -5px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        .item {
+            margin-top: 10px;
+            list-style: none;
+            padding: 0 5px;
+            >a {
+                display: block;
+                text-decoration: none;
+                background: $cl-07;
+                border-radius: $round;
+                color: $c-white;
+                padding: 1px 5px;
+                transition: $transition;
+                &:hover {
+                    background: $cl-04;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@import '../variables';
+
+.c-nav-list {
+    .title {
+        @extend .big-text-01;
+        color: $cl-10;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $bc-04;
+        font-weight: 700;
+    }
+    .list {
+        margin: 0;
+        padding: 0;
+        .list-item {
+            margin-top: 15px;
+            list-style: none;
+            
+            >a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                >img {
+                    max-width: 18px;
+                }
+                >span {
+                    margin-left: 10px;
+                    transition: $transition;
+                }
+                &:hover>span {
+                    color: $cl-06;
+                }
+            }
+        }
+    }
+}
