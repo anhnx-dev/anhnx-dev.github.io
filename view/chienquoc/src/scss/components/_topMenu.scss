@@ -1,0 +1,14 @@
+@import '../variables';
+
+.c-top-menu {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}

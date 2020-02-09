@@ -1,0 +1,76 @@
+/* Fonts */
+$f-m: 'Montserrat';
+$f-ua: 'UTM Avenida';
+$f-ug: 'UTM Guanine';
+$f-us: 'UTM Spring';
+
+/* Colors - Default */
+$c-blue: #007bff;
+$c-indigo: #6610f2;
+$c-purple: #6f42c1;
+$c-pink: #e83e8c;
+$c-red: #dc3545;
+$c-orange: #fd7e14;
+$c-yellow: #ffc107;
+$c-green: #28a745;
+$c-teal: #20c997;
+$c-cyan: #17a2b8;
+$c-white: #fff;
+$c-gray: #6c757d;
+$c-gray-dark: #343a40;
+$c-primary: #007bff;
+$c-secondary: #6c757d;
+$c-success: #28a745;
+$c-info: #17a2b8;
+$c-warning: #ffc107;
+$c-danger: #dc3545;
+$c-light: #f8f9fa;
+$c-dark: #343a40;
+
+
+/* Colors - Theme */
+$c-01: #ed1c24;
+$c-02: #5c5c5c;
+$c-03: #fff799;
+$c-04: #000;
+$c-05: #404040;
+$c-06: #7d7d7d;
+$c-07: #ebebeb;
+$c-08: #636363;
+$c-09: #e9c882;
+$c-10: #ccc;
+
+/* background */
+$bg-dark: rgba(0, 0, 0, 0.4);
+
+/* Coler border */
+
+/* Cover */
+
+/* box shadow */
+$bs-01: rgba(0,0,0,0.3) 0 0 4px 1px;
+
+/* Background */
+
+/* Transitions */
+
+$transition: all .3s ease-in-out;
+$duration: .25s;
+$speed: 200ms;
+$ease: ease-in-out;
+/* Round */
+
+$round: 4px;
+$round1: 6px;
+/* Breakpoints */
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+$breakpoints-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$breakpoints-md: 768px;
+// Large devices (desktops, 992px and up)
+$breakpoints-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$breakpoints-xl: 1200px;

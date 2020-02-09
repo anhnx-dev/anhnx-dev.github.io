@@ -1,0 +1,68 @@
+@import '../variables';
+
+.c-menu-fix {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $breakpoints-lg) {
+    display: block;
+    top: 105px;
+    right: 30px;
+    width: auto;
+  }
+
+  li {
+    list-style: none;
+    text-align: center;
+
+    &.qr {
+      margin-bottom: 15px;
+      display: none;
+      @media (min-width: $breakpoints-lg) {
+        display: block;
+      }
+
+      a {
+        display: block;
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 98%;
+          height: 1px;
+          background: #ffffff;
+          box-shadow: 0 0 16px 6px #ff9595;
+          display: block;
+          position: absolute;
+          left: 1%;
+          top: 0;
+          animation: qr_slide 3s infinite;
+        }
+      }
+    }
+
+    &.card {
+      margin-top: 15px;
+      display: none;
+      @media (min-width: $breakpoints-lg) {
+        display: block;
+      }
+    }
+  }
+}
+
+@keyframes qr_slide {
+  from {
+    top: 4%;
+  }
+
+  to {
+    top: 96%;
+  }
+}

@@ -1,0 +1,392 @@
+@import '../variables';
+
+.c-news-main {
+  padding-top: 110px;
+  padding-bottom: 60px;
+
+  @media (min-width: $breakpoints-lg) {
+    padding-top: 210px;
+    padding-bottom: 160px;
+  }
+
+  .row-news-main {
+    justify-content: center;
+  }
+
+  .inner {
+    background: $c-white;
+    box-shadow: $bs-01;
+    padding: 10px 15px 100px 15px;
+  }
+
+  .notices {
+    margin-top: 20px;
+
+    @media (min-width: $breakpoints-lg) {
+      margin-top: 30px;
+    }
+
+    .item {
+      background: $c-07;
+      border-left: 5px solid $c-04;
+      padding: 10px 10px 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1px;
+
+      @media (min-width: $breakpoints-lg) {
+        padding-left: 55px;
+        padding-right: 30px;
+      }
+
+      .title {
+        @extend .medium-text;
+        position: relative;
+        font-weight: normal;
+        margin: 0;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 17px;
+          height: 20px;
+          top: 1px;
+          left: -22px;
+          background-image: url(./images/ic-notices.png);
+
+          @media (min-width: $breakpoints-lg) {
+            left: -32px;
+          }
+        }
+
+        a {
+          color: $c-08;
+          text-decoration: none;
+          transition: $transition;
+
+          &:hover {
+            color: $c-01;
+          }
+        }
+      }
+
+      .date {
+        margin-left: 15px;
+
+        @media (min-width: $breakpoints-lg) {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  .tabs {
+    margin-top: 15px;
+
+    @media (min-width: $breakpoints-lg) {
+      margin-top: 30px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      @include no-spacing;
+      margin-left: -5px;
+      margin-right: -5px;
+
+      @media (min-width: $breakpoints-lg) {
+        margin: 0;
+      }
+
+      .nav-item {
+        @extend .medium-text;
+        width: calc(33.33333% - 10px);
+        margin: 5px;
+        padding: 6px 10px;
+        list-style: none;
+        text-align: center;
+        font-weight: 600;
+        color: $c-06;
+        cursor: pointer;
+        border-top: 1px solid $c-08;
+        border-left: 1px solid $c-08;
+        border-right: 1px solid $c-08;
+        border-bottom: 1px solid $c-01;
+
+        @media (min-width: $breakpoints-lg) {
+          width: 16.666667%;
+          margin: 0;
+          border-top: 2px solid $c-08;
+          border-bottom: 2px solid $c-01;
+
+          &:nth-child(1) {
+            border-left: 2px solid $c-08;
+          }
+
+          &:last-of-type {
+            border-right: 2px solid $c-08;
+          }
+        }
+
+        &.active {
+          border-top: 1px solid $c-01;
+          border-bottom: 1px solid $c-01;
+          border-left: 1px solid $c-01;
+          border-right: 1px solid $c-01;
+
+          @media (min-width: $breakpoints-lg) {
+            border-top: 2px solid $c-01;
+            border-bottom: 2px solid $c-white;
+
+            &:nth-child(1) {
+              border-left: 2px solid $c-01;
+            }
+
+            &:last-of-type {
+              border-right: 2px solid $c-01;
+            }
+          }
+
+        }
+      }
+    }
+
+    .grid {
+      .grid-col-1 {
+        display: inline-block;
+
+        @media (min-width: $breakpoints-lg) {
+          display: block;
+        }
+      }
+
+      .grid-col-2 {
+        display: inline-block;
+
+        @media (min-width: $breakpoints-lg) {
+          display: block;
+        }
+      }
+
+      @media (min-width: $breakpoints-lg) {
+        display: flex;
+
+        .grid-col-1 {
+          position: relative;
+          width: 20%;
+          padding-left: 10px;
+          padding-right: 10px;
+          text-align: center;
+          display: inline-block;
+
+          @media (min-width: $breakpoints-lg) {
+            display: block;
+          }
+        }
+
+        .grid-col-2 {
+          position: relative;
+          width: 20%;
+          padding-left: 10px;
+          padding-right: 10px;
+          left: 60%;
+          display: inline-block;
+
+          @media (min-width: $breakpoints-lg) {
+            display: block;
+          }
+        }
+
+        .grid-col-3 {
+          position: relative;
+          width: 60%;
+          padding-left: 10px;
+          padding-right: 10px;
+          right: 20%;
+        }
+      }
+    }
+
+    .tab-header {
+      display: none;
+      margin-top: 15px;
+      border-top: 1px solid $c-08;
+      border-bottom: 1px solid $c-08;
+      font-weight: 600;
+      background: $c-09;
+      color: $c-06;
+      padding: 10px 0;
+
+      @media (min-width: $breakpoints-lg) {
+        margin-top: 25px;
+        display: flex;
+      }
+    }
+
+    .tab-body {
+      .class {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+
+        .item {
+
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid $c-10;
+
+          @media (min-width: $breakpoints-lg) {
+            padding-top: 12px;
+            padding-bottom: 12px;
+          }
+
+          .updates {
+            >span {
+              display: inline-block;
+              padding: 2px 15px;
+              background: $c-01;
+              color: $c-white;
+              border-radius: $round;
+            }
+          }
+
+          .title {
+
+            h2,
+            h3 {
+              @include no-spacing;
+              @extend .medium-text;
+              font-weight: normal;
+
+              a {
+                text-decoration: none;
+                color: $c-08;
+                transition: $transition;
+
+                &:hover {
+                  color: $c-01;
+                }
+              }
+            }
+          }
+
+          .date {
+            color: $c-08;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      @include no-spacing;
+      margin-top: 30px;
+      margin-left: -1px;
+      margin-right: -1px;
+
+      @media (min-width: $breakpoints-lg) {
+        margin-top: 35px;
+      }
+
+      .page-item {
+        list-style: none;
+        padding: 0 1px;
+        margin-top: 5px;
+
+        .page-link {
+          @include flex-center;
+          height: 30px;
+          width: 30px;
+          border: 1px solid $c-06;
+          border-radius: $round;
+          text-decoration: none;
+          color: $c-06;
+          transition: $transition;
+
+          &:hover,
+          &.active {
+            background: $c-09;
+            border-color: $c-09;
+          }
+        }
+      }
+    }
+  }
+
+  .search {
+    @include flex-center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 25px;
+
+    @media (min-width: $breakpoints-md) {
+      margin-top: 30px;
+    }
+
+    .form-control {
+      padding: 13px 10px;
+
+      color: $c-06;
+      border-radius: $round;
+      border: 1px solid $c-06;
+
+      @media (min-width: $breakpoints-md) {
+        margin: 0 5px;
+      }
+    }
+
+    .form-group {
+      width: 100%;
+      margin-top: 10px;
+
+      @media (min-width: $breakpoints-md) {
+        margin-top: 0;
+        width: auto;
+      }
+
+      .form-control {
+        width: 100%;
+        @media (min-width: $breakpoints-md) {
+          width: auto;
+        }
+      }
+    }
+
+    .form-group-input {
+      position: relative;
+
+      .form-control {
+        min-width: 260px;
+      }
+
+      .btn {
+        position: absolute;
+        background: transparent;
+        border: 0;
+        width: 60px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        outline: none;
+        transition: $transition;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+
+    }
+  }
+}

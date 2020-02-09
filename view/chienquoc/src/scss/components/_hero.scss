@@ -1,0 +1,63 @@
+@import '../variables';
+
+.c-hero {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  @media (max-width: $breakpoints-sm) {
+    height: 400px;
+  }
+
+  .play-btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    @media (max-width: $breakpoints-sm) {
+      top: 30%;
+    }
+    transform: translate3d(-50%, -50%, 0);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px 20px;
+    cursor: pointer;
+    background: radial-gradient(rgba(142, 142, 142, 0.8) 60%, rgb(181, 165, 165) 62%);
+    border-radius: 50%;
+    border: 0;
+    background: transparent;
+    outline: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 150%;
+      height: 150%;
+      opacity: 1;
+      top: -30%;
+      left: -30%;
+      filter: blur(2px);
+      animation: 2s ease 0s infinite normal none running animation-play-btn;
+      border-radius: 50%;
+      border-width: 5px;
+      border-style: solid;
+      border-color: rgba(255, 0, 0, 0.4);
+      border-image: initial;
+      background: rgba(198, 16, 0, 0);
+    }
+  }
+}
+
+@keyframes animation-play-btn {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+  }
+}

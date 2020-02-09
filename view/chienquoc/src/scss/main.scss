@@ -1,0 +1,20 @@
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'layout';
+@import 'typography';
+@import 'wysiwyg';
+
+// Header
+@import 'components/navbar';
+@import 'components/topMenu';
+@import 'components/menuFix';
+
+// Main
+@import 'components/hero';
+@import 'components/function';
+@import 'components/figure';
+@import 'components/news';
+@import 'components/newMain';
+

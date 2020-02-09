@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="src/vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="src/vendor/slick/slick.css">
+    <link rel="stylesheet" href="src/vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="src/main.min.css">
+</head>
+
+<body class="home">
+
+
+    <div id="app">
+
+        <!-- header -->
+        <header class="header" id="header">
+            <ul class="c-top-menu">
+                <li><a href=""><img src="./images/logo.png" alt=""></a></li>
+                <li><img src="./src/images/brattle.png" alt=""></li>
+                <li><a href=""><img src="./src/images/home.png" alt=""></a></li>
+                <li><a href=""><img src="./src/images/community.png" alt=""></a></li>
+                <li><a href=""><img src="./src/images/play.png" alt=""></a></li>
+            </ul>
+
+            <ul class="c-menu-fix">
+                <li class="qr"><a href=""><img src="./images/qr.png" alt=""></a></li>
+                <li class="store"><a href=""><img src="./src/images/app-store.png" alt=""></a></li>
+                <li class="store"><a href=""><img src="./src/images/play-store.png" alt=""></a></li>
+
+                <li class="card"><a href=""><img src="./src/images/nap-the.png" alt=""></a></li>
+            </ul>
+
+
+        </header>
+        <!-- header end -->
+
+        <!-- main -->
+        <main class="main" id="main">
+
+            <!-- hero -->
+            <section class="c-hero js-hero popup" style="background-image: url(./images/hero.png)">
+                <a class="play-btn" data-fancybox="video-hero" href="https://youtu.be/FFYqJpLBT9k"><img
+                        src="./src/images/play-btn.png" alt="play-btn"></a>
+            </section>
+            <!-- hero end -->
+
+            <!-- funtion -->
+            <section class="c-function" style="background-image: url(./images/bg-function.png)">
+                <div class="container">
+                    <h2 class="headline headline-red"><span>Các tính năng mới</span></h2>
+                    <div class="slide js-function-slide">
+                        <div class="item"><a href="#"><img src="images/slide-funtion.png" alt="slide funtion"></a></div>
+                        <div class="item"><a href="#"><img src="images/slide-funtion.png" alt="slide funtion"></a></div>
+                        <div class="item"><a href="#"><img src="images/slide-funtion.png" alt="slide funtion"></a></div>
+                        <div class="item"><a href="#"><img src="images/slide-funtion.png" alt="slide funtion"></a></div>
+                        <div class="item"><a href="#"><img src="images/slide-funtion.png" alt="slide funtion"></a></div>
+                        <div class="item"><a href="#"><img src="images/slide-funtion.png" alt="slide funtion"></a></div>
+                        <div class="item"><a href="#"><img src="images/slide-funtion.png" alt="slide funtion"></a></div>
+                    </div>
+                </div>
+            </section>
+            <!-- funtion end -->
+
+            <!-- figure -->
+            <section class="c-figure" style="background-image: url(./images/bg-figure.png)">
+                <div class="container">
+                    <h2 class="headline headline-white"><span>hệ thống nhân vật</span></h2>
+                    <div class="figure js-figure">
+
+                        <div class="list">
+                            <div class="item active" id="mac-gia-nam">
+                                <div class="info">
+                                    <img src="images/info-figure.png" alt="info figure">
+                                </div>
+                                <div class="img">
+                                    <img src="images/img-figure.png" alt="img figure">
+                                </div>
+                            </div> <!-- / item -->
+                            <div class="item" id="mac-gia-nu">
+                                <div class="info">
+                                    <img src="images/info-figure.png" alt="info figure">
+                                </div>
+                                <div class="img">
+                                    <img src="images/img-figure.png" alt="img figure">
+                                </div>
+                            </div> <!-- / item -->
+                            <div class="item" id="thich-khach-nam">
+                                <div class="info">
+                                    <img src="images/info-figure.png" alt="info figure">
+                                </div>
+                                <div class="img">
+                                    <img src="images/img-figure.png" alt="img figure">
+                                </div>
+                            </div> <!-- / item -->
+                            <div class="item" id="thich-khach-nu">
+                                <div class="info">
+                                    <img src="images/info-figure.png" alt="info figure">
+                                </div>
+                                <div class="img">
+                                    <img src="images/img-figure.png" alt="img figure">
+                                </div>
+                            </div> <!-- / item -->
+                            <div class="item" id="cung-thu-nam">
+                                <div class="info">
+                                    <img src="images/info-figure.png" alt="info figure">
+                                </div>
+                                <div class="img">
+                                    <img src="images/img-figure.png" alt="img figure">
+                                </div>
+                            </div> <!-- / item -->
+                            <div class="item" id="cung-thu-nu">
+                                <div class="info">
+                                    <img src="images/info-figure.png" alt="info figure">
+                                </div>
+                                <div class="img">
+                                    <img src="images/img-figure.png" alt="img figure">
+                                </div>
+                            </div> <!-- / item -->
+                        </div> <!-- / list -->
+
+                        <div class="class">
+                            <div class="item active" data-class="#mac-gia-nam">
+                                <h3 class="name">Mặc giả</h3>
+                                <div class="sex">Nam</div>
+                            </div> <!-- / item -->
+                            <div class="item" data-class="#mac-gia-nu">
+                                <h3 class="name">Mặc giả</h3>
+                                <div class="sex">Nữ</div>
+                            </div> <!-- / item -->
+                            <div class="item" data-class="#thich-khach-nam">
+                                <h3 class="name">Thích khách</h3>
+                                <div class="sex">Nam</div>
+                            </div> <!-- / item -->
+                            <div class="item" data-class="#thich-khach-nu">
+                                <h3 class="name">Thích khách</h3>
+                                <div class="sex">Nữ</div>
+                            </div> <!-- / item -->
+                            <div class="item" data-class="#cung-thu-nam">
+                                <h3 class="name">Cung thủ</h3>
+                                <div class="sex">Nam</div>
+                            </div> <!-- / item -->
+                            <div class="item" data-class="#cung-thu-nu">
+                                <h3 class="name">Cung thủ</h3>
+                                <div class="sex">Nữ</div>
+                            </div> <!-- / item -->
+                        </div> <!-- / class -->
+                    </div>
+                </div>
+            </section>
+            <!-- figure end -->
+
+            <!-- news -->
+            <section class="c-news" style="background-image: url(./images/bg-news.png)">
+                <div class="container">
+                    <h2 class="headline headline-red"><a href="#">Các tính năng mới</a></h2>
+                    <div class="inner">
+                        <div class="left">
+                            <div class="function">
+                                <a href="#" class="card-btn"><img src="src/images/nap-the-2.png" alt=""></a>
+                                <div class="download">
+                                    <a href="#" class="btn"><img src="src/images/app-store-2.png" alt=""></a>
+                                    <a href="#" class="btn"><img src="src/images/play-store-2.png" alt=""></a>
+                                    <a href="#" class="btn"><img src="src/images/apk.png" alt=""></a>
+                                </div>
+                                <img class="sword" src="src/images/sword.png" alt="">
+                            </div>
+
+                            <div class="info">
+                                <a href="#" class="btn"><img src="src/images/nav-1.png" alt=""></a>
+                                <a href="#" class="btn"><img src="src/images/nav-2.png" alt=""></a>
+                                <a href="#" class="btn"><img src="src/images/nav-3.png" alt=""></a>
+                                <a href="#" class="btn"><img src="src/images/nav-4.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="slide js-news-slide">
+                                <div class="wrapper">
+                                    <div class="item"><a href="#"><img src="images/slide-news.png" alt="news"></a></div>
+                                    <div class="item"><a href="#"><img src="images/slide-news.png" alt="news"></a></div>
+                                    <div class="item"><a href="#"><img src="images/slide-news.png" alt="news"></a></div>
+                                </div>
+                            </div>
+                            <div class="tabs js-tabs">
+                                <ul class="nav">
+                                    <li class="nav-item active" data-tab="#su-kien">Sự kiện</a></li>
+                                    <li class="nav-item" data-tab="#tinh-nang">Tính năng</a></li>
+                                    <li class="nav-item" data-tab="#thu-vien">Thư viện</a></li>
+                                </ul>
+                                <div class="tab-body">
+                                    <div class="list active" id="su-kien">
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                    </div>
+                                    <div class="list" id="tinh-nang">
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                    </div>
+                                    <div class="list" id="thu-vien">
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                        <div class="list-item">
+                                            <a href="#" class="title">【Máy Chủ Mới】KHAI MỞ S34 HOÀNG PHƯỢNG VÀO 10:00
+                                                NGÀY
+                                                05/07/201</a>
+                                            <span class="date">05/07/201</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- news end -->
+
+        </main>
+        <!-- main end -->
+
+        <!-- footer -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <img src="./images/logo-footer.png" alt="">
+                <div class="brattle">
+                    <img src="./src/images/brattle-footer.png" alt="">
+                </div>
+                <div class="copyright">COPYRIGHT © 2014 CHANGYOU.COM LIMITED</div>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+
+    </div>
+
+
+
+    <!-- js -->
+    <script src="src/vendor/jquery-3.3.1.min.js"></script>
+    <script src="src/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="src/vendor/slick/slick.min.js"></script>
+    <script src="src/main.js"></script>
+
+
+</body>
+
+</html>

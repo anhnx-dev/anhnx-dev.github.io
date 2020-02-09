@@ -1,0 +1,172 @@
+@import '../variables';
+
+.c-figure {
+  @extend .section;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+
+  .headline {
+    position: relative;
+    z-index: 2;
+  }
+
+  .figure {
+    position: relative;
+
+    .list {
+      position: relative;
+      height: 500px;
+
+      @media (min-width: $breakpoints-md) {
+        height: 900px;
+      }
+
+      .item {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+        opacity: 0;
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+        pointer-events: none;
+
+        .info {
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          width: 70%;
+          opacity: 0;
+          transform: translate3d(-100%, 0, 0);
+          transition: all .7s ease-in-out;
+
+          @media (min-width: $breakpoints-md) {
+            width: 50%;
+          }
+
+          >img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+
+        .img {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          opacity: 0;
+          width: 70%;
+          transform: translate3d(100%, 0, 0);
+          transition: all .7s ease-in-out;
+
+          @media (min-width: $breakpoints-md) {
+            width: initial;
+          }
+
+          >img {
+            max-width: 100%;
+
+            @media (min-width: $breakpoints-md) {
+              max-width: initial;
+              max-height: 100%;
+            }
+          }
+        }
+
+        &.active {
+          opacity: 1;
+          pointer-events: auto;
+          transition: $transition;
+
+          .info,
+          .img {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+          }
+        }
+      }
+    }
+
+    .class {
+      position: absolute;
+      z-index: 3;
+      top: 50%;
+      right: 0;
+      transform: translate3d(0, -50%, 0);
+
+
+      @media (min-width: $breakpoints-md) {
+        position: relative;
+        top: initial;
+        right: initial;
+        transform: initial;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0);
+          width: 100%;
+          height: 10px;
+          background-image: url(./images/arrow.png);
+          background-repeat: no-repeat;
+          background-position: 50%;
+        }
+      }
+
+
+
+      .item {
+        position: relative;
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+        margin: 5px 0;
+        color: $c-03;
+        text-align: center;
+        cursor: pointer;
+        background-image: url(./images/frames.png);
+        background-size: cover;
+        @media (min-width: $breakpoints-md) {
+          width: 105px;
+          height: 105px;
+          margin: 0 10px;
+        }
+
+        &.active,
+        &:hover {
+          background-image: url(./images/frames-active.png);
+        }
+
+        .name {
+          font-size: 9px;
+          margin: 0;
+          font-family: $f-ua;
+          text-transform: uppercase;
+          margin: 0;
+          padding-top: 14px;
+          @media (min-width: $breakpoints-md) {
+            padding-top: 33px;
+            font-size: 20px;
+          }
+        }
+        .sex {
+          font-size: 7px;
+          @media (min-width: $breakpoints-md) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+  }
+
+}
