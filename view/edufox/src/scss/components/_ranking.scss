@@ -1,0 +1,254 @@
+@import '../variables';
+
+.c-ranking {
+  background: #F0F0F0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 25px;
+
+  .ranking-header {
+    background: $c-04;
+    color: $c-white;
+    border-radius: 10px;
+    display: none;
+
+    @media (min-width: $breakpoints-lg) {
+      display: block;
+    }
+
+    .statu1 {
+
+      .content {
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 30px 25px 15px 25px;
+      }
+
+      .btn-group {
+        display: flex;
+        padding-left: 17.5px;
+        padding-right: 17.5px;
+
+        .btn {
+          width: 50%;
+          margin: 0 7.5px;
+          padding: 7.5px 10px;
+          text-transform: uppercase;
+          font-size: 12px;
+          background: transparent;
+          border: 1px solid $c-white;
+          color: $c-white;
+          border-radius: $round;
+          cursor: pointer;
+          transition: $transition;
+          font-weight: 500;
+
+          &:hover {
+            background: $c-11;
+            color: $c-white;
+            border: 1px solid $c-11;
+          }
+        }
+      }
+
+      .registration-other {
+        @include flex-center;
+        margin: 15px 15px 0 15px;
+        border-top: 1px solid $c-white;
+
+        .text {
+          @extend .small-text;
+          margin-right: 5px;
+        }
+
+        .icon {
+          @include flex-center;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          margin: 10px;
+          transition: $transition;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+
+          &.icon-facebook {
+            background: #5971be;
+          }
+
+          &.icon-goole {
+            background: #db4d3f;
+          }
+        }
+      }
+    }
+
+    .statu2 {
+      text-align: center;
+      padding: 10px;
+
+      .avatar {
+        @include flex-center;
+
+        a,
+        span {
+          width: 105px;
+          height: 105px;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .info {
+        margin-top: 10px;
+
+        .name {
+          @extend .medium-text;
+        }
+
+        .level {
+          color: $c-05;
+        }
+      }
+    }
+  }
+
+  .ranking-main {
+    margin-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: $breakpoints-md) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    @media (min-width: $breakpoints-lg) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      color: #04A7FB;
+    }
+
+    .group {
+      .item {
+
+        margin-top: 7.5px;
+        padding-top: 7.5px;
+        border-top: 1px solid #C4C4C4;
+
+        .inner {
+          position: relative;
+          padding: 0 0 0 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          @media (min-width: $breakpoints-xxl) {
+            padding: 0 0 0 30px;
+          }
+
+          .location {
+            @include flex-center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+
+            img {
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+
+          .info {
+            display: flex;
+            align-items: center;
+            padding: 0 5px;
+
+            .avatar {
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-right: 10px;
+              border: 1px solid #15A9F2;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .name {
+              font-size: 14px;
+              margin: 0;
+            }
+
+            .exp-per {
+              font-size: 10px;
+              color: #959494;
+            }
+          }
+
+          .level {
+            @include flex-center;
+            margin: 3px;
+            border-radius: 6px;
+            color: $c-white;
+            width: 30px;
+            height: 30px;
+            background: #c3c3c3;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 500;
+
+            &.red {
+              background: #DC4E41;
+            }
+
+            &.blue {
+              background: #04A7FB;
+            }
+
+            &.yellow {
+              background: #EFBE4D;
+            }
+
+            .title {
+              font-size: 10px;
+              color: $c-white;
+              line-height: 1em;
+            }
+
+            .number {
+              line-height: 1em;
+              margin-top: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

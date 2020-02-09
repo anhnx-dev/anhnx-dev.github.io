@@ -1,0 +1,105 @@
+@import '../_variables.scss';
+
+.c-pagination {
+  display: flex;
+  justify-content: center;
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+
+    .page-item {
+      list-style: none;
+      margin: 2.5px;
+
+      @media (min-width: $breakpoints-md) {
+        margin: 0;
+
+        &:nth-child(1) .page-link {
+          border-left: 1px solid #3F9FF8;
+          border-radius: 10px 0 0 10px;
+        }
+
+        &:last-of-type .page-link {
+          border-radius: 0 10px 10px 0;
+        }
+      }
+
+      .page-link {
+        font-size: 16px;
+        text-decoration: none;
+        color: $c-blue;
+
+        &.disabled {
+          color: #555;
+          cursor: initial;
+          pointer-events: none;
+        }
+
+        &.active {
+          text-decoration: underline;
+        }
+
+        @media (min-width: $breakpoints-md) {
+          display: block;
+          padding: 6px 14px;
+          border: 1px solid #3F9FF8;
+          border-left: none;
+
+          &.active,
+          &:hover {
+            text-decoration: none;
+            background: #3F9FF8;
+            color: $c-white;
+          }
+
+          &.disabled:hover {
+            color: #ccc;
+            border-color: $c-09;
+            background: $c-white;
+            pointer-events: none;
+          }
+        }
+
+        +.page-item .page-link {}
+      }
+    }
+  }
+
+  &.v2 {
+    @media (min-width: $breakpoints-md) {
+      margin-top: 40px;
+    }
+    .pagination {
+      @include no-spacing;
+      .page-item {
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+        margin: 0;@media (min-width: $breakpoints-md) {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .page-link {
+          @include flex-center;
+          width: 17px;
+          height: 17px;
+          border-radius: 50%;
+          background: $c-white;
+          font-size: 8px;
+          color: $c-danger;
+          @media (min-width: $breakpoints-md) {
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+          }
+          &.active,
+          &:hover {
+            background: #1b98d5;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

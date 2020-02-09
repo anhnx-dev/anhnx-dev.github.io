@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="src/vendor/flipclock/flipclock.css">
+  <link rel="stylesheet" href="src/vendor/slick/slick.css">
+  <link rel="stylesheet" href="src/vendor/slick/slick-theme.css">
+  <link rel="stylesheet" href="src/main.min.css">
+</head>
+
+<body class="result-page">
+
+
+  <div id="app">
+
+    <!-- header -->
+    <header class="header" id="header">
+
+      <!-- navbar -->
+      <nav class="c-navbar">
+
+        <div class="container">
+          <a class="brand" href="./index.html"><img src="./images/brand.png" alt=""></a>
+          <!-- brand -->
+
+          <ul class="nav js-navbar">
+            <li class="nav-item"><a class="nav-link active" href="./index.html">Trang chủ</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./room.html">Phòng thi <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">THPT Quốc gia</a>
+                <a class="dropdown-item" href="#">Thi vào 10</a>
+                <a class="dropdown-item" href="#">Thi HSG</a>
+                <a class="dropdown-item" href="#">Học kỳ 1</a>
+                <a class="dropdown-item" href="#">Học kỳ 2</a>
+                <a class="dropdown-item" href="#">Kiểm tra 1 tiết</a>
+                <a class="dropdown-item" href="#">Kiểm tra 15 ‘</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link highlight" href="./about.html">Phòng học VIP<i
+                  class="fas fa-star"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">Giới thiệu</a></li>
+            <li class="nav-item"><a class="nav-link" href="./news.html">Tin tức</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Liên Hệ</a></li>
+          </ul>
+          <!-- nav -->
+
+          <form class="form-search">
+            <input class="form-control" type="search" placeholder="Tìm kiếm">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <!-- search -->
+
+          <div class="nav-trigger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- / nav trigger -->
+        </div>
+
+      </nav>
+      <!-- navbar end -->
+
+      <!-- fix -->
+      <div class="c-fix">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <div class="inner">
+                <span class="icon"><i class="far fa-star"></i></span>
+                <span class="title">Mục Ưa Thích</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <span class="nav-link">
+              <div class="inner">
+                <span class="icon">
+                  <i class="fas fa-bell"></i>
+                  <span class="number">1</span>
+                </span>
+                <span class="title">Thông báo</span>
+              </div>
+            </span>
+            <div class="dropdown-menu">
+              <div class="dropdown-inner">
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link highlight">
+              <div class="inner">
+                <span class="icon">
+                  <img src="./src/img/ic-vip.png" alt="">
+                </span>
+                <span class="title">PHÒNG HỌC VIP</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link btn-popup">
+              <div class="inner">
+                <span class="icon">
+                  <img src="./src/img/user.png" alt="">
+                </span>
+                <span class="title">Tài khoản</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- fix end -->
+
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main class="main" id="main">
+
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-12 col-lg-9">
+
+            <section class="c-result js-result">
+              <h1 class="headline">Đề thi 1 tiết môn Vật Lý THPT Ninh Hải - Ninh Thuận năm 2017</h1>
+              <div class="info">
+                <div class="wrapper">
+                  <div class="id">ID: EXAM1 - 1578886548</div>
+                  <div class="number">0 lượt thi</div>
+                </div>
+                <div class="wrapper">
+                  <div class="question-number">50 câu hỏi</div>
+                  <div class="time">60 phút</div>
+                </div>
+              </div>
+              <div class="result">
+                <div class="time">
+                  <div class="time-function">
+                    <div class="title">Thời gian làm bài</div>
+                    <div class="date">01 : 03 : 17</div>
+                  </div>
+                  <div class="time-begin">
+                    <div class="title">Thời gian bắt đầu</div>
+                    <div class="date">15 : 05 : 10 - 13/01/2020</div>
+                  </div>
+                </div>
+                <div class="point">
+                  <div class="title">Điểm thi của bạn</div>
+                  <div class="inner">
+                    <div class="inner-wrapper">
+                      <div class="big">0</div>
+                      <div class="small">/50</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="share">
+                  <!-- Demo thi back-end code cần đăng ký tài khoản của công ty -->
+                  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                  <script type="text/javascript"
+                    src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e26986a4c4ebe40"></script>
+                  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                  <div class="addthis_inline_share_toolbox"></div>
+                </div>
+              </div>
+              <div class="question">
+                <ul>
+                  <li class="active"><a href="">01</a></li>
+                  <li><a href="">2</a></li>
+                  <li class="active"><a href="">03</a></li>
+                  <li class="active"><a href="">04</a></li>
+                  <li><a href="">05</a></li>
+                  <li><a href="">06</a></li>
+                  <li><a href="">07</a></li>
+                  <li><a href="">08</a></li>
+                  <li><a href="">09</a></li>
+                  <li><a href="">10</a></li>
+                  <li><a href="">11</a></li>
+                  <li><a href="">12</a></li>
+                  <li><a href="">13</a></li>
+                  <li><a href="">14</a></li>
+                  <li><a href="">15</a></li>
+                  <li><a href="">16</a></li>
+                  <li><a href="">17</a></li>
+                  <li><a href="">18</a></li>
+                  <li><a href="">19</a></li>
+                  <li><a href="">20</a></li>
+                  <li><a href="">21</a></li>
+                  <li><a href="">22</a></li>
+                  <li><a href="">23</a></li>
+                  <li><a href="">24</a></li>
+                  <li><a href="">25</a></li>
+                  <li><a href="">26</a></li>
+                  <li><a href="">27</a></li>
+                  <li><a href="">28</a></li>
+                  <li><a href="">29</a></li>
+                  <li><a href="">30</a></li>
+                  <li><a href="">31</a></li>
+                  <li><a href="">32</a></li>
+                  <li><a href="">33</a></li>
+                  <li><a href="">34</a></li>
+                  <li><a href="">35</a></li>
+                  <li><a href="">36</a></li>
+                  <li><a href="">37</a></li>
+                  <li><a href="">38</a></li>
+                  <li><a href="">39</a></li>
+                  <li><a href="">40</a></li>
+                  <li><a href="">41</a></li>
+                  <li><a href="">42</a></li>
+                  <li><a href="">43</a></li>
+                  <li><a href="">44</a></li>
+                  <li><a href="">45</a></li>
+                  <li><a href="">46</a></li>
+                  <li><a href="">47</a></li>
+                  <li><a href="">48</a></li>
+                  <li><a href="">49</a></li>
+                  <li class="active"><a href="">50</a></li>
+                </ul>
+              </div>
+              <div class="evaluate-star">
+                <div class="title">Đánh giá đề thi</div>
+                <div class="inner">
+                  <div class="stars js-stars">
+                    <span class="star active" data-value="1"><i class="fas fa-star"></i></span>
+                    <span class="star active" data-value="2"><i class="fas fa-star"></i></span>
+                    <span class="star active" data-value="3"><i class="fas fa-star"></i></span>
+                    <span class="star" data-value="4"><i class="fas fa-star"></i></span>
+                    <span class="star" data-value="5"><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="number">(7.8)</div>
+                </div>
+              </div>
+              <div class="answer">
+                <div class="content">
+                  <div><strong>Lời giải chi tiết</strong></div>
+                </div>
+                <button class="btn" type="button">Xem lời giải <i class="fas fa-paper-plane"></i></button>
+              </div>
+              <div class="popup">
+                <div class="content">
+                  <img src="./images/dap-an.png" alt="">
+                </div>
+                <div class="function">
+                  <div class="answer-true"><img src="./src/img/ic-da-1.png" alt="">Đáp án đúng: C</div>
+                  <div class="active-1"><img src="./src/img/ic-da-2.png" alt=""> Lời giải và bình luận</div>
+                  <div class="active-2">Theo dõi</div>
+                  <div class="active-3" data-modal="#modal-error">Báo lỗi <img src="./src/img/ic-da-5.png" alt=""></div>
+                  <div class="id">ID: 14832</div>
+                </div>
+                <div class="commit">
+                  <a href="#">Chi tiết lời giải</a>
+                </div>
+                <div class="end-page">----- THE END -----</div>
+              </div>
+            </section>
+            <!-- result -->
+
+          </div>
+
+          <div class="col-12 col-lg-3">
+
+            <section class="c-ranking">
+              <div class="ranking-header">
+
+                <div class="statu1">
+                  <div class="content">nền tảng công nghệ thi thử trực tuyến lớn nhất việt nam</div>
+                  <div class="btn-group">
+                    <button class="btn btn-registration">Đăng kỹ</button>
+                    <button class="btn btn-login">Đăng nhập</button>
+                  </div>
+                  <div class="registration-other">
+                    <span class="text">Đăng nhập bằng:</span>
+                    <span class="icon icon-facebook"><svg class="svg-inline--fa fa-facebook-f fa-w-10"
+                        aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                          d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                        </path>
+                      </svg><!-- <i class="fab fa-facebook-f"></i> --></span>
+                    <span class="icon icon-goole"><svg class="svg-inline--fa fa-google-plus-g fa-w-20"
+                        aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-plus-g" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                          d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z">
+                        </path>
+                      </svg><!-- <i class="fab fa-google-plus-g"></i> --></span>
+                  </div>
+                </div>
+
+                <!-- Chú ý statu2 hiển thị khi user đã đăng nhập thành công -->
+                <!-- <div class="statu2">
+                      <div class="avatar">
+                          <a href="#"><img src="./images/user1.png" alt=""></a>
+                      </div>
+                      <div class="info">
+                          <div class="name">Hồ Anh Tuấn</div>
+                          <div class="level">Level: 58 &nbsp; Exp: 8000 &nbsp; Sp: 56%</div>
+                      </div>
+                  </div> -->
+
+              </div>
+              <div class="ranking-main">
+                <h2 class="title">BẢNG XẾP HẠNG</h2>
+                <div class="group">
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location"><img src="./src/img/cuo-vang.png" alt=""></div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level red">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location"><img src="./src/img/cup-bac.png" alt=""></div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level blue">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location"><img src="./src/img/cup-dong.png" alt=""></div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level yellow">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">04</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">05</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">06</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">07</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">08</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">09</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">10</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                </div>
+              </div>
+            </section> <!-- / ranking end -->
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+
+      <div class="container">
+        <div class="footer-contact">
+          <span style="font-weight: 500;">TẬP ĐOÀN GIÁO DỤC EGROUP</span>
+          <br>
+          <span style="font-weight: 500;">CÔNG TY CỔ PHẦN DỊCH VỤ CÔNG NGHỆ GIÁO DỤC VIỆT NAM (VNEDUTECH)</span>
+          <br>
+          Tầng 3, tòa nhà 25T1, đường Hoàng Đạo Thúy, phường Trung Hòa, quận Cầu Giấy, TP. Hà Nội
+          <br>
+          Hotline: 1900.636.444 (8h - 17h Thứ 2 - Thứ 6) &nbsp &nbsp &nbsp &nbsp 0967.345.456 (17h - 22h cuối tuần + lễ
+          tết)
+          <br>
+          Email: contact@vnedutech.vn
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <span>Copyright © 2019 Egroup. Design by VNEDUTECH. All rights reserved.</span>
+          <div class="group-icon">
+            <a href="#"><img src="./src/img/ic-www.svg" alt=""></a>
+            <a href="#"><img src="./src/img/ic-fb.svg" alt=""></a>
+            <a href="#"><img src="./src/img/ic-youtube.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <!-- footer end -->
+
+    <div class="overlay-body"><span><i class="far fa-times-circle"></i></span></div>
+    <div class="c-popup-user js-popup-user">
+      <div class="wrapper">
+        <div class="img">
+          <span>
+            <img src="./src/img/bg-user.png" alt="">
+          </span>
+        </div>
+        <div class="user">
+          <div class="registration hide">
+            <div class="user-header">
+              <div class="headline">ĐĂNG KÝ</div>
+              <div class="text">
+                Vui lòng nhập thông tin tài khoản và mật khẩu để đăng nhập
+                <br>
+                và sử dụng dịch vụ thi trực tuyến của EduFox
+              </div>
+            </div>
+            <form class="form">
+              <div class="form-group">
+                <input type="text" class="form-control acc" id="exampleInputAccountRegistration"
+                  placeholder="Tài khoản">
+                <small class="form-text" style="display: none;">Tài khoản đã có người sử dụng.</small>
+              </div>
+              <div class="form-group">
+                <input type="phone" class="form-control phone" id="exampleInputPhoneRegistration"
+                  placeholder="Số điện thoại">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control pass" id="exampleInputPassword1Registration"
+                  placeholder="Mật khẩu">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control pass" id="exampleInputPassword2Registration"
+                  placeholder="Nhập lại mật khẩu">
+              </div>
+              <button type="submit" class="btn">HOÀN TẤT</button>
+            </form>
+            <div class="login-other">
+              <span>Đăng nhập bằng:</span>
+              <div class="icon-group">
+                <span class="icon icon-facebook"><i class="fab fa-facebook-f"></i></span>
+                <span class="icon icon-goole"><i class="fab fa-google-plus-g"></i></span>
+              </div>
+            </div>
+            <div class="user-footer">
+              Nếu bạn đã có tài khoản? <button class="show-login">ĐĂNG NHẬP NGAY !</button>
+            </div>
+          </div> <!-- / registration -->
+          <div class="login show">
+            <div class="user-header">
+              <div class="headline">ĐĂNG NHẬP</div>
+              <div class="text">
+                Vui lòng nhập thông tin tài khoản và mật khẩu để đăng nhập
+                <br>
+                và sử dụng dịch vụ thi trực tuyến của EduFox
+              </div>
+            </div>
+            <form class="form">
+              <div class="form-group">
+                <input type="acc" class="form-control acc" id="exampleInputAccountLogin" placeholder="Tài khoản">
+                <small class="form-text" style="display: none">Tài khoản không đúng.</small>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control pass" id="exampleInputPasswordLogin" placeholder="Mật khẩu">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheckLogin">
+                <label class="form-check-label" for="exampleCheckLogin">Nhớ mật khẩu?</label>
+              </div>
+              <button type="submit" class="btn">ĐĂNG NHẬP</button>
+            </form>
+            <div class="login-other">
+              <span>Đăng nhập bằng:</span>
+              <div class="icon-group">
+                <span class="icon icon-facebook"><i class="fab fa-facebook-f"></i></span>
+                <span class="icon icon-goole"><i class="fab fa-google-plus-g"></i></span>
+              </div>
+            </div>
+            <div class="user-footer">
+              Nếu bạn chưa có tài khoản? <button class="show-registration">ĐĂNG KÝ NGAY !</button>
+            </div>
+          </div> <!-- / registration -->
+          <div class="version">
+            <span>EduFox v1.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-card">
+      <div class="modal-exit"></div>
+      <div class="modal-inner">
+        <div class="card">
+          <img src="./src/img/card.png" alt="">
+          <form class="form-card">
+            <p>Bạn hãy nhập mã thẻ và số serial thẻ học để xem lời giải chi tiết</p>
+            <div class="form-group">
+              <input type="text" class="form-control" id="cardExampleInputCode" placeholder="Nhập mã thẻ">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="cardExampleInputSerial" placeholder="Nhập Serial">
+            </div>
+            <button type="submit" class="btn">Kích hoạt <span><i class="fas fa-paper-plane"></i></span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-error">
+      <div class="modal-exit"></div>
+      <div class="modal-inner">
+        <div class="error">
+          <img height="210" src="./src/img/error.png" alt="">
+          <div class="content">
+            <strong>Báo lỗi cho quản trị viên</strong>
+            <p>
+              Nếu phát hiện bài tập, đáp án hoặc lời giải chưa chính xác,
+              xin hay báo<br> cáo lại cho BQT để kịp thời khắc phục. <br>
+              Cảm ơn bạn!
+            </p>
+          </div>
+          <form class="form-error">
+            <div class="form-group">
+              <textarea class="form-control" id="cardExampleTextarea" placeholder="Nhập nội dung báo lỗi của bạn..."
+                rows="5"></textarea>
+            </div>
+            <div class="btn-group">
+              <div class="btn modal-exit">Hủy bỏ</div>
+              <button type="button" class="btn modal-exit" data-modal="#modal_thank">Gửi đi <span><i class="fas fa-paper-plane"></i></span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal_thank">
+      <div class="modal-exit"></div>
+      <div class="modal-inner">
+        <div class="thank">
+          <img height="133" src="./src/img/thanhcong.png" alt="">
+          <div class="content">
+            Ý kiến đóng góp của bạn đã được gửi về cho ban quản trị.<br> Cảm ơn đóng góp ý kiến của bạn, chúng tôi sẽ xem xét và<br> hoàn thiện sớm nhất!
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- js -->
+  <script defer src="src/vendor/fontawesome/js/all.min.js"></script>
+  <script src="src/vendor/jquery-3.3.1.min.js"></script>
+  <script src="src/vendor/flipclock/flipclock.min.js"></script>
+  <script src="src/vendor/slick/slick.min.js"></script>
+  <script src="src/main.js"></script>
+
+
+</body>
+
+</html>

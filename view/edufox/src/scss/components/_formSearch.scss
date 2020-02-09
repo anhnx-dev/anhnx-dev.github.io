@@ -1,0 +1,89 @@
+@import '../variables';
+
+.c-form-search {
+  background: #C4C4C4;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 0 8px 0;
+
+  .form-group {
+    font-size: 16px;
+    width: 50%;
+    padding: 0 11px;
+    margin-top: 6.5px;
+
+    @media (min-width: $breakpoints-md) {
+      width: 25%;
+    }
+
+    @media (min-width: $breakpoints-lg) {
+      width: initial;
+
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+    }
+
+    >label {
+      display: block;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: 500;
+
+      @media (min-width: $breakpoints-lg) {
+        text-align: left;
+        margin-bottom: 0;
+        display: inline;
+      }
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 2px 5px;
+      border: 1px solid #555;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #555;
+      background: transparent;
+
+      option {
+        background: $c-white;
+      }
+
+      @media (min-width: $breakpoints-lg) {
+        width: 95px;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      background: #f69125;
+      border-radius: 6px;
+      padding:4.5px 10px;
+      border: 0;
+      text-align: center;
+      color: $c-white;
+      transition: $transition;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 12px;
+
+      @media (min-width: $breakpoints-lg) {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 75px;
+      }
+
+      cursor: pointer;
+
+      &:hover {
+        background: $c-white;
+        color: #3F9FF8;
+      }
+    }
+  }
+}

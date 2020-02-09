@@ -1,0 +1,67 @@
+@import '../variables';
+
+
+.c-about {
+  padding-top: 25px;
+
+  .about-top {
+
+    .content {
+      font-size: 16px;
+
+
+      p {
+        @include no-spacing;
+      }
+
+      .headline {
+        @include no-spacing;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: #15A9F2;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+
+  .about-center {
+    margin-top: 50px;
+
+    .content {
+      margin-top: 10px;
+
+      @media (min-width: $breakpoints-md) {
+        margin-top: 0;
+      }
+
+      .title {
+        @include no-spacing;
+        font-weight: bold;
+        font-size: 18px;
+        color: #15A9F2;
+      }
+
+      .inner {
+        font-size: 16px;
+      }
+
+    }
+  }
+
+  .about-bottom {
+
+    .img {
+      margin-top: 20px;
+
+      @media (min-width: $breakpoints-md) {
+        margin-top: 0;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

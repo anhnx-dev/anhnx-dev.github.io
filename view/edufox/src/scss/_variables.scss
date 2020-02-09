@@ -1,0 +1,77 @@
+/* Fonts */
+$f-theme: 'Roboto', sans-serif;
+
+/* Colors - Default */
+$c-blue: #007bff;
+$c-indigo: #6610f2;
+$c-purple: #6f42c1;
+$c-pink: #e83e8c;
+$c-red: #dc3545;
+$c-orange: #fd7e14;
+$c-yellow: #ffc107;
+$c-green: #28a745;
+$c-teal: #20c997;
+$c-cyan: #17a2b8;
+$c-white: #fff;
+$c-gray: #6c757d;
+$c-gray-dark: #343a40;
+$c-primary: #007bff;
+$c-secondary: #6c757d;
+$c-success: #28a745;
+$c-info: #17a2b8;
+$c-warning: #ffc107;
+$c-danger: #dc3545;
+$c-light: #f8f9fa;
+$c-dark: #343a40;
+
+
+/* Colors - Theme */
+$c-01: #e4e4e3;
+$c-02: #555555;
+$c-03: #DC4E41;
+$c-04: #3F9FF8;
+$c-05: #92e5fe;
+$c-06: #ccc;
+$c-07: #ff691f;
+$c-08: #56c9ff;
+$c-09: #90e4fd;
+$c-10: #979797;
+$c-11: #f69125;
+$c-12: #78c1e4;
+
+/* background */
+$bg-dark: rgba(0, 0, 0, 0.4);
+
+/* Coler border */
+
+/* Cover */
+
+/* box shadow */
+$bs-01: rgba(0,0,0,0.3) 0 0 4px 1px;
+
+/* Background */
+
+/* Transitions */
+
+$transition: all .3s ease-in-out;
+$duration: .25s;
+$speed: 200ms;
+$ease: ease-in-out;
+/* Round */
+
+$round: 4px;
+$round1: 15px;
+/* Breakpoints */
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+$breakpoints-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$breakpoints-md: 768px;
+// Large devices (desktops, 992px and up)
+$breakpoints-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$breakpoints-xl: 1200px;
+// Extra large devices (large desktops, 1900px and up)
+$breakpoints-xxl: 1900px;

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="src/vendor/flipclock/flipclock.css">
+  <link rel="stylesheet" href="src/vendor/slick/slick.css">
+  <link rel="stylesheet" href="src/vendor/slick/slick-theme.css">
+  <link rel="stylesheet" href="src/main.min.css">
+</head>
+
+<body class="exam-detail-page">
+
+
+  <div id="app">
+
+    <!-- header -->
+    <header class="header" id="header">
+
+      <!-- navbar -->
+      <nav class="c-navbar">
+
+        <div class="container">
+          <a class="brand" href="./index.html"><img src="./images/brand.png" alt=""></a>
+          <!-- brand -->
+
+          <ul class="nav js-navbar">
+            <li class="nav-item"><a class="nav-link active" href="./index.html">Trang chủ</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./room.html">Phòng thi <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">THPT Quốc gia</a>
+                <a class="dropdown-item" href="#">Thi vào 10</a>
+                <a class="dropdown-item" href="#">Thi HSG</a>
+                <a class="dropdown-item" href="#">Học kỳ 1</a>
+                <a class="dropdown-item" href="#">Học kỳ 2</a>
+                <a class="dropdown-item" href="#">Kiểm tra 1 tiết</a>
+                <a class="dropdown-item" href="#">Kiểm tra 15 ‘</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link highlight" href="./about.html">Phòng học VIP<i
+                  class="fas fa-star"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">Giới thiệu</a></li>
+            <li class="nav-item"><a class="nav-link" href="./news.html">Tin tức</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Liên Hệ</a></li>
+          </ul>
+          <!-- nav -->
+
+          <form class="form-search">
+            <input class="form-control" type="search" placeholder="Tìm kiếm">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <!-- search -->
+
+          <div class="nav-trigger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- / nav trigger -->
+        </div>
+
+      </nav>
+      <!-- navbar end -->
+
+      <!-- fix -->
+      <div class="c-fix">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <div class="inner">
+                <span class="icon"><i class="far fa-star"></i></span>
+                <span class="title">Mục Ưa Thích</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <span class="nav-link">
+              <div class="inner">
+                <span class="icon">
+                  <i class="fas fa-bell"></i>
+                  <span class="number">1</span>
+                </span>
+                <span class="title">Thông báo</span>
+              </div>
+            </span>
+            <div class="dropdown-menu">
+              <div class="dropdown-inner">
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link highlight">
+              <div class="inner">
+                <span class="icon">
+                  <img src="./src/img/ic-vip.png" alt="">
+                </span>
+                <span class="title">PHÒNG HỌC VIP</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link btn-popup">
+              <div class="inner">
+                <span class="icon">
+                  <img src="./src/img/user.png" alt="">
+                </span>
+                <span class="title">Tài khoản</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- fix end -->
+
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main class="main" id="main">
+
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-12">
+
+            <section class="c-exam-detail">
+
+              <div class="fix">
+                <div class="fix-wrapper">
+                  <div class="info">
+                    <div class="time">
+                      <div class="title">Thời gian còn lại:</div>
+                      <div data-minutes="3600"></div>
+                    </div>
+                    <div class="statistics">
+                      <ul>
+                        <li class="active" data-scroll="#cau-1">01</li>
+                        <li data-scroll="#cau-2">2</li>
+                        <li class="active" data-scroll="#cau-3">03</li>
+                        <li class="active" data-scroll="#cau-4">04</li>
+                        <li data-scroll="#cau-5">05</li>
+                        <li data-scroll="#cau-6">06</li>
+                        <li data-scroll="#cau-7">07</li>
+                        <li data-scroll="#cau-8">08</li>
+                        <li data-scroll="#cau-9">09</li>
+                        <li data-scroll="#cau-10">10</li>
+                        <li data-scroll="#cau-11">11</li>
+                        <li data-scroll="#cau-12">12</li>
+                        <li data-scroll="#cau-13">13</li>
+                        <li data-scroll="#cau-14">14</li>
+                        <li data-scroll="#cau-15">15</li>
+                        <li data-scroll="#cau-16">16</li>
+                        <li data-scroll="#cau-17">17</li>
+                        <li data-scroll="#cau-18">18</li>
+                        <li data-scroll="#cau-19">19</li>
+                        <li data-scroll="#cau-20">20</li>
+                        <li data-scroll="#cau-21">21</li>
+                        <li data-scroll="#cau-22">22</li>
+                        <li data-scroll="#cau-23">23</li>
+                        <li data-scroll="#cau-24">24</li>
+                        <li data-scroll="#cau-25">25</li>
+                        <li data-scroll="#cau-26">26</li>
+                        <li data-scroll="#cau-27">27</li>
+                        <li data-scroll="#cau-28">28</li>
+                        <li data-scroll="#cau-29">29</li>
+                        <li data-scroll="#cau-30">30</li>
+                        <li data-scroll="#cau-31">31</li>
+                        <li data-scroll="#cau-32">32</li>
+                        <li data-scroll="#cau-33">33</li>
+                        <li data-scroll="#cau-34">34</li>
+                        <li data-scroll="#cau-35">35</li>
+                        <li data-scroll="#cau-36">36</li>
+                        <li data-scroll="#cau-37">37</li>
+                        <li data-scroll="#cau-38">38</li>
+                        <li data-scroll="#cau-39">39</li>
+                        <li data-scroll="#cau-40">40</li>
+                        <li data-scroll="#cau-40">41</li>
+                        <li data-scroll="#cau-40">42</li>
+                        <li data-scroll="#cau-40">43</li>
+                        <li data-scroll="#cau-40">44</li>
+                        <li data-scroll="#cau-40">45</li>
+                        <li data-scroll="#cau-40">46</li>
+                        <li data-scroll="#cau-40">47</li>
+                        <li data-scroll="#cau-40">48</li>
+                        <li data-scroll="#cau-40">49</li>
+                        <li class="active" data-scroll="#cau-40">50</li>
+                      </ul>
+                      <div class="bottom">
+                        <button class="btn" data-modal="#modal-nopbai">Nội bài</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="detail">
+                <div class="detail-header">
+                  <h1 class="title">Đề thi thử THPTQG môn Tiếng Anh THPT Liễn Sơn Vĩnh Phúc<br> lần 1 năm 2029</h1>
+                </div>
+                <div class="content">
+                  <img src="./images/dethi.png" alt="">
+                </div>
+                <ul class="list">
+                  <li class="item" id="cau-1">
+                    <div class="content">
+                      <img src="./images/dapan.png" alt="">
+                    </div>
+                    <div class="answer">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer1Radios" id="answer1Radios1Answer"
+                          value="option1">
+                        <label class="form-check-label" for="answer1Radios1Answer">A</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer1Radios" id="answer1Radios2Answer"
+                          value="option2">
+                        <label class="form-check-label" for="answer1Radios2Answer">B</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer1Radios" id="answer1Radios3Answer"
+                          value="option3">
+                        <label class="form-check-label" for="answer1Radios3Answer">C</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer1Radios" id="answer1Radios4Answer"
+                          value="option4">
+                        <label class="form-check-label" for="answer1Radios4Answer">D</label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="end-page">----- THE END -----</div>
+              </div>
+
+
+
+            </section>
+            <!-- exam detail -->
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+
+      <div class="container">
+        <div class="footer-contact">
+          <span style="font-weight: 500;">TẬP ĐOÀN GIÁO DỤC EGROUP</span>
+          <br>
+          <span style="font-weight: 500;">CÔNG TY CỔ PHẦN DỊCH VỤ CÔNG NGHỆ GIÁO DỤC VIỆT NAM (VNEDUTECH)</span>
+          <br>
+          Tầng 3, tòa nhà 25T1, đường Hoàng Đạo Thúy, phường Trung Hòa, quận Cầu Giấy, TP. Hà Nội
+          <br>
+          Hotline: 1900.636.444 (8h - 17h Thứ 2 - Thứ 6) &nbsp &nbsp &nbsp &nbsp 0967.345.456 (17h - 22h cuối tuần + lễ
+          tết)
+          <br>
+          Email: contact@vnedutech.vn
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <span>Copyright © 2019 Egroup. Design by VNEDUTECH. All rights reserved.</span>
+          <div class="group-icon">
+            <a href="#"><img src="./src/img/ic-www.svg" alt=""></a>
+            <a href="#"><img src="./src/img/ic-fb.svg" alt=""></a>
+            <a href="#"><img src="./src/img/ic-youtube.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <!-- footer end -->
+
+    <div class="overlay-body"><span><i class="far fa-times-circle"></i></span></div>
+    <div class="c-popup-user js-popup-user">
+      <div class="wrapper">
+        <div class="img">
+          <span>
+            <img src="./src/img/bg-user.png" alt="">
+          </span>
+        </div>
+        <div class="user">
+          <div class="registration hide">
+            <div class="user-header">
+              <div class="headline">ĐĂNG KÝ</div>
+              <div class="text">
+                Vui lòng nhập thông tin tài khoản và mật khẩu để đăng nhập
+                <br>
+                và sử dụng dịch vụ thi trực tuyến của EduFox
+              </div>
+            </div>
+            <form class="form">
+              <div class="form-group">
+                <input type="text" class="form-control acc" id="exampleInputAccountRegistration"
+                  placeholder="Tài khoản">
+                <small class="form-text" style="display: none;">Tài khoản đã có người sử dụng.</small>
+              </div>
+              <div class="form-group">
+                <input type="phone" class="form-control phone" id="exampleInputPhoneRegistration"
+                  placeholder="Số điện thoại">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control pass" id="exampleInputPassword1Registration"
+                  placeholder="Mật khẩu">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control pass" id="exampleInputPassword2Registration"
+                  placeholder="Nhập lại mật khẩu">
+              </div>
+              <button type="submit" class="btn">HOÀN TẤT</button>
+            </form>
+            <div class="login-other">
+              <span>Đăng nhập bằng:</span>
+              <div class="icon-group">
+                <span class="icon icon-facebook"><i class="fab fa-facebook-f"></i></span>
+                <span class="icon icon-goole"><i class="fab fa-google-plus-g"></i></span>
+              </div>
+            </div>
+            <div class="user-footer">
+              Nếu bạn đã có tài khoản? <button class="show-login">ĐĂNG NHẬP NGAY !</button>
+            </div>
+          </div> <!-- / registration -->
+          <div class="login show">
+            <div class="user-header">
+              <div class="headline">ĐĂNG NHẬP</div>
+              <div class="text">
+                Vui lòng nhập thông tin tài khoản và mật khẩu để đăng nhập
+                <br>
+                và sử dụng dịch vụ thi trực tuyến của EduFox
+              </div>
+            </div>
+            <form class="form">
+              <div class="form-group">
+                <input type="acc" class="form-control acc" id="exampleInputAccountLogin" placeholder="Tài khoản">
+                <small class="form-text" style="display: none">Tài khoản không đúng.</small>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control pass" id="exampleInputPasswordLogin" placeholder="Mật khẩu">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheckLogin">
+                <label class="form-check-label" for="exampleCheckLogin">Nhớ mật khẩu?</label>
+              </div>
+              <button type="submit" class="btn">ĐĂNG NHẬP</button>
+            </form>
+            <div class="login-other">
+              <span>Đăng nhập bằng:</span>
+              <div class="icon-group">
+                <span class="icon icon-facebook"><i class="fab fa-facebook-f"></i></span>
+                <span class="icon icon-goole"><i class="fab fa-google-plus-g"></i></span>
+              </div>
+            </div>
+            <div class="user-footer">
+              Nếu bạn chưa có tài khoản? <button class="show-registration">ĐĂNG KÝ NGAY !</button>
+            </div>
+          </div> <!-- / registration -->
+          <div class="version">
+            <span>EduFox v1.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-nopbai">
+      <div class="modal-exit"></div>
+      <div class="modal-inner">
+        <div class="send">
+          <img height="147" src="./src/img/send.png" alt="">
+          <div class="content">Câu : 2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 chưa được chọn. Bạn có chắc chắn muốn nộp bài?</div>
+          <div class="btn-group">
+            <div class="btn modal-exit">Hủy bỏ</div>
+            <a href="#" class="btn">NỘP BÀI <span><i class="fas fa-paper-plane"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- js -->
+  <script defer src="src/vendor/fontawesome/js/all.min.js"></script>
+  <script src="src/vendor/jquery-3.3.1.min.js"></script>
+  <script src="src/vendor/flipclock/flipclock.min.js"></script>
+  <script src="src/vendor/slick/slick.min.js"></script>
+  <script src="src/main.js"></script>
+
+
+</body>
+
+</html>

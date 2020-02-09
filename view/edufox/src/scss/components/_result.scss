@@ -1,0 +1,448 @@
+@import '../variables';
+
+.c-result {
+  width: 100%;
+  margin-top: 25px;
+
+  .headline {
+    @include no-spacing;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    max-width: 870px;
+    border: 1px solid#555;
+    border-radius: 6px;
+    padding: 3.5px 15px;
+
+    @media (min-width: $breakpoints-md) {
+      justify-content: space-between;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+
+      &:nth-child(1) {
+        margin-bottom: 10px;
+
+        @media (min-width: $breakpoints-md) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .id {
+      font-weight: 500;
+    }
+
+    .id,
+    .number {
+      font-size: 12px;
+
+      @media (min-width: $breakpoints-md) {
+        font-size: 14px;
+      }
+    }
+
+    .id+.number {
+      &::before {
+        content: '';
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 12px;
+        width: 2px;
+        background: $c-02;
+        transform: translateY(1px);
+      }
+    }
+
+    .question-number,
+    .time {
+      position: relative;
+      padding-left: 30px;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 20px;
+      font-size: 12px;
+
+      @media (min-width: $breakpoints-md) {
+        font-size: 14px;
+      }
+    }
+
+    .question-number::before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      background-size: cover;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-image: url(../src/img/ic-cauhoi.png);
+      background-size: contain;
+    }
+
+    .time::after {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      background-size: cover;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-image: url(../src/img/ic-time.png);
+      background-size: contain;
+    }
+
+    .question-number+.time {
+      position: relative;
+      margin-left: 100px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 20px;
+        width: 1px;
+        background: #949494;
+      }
+    }
+  }
+
+  .result {
+    margin-top: 15px;
+    position: relative;
+
+    .time {
+      @media (min-width: $breakpoints-lg) {
+        display: flex;
+        margin-left: -35px;
+        margin-right: -35px;
+      }
+
+      .time-function,
+      .time-begin {
+        margin-bottom: 10px;
+        color: $c-white;
+        background: #3F9FF8;
+        text-align: center;
+        padding: 7.5px 15px;
+        border-radius: 6px;
+
+        @media (min-width: $breakpoints-md) {
+          margin-bottom: 15px;
+        }
+
+        @media (min-width: $breakpoints-lg) {
+          width: calc(50% - 70px);
+          margin-left: 35px;
+          margin-right: 35px;
+          margin-bottom: 0;
+        }
+
+        .title {
+          font-size: 14px;
+        }
+
+        .date {
+          font-weight: 700;
+          font-style: 16px;
+        }
+      }
+
+      .time-begin {
+        margin-bottom: 0;
+      }
+    }
+
+    .point {
+      margin-top: 10px;
+
+      @media (min-width: $breakpoints-md) {
+        margin-top: 25px;
+      }
+
+      // @media (min-width: $breakpoints-lg) {
+      //   display: none;
+      // }
+
+      .title {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .inner {
+        @include flex-center;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: #db4d3f;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5px;
+
+        .inner-wrapper {
+          text-align: center;
+
+          .big {
+            color: $c-white;
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 90px;
+          }
+
+          .small {
+            font-size: 35px;
+            line-height: 35px;
+            color: #ffaaa2;
+            font-weight: 500;
+            transform: translateY(-15px);
+
+            @media (min-width: $breakpoints-md) {
+              font-size: 52px;
+              transform: translateY(0);
+            }
+          }
+        }
+      }
+    }
+
+    .share {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  >.question {
+    margin-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+
+    ul {
+      @include no-spacing;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -15px;
+      margin-right: -15px;
+
+      li {
+        @include flex-center;
+        padding-left: 14px;
+        padding-right: 14px;
+        margin-bottom: 20px;
+
+        >a {
+          @include flex-center;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: #E5E5E5;
+          transition: $transition;
+        }
+
+        a,
+        span {
+          text-decoration: none;
+          color: $c-02;
+          font-size: 20px;
+        }
+
+
+        &.active a,
+        &:hover a {
+          background: #eea628;
+          color: $c-white;
+
+
+        }
+      }
+    }
+  }
+
+  .evaluate-star {
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #C4C4C4;
+    }
+
+    .inner {
+      display: flex;
+      align-items: center;
+
+      .number {
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        color: rgba(85, 85, 85, 0.69);
+      }
+    }
+
+    .stars {
+      .fa-star {
+        transition: $transition;
+        font-size: 20px;
+        color: #787878;
+      }
+
+      .star {
+        &.active .fa-star {
+          color: #E0A10F;
+        }
+      }
+    }
+  }
+
+  .answer {
+    border: 1px solid #555555;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin-top: 30px;
+
+    .content {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .btn {
+      font-size: 20px;
+      color: $c-white;
+      font-weight: 500;
+      border: 0;
+      border-radius: 6px;
+      background: #FF7C33;
+      padding: 11.5px 20px;
+      cursor: pointer;
+      transition: $transition;
+
+      &:hover {
+        background: #3F9FF8;
+      }
+    }
+  }
+
+  .popup {
+    margin-top: 20px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    .content {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .function {
+      margin-top: 25px;
+      display: flex;
+      background: #E5E5E5;
+      border: 1px solid #787878;
+      border-radius: 6px;
+      justify-content: space-around;
+      font-size: 16px;
+      font-weight: 500;
+
+      >div {
+        padding: 8px 15px;
+
+        img {
+          transform: translateY(2px);
+          margin-right: 5px;
+        }
+      }
+
+      .answer-true {
+        color: #ff0000;
+
+      }
+
+      .active-1 {
+        color: #005F8D;
+        cursor: pointer;
+
+        &:hover {
+          color: #3F9FF8;
+        }
+      }
+
+      .active-2 {
+        cursor: pointer;
+
+        &:hover {
+          color: #3F9FF8;
+        }
+
+        &::after {
+          content: '';
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background: url(../src/img/ic-da-3.png) no-repeat;
+          margin-left: 5px;
+        }
+
+        &.active::after {
+          background: url(../src/img/ic-da-4.png) no-repeat no-repeat;
+        }
+      }
+
+      .active-3 {
+        color: #DC4E41;
+        cursor: pointer;
+
+        &:hover {
+          color: #3F9FF8;
+        }
+      }
+
+    }
+
+    .commit {
+      display: none;
+      margin-top: 20px;
+      background: #E5E5E5;
+      border: 1px solid #787878;
+      border-radius: 6px;
+      padding: 15px 20px;
+      min-height: 115px;
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  &.v1 {
+    .point {
+      display: block;
+    }
+  }
+
+}

@@ -1,0 +1,26 @@
+@import '../variables';
+
+.c-breadcrumb {
+  .breadcrumb {
+    @include no-spacing;
+    .breadcrumb-item {
+      list-style: none;
+      display: inline;
+      color: #b3b3b3;
+      font-size: 12px;
+      font-style: italic;
+      a {
+        color: #b3b3b3;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      + .breadcrumb-item  {
+          &::before {
+            content: ' >> ';
+          }
+      }
+    }
+  }
+}

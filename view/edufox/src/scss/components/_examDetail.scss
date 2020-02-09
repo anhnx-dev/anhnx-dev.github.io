@@ -1,0 +1,363 @@
+@import '../variables';
+
+.c-exam-detail {
+  margin-top: 25px;
+
+  .fix {
+    @media (min-width: 1366px) {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      z-index: 100;
+      width: 100%;
+      height: 768px;
+      overflow: hidden;
+      visibility: hidden;
+
+      .fix-wrapper {
+        position: absolute;
+        left: 50%;
+        margin-left: 300px;
+        margin-right: 0px;
+        visibility: visible;
+      }
+    }
+  }
+
+  .info {
+    transition: $transition;
+
+    @media (min-width: $breakpoints-md) {
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-top: 30px;
+    }
+
+    @media (min-width: 1366px) {
+      width: 270px;
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 80px;
+    }
+
+    &.fixed-top {
+      @media (min-width: 1366px) {
+        padding-top: 0;
+      }
+    }
+
+    .time {
+      width: 270px;
+      max-width: 100%;
+      background: #FF7C33;
+      color: $c-white;
+      padding: 10px 15px;
+      border-radius: $round1;
+      text-align: center;
+      transform: scale(.7);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-left: 50%;
+      transform: translateX(-50%);
+
+      @media (min-width: $breakpoints-md) {
+        padding: 15px 25px;
+      }
+
+      .title {
+        font-size: 16px;
+      }
+
+      .flip-clock-wrapper {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+
+        .flip-clock-divider {
+          height: 60px;
+
+          .flip-clock-label {
+            display: none;
+          }
+        }
+
+        ul {
+          font-size: 50px;
+          font-weight: normal;
+          color: $c-white;
+          background: transparent;
+          box-shadow: none;
+          margin: 0;
+          line-height: 60px;
+          width: 35px;
+          height: 60px;
+          padding: 0;
+
+          li {
+            line-height: 60px;
+
+            a {
+              color: $c-white;
+
+              div {
+                font-size: 50px;
+
+                div {
+                  &.inn {
+                    background: #FF7C33;
+                    color: $c-white;
+                    text-shadow: none;
+                    font-size: 50px;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .flip-clock-dot {
+          background: $c-white;
+          width: 6px;
+          height: 6px;
+
+          &.top {
+            top: 25px;
+          }
+
+          &.bottom {
+            bottom: 15px;
+          }
+        }
+      }
+    }
+
+    .statistics {
+
+      border: 1px solid #555;
+      border-radius: 6px;
+      background: #E5E5E5;
+      overflow: hidden;
+      margin-top: 20px;
+
+      ul {
+        @include no-spacing;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin: 10px 0;
+        overflow-y: auto;
+
+        @media (min-width: $breakpoints-xl) {
+          max-height: 375px;
+        }
+
+        @media (min-width: $breakpoints-xxl) {
+          max-height: 530px;
+        }
+
+        li {
+          @include flex-center;
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: #f2f2f2;
+          margin: 5px;
+          font-size: 16px;
+          transition: $transition;
+          font-weight: 500;
+
+          &:hover {
+            background: #62d9d8;
+            color: $c-white;
+          }
+
+          &.active {
+            background: #15A9F2;
+            color: $c-white;
+          }
+        }
+      }
+
+      .bottom {
+        margin: 10px 15px 25px 15px;
+        text-align: center;
+
+        .btn {
+          background: #0EA66F;
+          color: $c-white;
+          text-decoration: none;
+          text-align: center;
+          border: 0;
+          margin-top: 15px;
+          font-size: 20px;
+          text-transform: uppercase;
+          border-radius: 6px;
+          padding: 8.5px 52.5px;
+          font-weight: 500;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          transition: $transition;
+          cursor: pointer;
+
+          &:hover {
+            background: #FF7C33;
+          }
+        }
+      }
+    }
+
+    &.fixed-top {
+      @media (min-width: $breakpoints-lg) {
+        top: 20px;
+      }
+    }
+  }
+
+  .detail {
+    margin-top: 20px;
+
+    @media (min-width: $breakpoints-lg) {
+      padding-right: 300px;
+      margin-top: 0;
+    }
+
+    >.content {
+      margin-top: 20px;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .detail-header {
+
+      .title {
+        @include no-spacing;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    .list {
+      @include no-spacing;
+      margin-top: 20px;
+
+      .item {
+        margin-top: 30px;
+        border-top: 1px solid #ccc;
+        padding-top: 30px;
+        list-style: none;
+
+        &:nth-child(1) {
+          margin-top: 0;
+          padding-top: 0;
+          border-top: 0;
+        }
+
+        .content {
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .answer {
+          display: flex;
+          margin-top: 20px;
+
+
+          .form-check {
+            width: 25%;
+            [type="radio"]:checked,
+            [type="radio"]:not(:checked) {
+              position: absolute;
+              left: -9999px;
+            }
+
+            [type="radio"]:checked+label,
+            [type="radio"]:not(:checked)+label {
+              position: relative;
+              padding-left: 28px;
+              cursor: pointer;
+              line-height: 20px;
+              display: inline-block;
+              color: #15A9F2;
+              font-weight: 700;
+            }
+
+            [type="radio"]:checked+label:before,
+            [type="radio"]:not(:checked)+label:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 16px;
+              height: 16px;
+              border: 1px solid #15A9F2;
+              border-radius: 100%;
+              background: transparent;
+            }
+
+            [type="radio"]:checked+label:after,
+            [type="radio"]:not(:checked)+label:after {
+              content: '';
+              width: 14px;
+              height: 14px;
+              background: #15A9F2;
+              position: absolute;
+              top: 2px;
+              left: 2px;
+              border-radius: 100%;
+              -webkit-transition: all 0.2s ease;
+              transition: all 0.2s ease;
+            }
+
+            [type="radio"]:not(:checked)+label:after {
+              opacity: 0;
+              -webkit-transform: scale(0);
+              transform: scale(0);
+            }
+
+            [type="radio"]:checked+label:after {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.v1 {
+    .statistics {
+      width: 365px;
+      max-width: 100%;
+      border: 0;
+      padding: 0;
+      margin-top: 0;
+      transform: scale(0.7) translateY(-50px);
+
+      @media (min-width: $breakpoints-md) {
+        transform: none;
+      }
+
+      .bottom {
+        padding-top: 0;
+        border: 0;
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    .detail {
+      margin-top: -20px;
+
+      @media (min-width:$breakpoints-md) {
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="src/vendor/flipclock/flipclock.css">
+  <link rel="stylesheet" href="src/vendor/slick/slick.css">
+  <link rel="stylesheet" href="src/vendor/slick/slick-theme.css">
+  <link rel="stylesheet" href="src/main.min.css">
+</head>
+
+<body class="news-page">
+
+
+  <div id="app">
+
+    <!-- header -->
+    <header class="header" id="header">
+
+      <!-- navbar -->
+      <nav class="c-navbar">
+
+        <div class="container">
+          <a class="brand" href="./index.html"><img src="./images/brand.png" alt=""></a>
+          <!-- brand -->
+
+          <ul class="nav js-navbar">
+            <li class="nav-item"><a class="nav-link active" href="./index.html">Trang chủ</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./room.html">Phòng thi <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">THPT Quốc gia</a>
+                <a class="dropdown-item" href="#">Thi vào 10</a>
+                <a class="dropdown-item" href="#">Thi HSG</a>
+                <a class="dropdown-item" href="#">Học kỳ 1</a>
+                <a class="dropdown-item" href="#">Học kỳ 2</a>
+                <a class="dropdown-item" href="#">Kiểm tra 1 tiết</a>
+                <a class="dropdown-item" href="#">Kiểm tra 15 ‘</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link highlight" href="./about.html">Phòng học VIP<i
+                  class="fas fa-star"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">Giới thiệu</a></li>
+            <li class="nav-item"><a class="nav-link" href="./news.html">Tin tức</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Liên Hệ</a></li>
+          </ul>
+          <!-- nav -->
+
+          <form class="form-search">
+            <input class="form-control" type="search" placeholder="Tìm kiếm">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <!-- search -->
+
+          <div class="nav-trigger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- / nav trigger -->
+        </div>
+
+      </nav>
+      <!-- navbar end -->
+
+      <!-- fix -->
+      <div class="c-fix">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <div class="inner">
+                <span class="icon"><i class="far fa-star"></i></span>
+                <span class="title">Mục Ưa Thích</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <span class="nav-link">
+              <div class="inner">
+                <span class="icon">
+                  <i class="fas fa-bell"></i>
+                  <span class="number">1</span>
+                </span>
+                <span class="title">Thông báo</span>
+              </div>
+            </span>
+            <div class="dropdown-menu">
+              <div class="dropdown-inner">
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+                <a class="dropdown-item" href="#">Cơ chế trọng tài sẽ mang đến giải pháp tổng thể và lâu
+                  dài cho các tranh chấp chủ quyền ở Biển </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link highlight">
+              <div class="inner">
+                <span class="icon">
+                  <img src="./src/img/ic-vip.png" alt="">
+                </span>
+                <span class="title">PHÒNG HỌC VIP</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link btn-popup">
+              <div class="inner">
+                <span class="icon">
+                  <img src="./src/img/user.png" alt="">
+                </span>
+                <span class="title">Tài khoản</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- fix end -->
+
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main class="main" id="main">
+
+      <div class="container c-news">
+        <div class="row">
+
+          <div class="col-12 col-lg-9">
+
+            <div class="row group-item">
+              <figure class="col-12 col-md-4 item">
+                <div class="inner">
+                  <div class="img">
+                    <a href=""><img src="./images/news.png" alt=""></a>
+                  </div>
+                  <div class="info">
+                    <h3 class="title"><a href="">Edu Fox cổng thi trực tuyến lớn nhất Việt Nam</a></h3>
+                    <div class="description">Chúng tôi tin rằng với sứ mệnh mang kiến thức đến tất cả mọi người của
+                      chúng tôi sẽ giúp được các em bước đầu làm quen với các thể loại thi và đạt được thành công của
+                      mình.</div>
+                    <div class="bottom">
+                      <div class="date">29/10/2019 15:30:25</div>
+                      <a href="#" class="btn">Xem thêm ...</a>
+                    </div>
+                  </div>
+                </div>
+              </figure> <!-- / item -->
+              <figure class="col-12 col-md-4 item">
+                <div class="inner">
+                  <div class="img">
+                    <a href=""><img src="./images/news.png" alt=""></a>
+                  </div>
+                  <div class="info">
+                    <h3 class="title"><a href="">Edu Fox cổng thi trực tuyến lớn nhất Việt Nam</a></h3>
+                    <div class="description">Chúng tôi tin rằng với sứ mệnh mang kiến thức đến tất cả mọi người của
+                      chúng tôi sẽ giúp được các em bước đầu làm quen với các thể loại thi và đạt được thành công của
+                      mình.</div>
+                    <div class="bottom">
+                      <div class="date">29/10/2019 15:30:25</div>
+                      <a href="#" class="btn">Xem thêm ...</a>
+                    </div>
+                  </div>
+                </div>
+              </figure> <!-- / item -->
+              <figure class="col-12 col-md-4 item">
+                <div class="inner">
+                  <div class="img">
+                    <a href=""><img src="./images/news.png" alt=""></a>
+                  </div>
+                  <div class="info">
+                    <h3 class="title"><a href="">Edu Fox cổng thi trực tuyến lớn nhất Việt Nam</a></h3>
+                    <div class="description">Chúng tôi tin rằng với sứ mệnh mang kiến thức đến tất cả mọi người của
+                      chúng tôi sẽ giúp được các em bước đầu làm quen với các thể loại thi và đạt được thành công của
+                      mình.</div>
+                    <div class="bottom">
+                      <div class="date">29/10/2019 15:30:25</div>
+                      <a href="#" class="btn">Xem thêm ...</a>
+                    </div>
+                  </div>
+                </div>
+              </figure> <!-- / item -->
+              <figure class="col-12 col-md-4 item">
+                <div class="inner">
+                  <div class="img">
+                    <a href=""><img src="./images/news.png" alt=""></a>
+                  </div>
+                  <div class="info">
+                    <h3 class="title"><a href="">Edu Fox cổng thi trực tuyến lớn nhất Việt Nam</a></h3>
+                    <div class="description">Chúng tôi tin rằng với sứ mệnh mang kiến thức đến tất cả mọi người của
+                      chúng tôi sẽ giúp được các em bước đầu làm quen với các thể loại thi và đạt được thành công của
+                      mình.</div>
+                    <div class="bottom">
+                      <div class="date">29/10/2019 15:30:25</div>
+                      <a href="#" class="btn">Xem thêm ...</a>
+                    </div>
+                  </div>
+                </div>
+              </figure> <!-- / item -->
+              <figure class="col-12 col-md-4 item">
+                <div class="inner">
+                  <div class="img">
+                    <a href=""><img src="./images/news.png" alt=""></a>
+                  </div>
+                  <div class="info">
+                    <h3 class="title"><a href="">Edu Fox cổng thi trực tuyến lớn nhất Việt Nam</a></h3>
+                    <div class="description">Chúng tôi tin rằng với sứ mệnh mang kiến thức đến tất cả mọi người của
+                      chúng tôi sẽ giúp được các em bước đầu làm quen với các thể loại thi và đạt được thành công của
+                      mình.</div>
+                    <div class="bottom">
+                      <div class="date">29/10/2019 15:30:25</div>
+                      <a href="#" class="btn">Xem thêm ...</a>
+                    </div>
+                  </div>
+                </div>
+              </figure> <!-- / item -->
+              <figure class="col-12 col-md-4 item">
+                <div class="inner">
+                  <div class="img">
+                    <a href=""><img src="./images/news.png" alt=""></a>
+                  </div>
+                  <div class="info">
+                    <h3 class="title"><a href="">Edu Fox cổng thi trực tuyến lớn nhất Việt Nam</a></h3>
+                    <div class="description">Chúng tôi tin rằng với sứ mệnh mang kiến thức đến tất cả mọi người của
+                      chúng tôi sẽ giúp được các em bước đầu làm quen với các thể loại thi và đạt được thành công của
+                      mình.</div>
+                    <div class="bottom">
+                      <div class="date">29/10/2019 15:30:25</div>
+                      <a href="#" class="btn">Xem thêm ...</a>
+                    </div>
+                  </div>
+                </div>
+              </figure> <!-- / item -->
+              <figure class="col-12 col-md-4 item">
+                <div class="inner">
+                  <div class="img">
+                    <a href=""><img src="./images/news.png" alt=""></a>
+                  </div>
+                  <div class="info">
+                    <h3 class="title"><a href="">Edu Fox cổng thi trực tuyến lớn nhất Việt Nam</a></h3>
+                    <div class="description">Chúng tôi tin rằng với sứ mệnh mang kiến thức đến tất cả mọi người của
+                      chúng tôi sẽ giúp được các em bước đầu làm quen với các thể loại thi và đạt được thành công của
+                      mình.</div>
+                    <div class="bottom">
+                      <div class="date">29/10/2019 15:30:25</div>
+                      <a href="#" class="btn">Xem thêm ...</a>
+                    </div>
+                  </div>
+                </div>
+              </figure> <!-- / item -->
+              <figure class="col-12 col-md-4 item">
+                <div class="inner">
+                  <div class="img">
+                    <a href=""><img src="./images/news.png" alt=""></a>
+                  </div>
+                  <div class="info">
+                    <h3 class="title"><a href="">Edu Fox cổng thi trực tuyến lớn nhất Việt Nam</a></h3>
+                    <div class="description">Chúng tôi tin rằng với sứ mệnh mang kiến thức đến tất cả mọi người của
+                      chúng tôi sẽ giúp được các em bước đầu làm quen với các thể loại thi và đạt được thành công của
+                      mình.</div>
+                    <div class="bottom">
+                      <div class="date">29/10/2019 15:30:25</div>
+                      <a href="#" class="btn">Xem thêm ...</a>
+                    </div>
+                  </div>
+                </div>
+              </figure> <!-- / item -->
+              <figure class="col-12 col-md-4 item">
+                <div class="inner">
+                  <div class="img">
+                    <a href=""><img src="./images/news.png" alt=""></a>
+                  </div>
+                  <div class="info">
+                    <h3 class="title"><a href="">Edu Fox cổng thi trực tuyến lớn nhất Việt Nam</a></h3>
+                    <div class="description">Chúng tôi tin rằng với sứ mệnh mang kiến thức đến tất cả mọi người của
+                      chúng tôi sẽ giúp được các em bước đầu làm quen với các thể loại thi và đạt được thành công của
+                      mình.</div>
+                    <div class="bottom">
+                      <div class="date">29/10/2019 15:30:25</div>
+                      <a href="#" class="btn">Xem thêm ...</a>
+                    </div>
+                  </div>
+                </div>
+              </figure> <!-- / item -->
+            </div>
+
+            <nav class="c-pagination">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link disabled" href="#"><svg class="svg-inline--fa fa-angle-double-left fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path></svg><!-- <i class="fas fa-angle-double-left"></i> --></a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link disabled" href="#"><svg class="svg-inline--fa fa-angle-left fa-w-8" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg><!-- <i class="fa fa-angle-left"></i> --></a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link active" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#"><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg><!-- <i class="fa fa-angle-right"></i> --></a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#"><svg class="svg-inline--fa fa-angle-double-right fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path></svg><!-- <i class="fas fa-angle-double-right"></i> --></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- pagination -->
+
+          </div>
+          <div class="col-12 col-lg-3">
+
+            <section class="c-ranking">
+              <div class="ranking-header">
+
+                <div class="statu1">
+                  <div class="content">nền tảng công nghệ thi thử trực tuyến lớn nhất việt nam</div>
+                  <div class="btn-group">
+                    <button class="btn btn-registration">Đăng kỹ</button>
+                    <button class="btn btn-login">Đăng nhập</button>
+                  </div>
+                  <div class="registration-other">
+                    <span class="text">Đăng nhập bằng:</span>
+                    <span class="icon icon-facebook"><i class="fab fa-facebook-f"></i></span>
+                    <span class="icon icon-goole"><i class="fab fa-google-plus-g"></i></span>
+                  </div>
+                </div>
+
+                <!-- Chú ý statu2 hiển thị khi user đã đăng nhập thành công -->
+                <!-- <div class="statu2">
+                      <div class="avatar">
+                          <a href="#"><img src="./images/user1.png" alt=""></a>
+                      </div>
+                      <div class="info">
+                          <div class="name">Hồ Anh Tuấn</div>
+                          <div class="level">Level: 58 &nbsp; Exp: 8000 &nbsp; Sp: 56%</div>
+                      </div>
+                  </div> -->
+
+              </div>
+              <div class="ranking-main">
+                <h2 class="title">BẢNG XẾP HẠNG</h2>
+                <div class="group">
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location"><img src="./src/img/cuo-vang.png" alt=""></div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level red">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location"><img src="./src/img/cup-bac.png" alt=""></div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level blue">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location"><img src="./src/img/cup-dong.png" alt=""></div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level yellow">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">04</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">05</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">06</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">07</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">08</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">09</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                  <figure class="item">
+                    <div class="inner">
+                      <div class="location">10</div>
+                      <div class="info">
+                        <div class="avatar">
+                          <img src="./images/user.png" alt="">
+                        </div>
+                        <div>
+                          <div class="name">Nguyễn Văn A</div>
+                          <div class="exp-per">Exp: 1900 Per: 80%</div>
+                        </div>
+                      </div>
+                      <div class="level">
+                        <div>
+                          <div class="title">Level</div>
+                          <div class="number">33</div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure> <!-- / item -->
+                </div>
+              </div>
+            </section> <!-- / ranking -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+
+      <div class="container">
+        <div class="footer-contact">
+          <span style="font-weight: 500;">TẬP ĐOÀN GIÁO DỤC EGROUP</span>
+          <br>
+          <span style="font-weight: 500;">CÔNG TY CỔ PHẦN DỊCH VỤ CÔNG NGHỆ GIÁO DỤC VIỆT NAM (VNEDUTECH)</span>
+          <br>
+          Tầng 3, tòa nhà 25T1, đường Hoàng Đạo Thúy, phường Trung Hòa, quận Cầu Giấy, TP. Hà Nội
+          <br>
+          Hotline: 1900.636.444 (8h - 17h Thứ 2 - Thứ 6) &nbsp &nbsp &nbsp &nbsp 0967.345.456 (17h - 22h cuối tuần + lễ
+          tết)
+          <br>
+          Email: contact@vnedutech.vn
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <span>Copyright © 2019 Egroup. Design by VNEDUTECH. All rights reserved.</span>
+          <div class="group-icon">
+            <a href="#"><img src="./src/img/ic-www.svg" alt=""></a>
+            <a href="#"><img src="./src/img/ic-fb.svg" alt=""></a>
+            <a href="#"><img src="./src/img/ic-youtube.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <!-- footer end -->
+
+    <div class="overlay-body"><span><i class="far fa-times-circle"></i></span></div>
+    <div class="c-popup-user js-popup-user">
+      <div class="wrapper">
+        <div class="img">
+          <span>
+            <img src="./src/img/bg-user.png" alt="">
+          </span>
+        </div>
+        <div class="user">
+          <div class="registration hide">
+            <div class="user-header">
+              <div class="headline">ĐĂNG KÝ</div>
+              <div class="text">
+                Vui lòng nhập thông tin tài khoản và mật khẩu để đăng nhập
+                <br>
+                và sử dụng dịch vụ thi trực tuyến của EduFox
+              </div>
+            </div>
+            <form class="form">
+              <div class="form-group">
+                <input type="text" class="form-control acc" id="exampleInputAccountRegistration"
+                  placeholder="Tài khoản">
+                <small class="form-text" style="display: none;">Tài khoản đã có người sử dụng.</small>
+              </div>
+              <div class="form-group">
+                <input type="phone" class="form-control phone" id="exampleInputPhoneRegistration"
+                  placeholder="Số điện thoại">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control pass" id="exampleInputPassword1Registration"
+                  placeholder="Mật khẩu">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control pass" id="exampleInputPassword2Registration"
+                  placeholder="Nhập lại mật khẩu">
+              </div>
+              <button type="submit" class="btn">HOÀN TẤT</button>
+            </form>
+            <div class="login-other">
+              <span>Đăng nhập bằng:</span>
+              <div class="icon-group">
+                <span class="icon icon-facebook"><i class="fab fa-facebook-f"></i></span>
+                <span class="icon icon-goole"><i class="fab fa-google-plus-g"></i></span>
+              </div>
+            </div>
+            <div class="user-footer">
+              Nếu bạn đã có tài khoản? <button class="show-login">ĐĂNG NHẬP NGAY !</button>
+            </div>
+          </div> <!-- / registration -->
+          <div class="login show">
+            <div class="user-header">
+              <div class="headline">ĐĂNG NHẬP</div>
+              <div class="text">
+                Vui lòng nhập thông tin tài khoản và mật khẩu để đăng nhập
+                <br>
+                và sử dụng dịch vụ thi trực tuyến của EduFox
+              </div>
+            </div>
+            <form class="form">
+              <div class="form-group">
+                <input type="acc" class="form-control acc" id="exampleInputAccountLogin" placeholder="Tài khoản">
+                <small class="form-text" style="display: none">Tài khoản không đúng.</small>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control pass" id="exampleInputPasswordLogin" placeholder="Mật khẩu">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheckLogin">
+                <label class="form-check-label" for="exampleCheckLogin">Nhớ mật khẩu?</label>
+              </div>
+              <button type="submit" class="btn">ĐĂNG NHẬP</button>
+            </form>
+            <div class="login-other">
+              <span>Đăng nhập bằng:</span>
+              <div class="icon-group">
+                <span class="icon icon-facebook"><i class="fab fa-facebook-f"></i></span>
+                <span class="icon icon-goole"><i class="fab fa-google-plus-g"></i></span>
+              </div>
+            </div>
+            <div class="user-footer">
+              Nếu bạn chưa có tài khoản? <button class="show-registration">ĐĂNG KÝ NGAY !</button>
+            </div>
+          </div> <!-- / registration -->
+          <div class="version">
+            <span>EduFox v1.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- js -->
+  <script defer src="src/vendor/fontawesome/js/all.min.js"></script>
+  <script src="src/vendor/jquery-3.3.1.min.js"></script>
+  <script src="src/vendor/flipclock/flipclock.min.js"></script>
+  <script src="src/vendor/slick/slick.min.js"></script>
+  <script src="src/main.js"></script>
+
+
+</body>
+
+</html>

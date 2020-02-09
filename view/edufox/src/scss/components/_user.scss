@@ -1,0 +1,252 @@
+@import '../variables';
+
+.c-user {
+  background: #fff;
+  padding-top: 25px;
+}
+
+.c-user .headline {
+  background: #3F9FF8;
+  padding: 12.5px 20px;
+}
+
+.c-user .headline .title {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.c-user .tab {
+  padding: 25px 0 0 0;
+}
+
+.c-user .tab .tab-list {
+  display: flex;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.c-user .tab .tab-list .item {
+  font-weight: 400;
+  padding: 10px 14px;
+  margin: 0;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+.c-user .tab .tab-list .item.active {
+  border-color: #C4C4C4;
+  border-bottom: 1px solid #fff;
+  transform: translateY(1px);
+}
+
+.c-user .tab .tab-body {
+  margin-top: 20px;
+}
+
+.c-user .tab .tab-body>.item {
+  display: none;
+}
+
+.c-user .tab .tab-body>.item.show {
+  display: block;
+}
+
+.c-user .tab .tab-body .info-user .avatar {
+  position: relative;
+  width: 180px;
+  padding: 10px 10px 0 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+.c-user .tab .tab-body .info-user .avatar .img {
+  position: relative;
+}
+
+.c-user .tab .tab-body .info-user .avatar .img::before {
+  content: '';
+  display: block;
+  padding-bottom: 107.5%;
+}
+
+.c-user .tab .tab-body .info-user .avatar .img .img-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.c-user .tab .tab-body .info-user .avatar .img .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.c-user .tab .tab-body .info-user .avatar .file-upload {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c-user .tab .tab-body .info-user .avatar .text {
+  text-align: center;
+  padding: 5px;
+  color: #666;
+}
+
+.c-user .tab .tab-body .info-user .info .item {
+  margin-top: 20px;
+  width: 470px;
+  max-width: 100%;
+}
+
+.c-user .tab .tab-body .info-user .info .item:nth-child(1) {
+  margin-top: 0;
+}
+
+.c-user .tab .tab-body .info-user .info .form-group .form-control {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 5px;
+  font-size: 16px;
+  padding: 12.5px 25px;
+  border-radius: 6px;
+  border: 1px solid #C4C4C4;
+}
+
+.c-user .tab .tab-body .info-user .info .btn-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.c-user .tab .tab-body .info-user .info .btn img {
+  margin-right: 5px;
+}
+
+.c-user .tab .tab-body .info-user .info .btn {
+  display: flex;
+  align-content: center;
+  color: #fff;
+  padding: 13px 29px;
+  border: 0;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  border-radius: 6px;
+
+}
+
+.c-user .tab .tab-body .info-user .info .btn.btn-save {
+  background: #1197EC;
+}
+
+.c-user .tab .tab-body .info-user .info .btn.btn-save:hover,
+.c-user .tab .tab-body .info-user .info .btn.btn-back:hover {
+  background: #da251c;
+}
+
+.c-user .tab .tab-body .info-user .info .btn.btn-back {
+  background: #9A9797;
+}
+
+.c-user .tab .tab-body .info-user .info .row:nth-child(1) {
+  margin-top: 0;
+}
+
+.c-user .tab .tab-body .achievements .table th,
+.c-user .tab .tab-body .achievements .table td {
+  padding: 15.5px 15px;
+  text-align: center;
+}
+
+.c-user .tab .tab-body .achievements .table th {
+  color: #fff;
+  font-weight: 500;
+}
+
+.c-user .tab .tab-body .achievements .table thead {
+  background: #35b5ff;
+}
+
+.c-user .tab .tab-body .password .form-group:nth-child(1) {
+  margin-top: 10px;
+}
+
+.c-user .tab .tab-body .password .form-group {
+  margin-bottom: 30px;
+}
+
+.c-user .tab .tab-body .password .form-group small {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  font-style: italic;
+  color: #FF0000;
+}
+
+.c-user .tab .tab-body .password .form-group .form-control {
+  display: block;
+  width: 470px;
+  border: 1px solid #C4C4C4;
+  max-width: 100%;
+  margin-top: 5px;
+  font-size: 16px;
+  padding: 12.5px 25px;
+  border-radius: 6px;
+}
+
+.c-user .tab .tab-body .password form {
+  display: flex;
+  justify-content: center;
+}
+
+.c-user .tab .tab-body .password form .btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+.c-user .tab .tab-body .password form .btn img {
+  margin-right: 5px;
+  transform: translateY(3px);
+}
+
+.c-user .tab .tab-body .password form .btn {
+  display: flex;
+  align-content: center;
+  color: #fff;
+  padding: 13px 29px;
+  border: 0;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  border-radius: 6px;
+}
+
+.c-user .tab .tab-body .password form .btn.btn-yes {
+  background: #1197EC;
+}
+
+.c-user .tab .tab-body .password form .btn.btn-yes:hover,
+.c-user .tab .tab-body .password form .btn.btn-no:hover {
+  background: #da251c;
+}
+
+.c-user .tab .tab-body .password form .btn.btn-no {
+  background: #9A9797;
+}

@@ -1,0 +1,92 @@
+@import '../variables';
+
+
+
+.c-contact {
+  background: $c-white;
+  padding: 25px 0 0 0;
+
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1768B2;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .maps {
+    height: 135px;
+
+    @media (min-width: $breakpoints-md) {
+      height: 325px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $breakpoints-lg) {
+      height: 480px;
+    }
+
+    iframe {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+  .form-contact {
+    .form {
+      margin-top: 15px;
+      .form-group {
+        text-align: center;
+
+        .form-control {
+          width: 100%;
+          margin-bottom: 10px;
+          padding:11px 15px;
+          border-radius: 3px;
+          border: 0;
+          background: #fff;
+          font-size: 16px;
+          border: 0;
+          box-shadow: 0 0 4px #00F1FF;
+        }
+
+        .btn {
+          display: inline-block;
+          padding: 13.5px 25px;
+          width: 100%;
+          border: 0;
+          color: $c-white;
+          font-size: 20px;
+          border-radius: 5px;
+          background: #1768B2;
+          transition: $transition;
+          cursor: pointer;
+          border: 0;
+
+          &:hover {
+            background: $c-07;
+          }
+        }
+      }
+    }
+  }
+
+  .info {
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+    @media (min-width: $breakpoints-md) {
+      margin: 0;
+    }
+
+    .list {
+      @include no-spacing;
+
+      li {
+        list-style: none;
+        margin-top: 25px;
+        font-size: 16px;
+      }
+    }
+  }
+}

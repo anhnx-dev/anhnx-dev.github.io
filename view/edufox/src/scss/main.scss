@@ -1,0 +1,23 @@
+@import 'reset';
+@import 'fonts';
+@import 'layout';
+@import 'typography';
+@import 'wysiwyg';
+
+@import './components/navbar';
+@import './components/fix';
+@import './components/class';
+@import './components/ranking';
+@import './components/slider';
+@import './components/popupUser';
+@import './components/formSearch';
+@import './components/exam';
+@import './components/examDetail';
+@import './components/result';
+@import './components/user';
+@import './components/pagination';
+@import './components/news';
+@import './components/detail';
+@import './components/breadcrumb';
+@import './components/about';
+@import './components/contact';
