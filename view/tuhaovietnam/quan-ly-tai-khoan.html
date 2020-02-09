@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="src/css/main.css">
+
+</head>
+
+<body class="home">
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc mở
+					JavaScript trong
+					phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app">
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- navbar -->
+			<nav class="navbar js-navbar">
+				<div class="container">
+					<div class="branb">
+						<a href="http://"><img src="images/logo.svg" alt=""></a>
+					</div>
+					<div class="nav-trigger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<div class="wrapper">
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="" class="nav-link">Trang chủ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Giới thiệu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Giới thiệu cuộc thi</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn đăng ký</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn thi</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Hưỡng dẫn</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thông báo</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tra cứu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Số tay rèn luyện</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+
+						<div class="search js-search">
+							<div class="icon"><img src="./src/images/ic-search.svg" alt=""></div>
+							<form class="form-search">
+								<input class="form-control" type="search">
+								<button class="btn" type="submit"><img src="./src/images/ic-search.svg" alt=""></button>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</nav>
+			<!-- navbar end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+
+			<nav class="c-breadcrumb">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item">Giới thiệu</li>
+						<li class="breadcrumb-item active">Giới thiệu cuộc thi</li>
+					</ol>
+				</div>
+			</nav>
+
+			<div class="container">
+				<section class="my-user">
+					<div class="headline">
+						<h2 class="title">Thông tin cá nhân</h2>
+					</div>
+					<div class="tab js-tab-user">
+						<div class="tab-list">
+							<h3 class="item active" data-tab="#info-user">Sửa thông tin</h3>
+							<h3 class="item" data-tab="#achievements">Xem kết quả rèn luyện</h3>
+							<h3 class="item" data-tab="#bai-du-thi">Bài dự thi</h3>
+							<h3 class="item" data-tab="#password">Đổi mật khẩu</h3>
+						</div>
+						<div class="tab-body">
+							<div class="item info-user show" id="info-user">
+								<div class="row">
+									<div class="col-12 col-lg-4">
+										<div class="avatar js-avatar">
+											<div class="img">
+												<div class="img-wrapper">
+													<img class="profile-pic" src="images/user.png">
+												</div>
+											</div>
+											<input class="file-upload" type="file" accept="image/*">
+											<div class="text">Click đổi avatar</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-8">
+										<div class="info">
+											<div class="title"><img src="./src/images/ic-user2.svg" alt=""> Tài khoản</div>
+											<div class="inner">
+												<div class="item">
+													<div class="item-title">Họ tên</div>
+													<div class="item-info">: <b>Nguyễn Gia Thế</b></div>
+												</div>
+												<div class="item">
+													<div class="item-title">User</div>
+													<div class="item-info">: thebungbudeptrai</div>
+												</div>
+												<div class="item">
+													<div class="item-title">Giới tính</div>
+													<div class="item-info">: Nam</div>
+												</div>
+												<div class="item">
+													<div class="item-title">Ngày sinh</div>
+													<div class="item-info">: 06/07/1989</div>
+												</div>
+												<div class="item">
+													<div class="item-title">Điện thoại</div>
+													<div class="item-info">: 032 843 6789</div>
+												</div>
+												<div class="item">
+													<div class="item-title">Email</div>
+													<div class="item-info">: theng@vnedutech.vn</div>
+												</div>
+												<div class="item">
+													<div class="item-title">Quận/Huyện</div>
+													<div class="item-info">: Hoàng Mai</div>
+												</div>
+												<div class="item">
+													<div class="item-title">Tỉnh/TP</div>
+													<div class="item-info">: Hà Nội</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item achievements" id="achievements">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>STT</th>
+												<th>Vòng</th>
+												<th>Tuần thi</th>
+												<th>Điểm</th>
+												<th>Thời gian</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Vòng loại 1</td>
+												<td>Tuần 2</td>
+												<td>240</td>
+												<td>09:52.339</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Vòng loại 2</td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Vòng loại 3</td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Vòng loại 4</td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Vòng loại 5</td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>Vòng loại 6</td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>7</td>
+												<td>Vòng loại 7</td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>8</td>
+												<td>Vòng loại 8</td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>9</td>
+												<td>Bán kết</td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>10</td>
+												<td>Chung Kết</td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="item achievements" id="bai-du-thi">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>STT</th>
+												<th><div class="title">Tiêu đề</div></th>
+												<th>Loại bài</th>
+												<th>Mã bài dự thi</th>
+												<th>Lượt bình chọn</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td><div class="title">Tiêu đề bài dự thi</div></td>
+												<td>Video</td>
+												<td><div class="code">MS751</div></td>
+												<td>456</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td><div class="title">Tiêu đề bài dự thi</div></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="item password" id="password">
+								<form>
+									<div class="inner">
+										<div class="form-group">
+											<input type="password" class="form-control" id="exampleInputPasswordOld"
+												placeholder="Nhập mật khẩu cũ">
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control" id="exampleInputPasswordNew"
+												placeholder="Nhập mật khẩu mới">
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control" id="exampleInputPasswordNewConfirm"
+												placeholder="Nhập lại mật khẩu mới">
+											<small>Mật khẩu mới phải từ 6 ký tự trở lên bao gồm cả chữ và số</small>
+										</div>
+										<div class="btn-group">
+											<button type="submit" class="btn btn-yes"><img src="./src/images/ic-check.svg" alt=""> Xác
+												nhận</button>
+											<button type="submit" class="btn btn-no"><img src="./src/images/ic-exit1.svg" alt=""> Hủy</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-info">
+					<div class="footer-contact">
+						<h4 class="text1">Thường trực ban tổ chức:</h4>
+						<h3 class="text2">ban thanh thiếu niên trường học tw đoàn tncs hồ chí minh</h3>
+						<ul>
+							<li><i class="icon ic-address"></i>64 Bà Triệu, Quận Hoàn Kiếm, Thành Phố Hà Nội.</li>
+							<li><i class="icon ic-phone1"></i>1900 636 444 (8h - 21 hàng ngày)</li>
+							<li><i class="icon ic-phone2"></i>024 6263 1852</li>
+							<li><i class="icon ic-email"></i>tuhaovietnam@egroup.vn</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright © 2019 tuhaovietnam.com.vn. Design by VNEDUTECH. All rights reserved.</p>
+					<div class="group-icon">
+						<a class="ic-www" href="#"><img src="./src/images/ic-www.svg" alt=""></a>
+						<a class="ic-facebook" href="#"><img src="./src/images/ic-facebook1.svg" alt=""></a>
+						<a class="ic-youtube" href="#"><img src="./src/images/ic-youtube1.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/slick.min.js"></script>
+	<script src="src/js/vendor/fancybox/jquery.fancybox.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+</body>
+
+</html>

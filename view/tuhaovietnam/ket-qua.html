@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="src/css/main.css">
+
+</head>
+
+<body class="home">
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc mở
+					JavaScript trong
+					phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app">
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- navbar -->
+			<nav class="navbar js-navbar">
+				<div class="container">
+					<div class="branb">
+						<a href="http://"><img src="images/logo.svg" alt=""></a>
+					</div>
+					<div class="nav-trigger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<div class="wrapper">
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="" class="nav-link">Trang chủ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Giới thiệu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Giới thiệu cuộc thi</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn đăng ký</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn thi</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Hưỡng dẫn</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thông báo</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tra cứu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Số tay rèn luyện</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+
+						<div class="search js-search">
+							<div class="icon"><img src="./src/images/ic-search.svg" alt=""></div>
+							<form class="form-search">
+								<input class="form-control" type="search">
+								<button class="btn" type="submit"><img src="./src/images/ic-search.svg" alt=""></button>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</nav>
+			<!-- navbar end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+
+			<nav class="c-breadcrumb">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item active">Kết quả</li>
+					</ol>
+				</div>
+			</nav>
+
+			<!-- search -->
+			<section class="c-search">
+				<div class="container">
+					<div class="search-wrapper">
+						<div class="headline"><i class="fa fa-search"></i> Danh sách thí sinh</div>
+						<form action="" class="search-form">
+							<div class="row wrapper v1">
+								<div class="form-group col-md-6 col-lg-4">
+									<label for="id">Tên đăng nhập</label>
+									<input type="id" class="form-control" placeholder="Tên đăng nhập">
+								</div>
+								<div class="form-group col-md-6 col-lg-4">
+									<label for="id">Họ và tên</label>
+									<input type="id" class="form-control" placeholder="Họ tên">
+								</div>
+								<div class="form-group col-md-6 col-lg-4">
+									<label for="">Tỉnh/Thành Phố</label>
+									<select class="form-control">
+										<option>Chọn Tỉnh/TP</option>
+									</select>
+								</div>
+								<div class="form-group col-md-6 col-lg-4">
+									<label for="">Quận/Huyện</label>
+									<select class="form-control">
+										<option>Chọn Quận/Huyện</option>
+									</select>
+								</div>
+								<div class="form-group col-md-6 col-lg-4">
+									<label for="">Trường</label>
+									<select class="form-control">
+										<option>Chọn Trường</option>
+									</select>
+								</div>
+								<div class="form-group col-md-6 col-lg-4">
+									<label for="">Lớp</label>
+									<select class="form-control">
+										<option>Chọn Lớp</option>
+									</select>
+								</div>
+								<div class="col-12 btn-wrapper">
+									<button class="btn" type="submit"><i class="fa fa-search"></i> Tìm kiếm</button>
+								</div>
+							</div>
+						</form>
+						<div class="results">Tổng số: <span>434.106</span> Video dự thi</div>
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>STT</th>
+										<th>Họ và tên</th>
+										<th>Lớp</th>
+										<th>Trường</th>
+										<th>Quận/Huyện</th>
+										<th>Tỉnh/Thành phố</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- pagination -->
+						<nav class="c-pagination">
+							<ul class="pagination">
+								<li class="page-item">
+									<a class="page-link disabled" href="#"><img src="./src/images/ic-chevron-double-left.svg" alt=""></a>
+								</li>
+								<li class="page-item">
+									<a class="page-link disabled" href="#"><img src="./src/images/ic-arrow-left.svg" alt=""></a>
+								</li>
+								<li class="page-item">
+									<a class="page-link active" href="#">1</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">2</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">3</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">4</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#"><img src="./src/images/ic-arrow-right-1.svg" alt=""></a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#"><img src="./src/images/ic-chevron-double-right.svg" alt=""></a>
+								</li>
+							</ul>
+						</nav>
+						<!-- pagination end -->
+					</div>
+				</div>
+			</section>
+			<!-- search end -->
+
+
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-info">
+					<div class="footer-contact">
+						<h4 class="text1">Thường trực ban tổ chức:</h4>
+						<h3 class="text2">ban thanh thiếu niên trường học tw đoàn tncs hồ chí minh</h3>
+						<ul>
+							<li><i class="icon ic-address"></i>64 Bà Triệu, Quận Hoàn Kiếm, Thành Phố Hà Nội.</li>
+							<li><i class="icon ic-phone1"></i>1900 636 444 (8h - 21 hàng ngày)</li>
+							<li><i class="icon ic-phone2"></i>024 6263 1852</li>
+							<li><i class="icon ic-email"></i>tuhaovietnam@egroup.vn</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright © 2019 tuhaovietnam.com.vn. Design by VNEDUTECH. All rights reserved.</p>
+					<div class="group-icon">
+						<a class="ic-www" href="#"><img src="./src/images/ic-www.svg" alt=""></a>
+						<a class="ic-facebook" href="#"><img src="./src/images/ic-facebook1.svg" alt=""></a>
+						<a class="ic-youtube" href="#"><img src="./src/images/ic-youtube1.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/slick.min.js"></script>
+	<script src="src/js/vendor/fancybox/jquery.fancybox.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+</body>
+
+</html>

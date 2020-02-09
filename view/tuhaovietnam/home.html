@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="src/js/vendor/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="src/css/main.css">
+
+</head>
+
+<body class="home">
+
+	<noscript>
+		<![if !(lte IE 9)]>
+		<div class="noscript-message">
+			<div class="noscript-message__content">
+				<p>Trinh duyệt của bạn không hỗ trợ hoặc đã tắt JavaScript, bạn vui lòng cập nhận trình đuyệt web hoặc mở
+					JavaScript trong
+					phần cài đặt.</p>
+			</div>
+		</div>
+		<![endif]>
+	</noscript>
+
+	<div id="app">
+
+		<!-- header -->
+		<header class="header">
+
+			<!-- navbar -->
+			<nav class="navbar js-navbar">
+				<div class="container">
+					<div class="branb">
+						<a href="http://"><img src="images/logo.svg" alt=""></a>
+					</div>
+					<div class="nav-trigger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<div class="wrapper">
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="" class="nav-link">Trang chủ</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Giới thiệu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Giới thiệu cuộc thi</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn đăng ký</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Hướng dẫn thi</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Hưỡng dẫn</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Thông báo</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Tra cứu</a>
+								<ul>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link">Demo</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Số tay rèn luyện</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Liên hệ</a>
+							</li>
+						</ul>
+
+						<div class="search js-search">
+							<div class="icon"><img src="./src/images/ic-search.svg" alt=""></div>
+							<form class="form-search">
+								<input class="form-control" type="search">
+								<button class="btn" type="submit"><img src="./src/images/ic-search.svg" alt=""></button>
+							</form>
+						</div>
+
+						<div class="user">
+
+							<!-- truoc khi log in  -->
+							<div class="statu-1">
+								<div class="title">Đăng nhập</div>
+								<div class="btn-group">
+									<a class="btn btn-login" href="#">Đăng nhập</a>
+									<a class="btn btn-registration" href="#">Đăng ký</a>
+								</div>
+							</div>
+
+							<!-- sau khi log in -->
+							<!-- <div class="statu-2">
+								<div class="statu-top">
+									<div class="name">Nguyễn gia thế</div>
+									<div class="address">Trường THCS Phương Khoan (Vĩnh Phúc)</div>
+								</div>
+								<div class="statu-center">
+									<a href="#" class="btn btn-v1">luyện tập</a>
+									<a href="#" class="btn btn-v1">Vào thi</a>
+									<a href="#" class="btn btn-v2">Nộp bài dự thi</a>
+								</div>
+								<div class="statu-bottom">
+									<a class="info-user" href="#"><img src="./src/images/ic-user2.svg" alt=""> Tài khoản</a>
+									<a class="exit-user" href="#"><img src="./src/images/ic-exit.svg" alt=""> Đăng xuất</a>
+								</div>
+							</div> -->
+
+						</div>
+
+					</div> <!-- / wrapper -->
+				</div> <!-- / container -->
+			</nav>
+			<!-- navbar end -->
+
+		</header>
+		<!-- header end -->
+
+		<!-- main -->
+		<main class="main">
+
+			<div class="container">
+				<!-- hero -->
+				<section class="hero">
+					<div class="carousel js-carousel">
+						<div class="img-cover carousel-item">
+							<a href="#" class="img-cover__wrapper">
+								<img src="images/slider.png" alt="">
+							</a>
+						</div>
+					</div>
+				</section>
+				<!-- hero end -->
+			</div>
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-12 col-lg-8">
+						<section class="section logo-group">
+							<div class="logo-list">
+								<h2 class="title">Đơn vị tổ chức</h2>
+								<div class="carousel js-carousel-01">
+									<a class="carousel-item" href="#">
+										<div class="logo">
+											<img src="images/logo2.png" alt="">
+										</div>
+										<h3 class="name">Đoàn thanh niên cộng sản hồ chí mình</h3>
+									</a>
+									<a class="carousel-item" href="#">
+										<div class="logo">
+											<img src="images/logo3.png" alt="">
+										</div>
+										<h3 class="name">Bộ giáo dục và đào tạo</h3>
+									</a>
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<div class="col-12 col-lg-4">
+						<section class="section logo-group">
+							<div class="logo-list">
+								<h2 class="title">Đơn vị đồng hành</h2>
+								<div class="carousel js-carousel-02">
+									<a class="carousel-item" href="#">
+										<div class="logo">
+											<img src="images/logo4.png" alt="">
+										</div>
+										<h3 class="name">Tập đoàn giáo dục EGroup</h3>
+									</a>
+								</div>
+							</div>
+						</section>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container">
+				<!-- timeline -->
+				<section class="section c-timeline">
+					<h2 class="headline">Thời gian diễn ra cuộc thi</h2>
+					<div class="wrapper">
+						<ol class="list">
+							<li class="item v1">
+								<h3 class="name"><span>Tuần 01</span></h3>
+								<div class="date">
+									Từ 11/11/2019
+									<br>
+									Đến 17/11/2019
+								</div>
+							</li>
+							<li class="item">
+								<h3 class="name"><span>Tuần 02</span></h3>
+								<div class="date">
+									Từ 18/11/2019
+									<br>
+									Đến 24/11/2019
+								</div>
+							</li>
+							<li class="item">
+								<h3 class="name"><span>Tuần 03</span></h3>
+								<div class="date">
+									Từ 18/11/2019
+									<br>
+									Đến 24/11/2019
+								</div>
+							</li>
+							<li class="item">
+								<h3 class="name"><span>Tuần 04</span></h3>
+								<div class="date">
+									Từ 18/11/2019
+									<br>
+									Đến 24/11/2019
+								</div>
+							</li>
+							<li class="item">
+								<h3 class="name"><span>Tuần 05</span></h3>
+								<div class="date">
+									Từ 18/11/2019
+									<br>
+									Đến 24/11/2019
+								</div>
+							</li>
+							<li class="item">
+								<h3 class="name"><span>Tuần 06</span></h3>
+								<div class="date">
+									Từ 18/11/2019
+									<br>
+									Đến 24/11/2019
+								</div>
+							</li>
+							<li class="item">
+								<h3 class="name"><span>Tuần 07</span></h3>
+								<div class="date">
+									Từ 18/11/2019
+									<br>
+									Đến 24/11/2019
+								</div>
+							</li>
+							<li class="item">
+								<h3 class="name"><span>Tuần 08</span></h3>
+								<div class="date">
+									Từ 18/11/2019
+									<br>
+									Đến 24/11/2019
+								</div>
+							</li>
+							<li class="item v2">
+								<h3 class="name"><span>Chung kết Tỉnh/TP</span></h3>
+								<div class="date">
+									Từ 18/11/2019
+									<br>
+									Đến 24/11/2019
+								</div>
+							</li>
+							<li class="item v3">
+								<h3 class="name"><span>Chung kết Toàn quốc</span></h3>
+								<div class="date">
+									Từ 18/11/2019
+									<br>
+									Đến 24/11/2019
+								</div>
+							</li>
+						</ol>
+					</div>
+				</section>
+				<!-- timeline end -->
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-8">
+						<!-- notification -->
+						<section class="section c-notification">
+							<h2 class="headline"><img src="./src/images/ic-bullhorn.svg" alt=""><a href="#">Thông báo từ ban tổ
+									chức</a></h2>
+							<div class="list">
+								<li class="item">
+									<h3 class="title"><a href="#">Hướng dẫn đăng ký và vào cuộc thi “Tuổi trẻ học tập và làm theo tư
+											tưởng, đạo đức, phong cách Hồ Chí Minh” năm 2019</a></h3>
+									<div class="date"><b>Theng </b>| Oct 14, 2019</div>
+								</li>
+								<li class="item">
+									<h3 class="title"><a href="#">Hướng dẫn đăng ký và vào cuộc thi “Tuổi trẻ học tập và làm theo tư
+											tưởng, đạo đức, phong cách Hồ Chí Minh” năm 2019</a></h3>
+									<div class="date"><b>Theng </b>| Oct 14, 2019</div>
+								</li>
+								<li class="item">
+									<h3 class="title"><a href="#">Hướng dẫn đăng ký và vào cuộc thi “Tuổi trẻ học tập và làm theo tư
+											tưởng, đạo đức, phong cách Hồ Chí Minh” năm 2019</a></h3>
+									<div class="date"><b>Theng </b>| Oct 14, 2019</div>
+								</li>
+								<li class="item">
+									<h3 class="title"><a href="#">Hướng dẫn đăng ký và vào cuộc thi “Tuổi trẻ học tập và làm theo tư
+											tưởng, đạo đức, phong cách Hồ Chí Minh” năm 2019</a></h3>
+									<div class="date"><b>Theng </b>| Oct 14, 2019</div>
+								</li>
+							</div>
+						</section>
+						<!-- notification end -->
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<!-- number user -->
+						<section class="section c-number-user">
+							<div class="wrapper">
+								<div class="top">
+									<img src="./src/images/cup2.png" alt="">
+								</div>
+								<div class="center">
+									<div class="item v1">
+										<div class="inner">
+											<div class="number">632.000</div>
+											<div class="text">thí sinh đã thi</div>
+										</div>
+									</div>
+									<div class="item v2">
+										<div class="inner">
+											<div class="number">632.000</div>
+											<div class="text">thí sinh dự thi</div>
+										</div>
+									</div>
+								</div>
+								<div class="bottom"></div>
+							</div>
+						</section>
+						<!-- number user end -->
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<!-- rank -->
+						<div class="section c-rank">
+							<div class="headline v1">
+								<span><img src="./src/images/cup.png" alt=""></span>
+								<h2>số lượng THÍ SINH</h2>
+							</div>
+							<div class="group-item">
+								<div class="item">
+									<div class="number">434.106</div>
+									<div class="title">thí sinh đăng ký</div>
+								</div>
+								<div class="item">
+									<div class="number">434.106</div>
+									<div class="title">thí sinh đã thi</div>
+								</div>
+							</div>
+							<ul class="list">
+								<li class="item">
+									<div class="rank">1</div>
+									<div class="img"><img src="./images/user.png" alt=""></div>
+									<div class="info">
+										<div class="name">Nguyễn Gia thế</div>
+										<div class="number">350 điểm - 01:30:750s</div>
+										<div class="address">Lớp 11 - THPT Sáng Sơn - Vĩnh Phúc</div>
+									</div>
+								</li>
+								<li class="item">
+									<div class="rank">2</div>
+									<div class="img"><img src="./images/user.png" alt=""></div>
+									<div class="info">
+										<div class="name">Nguyễn Gia thế</div>
+										<div class="number">350 điểm - 01:30:750s</div>
+										<div class="address">Lớp 11 - THPT Sáng Sơn - Vĩnh Phúc</div>
+									</div>
+								</li>
+								<li class="item">
+									<div class="rank">3</div>
+									<div class="img"><img src="./images/user.png" alt=""></div>
+									<div class="info">
+										<div class="name">Nguyễn Gia thế</div>
+										<div class="number">350 điểm - 01:30:750s</div>
+										<div class="address">Lớp 11 - THPT Sáng Sơn - Vĩnh Phúc</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- rank end -->
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<!-- top -->
+						<div class="section c-top">
+							<div class="wrapper">
+								<div class="headline v1">
+									<span><img src="./src/images/cup.png" alt=""></span>
+									<h2>số lượng THÍ SINH ĐÃ THI</h2>
+								</div>
+								<div class="tab">
+									<div class="title">
+										<h3 class="active" data-tab="#tab1">tỉnh/tp</h3>
+										<h3 data-tab="#tab2">trường</h3>
+									</div>
+									<div class="tab-main">
+										<ul class="list active" id="tab1">
+											<li class="list-item">
+												<div class="number">01</div>
+												<div class="info">
+													<div class="number-user">6.002 <span>thí sinh</span></div>
+													<div class="address">THPT Thanh Chương 3</div>
+												</div>
+											</li>
+											<li class="list-item">
+												<div class="number">02</div>
+												<div class="info">
+													<div class="number-user">92297 <span>thí sinh</span></div>
+													<div class="address">Hà Nội</div>
+												</div>
+											</li>
+											<li class="list-item">
+												<div class="number">03</div>
+												<div class="info">
+													<div class="number-user">92297 <span>thí sinh</span></div>
+													<div class="address">Thái Nguyên</div>
+												</div>
+											</li>
+										</ul>
+
+										<ul class="list" id="tab2">
+											<li class="list-item">
+												<div class="number">01</div>
+												<div class="info">
+													<div class="number-user">6.002 <span>thí sinh</span></div>
+													<div class="address">THPT Thanh Chương 3</div>
+												</div>
+											</li>
+											<li class="list-item">
+												<div class="number">02</div>
+												<div class="info">
+													<div class="number-user">92297 <span>thí sinh</span></div>
+													<div class="address">Hà Nội</div>
+												</div>
+											</li>
+											<li class="list-item">
+												<div class="number">03</div>
+												<div class="info">
+													<div class="number-user">92297 <span>thí sinh</span></div>
+													<div class="address">Thái Nguyên</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="btn-wrapper"><a href="" class="btn">Xem thêm</a></div>
+							</div>
+						</div>
+						<!-- top end -->
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<!-- video hot -->
+						<div class="section c-video-hot">
+							<div class="wrapper">
+								<h2 class="headline v1">Video nổi bật</h2>
+								<div class="carousel">
+									<ul class="list js-carousel-05">
+										<li class="item">
+											<div class="video video-wrapper">
+												<iframe src="https://www.youtube.com/embed/6DTqZHvLVxg" frameborder="0"
+													allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+													allowfullscreen></iframe>
+											</div>
+											<div class="info">
+												<h3 class="title"><a href="#">VTV 1 đưa tin về lễ phát động cuộc thi</a></h3>
+												<div class="date">20/11/2017</div>
+											</div>
+										</li>
+										<li class="item">
+											<div class="video video-wrapper">
+												<iframe src="https://www.youtube.com/embed/6DTqZHvLVxg" frameborder="0"
+													allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+													allowfullscreen></iframe>
+											</div>
+											<div class="info">
+												<h3 class="title"><a href="#">VTV 1 đưa tin về lễ phát động cuộc thi</a></h3>
+												<div class="date">20/11/2017</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="btn-wrapper"><a href="" class="btn">Xem thêm</a></div>
+							</div>
+						</div>
+						<!-- video hot end -->
+					</div>
+				</div>
+			</div>
+
+			<div class="container section">
+				<a href="#" class="c-adv"><img src="./images/adv2.png" alt=""></a>
+			</div>
+
+
+			<div class="container">
+				<!-- video -->
+				<section class="section c-videos">
+					<div class="headline">
+						<h2 class="title active" data-tab="#video-tab">Video dự thi</h2>
+						<h2 class="title" data-tab="#infographic-tab">Infographic<h2>
+					</div>
+					<div class="videos-main">
+						<div class="block active" id="video-tab">
+							<div class="row group-item">
+								<figure class="col-12 col-md-6 col-lg-4 item video">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 col-lg-4 item video">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 col-lg-4 item video">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 col-lg-4 item video">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 col-lg-4 item video">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 col-lg-4 item video">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+							</div>
+							<div class="btn-wrapper">
+								<a class="btn" href="#">Xem thêm</a>
+							</div>
+						</div>
+						<div class="block" id="infographic-tab">
+							<div class="row group-item">
+								<figure class="col-12 col-md-6 col-lg-4 item">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 col-lg-4 item">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 col-lg-4 item">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 col-lg-4 item">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 col-lg-4 item">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 col-lg-4 item">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href="#"><img src="./images/video1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<div class="date-view">
+												<span><img src="./src/images/ic-calendar.svg" alt=""> 15/10/2019</span>
+												<span><img src="./src/images/ic-eye1.svg" alt=""> 32678</span>
+											</div>
+											<h3 class="title">
+												<a href="#">Em ơi Hà Nội phố</a>
+											</h3>
+											<div class="description">Người gửi: THPT Lê Quảng Chí - Quảng Trị</div>
+											<div class="like">
+												<img src="./src/images/ic-like-1.svg" alt="">
+												<span>32678</span>Bình chọn</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+							</div>
+							<div class="btn-wrapper">
+								<a class="btn" href="#">Xem thêm</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- video end -->
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-8">
+						<!-- news -->
+						<section class="section c-news">
+							<h2 class="headline"><img src="./src/images/ic-bullhorn.svg" alt=""><a href="#">Tin tức - sự kiện</a></h2>
+							<div class="row group-item">
+								<figure class="col-12 col-md-6 item">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href=""><img src="./images/new1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<h3 class="title"><a href="">Hà Việt Hoàng giành chiến thắng 'Tự hào Việt Nam'</a></h3>
+											<div class="date">04/12/2017</div>
+											<div class="description">Qua bốn phần thi gay cấn trong vòng thi trực tuyến, thí sinh Hà Việt
+												Hoàng (Hà Nội) đã giành chiến thắng cuộc thi "Tự hào Việt Nam" lần thứ hai năm 2017.</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 item">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href=""><img src="./images/new2.png" alt=""></a>
+										</div>
+										<div class="info">
+											<h3 class="title"><a href="">Hà Việt Hoàng giành chiến thắng 'Tự hào Việt Nam'</a></h3>
+											<div class="date">04/12/2017</div>
+											<div class="description">Qua bốn phần thi gay cấn trong vòng thi trực tuyến, thí sinh Hà Việt
+												Hoàng (Hà Nội) đã giành chiến thắng cuộc thi "Tự hào Việt Nam" lần thứ hai năm 2017.</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 item">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href=""><img src="./images/new1.png" alt=""></a>
+										</div>
+										<div class="info">
+											<h3 class="title"><a href="">Hà Việt Hoàng giành chiến thắng 'Tự hào Việt Nam'</a></h3>
+											<div class="date">04/12/2017</div>
+											<div class="description">Qua bốn phần thi gay cấn trong vòng thi trực tuyến, thí sinh Hà Việt
+												Hoàng (Hà Nội) đã giành chiến thắng cuộc thi "Tự hào Việt Nam" lần thứ hai năm 2017.</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+								<figure class="col-12 col-md-6 item">
+									<div class="inner">
+										<div class="img-cover">
+											<a class="img-cover__wrapper" href=""><img src="./images/new2.png" alt=""></a>
+										</div>
+										<div class="info">
+											<h3 class="title"><a href="">Hà Việt Hoàng giành chiến thắng 'Tự hào Việt Nam'</a></h3>
+											<div class="date">04/12/2017</div>
+											<div class="description">Qua bốn phần thi gay cấn trong vòng thi trực tuyến, thí sinh Hà Việt
+												Hoàng (Hà Nội) đã giành chiến thắng cuộc thi "Tự hào Việt Nam" lần thứ hai năm 2017.</div>
+										</div>
+									</div>
+								</figure> <!-- / item -->
+							</div>
+							<div class="btn-wrapper"><a href="" class="btn">Xem thêm</a></div>
+						</section>
+						<!-- news end -->
+					</div>
+					<div class="col-12 col-lg-4">
+
+						<!-- evaluation -->
+						<div class="section c-evaluation">
+							<div class="wrapper">
+								<h2 class="headline v1">Họ nói gì về chúng tôi</h2>
+								<div class="carousel">
+									<div class="list js-carousel-03">
+										<div class="item">
+											<div class="img">
+												<span><img src="./images/user.png" alt=""></span>
+											</div>
+											<div class="text">“Trong mỗi tế bào của chúng ta, trong mỗi giọt máu của chúng ta đều có lịch sử
+												hàng ngàn đời của cha ông để lại nên tìm hiểu lịch sử là cách để tìm hiểu về bản thân mình. Khi
+												biết mình là ai, chúng ta sẽ biết mình phải làm gì, mình sẽ đi về đâu. Tự hào về bản thân mình
+												cũng là cách để Tự hào Việt Nam”</div>
+											<div class="name">Anh Nguyễn Gia Thế</div>
+										</div>
+										<div class="item">
+											<div class="img">
+												<span><img src="./images/user.png" alt=""></span>
+											</div>
+											<div class="text">“Trong mỗi tế bào của chúng ta, trong mỗi giọt máu của chúng ta đều có lịch sử
+												hàng ngàn đời của cha ông để lại nên tìm hiểu lịch sử là cách để tìm hiểu về bản thân mình. Khi
+												biết mình là ai, chúng ta sẽ biết mình phải làm gì, mình sẽ đi về đâu. Tự hào về bản thân mình
+												cũng là cách để Tự hào Việt Nam”</div>
+											<div class="name">Anh Nguyễn Gia Thế</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- evaluation end -->
+
+						<div class="section c-follow">
+							<div class="wrapper">
+								<h2 class="headline">Follow us</h2>
+								<div class="group-icon">
+									<a class="ic-rss" href="#"><img src="./src/images/ic-rss.svg" alt=""></a>
+									<a class="ic-facebook" href="#"><img src="./src/images/ic-facebook.svg" alt=""></a>
+									<a class="ic-twitter" href="#"><img src="./src/images/ic-twitter.svg" alt=""></a>
+									<a class="ic-youtube" href="#"><img src="./src/images/ic-youtube.svg" alt=""></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<!-- main end -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-info">
+					<div class="footer-contact">
+						<h4 class="text1">Thường trực ban tổ chức:</h4>
+						<h3 class="text2">ban thanh thiếu niên trường học tw đoàn tncs hồ chí minh</h3>
+						<ul>
+							<li><i class="icon ic-address"></i>64 Bà Triệu, Quận Hoàn Kiếm, Thành Phố Hà Nội.</li>
+							<li><i class="icon ic-phone1"></i>1900 636 444 (8h - 21 hàng ngày)</li>
+							<li><i class="icon ic-phone2"></i>024 6263 1852</li>
+							<li><i class="icon ic-email"></i>tuhaovietnam@egroup.vn</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright © 2019 tuhaovietnam.com.vn. Design by VNEDUTECH. All rights reserved.</p>
+					<div class="group-icon">
+						<a class="ic-www" href="#"><img src="./src/images/ic-www.svg" alt=""></a>
+						<a class="ic-facebook" href="#"><img src="./src/images/ic-facebook1.svg" alt=""></a>
+						<a class="ic-youtube" href="#"><img src="./src/images/ic-youtube1.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+
+	</div>
+
+	<!-- js -->
+	<script src="src/js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="src/js/vendor/slick.min.js"></script>
+	<script src="src/js/vendor/fancybox/jquery.fancybox.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+</body>
+
+</html>
