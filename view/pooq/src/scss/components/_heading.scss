@@ -1,0 +1,54 @@
+.c-heading {
+  h2 {
+    @include no-spacing;
+    font-size: 16pt;
+    font-weight: 300;
+
+    @media (min-width: $breakpoints-sm) {
+      font-size: 20pt;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      text-align: center;
+      font-size: 22pt;
+      line-height: 1em;
+      font-weight: 700;
+    }
+
+    a {
+      position: relative;
+      text-decoration: none;
+      color: $c-dark;
+      padding-right: 20px;
+
+      @media (min-width: $breakpoints-sm) {
+        padding-right: 29px;
+      }
+
+      @media (min-width: $breakpoints-xl) {
+        padding-right: 0;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        width: 10px;
+        height: 18px;
+        background-image: url(./img/ic-arrow.png);
+        background-size: cover;
+
+        @media (min-width: $breakpoints-sm) {
+          width: 12px;
+          height: 21px;
+        }
+
+        @media (min-width: $breakpoints-xl) {
+          display: none;
+        }
+      }
+    }
+  }
+}

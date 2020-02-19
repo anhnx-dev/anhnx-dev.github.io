@@ -1,0 +1,419 @@
+.c-hero {
+  padding-top: 35px;
+  padding-bottom: 60px;
+  background-color: $c-indigo;
+
+  @media (min-width: $breakpoints-xl) {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #574eed;
+  }
+
+  .heading {
+    @media (min-width: $breakpoints-xl) {
+      display: none;
+    }
+
+    h2 {
+      a {
+        color: $c-light;
+
+        &::after {
+          background-image: url(./img/ic-arrow-v1.png);
+        }
+      }
+    }
+  }
+
+  .carousel {
+    margin-left: 10px;
+    overflow: hidden;
+
+    @media (min-width: $breakpoints-sm) {
+      margin-left: 25px;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      margin-left: 0;
+      overflow: initial;
+    }
+
+    .wrapper {
+      margin-top: 15px;
+      padding-right: 25px;
+
+      @media (min-width: $breakpoints-xl) {
+        margin-top: 0;
+        padding-right: 0;
+      }
+
+      .slick-list {
+        overflow: initial;
+
+        @media (min-width: $breakpoints-xl) {
+          overflow: hidden;
+        }
+      }
+
+      .slick-dots {
+        @include no-spacing;
+        padding-left: 15px;
+
+        @media (min-width: $breakpoints-xl) {
+          position: absolute;
+          top: 50%;
+          left: 7.55%;
+          transform: translate3d( 0, -50%, 0);
+        }
+        li {
+          list-style: none;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          button {
+            @include no-spacing;
+            display: block;
+            width: 10px;
+            height: 10px;
+            border: 0;
+            border-radius: 99px;
+            background-color: #cfa5ff;
+            font-size: 0;
+            cursor: pointer;
+            transition: $transition;
+          }
+          &.slick-active {
+            button {
+              height: 37px;
+              background-color: $c-white;
+            }
+          }
+        }
+      }
+
+      .item {
+        padding-right: 15px;
+
+        @media (min-width: $breakpoints-xl) {
+          padding-right: 0;
+          position: relative;
+        }
+
+        .img {
+          box-shadow: 0px 5px 21px 0px rgba(0, 0, 0, 0.3);
+          width: 300px;
+
+          @media (min-width: $breakpoints-sm) {
+            width: 573px;
+          }
+
+          @media (min-width: $breakpoints-xl) {
+            box-shadow: initial;
+            width: 100%;
+          }
+
+          .img-wrapper {
+            position: relative;
+            border-radius: 6px;
+            overflow: hidden;
+
+            @media (min-width: $breakpoints-xl) {
+              border-radius: 0;
+            }
+
+            &::before {
+              content: '';
+              display: block;
+              padding-bottom: 60%;
+              @media (min-width: $breakpoints-xl) {
+                padding-bottom: 39.44%;
+              }
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background-color: $c-black;
+              opacity: .6;
+
+              @media (min-width: $breakpoints-xl) {
+                opacity: .4;
+                background-color: initial;
+                background: linear-gradient(124deg, rgb(80, 80, 237) 0%, rgb(143, 63, 235) 71%);
+              }
+            }
+
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              &.img-mobile {
+                display: block;
+                @media (min-width: $breakpoints-xl) {
+                  display: none;
+                }
+              }
+              &.img-pc {
+                display: none;
+                @media (min-width: $breakpoints-xl) {
+                  display: block;
+                }
+              }
+            }
+
+            .btn-play {
+              content: '';
+              position: absolute;
+              z-index: 2;
+              width: 61px;
+              height: 65.5px;
+              top: 50%;
+              left: 50%;
+              transform: translate3d(-50%, -50%, 0);
+              background-image: url(./img/ic-play-v2.png);
+              background-size: cover;
+
+              @media (min-width: $breakpoints-sm) {
+                width: 122px;
+                height: 131px;
+              }
+
+              @media (min-width: $breakpoints-xl) {
+                background-image: url(./img/ic-play-v1.png);
+              }
+            }
+
+            .progress {
+              display: flex;
+              position: absolute;
+              z-index: 2;
+              left: 0;
+              bottom: 0;
+              height: 8px;
+              width: 100%;
+              background-color: rgba(0, 0, 0, .3);
+              @media (min-width: $breakpoints-xl) {
+                width: calc(84.9% - 30px);
+                left: 50%;
+                transform: translate3d( -50%, 0, 0);
+                bottom: 52px;
+              }
+
+              .progress-bar {
+                display: flex;
+                flex-direction: column;
+                background-color: $c-red;
+                transition: $transition;
+                @media (min-width: $breakpoints-xl) {
+                  position: relative;
+                }
+
+                .live {
+                  position: absolute;
+                  top: -48px;
+                  left: 20px;
+                  padding: 4.5px 20px;
+                  background-color: $c-red;
+                  border-radius: 4px;
+                  text-transform: uppercase;
+                  font-size: 10pt;
+                  font-weight: 700;
+                  
+                  @media (min-width: $breakpoints-xl) {
+                    @include flex-center;
+                    width: 57px;
+                    height: 59px;
+                    padding: 0;
+                    top: auto;
+                    bottom: 23px;
+                    left: 100%;
+                    font-size: 12pt;
+                    font-weight: 500;
+                    background-color: transparent;
+                    background-image: url(./img/bg-live.png);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .inner {
+          margin-top: 25px;
+          opacity: 0;
+
+          @media (min-width: $breakpoints-sm) {
+            margin-top: 60px;
+          }
+
+          @media (min-width: $breakpoints-xl) {
+            opacity: 1;
+            position: absolute;
+            width: 84.9%;
+            top: calc(50% - 35px);
+            left: 50%;
+            transform: translate3d(-50%,0,0);
+            margin-top: 0;
+            padding-left: 35px;
+          }
+
+          .inner-wrapper {
+            @media (min-width: $breakpoints-xl) {
+              display: flex;
+              justify-content: space-between;
+              padding-left: 15px;
+              padding-right: 15px;
+            }
+            .info {
+              .info-top {
+
+                .copyright,
+                .name {
+                  @include no-spacing;
+                  display: inline;
+                  font-size: 16pt;
+                  line-height: 1em;
+                  font-weight: 300;
+                  @media (min-width: $breakpoints-sm) {
+                    font-size: 22pt;
+                  }
+                }
+
+                .copyright {
+                  position: relative;
+
+                  @media (min-width: $breakpoints-xl) {
+                    display: block;
+                    font-size: 16pt;
+                    color: #ecdcff;
+                    font-weight: 300;
+                  }
+
+                  &::after {
+                    content: 'l';
+                    display: inline;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    color: $c-primary;
+                    font-weight: 200;
+                    @media (min-width: $breakpoints-xl) {
+                      display: none;
+                    }
+                  }
+
+                }
+
+                .name {
+                  @media (min-width: $breakpoints-xl) {
+                    display: block;
+                    margin-top: 20px;
+                    font-size: 32pt;
+                    font-weight: 500;
+                  }
+                }
+              }
+
+              .info-bottom {
+                .date {
+                  display: none;
+
+                  @media (min-width: $breakpoints-xl) {
+                    display: block;
+                    margin-top: 15px;
+                    font-size: 15pt;
+                    color: #ecdcff;
+                    font-weight: 300;
+                  }
+                }
+
+                .statistical {
+                  margin-top: 20px;
+                  @media (min-width: $breakpoints-xl) {
+                    display: none;
+                  }
+
+                  .number {
+                    position: relative;
+                    display: inline;
+                    font-size: 12pt;
+                    line-height: 14pt;
+                    font-weight: 300;
+
+                    &::before {
+                      content: '';
+                      position: absolute;
+                      left: 0;
+                      top: 50%;
+                      transform: translate3d(0, -50%, 0);
+                    }
+
+                    &.play {
+                      padding-left: 21px;
+                      margin-right: 15px;
+
+                      &::before {
+                        height: 16px;
+                        width: 15px;
+                        background-image: url(./img/ic-play.png);
+                      }
+                    }
+
+                    &.bookmark {
+                      padding-left: 18px;
+
+                      &::before {
+                        height: 18px;
+                        width: 12px;
+                        background-image: url(./img/ic-bookmark.png);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .permanet {
+              display: none;
+
+              @media (min-width: $breakpoints-xl) {
+                display: block;
+              }
+
+              > span {
+                font-size: 14px;
+                font-weight: 300;
+                color: #ecdcff;
+              }
+              .name {
+                font-size: 18pt;
+              }
+              .btn {
+                margin-top: 10px;
+                padding: 6px 16px;
+                border-color: #af9ff1;
+                color: $c-white;
+                font-size: 10pt;
+                &:hover {
+                  border-color: $c-white;
+                  color: $c-black;
+                }
+              }
+            }
+          }
+        }
+
+        &.slick-active {
+          .inner {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

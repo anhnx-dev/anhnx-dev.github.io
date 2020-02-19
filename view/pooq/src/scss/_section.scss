@@ -1,0 +1,7 @@
+.section {
+  margin-top: 45px;
+
+  @media (min-width: $breakpoints-sm) {
+    margin-top: 85px;
+  }
+}

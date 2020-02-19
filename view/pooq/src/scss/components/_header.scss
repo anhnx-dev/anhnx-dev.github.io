@@ -1,0 +1,114 @@
+.c-header {
+  background-color: $c-indigo;
+  @media (min-width: $breakpoints-xl) {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: transparent;
+  }
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @media (min-width: $breakpoints-xl) {
+      padding-top: 29.5px;
+      padding-bottom: 29.5px;
+    }
+  }
+  .btn-trigger {
+    position: relative;
+    width: 35px;
+    height: 28px;
+    border: 0;
+    background: transparent;
+    @media (min-width: $breakpoints-xl) {
+      display: none;
+    }
+    .bar {
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 50%;
+      border-radius: 99px;
+      background-color: $c-white;
+      &:nth-child(1) {
+        top: 0;
+        transform: translate3d(-50%, 0, 0);
+      }
+      &:nth-child(2) {
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+      &:nth-child(3) {
+        top: 100%;
+        transform: translate3d(-50%, -100%, 0);
+      }
+    }
+  }
+  .logo {
+    a {
+      display: block;
+      line-height: 1;
+      .logo-mobile {
+        display: block;
+        @media (min-width: $breakpoints-xl) {
+          display: none;
+        }
+      }
+      .logo-pc {
+        display: none;
+        @media (min-width: $breakpoints-xl) {
+          display: block;
+        }
+      }
+    }
+  }
+  .nav {
+    @include no-spacing;
+    display: none;
+    @media (min-width: $breakpoints-xl) {
+      display: flex;
+    }
+    .nav-item {
+      list-style: none;
+      margin: 0 23px;
+      .nav-link {
+        text-decoration: none;
+        font-size: 16pt;
+        color: $c-white;
+      }
+    }
+  }
+  .header-right {
+    @media (min-width: $breakpoints-xl) {
+      display: flex;
+    }
+  }
+  .btn-search {
+    width: 37px;
+    height: 39px;
+    border: 0;
+    background: url(./img/ic-search.png);
+    cursor: pointer;
+    @media (min-width: $breakpoints-xl) {
+      width: 27px;
+      height: 30px;
+      background: url(./img/ic-search-v1.png);
+    }
+  }
+  .logIn {
+    @include no-spacing;
+    display: none;
+    background: transparent;
+    border: 0;
+    font-size: 14pt;
+    color: $c-light-01;
+    margin-left: 25px;
+    cursor: pointer;
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+    }
+  }
+}

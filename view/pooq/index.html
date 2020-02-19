@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./src/main.min.css">
+  <link rel="stylesheet" href="./src/vendor/slick/slick.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <header class="c-header" id="header">
+      <div class="container header-wrapper">
+        <button class="btn-trigger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button> <!-- / btn trigger -->
+        <div class="logo">
+          <a href="#">
+            <img class="logo-mobile" src="./images/logo-mo.png" alt="logo mobile">
+            <img class="logo-pc" src="./images/logo-pc.png" alt="logo pc">
+          </a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link">다시보기</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">라이브</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">무비</a></li>
+        </ul> <!-- / nav -->
+        <div class="header-right">
+          <button class="btn-search"></button> <!-- / btn search -->
+          <button class="logIn">로그인</button> <!-- / log in -->
+        </div>
+
+      </div> <!-- / container -->
+    </header>
+    <!-- header end -->
+
+    <nav class="navbar c-navbar">
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="nav-link active">홈</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">다시보기</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">라이브</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">무비</a></li>
+      </ul>
+    </nav>
+    <!-- / navbar end -->
+
+    <main id="main">
+
+      <section class="c-hero">
+        <div class="c-heading heading">
+          <div class="container">
+            <h2><a href="#">인기 라이브</a></h2>
+          </div>
+        </div> <!-- / header -->
+        <div class="carousel">
+          <div class="wrapper js-hero-carousel">
+            <div class="item">
+              <div class="img">
+                <div class="img-wrapper">
+                  <img class="img-mobile" src="./images/hero-1.png" alt="">
+                  <img class="img-pc" src="./images/hero-1-pc.png" alt="">
+                  <a href="#" class="btn-play"></a>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 25%"><span class="live">live</span></div>
+                  </div>
+                </div>
+              </div> <!-- / img -->
+              <div class="inner">
+                <div class="inner-wrapper">
+                  <div class="info">
+                    <div class="info-top">
+                      <div class="copyright">JTBC</div>
+                      <h2 class="name">비긴어게인 5회</h2>
+                    </div>
+                    <div class="info-bottom">
+                      <div class="date">오후 10시 30분 - 12시</div>
+                      <div class="statistical">
+                        <div class="number play">60%</div>
+                        <div class="number bookmark">40%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="permanet">
+                    <span>NEXT</span>
+                    <div class="name">효리네 민박 스페셜</div>
+                    <a href="#" class="btn">예약하기</a>
+                  </div>
+                </div>
+              </div> <!-- / inner -->
+            </div> <!-- /item -->
+            <div class="item">
+              <div class="img">
+                <div class="img-wrapper">
+                  <img src="./images/hero-2.png" alt="">
+                  <a href="#" class="btn-play"></a>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 25%"><span class="live">live</span></div>
+                  </div>
+                </div>
+              </div> <!-- / img -->
+              <div class="inner">
+                <div class="inner-wrapper">
+                  <div class="info">
+                    <div class="info-top">
+                      <div class="copyright">JTBC</div>
+                      <h2 class="name">비긴어게인 5회</h2>
+                    </div>
+                    <div class="info-bottom">
+                      <div class="date">오후 10시 30분 - 12시</div>
+                      <div class="statistical">
+                        <div class="number play">60%</div>
+                        <div class="number bookmark">40%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="permanet">
+                    <span>NEXT</span>
+                    <div class="name">효리네 민박 스페셜</div>
+                    <a href="#" class="btn">예약하기</a>
+                  </div>
+                </div>
+              </div> <!-- / inner -->
+            </div> <!-- /item -->
+            <div class="item">
+              <div class="img">
+                <div class="img-wrapper">
+                  <img class="img-mobile" src="./images/hero-1.png" alt="">
+                  <img class="img-pc" src="./images/hero-1-pc.png" alt="">
+                  <a href="#" class="btn-play"></a>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 60%"><span class="live">live</span></div>
+                  </div>
+                </div>
+              </div> <!-- / img -->
+              <div class="inner">
+                <div class="inner-wrapper">
+                  <div class="info">
+                    <div class="info-top">
+                      <div class="copyright">JTBC</div>
+                      <h2 class="name">비긴어게인 5회</h2>
+                    </div>
+                    <div class="info-bottom">
+                      <div class="date">오후 10시 30분 - 12시</div>
+                      <div class="statistical">
+                        <div class="number play">60%</div>
+                        <div class="number bookmark">40%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="permanet">
+                    <span>NEXT</span>
+                    <div class="name">효리네 민박 스페셜</div>
+                    <a href="#" class="btn">예약하기</a>
+                  </div>
+                </div>
+              </div> <!-- / inner -->
+            </div> <!-- /item -->
+            <div class="item">
+              <div class="img">
+                <div class="img-wrapper">
+                  <img src="./images/hero-2.png" alt="">
+                  <a href="#" class="btn-play"></a>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 25%"><span class="live">live</span></div>
+                  </div>
+                </div>
+              </div> <!-- / img -->
+              <div class="inner">
+                <div class="inner-wrapper">
+                  <div class="info">
+                    <div class="info-top">
+                      <div class="copyright">JTBC</div>
+                      <h2 class="name">비긴어게인 5회</h2>
+                    </div>
+                    <div class="info-bottom">
+                      <div class="date">오후 10시 30분 - 12시</div>
+                      <div class="statistical">
+                        <div class="number play">60%</div>
+                        <div class="number bookmark">40%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="permanet">
+                    <span>NEXT</span>
+                    <div class="name">효리네 민박 스페셜</div>
+                    <a href="#" class="btn">예약하기</a>
+                  </div>
+                </div>
+              </div> <!-- / inner -->
+            </div> <!-- /item -->
+          </div> <!-- / wrapper -->
+        </div> <!-- / carousel -->
+      </section>
+      <!-- hero end -->
+
+      <section class="c-new">
+        <div class="c-heading heading">
+          <div class="container">
+            <h2><a href="#">푹 이어보기</a></h2>
+          </div>
+        </div> <!-- / heading -->
+        <div class="carousel">
+          <div class="wrapper js-new-carousel">
+            <div class="item">
+              <div class="img">
+                <a class="img-wrapper" href="#">
+                  <img src="./images/new-1.png" alt="new 1">
+                  <span class="btn-play"></span>
+                  <span class="logo"><img src="./images/logo-tvn.png" alt="logo tvn"></span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 33.3333%"></div>
+                  </div>
+                </a>
+              </div> <!-- / img -->
+              <div class="inner">
+                <h3 class="title"><a href="#">크리미널마인드 4화</a></h3>
+                <div class="date">2017.08.03 방영</div>
+              </div> <!-- / inner -->
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="img">
+                <a class="img-wrapper" href="#">
+                  <img src="./images/new-2.png" alt="new 1">
+                  <span class="btn-play"></span>
+                  <span class="logo"><img src="./images/logo-tvn.png" alt="logo tvn"></span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 66.6666%"></div>
+                  </div>
+                </a>
+              </div> <!-- / img -->
+              <div class="inner">
+                <h3 class="title"><a href="#">비밀의 숲 16화</a></h3>
+                <div class="date">2017.08.03 방영</div>
+              </div> <!-- / inner -->
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="img">
+                <a class="img-wrapper" href="#">
+                  <img src="./images/new-3.png" alt="new 1">
+                  <span class="btn-play"></span>
+                  <span class="logo"><img src="./images/logo-kbs2.png" alt="logo kbs2"></span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 15%"></div>
+                  </div>
+                </a>
+              </div> <!-- / img -->
+              <div class="inner">
+                <h3 class="title"><a href="#">해피투게더3 510화</a></h3>
+                <div class="date">2017.08.03 방영</div>
+              </div> <!-- / inner -->
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="img">
+                <a class="img-wrapper" href="#">
+                  <img src="./images/new-1.png" alt="new 1">
+                  <span class="btn-play"></span>
+                  <span class="logo"><img src="./images/logo-tvn.png" alt="logo tvn"></span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 33.3333%"></div>
+                  </div>
+                </a>
+              </div> <!-- / img -->
+              <div class="inner">
+                <h3 class="title"><a href="#">크리미널마인드 4화</a></h3>
+                <div class="date">2017.08.03 방영</div>
+              </div> <!-- / inner -->
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="img">
+                <a class="img-wrapper" href="#">
+                  <img src="./images/new-3.png" alt="new 1">
+                  <span class="btn-play"></span>
+                  <span class="logo"><img src="./images/logo-kbs2.png" alt="logo kbs2"></span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 15%"></div>
+                  </div>
+                </a>
+              </div> <!-- / img -->
+              <div class="inner">
+                <h3 class="title"><a href="#">해피투게더3 510화</a></h3>
+                <div class="date">2017.08.03 방영</div>
+              </div> <!-- / inner -->
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="img">
+                <a class="img-wrapper" href="#">
+                  <img src="./images/new-1.png" alt="new 1">
+                  <span class="btn-play"></span>
+                  <span class="logo"><img src="./images/logo-tvn.png" alt="logo tvn"></span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 33.3333%"></div>
+                  </div>
+                </a>
+              </div> <!-- / img -->
+              <div class="inner">
+                <h3 class="title"><a href="#">크리미널마인드 4화</a></h3>
+                <div class="date">2017.08.03 방영</div>
+              </div> <!-- / inner -->
+            </div> <!-- / item -->
+          </div>
+        </div>
+      </section>
+      <!-- new end -->
+
+      <section class="section c-registration_list">
+        <div class="c-heading heading">
+          <div class="container">
+            <h2><a href="#">태현님이 구독 중인 푹</a></h2>
+          </div>
+        </div> <!-- / heading -->
+        <div class="carousel">
+          <div class="wrapper js-registration_list-carousel">
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img"><img src="./images/rl-1.png" alt="sbs"></div>
+                <div class="info">
+                  <div class="copyright">SBS</div>
+                  <h3 class="title">오빠 생각</h3>
+                  <div class="bookmark">40%</div>
+                </div>
+                <a class="btn" href="#">구독중</a>
+              </div>
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img"><img src="./images/rl-2.png" alt="sbs"></div>
+                <div class="info">
+                  <div class="copyright">SBS</div>
+                  <h3 class="title">인생술집</h3>
+                  <div class="bookmark">40%</div>
+                </div>
+                <a class="btn" href="#">구독중</a>
+              </div>
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img"><img src="./images/rl-3.png" alt="sbs"></div>
+                <div class="info">
+                  <div class="copyright">JTBC</div>
+                  <h3 class="title">효리네 민박</h3>
+                  <div class="bookmark">40%</div>
+                </div>
+                <a class="btn" href="#">구독중</a>
+              </div>
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img"><img src="./images/rl-1.png" alt="sbs"></div>
+                <div class="info">
+                  <div class="copyright">JTBC</div>
+                  <h3 class="title">아이돌 학교</h3>
+                  <div class="bookmark">40%</div>
+                </div>
+                <a class="btn" href="#">구독중</a>
+              </div>
+            </div> <!-- / item -->
+          </div>
+        </div>
+      </section>
+      <!-- registration list end -->
+
+      <section class="section c-category">
+        <div class="c-heading heading">
+          <div class="container">
+            <h2><a href="#">오늘의 인기 프로그램</a></h2>
+          </div>
+        </div> <!-- / heading -->
+        <div class="category-inner js-category">
+          <div class="carousel">
+            <ul class="nav">
+              <li class="nav-item hide-pc"><a class="isotope_item current" href="#" data-filter="*">ALL</a></li>
+              <li class="nav-item"><a class="isotope_item" href="#" data-filter=".드라마">드라마</a></li>
+              <li class="nav-item"><a class="isotope_item" href="#" data-filter=".예능">예능</a></li>
+              <li class="nav-item"><a class="isotope_item" href="#" data-filter=".교양">교양</a></li>
+              <li class="nav-item"><a class="isotope_item" href="#" data-filter=".시사">시사</a></li>
+              <li class="nav-item"><a class="isotope_item" href="#" data-filter=".보도">보도</a></li>
+            </ul> <!-- / nav -->
+          </div> <!-- / carousel -->
+          <div class="container container-item">
+            <div class="wrapper isotope_container">
+              <div class="item 드라마 교양 보도">
+                <a class="item-wrapper" href="#">
+                  <img class="item-img" src="./images/c-1.png" alt="no name">
+                  <div class="item-inner">
+                    <h3 class="title">효리네 민박</h3>
+                    <span class="bookmark">56%</span>
+                  </div>
+                </a>
+              </div> <!-- / item -->
+              <div class="item 드라마 교양 보도">
+                <a class="item-wrapper" href="#">
+                  <img class="item-img" src="./images/c-2.png" alt="no name">
+                  <div class="item-inner">
+                    <h3 class="title">한끼줍쇼</h3>
+                    <span class="bookmark">40%</span>
+                  </div>
+                </a>
+              </div> <!-- / item -->
+              <div class="item 예능 시사">
+                <a class="item-wrapper" href="#">
+                  <img class="item-img" src="./images/c-3.png" alt="no name">
+                  <div class="item-inner">
+                    <h3 class="title">미운 우리 새끼</h3>
+                    <span class="bookmark">34%</span>
+                  </div>
+                </a>
+              </div> <!-- / item -->
+              <div class="item 예능 시사">
+                <a class="item-wrapper" href="#">
+                  <img class="item-img" src="./images/c-4.png" alt="no name">
+                  <div class="item-inner">
+                    <h3 class="title">싱글 와이프</h3>
+                    <span class="bookmark">25%</span>
+                  </div>
+                </a>
+              </div> <!-- / item -->
+              <div class="item 예능 시사">
+                <a class="item-wrapper" href="#">
+                  <img class="item-img" src="./images/c-5.png" alt="no name">
+                  <div class="item-inner">
+                    <h3 class="title">품위 있는 그녀</h3>
+                    <span class="bookmark">21%</span>
+                  </div>
+                </a>
+              </div> <!-- / item -->
+              <div class="item 예능 시사">
+                <a class="item-wrapper" href="#">
+                  <img class="item-img" src="./images/c-1.png" alt="no name">
+                  <div class="item-inner">
+                    <h3 class="title">효리네 민박</h3>
+                    <span class="bookmark">56%</span>
+                  </div>
+                </a>
+              </div> <!-- / item -->
+              <div class="item 예능 시사">
+                <a class="item-wrapper" href="#">
+                  <img class="item-img" src="./images/c-2.png" alt="no name">
+                  <div class="item-inner">
+                    <h3 class="title">한끼줍쇼</h3>
+                    <span class="bookmark">40%</span>
+                  </div>
+                </a>
+              </div> <!-- / item -->
+              <div class="item 드라마 교양 보도">
+                <a class="item-wrapper" href="#">
+                  <img class="item-img" src="./images/c-3.png" alt="no name">
+                  <div class="item-inner">
+                    <h3 class="title">미운 우리 새끼</h3>
+                    <span class="bookmark">34%</span>
+                  </div>
+                </a>
+              </div> <!-- / item -->
+              <div class="item 드라마 교양 보도">
+                <a class="item-wrapper" href="#">
+                  <img class="item-img" src="./images/c-4.png" alt="no name">
+                  <div class="item-inner">
+                    <h3 class="title">싱글 와이프</h3>
+                    <span class="bookmark">25%</span>
+                  </div>
+                </a>
+              </div> <!-- / item -->
+              <div class="item 드라마 교양 보도">
+                <a class="item-wrapper" href="#">
+                  <img class="item-img" src="./images/c-5.png" alt="no name">
+                  <div class="item-inner">
+                    <h3 class="title">품위 있는 그녀</h3>
+                    <span class="bookmark">21%</span>
+                  </div>
+                </a>
+              </div> <!-- / item -->
+            </div>
+          </div> <!-- / container item -->
+          <div class="container container-btn">
+            <button class="c-btn_load">더보기</button>
+          </div> <!-- / container button -->
+        </div> <!-- / inner -->
+
+      </section>
+      <!-- Category end -->
+
+      <section class="section c-popular_day">
+        <div class="c-heading heading">
+          <div class="container">
+            <h2><a href="#">오늘의 인기 푹</a></h2>
+          </div>
+        </div> <!-- / heading -->
+        <div class="carousel">
+          <div class="wrapper js-popular-carousel">
+            <div class="item">
+              <div class="img">
+                <a class="img-wrapper" href="#">
+                  <img src="./images/p-1.png" alt="popular 1">
+                  <span class="btn-play"></span>
+                </a>
+              </div> <!-- / img -->
+              <div class="inner">
+                <h3 class="title"><a href="#">삼시세끼 어촌편 1회</a></h3>
+                <div class="statistical">
+                  <div class="number play">60%</div>
+                  <div class="number bookmark">40%</div>
+                </div>
+              </div> <!-- / inner -->
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="img">
+                <a class="img-wrapper" href="#">
+                  <img src="./images/new-3.png" alt="new 3">
+                  <span class="btn-play"></span>
+                </a>
+              </div> <!-- / img -->
+              <div class="inner">
+                <h3 class="title"><a href="#">효리네 민박 5회</a></h3>
+                <div class="statistical">
+                  <div class="number play">60%</div>
+                  <div class="number bookmark">40%</div>
+                </div>
+              </div> <!-- / inner -->
+            </div> <!-- / item -->
+          </div>
+        </div>
+      </section>
+      <!-- popular day end -->
+
+      <section class="section c-popular_clip">
+        <div class="c-heading heading">
+          <div class="container">
+            <h2><a href="#">인기 푹 클립</a></h2>
+          </div>
+        </div> <!-- / heading -->
+        <div class="container container-item">
+          <div class="item">
+            <div class="item-wrapper">
+              <div class="img"><a href="#"><img src="./images/pc-1.png" alt="popular 1"></a></div>
+              <div class="info">
+                <div class="info-top">
+                  <div class="copyright">딩고</div>
+                  <div class="date">2년 전</div>
+                </div>
+                <div class="view">조회수 1,392,036회</div>
+              </div>
+            </div>
+          </div> <!-- / item -->
+          <div class="item">
+            <div class="item-wrapper">
+              <div class="img"><a href="#"><img src="./images/pc-2.png" alt="popular 2"></a></div>
+              <div class="info">
+                <div class="info-top">
+                  <div class="copyright">딩고</div>
+                  <div class="date">1일 전</div>
+                </div>
+                <div class="view">조회수 48,542회</div>
+              </div>
+            </div>
+          </div> <!-- / item -->
+          <div class="item">
+            <div class="item-wrapper">
+              <div class="img"><a href="#"><img src="./images/pc-3.png" alt="popular 3"></a></div>
+              <div class="info">
+                <div class="info-top">
+                  <div class="copyright">벅스</div>
+                  <div class="date">1일 전</div>
+                </div>
+                <div class="view">조회수 1,392,036회</div>
+              </div>
+            </div>
+          </div> <!-- / item -->
+          <div class="item">
+            <div class="item-wrapper">
+              <div class="img"><a href="#"><img src="./images/pc-4.png" alt="popular 4"></a></div>
+              <div class="info">
+                <div class="info-top">
+                  <div class="copyright">슈퍼맨이 돌아왔다</div>
+                  <div class="date">3일 전</div>
+                </div>
+                <div class="view">조회수 48,542회</div>
+              </div>
+            </div>
+          </div> <!-- / item -->
+          <div class="item">
+            <div class="item-wrapper">
+              <div class="img"><a href="#"><img src="./images/pc-5.png" alt="popular 5"></a></div>
+              <div class="info">
+                <div class="info-top">
+                  <div class="copyright">SBS</div>
+                  <div class="date">2년 전</div>
+                </div>
+                <div class="view">조회수 1,392,036회</div>
+              </div>
+            </div>
+          </div> <!-- / item -->
+          <div class="item">
+            <div class="item-wrapper">
+              <div class="img"><a href="#"><img src="./images/pc-6.png" alt="popular 6"></a></div>
+              <div class="info">
+                <div class="info-top">
+                  <div class="copyright">스튜디오v</div>
+                  <div class="date">1개월 전</div>
+                </div>
+                <div class="view">조회수 48,542회</div>
+              </div>
+            </div>
+          </div> <!-- / item -->
+        </div> <!-- / container item -->
+        <div class="container container-btn">
+          <button class="c-btn_load">더보기</button>
+        </div> <!-- / container btn -->
+      </section>
+      <!-- popular clip end -->
+
+      <section class="section c-event">
+        <div class="container">
+          <div class="inner">
+            <h2 class="heading">Event</h2>
+            <div class="carousel js-event-carousel">
+              <div class="item">
+                <h3 class="title"><a href="#">푹 3.0 런칭 이벤트 <span>장기 회원 푹방사수 아주 칭찬 푸~욱</span></a></h3>
+                <div class="date">2018.01.02 01 ~ 02.29</div>
+              </div> <!-- / item -->
+              <div class="item">
+                <h3 class="title"><a href="#">푹 3.0 런칭 이벤트 <span>장기 회원 푹방사수 아주 칭찬 푸~욱</span></a></h3>
+                <div class="date">2018.01.02 01 ~ 02.29</div>
+              </div> <!-- / item -->
+              <div class="item">
+                <h3 class="title"><a href="#">푹 3.0 런칭 이벤트 <span>장기 회원 푹방사수 아주 칭찬 푸~욱</span></a></h3>
+                <div class="date">2018.01.02 01 ~ 02.29</div>
+              </div> <!-- / item -->
+              <div class="item">
+                <h3 class="title"><a href="#">푹 3.0 런칭 이벤트 <span>장기 회원 푹방사수 아주 칭찬 푸~욱</span></a></h3>
+                <div class="date">2018.01.02 01 ~ 02.29</div>
+              </div> <!-- / item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- event end -->
+
+      <section class="section c-famous">
+        <div class="c-heading heading">
+          <div class="container">
+            <h2><a href="#">인기 영화</a></h2>
+          </div>
+        </div> <!-- / heading -->
+        <div class="carousel">
+          <div class="wrapper js-famous-carousel">
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img">
+                  <a class="img-wrapper" href="#">
+                    <img src="./images/f-1.png" alt="famous 1">
+                  </a>
+                </div> <!-- / img -->
+                <div class="play">60%</div>
+              </div>
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img">
+                  <a class="img-wrapper" href="#">
+                    <img src="./images/f-2.png" alt="famous 2">
+                  </a>
+                </div> <!-- / img -->
+                <div class="play">60%</div>
+              </div>
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img">
+                  <a class="img-wrapper" href="#">
+                    <img src="./images/f-3.png" alt="famous 3">
+                  </a>
+                </div> <!-- / img -->
+                <div class="play">60%</div>
+              </div>
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img">
+                  <a class="img-wrapper" href="#">
+                    <img src="./images/f-4.png" alt="famous 4">
+                  </a>
+                </div> <!-- / img -->
+                <div class="play">60%</div>
+              </div>
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img">
+                  <a class="img-wrapper" href="#">
+                    <img src="./images/f-5.png" alt="famous 5">
+                  </a>
+                </div> <!-- / img -->
+                <div class="play">60%</div>
+              </div>
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img">
+                  <a class="img-wrapper" href="#">
+                    <img src="./images/f-2.png" alt="famous 2">
+                  </a>
+                </div> <!-- / img -->
+                <div class="play">60%</div>
+              </div>
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img">
+                  <a class="img-wrapper" href="#">
+                    <img src="./images/f-3.png" alt="famous 3">
+                  </a>
+                </div> <!-- / img -->
+                <div class="play">60%</div>
+              </div>
+            </div> <!-- / item -->
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="img">
+                  <a class="img-wrapper" href="#">
+                    <img src="./images/f-4.png" alt="famous 4">
+                  </a>
+                </div> <!-- / img -->
+                <div class="play">60%</div>
+              </div>
+            </div> <!-- / item -->
+
+          </div>
+        </div>
+      </section>
+      <!-- Famous end -->
+
+    </main>
+    <!-- main end  -->
+
+    <footer class="c-footer" id="footer">
+      <div class="container">
+        <div class="logo"><a href="#"><img src="./images/logo-footer.png" alt="logo footer"></a></div>
+        <div class="social">
+          <a class="item icon-facebook" href="#"><img src="./src/img/ic-facebook.png" alt="facebook"></a>
+          <a class="item icon-twitter" href="#"><img src="./src/img/ic-twitter.png" alt="twitter"></a>
+          <a class="item icon-instagram" href="#"><img src="./src/img/ic-instagram.png" alt="instagram"></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">회사소개</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">서비스 소개</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">서비스 이용약관</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">유료상품 이용약관</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">개인정보 처리방침</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">청소년 보호정책</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">고객센터</a></li>
+        </ul>
+        <div class="info">
+          <p>
+            콘텐츠연합플랫폼 주식회사 | 대표이사 김준환 | 고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)
+          <br>
+          사업자등록번호 220-88-38020 | 통신판매업 신고번호 제 2015-서울마포-0128호 | 주소 서울특별시 마포구 상암산로 82, SBS 프리즘 타워 14층
+          </p>
+        </div>
+        <div class="copyright"><p>© 콘텐츠연합플랫폼 ㈜ All rights reserved</p></div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- js -->
+  <script src="./src/vendor/jquery-3.4.1.min.js"></script>
+  <script src="./src/vendor/slick/slick.min.js"></script>
+  <script src="./src/vendor/isotope.pkgd.min.js"></script>
+  <script src="./src/main.js"></script>
+
+
+</body>
+
+</html>
