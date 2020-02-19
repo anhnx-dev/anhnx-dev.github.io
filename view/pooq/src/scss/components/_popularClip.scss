@@ -65,20 +65,18 @@
 
         .info {
           margin-top: 10px;
-          font-size: 9pt;
+          font-size: 12px;
           color: #808080;
           font-weight: 300;
 
           @media (min-width: $breakpoints-sm) {
-            font-size: 12pt;
+            font-size: 16px;
           }
 
           @media (min-width: $breakpoints-xl) {
-            font-size: 10pt;
-
             .copyright {
               color: $c-dark;
-              font-weight: 500;
+              font-weight: 700;
             }
           }
 

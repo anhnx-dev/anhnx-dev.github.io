@@ -113,6 +113,10 @@
             @media (min-width: $breakpoints-xl) {
               width: 76px;
             }
+
+            @media (min-width: $breakpoints-xxl) {
+              width: 84px;
+            }
           }
         }
 
@@ -120,44 +124,33 @@
           margin-right: 90px;
 
           @media (min-width: $breakpoints-sm) {
-            margin-right: 120px;
+            margin-right: 108px;
           }
 
           @media (min-width: $breakpoints-xl) {
-            margin-right: 100px;
+            margin-right: 90px;
           }
 
           @media (min-width: $breakpoints-xxl) {
-            margin-right: 120px;
+            margin-right: 108px;
           }
           
 
           .copyright {
-            font-size: 9pt;
-            line-height: 16pt;
+            font-size: 16px;
             color: #878787;
             font-weight: 300;
 
-            @media (min-width: $breakpoints-sm) {
-              font-size: 11pt;
-            }
-
-            @media (min-width: $breakpoints-xl) {
-              font-size: 10pt;
-            }
           }
 
           .title {
             @include no-spacing;
-            font-size: 11pt;
+            font-size: 20px;
             color: $c-black;
-
-            @media (min-width: $breakpoints-sm) {
-              font-size: 13pt;
-            }
+            font-weight: 500;
 
             @media (min-width: $breakpoints-xl) {
-              font-size: 12pt;
+              font-size: 18px;
             }
           }
 
@@ -166,7 +159,7 @@
             padding-left: 18px;
             font-weight: 300;
             color: #8c8c8c;
-            font-size: 11pt;
+            font-size: 15px;
 
             &::before {
               content: '';
@@ -187,7 +180,7 @@
           top: 50%;
           transform: translate3d(0, -50%, 0);
           padding: 6px 19px;
-          font-size: 10pt;
+          font-size: 10px;
           border: 1px solid #8b41eb;
           font-weight: 500;
 
@@ -195,17 +188,21 @@
             right: 23px;
             border: 2px solid #8b41eb;
             padding: 11px 24.5px;
-            font-size: 11pt;
+            font-size: 11px;
           }
 
           @media (min-width: $breakpoints-xl) {
             right: 16px;
-            font-size: 10pt;
             border: 1px solid #8b41eb;
+          }
+
+          @media (min-width: $breakpoints-xxl) {
+            right: 31px;
+            font-size: 15px;
+            
             top: 27px;
             transform: translate3d(0, 0, 0);
-            padding: 6.5px 12px;
-
+            padding: 5px 11px;
             &::before {
               content: '';
               display: inline-block;
@@ -215,10 +212,6 @@
               margin-right: 2px;
               transition: $transition;
             }
-          }
-
-          @media (min-width: $breakpoints-xxl) {
-            right: 23px;
           }
 
           &:hover {

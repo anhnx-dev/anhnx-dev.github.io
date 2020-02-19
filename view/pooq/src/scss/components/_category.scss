@@ -59,8 +59,9 @@
             height: 70px;
             border-radius: 50%;
             background-color: #f7f7f7;
-            font-size: 12pt;
-            font-weight: 500;
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 300;
             text-decoration: none;
             color: #a8a8a8;
             transition: $transition;
@@ -68,7 +69,6 @@
             @media (min-width: $breakpoints-sm) {
               width: 90px;
               height: 90px;
-              font-size: 14pt;
             }
 
             &.current {
@@ -181,9 +181,9 @@
 
             .title {
               @include no-spacing;
-              font-size: 16pt;
-              line-height: 1;
-              font-weight: 700;
+              font-size: 24px;
+              line-height: 32px;
+              font-weight: 400;
             }
 
             .bookmark {
@@ -191,7 +191,9 @@
               position: relative;
               padding-left: 19px;
               margin-top: 5px;
-              font-size: 12pt;
+              font-size: 16px;
+              line-height: 28px;
+              font-weight: 300;
 
               &::before {
                 content: '';

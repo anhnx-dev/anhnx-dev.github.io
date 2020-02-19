@@ -118,7 +118,10 @@ if (eventCarousel) {
 
   carousel.slick({
     infinite: false,
-    vertical: true
+    vertical: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 4500,
   });
 }
 

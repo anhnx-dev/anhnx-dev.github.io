@@ -171,11 +171,11 @@
 
         .title {
           @include no-spacing;
-          font-size: 14pt;
-          line-height: 16pt;
+          font-size: 20px;
+          font-weight: 500;
 
           @media (min-width: $breakpoints-xl) {
-            font-size: 18pt;
+            font-size: 18px;
             line-height: 1;
           }
 
@@ -186,14 +186,12 @@
         }
 
         .statistical {
-          margin-top: 10px;
           color: #8c8c8c;
 
           .number {
             position: relative;
             display: inline;
-            font-size: 12pt;
-            line-height: 14pt;
+            font-size: 16px;
             font-weight: 300;
 
             &::before {

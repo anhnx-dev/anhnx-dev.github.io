@@ -12,7 +12,8 @@
   text-align: center;
   transition: $transition;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #000000;
     background-color: #FFFFFF;
   }
