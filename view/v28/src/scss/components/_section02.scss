@@ -4,6 +4,11 @@
   width: 100%;
   height: 82.813vw;
 
+  @media (min-width: $breakpoints-xl) {
+    height: 56.25vw;
+    padding: 0 18.75vw;
+  }
+
   .bg {
     position: absolute;
     top: 0;
@@ -14,6 +19,29 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-section02.png);
+      background-size: cover;
+    }
+  }
+
+  .logo-game {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      width: 11.198vw;
+      height: 8.49vw;
+      top: 3.646vw;
+      left: 31.25vw;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   .slogan {
@@ -26,6 +54,14 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 18.282vw;
+      height: 15.261vw;
+      top: 15.1045vw;
+      left: 28.125vw;
+      background-size: cover;
+    }
   }
 
   .btn-group {
@@ -37,22 +73,42 @@
       height: 11.094vw;
       background-size: cover;
 
+      @media (min-width: $breakpoints-xl) {
+        width: 14.6875vw;
+        height: 5.6776vw;
+      }
+
       &.btn-1 {
         top: 37.5vw;
         left: 4.6875vw;
         background-image: url(../images/btn-download.png);
+
+        @media (min-width: $breakpoints-xl) {
+          top: 33.5313vw;
+          left: 23.438vw;
+        }
       }
 
       &.btn-2 {
         top: 41.5625vw;
         left: 33.9062vw;
         background-image: url(../images/btn-like.png);
+
+        @media (min-width: $breakpoints-xl) {
+          top: 35.417vw;
+          left: 38.542vw;
+        }
       }
 
       &.btn-3 {
         top: 50.9375vw;
         left: 9.6875vw;
         background-image: url(../images/btn-diemdanh.png);
+
+        @media (min-width: $breakpoints-xl) {
+          top: 40.3vw;
+          left: 26.4vw;
+        }
       }
 
     }
@@ -66,6 +122,15 @@
     bottom: 3.4375vw;
     padding: 0 4.6875vw;
 
+    @media (min-width: $breakpoints-xl) {
+      bottom: unset;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 18.75vw;
+      padding: 0;
+      width: auto;
+    }
+
     .progress {
       position: absolute;
       width: calc(100% - 23.436vw);
@@ -76,6 +141,12 @@
       border-radius: 1.044vw;
       border: 1px solid #fdbf18;
       overflow: hidden;
+
+      @media (min-width: $breakpoints-xl) {
+        width: 25.417vw;
+        height: 0.7293vw;
+        transform: translate3d(-50%, 0, 0) rotate(-90deg);
+      }
 
       .progress-bar {
         position: absolute;
@@ -89,15 +160,22 @@
     .group-item {
       position: absolute;
       width: calc(100% - 23.436vw);
-      left: 50%;
+      left: 55%;
       transform: translate3d(-50%, 0, 0);
       bottom: 0;
       z-index: 4;
+
+      @media (min-width: $breakpoints-xl) {
+        transform: translate3d(-50%, 0, 0) rotate(90deg);
+      }
 
       .item {
         position: absolute;
         bottom: 0;
 
+        @media (min-width: $breakpoints-xl) {
+          bottom: -5vw;
+        }
 
         .diem {
           font-family: $f-androgyne;
@@ -105,6 +183,12 @@
           font-size: 2.03125vw;
           text-align: center;
           padding: 0 1.5625vw;
+
+          @media (min-width: $breakpoints-xl) {
+            transform: scale(-1);
+            font-size: 0.6774vw;
+            padding: 0;
+          }
 
           &::after {
             display: block;
@@ -114,6 +198,11 @@
             background-image: url(../images/btn-moc.png);
             background-size: cover;
             margin-top: 1vw;
+
+            @media (min-width: $breakpoints-xl) {
+              width: 2.032vw;
+              height: 2.657vw;
+            }
           }
         }
 
@@ -132,6 +221,14 @@
           opacity: 0;
           transition: $transition;
 
+          @media (min-width: $breakpoints-xl) {
+            transform: translate3d(-50%, 0, 0) rotate(-90deg);
+            width: 9.219vw;
+            padding: 0.521vw;
+            border-radius: 0.5vw;
+            left: 90%;
+          }
+
           &::after {
             content: '';
             position: absolute;
@@ -143,12 +240,22 @@
             top: 100%;
             left: 50%;
             transform: translate3d(-50%, 0, 0);
+            @media (min-width: $breakpoints-xl) {
+              width: 0.8856vw;
+              height: 0.469vw;
+              top: 35%;
+              left: -0.625vw;
+              transform: rotate(90deg) translate3d( 0, 0, 0);
+            }
           }
 
           .qua-item {
             width: 50%;
             padding: 0 0.78124vw;
             text-align: center;
+            @media (min-width: $breakpoints-xl) {
+              padding: 0.2605vw;
+            }
 
             img {
               width: 100%;
@@ -159,6 +266,9 @@
               color: #ffe7af;
               font-size: 1.3vw;
               margin: 0 -0.78124vw;
+              @media (min-width: $breakpoints-xl) {
+                font-size: 0.521vw;
+              }
             }
           }
         }
@@ -167,31 +277,59 @@
           .diem {
             cursor: pointer;
           }
+
           .qua {
             transform: translate3d(-50%, 0, 0);
             pointer-events: auto;
             opacity: 1;
+
+            @media (min-width: $breakpoints-xl) {
+              transform: translate3d(-50%, 0, 0) rotate(-90deg);
+              pointer-events: auto;
+              opacity: 1;
+            }
           }
         }
 
         &:nth-child(1) {
           left: 0;
+
+          @media (min-width: $breakpoints-xl) {
+            left: 9vw;
+          }
         }
 
         &:nth-child(2) {
           left: 10vw;
+
+          @media (min-width: $breakpoints-xl) {
+            left: 6vw;
+          }
         }
 
         &:nth-child(3) {
           left: 20vw;
+
+          @media (min-width: $breakpoints-xl) {
+            left: 3vw;
+          }
         }
 
         &:nth-child(4) {
           left: 60%;
+
+          @media (min-width: $breakpoints-xl) {
+            left: -6vw;
+          }
         }
 
         &:nth-child(5) {
           right: 0;
+
+          @media (min-width: $breakpoints-xl) {
+            right: inherit;
+            left: -14vw;
+          }
         }
       }
     }

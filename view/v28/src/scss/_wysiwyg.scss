@@ -5,8 +5,8 @@ body {
   @extend .body-text;
   font-family: $f-theme;
   line-height: 1.6;
-  background: $c-white;
-  color: $c-dark;
+  background: #000920;
+  color: $c-white;
 }
 
 .no-spacing {
@@ -19,47 +19,68 @@ body {
   overflow-x: hidden;
 }
 
+.footer {
+  height: 9.375vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  font-family: arial;
+  font-size: 1.208vw;
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 17.812vw;
+      height: auto;
+    }
+  }
+}
+
 .modal {
   position: fixed;
   z-index: 999999;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0) scale(0);
-  background: #fff;
+  background-size: cover;
+  background-image: url(../images/popup.png);
   overflow: hidden;
   border-radius: $round1;
   opacity: 0;
   transition: $transition;
+  width: 35.971vw;
+  height: 39.268vw;
+
   .modal-exit {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 10px;
-    right: 10px;
+    width: 3.664vw;
+    height: 3.664vw;
+    top: 4.1vw;
+    right: 1.6vw;
     cursor: pointer;
-    &::after,
-    &::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background: #999;
-      top: 50%;
-      left: 50%;
-      transform: translate3d(-50%,-50%,0) rotate(45deg);
-    }
-    &::before {
-      transform: translate3d(-50%,-50%,0) rotate(-45deg);
-    }
+    background-image: url(../images/exit.png);
+    overflow: hidden;
+
   }
+
   .modal-inner {
+    font-family: $f-staccato;
     padding: 15px;
     max-height: 100vh;
     overflow-y: auto;
-    @media (min-width: $breakpoints-md) {
-      padding: 30px;
+    font-size: 2vw;
+    color: #193386;
+    font-weight: bold;
+    text-align: center;
+    padding: 3.663vw;
+    margin-top: 12vw;
+    >a {
+      text-decoration: none;
     }
   }
+
   &.modal-active {
     transform: translate3d(-50%, -50%, 0) scale(1);
     opacity: 1;
@@ -74,7 +95,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.8);
+
   &.modal-over-body-active {
     display: block;
   }

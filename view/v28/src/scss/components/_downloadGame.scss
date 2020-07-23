@@ -1,0 +1,72 @@
+.c-download-game {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 10.417vw;
+  right: 1.563vw;
+  width: 9.948vw;
+  height: 21.9799vw;
+  background-image: url(../images/pc/bg-menu-phai.png);
+  background-size: cover;
+
+  @media (min-width: $breakpoints-xl) {
+    display: block;
+  }
+
+  .download {
+    position: relative;
+    display: block;
+    width: 8.386vw;
+    height: 6.771vw;
+    top: -0.417vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../images/pc/tai-game.png);
+    background-size: cover;
+  }
+
+  .branb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.261vw;
+
+    a {
+      display: block;
+      width: 6.146vw;
+      height: 6.146vw;
+
+      img {
+        width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  .btn-group {
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 7.396vw;
+      height: 2.5523vw;
+      background-image: url(../images/bg-btn.png);
+      background-size: cover;
+      font-size: 1.3023vw;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $c-dark;
+      transition: $transition;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-image: url(../images/bg-btn-hover.png);
+      }
+    }
+  }
+}

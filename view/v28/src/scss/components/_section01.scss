@@ -7,6 +7,11 @@
   align-items: flex-end;
   text-align: center;
 
+  @media (min-width: $breakpoints-xl) {
+    height: 56.25vw;
+    padding: 0 18.75vw;
+  }
+
   .bg {
     position: absolute;
     width: 100%;
@@ -26,6 +31,11 @@
       background-position: center;
       text-decoration: none;
       cursor: none;
+
+      @media (min-width: $breakpoints-xl) {
+        background-image: url(../images/class-1.png);
+        background-size: cover;
+      }
     }
 
     .class-2 {
@@ -38,6 +48,15 @@
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: center;
+
+      @media (min-width: $breakpoints-xl) {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 72.24vw;
+        height: 51.563vw;
+        background-image: url(../images/class-2.png);
+      }
     }
   }
 
@@ -48,6 +67,13 @@
     left: 4.6875vw;
     width: 17.032vw;
     height: 12.657vw;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 11.198vw;
+      height: 8.49vw;
+      top: 1.563vw;
+      left: 18.75vw;
+    }
 
     img {
       width: 100%;
@@ -60,6 +86,9 @@
     z-index: 2;
     width: 100%;
     text-align: center;
+    @media (min-width: $breakpoints-xl) {
+      bottom: 6.511vw;
+    }
 
     .play {
       position: absolute;
@@ -70,47 +99,80 @@
       right: 13vw;
       background-image: url(../images/play.png);
       background-size: cover;
+
+      @media (min-width: $breakpoints-xl) {
+        top: 3vw;
+        right: 13vw;
+        width: 6.146vw;
+        height: 6.146vw;
+      }
     }
 
     .name {
       img {
         width: 63.907vw;
         height: auto;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 34.896vw;
+        }
       }
     }
+
     .slogan {
       color: #dbd589;
       font-weight: bold;
       font-size: 2.38282vw;
       display: flex;
       justify-content: center;
+      text-transform: uppercase;
+
+      @media (min-width: $breakpoints-xl) {
+        font-size: 1.3023vw;
+      }
+
       >span {
         position: relative;
         padding: 0 1.5625vw;
+        @media (min-width: $breakpoints-xl) {
+          padding: 0 1vw;
+        }
+
         &::before,
         &::after {
           content: '';
           position: absolute;
           width: 10.47vw;
           height: 2.033vw;
-          top: 50%;
+          top: 55%;
           background-image: url(../images/bar-heading.png);
           background-size: cover;
+
+          @media (min-width: $breakpoints-xl) {
+            width: 5.6775vw;
+            height: 0.9899vw;
+          }
         }
+
         &::before {
-          transform: translate3d( -100%, -50%, 0) scale(-1);
+          transform: translate3d(-100%, -50%, 0) scale(-1);
           left: 0;
         }
+
         &::after {
-          transform: translate3d( 100%, -50%, 0);
+          transform: translate3d(100%, -50%, 0);
           right: 0;
         }
       }
     }
+
     .comming-soon {
       color: #b5b3bd;
       font-size: 3.8125vw;
       font-weight: bold;
+      @media (min-width: $breakpoints-xl) {
+        font-size: 2.084vw;
+      }
     }
   }
 }

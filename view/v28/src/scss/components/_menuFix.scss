@@ -5,15 +5,30 @@
   right: 4.6875vw;
   border: 1px solid $c-white;
   padding: 2px;
-  background: #101d2f;
+  background-color: #101d2f;
   border-radius: 2vw;
-  transform: translate3d( 100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
   opacity: 0;
   pointer-events: none;
   transition: $transition;
 
+  @media (min-width: $breakpoints-xl) {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    pointer-events: auto;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    background-image: url(../images/pc/menu-fix.png);
+    width: 15.417vw;
+    height: 2.917vw;
+    background-size: cover;
+    top: 0;
+    right: 18.75vw;
+    display: flex;
+  }
+
   .link-item {
-    display: block;
     height: 17.813vw;
     width: 17.813vw;
     display: flex;
@@ -27,9 +42,22 @@
     border-top: 1px solid #394263;
     border-bottom: 1px solid #050507;
 
+    @media (min-width: $breakpoints-xl) {
+      width: auto;
+      height: auto;
+      font-size: 0.834vw;
+      line-height: 1;
+      border-top: 0;
+      border-bottom: 0;
+    }
+
     >span {
       width: 100%;
       text-align: center;
+
+      @media (min-width: $breakpoints-xl) {
+        width: auto;
+      }
     }
 
     &::before {
@@ -43,12 +71,59 @@
       margin-bottom: .6vw;
     }
 
-    &.link-fb::before {
-      background-image: url(../images/icon-fb-page.png);
+    &.link-fb {
+      @media (min-width: $breakpoints-xl) {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: -8%;
+        left: 15%;
+      }
+
+      &::before {
+        background-image: url(../images/icon-fb-page.png);
+
+        @media (min-width: $breakpoints-xl) {
+          width: 1.3023vw;
+          height: 1.3023vw;
+          margin-bottom: 0;
+        }
+      }
+
+      >span {
+        @media (min-width: $breakpoints-xl) {
+          width: 3vw;
+        }
+      }
     }
 
-    &.link-group::before {
-      background-image: url(../images/icon-group.png);
+    &.link-group {
+      @media (min-width: $breakpoints-xl) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fffbbc;
+        position: relative;
+        top: -5%;
+        left: 22%;
+      }
+
+      &::before {
+        background-image: url(../images/icon-group.png);
+
+        @media (min-width: $breakpoints-xl) {
+          background-image: url(../images/pc/icon-group.png);
+          width: 1.875vw;
+          margin-bottom: 0;
+        }
+      }
+
+      >span {
+        @media (min-width: $breakpoints-xl) {
+          width: 1.875vw;
+          margin-left: 5px;
+        }
+      }
     }
 
     &:nth-child(1) {
@@ -63,7 +138,7 @@
 
 .menu-fix_active {
   .c-menu-fix {
-    transform: translate3d( 0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
     pointer-events: auto;
   }

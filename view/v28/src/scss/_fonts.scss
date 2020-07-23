@@ -38,4 +38,17 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'UTM Staccato';
+  src: url('./fonts/UTMAndrogyne.eot');
+  src: url('./fonts/UTMAndrogyne.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/UTMAndrogyne.woff2') format('woff2'),
+      url('./fonts/UTMAndrogyne.woff') format('woff'),
+      url('./fonts/UTMAndrogyne.ttf') format('truetype'),
+      url('./fonts/UTMAndrogyne.svg#UTMAndrogyne') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 

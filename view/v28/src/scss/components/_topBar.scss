@@ -4,7 +4,11 @@
   align-items: center;
   background-color: #101d2f;
   padding: 1.25vw 4.6875vw;
-  border-bottom: 1px solid 1px solid $c-white;
+  border-bottom: 1px solid $c-white;
+
+  @media (min-width: $breakpoints-xl) {
+    display: none;
+  }
 
   .branb {
     width: 14.064vw;

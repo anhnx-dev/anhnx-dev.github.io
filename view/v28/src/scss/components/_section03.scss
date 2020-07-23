@@ -4,6 +4,11 @@
   width: 100%;
   overflow: hidden;
 
+  @media (min-width: $breakpoints-xl) {
+    height: 56.25vw;
+    padding: 0 18.75vw;
+  }
+
   .bg {
     position: absolute;
     top: 0;
@@ -14,6 +19,11 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-section03.png);
+      background-size: cover;
+    }
   }
 
   .heading {
@@ -27,9 +37,17 @@
     margin: 1.5625vw 0 0 0;
     text-transform: uppercase;
 
+    @media (min-width: $breakpoints-xl) {
+      font-size: 1.3023vw;
+    }
+
     >span {
       position: relative;
       padding: 0 3.5937vw;
+
+      @media (min-width: $breakpoints-xl) {
+        padding: 0 1vw;
+      }
 
       &::before,
       &::after {
@@ -40,6 +58,11 @@
         top: 50%;
         background-image: url(../images/bar-heading-1.png);
         background-size: cover;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 5.6775vw;
+          height: 0.9899vw;
+        }
       }
 
       &::before {
@@ -63,6 +86,7 @@
         left: 0;
         top: 4vw;
         opacity: 0;
+        background-size: cover;
         transition: $transition;
 
         img {
@@ -78,6 +102,7 @@
         right: 0;
         top: 12.5vw;
         opacity: 0;
+        background-size: cover;
         transition: $transition;
 
         img {
@@ -102,11 +127,24 @@
         pointer-events: none;
         transition: $transition;
 
+        @media (min-width: $breakpoints-xl) {
+          width: 21.094vw;
+          height: 5.7299vw;
+          right: 23vw;
+          top: 31vw;
+        }
+
         .skill {
           width: 5.938vw;
           height: 5.938vw;
           margin: 0 2.34375vw;
           cursor: pointer;
+
+          @media (min-width: $breakpoints-xl) {
+            width: 3.334vw;
+            height: 3.334vw;
+            margin: 0 1.3021vw;
+          }
 
           img {
             max-height: 100%;
@@ -134,11 +172,29 @@
         .nv {
           width: 68.595vw;
           height: 70.625vw;
+          background-image: url(../images/nv-1.png);
+
+          @media (min-width: $breakpoints-xl) {
+            left: 13vw;
+            top: 8vw;
+            width: 43.386vw;
+            height: 35.157vw;
+            background-image: url(../images/pc/nv-1.png);
+          }
         }
 
         .name-skill {
           width: 54.376vw;
           height: 35.938vw;
+          background-image: url(../images/skill-1.png);
+
+          @media (min-width: $breakpoints-xl) {
+            right: 19vw;
+            top: 9.8vw;
+            width: 32.657vw;
+            height: 19.948vw;
+            background-image: url(../images/pc/skill-1.png);
+          }
         }
       }
 
@@ -146,11 +202,29 @@
         .nv {
           width: 64.376vw;
           height: 71vw;
+          background-image: url(../images/nv-2.png);
+
+          @media (min-width: $breakpoints-xl) {
+            top: 9vw;
+            left: 21vw;
+            width: 33.386vw;
+            height: 34.896vw;
+            background-image: url(../images/pc/nv-2.png);
+          }
         }
 
         .name-skill {
           width: 54.58vw;
           height: 34.379vw;
+          background-image: url(../images/skill-2.png);
+
+          @media (min-width: $breakpoints-xl) {
+            right: 19vw;
+            top: 10.5vw;
+            width: 32.6045vw;
+            height: 19.063vw;
+            background-image: url(../images/pc/skill-2.png);
+          }
         }
       }
 
@@ -158,11 +232,29 @@
         .nv {
           width: 53.59vw;
           height: 64.9999vw;
+          background-image: url(../images/nv-3.png);
+
+          @media (min-width: $breakpoints-xl) {
+            left: 18vw;
+            top: 7vw;
+            width: 33.594vw;
+            height: 36.146vw;
+            background-image: url(../images/pc/nv-3.png);
+          }
         }
 
         .name-skill {
           width: 56.73vw;
           height: 34.24vw;
+          background-image: url(../images/skill-3.png);
+
+          @media (min-width: $breakpoints-xl) {
+            right: 18vw;
+            top: 10vw;
+            width: 32.5vw;
+            height: 18.021vw;
+            background-image: url(../images/pc/skill-3.png);
+          }
         }
       }
 
@@ -170,12 +262,29 @@
         .nv {
           width: 64.375vw;
           height: 70.47vw;
+          background-image: url(../images/nv-4.png);
+
+          @media (min-width: $breakpoints-xl) {
+            left: 15vw;
+            top: 7.5vw;
+            width: 42.084vw;
+            height: 38.282vw;
+            background-image: url(../images/pc/nv-4.png);
+          }
         }
 
         .name-skill {
           width: 56.59vw;
           height: 33vw;
+          background-image: url(../images/skill-4.png);
 
+          @media (min-width: $breakpoints-xl) {
+            right: 17vw;
+            top: 10.5vw;
+            width: 32.5vw;
+            height: 18.021vw;
+            background-image: url(../images/pc/skill-4.png);
+          }
         }
       }
     }
@@ -191,6 +300,11 @@
     background-image: url(../images/btn-group.png);
     background-size: cover;
 
+    @media (min-width: $breakpoints-xl) {
+      width: 22.865vw;
+      height: 8.386vw;
+    }
+
     .btn {
       position: absolute;
       cursor: pointer;
@@ -203,6 +317,13 @@
         bottom: 8.47vw;
         background-image: url(../images/btn-1.png);
         background-size: cover;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 2.761vw;
+          height: 2.761vw;
+          left: 1.1vw;
+          bottom: 2.8vw;
+        }
       }
 
       &:nth-child(2) {
@@ -212,6 +333,13 @@
         bottom: 19.0625vw;
         background-image: url(../images/btn-2.png);
         background-size: cover;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 2.761vw;
+          height: 2.761vw;
+          left: 6.7vw;
+          bottom: 6.4vw;
+        }
       }
 
       &:nth-child(3) {
@@ -221,6 +349,13 @@
         bottom: 18.9063vw;
         background-image: url(../images/btn-3.png);
         background-size: cover;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 2.761vw;
+          height: 2.761vw;
+          left: 14.3vw;
+          bottom: 6.2vw;
+        }
       }
 
       &:nth-child(4) {
@@ -230,21 +365,28 @@
         bottom: 7.96875vw;
         background-image: url(../images/btn-4.png);
         background-size: cover;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 2.761vw;
+          height: 2.761vw;
+          left: 19.3vw;
+          bottom: 2.6vw;
+        }
       }
 
       &.active {
         &:nth-child(1) {
           background-image: url(../images/btn-h-1.png);
         }
-  
+
         &:nth-child(2) {
           background-image: url(../images/btn-h-2.png);
         }
-  
+
         &:nth-child(3) {
           background-image: url(../images/btn-h-3.png);
         }
-  
+
         &:nth-child(4) {
           background-image: url(../images/btn-h-4.png);
         }

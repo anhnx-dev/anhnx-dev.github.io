@@ -4,6 +4,11 @@
   width: 100%;
   overflow: hidden;
 
+  @media (min-width: $breakpoints-xl) {
+    height: 56.25vw;
+    padding: 0 18.75vw;
+  }
+
   .bg {
     position: absolute;
     top: 0;
@@ -14,6 +19,11 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-section04.png);
+      background-size: cover;
+    }
   }
 
   .heading {
@@ -26,6 +36,11 @@
     justify-content: center;
     margin: 3.125vw 0 0 0;
     text-transform: uppercase;
+
+    @media (min-width: $breakpoints-xl) {
+      font-size: 1.3023vw;
+      margin: 1.5625vw 0 0 0;
+    }
 
     >span {
       position: relative;
@@ -40,6 +55,11 @@
         top: 50%;
         background-image: url(../images/bar-heading-2.png);
         background-size: cover;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 5.6775vw;
+          height: 0.9899vw;
+        }
       }
 
       &::before {
@@ -61,6 +81,13 @@
     width: 85.157vw;
     height: 48.594vw;
     margin-top: 6.25vw;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 28.386vw;
+      height: 16.198vw;
+      margin-top: 2vw;
+    }
+
     img {
       width: 100%;
       max-height: 100%;
@@ -76,6 +103,13 @@
     padding: 2vw;
     padding: 0 6.875vw;
     margin-top: 6.875vw;
+
+    @media (min-width: $breakpoints-xl) {
+      font-size: 1.3023vw;
+      padding: 0 12vw;
+      margin-top: 1vw;
+      left: 5%;
+    }
   }
 
   .btn-group {
@@ -88,23 +122,38 @@
     margin-top: 6.25vw;
     background-image: url(../images/btn-group-1.png);
     background-size: cover;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 20.886vw;
+      height: 2.761vw;
+      margin-top: 1vw;
+    }
+
     .btn {
       width: 33.33333%;
       height: 8.283vw;
       background-size: cover;
       opacity: 0;
       transition: $transition;
+
+      @media (min-width: $breakpoints-xl) {
+        height: 2.761vw;
+      }
+
       &:hover,
       &:focus,
       &:active {
         opacity: 1;
       }
+
       &.btn-choingay {
         background-image: url(../images/btn-hover.png);
       }
+
       &.btn-ios {
         background-image: url(../images/btn-hover-1.png);
       }
+
       &.btn-android {
         background-image: url(../images/btn-hover-2.png);
       }
@@ -120,5 +169,46 @@
     height: 60.938vw;
     background-image: url(../images/alpha-test.png);
     background-size: cover;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 25.365vw;
+      height: 20.6772vw;
+    }
+  }
+
+  .logo-game {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      width: 11.198vw;
+      height: 8.49vw;
+      top: 7.6vw;
+      right: 20vw;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .logo-cty {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      width: 7.136vw;
+      height: 7.136vw;
+      top: 7.6vw;
+      left: 20vw;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
