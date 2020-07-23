@@ -1,0 +1,70 @@
+.c-menu-fix {
+  position: absolute;
+  z-index: 999;
+  top: 17.5vw;
+  right: 4.6875vw;
+  border: 1px solid $c-white;
+  padding: 2px;
+  background: #101d2f;
+  border-radius: 2vw;
+  transform: translate3d( 100%, 0, 0);
+  opacity: 0;
+  pointer-events: none;
+  transition: $transition;
+
+  .link-item {
+    display: block;
+    height: 17.813vw;
+    width: 17.813vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: $c-white;
+    font-weight: bold;
+    border-top: 1px solid #394263;
+    border-bottom: 1px solid #050507;
+
+    >span {
+      width: 100%;
+      text-align: center;
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      height: 5.47vw;
+      width: 5.47vw;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: .6vw;
+    }
+
+    &.link-fb::before {
+      background-image: url(../images/icon-fb-page.png);
+    }
+
+    &.link-group::before {
+      background-image: url(../images/icon-group.png);
+    }
+
+    &:nth-child(1) {
+      border-top: 0;
+    }
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+}
+
+.menu-fix_active {
+  .c-menu-fix {
+    transform: translate3d( 0, 0, 0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

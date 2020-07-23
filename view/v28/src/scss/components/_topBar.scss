@@ -1,0 +1,107 @@
+.c-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101d2f;
+  padding: 1.25vw 4.6875vw;
+  border-bottom: 1px solid 1px solid $c-white;
+
+  .branb {
+    width: 14.064vw;
+    height: 14.064vw;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 22.188vw;
+      height: 7.657vw;
+      margin: 0 3.91vw;
+      background-image: url(../images/bg-btn.png);
+      background-size: cover;
+      font-size: 3.7594vw;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $c-dark;
+      transition: $transition;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-image: url(../images/bg-btn-hover.png);
+      }
+    }
+  }
+
+  .nav-trigger {
+    position: relative;
+    width: 6.422vw;
+    height: 4.52vw;
+    cursor: pointer;
+
+    .bar {
+      position: absolute;
+      width: 100%;
+      height: 15.8%;
+      border-radius: 0.9216589861751152vw;
+      background: #59658f;
+      transition: $transition;
+
+      &:nth-child(1) {
+        top: 0;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+
+      &:nth-child(2) {
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+
+      &:nth-child(3) {
+        top: 100%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+    }
+  }
+}
+
+.menu-fix_active {
+  .c-topbar {
+    .nav-trigger {
+      .bar {
+        &:nth-child(1) {
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0) scale(0);
+        }
+
+        &:nth-child(3) {
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.c-section-4 {
+  position: relative;
+  height: 167.657vw;
+  width: 100%;
+  overflow: hidden;
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-section04.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+  .heading {
+    position: relative;
+    z-index: 5;
+    color: #0e1a3c;
+    font-weight: bold;
+    font-size: 3.90625vw;
+    display: flex;
+    justify-content: center;
+    margin: 3.125vw 0 0 0;
+    text-transform: uppercase;
+
+    >span {
+      position: relative;
+      padding: 0 3.5937vw;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 17.032vw;
+        height: 3.125vw;
+        top: 50%;
+        background-image: url(../images/bar-heading-2.png);
+        background-size: cover;
+      }
+
+      &::before {
+        transform: translate3d(-100%, -35%, 0);
+        left: 0;
+      }
+
+      &::after {
+        transform: translate3d(100%, -35%, 0) scale(-1);
+        right: 0;
+      }
+    }
+  }
+
+  .name-game {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85.157vw;
+    height: 48.594vw;
+    margin-top: 6.25vw;
+    img {
+      width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .info {
+    position: relative;
+    font-weight: bold;
+    font-size: 2.96875vw;
+    color: #0b2b86;
+    width: 100%;
+    padding: 2vw;
+    padding: 0 6.875vw;
+    margin-top: 6.875vw;
+  }
+
+  .btn-group {
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 62.657vw;
+    height: 8.283vw;
+    margin-top: 6.25vw;
+    background-image: url(../images/btn-group-1.png);
+    background-size: cover;
+    .btn {
+      width: 33.33333%;
+      height: 8.283vw;
+      background-size: cover;
+      opacity: 0;
+      transition: $transition;
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 1;
+      }
+      &.btn-choingay {
+        background-image: url(../images/btn-hover.png);
+      }
+      &.btn-ios {
+        background-image: url(../images/btn-hover-1.png);
+      }
+      &.btn-android {
+        background-image: url(../images/btn-hover-2.png);
+      }
+    }
+  }
+
+  .time-alpha {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 75.938vw;
+    height: 60.938vw;
+    background-image: url(../images/alpha-test.png);
+    background-size: cover;
+  }
+}

@@ -1,0 +1,254 @@
+.c-section-3 {
+  position: relative;
+  height: 102.97vw;
+  width: 100%;
+  overflow: hidden;
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-section03.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+  .heading {
+    position: relative;
+    z-index: 5;
+    color: #dbd589;
+    font-weight: bold;
+    font-size: 3.90625vw;
+    display: flex;
+    justify-content: center;
+    margin: 1.5625vw 0 0 0;
+    text-transform: uppercase;
+
+    >span {
+      position: relative;
+      padding: 0 3.5937vw;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 17.032vw;
+        height: 3.125vw;
+        top: 50%;
+        background-image: url(../images/bar-heading-1.png);
+        background-size: cover;
+      }
+
+      &::before {
+        transform: translate3d(-100%, -35%, 0);
+        left: 0;
+      }
+
+      &::after {
+        transform: translate3d(100%, -35%, 0) scale(-1);
+        right: 0;
+      }
+    }
+  }
+
+  .box-class {
+    .class-nv {
+      .nv {
+        position: absolute;
+        pointer-events: none;
+        z-index: 3;
+        left: 0;
+        top: 4vw;
+        opacity: 0;
+        transition: $transition;
+
+        img {
+          max-height: 100%;
+          width: 100%;
+        }
+      }
+
+      .name-skill {
+        position: absolute;
+        pointer-events: none;
+        z-index: 4;
+        right: 0;
+        top: 12.5vw;
+        opacity: 0;
+        transition: $transition;
+
+        img {
+          max-height: 100%;
+          width: 100%;
+        }
+      }
+
+      .group-skill {
+        position: absolute;
+        z-index: 2;
+        width: 37.813vw;
+        height: 10.625vw;
+        background: rgba(0, 0, 0, 0.47);
+        right: 2.34375vw;
+        top: 50vw;
+        border: 1px solid #fdbf18;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: $transition;
+
+        .skill {
+          width: 5.938vw;
+          height: 5.938vw;
+          margin: 0 2.34375vw;
+          cursor: pointer;
+
+          img {
+            max-height: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      &.active {
+        .nv {
+          opacity: 1;
+        }
+
+        .name-skill {
+          opacity: 1;
+        }
+
+        .group-skill {
+          pointer-events: auto;
+          opacity: 1;
+        }
+      }
+
+      &.class-1 {
+        .nv {
+          width: 68.595vw;
+          height: 70.625vw;
+        }
+
+        .name-skill {
+          width: 54.376vw;
+          height: 35.938vw;
+        }
+      }
+
+      &.class-2 {
+        .nv {
+          width: 64.376vw;
+          height: 71vw;
+        }
+
+        .name-skill {
+          width: 54.58vw;
+          height: 34.379vw;
+        }
+      }
+
+      &.class-3 {
+        .nv {
+          width: 53.59vw;
+          height: 64.9999vw;
+        }
+
+        .name-skill {
+          width: 56.73vw;
+          height: 34.24vw;
+        }
+      }
+
+      &.class-4 {
+        .nv {
+          width: 64.375vw;
+          height: 70.47vw;
+        }
+
+        .name-skill {
+          width: 56.59vw;
+          height: 33vw;
+
+        }
+      }
+    }
+  }
+
+  .group-btn {
+    position: absolute;
+    width: 68.594vw;
+    height: 25.157vw;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../images/btn-group.png);
+    background-size: cover;
+
+    .btn {
+      position: absolute;
+      cursor: pointer;
+      transition: $transition;
+
+      &:nth-child(1) {
+        width: 8.283vw;
+        height: 8.283vw;
+        left: 3.4vw;
+        bottom: 8.47vw;
+        background-image: url(../images/btn-1.png);
+        background-size: cover;
+      }
+
+      &:nth-child(2) {
+        width: 7.97vw;
+        height: 8.283vw;
+        left: 20.3125vw;
+        bottom: 19.0625vw;
+        background-image: url(../images/btn-2.png);
+        background-size: cover;
+      }
+
+      &:nth-child(3) {
+        width: 7.813vw;
+        height: 7.813vw;
+        left: 43.4375vw;
+        bottom: 18.9063vw;
+        background-image: url(../images/btn-3.png);
+        background-size: cover;
+      }
+
+      &:nth-child(4) {
+        width: 8.125vw;
+        height: 8.125vw;
+        left: 57.5vw;
+        bottom: 7.96875vw;
+        background-image: url(../images/btn-4.png);
+        background-size: cover;
+      }
+
+      &.active {
+        &:nth-child(1) {
+          background-image: url(../images/btn-h-1.png);
+        }
+  
+        &:nth-child(2) {
+          background-image: url(../images/btn-h-2.png);
+        }
+  
+        &:nth-child(3) {
+          background-image: url(../images/btn-h-3.png);
+        }
+  
+        &:nth-child(4) {
+          background-image: url(../images/btn-h-4.png);
+        }
+      }
+    }
+  }
+}
