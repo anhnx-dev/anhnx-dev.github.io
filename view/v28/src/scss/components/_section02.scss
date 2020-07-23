@@ -160,13 +160,14 @@
     .group-item {
       position: absolute;
       width: calc(100% - 23.436vw);
-      left: 55%;
+      left: 50%;
       transform: translate3d(-50%, 0, 0);
       bottom: 0;
       z-index: 4;
 
       @media (min-width: $breakpoints-xl) {
         transform: translate3d(-50%, 0, 0) rotate(90deg);
+        left: 55%;
       }
 
       .item {
