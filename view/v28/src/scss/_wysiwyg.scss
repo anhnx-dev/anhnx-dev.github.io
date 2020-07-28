@@ -27,15 +27,35 @@ body {
   background-color: #000;
   font-family: arial;
   font-size: 1.208vw;
+
+  @media (min-width: $breakpoints-xl) {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5.209vw;
+    font-size: 0.8vw;
+  }
+
   .box {
     display: flex;
     justify-content: center;
     align-items: center;
+
     img {
       width: 17.812vw;
       height: auto;
+      margin-right: 5px;
+      @media (min-width: $breakpoints-xl) {
+        width: 9.896vw;
+      }
     }
   }
+}
+
+.disabled {
+  pointer-events: none !important;
 }
 
 .modal {
@@ -50,32 +70,53 @@ body {
   border-radius: $round1;
   opacity: 0;
   transition: $transition;
-  width: 35.971vw;
-  height: 39.268vw;
+  width: 76.72vw;
+  height: 83.75vw;
+  &.popup-v1 {
+    background-image: url(../images/popup-1.png);
+  }
+
+
+  @media (min-width: $breakpoints-xl) {
+    width: 35.971vw;
+    height: 39.268vw;
+  }
 
   .modal-exit {
     position: absolute;
-    width: 3.664vw;
-    height: 3.664vw;
-    top: 4.1vw;
-    right: 1.6vw;
+    width: 7.814vw;
+    height: 7.814vw;
+    top: 8.8vw;
+    right: 3.3vw;
     cursor: pointer;
     background-image: url(../images/exit.png);
     overflow: hidden;
     background-size: cover;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 3.664vw;
+      height: 3.664vw;
+      top: 4.1vw;
+      right: 1.6vw;
+    }
   }
 
   .modal-inner {
     font-family: $f-staccato;
     padding: 15px;
-    max-height: 100vh;
+    max-height: 100%;
     overflow-y: auto;
-    font-size: 2vw;
+    font-size: 4vw;
     color: #193386;
     font-weight: bold;
     text-align: center;
-    padding: 3.663vw;
-    margin-top: 12vw;
+    padding: 33vw 6vw 6vw 6vw;
+
+    @media (min-width: $breakpoints-xl) {
+      font-size: 2vw;
+      padding: 15.5vw 3.663vw 3.663vw 3.663vw;
+    }
+
     >a {
       text-decoration: none;
     }

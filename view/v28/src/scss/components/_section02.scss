@@ -61,6 +61,7 @@
       top: 15.1045vw;
       left: 28.125vw;
       background-size: cover;
+      background-image: url(../images/pc/tai-game-nhan-qua.png);
     }
   }
 
@@ -86,6 +87,7 @@
         @media (min-width: $breakpoints-xl) {
           top: 33.5313vw;
           left: 23.438vw;
+          background-image: url(../images/pc/btn-download.png);
         }
       }
 
@@ -97,6 +99,7 @@
         @media (min-width: $breakpoints-xl) {
           top: 35.417vw;
           left: 38.542vw;
+          background-image: url(../images/pc/btn-like.png);
         }
       }
 
@@ -108,6 +111,7 @@
         @media (min-width: $breakpoints-xl) {
           top: 40.3vw;
           left: 26.4vw;
+          background-image: url(../images/pc/btn-diemdanh.png);
         }
       }
 

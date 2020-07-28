@@ -3,7 +3,7 @@ const navTrigger = $('.nav-trigger');
 if (navTrigger) {
   const body = $('body');
   const ACTIVE_CLASS = 'menu-fix_active';
-  
+
   navTrigger.on('click', function () {
     body.toggleClass(ACTIVE_CLASS);
   });
@@ -23,6 +23,14 @@ if (accordion) {
       $(accordionBody).addClass(ACTIVE_CLASS).siblings().removeClass(ACTIVE_CLASS);
     });
   }
+}
+
+const btnDisabled = $('.btn-disabled');
+if (btnDisabled) {
+  const CLASS_DISABLED = 'disabled'
+  btnDisabled.on('click', function () {
+    $(this).addClass(CLASS_DISABLED)
+  })
 }
 
 // modal
@@ -53,3 +61,17 @@ if (modal) {
     });
   }
 }
+
+
+const fullpage = $('#fullpage');
+
+if (fullpage) {
+  if ($(window).width() >= 1200) {
+    fullpage.fullpage({
+      scrollBar: true,
+    });
+  }
+}
+
+
+

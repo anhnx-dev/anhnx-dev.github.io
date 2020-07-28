@@ -40,6 +40,10 @@
     @media (min-width: $breakpoints-xl) {
       font-size: 1.3023vw;
       margin: 1.5625vw 0 0 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     >span {
@@ -86,6 +90,8 @@
       width: 28.386vw;
       height: 16.198vw;
       margin-top: 2vw;
+      position: absolute;
+      top: 4%;
     }
 
     img {
@@ -105,10 +111,11 @@
     margin-top: 6.875vw;
 
     @media (min-width: $breakpoints-xl) {
-      font-size: 1.3023vw;
+      font-size: 1.1vw;
       padding: 0 12vw;
       margin-top: 1vw;
-      left: 5%;
+      left: 10%;
+      z-index: 1;
     }
   }
 
@@ -171,8 +178,8 @@
     background-size: cover;
 
     @media (min-width: $breakpoints-xl) {
-      width: 25.365vw;
-      height: 20.6772vw;
+      width: 23.365vw;
+      height: 18.6772vw;
     }
   }
 

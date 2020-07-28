@@ -39,6 +39,10 @@
 
     @media (min-width: $breakpoints-xl) {
       font-size: 1.3023vw;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     >span {

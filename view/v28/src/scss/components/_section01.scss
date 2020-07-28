@@ -88,6 +88,9 @@
     text-align: center;
     @media (min-width: $breakpoints-xl) {
       bottom: 6.511vw;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .play {
@@ -99,10 +102,11 @@
       right: 13vw;
       background-image: url(../images/play.png);
       background-size: cover;
+      animation: infinite play 1s ease-in-out;
 
       @media (min-width: $breakpoints-xl) {
         top: 3vw;
-        right: 13vw;
+        right: 31vw;
         width: 6.146vw;
         height: 6.146vw;
       }
@@ -174,5 +178,17 @@
         font-size: 2.084vw;
       }
     }
+  }
+}
+
+@keyframes play {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform:  scale(1);
   }
 }
