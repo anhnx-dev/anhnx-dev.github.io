@@ -9,6 +9,19 @@ if (navTrigger) {
   });
 }
 
+const downloadGame = $('.download-game');
+
+if (downloadGame) {
+  const btn = $('.trigger');
+  const ACTIVE_CLASS = 'active';
+  function triggle() {
+    btn.parent().toggleClass(ACTIVE_CLASS);
+  };
+  btn.on('click', function () {
+    triggle();
+  });
+}
+
 const accordion = $('.js-accordion');
 if (accordion) {
   let accordionButtons = $('.nv-item');

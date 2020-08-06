@@ -48,7 +48,9 @@
     z-index: 2;
 
     @media (min-width: $breakpoints-xl) {
-      display: none;
+      width: 49.908vh;
+      height: 90.742vh;
+      left: 115vh;
     }
   }
 
@@ -85,110 +87,117 @@
     background: #080302;
 
     @media (min-width: $breakpoints-xl) {
-      display: none;
+      left: 115.33vh;
+      width: 3.89vh;
+      height: 62.13vh;
     }
 
-    .progress-bar {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: #ffd600;
+  }
+
+  .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffd600;
+  }
+}
+
+.btn-baodanh {
+  position: absolute;
+  width: 32.189vw;
+  height: 39.22vw;
+  bottom: 6%;
+  left: 50.5%;
+  transform: translateX(-50%);
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  background-image: url(../images/mobile/btn-baodanh.png);
+  background-size: cover;
+  z-index: 2;
+  transition: $transition;
+
+  @media (min-width: $breakpoints-xl) {
+    z-index: 4;
+    width: 19.075vh;
+    height: 23.242vh;
+    left: 106vh;
+    bottom: 7vh;
+    transform: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url(../images/mobile/btn-baodanh-hover.png);
+  }
+}
+
+.moc {
+  position: absolute;
+  font-size: 7.8125vw;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #ffd600;
+  border-bottom: 1px solid #ffd600;
+
+  @media (min-width: $breakpoints-xl) {
+    font-size: 4.63vh;
+  }
+
+  >span {
+    font-size: 4.6875vw;
+
+    @media (min-width: $breakpoints-xl) {
+      font-size: 2.78vh;
     }
   }
 
-  .btn-baodanh {
-    position: absolute;
-    width: 32.189vw;
-    height: 39.22vw;
-    bottom: 6%;
-    left: 50.5%;
-    transform: translateX(-50%);
-    padding: 0;
-    background-color: transparent;
-    border: 0;
-    outline: 0;
-    background-image: url(../images/mobile/btn-baodanh.png);
-    background-size: cover;
-    z-index: 2;
-    transition: $transition;
+  &.moc-1 {
+    left: 9%;
+    top: 53%;
+
+    @media (min-width: $breakpoints-xl) {
+      left: 88vh;
+      z-index: 4;
+      top: 53vh;
+    }
+  }
+
+  &.moc-2 {
+    right: 8%;
+    top: 38%;
 
     @media (min-width: $breakpoints-xl) {
       z-index: 4;
-      width: 19.075vh;
-      height: 23.242vh;
-      left: 106vh;
-      bottom: 7vh;
-      transform: none;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-image: url(../images/mobile/btn-baodanh-hover.png);
+      right: inherit;
+      top: 38vh;
+      left: 120vh;
     }
   }
 
-  .moc {
-    position: absolute;
-    font-size: 7.8125vw;
-    font-weight: bold;
-    line-height: 1.2;
-    color: #ffd600;
-    border-bottom: 1px solid #ffd600;
+  &.moc-3 {
+    left: 9%;
+    top: 21%;
 
     @media (min-width: $breakpoints-xl) {
-      font-size: 50px;
+      top: 21vh;
+      z-index: 4;
+      left: 88vh;
     }
+  }
 
-    >span {
-      font-size: 4.6875vw;
+  &.moc-4 {
+    right: 4%;
+    top: 4%;
 
-      @media (min-width: $breakpoints-xl) {
-        font-size: 30px;
-      }
-    }
-
-    &.moc-1 {
-      left: 9%;
-      top: 53%;
-
-      @media (min-width: $breakpoints-xl) {
-        left: 88vh;
-        z-index: 4;
-        top: 53vh;
-      }
-    }
-
-    &.moc-2 {
-      right: 8%;
-      top: 38%;
-
-      @media (min-width: $breakpoints-xl) {
-        z-index: 4;
-        right: 33vh;
-        top: 38vh;
-      }
-    }
-
-    &.moc-3 {
-      left: 9%;
-      top: 21%;
-      @media (min-width: $breakpoints-xl) {
-        top: 21vh;
-        z-index: 4;
-        left: 88vh;
-      }
-    }
-
-    &.moc-4 {
-      right: 4%;
-      top: 4%;
-      @media (min-width: $breakpoints-xl) {
-        right: 33vh;
-        top: 4vh;
-        z-index: 4;
-      }
+    @media (min-width: $breakpoints-xl) {
+      right: inherit;
+      top: 4vh;
+      z-index: 4;
+      left: 120vh;
     }
   }
 }
