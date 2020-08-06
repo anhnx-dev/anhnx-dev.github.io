@@ -1,0 +1,118 @@
+.c-section-4 {
+  position: relative;
+  height: 125.783vw;
+  width: 100%;
+  overflow: hidden;
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/mobile/bg-section-3.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-section-3.png);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .headline {
+    position: absolute;
+    top: 3.5%;
+    left: 50%;
+    width: 77.033vw;
+    height: 19.532vw;
+    transform: translateX(-50%);
+    background-image: url(../images/mobile/nhan-gitfcode.png);
+    margin: 0;
+    background-size: cover;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 493px;
+      height: 125px;
+    }
+  }
+
+  .box {
+    .item {
+      position: absolute;
+      background-size: cover;
+      width: 46.564vw;
+      height: 46.564vw;
+
+      @media (min-width: $breakpoints-xl) {
+        width: 20vw;
+        height: 20vw;
+        transform: translate3d(-50%, -50%, 0);
+      }
+
+      .btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 8%;
+        background-size: cover;
+        border: 0;
+        background-color: transparent;
+        padding: 0;
+        width: 19.688vw;
+        height: 6.407vw;
+        background-image: url(../images/nhan-ngay.png);
+        @media (min-width: $breakpoints-xl) {
+          width: 8.438vw;
+          height: 2.709vw;
+        }
+
+        &.disabled {
+          background-image: url(../images/da-nhan.png);
+        }
+      }
+
+      &.item-1 {
+        top: 20%;
+        left: 2.3437vw;
+        background-image: url(../images/mobile/b1.png);
+        @media (min-width: $breakpoints-xl) {
+          top: 45%;
+          left: 25vw;
+        }
+      }
+
+      &.item-2 {
+        top: 20%;
+        right: 2.3437vw;
+        background-image: url(../images/mobile/b2.png);
+        @media (min-width: $breakpoints-xl) {
+          top: 55%;
+          left: 42.5vw;
+        }
+      }
+
+      &.item-3 {
+        top: 60%;
+        left: 2.3437vw;
+        background-image: url(../images/mobile/b3.png);
+        @media (min-width: $breakpoints-xl) {
+          top: 45%;
+          left: 60vw;
+        }
+      }
+
+      &.item-4 {
+        top: 60%;
+        right: 2.3437vw;
+        background-image: url(../images/mobile/b4.png);
+        @media (min-width: $breakpoints-xl) {
+          top: 55%;
+          right: inherit;
+          left: 77.5vw;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,249 @@
+.c-section-6 {
+  position: relative;
+  padding: 3.13vw 2.3437vw;
+  text-align: center;
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/mobile/bg-section-5.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-section-5.png);
+      background-size: cover;
+      background-position: bottom;
+    }
+  }
+
+  .group {
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: $breakpoints-xl) {
+      display: flex;
+      justify-content: center;
+    }
+
+    .box-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        margin-right: 2.3437vw;
+        width: 24.688vw;
+        height: 24.688vw;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 220px;
+          height: 220px;
+          margin-right: 45px;
+          transform: translateX(332px);
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .group-btn {
+        .btn {
+          display: block;
+          width: 32.188vw;
+          height: 10vw;
+
+          @media (min-width: $breakpoints-xl) {
+            width: 287px;
+            height: 89px;
+            transform: translateX(-265px);
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          &:nth-child(2) {
+            margin-top: 2.3437vw;
+
+            @media (min-width: $breakpoints-xl) {
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .box-2 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 3.4375vw;
+
+      @media (min-width: $breakpoints-xl) {
+        display: block;
+        margin-top: 0;
+        margin-left: 65px;
+      }
+
+      .search {
+        position: relative;
+        width: 45vw;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 449px;
+          transform: translateY(145px);
+        }
+
+        input {
+          width: 100%;
+          background: #fff;
+          border: 3px solid #ed1c24;
+          padding: 1.33vw 7vw 1.33vw 2vw;
+          border-radius: 2.5vw;
+          font-size: 3.4375vw;
+
+          @media (min-width: $breakpoints-xl) {
+            font-size: 35px;
+            border-radius: 15px;
+            padding: 13px 60px 13px 15px;
+          }
+        }
+
+        .btn {
+          position: absolute;
+          right: 1vw;
+          top: 50%;
+          transform: translateY(-50%);
+          border: 0;
+          outline: 0;
+          background: transparent;
+
+          svg {
+            width: 4vw;
+            color: #860c01;
+
+            @media (min-width: $breakpoints-xl) {
+              width: 35px;
+            }
+          }
+        }
+      }
+
+      .date {
+        margin-top: 3.4375vw;
+        width: 65.47vw;
+        height: 18.75vw;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 451px;
+          height: 129px;
+          margin-top: 15px;
+          transform: translateY(-95px);
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+
+  }
+
+  .group-link {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.6874vw;
+
+    @media (min-width: $breakpoints-xl) {
+      justify-content: center;
+    }
+
+    .item {
+      display: block;
+      text-decoration: none;
+      outline: none;
+      color: #f2c85a;
+      font-size: 2.5vw;
+      margin: 0 2.3437vw;
+      @media (min-width: $breakpoints-xl) {
+        margin: 0 55px;
+        font-size: 16px;
+      }
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14.845vw;
+        height: 14.845vw;
+        background-image: url(../images/bg-icon.png);
+        background-size: cover;
+        margin-bottom: 10px;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 95px;
+          height: 95px;
+        }
+
+        svg {
+          height: 5vw;
+          @media (min-width: $breakpoints-xl) {
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    position: relative;
+    color: #f2c85a;
+    font-size: 2.5vw;
+    margin-top: 50px;
+    @media (min-width: $breakpoints-xl) {
+      font-size: 16px;
+      margin-top: 0;
+    }
+
+    .box-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin: 0 4vw;
+        @media (min-width: $breakpoints-xl) {
+          position: absolute;
+          top: 50%;
+          transform: translateX(-50%);
+          &:nth-child(1) {
+            left: 400px;
+          }
+          &:nth-child(2) {
+            right: 400px;
+          }
+        }
+      }
+    }
+
+    .info {
+      margin-top: 4.6874vw;
+      @media (min-width: $breakpoints-xl) {
+        margin-top: 45px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,194 @@
+.c-section-2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 167.658vw;
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/mobile/bg-section-1.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-section-1.png);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .class-2 {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      z-index: 3;
+      left: 8vh;
+      bottom: 0;
+      width: 119.075vh;
+      height: 88.705vh;
+      background-image: url(../images/pc/ben-trai-1.png);
+      background-size: cover;
+    }
+  }
+
+  .class-3 {
+    position: absolute;
+    width: 84.22vw;
+    height: 153.125vw;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../images/mobile/den-huong.png);
+    background-size: cover;
+    z-index: 2;
+
+    @media (min-width: $breakpoints-xl) {
+      display: none;
+    }
+  }
+
+  .class-4 {
+    position: absolute;
+    width: 44.845vw;
+    height: 26.094vw;
+    top: 2%;
+    left: 0;
+    background-image: url(../images/mobile/hay-bao-danh.png);
+    background-size: cover;
+    z-index: 2;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 39.816vh;
+      height: 19.63vh;
+      left: 45vh;
+      top: 5vh;
+      background-image: url(../images/pc/hay-bao-danh.png);
+    }
+  }
+
+  .progress {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    width: 5.625vw;
+    height: 104vw;
+    border-radius: 2vw;
+    bottom: 29%;
+    left: 50.7%;
+    transform: translateX(-50%);
+    background-size: cover;
+    background: #080302;
+
+    @media (min-width: $breakpoints-xl) {
+      display: none;
+    }
+
+    .progress-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #ffd600;
+    }
+  }
+
+  .btn-baodanh {
+    position: absolute;
+    width: 32.189vw;
+    height: 39.22vw;
+    bottom: 6%;
+    left: 50.5%;
+    transform: translateX(-50%);
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    background-image: url(../images/mobile/btn-baodanh.png);
+    background-size: cover;
+    z-index: 2;
+    transition: $transition;
+
+    @media (min-width: $breakpoints-xl) {
+      z-index: 4;
+      width: 19.075vh;
+      height: 23.242vh;
+      left: 106vh;
+      bottom: 7vh;
+      transform: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-image: url(../images/mobile/btn-baodanh-hover.png);
+    }
+  }
+
+  .moc {
+    position: absolute;
+    font-size: 7.8125vw;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ffd600;
+    border-bottom: 1px solid #ffd600;
+
+    @media (min-width: $breakpoints-xl) {
+      font-size: 50px;
+    }
+
+    >span {
+      font-size: 4.6875vw;
+
+      @media (min-width: $breakpoints-xl) {
+        font-size: 30px;
+      }
+    }
+
+    &.moc-1 {
+      left: 9%;
+      top: 53%;
+
+      @media (min-width: $breakpoints-xl) {
+        left: 88vh;
+        z-index: 4;
+        top: 53vh;
+      }
+    }
+
+    &.moc-2 {
+      right: 8%;
+      top: 38%;
+
+      @media (min-width: $breakpoints-xl) {
+        z-index: 4;
+        right: 33vh;
+        top: 38vh;
+      }
+    }
+
+    &.moc-3 {
+      left: 9%;
+      top: 21%;
+      @media (min-width: $breakpoints-xl) {
+        top: 21vh;
+        z-index: 4;
+        left: 88vh;
+      }
+    }
+
+    &.moc-4 {
+      right: 4%;
+      top: 4%;
+      @media (min-width: $breakpoints-xl) {
+        right: 33vh;
+        top: 4vh;
+        z-index: 4;
+      }
+    }
+  }
+}

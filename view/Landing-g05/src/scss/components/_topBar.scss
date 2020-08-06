@@ -1,0 +1,137 @@
+.c-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #300000;
+  padding: 1.095vw 2.3437vw;
+  border-bottom: 2px solid #e80202;
+
+  @media (min-width: $breakpoints-xl) {
+    display: none;
+  }
+
+  .branb {
+    height: 14.22vw;
+    display: flex;
+    align-items: center;
+    color: $c-white;
+    text-decoration: none;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    h1 {
+      margin: 0 0 0 2.3437vw;
+      font-size: 3.125vw;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 23.75vw;
+      height: 10.625vw;
+      margin: 0 0.4vw;
+      background-image: url(../images/mobile/bg-btn.png);
+      background-size: 100% 100%;
+      font-size: 3.7594vw;
+      text-decoration: none;
+      font-weight: bold;
+      color: $c-white;
+      transition: $transition;
+
+      &.btn-app-store {
+        width: 32.345vw;
+        height: 10.625vw;
+        background-image: url(../images/mobile/bg-btn.png);
+        background-size: cover;
+      }
+
+      .icon {
+        margin-right: 5px;
+
+        &.icon-apple,
+        &.icon-google-play {
+          transform: translateY(10%);
+        }
+
+        &.icon-android {
+          transform: translateY(16%);
+        }
+
+        svg {
+          height: 4.688vw;
+        }
+      }
+
+    }
+  }
+
+  .nav-trigger {
+    position: relative;
+    width: 9.063vw;
+    height: 7.5vw;
+    cursor: pointer;
+
+    .bar {
+      position: absolute;
+      width: 100%;
+      height: 12.5%;
+      border-radius: 0.9216589861751152vw;
+      background: #e75959;
+      transition: $transition;
+
+      &:nth-child(1) {
+        top: 0;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+
+      &:nth-child(2) {
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+
+      &:nth-child(3) {
+        top: 100%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+    }
+  }
+}
+
+.menu-fix_active {
+  .c-topbar {
+    .nav-trigger {
+      .bar {
+        &:nth-child(1) {
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0) scale(0);
+        }
+
+        &:nth-child(3) {
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+        }
+      }
+    }
+  }
+}

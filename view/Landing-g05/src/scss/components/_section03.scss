@@ -1,0 +1,573 @@
+.c-section-3 {
+  position: relative;
+  height: 137.5vw;
+  width: 100%;
+  overflow: hidden;
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/mobile/bg-section-2.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-section-2.png);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .class-2 {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 15vh;
+      width: 57.778vh;
+      height: 29.538vh;
+      background-image: url(../images/pc/bedo.png);
+      background-size: cover;
+    }
+  }
+
+  .headline {
+    position: absolute;
+    top: 5.5%;
+    left: 50%;
+    width: 77.188vw;
+    height: 11.407vw;
+    transform: translateX(-50%);
+    background-image: url(../images/mobile/danh-sach-tuong.png);
+    margin: 0;
+    background-size: cover;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 439px;
+      height: 72px;
+    }
+  }
+
+  .nhan-vat {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 3;
+    bottom: 29%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: $transition;
+
+    @media (min-width: $breakpoints-xl) {
+      transform: none;
+      position: inherit;
+    }
+
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .img {
+      @media (min-width: $breakpoints-xl) {
+        position: absolute;
+        z-index: 4;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 28vh;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @media (min-width: $breakpoints-xl) {
+          display: none;
+        }
+      }
+    }
+
+    .nv-info {
+      display: none;
+      position: absolute;
+      z-index: 5;
+      bottom: 10px;
+      left: 50%;
+      padding: 25px;
+      transform: translateX(-50%);
+      width: 665px;
+      min-height: 200px;
+      background: #000;
+      border: 1px solid #87795a;
+      @media (min-width: $breakpoints-xl) {
+        display: block;
+      }
+
+      .header-info {
+        display: flex;
+
+        .nuoc {
+          margin-right: 10px;
+        }
+
+        .name {
+          font-weight: bold;
+          font-size: 24px;
+          margin: 0;
+          text-transform: uppercase;
+          color: #ffe400;
+        }
+      }
+
+      .info {
+        font-size: 15px;
+      }
+    }
+
+    &.nv-1 {
+
+      .img {
+        width: 95vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 48%;
+          width: 779px;
+          height: 497px;
+          background-image: url(../images/pc/nv-trieuvan.png);
+        }
+      }
+    }
+
+    &.nv-2 {
+      .img {
+        width: 93vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 51%;
+          width: 842px;
+          height: 520px;
+          background-image: url(../images/pc/nv-lubo.png);
+        }
+      }
+    }
+
+    &.nv-3 {
+      left: 60%;
+
+      .img {
+        width: 73vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 53%;
+          width: 560px;
+          height: 491px;
+          background-image: url(../images/pc/nv-tatu.png);
+        }
+      }
+    }
+
+    &.nv-4 {
+      .img {
+        width: 94vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 53%;
+          width: 834px;
+          height: 500px;
+          background-image: url(../images/pc/nv-tonquyen.png);
+        }
+      }
+    }
+
+    &.nv-5 {
+      left: 60%;
+
+      .img {
+        width: 70vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 54%;
+          width: 572px;
+          height: 521px;
+          background-image: url(../images/pc/nv-taothao.png);
+        }
+      }
+    }
+
+    &.nv-6 {
+      left: 45%;
+
+      .img {
+        width: 79vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 58%;
+          width: 788px;
+          height: 476px;
+          background-image: url(../images/pc/nv-dieuthuyen.png);
+        }
+      }
+    }
+
+    &.nv-7 {
+      left: 40%;
+
+      .img {
+        width: 71vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 56%;
+          width: 564px;
+          height: 471px;
+          background-image: url(../images/pc/nv-giacatluong.png);
+        }
+      }
+    }
+
+    &.nv-8 {
+      .img {
+        width: 76vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 50%;
+          width: 537px;
+          height: 466px;
+          background-image: url(../images/pc/nv-chudu.png);
+        }
+      }
+    }
+
+    &.nv-9 {
+      left: 60%;
+
+      .img {
+        width: 66vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 52%;
+          width: 466px;
+          height: 467px;
+          background-image: url(../images/pc/nv-tumay.png);
+        }
+      }
+    }
+
+    &.nv-10 {
+      .img {
+        width: 80vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 52%;
+          width: 627px;
+          height: 466px;
+          background-image: url(../images/pc/nv-quanvu.png);
+        }
+      }
+    }
+
+    &.nv-11 {
+      left: 55%;
+
+      .img {
+        width: 85vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 54%;
+          width: 559px;
+          height: 484px;
+          background-image: url(../images/pc/nv-tieukieu.png);
+        }
+      }
+    }
+
+    &.nv-12 {
+      .img {
+        width: 77vw;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 56%;
+          width: 661px;
+          height: 464px;
+          background-image: url(../images/pc/nv-quachqia.png);
+        }
+      }
+    }
+  }
+
+  .nv-nav {
+    position: absolute;
+    z-index: 3;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 4.674vw);
+    height: 57.033vw;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 440px;
+      height: 440px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10vw;
+    }
+
+    .nv-item {
+      position: absolute;
+      bottom: 10%;
+      list-style: none;
+      transform: rotate(-45deg);
+      width: 15.625vw;
+      height: 15.625vw;
+      overflow: hidden;
+
+      @media (min-width: $breakpoints-xl) {
+        height: 100px;
+        width: 100px;
+      }
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 21.25vw;
+        height: 21.25vw;
+        transform: translate3d(-50%, -50%, 0) rotate(45deg);
+        background-size: cover;
+        transition: $transition;
+
+        @media (min-width: $breakpoints-xl) {
+          background-size: 100% 100%;
+          width: 136px;
+          height: 136px;
+        }
+      }
+
+      &.nv-1 {
+        left: 4%;
+        top: 4%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 105px;
+          top: 20px;
+        }
+
+        span {
+          background-image: url(../images/btn.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h.png);
+        }
+      }
+
+      &.nv-2 {
+        left: 29%;
+        top: 4%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 263px;
+          top: 20px;
+        }
+
+        span {
+          background-image: url(../images/btn-1.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-1.png);
+        }
+      }
+
+      &.nv-3 {
+        left: 54%;
+        top: 4%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 182px;
+          top: 100px;
+        }
+
+        span {
+          background-image: url(../images/btn-2.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-2.png);
+        }
+      }
+
+      &.nv-4 {
+        right: 4%;
+        top: 4%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 26px;
+          top: 100px;
+        }
+
+        span {
+          background-image: url(../images/btn-3.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-3.png);
+        }
+      }
+
+      &.nv-5 {
+        left: 16.5%;
+        top: 26%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 335px;
+          top: 100px;
+        }
+
+        span {
+          background-image: url(../images/btn-4.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-4.png);
+        }
+      }
+
+      &.nv-6 {
+        left: 41.5%;
+        top: 26%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 105px;
+          top: 180px;
+        }
+
+        span {
+          background-image: url(../images/btn-5.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-5.png);
+        }
+      }
+
+      &.nv-7 {
+        left: 66.5%;
+        top: 26%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 259px;
+          top: 180px;
+        }
+
+        span {
+          background-image: url(../images/btn-6.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-6.png);
+        }
+      }
+
+      &.nv-8 {
+        left: 4%;
+        top: 48%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 30px;
+          top: 260px;
+        }
+
+        span {
+          background-image: url(../images/btn-7.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-7.png);
+        }
+      }
+
+      &.nv-9 {
+        left: 29%;
+        top: 48%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 180px;
+          top: 260px;
+        }
+
+        span {
+          background-image: url(../images/btn-8.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-8.png);
+        }
+      }
+
+      &.nv-10 {
+        left: 54.5%;
+        top: 48%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 335px;
+          top: 260px;
+        }
+
+        span {
+          background-image: url(../images/btn-9.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-9.png);
+        }
+      }
+
+      &.nv-11 {
+        right: 4%;
+        top: 48%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 105px;
+          top: 335px;
+          right: inherit;
+        }
+
+        span {
+          background-image: url(../images/btn-10.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-10.png);
+        }
+      }
+
+      &.nv-12 {
+        left: 41.5%;
+        top: 69%;
+
+        @media (min-width: $breakpoints-xl) {
+          left: 260px;
+          top: 335px;
+        }
+
+        span {
+          background-image: url(../images/btn-11.png);
+        }
+
+        &.active span {
+          background-image: url(../images/btn-h-11.png);
+        }
+      }
+
+    }
+  }
+}
