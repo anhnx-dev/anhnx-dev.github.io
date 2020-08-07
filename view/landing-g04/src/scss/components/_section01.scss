@@ -1,0 +1,97 @@
+.c-section-1 {
+  position: relative;
+  z-index: 5;
+  height: 136.407vw;
+  overflow: hidden;
+  @media (min-width: $breakpoints-xl) {
+    height: 45.417vw;
+  }
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/mobile/bg-1.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-1.png);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .logo-game {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64.845vw;
+    height: 44.064vw;
+    background-image: url(../images/mobile/logo-game.png);
+    background-size: cover;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 337px;
+      height: 237px;
+      top: 15px;
+      background-image: url(../images/pc/logo.png);
+    }
+  }
+
+  .slogan {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 46.564vw;
+    background-image: url(../images/mobile/fa.png);
+    background-size: cover;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 59.353vh;
+      height: 27.594vh;
+      z-index: 3;
+      bottom: 7vh;
+    }
+  }
+
+  .play {
+    position: absolute;
+    z-index: 5;
+    width: 15.47vw;
+    height: 15.47vw;
+    transform: translate3d(-50%, -50%, 0);
+    top: 58%;
+    left: 50%;
+    background-image: url(../images/mobile/play.png);
+    background-size: cover;
+    animation: infinite play 1s ease-in-out;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 9.167vh;
+      height: 9.167vh;
+      top: inherit;
+      bottom: 33vh;
+    }
+  }
+}
+
+
+
+@keyframes play {
+  0% {
+    transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(-50%, -50%, 0) scale(1.05);
+  }
+
+  100% {
+    transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+}

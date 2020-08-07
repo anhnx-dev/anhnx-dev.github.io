@@ -1,0 +1,98 @@
+.c-section-2 {
+  position: relative;
+  width: 100%;
+  height: 136.407vw;
+  z-index: 4;
+  @media (min-width: $breakpoints-xl) {
+    height: 43.2293vw;
+  }
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/mobile/bg-2.png);
+    background-size: 100% auto;
+    background-position: bottom;
+
+    @media (min-width: $breakpoints-xl) {
+      height: 79.323vw;
+      bottom: inherit;
+      top: -14.6vw;
+      background-image: url(../images/pc/bg-2.png);
+      background-size: cover;
+      background-position: center;
+      pointer-events: none;
+    }
+  }
+
+  .class-2 {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      width: 32.448vw;
+      height: 23.907vw;
+      top: 16vh;
+      left: 15vw;
+      background-image: url(../images/pc/trai-1.png);
+      background-size: cover;
+    }
+  }
+
+  .class-3 {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      width: 17.084vw;
+      height: 11.407vw;
+      top: 27vh;
+      right: 25vw;
+      background-image: url(../images/pc/phai-1.png);
+      background-size: cover;
+    }
+  }
+
+  .heading {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      width: 63.542vw;
+      height: 3.698vw;
+      margin: 0;
+      background-image: url(../images/pc/title-1.png);
+      background-size: cover;
+      left: 50%;
+      top: 4vh;
+      transform: translateX(-50%);
+    }
+  }
+
+  .btn-dangky {
+    position: absolute;
+    width: 48.438vw;
+    height: 18.907vw;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../images/mobile/btn-dangky.png);
+    background-size: cover;
+    @media (min-width: $breakpoints-xl) {
+      transform: inherit;
+      width: 20.209vw;
+      height: 7.917vw;
+      right: 23vw;
+      top: 51vh;
+      left: initial;  
+    }
+  }
+}
