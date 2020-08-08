@@ -60,19 +60,35 @@
     }
   }
 
+  .wrapper {
+    padding-top: 9vh;
+  }
+
   .heading {
     display: none;
 
     @media (min-width: $breakpoints-xl) {
       display: block;
-      position: absolute;
       width: 59.0111vw;
-      height: 14.948vw;
-      margin: 0;
+      height: 11.9795vw;
+      margin: 0 0 0 50%;
       background-image: url(../images/pc/title-3.png);
       background-size: cover;
-      left: 50%;
-      top: 8vh;
+      transform: translateX(-50%);
+    }
+  }
+
+  .date {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      width: 20vw;
+      height: 2.3vw;
+      margin: 2vh 0 0 50%;
+      background-image: url(../images/pc/time.png);
+      background-size: contain;
+      background-repeat: no-repeat;
       transform: translateX(-50%);
     }
   }
@@ -84,7 +100,8 @@
     bottom: 8vw;
     text-align: center;
     @media (min-width: $breakpoints-xl) {
-      bottom: 4vw;
+      position: inherit;
+      margin: 2vh 0 0 50%;
     }
 
     .branb {

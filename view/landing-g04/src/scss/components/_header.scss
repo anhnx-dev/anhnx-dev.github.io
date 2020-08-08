@@ -116,8 +116,8 @@
     position: fixed;
     z-index: 99;
     top: 50%;
-    transform: translateY(-50%);
-    right: 0;
+    transform: translateY(-50%) scale(.66);
+    right: -60px;
     width: 361px;
     height: 662px;
     padding: 240px 0 0 91px;
