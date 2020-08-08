@@ -116,12 +116,13 @@
     position: fixed;
     z-index: 99;
     top: 50%;
-    transform: translateY(-50%) scale(.66);
-    right: -60px;
-    width: 361px;
-    height: 662px;
-    padding: 240px 0 0 91px;
+    transform: translateY(-50%);
+    right: 0;
+    width: 216.6px;
+    height: 397.2px;
+    padding: 144px 0 0 54.6px;
     background-image: url(../images/pc/downgame.png);
+    background-size: cover;
 
     @media (min-width: $breakpoints-xl) {
       display: block;
@@ -130,11 +131,11 @@
     .btn-group {
       .btn {
         display: block;
-        width: 223px;
-        height: 65px;
+        width: 133.8px;
+        height: 39px;
         background-size: cover;
         transition: $transition;
-        margin-bottom: 15px;
+        margin-bottom: 9px;
 
         &.app-store {
           background-image: url(../images/pc/btn-1.png);
@@ -166,24 +167,26 @@
       position: absolute;
       display: block;
       border: 1px solid $c-white;
-      border-radius: 22px;
-      padding: 7px;
-      bottom: 37px;
-      right: 84px;
+      border-radius: 13.2px;
+      padding: 4.2px;
+      bottom: 22.2px;
+      right: 50.4px;
 
       img {
+        width: 78px;
+        height: 78px;
         display: block;
       }
     }
 
     .back-top {
       position: absolute;
-      width: 73px;
-      height: 73px;
+      width: 43.8px;
+      height: 43.8px;
       background-image: url(../images/pc/backtop.png);
       background-size: cover;
-      bottom: -48px;
-      right: 118px;
+      bottom: -28.8px;
+      right: 70.8px;
       cursor: pointer;
     }
 
