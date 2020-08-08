@@ -3,8 +3,8 @@ $('.slider-wrapper').slick({
   centerMode: true,
   centerPadding: '11.667vw',
   slidesToShow: 1,
-  // autoplay: true,
-  // autoplaySpeed: 4000,
+  autoplay: true,
+  autoplaySpeed: 4000,
   responsive: [
     {
       breakpoint: 1200,

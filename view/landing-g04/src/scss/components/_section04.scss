@@ -84,14 +84,24 @@
     bottom: 8vw;
     text-align: center;
     @media (min-width: $breakpoints-xl) {
-      bottom: inherit;
-      top: 37vh;
+      bottom: 4vw;
     }
+
+    .branb {
+      display: none;
+      @media (min-width: $breakpoints-xl) {
+        display: block;
+        img {
+          width: 7.084vw;
+        }
+      }
+    }
+
     .search {
       position: relative;
       width: 64.064vw;
       @media (min-width: $breakpoints-xl) {
-        width: 410px;
+        width: 21.3545vw;
         margin-top: 20px;
         margin-left: 50%;
         transform: translateX(-50%);
@@ -107,8 +117,8 @@
         padding: 3.126vw 10.2vw 3.126vw 2.2vw;
         border-radius: 2vw;
         @media (min-width: $breakpoints-xl) {
-          font-size: 35px;
-          padding: 18px 80px 18px 15px;
+          font-size: 1.823vw;
+          padding: .9375vw 80px .9375vw 15px;
           border-radius: 15px;
         }
       }
@@ -147,9 +157,9 @@
       height: 7.97vw;
       background-size: cover;
       @media (min-width: $breakpoints-xl) {
-        width: 170px;
-        height: 51px;
-        margin: 0 20px;
+        width: 8.8545vw;
+        height: 2.657vw;
+        margin: 0 1vw;
       }
 
       &.google-play {

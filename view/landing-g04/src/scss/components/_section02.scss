@@ -79,6 +79,7 @@
 
   .btn-dangky {
     position: absolute;
+    z-index: 2;
     width: 48.438vw;
     height: 18.907vw;
     bottom: 4%;
@@ -91,8 +92,8 @@
       width: 20.209vw;
       height: 7.917vw;
       right: 23vw;
-      top: 51vh;
-      left: initial;  
+      bottom: 15vh;
+      left: initial;
     }
   }
 }
