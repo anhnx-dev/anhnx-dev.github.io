@@ -1,0 +1,165 @@
+.nav-download {
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $breakpoints-xl) {
+    height: 160px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .branb {
+    display: none;
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      left: 10px;
+      top: 0;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .name-game {
+    display: none;
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      font-size: 30px;
+      position: absolute;
+      left: 190px;
+      top: 10px;
+      margin: 0;
+      pointer-events: none;
+    }
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: -1.5625vw;
+    margin-right: -1.5625vw;
+
+    @media (min-width: $breakpoints-xl) {
+      margin-left: 187.5px;
+      margin-right: -2.5px;
+      transform: translateY(60px);
+    }
+
+    .nav-item {
+      list-style: none;
+      padding-left: 3.125vw;
+      padding-right: 3.125vw;
+      width: 50%;
+      margin-top: 3.125vw;
+
+      @media (min-width: $breakpoints-xl) {
+        width: 25%;
+        padding: 2.5px;
+        margin-top: 0;
+      }
+
+      .btn {
+        height: 14.21875vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $c-white;
+        text-decoration: none;
+        background-image: url(../images/bg-btn.png);
+        background-size: 100% 100%;
+        transition: $transition;
+
+        @media (min-width: $breakpoints-xl) {
+          height: 90px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-image: url(../images/bg-btn-h.png);
+        }
+
+        .icon {
+          display: block;
+
+          &.icon-app-store {
+            width: 5.3125vw;
+            height: 6.71875vw;
+            background-image: url(../images/icon-appstore.png);
+            background-size: 100% 100%;
+            @media (min-width: $breakpoints-xl) {
+              width: 34px;
+              height: 43px;
+            }
+          }
+
+          &.icon-google-play {
+            width: 6.09375vw;
+            height: 6.5625vw;
+            background-image: url(../images/icon-googleplay.png);
+            background-size: 100% 100%;
+            @media (min-width: $breakpoints-xl) {
+              width: 39px;
+              height: 42px;
+            }
+          }
+
+          &.icon-ipa {
+            width: 7.187499999999999vw;
+            height: 6.5625vw;
+            background-image: url(../images/icon-ipa.png);
+            background-size: 100% 100%;
+            @media (min-width: $breakpoints-xl) {
+              width: 46px;
+              height: 42px;
+            }
+          }
+
+          &.icon-apk {
+            width: 5.625vw;
+            height: 7.187499999999999vw;
+            background-image: url(../images/icon-android.png);
+            background-size: 100% 100%;
+            @media (min-width: $breakpoints-xl) {
+              width: 36px;
+              height: 46px;
+            }
+          }
+        }
+
+        .info {
+          margin-left: 1.5625vw;
+
+          @media (min-width: $breakpoints-xl) {
+            margin-left: 15px;
+          }
+
+          .name {
+            font-size: 4.6875vw;
+            line-height: 1;
+            font-weight: bold;
+            @media (min-width: $breakpoints-xl) {
+              font-size: 30px;
+            }
+          }
+
+          .statu {
+            font-size: 2.8125vw;
+            color: #38230d;
+            @media (min-width: $breakpoints-xl) {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

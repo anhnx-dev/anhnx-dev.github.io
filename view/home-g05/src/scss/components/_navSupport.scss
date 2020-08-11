@@ -1,0 +1,137 @@
+.nav-support {
+  position: relative;
+  z-index: 2;
+  padding-left: 3.90625vw;
+  padding-right: 3.90625vw;
+  margin-top: 1.5625vw;
+
+  @media (min-width: $breakpoints-xl) {
+    margin-top: 25px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: -1.5625vw;
+    margin-right: -1.5625vw;
+    @media (min-width: $breakpoints-xl) {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    .nav-item {
+      width: 50%;
+      padding-left: 1.5625vw;
+      padding-right: 1.5625vw;
+      margin-top: 3.125vw;
+      list-style: none;
+      @media (min-width: $breakpoints-xl) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 20px;
+      }
+
+      .nav-link {
+        position: relative;
+        display: block;
+        height: 28.90625vw;
+        background-image: url(../images/bg-nav-1.png);
+        background-size: 100% 100%;
+        text-decoration: none;
+        text-align: center;
+        color: $c-white;
+        @media (min-width: $breakpoints-xl) {
+          height: 185px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-image: url(../images/bg-nav-h-1.png);
+        }
+
+        .icon {
+          display: block;
+          position: absolute;
+          left: 50%;
+          top: 33%;
+          transform: translate3d(-50%,-50%,0);
+
+          &.icon-huongdan {
+            width: 14.531250000000002vw;
+            height: 12.65625vw;
+            background-image: url(../images/icon-tanthu.png);
+            background-size: cover;
+            @media (min-width: $breakpoints-xl) {
+              width: 93px;
+              height: 81px;
+            }
+          }
+
+          &.icon-dacquyen {
+            width: 12.812499999999998vw;
+            height: 14.0625vw;
+            background-image: url(../images/icon-vip.png);
+            background-size: cover;
+            @media (min-width: $breakpoints-xl) {
+              width: 82px;
+              height: 90px;
+            }
+          }
+
+          &.icon-camnang {
+            width: 14.84375vw;
+            height: 15.156249999999998vw;
+            background-image: url(../images/icon-camnang.png);
+            background-size: cover;
+            @media (min-width: $breakpoints-xl) {
+              width: 95px;
+              height: 97px;
+            }
+          }
+
+          &.icon-chamsoc {
+            width: 13.593749999999998vw;
+            height: 13.4375vw;
+            background-image: url(../images/icon-chamsoc.png);
+            background-size: cover;
+            @media (min-width: $breakpoints-xl) {
+              width: 87px;
+              height: 86px;
+            }
+          }
+        }
+
+        .text {
+          position: absolute;
+          width: 100%;
+          bottom: 6%;
+          text-align: center;
+          font-size: 4.6875vw;
+          text-transform: uppercase;
+          font-weight: 100;
+          
+          .text-top {
+            font-size: 3.125vw;
+            @media (min-width: $breakpoints-xl) {
+              font-size: 20px;
+            }
+          }
+          .text-bottom {
+            font-weight: bold;
+            font-size: 3.90625vw;
+            color: #e9bc17;
+            line-height: 1;
+            @media (min-width: $breakpoints-xl) {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
