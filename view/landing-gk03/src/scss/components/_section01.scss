@@ -113,6 +113,7 @@
 
     @media (min-width: $breakpoints-xl) {
       top: 3.7037037037037033vh;
+      transform: translateX(-50%) scale(1.2);
     }
 
     .nav {
@@ -135,17 +136,17 @@
           }
         }
 
+        // &:nth-child(1) .nav-link {
+        //   background-image: url(../images/mobile/btn-trangchu.png);
+
+        //   &:hover,
+        //   &:focus,
+        //   &:active {
+        //     background-image: url(../images/mobile/btn-trangchu-h.png);
+        //   }
+        // }
+
         &:nth-child(1) .nav-link {
-          background-image: url(../images/mobile/btn-trangchu.png);
-
-          &:hover,
-          &:focus,
-          &:active {
-            background-image: url(../images/mobile/btn-trangchu-h.png);
-          }
-        }
-
-        &:nth-child(2) .nav-link {
           background-image: url(../images/mobile/btn-fanpage.png);
 
           &:hover,
@@ -155,7 +156,7 @@
           }
         }
 
-        &:nth-child(3) .nav-link {
+        &:nth-child(2) .nav-link {
           background-image: url(../images/mobile/btn-group-1.png);
 
           &:hover,
