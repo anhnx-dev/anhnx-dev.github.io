@@ -1,0 +1,45 @@
+/* Fonts */
+$font-1: 'UTM TrajanProBold';
+$font-2: 'UTM Talling';
+
+/* Colors - Default */
+
+$c-black: #000;
+$c-white: #fff;
+$c-dark: #281d05;
+/* Body background */
+
+/* Colors - Theme */
+
+
+/* Coler border */
+
+
+/* Cover */
+
+/* Background */
+
+/* Transitions */
+
+/* box shadow */
+
+$transition: all .3s ease-in-out;
+$duration: .25s;
+$speed: 200ms;
+$ease: ease-in-out;
+/* Round */
+
+$round: 4px;
+$round1: 6px;
+/* Breakpoints */
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+$breakpoints-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$breakpoints-md: 768px;
+// Large devices (desktops, 992px and up)
+$breakpoints-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$breakpoints-xl: 1200px;

@@ -1,0 +1,217 @@
+.header {
+
+  .topbar {
+    position: relative;
+    z-index: 9;
+    background-image: url(../images/mobile/bg-topbar.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875vw 2.34375vw;
+
+    @media (min-width: $breakpoints-xl) {
+      display: none;
+    }
+
+    .branb {
+      width: 16.5625vw;
+      height: 16.5625vw;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .btn-group {
+      background-image: url(../images/mobile/btn-group.png);
+      background-size: 100% 100%;
+      width: 76.71875vw;
+      height: 12.5vw;
+      position: relative;
+
+      .btn {
+        position: absolute;
+        transition: $transition;
+
+        &.btn-ios {
+          width: 37.5vw;
+          height: 10.625vw;
+          top: 0.78125vw;
+          left: 1.171875vw;
+
+          &:hover {
+            background-image: url(../images/mobile/btn-ios.png);
+            background-size: 100% 100%;
+          }
+        }
+
+        &.btn-android {
+          width: 37.5vw;
+          height: 10.625vw;
+          top: 0.78125vw;
+          right: 1.171875vw;
+
+          &:hover {
+            background-image: url(../images/mobile/btn-android.png);
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+
+    .nav {
+      padding: 0;
+      margin: 0;
+      display: flex;
+
+      .nav-item {
+        list-style: none;
+        margin: 0 10px;
+
+        .nav-link {
+          display: block;
+          text-decoration: none;
+
+          .icon {
+            display: block;
+            background-size: cover;
+
+            &.icon-home {
+              width: 9.688vw;
+              height: 9.376vw;
+              background-image: url(../images/mobile/ic-home.png);
+            }
+
+            &.icon-facebook {
+              width: 8.907vw;
+              height: 8.907vw;
+              background-image: url(../images/mobile/ic-facebook.png);
+            }
+          }
+        }
+      }
+    }
+
+    .logo-18 {
+      width: 12.814vw;
+      height: 12.814vw;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .download-game {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    width: 18.055555555555554vh;
+    height: 31.666666666666664vh;
+    padding: 0;
+    background-image: url(../images/pc/bg-downgame.png);
+    background-size: cover;
+    font-family: $font-2;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+    }
+
+    .btn-group {
+      padding-top: 15.277777777777779vh;
+      padding-left: 2.037037037037037vh;
+      padding-right: 2.037037037037037vh;
+      font-size: 1.8518518518518516vh;
+
+      .btn {
+        display: flex;
+        align-items: center;
+        background: #f3edc9;
+        transition: $transition;
+        color: #9a0808;
+        margin-bottom: 9px;
+        text-decoration: none;
+        border-radius: 0.9259259259259258vh;
+        padding: 0 0.7407407407407408vh;
+
+        &:hover {
+          background-image: url(../images/pc/btn.png);
+          background-size: 100% 100%;
+          color: #f3edc8;
+        }
+
+        svg {
+          margin-right: 0.9259259259259258vh;
+        }
+
+        &.app-store svg {
+          width: 1.6666666666666667vh;
+          height: 2.037037037037037vh;
+        }
+
+        &.google-play svg {
+          width: 1.8518518518518516vh;
+          height: 2.2222222222222223vh;
+        }
+
+        &.apk svg {
+          width: 2.037037037037037vh;
+          height: 1.9444444444444444vh;
+        }
+
+        &.setting svg {
+          width: 2.1296296296296298vh;
+          height: 2.1296296296296298vh;
+        }
+      }
+    }
+
+    .branb {
+      position: absolute;
+      display: block;
+      border: 1px solid #f2d8a1;
+      border-radius: 2.4074074074074074vh;
+      top: 1.8518518518518516vh;
+      left: 50%;
+      transform: translateX(-50%);
+
+      img {
+        width: 12.5vh;
+        height: 12.5vh;
+        display: block;
+      }
+    }
+
+    .back-top {
+      position: absolute;
+      width: 13.88888888888889vh;
+      height: 3.2407407407407405vh;
+      background: #9a0808;
+      border-radius: 0.9259259259259258vh;
+      bottom: -4.166666666666666vh;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+      text-align: center;
+      line-height: 3.2407407407407405vh;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 0.8333333333333334vh;
+        height: 1.6666666666666667vh;
+        margin-left: 1.6666666666666667vh;
+        transform: translateX(0.2777777777777778vh);
+        background-image: url(../images/pc/arrows.png);
+      }
+    }
+  }
+}

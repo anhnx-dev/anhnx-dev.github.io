@@ -1,0 +1,248 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #3973dd;
+  color: $c-white;
+}
+
+.no-spacing {
+  margin: 0;
+  padding: 0;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
+.icon {
+  display: inline-block;
+}
+
+#app {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.disabled {
+  pointer-events: none !important;
+}
+
+.modal {
+  position: fixed;
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(0);
+  opacity: 0;
+  transition: $transition;
+  width: calc(470px + 4.6874vw);
+  max-width: 100%;
+  padding: 0 2.3437vw;
+
+  &.popup-v1 {
+    background-image: url(../images/popup-1.png);
+  }
+
+
+  @media (min-width: $breakpoints-xl) {
+    width: 35.971vw;
+    height: 39.268vw;
+  }
+
+  // .modal-exit {
+  //   position: absolute;
+  //   width: 7.814vw;
+  //   height: 7.814vw;
+  //   top: 8.8vw;
+  //   right: 3.3vw;
+  //   cursor: pointer;
+  //   background-image: url(../images/exit.png);
+  //   overflow: hidden;
+  //   background-size: cover;
+
+  //   @media (min-width: $breakpoints-xl) {
+  //     width: 3.664vw;
+  //     height: 3.664vw;
+  //     top: 4.1vw;
+  //     right: 1.6vw;
+  //   }
+  // }
+
+  .modal-inner {
+    background: #090301;
+    overflow: hidden;
+    border: 3px solid #f7941d;
+    max-height: 100%;
+    overflow-y: auto;
+    font-size: 4vw;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+
+    @media (min-width: $breakpoints-xl) {
+      font-size: 2vw;
+      padding: 15.5vw 3.663vw 3.663vw 3.663vw;
+    }
+
+    .title {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+  }
+
+  &.popup-baodanh {
+    form {
+      .form-group {
+        margin-top: 15px;
+        .form-control {
+          display: block;
+          border: 0;
+          border-radius: 0;
+          width: 100%;
+          font-size: 18px;
+          padding: 15px;
+        }
+      }
+      .btn {
+        display: block;
+        border: 0;
+        padding: 0;
+        margin-top: 15px;
+        background: #f7941d;
+        font-weight: bold;
+        font-size: 20px;
+        width: 100%;
+        padding: 13.5px 15px;
+        color: #fff;
+      }
+    }
+  }
+
+  &.modal-active {
+    transform: translate3d(-50%, -50%, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-over-body {
+  display: none;
+  position: fixed;
+  z-index: 999998;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+
+  &.modal-over-body-active {
+    display: block;
+  }
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+      outline: none;
+  }
+
+  &.dragging {
+      cursor: pointer;
+      cursor: hand;
+  }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:before,
+  &:after {
+      content: "";
+      display: table;
+  }
+
+  &:after {
+      clear: both;
+  }
+
+  .slick-loading & {
+      visibility: hidden;
+  }
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  [dir="rtl"] & {
+      float: right;
+  }
+  img {
+      display: block;
+  }
+  &.slick-loading img {
+      display: none;
+  }
+
+  display: none;
+
+  &.dragging img {
+      pointer-events: none;
+  }
+
+  .slick-initialized & {
+      display: block;
+  }
+
+  .slick-loading & {
+      visibility: hidden;
+  }
+
+  .slick-vertical & {
+      display: block;
+      height: auto;
+      border: 1px solid transparent;
+  }
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}

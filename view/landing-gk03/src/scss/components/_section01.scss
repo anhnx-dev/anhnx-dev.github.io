@@ -1,0 +1,311 @@
+.c-section-1 {
+  position: relative;
+  z-index: 5;
+  height: 198.59375vw;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    content: '';
+    border-top: 2px solid #f6c859;
+    height: 1px;
+    background: #c59d55;
+    border-bottom: 1px solid #211523;
+
+    @media (min-width: $breakpoints-xl) {
+      display: none;
+    }
+  }
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/mobile/bg-1.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-1.png);
+      background-size: auto 100%;
+      background-position: center;
+    }
+  }
+
+  .class-2 {
+    position: absolute;
+    width: 65.3125vw;
+    height: 68.125vw;
+    top: 0;
+    right: 0;
+    background-image: url(../images/mobile/nv.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      top: inherit;
+      right: inherit;
+      left: 3vw;
+      bottom: 6vh;
+      width: 84.44444444444444vh;
+      height: 67.4074074074074vh;
+      background-image: url(../images/pc/left.png);
+      background-size: cover;
+    }
+  }
+
+  .class-3 {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 14vh;
+      width: 92.68518518518518vh;
+      height: 71.48148148148148vh;
+      background-image: url(../images/pc/right.png);
+      background-size: cover;
+    }
+  }
+
+  .class-4 {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 13vh;
+      width: 25.555555555555554vh;
+      height: 20.64814814814815vh;
+      background-image: url(../images/pc/vang.png);
+      background-size: cover;
+    }
+  }
+
+  .logo-game {
+    position: absolute;
+    z-index: 3;
+    top: 9.375vw;
+    left: 3.125vw;
+    width: 49.0625vw;
+    height: 33.4375vw;
+    background-image: url(../images/mobile/logo-game.png);
+    background-size: cover;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 337px;
+      height: 237px;
+      top: 15px;
+      background-image: url(../images/pc/logo.png);
+    }
+  }
+
+  .navbar {
+    position: absolute;
+    top: 45.125vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $breakpoints-xl) {
+      top: 3.7037037037037033vh;
+    }
+
+    .nav {
+      padding: 0;
+      margin: 0;
+      display: flex;
+
+      .nav-item {
+        padding: 0 0.78125vw;
+
+        .nav-link {
+          width: 27.34375vw;
+          height: 9.0625vw;
+          display: block;
+          background-size: cover;
+
+          @media (min-width: $breakpoints-xl) {
+            width: 16.203703703703702vh;
+            height: 5.37037037037037vh;
+          }
+        }
+
+        &:nth-child(1) .nav-link {
+          background-image: url(../images/mobile/btn-trangchu.png);
+
+          &:hover,
+          &:focus,
+          &:active {
+            background-image: url(../images/mobile/btn-trangchu-h.png);
+          }
+        }
+
+        &:nth-child(2) .nav-link {
+          background-image: url(../images/mobile/btn-fanpage.png);
+
+          &:hover,
+          &:focus,
+          &:active {
+            background-image: url(../images/mobile/btn-fanpage-h.png);
+          }
+        }
+
+        &:nth-child(3) .nav-link {
+          background-image: url(../images/mobile/btn-group-1.png);
+
+          &:hover,
+          &:focus,
+          &:active {
+            background-image: url(../images/mobile/btn-group-h-1.png);
+          }
+        }
+      }
+    }
+  }
+
+  .game {
+    position: absolute;
+    z-index: 3;
+    width: 94.375vw;
+    height: 94.375vw;
+    left: 50%;
+    top: 55.125vw;
+    transform: translateX(-50%);
+    background-size: cover;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 55.925925925925924vh;
+      height: 55.925925925925924vh;
+      top: 10.648148148148149vh;
+    }
+
+    canvas {
+      width: 94.375vw;
+      height: 94.375vw;
+
+      @media (min-width: $breakpoints-xl) {
+        width: 55.925925925925924vh;
+        height: 55.925925925925924vh;
+      }
+    }
+
+    .btn-start {
+      position: absolute;
+      top: 46%;
+      left: 50%;
+      width: 31.25vw;
+      height: 39.375vw;
+      transform: translate3d(-50%, -50%, 0);
+      background-image: url(../images/mobile/mui-ten.png);
+      background-size: cover;
+      cursor: pointer;
+      &.disabled {
+        pointer-events: none;
+      }
+      @media (min-width: $breakpoints-xl) {
+        width: 18.51851851851852vh;
+        height: 23.333333333333332vh;
+      }
+    }
+  }
+
+  .btn-group {
+    background-image: url(../images/mobile/btn-group-2.png);
+    background-size: 100% 100%;
+    width: 76.71875vw;
+    height: 12.5vw;
+    position: relative;
+    position: absolute;
+    top: 151vw;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: $breakpoints-xl) {
+      top: 68.05555555555556vh;
+      width: 49.25925925925926vh;
+      height: 7.962962962962964vh;
+    }
+
+    .btn {
+      position: absolute;
+      transition: $transition;
+
+      &.btn-thele {
+        width: 37.5vw;
+        height: 10.625vw;
+        top: 0.78125vw;
+        left: 1.171875vw;
+        @media (min-width: $breakpoints-xl) {
+          top: 0.5555555555555556vh;
+          left: 0.8333333333333334vh;
+          width: 23.796296296296298vh;
+          height: 6.666666666666667vh;
+        }
+
+        &:hover {
+          background-image: url(../images/mobile/btn-thele.png);
+          background-size: 100% 100%;
+        }
+      }
+
+      &.btn-lichsu {
+        width: 37.5vw;
+        height: 10.625vw;
+        top: 0.78125vw;
+        right: 1.171875vw;
+        @media (min-width: $breakpoints-xl) {
+          top: 0.5555555555555556vh;
+          right: 0.8333333333333334vh;
+          width: 23.796296296296298vh;
+          height: 6.666666666666667vh;
+        }
+
+        &:hover {
+          background-image: url(../images/mobile/btn-lichsu.png);
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+
+  .btn-luot {
+    position: absolute;
+    top: 167vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 68.90625vw;
+    height: 21.71875vw;
+    background-image: url(../images/mobile/btn-luot.png);
+    background-size: cover;
+    text-align: center;
+    font-family: $font-1;
+    color: #ebecbe;
+    @media (min-width: $breakpoints-xl) {
+      top: 77.31481481481481vh;
+      width: 40.833333333333336vh;
+      height: 12.87037037037037vh;
+    }
+
+    .text-top {
+      font-size: 5.3125vw;
+      line-height: 1;
+      margin-top: 3vw;
+      @media (min-width: $breakpoints-xl) {
+        font-size: 3.148148148148148vh;
+        margin-top: 1.6666666666666667vh;
+      }
+    }
+
+    .text-bottom {
+      font-size: 7.8125vw;
+      line-height: 1;
+      @media (min-width: $breakpoints-xl) {
+        font-size: 4.722222222222222vh;
+      }
+    }
+  }
+}
