@@ -29,6 +29,8 @@
 
     @media (min-width: $breakpoints-xl) {
       font-size: 16px;
+      padding-top: 5vw;
+      padding-bottom: 5vw;
     }
 
     .group {
@@ -36,7 +38,7 @@
       justify-content: center;
       margin-bottom: 2.34375vw;
       @media (min-width: $breakpoints-xl) {
-        margin-top: 0;
+        margin-bottom: 0;
       }
       .logo-cty {
         display: block;

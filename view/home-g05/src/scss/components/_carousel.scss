@@ -1,6 +1,7 @@
 .carousel {
   position: relative;
   margin-top: 4.6875vw;
+
   @media (min-width: $breakpoints-xl) {
     margin-top: 45px;
   }
@@ -15,6 +16,7 @@
     left: 0;
     top: 0;
     background: linear-gradient(to right, #000, rgba(51, 51, 51, 0));
+
     @media (min-width: $breakpoints-xl) {
       width: 133px;
     }
@@ -65,6 +67,7 @@
       background-size: cover;
       padding: 0;
       cursor: pointer;
+
       @media (min-width: $breakpoints-xl) {
         width: 36px;
         height: 71px;
@@ -72,6 +75,7 @@
 
       &.slick-prev {
         left: 2.34375vw;
+
         @media (min-width: $breakpoints-xl) {
           left: 15px;
         }
@@ -80,6 +84,7 @@
       &.slick-next {
         right: 2.34375vw;
         transform: translateY(-50%) scale(-1);
+
         @media (min-width: $breakpoints-xl) {
           right: 15px;
         }
@@ -96,10 +101,15 @@
       margin: 0;
       display: flex;
 
+      @media (min-width: $breakpoints-xl) {
+        bottom: 15px;
+      }
+
       li {
         list-style: none;
         margin: 0 0.46875vw;
         line-height: 0;
+
         @media (min-width: $breakpoints-xl) {
           margin: 0 4px;
         }
@@ -114,6 +124,7 @@
           border-radius: 0.78125vw;
           font-size: 0;
           transition: $transition;
+
           @media (min-width: $breakpoints-xl) {
             width: 10px;
             height: 10px;
@@ -124,6 +135,7 @@
           button {
             width: 5.3125vw;
             background-color: #ffde00;
+
             @media (min-width: $breakpoints-xl) {
               width: 36px;
             }

@@ -3,6 +3,10 @@
   padding: 3.13vw 2.3437vw;
   text-align: center;
 
+  @media (min-width: $breakpoints-xl) {
+    padding: 0;
+  }
+
   .class-1 {
     position: absolute;
     width: 100%;

@@ -1,0 +1,71 @@
+.hero {
+  position: relative;
+  height: 138.75vw;
+  overflow: hidden;
+
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/mobile/hero.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/hero.png);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .play {
+    position: absolute;
+    z-index: 2;
+    width: 14.0625vw;
+    height: 13.750000000000002vw;
+    top: 69vw;
+    left: 30vw;
+    background-image: url(../images/play.png);
+    background-size: cover;
+    animation: infinite play 1s ease-in-out;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 5.520833333333333vw;
+      height: 5.364583333333333vw;
+      top: 48vh;
+      left: 41.2vw;
+    }
+  }
+
+  .logo-game {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      top: 4vh;
+      left: 18.75vw;
+      width: 41.564vw;
+      height: 29.53333vw;
+      background-image: url(../images/logo-game.png);
+      background-size: cover;
+      width: 24.63vh;
+      height: 17.5vh;
+    }
+  }
+}
+
+@keyframes play {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
