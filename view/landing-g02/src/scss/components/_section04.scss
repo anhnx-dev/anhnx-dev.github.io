@@ -1,0 +1,88 @@
+.c-section-4 {
+  position: relative;
+  height: 180.3125vw;
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: $breakpoints-xl) {
+    height: 58.854166666666664vw;
+  }
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/bg-04.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-05.png);
+    }
+  }
+
+  .slogan {
+    position: absolute;
+    z-index: 3;
+    width: 87.8125vw;
+    height: 35vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 85vw;
+    background-image: url(../images/game-chiem-thanh-doat-thien-ha.png);
+    background-size: 100% 100%;
+    @media (min-width: $breakpoints-xl) {
+      width: 29.270833333333336vw;
+      height: 11.666666666666666vw;
+      top: 31vw;
+      background-image: url(../images/pc/text-06.png);
+    }
+  }
+
+  .search {
+    position: absolute;
+    z-index: 3;
+    width: 90.78125vw;
+    height: 22.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 149vw;
+    background-image: url(../images/tim-kiem.png);
+    background-size: 100% 100%;
+    @media (min-width: $breakpoints-xl) {
+      width: 30.260416666666668vw;
+      height: 7.5vw;
+      top: 50vw;
+      background-image: url(../images/pc/search.png);
+    }
+  }
+
+  .countdown {
+    position: absolute;
+    z-index: 3;
+    width: 72.5vw;
+    height: 21.5625vw;
+    background-image: url(../images/bg-cd.png);
+    background-size: 100% 100%;
+    top: 123vw;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fcf497;
+    font-size: 9.375vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+    @media (min-width: $breakpoints-xl) {
+      width: 24.166666666666668vw;
+      height: 7.187499999999999vw;
+      top: 42vw;
+      font-size: 3.125vw;
+      padding: 0 2vw;
+      background-image: url(../images/pc/cd.png);
+    }
+  }
+
+}

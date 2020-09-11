@@ -1,0 +1,43 @@
+.c-footer {
+  text-align: center;
+  color: #fff;
+  background-color: #000000;
+  font-size: 2.5vw;
+  padding: 3.90625vw 3.90625vw 1px 3.90625vw;
+  @media (min-width: $breakpoints-xl) {
+    font-size: 0.8333333333333334vw;
+    padding: 1.5625vw 1.5625vw 1px 1.5625vw;
+  }
+  .info {
+    margin-bottom: 2.34375vw;
+    @media (min-width: $breakpoints-xl) {
+      margin-bottom: 1.0416666666666665vw;
+    }
+  }
+  .nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    li {
+      list-style: none;
+      &::after {
+        display: inline-block;
+        content: '|';
+        padding: 0 1.5625vw;
+        @media (min-width: $breakpoints-xl) {
+          padding: 0 0.5208333333333333vw;
+        }
+      }
+      &:last-of-type {
+        &::after {
+          display: none;
+        }
+      }
+      a {
+        color: $c-white;
+        text-decoration: none;
+      }
+    }
+  }
+}

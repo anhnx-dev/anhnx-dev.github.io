@@ -1,0 +1,214 @@
+.c-section-3 {
+  position: relative;
+  height: 154.6875vw;
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: $breakpoints-xl) {
+    height: 51.5625vw;
+  }
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/bg-06.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-04.png);
+    }
+  }
+
+  .title {
+    position: absolute;
+    z-index: 3;
+    width: 98.4375vw;
+    height: 8.59375vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5vw;
+    background-image: url(../images/title-03.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/text-05.png);
+      width: 46.666666666666664vw;
+      height: 4.21875vw;
+      top: 1vw;
+    }
+  }
+
+  .quoc-gia {
+    position: absolute;
+    z-index: 3;
+    width: 39.53125vw;
+    height: 22.8125vw;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5vw;
+    background-image: url(../images/quoc-gia.png);
+    background-size: 100% 100%;
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/quoc-gia.png);
+      width: 13.177083333333334vw;
+      height: 7.604166666666666vw;
+      bottom: initial;
+      transform: none;
+      left: 18.75vw;
+      top: 32vw;
+    }
+  }
+
+  .btn-group {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    bottom: 31vw;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $breakpoints-xl) {
+      flex-wrap: wrap;
+      left: 18.75vw;
+      width: 16.041666666666668vw;
+      bottom: initial;
+      top: 10vw;
+    }
+
+    .btn {
+      width: 24.0625vw;
+      height: 27.65625vw;
+      background-size: 100% 100%;
+      transition: $transition;
+      cursor: pointer;
+
+      @media (min-width: $breakpoints-xl) {
+        width: 8.020833333333334vw;
+        height: 9.166666666666666vw;
+        margin-bottom: 1vw;
+      }
+
+      &.btn-1 {
+        background-image: url(../images/pc/ts.png);
+        transform: translateX(3vw);
+
+        @media (min-width: $breakpoints-xl) {
+          transform: translateX(0);
+        }
+
+        &.active {
+          background-image: url(../images/pc/ts-active.png);
+
+        }
+      }
+
+      &.btn-2 {
+        background-image: url(../images/pc/pq.png);
+        transform: translateX(1vw);
+
+        @media (min-width: $breakpoints-xl) {
+          transform: translateX(-1vw);
+        }
+
+        &.active {
+          background-image: url(../images/pc/pq-active.png);
+        }
+      }
+
+      &.btn-3 {
+        background-image: url(../images/pc/cs.png);
+        transform: translateX(-1vw);
+
+        @media (min-width: $breakpoints-xl) {
+          transform: translateX(0);
+        }
+
+        &.active {
+          background-image: url(../images/pc/cs-active.png);
+        }
+      }
+
+      &.btn-4 {
+        background-image: url(../images/pc/mc.png);
+        transform: translateX(-3vw);
+
+        @media (min-width: $breakpoints-xl) {
+          transform: translateX(-1vw);
+        }
+
+        &.active {
+          background-image: url(../images/pc/mc-active.png);
+        }
+      }
+    }
+  }
+
+  .nhan-vat {
+    .item {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+      background-size: 100% 100%;
+      left: 0;
+      pointer-events: none;
+      opacity: 0;
+      transition: $transition;
+      @media (min-width: $breakpoints-xl) {
+        left: 34vw;
+      }
+
+      &.active {
+        opacity: 1;
+      }
+
+      &.item-1 {
+        width: 99.0625vw;
+        height: 140.15625vw;
+        background-image: url(../images/thien-sat.png);
+        @media (min-width: $breakpoints-xl) {
+          background-image: url(../images/pc/nv-ts.png);
+          width: 46.09375vw;
+          height: 46.71875vw;
+        }
+      }
+
+      &.item-2 {
+        width: 95.78125vw;
+        height: 131.71875vw;
+        background-image: url(../images/pha-quan.png);
+        @media (min-width: $breakpoints-xl) {
+          background-image: url(../images/pc/nv-pq.png);
+          width: 48.69791666666667vw;
+          height: 44.635416666666664vw;
+        }
+      }
+
+      &.item-3 {
+        width: 95.625vw;
+        height: 119.21875vw;
+        background-image: url(../images/cam-sat.png);
+        @media (min-width: $breakpoints-xl) {
+          background-image: url(../images/pc/nv-cs.png);
+          width: 44.53125vw;
+          height: 39.739583333333336vw;
+        }
+      }
+
+      &.item-4 {
+        width: 96.40625vw;
+        height: 127.96875000000001vw;
+        background-image: url(../images/mac-cung.png);
+        @media (min-width: $breakpoints-xl) {
+          background-image: url(../images/pc/nv-mc.png);
+          width: 47.13541666666667vw;
+          height: 42.135416666666664vw;
+        }
+      }
+    }
+  }
+}

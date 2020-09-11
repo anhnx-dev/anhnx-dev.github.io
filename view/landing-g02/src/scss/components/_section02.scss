@@ -1,0 +1,271 @@
+.c-section-2 {
+  position: relative;
+  height: 109.53124999999999vw;
+  overflow: hidden;
+
+  @media (min-width: $breakpoints-xl) {
+    height: 46.875vw;
+  }
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/bg-05.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-03.png);
+    }
+  }
+
+  .class-2 {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 66.09375vw;
+    left: 0;
+    bottom: 15vw;
+    background-image: url(../images/thanh-01.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/thanh-01.png);
+      width: 70.67708333333333vw;
+      height: 30.9375vw;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: initial;
+      top: 10.3vw;
+    }
+  }
+
+  .title {
+    position: absolute;
+    z-index: 3;
+    width: 98.4375vw;
+    height: 8.59375vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2vw;
+    background-image: url(../images/title-02.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/text-04.png);
+      width: 46.666666666666664vw;
+      height: 4.21875vw;
+      top: 1vw;
+    }
+  }
+
+  .chu-thich {
+    position: absolute;
+    z-index: 3;
+    width: 97.1875vw;
+    height: 10.15625vw;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2vw;
+    background-image: url(../images/chu-thich.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 43.28125vw;
+      height: 4.53125vw;
+      bottom: 1vw;
+    }
+  }
+
+  .number {
+    position: absolute;
+    width: 81.5625vw;
+    height: 9.375vw;
+    z-index: 3;
+    font-weight: bold;
+    color: #feebac;
+    top: 26.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../images/diem.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 27.187499999999996vw;
+      height: 3.125vw;
+      background-image: url(../images/pc/diem.png);
+      top: 10.5vw;
+    }
+
+    >span {
+      font-size: 7.8125vw;
+      font-weight: bold;
+      color: #fadd82;
+      line-height: 9.375vw;
+      padding-left: 46vw;
+
+      @media (min-width: $breakpoints-xl) {
+        font-size: 2.604166666666667vw;
+        padding-left: 16vw;
+        line-height: 3.125vw;
+      }
+    }
+  }
+
+  .btn {
+    position: absolute;
+    z-index: 3;
+    width: 37.8125vw;
+    height: 13.125vw;
+    background-size: 100% 100%;
+    outline: none;
+    top: 12vw;
+    left: 50%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 12.604166666666666vw;
+      height: 4.375vw;
+      top: 5.5vw;
+    }
+
+    &.btn-like {
+      background-image: url(../images/btn-like.png);
+      transform: translateX(-100%);
+
+      @media (min-width: $breakpoints-xl) {
+        background-image: url(../images/pc/btn-05.png);
+
+        &:hover {
+          background-image: url(../images/pc/btn-hover-05.png);
+        }
+      }
+    }
+
+    &.btn-share {
+      background-image: url(../images/btn-share.png);
+
+      @media (min-width: $breakpoints-xl) {
+        background-image: url(../images/pc/btn-06.png);
+
+        &:hover {
+          background-image: url(../images/pc/btn-hover-06.png);
+        }
+      }
+    }
+  }
+
+  .moc-1 {
+    position: absolute;
+    z-index: 3;
+    width: 16.40625vw;
+    height: 17.1875vw;
+    left: 1vw;
+    top: 75vw;
+    background-image: url(../images/lv-1.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 7.760416666666667vw;
+      height: 8.072916666666668vw;
+      left: 25vw;
+      top: 30vw;
+    }
+
+    &.active {
+      background-image: url(../images/lv-active-1.png);
+    }
+  }
+
+  .moc-2 {
+    position: absolute;
+    z-index: 3;
+    width: 16.40625vw;
+    height: 17.1875vw;
+    left: 24vw;
+    top: 50vw;
+    background-image: url(../images/lv-2.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 7.760416666666667vw;
+      height: 8.072916666666668vw;
+      left: 38vw;
+      top: 20vw;
+    }
+
+    &.active {
+      background-image: url(../images/lv-active-2.png);
+    }
+  }
+
+  .moc-3 {
+    position: absolute;
+    z-index: 3;
+    width: 16.40625vw;
+    height: 17.1875vw;
+    left: 37vw;
+    top: 70vw;
+    background-image: url(../images/lv-3.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 7.760416666666667vw;
+      height: 8.072916666666668vw;
+      left: 43vw;
+      top: 29.5vw;
+    }
+
+
+    &.active {
+      background-image: url(../images/lv-active-3.png);
+    }
+  }
+
+  .moc-4 {
+    position: absolute;
+    z-index: 3;
+    width: 16.40625vw;
+    height: 17.1875vw;
+    left: 65vw;
+    top: 50vw;
+    background-image: url(../images/lv-4.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 7.760416666666667vw;
+      height: 8.072916666666668vw;
+      left: 56.5vw;
+      top: 21vw;
+    }
+
+
+    &.active {
+      background-image: url(../images/lv-active-4.png);
+    }
+  }
+
+  .moc-5 {
+    position: absolute;
+    z-index: 3;
+    width: 16.40625vw;
+    height: 17.1875vw;
+    left: 84vw;
+    top: 75vw;
+    background-image: url(../images/lv-5.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 7.760416666666667vw;
+      height: 8.072916666666668vw;
+      left: 65vw;
+      top: 32vw;
+    }
+
+
+    &.active {
+      background-image: url(../images/lv-active-5.png);
+    }
+  }
+}

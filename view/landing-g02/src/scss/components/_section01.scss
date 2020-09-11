@@ -1,0 +1,232 @@
+.c-section-1 {
+  position: relative;
+  height: 120.625vw;
+  overflow: hidden;
+
+  @media (min-width: $breakpoints-xl) {
+    height: 52.083333333333336vw;
+  }
+
+  .class-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/bg-03.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/bg-02.png);
+    }
+  }
+
+  .class-2 {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 80.9375vw;
+    left: 0;
+    bottom: 10vw;
+    background-image: url(../images/thanh.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/thanh.png);
+      width: 72.8125vw;
+      height: 37.604166666666664vw;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: initial;
+      top: 10vw;
+    }
+  }
+
+  .title {
+    position: absolute;
+    z-index: 3;
+    width: 98.4375vw;
+    height: 8.59375vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 7vw;
+    background-image: url(../images/title-01.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/text-02.png);
+      width: 46.666666666666664vw;
+      height: 4.21875vw;
+      top: 2vw;
+    }
+  }
+
+  .slogan {
+    position: absolute;
+    z-index: 4;
+    width: 60vw;
+    height: 25vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18vw;
+    background-image: url(../images/dang-ky-nhan-qua.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      background-image: url(../images/pc/text-03.png);
+      width: 23.072916666666668vw;
+      height: 9.114583333333332vw;
+      top: 8vw;
+    }
+  }
+
+  .number {
+    position: absolute;
+    z-index: 3;
+    font-weight: bold;
+    font-size: 4.0625vw;
+    color: #feebac;
+    top: 51.5vw;
+    left: 28vw;
+
+    @media (min-width: $breakpoints-xl) {
+      font-size: 1.9270833333333335vw;
+      top: 20.3vw;
+      left: 38.8vw;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    z-index: 3;
+    width: 28.125vw;
+    height: 10vw;
+    left: 50vw;
+    top: 48vw;
+    background-image: url(../images/btn-04.png);
+    background-size: 100% 100%;
+    outline: none;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 13.333333333333334vw;
+      height: 4.6875vw;
+      background-image: url(../images/pc/btn-04.png);
+      top: 19vw;
+
+      &:hover {
+        background-image: url(../images/pc/btn-hover-04.png);
+      }
+    }
+  }
+
+  .moc-1 {
+    position: absolute;
+    z-index: 3;
+    width: 16.40625vw;
+    height: 17.1875vw;
+    left: 6vw;
+    top: 78vw;
+    background-image: url(../images/lv-1.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 7.760416666666667vw;
+      height: 8.072916666666668vw;
+      left: 28vw;
+      top: 33vw;
+    }
+
+    &.active {
+      background-image: url(../images/lv-active-1.png);
+    }
+  }
+
+  .moc-2 {
+    position: absolute;
+    z-index: 3;
+    width: 16.40625vw;
+    height: 17.1875vw;
+    left: 36vw;
+    top: 84vw;
+    background-image: url(../images/lv-2.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 7.760416666666667vw;
+      height: 8.072916666666668vw;
+      left: 43vw;
+      top: 36vw;
+    }
+
+    &.active {
+      background-image: url(../images/lv-active-2.png);
+    }
+  }
+
+  .moc-3 {
+    position: absolute;
+    z-index: 3;
+    width: 16.40625vw;
+    height: 17.1875vw;
+    left: 54vw;
+    top: 65vw;
+    background-image: url(../images/lv-3.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 7.760416666666667vw;
+      height: 8.072916666666668vw;
+      left: 51.5vw;
+      top: 26.5vw;
+    }
+
+
+    &.active {
+      background-image: url(../images/lv-active-3.png);
+    }
+  }
+
+  .moc-4 {
+    position: absolute;
+    z-index: 3;
+    width: 16.40625vw;
+    height: 17.1875vw;
+    left: 69vw;
+    top: 81vw;
+    background-image: url(../images/lv-4.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 7.760416666666667vw;
+      height: 8.072916666666668vw;
+      left: 59vw;
+      top: 34.5vw;
+    }
+
+    &.active {
+      background-image: url(../images/lv-active-4.png);
+    }
+  }
+
+  .moc-5 {
+    position: absolute;
+    z-index: 3;
+    width: 16.40625vw;
+    height: 17.1875vw;
+    left: 81vw;
+    top: 60vw;
+    background-image: url(../images/lv-5.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 7.760416666666667vw;
+      height: 8.072916666666668vw;
+      left: 64.5vw;
+      top: 24.5vw;
+    }
+
+    &.active {
+      background-image: url(../images/lv-active-5.png);
+    }
+  }
+}
