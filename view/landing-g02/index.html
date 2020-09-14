@@ -69,7 +69,7 @@
       <!-- navbar end -->
 
       <div class="download-game">
-        <div class="branb"><img src="./images/pc/logo-fix.png" alt="logo"></div> <!-- / branb -->
+        <div class="branb"><img src="./images/logo-fix.png" alt="logo"></div> <!-- / branb -->
         <div class="btn-group">
           <a href="#" class="btn btn-app-store"></a>
           <a href="#" class="btn btn-google-play"></a>
@@ -86,24 +86,24 @@
 
     <main class="main">
 
-      <section class="section hero">
+      <section class="section hero" id="section_1">
         <div class="bg"></div>
         <div class="slogan"></div>
         <a class="play" data-fancybox="trailer" href="https://www.youtube.com/watch?v=Y4NybpNaoP4"></a>
         <ul class="nav">
-          <li class="active"><span>Game Quốc Chiến<br>Tranh Đoạt Thiên Hạ</span></li>
-          <li data-scroll="#section-1"><span>Đăng Ký Trước<br>Nhận Quà Ngay</span></li>
-          <li data-scroll="#section-2"><span>Xây Dựng Thế Lực</span></li>
-          <li data-scroll="#section-3"><span>Giới Thiệu Nhân Vật</span></li>
-          <li data-scroll="#section-4"><span>Thông Báo<br>Ngày Ra Mắt</span></li>
+          <li><a href="#section_1"><span>Game Quốc Chiến<br>Tranh Đoạt Thiên Hạ</span></a></li>
+          <li><a href="#section_2"><span>Đăng Ký Trước<br>Nhận Quà Ngay</span></a></li>
+          <li><a href="#section_3"><span>Xây Dựng Thế Lực</span></a></li>
+          <li><a href="#section_4"><span>Giới Thiệu Nhân Vật</span></a></li>
+          <li><a href="#section_5"><span>Thông Báo<br>Ngày Ra Mắt</span></a></li>
         </ul>
       </section>
       <!-- hero end -->
-      <section class="section c-section-1" id="section-1">
+      <section class="section c-section-1" id="section_2">
         <div class="class-1"></div>
         <div class="class-2"></div>
         <div class="moc">
-          <div class="item moc-1 active"></div>
+          <div class="item moc-1 active" data-modal="#popup-text"></div>
           <div class="item moc-2"></div>
           <div class="item moc-3"></div>
           <div class="item moc-4"></div>
@@ -116,7 +116,7 @@
       </section>
       <!-- section 1 end -->
 
-      <section class="section c-section-2" id="section-2">
+      <section class="section c-section-2" id="section_3">
         <div class="class-1"></div>
         <div class="class-2"></div>
         <div class="moc">
@@ -134,7 +134,7 @@
       </section>
       <!-- section 2 end -->
 
-      <div class="section c-section-3 accordion" id="section-3">
+      <div class="section c-section-3 accordion" id="section_4">
         <div class="class-1"></div>
         <div class="title"></div>
         <div class="quoc-gia"></div>
@@ -155,7 +155,7 @@
       </div>
       <!-- section 3 end -->
 
-      <section class="section c-section-4" id="section-4">
+      <section class="section c-section-4" id="section_5">
         <div class="class-1"></div>
         <div class="slogan"></div>
         <div class="countdown">
@@ -163,7 +163,15 @@
           <div id="hours"></div>
           <div id="minutes"></div>
         </div>
-        <div class="search"></div>
+        <div class="block">
+          <div class="logo"><img src="./images/logo-fix.png"></div>
+          <div class="search"><img src="./images/search.png"></div>
+          <div class="btn-group">
+            <a href="#" class="btn"><img src="./images/btn-07.png"></a>
+            <a href="#" class="btn"><img src="./images/btn-08.png"></a>
+            <a href="#" class="btn"><img src="./images/btn-09.png"></a>
+          </div>
+        </div>
       </section>
       <!-- section 4 end -->
 
@@ -218,6 +226,7 @@
     <!-- popup dang ky end -->
 
     <div class="modal popup-dang-ky" id="popup-dang-ky">
+      <div class="btn-popup-exit btn-exit"></div>
       <div class="modal-inner">
         <div class="content">
           <div class="title">Đăng ký</div>
@@ -253,7 +262,7 @@
           </div>
           <button type="submit" class="btn btn-dang-nhap"></button>
           <div class="form-group">
-            <div class="text">Bạn chưa có tài khoản? <a href="#">Đăng ký ngay</a></div>
+            <div class="text">Bạn chưa có tài khoản? <a class="btn-exit" href="#" data-modal="#popup-dang-ky">Đăng ký ngay</a></div>
           </div>
         </form>
       </div>
@@ -264,6 +273,7 @@
       <div class="btn-popup-exit btn-exit"></div>
       <div class="modal-inner">
         <div class="content">
+          <div class="title">Gitcode</div>
           <div class="inner">Nội dung ở đây</div>
         </div>
       </div>

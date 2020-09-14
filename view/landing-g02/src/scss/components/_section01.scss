@@ -128,6 +128,12 @@
     top: 78vw;
     background-image: url(../images/lv-1.png);
     background-size: 100% 100%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.08);
+    }
 
     @media (min-width: $breakpoints-xl) {
       width: 7.760416666666667vw;
@@ -150,6 +156,12 @@
     top: 84vw;
     background-image: url(../images/lv-2.png);
     background-size: 100% 100%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.08);
+    }
 
     @media (min-width: $breakpoints-xl) {
       width: 7.760416666666667vw;
@@ -172,6 +184,12 @@
     top: 65vw;
     background-image: url(../images/lv-3.png);
     background-size: 100% 100%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.08);
+    }
 
     @media (min-width: $breakpoints-xl) {
       width: 7.760416666666667vw;
@@ -195,6 +213,12 @@
     top: 81vw;
     background-image: url(../images/lv-4.png);
     background-size: 100% 100%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.08);
+    }
 
     @media (min-width: $breakpoints-xl) {
       width: 7.760416666666667vw;
@@ -217,6 +241,12 @@
     top: 60vw;
     background-image: url(../images/lv-5.png);
     background-size: 100% 100%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.08);
+    }
 
     @media (min-width: $breakpoints-xl) {
       width: 7.760416666666667vw;

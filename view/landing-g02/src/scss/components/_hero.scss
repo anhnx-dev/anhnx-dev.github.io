@@ -2,6 +2,7 @@
   position: relative;
   height: 160vw;
   overflow: hidden;
+
   @media (min-width: $breakpoints-xl) {
     height: 100vh;
   }
@@ -19,7 +20,7 @@
       height: calc(100% - 3.4895833333333335vw);
       background-image: url(../images/pc/bg-01.png);
       background-size: cover;
-      background-position: bottom;
+      background-position: top;
     }
   }
 
@@ -33,6 +34,7 @@
     transform: translateX(-50%);
     background-image: url(../images/play-02.png);
     background-size: 100% 100%;
+
     @media (min-width: $breakpoints-xl) {
       width: 4.6875vw;
       height: 4.6875vw;
@@ -41,6 +43,7 @@
       left: 61.5vw;
       bottom: 14vw;
     }
+
     &::before {
       content: '';
       position: absolute;
@@ -50,8 +53,9 @@
       width: 15.78125vw;
       background-image: url(../images/play-01.png);
       background-size: 100% 100%;
-      transform: translate3d(-50%,-50%,0);
+      transform: translate3d(-50%, -50%, 0);
       animation: infinite play 2s ease-in-out;
+
       @media (min-width: $breakpoints-xl) {
         width: 5.260416666666667vw;
         height: 5.260416666666667vw;
@@ -68,6 +72,7 @@
     height: 74.0625vw;
     background-image: url(../images/slogan.png);
     background-size: 100% 100%;
+
     @media (min-width: $breakpoints-xl) {
       left: 50%;
       transform: translateX(-50%);
@@ -80,11 +85,12 @@
 
   .nav {
     display: none;
+
     @media (min-width: $breakpoints-xl) {
       display: flex;
       justify-content: center;
       position: absolute;
-      z-index: 3;
+      z-index: 99;
       bottom: 0;
       left: 0;
       width: 100%;
@@ -93,57 +99,79 @@
       background-size: 100% 100%;
       background-image: url(../images/pc/bg-nav.png);
       padding-top: 1px;
+
+      &.fix-top {
+        position: fixed;
+        bottom: initial;
+        top: 0;
+      }
+
       li {
         list-style: none;
-        cursor: pointer;
-        width: 10.677083333333332vw;
-        height: 6.666666666666667vw;
-        background-size: 100% 100%;
-        transition: $transition;
-        >span {
+
+        >a {
           display: block;
-          font-size: 0.9375vw;
-          color: #eedec3;
-          font-weight: bold;
-          padding: 3.0208333333333335vw 0 0 0.78125vw;
-          transition: $transition;
-        }
-        &:hover,
-        &.active {
+          width: 10.677083333333332vw;
+          height: 6.666666666666667vw;
+          background-size: 100% 100%;
+          text-decoration: none;
+
           >span {
-            color: #654424;
+            display: block;
+            font-size: 0.9375vw;
+            color: #eedec3;
+            font-weight: bold;
+            padding: 3.0208333333333335vw 0 0 0.78125vw;
+            transition: $transition;
+          }
+
+          &:hover,
+          &.active {
+            >span {
+              color: #654424;
+            }
           }
         }
-        &:nth-child(1) {
+
+        &:nth-child(1) a {
           background-image: url(../images/pc/section-01.png);
+
           &:hover,
           &.active {
             background-image: url(../images/pc/section-hover-01.png);
           }
         }
-        &:nth-child(2) {
+
+        &:nth-child(2) a {
           background-image: url(../images/pc/section-02.png);
+
           &:hover,
           &.active {
             background-image: url(../images/pc/section-hover-02.png);
           }
         }
-        &:nth-child(3) {
+
+        &:nth-child(3) a {
           background-image: url(../images/pc/section-03.png);
+
           &:hover,
           &.active {
             background-image: url(../images/pc/section-hover-03.png);
           }
         }
-        &:nth-child(4) {
+
+        &:nth-child(4) a {
           background-image: url(../images/pc/section-04.png);
+
           &:hover,
           &.active {
             background-image: url(../images/pc/section-hover-04.png);
           }
         }
-        &:nth-child(5) {
+
+        &:nth-child(5) a {
           background-image: url(../images/pc/section-05.png);
+
           &:hover,
           &.active {
             background-image: url(../images/pc/section-hover-05.png);
@@ -156,9 +184,10 @@
 
 @keyframes play {
   from {
-    transform: translate3d(-50%,-50%,0) rotate(0);
+    transform: translate3d(-50%, -50%, 0) rotate(0);
   }
+
   to {
-    transform: translate3d(-50%,-50%,0) rotate(360deg);
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
   }
 }

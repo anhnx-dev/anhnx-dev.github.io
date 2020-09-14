@@ -51,6 +51,7 @@
     bottom: 5vw;
     background-image: url(../images/quoc-gia.png);
     background-size: 100% 100%;
+
     @media (min-width: $breakpoints-xl) {
       background-image: url(../images/pc/quoc-gia.png);
       width: 13.177083333333334vw;
@@ -158,6 +159,7 @@
       pointer-events: none;
       opacity: 0;
       transition: $transition;
+
       @media (min-width: $breakpoints-xl) {
         left: 34vw;
       }
@@ -170,6 +172,7 @@
         width: 99.0625vw;
         height: 140.15625vw;
         background-image: url(../images/thien-sat.png);
+
         @media (min-width: $breakpoints-xl) {
           background-image: url(../images/pc/nv-ts.png);
           width: 46.09375vw;
@@ -181,6 +184,7 @@
         width: 95.78125vw;
         height: 131.71875vw;
         background-image: url(../images/pha-quan.png);
+
         @media (min-width: $breakpoints-xl) {
           background-image: url(../images/pc/nv-pq.png);
           width: 48.69791666666667vw;
@@ -191,8 +195,11 @@
       &.item-3 {
         width: 95.625vw;
         height: 119.21875vw;
+        top: 47%;
         background-image: url(../images/cam-sat.png);
+
         @media (min-width: $breakpoints-xl) {
+          top: 50%;
           background-image: url(../images/pc/nv-cs.png);
           width: 44.53125vw;
           height: 39.739583333333336vw;
@@ -203,7 +210,10 @@
         width: 96.40625vw;
         height: 127.96875000000001vw;
         background-image: url(../images/mac-cung.png);
+        top: 45%;
+
         @media (min-width: $breakpoints-xl) {
+          top: 50%;
           background-image: url(../images/pc/nv-mc.png);
           width: 47.13541666666667vw;
           height: 42.135416666666664vw;

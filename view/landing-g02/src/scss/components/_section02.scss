@@ -163,8 +163,14 @@
     height: 17.1875vw;
     left: 1vw;
     top: 75vw;
-    background-image: url(../images/lv-1.png);
+    background-image: url(../images/1000.png);
     background-size: 100% 100%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.08);
+    }
 
     @media (min-width: $breakpoints-xl) {
       width: 7.760416666666667vw;
@@ -174,7 +180,7 @@
     }
 
     &.active {
-      background-image: url(../images/lv-active-1.png);
+      background-image: url(../images/1000-active.png);
     }
   }
 
@@ -185,8 +191,14 @@
     height: 17.1875vw;
     left: 24vw;
     top: 50vw;
-    background-image: url(../images/lv-2.png);
+    background-image: url(../images/3000.png);
     background-size: 100% 100%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.08);
+    }
 
     @media (min-width: $breakpoints-xl) {
       width: 7.760416666666667vw;
@@ -196,7 +208,7 @@
     }
 
     &.active {
-      background-image: url(../images/lv-active-2.png);
+      background-image: url(../images/3000-active.png);
     }
   }
 
@@ -207,8 +219,14 @@
     height: 17.1875vw;
     left: 37vw;
     top: 70vw;
-    background-image: url(../images/lv-3.png);
+    background-image: url(../images/5000.png);
     background-size: 100% 100%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.08);
+    }
 
     @media (min-width: $breakpoints-xl) {
       width: 7.760416666666667vw;
@@ -219,7 +237,7 @@
 
 
     &.active {
-      background-image: url(../images/lv-active-3.png);
+      background-image: url(../images/5000-active.png);
     }
   }
 
@@ -230,8 +248,14 @@
     height: 17.1875vw;
     left: 65vw;
     top: 50vw;
-    background-image: url(../images/lv-4.png);
+    background-image: url(../images/10000.png);
     background-size: 100% 100%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.08);
+    }
 
     @media (min-width: $breakpoints-xl) {
       width: 7.760416666666667vw;
@@ -242,7 +266,7 @@
 
 
     &.active {
-      background-image: url(../images/lv-active-4.png);
+      background-image: url(../images/10000-active.png);
     }
   }
 
@@ -253,8 +277,14 @@
     height: 17.1875vw;
     left: 84vw;
     top: 75vw;
-    background-image: url(../images/lv-5.png);
+    background-image: url(../images/20000.png);
     background-size: 100% 100%;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.08);
+    }
 
     @media (min-width: $breakpoints-xl) {
       width: 7.760416666666667vw;
@@ -265,7 +295,7 @@
 
 
     &.active {
-      background-image: url(../images/lv-active-5.png);
+      background-image: url(../images/20000-active.png);
     }
   }
 }

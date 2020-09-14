@@ -125,15 +125,56 @@ if (modal) {
 }
 
 // scroll
-const scroll = document.querySelectorAll('[data-scroll]');
-if (scroll) {
-  for (let i = 0; i < scroll.length; i++) {
-    const button = scroll[i];
-    $(button).on('click', function() {
-      const e = button.getAttribute('data-scroll');
-      $('body, html').animate({ 
-        scrollTop: $(e).offset().top
-      }, 1000);
+const navScroll = $('.hero .nav');
+if (navScroll) {
+  const sectionArray = [1, 2, 3, 4, 5];
+  const heightNavScroll = navScroll.height();
+  const navItem = $('.hero .nav li');
+  const navLink = $('.hero .nav li a');
+  const navUrl = $('.hero .nav li a:link');
+  const doc = $(document);
+  const ACTIVE_CLASS = 'active';
+  const INACTION_CLASS = 'inactive';
+  const FIX_TOP_CLASS = 'fix-top';
+  
+  $.each(sectionArray, function (index, value) {
+
+    doc.scroll(function () {
+      let heightSection1 = $('#section_1').height();
+      let offsetSection = $('#' + 'section_' + value).offset().top;
+      let docScroll = doc.scrollTop();
+
+      if (docScroll > (heightSection1 - heightNavScroll)) {
+        navScroll.addClass(FIX_TOP_CLASS);
+      } else {
+        navScroll.removeClass(FIX_TOP_CLASS);
+      }
+
+      if ((docScroll + 1) >= offsetSection) {
+        navLink.removeClass(ACTIVE_CLASS);
+        navUrl.addClass(INACTION_CLASS);
+        navLink.eq(index).addClass(ACTIVE_CLASS);
+        navUrl.eq(index).removeClass(INACTION_CLASS);
+      }
+
     });
-  }
+
+    navItem.eq(index).click(function (e) {
+      let offsetClick = $('#' + 'section_' + value).offset().top;
+      e.preventDefault();
+      $('html, body').animate({
+        'scrollTop': offsetClick
+      }, 300)
+
+
+    });
+
+  });
+
+  doc.ready(function () {
+    navUrl.addClass(INACTION_CLASS);
+    navLink.eq(0).addClass(ACTIVE_CLASS);
+    navUrl.eq(0).removeClass(INACTION_CLASS);
+
+  });
 }
