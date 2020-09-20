@@ -1,0 +1,165 @@
+.c-section {
+  text-align: center;
+  position: relative;
+
+
+  .info {
+    padding-top: 10.666666666666668vw;
+    color: $c-dark;
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: $breakpoints-xl) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-top: 0;
+    }
+
+    .name {
+      @extend .title-text;
+      @include no-spacing;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 6.933333333333333vw;
+      line-height: 1.3;
+
+      @media (min-width: $breakpoints-xl) {
+        font-size: 4.5191802417235944vw;
+        line-height: 1.4;
+      }
+    }
+
+    .slogan {
+      @include no-spacing;
+      margin-top: 2.666666666666667vw;
+      font-size: 4.266666666666667vw;
+      font-weight: 400;
+      line-height: 1.4;
+
+      @media (min-width: $breakpoints-xl) {
+        font-size: 1.6815554387808722vw;
+
+        @media (min-width: $breakpoints-xl) {
+          margin-top: 1.5764582238570677vw;
+        }
+      }
+    }
+
+    .group-link {
+      margin-top: 4vw;
+      font-size: 4.266666666666667vw;
+      line-height: 1.4;
+      font-weight: 400;
+
+      @media (min-width: $breakpoints-xl) {
+        font-size: 1.3662637940094586vw;
+        margin-top: 1.5764582238570677vw;
+      }
+
+      a {
+        text-decoration: none;
+        outline: none;
+        color: $c-blue;
+        margin: 0 2vw;
+        @media (min-width: $breakpoints-xl) {
+          margin: 0 0.3941145559642669vw;
+        }
+      }
+    }
+  }
+
+  .img {
+    padding-top: 2.666666666666667vw;
+
+    @media (min-width: $breakpoints-xl) {
+      padding-top: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+
+    img {
+      display: block;
+
+      @media (min-width: $breakpoints-xl) {
+        display: none;
+      }
+    }
+  }
+
+  &.s1 {
+    background-color: #fff;
+
+    @media (min-width: $breakpoints-xl) {
+      height: 39.270833333333336vw;
+
+      .info {
+        right: 10.5%;
+        color: $c-white;
+
+      }
+
+      .img {
+        background-image: url(../images/banner1-pc.png);
+      }
+    }
+  }
+
+  &.s2 {
+    background-color: #88dbdf;
+
+
+    @media (min-width: $breakpoints-xl) {
+      height: 39.21875vw;
+
+      .info {
+        left: 5.5%;
+        color: $c-white;
+
+      }
+
+      .img {
+        transform: scale(-1) rotateX(180deg);
+        background-image: url(../images/banner2-pc.png);
+      }
+    }
+  }
+
+  &.s3 {
+    background-color: #e6e1e5;
+
+    @media (min-width: $breakpoints-xl) {
+      height: 34.89583333333333vw;
+
+      .info {
+        right: 10.5%;
+      }
+
+      .img {
+        transform: scale(-1) rotateX(180deg);
+        background-image: url(../images/banner_en_01.jpg);
+      }
+    }
+  }
+
+  &.s4 {
+    background-color: #efefef;
+
+    @media (min-width: $breakpoints-xl) {
+      height: 39.21875vw;
+
+      .info {
+        left: 10.5%;
+      }
+
+      .img {
+        transform: scale(-1) rotateX(180deg);
+        background-image: url(../images/banner4-pc.png);
+      }
+    }
+  }
+}

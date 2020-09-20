@@ -1,0 +1,30 @@
+
+
+.medium-text {
+  font-size: .9375rem;
+  @media (orientation: landscape) {
+    font-size: .9375rem;
+  }
+}
+
+.small-text {
+  font-size: .6875rem;
+  @media (orientation: landscape) {
+    font-size: .6875rem;
+  }
+}
+
+.body-text {
+  font-family: $ff-body;
+  font-size: 3.2vw;
+  @media (orientation: landscape) {
+    font-size: 1.7991004497751124vw;
+  }
+  @media (min-width: $breakpoints-xl) {
+    font-size: 0.7356805044666317vw;
+  }
+}
+
+.title-text {
+  font-family: $ff-title;
+}

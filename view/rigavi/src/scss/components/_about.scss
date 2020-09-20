@@ -1,0 +1,30 @@
+.c-about {
+  position: relative;
+  background-color: $c-black;
+  height: 48.278860569715135vh;
+
+  @media (orientation: landscape) {
+    height: auto;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  img {
+    display: block;
+    position: absolute;
+    width: 125%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    max-width: initial;
+
+    @media (orientation: landscape) {
+      position: initial;
+      height: auto;
+      width: 100%;
+    }
+  }
+}

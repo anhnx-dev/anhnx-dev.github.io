@@ -1,0 +1,131 @@
+.c-discount_code {
+  margin-top: 4vw;
+
+  .box {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4vw;
+
+    @media (orientation: landscape) {
+      padding-left: 2.2488755622188905vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      width: 73vw;
+      padding-left: 0;
+    }
+
+    .item {
+      outline: none;
+
+      .item-wrapper {
+        display: block;
+        position: relative;
+        margin-right: 4vw;
+        text-decoration: none;
+        outline: none;
+        color: $c-dark;
+        padding-left: 13.333333333333334vw;
+        min-height: 13.333333333333334vw;
+
+        @media (orientation: landscape) {
+          padding-left: 11.244377811094452vw;
+          min-height: 11.244377811094452vw;
+          margin-right: 2.2488755622188905vw;
+        }
+
+        @media (min-width: $breakpoints-xl) {
+          min-height: 3.90625vw;
+          padding-left: 3.90625vw;
+          margin-right: 0.78125vw;
+        }
+
+        .img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 13.333333333333334vw;
+          height: 13.333333333333334vw;
+          background-size: 100% 100%;
+
+          @media (orientation: landscape) {
+            width: 11.244377811094452vw;
+            height: 11.244377811094452vw;
+          }
+
+          @media (min-width: $breakpoints-xl) {
+            width: 3.90625vw;
+            height: 3.90625vw;
+          }
+        }
+
+        .info {
+          transform: translateY(-0.20833333333333334vw);
+          padding-left: 1.3333333333333335vw;
+
+          @media (orientation: landscape) {
+            padding-left: 0.7496251874062968vw;
+          }
+
+          @media (min-width: $breakpoints-xl) {
+            padding-left: 0.26041666666666663vw;
+          }
+
+          .code {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 3.733333333333334vw;
+
+            @media (orientation: landscape) {
+              font-size: 2.39880059970015vw;
+            }
+
+            @media (min-width: $breakpoints-xl) {
+              font-size: 0.8333333333333334vw;
+            }
+          }
+
+          .title {
+            @include no-spacing;
+            margin-top: 0.26041666666666663vw;
+            font-size: 3.2vw;
+            font-weight: 400;
+
+            @media (orientation: landscape) {
+              font-size: 2.0989505247376314vw;
+            }
+
+            @media (min-width: $breakpoints-xl) {
+              font-size: 0.7291666666666666vw;
+            }
+          }
+
+          .expiry-date {
+            font-size: 2.666666666666667vw;
+
+            @media (orientation: landscape) {
+              font-size: 1.7991004497751124vw;
+            }
+
+            @media (min-width: $breakpoints-xl) {
+              font-size: 0.625vw;
+            }
+          }
+        }
+      }
+
+      &.xu .item-wrapper .img {
+        background-image: url(../src/img/xu.png);
+      }
+
+      &.tien .item-wrapper .img {
+        background-image: url(../src/img/tien.png);
+      }
+
+      &.phan_tram .item-wrapper .img {
+        background-image: url(../src/img/phan.png);
+      }
+
+    }
+  }
+}

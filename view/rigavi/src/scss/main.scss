@@ -1,0 +1,19 @@
+@import 'fonts';
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'typography';
+@import 'wysiwyg';
+@import 'buttons';
+
+@import './components/header';
+@import './components/navbar';
+@import './components/hero';
+@import './components/discountCode';
+@import './components/productsGroup';
+@import './components/detail';
+@import './components/news';
+@import './components/support';
+@import './components/about';
+@import './components/footer';
+

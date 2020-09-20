@@ -1,0 +1,193 @@
+.c-header {
+  position: fixed;
+  z-index: 99;
+  height: 13.333333333333334vw;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $c-dark;
+
+  @media (orientation: landscape) {
+    height: 7.496251874062969vw;
+  }
+
+  @media (min-width: $breakpoints-xl) {
+    height: 3.047819232790331vw;
+  }
+
+  .nav-trigger {
+    @include no-spacing;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13.333333333333334vw;
+    height: 13.333333333333334vw;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    @media (orientation: landscape) {
+      width: 7.496251874062969vw;
+      height: 7.496251874062969vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      height: 3.047819232790331vw;
+      width: 3.047819232790331vw;
+      left: initial;
+      right: 13.5%;
+    }
+
+    &::before,
+    .line,
+    &::after {
+      content: '';
+      display: block;
+      width: 4.266666666666667vw;
+      height: 1px;
+      background: $c-white;
+      position: absolute;
+      left: 4vw;
+      transition: $tst;
+
+      @media (orientation: landscape) {
+        width: 2.39880059970015vw;
+        left: 2.2488755622188905vw;
+      }
+
+      @media (min-width: $breakpoints-xl) {
+        width: 1.3137151865475565vw;
+        height: 0.10509721492380451vw;
+      }
+    }
+
+    &::before {
+      top: 5.066666666666666vw;
+
+      @media (orientation: landscape) {
+        top: 2.848575712143928vw;
+      }
+
+      @media (min-width: $breakpoints-xl) {
+        top: 1.0509721492380453vw;
+      }
+    }
+
+    .line {
+      top: 50%;
+    }
+
+    &::after {
+      top: 8.266666666666666vw;
+
+      @media (orientation: landscape) {
+        top: 4.6476761619190405vw;
+      }
+
+      @media (min-width: $breakpoints-xl) {
+        top: 1.9442984760903836vw;
+      }
+    }
+  }
+
+  .brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 24vw;
+    @media (orientation: landscape) {
+      width: 13.493253373313344vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      transform: translate3d(0, -50%, 0);
+      left: 13.5vw;
+      width: 5.359957961114031vw;
+    }
+  }
+
+  .cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 13.333333333333334vw;
+    height: 13.333333333333334vw;
+    background-image: url(../images/cart.png);
+    background-size: 6.666666666666667vw 6.666666666666667vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (orientation: landscape) {
+      width: 7.496251874062969vw;
+      height: 7.496251874062969vw;
+      background-size: 3.7481259370314843vw 3.7481259370314843vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      right: 18.5vw;
+      height: 3.047819232790331vw;
+      width: 3.047819232790331vw;
+      background-size: 1.3137151865475565vw 1.3137151865475565vw;
+    }
+  }
+
+  .nav {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      @include no-spacing;
+      display: flex;
+      position: absolute;
+      left: 18.85995796111403vw;
+      top: 50%;
+      transform: translate3d(0, -50%, 0);
+
+      .nav-item {
+        margin-left: 5vw;
+        list-style: none;
+
+        .nav-link {
+          color: $c-white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 0.8407777193904361vw;
+        }
+      }
+    }
+  }
+}
+
+.navbar-active .c-header {
+  .nav-trigger {
+    &::before {
+      transform: translateY(0.5333333333333333vw) rotate(-45deg);
+      top: 6.133333333333333vw;
+
+      @media (orientation: landscape) {
+        top: 3.1484257871064467vw;
+      }
+
+      @media (min-width: $breakpoints-xl) {
+        top: 0.9984235417761429vw;
+      }
+    }
+
+    .line {
+      display: none;
+    }
+
+    &::after {
+      transform: translateY(-2.1333333333333333vw) rotate(45deg);
+      top: 8.799999999999999vw;
+
+      @media (orientation: landscape) {
+        top: 5.847076461769116vw;
+      }
+
+      @media (min-width: $breakpoints-xl) {
+        top: 3.6784025223331582vw;
+      }
+    }
+  }
+}

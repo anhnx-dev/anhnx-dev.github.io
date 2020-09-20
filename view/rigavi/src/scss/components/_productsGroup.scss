@@ -1,0 +1,289 @@
+.c-products_group {
+  margin-top: 8vw;
+
+  @media (orientation: landscape) {
+    margin-top: 4.497751124437781vw;
+  }
+
+  @media (min-width: $breakpoints-xl) {
+    margin-top: 1.5625vw;
+  }
+
+  .box {
+    padding-left: 4vw;
+
+    @media (orientation: landscape) {
+      padding-left: 2.2488755622188905vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      padding-left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 73.78125vw;
+    }
+  }
+
+  .heading {
+    @include no-spacing;
+    text-transform: uppercase;
+    font-size: 4.266666666666667vw;
+    color: $c-info;
+    font-weight: normal;
+
+    @media (orientation: landscape) {
+      font-size: 2.6986506746626686vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      font-size: 0.9375vw;
+    }
+  }
+
+  .wrapper {
+    margin-top: 4vw;
+
+    @media (orientation: landscape) {
+      margin-top: 2.2488755622188905vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      margin-top: 0.78125vw;
+    }
+  }
+
+  .item {
+    outline: none;
+    padding-right: 4vw;
+    width: 57.333333333333336vw;
+
+    @media (orientation: landscape) {
+      width: 32.23388305847077vw;
+      padding-right: 2.2488755622188905vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      width: 12.296875vw;
+      padding-right: 0.390625vw;
+      padding-left: 0.390625vw;
+    }
+
+    .item-wrapper {
+      display: block;
+      position: relative;
+      background-color: $c-light;
+      text-decoration: none;
+      color: $c-dark;
+      outline: none;
+      transition: $tst;
+
+      &:hover {
+        transform: translateY(-.0625rem);
+        box-shadow: 0 .0625rem 20px 0 rgba(0, 0, 0, .05);
+      }
+
+      .sale-fix {
+        @include flex-center;
+        flex-wrap: wrap;
+        align-content: center;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        right: 0;
+        background-color: $c-yellow;
+        text-align: center;
+        width: 10.133333333333333vw;
+        height: 9.333333333333334vw;
+        color: $c-orange;
+        font-weight: 700;
+        font-size: 3.2vw;
+        line-height: 1.2;
+
+        @media (orientation: landscape) {
+          font-size: 1.7991004497751124vw;
+          width: 5.697151424287856vw;
+          height: 5.247376311844078vw;
+        }
+
+        @media (min-width: $breakpoints-xl) {
+          font-size: 0.625vw;
+          width: 1.9791666666666665vw;
+          height: 1.8229166666666667vw;
+        }
+
+        &::after {
+          content: "";
+          width: 0;
+          height: 0;
+          left: 0;
+          bottom: -1.0666666666666667vw;
+          position: absolute;
+          border-color: transparent $c-yellow;
+          border-style: solid;
+          border-width: 0 5.066666666666666vw 1.0666666666666667vw;
+
+          @media (orientation: landscape) {
+            bottom: -0.5997001499250375vw;
+            border-width: 0 2.848575712143928vw 0.5997001499250375vw;
+          }
+
+          @media (min-width: $breakpoints-xl) {
+            bottom: -0.20833333333333334vw;
+            border-width: 0 0.9895833333333333vw 0.20833333333333334vw;
+          }
+        }
+
+        >span {
+          display: block;
+          color: $c-white;
+          text-transform: uppercase;
+        }
+      }
+
+      .img {
+        position: relative;
+
+        &::before {
+          content: '';
+          display: block;
+          padding-bottom: 100%;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          background-image: url(../src/img/freeshipxtra.png);
+          background-size: cover;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .info {
+        padding: 2.666666666666667vw;
+
+        @media (orientation: landscape) {
+          padding: 1.4992503748125936vw;
+        }
+
+        @media (min-width: $breakpoints-xl) {
+          padding: 0.5208333333333333vw;
+        }
+
+        .title {
+          @include no-spacing;
+          font-weight: normal;
+          font-size: 3.2vw;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          height: inherit;
+          overflow: hidden;
+
+          @media (orientation: landscape) {
+            font-size: 1.7991004497751124vw;
+          }
+
+          @media (min-width: $breakpoints-xl) {
+            font-size: 0.7291666666666666vw;
+          }
+        }
+
+        .price {
+          position: relative;
+          margin-top: 1.3333333333333335vw;
+          display: flex;
+          align-items: flex-end;
+
+          @media (orientation: landscape) {
+            margin-top: 0.7496251874062968vw;
+          }
+
+          @media (min-width: $breakpoints-xl) {
+            margin-top: 0.26041666666666663vw;
+          }
+
+          .cost,
+          .sale {
+            >span {
+              font-size: 3.2vw;
+
+              @media (orientation: landscape) {
+                font-size: 1.7991004497751124vw;
+              }
+
+              @media (min-width: $breakpoints-xl) {
+                font-size: 0.625vw;
+              }
+            }
+          }
+
+          .cost {
+            margin-right: 1.3333333333333335vw;
+            font-size: 3.733333333333334vw;
+            text-decoration: line-through;
+            color: $c-black;
+            opacity: .54;
+
+            @media (orientation: landscape) {
+              font-size: 2.0989505247376314vw;
+              margin-right: 0.7496251874062968vw;
+            }
+
+            @media (min-width: $breakpoints-xl) {
+              font-size: 0.7291666666666666vw;
+              margin-right: 0.26041666666666663vw;
+            }
+          }
+
+          .sale {
+            font-size: 4.266666666666667vw;
+            color: $c-orange;
+
+            @media (orientation: landscape) {
+              font-size: 2.39880059970015vw;
+            }
+
+            @media (min-width: $breakpoints-xl) {
+              font-size: 0.8333333333333334vw;
+            }
+          }
+
+          .ic {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            svg {
+              width: 5.333333333333334vw;
+              height: 3.2vw;
+
+              @media (orientation: landscape) {
+                width: 2.998500749625187vw;
+                height: 1.7991004497751124vw;
+              }
+
+              @media (min-width: $breakpoints-xl) {
+                width: 1.0416666666666665vw;
+                height: 0.625vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

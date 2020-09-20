@@ -1,0 +1,183 @@
+.c-fan_art {
+  @media (orientation: landscape) {
+    padding-bottom: 2.2488755622188905vw;
+  }
+  @media (min-width: $breakpoints-xl) {
+    padding-bottom: 1.3137151865475565vw;
+  }
+
+  .heading {
+    @include no-spacing;
+    @extend .title-text;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: 6.933333333333333vw;
+    color: $c-dark;
+    margin-top: 2.627430373095113vw;
+    margin-bottom: 1.3137151865475565vw;
+
+    @media (orientation: landscape) {
+      padding-left: 2.2488755622188905vw;
+      padding-right: 2.2488755622188905vw;
+      font-size: 3.8980509745127434vw;
+      margin-top: 4.497751124437781vw;
+      margin-bottom: 2.2488755622188905vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 2.627430373095113vw;
+      margin-bottom: 1.3137151865475565vw;
+      width: 73vw;
+    }
+  }
+
+  .box {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: 125vw;
+
+    @media (orientation: landscape) {
+      width: 95.50224887556223vw;
+      height: 119.37781109445278vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      width: 73vw;
+      height: 91.25vw;
+    }
+
+    .item {
+      position: absolute;
+
+      a {
+        display: block;
+        outline: none;
+        text-decoration: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(2) {
+        top: 0;
+        left: 25%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(3) {
+        top: 0;
+        left: 50%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(4) {
+        top: 0;
+        left: 75%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(5) {
+        top: 20%;
+        left: 0;
+        width: 50%;
+        height: 40%;
+      }
+
+      &:nth-child(6) {
+        top: 20%;
+        left: 50%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(7) {
+        top: 20%;
+        left: 75%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(8) {
+        top: 40%;
+        left: 50%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(9) {
+        top: 40%;
+        left: 75%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(10) {
+        top: 60%;
+        left: 0;
+        width: 25%;
+        height: 40%;
+      }
+
+      &:nth-child(11) {
+        top: 60%;
+        left: 25%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(12) {
+        top: 60%;
+        left: 50%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(13) {
+        top: 60%;
+        left: 75%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(14) {
+        top: 80%;
+        left: 25%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(15) {
+        top: 80%;
+        left: 50%;
+        width: 25%;
+        height: 20%;
+      }
+
+      &:nth-child(16) {
+        top: 80%;
+        left: 75%;
+        width: 25%;
+        height: 20%;
+      }
+    }
+  }
+}

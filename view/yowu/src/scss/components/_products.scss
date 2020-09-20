@@ -1,0 +1,155 @@
+.c-products {
+  padding-top: 13.333333333333334vw;
+  padding-bottom: 13.333333333333334vw;
+
+  @media (orientation: landscape) {
+    padding-top: 7.496251874062969vw;
+    padding-bottom: 0;
+  }
+  @media (min-width: $breakpoints-xl) {
+    padding-top: 0;
+  }
+
+  .container {
+    padding-left: 4vw;
+    padding-right: 4vw;
+
+    @media (orientation: landscape) {
+      @include flex-center;
+      padding-left: 2.2488755622188905vw;
+      padding-right: 2.2488755622188905vw;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      @include flex-center;
+      padding-right: 0;
+      padding-left: 0;
+      width: 73vw;
+      min-height: calc(100vh - 2.9952706253284287vw);
+    }
+
+    .wrapper {
+      @media (orientation: landscape) {
+        display: flex;
+        width: 100%;
+        padding-top: 2.2488755622188905vw;
+        padding-bottom: 2.2488755622188905vw;
+      }
+    }
+  }
+
+  .item {
+    text-align: center;
+    padding-top: 8vw;
+    margin-top: 8vw;
+
+    &:nth-child(1) {
+      border-top: 0;
+      margin-top: 0;
+    }
+
+    @media (orientation: landscape) {
+      @include no-spacing;
+      width: 50%;
+    }
+
+    .img {
+      @media (orientation: landscape) {
+        height: 26.986506746626688vw;
+      }
+
+      @media (min-width: $breakpoints-xl) {
+        height: 18.39201261166579vw;
+      }
+
+      img {
+        width: 75vw;
+
+        @media (orientation: landscape) {
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+
+    .info {
+      .title {
+        @extend .title-text;
+        @include no-spacing;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 6.933333333333333vw;
+        line-height: 1.3;
+
+        @media (orientation: landscape) {
+          font-size: 3.598200899550225vw;
+        }
+
+        @media (min-width: $breakpoints-xl) {
+          font-size: 2.5223331581713087vw;
+          margin-top: 0.7882291119285338vw;
+        }
+
+        a {
+          text-decoration: none;
+          outline: none;
+          color: $c-gray;
+        }
+      }
+
+      .slogan {
+        @include no-spacing;
+        margin-top: 2.666666666666667vw;
+        font-size: 4.266666666666667vw;
+        font-weight: 400;
+        line-height: 1.4;
+        text-transform: capitalize;
+        @media (orientation: landscape) {
+          font-size: 2.39880059970015vw;
+          margin-top: 0.7496251874062968vw;
+        }
+
+        @media (min-width: $breakpoints-xl) {
+          font-size: 1.2611665790856543vw;
+          margin-top: 0.7882291119285338vw;
+        }
+      }
+
+      .btn {
+        @include no-spacing;
+        display: inline-block;
+        padding: 2.1333333333333333vw 8vw;
+        margin-top: 5.333333333333334vw;
+        border: 1px solid $c-blue;
+        border-radius: 999px;
+        background-color: transparent;
+        color: $c-blue;
+        text-transform: uppercase;
+        text-decoration: none;
+        outline: none;
+        transition: $tst;
+
+        @media (orientation: landscape) {
+          margin-top: 1.4992503748125936vw;
+          padding: 0.5997001499250375vw 2.2488755622188905vw;
+        }
+
+        @media (min-width: $breakpoints-xl) {
+          margin-top: 1.0509721492380453vw;
+          font-size: 0.8407777193904361vw;
+          padding: 0.42038885969521805vw 1.5764582238570677vw;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: $c-blue;
+          color: $c-white;
+        }
+      }
+    }
+  }
+}

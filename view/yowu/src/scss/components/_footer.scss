@@ -1,0 +1,117 @@
+.c-footer {
+  padding-top: 8vw;
+  padding-bottom: 2.666666666666667vw;
+  background-color: $c-dark;
+  color: $c-white;
+  text-align: center;
+  line-height: 1.75;
+
+  @media (orientation: landscape) {
+    padding-top: 4.497751124437781vw;
+    padding-bottom: 1.4992503748125936vw;
+  }
+
+  @media (min-width: $breakpoints-xl) {
+    padding-top: 1.5764582238570677vw;
+    padding-bottom: 0.5254860746190226vw;
+  }
+
+  .brand {
+    img {
+      width: 53.333333333333336vw;
+      @media (orientation: landscape) {
+        width: 29.985007496251875vw;
+      }
+      @media (min-width: $breakpoints-xl) {
+        width: 10.509721492380452vw;
+      }
+    }
+  }
+
+  .nav {
+    @include no-spacing;
+    @include flex-center;
+
+    .nav-item {
+      position: relative;
+      list-style: none;
+      padding: 0 2.666666666666667vw;
+      line-height: 1;
+      margin-top: 4vw;
+      @media (orientation: landscape) {
+        padding: 0 1.4992503748125936vw;
+        margin-top: 2.2488755622188905vw;
+      }
+      @media (min-width: $breakpoints-xl) {
+        padding: 0 0.5254860746190226vw;
+        margin-top: 0.7882291119285338vw;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+        width: 1px;
+        background-color: $c-white;
+      }
+
+      &:last-of-type::after {
+        display: none;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: $c-white;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 8vw;
+    @media (orientation: landscape) {
+      margin-top: 4.497751124437781vw;
+    }
+    @media (min-width: $breakpoints-xl) {
+      margin-top: 1.5764582238570677vw;
+    }
+
+    a {
+      width: 8vw;
+      height: 8vw;
+      color: $c-white;
+      text-decoration: none;
+      margin: 0 4vw;
+      @media (orientation: landscape) {
+        width: 4.497751124437781vw;
+        height: 4.497751124437781vw;
+        margin: 0 2.2488755622188905vw;
+      }
+
+      @media (min-width: $breakpoints-xl) {
+        width: 1.5764582238570677vw;
+        height: 1.5764582238570677vw;
+        margin: 0 0.7882291119285338vw;
+      }
+
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .contact {
+    margin-top: 5.333333333333334vw;
+    @media (orientation: landscape) {
+      margin-top: 2.998500749625187vw;
+    }
+    @media (min-width: $breakpoints-xl) {
+      margin-top: 1.0509721492380453vw;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.c-fan_hero {
+  .item {
+    outline: none;
+  }
+
+  .carousel-hero {
+    .slick-dots {
+      @include no-spacing;
+      position: absolute;
+      right: 15.5vw;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+
+      li {
+        list-style: none;
+        padding: 0.3941145559642669vw 0;
+
+        button {
+          @include no-spacing;
+          position: relative;
+          outline: none;
+          display: block;
+          width: 1.5764582238570677vw;
+          height: 1.5764582238570677vw;
+          background-color: transparent;
+          border: 1px solid transparent;
+          border-radius: 50%;
+          font-size: 0;
+          cursor: pointer;
+          transition: $tst;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: 0.5780346820809248vw;
+            height: 0.5780346820809248vw;
+            border-radius: 50%;
+            background-color: $c-white;
+          }
+        }
+
+        &.slick-active {
+          button {
+            border-color: $c-white;
+          }
+        }
+      }
+    }
+  }
+}
