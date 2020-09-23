@@ -146,9 +146,9 @@
     top: 50%;
     transform: translateY(-50%);
     right: 0;
-    width: 17.395833333333332vw;
-    height: 33.958333333333336vw;
-    padding: 9.895833333333332vw 0 0 2.1875vw;
+    width: 10.4375vw;
+    height: 20.375vw;
+    padding: 5.9375vw 0 0 1.3125vw;
     background-image: url(../images/pc/bg-fix_right.png);
     background-size: 100% 100%;
 
@@ -159,11 +159,11 @@
     .btn-group {
       .btn {
         display: block;
-        width: 14.531250000000002vw;
-        height: 3.5416666666666665vw;
+        width: 8.71875vw;
+        height: 2.125vw;
         background-size: 100% 100%;
         transition: $tst;
-        margin-bottom: 0.5208333333333333vw;
+        margin-bottom: 0.3125vw;
 
         &.app-store {
           background-image: url(../images/pc/btn-01.png);

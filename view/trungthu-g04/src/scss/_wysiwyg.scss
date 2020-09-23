@@ -246,13 +246,6 @@ body {
   display: none;
 }
 
-
-
-
-
-
-
-
 .loading-page {
   position: fixed;
   z-index: 999999;
@@ -263,7 +256,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s ease-in-out;
+  transition: all 3s ease-in-out;
 
   .over {
     position: absolute;
@@ -328,7 +321,7 @@ body {
 
   &.animation-end {
     opacity: 0;
-    transform: scale(4);
+    transform: scale(5);
   }
 }
 

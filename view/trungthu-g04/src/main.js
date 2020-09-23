@@ -123,6 +123,6 @@ $(document).ready(function () {
 
     setTimeout(function(){
       loadingPage.remove();
-    }, 1000);
+    }, 3000);
   }
 });
