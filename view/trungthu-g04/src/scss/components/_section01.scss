@@ -1,0 +1,42 @@
+.c-section-1 {
+  position: relative;
+  z-index: 3;
+  height: 126.5625vw;
+  
+  @media (min-width: $breakpoints-xl) {
+    height: 47vw;
+  }
+
+  .logo-game {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64.84375vw;
+    height: 44.0625vw;
+    background-image: url(../images/logo-game.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 20.104166666666668vw;
+      height: 12.447916666666666vw;
+    }
+  }
+
+  .text {
+    position: absolute;
+    top: 36vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 93.28125vw;
+    height: 36.875vw;
+    background-image: url(../images/text-01.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 31.093749999999996vw;
+      height: 11.979166666666668vw;
+      top: 24vh;
+    }
+  }
+}

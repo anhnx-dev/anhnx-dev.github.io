@@ -1,0 +1,98 @@
+.c-section-2 {
+  position: relative;
+  width: 100%;
+  height: 139.0625vw;
+
+  @media (min-width: $breakpoints-xl) {
+    height: 46.2293vw;
+  }
+
+  .heading {
+    position: absolute;
+    width: 35.15625vw;
+    height: 7.656250000000001vw;
+    margin: 0;
+    background-image: url(../images/text-02.png);
+    background-size: 100% 100%;
+    left: 50%;
+    top: 4.5vw;
+    transform: translateX(-50%);
+
+    @media (min-width: $breakpoints-xl) {
+      width: 11.71875vw;
+      height: 2.5520833333333335vw;
+      left: 52%;
+      top: 3.5vw;
+    }
+  }
+
+  .text {
+    position: absolute;
+    width: 73.4375vw;
+    height: 40.3125vw;
+    margin: 0;
+    background-image: url(../images/text-03.png);
+    background-size: 100% 100%;
+    left: 50%;
+    top: 11.5vh;
+    transform: translateX(-50%);
+
+    @media (min-width: $breakpoints-xl) {
+      transform: none;
+      left: 52vw;
+      top: 10vw;
+      width: 24.53125vw;
+      height: 14.739583333333334vw;
+      background-image: url(../images/pc/text-01.png);
+    }
+  }
+
+  .btn {
+    position: absolute;
+    z-index: 2;
+    width: 24.84375vw;
+    height: 25.46875vw;
+    top: 56vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../images/btn-02.png);
+    background-size: cover;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+
+    @media (min-width: $breakpoints-xl) {
+      transform: none;
+      width: 8.28125vw;
+      height: 8.489583333333334vw;
+      top: 27vw;
+      left: 62vw;
+      transition: $tst;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .qua {
+    position: absolute;
+    width: 73.4375vw;
+    height: 51.09375000000001vw;
+    margin: 0;
+    background-image: url(../images/phan-thuong.png);
+    background-size: 100% 100%;
+    left: 50%;
+    top: 83.5vw;
+    transform: translateX(-50%);
+
+    @media (min-width: $breakpoints-xl) {
+      transform: none;
+      background-image: url(../images/pc/qua.png);
+      width: 37.291666666666664vw;
+      height: 30.729166666666668vw;
+      left: 12vw;
+      top: 4vw;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+.c-header {
+
+  .topbar {
+    position: relative;
+    z-index: 9;
+    background-image: url(../images/bg-header.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 7.968749999999999vw;
+      top: 100%;
+      transform: translateY(-14%);
+      left: 0;
+      background-image: url(../images/boder-01.png);
+      background-size: 100% 100%;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      display: none;
+    }
+
+    .branb {
+      width: 14.375vw;
+      height: 14.375vw;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .btn-taigame {
+      width: 43.59375vw;
+      height: 11.09375vw;
+      background-image: url(../images/btn-01.png);
+      background-size: cover;
+    }
+
+    .nav {
+      padding: 0;
+      margin: 0;
+      display: flex;
+
+      .nav-item {
+        list-style: none;
+        margin: 0 10px;
+
+        .nav-link {
+          display: block;
+          text-decoration: none;
+
+          .icon {
+            display: block;
+            background-size: 100%;
+
+            &.icon-home {
+              width: 9.688vw;
+              height: 9.376vw;
+              background-image: url(../images/ic-home.png);
+            }
+
+            &.icon-facebook {
+              width: 8.907vw;
+              height: 8.907vw;
+              background-image: url(../images/ic-facebook.png);
+            }
+          }
+        }
+      }
+    }
+
+    .logo-18 {
+      width: 12.814vw;
+      height: 12.814vw;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .fix-link {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: 26vw;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 0.9375vw;
+      color: #ce4e41;
+      font-weight: bold;
+      outline: none;
+      padding: 0.78125vw;
+
+      &:nth-child(1)::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate3d(-50%, -50%, 0);
+        height: 0.9375vw;
+        width: 2px;
+        background-color: #ce4e41;
+      }
+    }
+  }
+
+  .fix-18 {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 5.5vw;
+    left: 0;
+
+    img {
+      width: 8.4375vw;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+    }
+  }
+
+  .download-game {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 17.395833333333332vw;
+    height: 33.958333333333336vw;
+    padding: 9.895833333333332vw 0 0 2.1875vw;
+    background-image: url(../images/pc/bg-fix_right.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+    }
+
+    .btn-group {
+      .btn {
+        display: block;
+        width: 14.531250000000002vw;
+        height: 3.5416666666666665vw;
+        background-size: 100% 100%;
+        transition: $tst;
+        margin-bottom: 0.5208333333333333vw;
+
+        &.app-store {
+          background-image: url(../images/pc/btn-01.png);
+
+          &:hover {
+            background-image: url(../images/pc/btn-active-01.png);
+          }
+        }
+
+        &.google-play {
+          background-image: url(../images/pc/btn-02.png);
+
+          &:hover {
+            background-image: url(../images/pc/btn-active-02.png);
+          }
+        }
+
+        &.apk {
+          background-image: url(../images/pc/btn-03.png);
+
+          &:hover {
+            background-image: url(../images/pc/btn-active-03.png);
+          }
+        }
+      }
+    }
+  }
+}

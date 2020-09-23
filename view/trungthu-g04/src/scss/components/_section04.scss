@@ -1,0 +1,107 @@
+.c-section-4 {
+  position: relative;
+  height: 128.4vw;
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: $breakpoints-xl) {
+    height: 47.6vw;
+  }
+
+  .text {
+    position: absolute;
+    top: 23vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 93.28125vw;
+    height: 36.875vw;
+    background-image: url(../images/text-01.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 31.093749999999996vw;
+      height: 11.979166666666668vw;
+      top: 17vh;
+    }
+  }
+
+  .box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10vw;
+
+    @media (min-width: $breakpoints-xl) {
+      top: 25vw;
+    }
+
+    .branb {
+      display: block;
+      width: 25.3125vw;
+      height: 25.3125vw;
+      margin-left: 50%;
+      transform: translateX(-50%);
+
+      @media (min-width: $breakpoints-xl) {
+        width: 8.4375vw;
+        height: 8.4375vw;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .search {
+      margin-top: 3.125vw;
+      width: 64.53125vw;
+      height: 13.125vw;
+
+      @media (min-width: $breakpoints-xl) {
+        width: 21.458333333333332vw;
+        height: 4.375vw;
+        margin-top: 1.0416666666666665vw;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .btn-group {
+      margin-top: 3.90625vw;
+      display: flex;
+      justify-content: space-around;
+      @media (min-width: $breakpoints-xl) {
+        margin-top: 1.3020833333333335vw;
+      }
+
+      .btn {
+        display: block;
+        width: 26.5625vw;
+        height: 7.968749999999999vw;
+        text-decoration: none;
+        outline: none;
+        background-size: 100% 100%;
+        transition: $tst;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        @media (min-width: $breakpoints-xl) {
+          width: 8.854166666666668vw;
+          height: 2.65625vw;
+        }
+
+        &.google-play {
+          background-image: url(../images/btn-03.png);
+        }
+
+        &.app-store {
+          background-image: url(../images/btn-04.png);
+        }
+      }
+    }
+  }
+}
