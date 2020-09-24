@@ -6,25 +6,6 @@
   font-size: 2.5vw;
   padding: 3.90625vw 3.90625vw 1px 3.90625vw;
 
-  .imgs {
-    display: none;
-    @media (min-width: $breakpoints-xl) {
-      display: block;
-      .logo-gzone {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 25vw;
-      }
-      .logo-18 {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 75vw;
-      }
-    }
-  }
-
   @media (min-width: $breakpoints-xl) {
     font-size: 0.8333333333333334vw;
     padding: 1.5625vw 1.5625vw 1px 1.5625vw;
