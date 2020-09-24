@@ -1,0 +1,91 @@
+.c-btn_group-02 {
+  margin-left: -3.125vw;
+  margin-right: -3.125vw;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $breakpoints-xl) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .btn {
+    width: 50%;
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+    margin-top: 2.8125vw;
+
+    @media (min-width: $breakpoints-xl) {
+      margin-top: 0.8333333333333334vw;
+      padding-left: 0;
+      padding: 0;
+      margin-top: 0;
+    }
+
+    &:nth-child(2n + 1) {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    a {
+      display: block;
+      width: 31.40625vw;
+      height: 35.15625vw;
+      background-size: 100% 100%;
+      transition: $transition;
+
+      @media (min-width: $breakpoints-xl) {
+        width: 100%;
+        height: 11.71875vw;
+      }
+    }
+
+    &.btn-01 a {
+      background-image: url(../images/btn-05.png);
+
+      @media (min-width: $breakpoints-xl) {
+        background-image: url(../images/pc/btn-08.png);
+
+        &:hover {
+          background-image: url(../images/pc/btn-active-08.png);
+        }
+      }
+    }
+
+    &.btn-02 a {
+      background-image: url(../images/btn-06.png);
+
+      @media (min-width: $breakpoints-xl) {
+        background-image: url(../images/pc/btn-09.png);
+
+        &:hover {
+          background-image: url(../images/pc/btn-active-09.png);
+        }
+      }
+    }
+
+    &.btn-03 a {
+      background-image: url(../images/btn-07.png);
+
+      @media (min-width: $breakpoints-xl) {
+        background-image: url(../images/pc/btn-10.png);
+
+        &:hover {
+          background-image: url(../images/pc/btn-active-10.png);
+        }
+      }
+    }
+
+    &.btn-04 a {
+      background-image: url(../images/btn-08.png);
+
+      @media (min-width: $breakpoints-xl) {
+        background-image: url(../images/pc/btn-11.png);
+
+        &:hover {
+          background-image: url(../images/pc/btn-active-11.png);
+        }
+      }
+    }
+  }
+}

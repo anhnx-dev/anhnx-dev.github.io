@@ -1,0 +1,75 @@
+.c-carousel {
+  margin-left: 6.25vw;
+  margin-right: 6.25vw;
+  margin-top: 4.6875vw;
+  border: 1px solid #dbc79f;
+
+  @media (min-width: $breakpoints-xl) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .item {
+    outline: none;
+
+    a {
+      display: block;
+      position: relative;
+      outline: none;
+
+      &::before {
+        content: '';
+        display: block;
+        padding-bottom: 90%;
+      }
+
+      img {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      list-style: none;
+      margin: 0 4px;
+
+      button {
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: #fff;
+        border: 0;
+        transition: $transition;
+        outline: none;
+      }
+
+      &.slick-active {
+        button {
+          width: 37px;
+          border-radius: 999px;
+          background: #ffde00;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.c-hero {
+  position: relative;
+  height: 147.5vw;
+  overflow: hidden;
+
+  @media (min-width: $breakpoints-xl) {
+    height: 58.28125vw;
+  }
+
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/hero.png);
+    background-size: 100% 100%;
+    pointer-events: none;
+
+    @media (min-width: $breakpoints-xl) {
+      height: calc(100% - 3.4895833333333335vw);
+      background-image: url(../images/pc/hero.png);
+      background-size: cover;
+      background-position: top;
+    }
+  }
+
+  .play {
+    position: absolute;
+    z-index: 3;
+    width: 14.0625vw;
+    height: 14.0625vw;
+    top: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../images/play-02.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      width: 4.6875vw;
+      height: 4.6875vw;
+      transform: none;
+      left: 61.5vw;
+      top: 35vw;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 15.78125vw;
+      width: 15.78125vw;
+      background-image: url(../images/play-01.png);
+      background-size: 100% 100%;
+      transform: translate3d(-50%, -50%, 0);
+      animation: infinite play 2s ease-in-out;
+
+      @media (min-width: $breakpoints-xl) {
+        width: 5.260416666666667vw;
+        height: 5.260416666666667vw;
+      }
+    }
+  }
+
+  .slogan {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 74.0625vw;
+    background-image: url(../images/slogan.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: initial;
+      top: 25vw;
+      width: 37.5vw;
+      height: 24.895833333333332vw;
+      background-image: url(../images/pc/text-01.png);
+      pointer-events: none;
+    }
+  }
+}
+
+@keyframes play {
+  from {
+    transform: translate3d(-50%, -50%, 0) rotate(0);
+  }
+
+  to {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}

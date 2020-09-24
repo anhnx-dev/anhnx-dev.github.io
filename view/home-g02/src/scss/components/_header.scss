@@ -1,0 +1,180 @@
+.c-header {
+  .menu-fix {
+    position: absolute;
+    z-index: 999;
+    top: 13.5vw;
+    right: 3px;
+    padding: 11.40625vw 5vw 0 5vw;
+    width: 35.625vw;
+    height: 68.28125vw;
+    background-image: url(../images/bg-fix.png);
+    background-size: 100% 100%;
+    border-radius: 1.4vw;
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    pointer-events: none;
+    transition: $transition;
+
+    @media (min-width: $breakpoints-xl) {
+      display: none;
+    }
+
+    .link-item {
+      display: block;
+      padding: 2.5vw 0;
+      flex-wrap: wrap;
+      text-decoration: none;
+      color: $c-white;
+      border-top: 1px solid #000;
+      font-size: 3.125vw;
+      color: #392000;
+      text-align: center;
+      font-weight: 700;
+
+      &:nth-child(1) {
+        border-top: 0;
+      }
+    }
+  }
+
+  .fix-18 {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 5vw;
+    left: 0;
+
+    img {
+      width: 6.822916666666666vw;
+      height: auto;
+    }
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+    }
+  }
+
+  .download-game {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 9.375vw;
+    right: 0;
+    width: 11.875vw;
+    height: 25.885416666666668vw;
+    background-image: url(../images/bg-fix.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+    }
+
+    .branb {
+      padding: 4.6875vw 2.1875vw 0 2.1875vw;
+
+      img {
+        display: block;
+        width: 7.447916666666667vw;
+      }
+    }
+
+    .btn-group {
+      padding: 0.5208333333333333vw 1.1458333333333333vw 0 1.1458333333333333vw;
+
+      .btn {
+        display: block;
+        margin-top: 0.5208333333333333vw;
+        width: 9.583333333333334vw;
+        height: 3.125vw;
+        background-size: 100% 100%;
+        transition: $transition;
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        &.btn-01 {
+          background-image: url(../images/pc/btn-01.png);
+        }
+
+        &.btn-02 {
+          background-image: url(../images/pc/btn-02.png);
+        }
+
+        &.btn-03 {
+          background-image: url(../images/pc/btn-03.png);
+        }
+      }
+    }
+  }
+
+  .navbar {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #f9cfac;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $breakpoints-xl) {
+      display: flex;
+    }
+
+    .nav {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      width: 40%;
+      &.nav-left {
+        justify-content: flex-end;
+      }
+      .nav-item {
+        position: relative;
+        list-style: none;
+        &::after {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 1px;
+          background-image: linear-gradient( transparent, #ffe09c, transparent);
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+        }
+        &:last-of-type::after {
+          display: none;
+        }
+        .nav-link {
+          display: inline-block;
+          color: #ffe09c;
+          font-size: 0.9375vw;
+          font-weight: bold;
+          padding: 0.7291666666666666vw 3.0208333333333335vw;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .branb {
+      position: relative;
+      width: 16.197916666666668vw;
+      height: 3.4895833333333335vw;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16.197916666666668vw;
+        height: 12.864583333333332vw;
+      }
+    }
+  }
+}
+
+.menu-fix_active .c-header {
+  .menu-fix {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

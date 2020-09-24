@@ -1,0 +1,135 @@
+.c-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 1.5625vw 3.125vw;
+  border-bottom: 1px solid #f9cfac;
+
+  @media (min-width: $breakpoints-xl) {
+    display: none;
+  }
+
+  .branb {
+    height: 13.90625vw;
+    display: flex;
+    align-items: center;
+    color: $c-white;
+    text-decoration: none;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    h1 {
+      margin: 0 0 0 2.3437vw;
+      font-size: 3.125vw;
+      color: #ffe09c;
+      text-transform: uppercase;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20.9375vw;
+      height: 9.375vw;
+      margin: 0 1.40625vw;
+      background-size: 100% 100%;
+      font-size: 3.7594vw;
+      text-decoration: none;
+      font-weight: bold;
+      color: $c-white;
+      transition: $transition;
+
+      &.btn-app-store {
+        width: 28.749999999999996vw;
+        background-image: url(../images/btn-09.png);
+      }
+
+      &.btn-google-play {
+        background-image: url(../images/btn-10.png);
+      }
+
+      &.btn-apk {
+        background-image: url(../images/btn-11.png);
+      }
+
+      .icon {
+        margin-right: 5px;
+
+        &.icon-apple,
+        &.icon-google-play {
+          transform: translateY(10%);
+        }
+
+        &.icon-android {
+          transform: translateY(16%);
+        }
+
+        svg {
+          height: 4.688vw;
+        }
+      }
+
+    }
+  }
+
+  .nav-trigger {
+    position: relative;
+    width: 8.4375vw;
+    height: 6.406249999999999vw;
+    cursor: pointer;
+
+    .bar {
+      position: absolute;
+      width: 100%;
+      height: 1.09375vw;
+      background: #ffe09c;
+      transition: $transition;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+      }
+
+      &:nth-child(3) {
+        top: 5.3125vw;
+      }
+    }
+  }
+}
+
+.menu-fix_active {
+  .c-topbar {
+    .nav-trigger {
+      .bar {
+        &:nth-child(1) {
+          top: 1.875vw;
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          display: none;
+          transform: translate3d(0, -50%, 0);
+        }
+
+        &:nth-child(3) {
+          top: 1.875vw;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

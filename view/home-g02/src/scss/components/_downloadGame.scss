@@ -1,0 +1,126 @@
+.c-download_game {
+  margin-left: -0.78125vw;
+  margin-right: -0.78125vw;
+
+  @media (min-width: $breakpoints-xl) {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    padding-top: 1px;
+  }
+
+  .logo {
+    display: none;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10vw;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+      margin-top: 5.833333333333333vw;
+      background: #44342b;
+      border-radius: 15px;
+      overflow: hidden;
+      padding-top: 4.166666666666666vw;
+    }
+
+    .btn {
+      width: 50%;
+      padding-left: 0.78125vw;
+      padding-right: 0.78125vw;
+      margin-top: 2.8125vw;
+
+      @media (min-width: $breakpoints-xl) {
+        margin-top: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 12.5vw;
+          height: 1px;
+          background: #f6c772;
+          bottom: 0 ;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &:last-of-type::after {
+          display: none;
+        }
+        &:hover {
+          background: #f6c772;
+          .wrapper {
+            color: #44342b;
+          }
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #44342b;
+        color: #f6c772;
+        text-decoration: none;
+        line-height: 1.2;
+        min-height: 14.0625vw;
+        @media (min-width: $breakpoints-xl) {
+          min-height: 4.895833333333333vw;
+          background: transparent;
+        }
+
+        .icon {
+          margin-right: 3.125vw;
+          @media (min-width: $breakpoints-xl) {
+            margin-right: 1.0416666666666665vw;
+          }
+
+          svg {
+            width: 7.03125vw;
+            @media (min-width: $breakpoints-xl) {
+              width: 2.083333333333333vw;
+            }
+          }
+        }
+
+        .info {
+          min-width: 18.75vw;
+          @media (min-width: $breakpoints-xl) {
+            min-width: 7.291666666666667vw;
+          }
+
+          .line-1 {
+            font-size: 2.8125vw;
+            @media (min-width: $breakpoints-xl) {
+              font-size: 0.9375vw;
+            }
+          }
+
+          .line-2 {
+            font-size: 3.90625vw;
+            font-weight: bold;
+            @media (min-width: $breakpoints-xl) {
+              font-size: 1.3020833333333335vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
