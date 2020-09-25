@@ -18,8 +18,6 @@
   transition: all 3s ease-in-out
 }
 
-
-
 .c-loading .over {
   position: absolute;
   z-index: 1;
