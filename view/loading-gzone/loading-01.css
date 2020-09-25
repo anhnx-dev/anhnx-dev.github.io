@@ -1,0 +1,120 @@
+.c-loading {
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out
+}
+
+
+
+.c-loading .over {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e1e1e1;
+  pointer-events: none
+}
+
+.c-loading .loading {
+  position: relative;
+  z-index: 2;
+  height: 18.51851851851852vh;
+  width: 18.51851851851852vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 0.4629629629629629vw solid rgba(255, 0, 0, 0.5);
+  -webkit-animation: anim 2s linear infinite;
+  animation: anim 2s linear infinite
+}
+
+.c-loading .loading::before,
+.c-loading .loading::after {
+  content: '';
+  width: 18.51851851851852vh;
+  height: 18.51851851851852vh;
+  position: absolute;
+  left: 0px;
+  top: -0.4629629629629629vw;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50%
+}
+
+.c-loading .loading::before {
+  border-top: 0.4629629629629629vw solid rgba(0, 255, 0, 0.5);
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg)
+}
+
+.c-loading .loading::after {
+  border-top: 0.4629629629629629vw solid rgba(0, 0, 255, 0.5);
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg)
+}
+
+.c-loading .loading .wrapper {
+  display: block;
+  text-align: center;
+  -webkit-animation: anim2 2s linear infinite;
+  animation: anim2 2s linear infinite
+}
+
+.c-loading .loading .wrapper img {
+  display: block;
+  width: 9.25925925925926vh;
+  height: auto;
+}
+
+@-webkit-keyframes anim {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes anim {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}
+
+@-webkit-keyframes anim2 {
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg)
+  }
+}
+
+@keyframes anim2 {
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg)
+  }
+}
