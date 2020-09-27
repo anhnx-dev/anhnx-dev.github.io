@@ -1,0 +1,103 @@
+.c-user_info {
+  position: relative;
+  height: 100%;
+  padding-top: 17.333333333333336vw;
+
+  .wrapper {
+    position: relative;
+    height: 100%;
+    background: $c-white;
+    border-radius: 4vw 4vw 0 0;
+    padding-top: 10.933333333333334vw;
+    padding-left: 10.666666666666668vw;
+    padding-right: 10.666666666666668vw;
+  }
+
+  .heading {
+    position: absolute;
+    top: 0;
+    width: 82.66666666666667%;
+    transform: translateY(-50%);
+    background-color: $c-white;
+    border-radius: 5vw;
+    box-shadow: 1px 5px 2px 0 rgba(0, 0, 0, .1);
+    color: #fa5f24;
+    font-weight: 500;
+    font-size: 6.666666666666667vw;
+    text-transform: uppercase;
+    padding: 2.5vw 15px;
+    text-align: center;
+  }
+  .form {
+    
+    .form-group {
+      padding: 2vw 0;
+      border-top: 1px solid #cacaca;
+      &:nth-child(1) {
+        border-top: 0;
+      }
+      .title {
+        font-size: 5.333333333333334vw;
+        font-weight: 700;
+      }
+      .form-control {
+        display: block;
+        width: 100%;
+        border: 0;
+        background: transparent;
+        color: #008ac4;
+        font-size: 4.666666666666667vw;
+        padding: 2vw 0;
+        transition: $tst;
+        pointer-events: none;
+      }
+    }
+
+    .btn-group {
+      position: relative;
+      margin-top: 4vw;
+      display: flex;
+      justify-content: space-between;
+      .btn {
+        font-size: 5.333333333333334vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 999px;
+        color: $c-white;
+        width: 38.13333333333333vw;
+        padding: 1.7333333333333332vw 0;
+        &.btn-update {
+          background-color: #2eade2;
+        }
+        &.btn-back {
+          background-color: #fa5f24;
+        }
+        &.btn-save {
+          background-color: #2eade2;
+          display: none;
+        }
+      }
+    }
+
+    &.active {
+      .form-group {
+        .form-control {
+          background-color: #cacaca;
+          padding: 2vw;
+          color: $c-white;
+          pointer-events: auto;
+        }
+      }
+      .btn-group {
+        .btn-update {
+          display: none;
+        }
+        .btn-save {
+          background-color: #2eade2;
+          display: block;
+        }
+      }
+    }
+  }
+}

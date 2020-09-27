@@ -1,0 +1,26 @@
+// Font family
+$ff-body: 'Roboto',
+sans-serif;
+$ff-title: 'Roboto Condensed',
+sans-serif;
+
+$ff-logo: 'Shadows Into Light',
+cursive;
+$c-logo: #f08e21;
+
+// Color
+$c-black: #000;
+$c-white: #fff;
+$c-dark: #313131;
+$c-blue: #98b6e4;
+$c-gray: #666;
+$c-info: #17a2b8;
+$c-light: #f5f5f5;
+$c-yellow: rgba(255, 212, 36, .9);
+$c-orange: #ee4d2d;
+
+
+$tst: all .3s ease-in-out;
+
+// Extra large devices (large desktops, 1200px and up)
+$breakpoints-xl: 1200px;

@@ -1,0 +1,100 @@
+.c-ratings {
+  position: relative;
+  height: 100%;
+  padding-top: 17.333333333333336vw;
+
+  .wrapper {
+    position: relative;
+    height: 100%;
+    background: $c-white;
+    border-radius: 4vw 4vw 0 0;
+    padding-top: 14vw;
+    
+  }
+
+  .heading {
+    position: absolute;
+    top: 0;
+    width: 82.66666666666667%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    background-color: $c-white;
+    border-radius: 5vw;
+    box-shadow: 1px 5px 2px 0 rgba(0, 0, 0, .1);
+    color: #fa5f24;
+    font-weight: 500;
+    font-size: 6.666666666666667vw;
+    text-transform: uppercase;
+    padding: 2.5vw 15px;
+    text-align: center;
+  }
+
+  .group-item {
+    @include no-spacing;
+    overflow-y: auto;
+    position: relative;
+    padding-left: 6.666666666666667vw;
+    padding-right: 6.666666666666667vw;
+    height: 100%;
+    .item {
+      display: flex;
+      align-items: center;
+      position: relative;
+      list-style: none;
+      margin-bottom: 6.666666666666667vw;
+      padding-left: 20.666666666666668vw;
+      min-height: 16vw;
+      
+      .avatar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .info {
+        padding-right: 11.333333333333332vw;
+        .name {
+          font-size: 5.333333333333334vw;
+          font-weight: 500;
+        }
+        .content {
+          font-size: 4.666666666666667vw;
+          color: #008ac4;
+        }
+        .number  {
+          @include flex-center;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 6.666666666666667vw;
+          border-radius: 50%;
+          font-weight: 500;
+          line-height: 1;
+          min-width: 10.666666666666668vw;
+          height: 10.666666666666668vw;
+          padding: 0 5px;
+          color: #cacaca;
+          border: 0.6666666666666667vw solid #cacaca;
+          &.statu-1 {
+            color: $c-white;
+            border-color: #ffc800;
+            background-color: #ffc800;
+          }
+          &.statu-2 {
+            color: #ffc800;
+            border-color: #ffc800;
+          }
+        }
+      }
+    }
+  }
+  
+}

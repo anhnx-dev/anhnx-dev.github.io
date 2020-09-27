@@ -1,0 +1,75 @@
+.c-user {
+  position: relative;
+  height: 100%;
+  padding-top: 25.333333333333336vw;
+  .wrapper {
+    position: relative;
+    height: 100%;
+    background: $c-white;
+    border-radius: 4vw 4vw 0 0;
+    padding-top: 28.666666666666668vw;
+    .info {
+      position: absolute;
+      top: -16.53333333333333vw;
+      left: 50%;
+      transform: translateX(-50%);
+      .avatar {
+        width: 33.06666666666666vw;
+        height: 33.06666666666666vw;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .name {
+        margin-top: 4vw;
+        text-align: center;
+        font-size: 5.333333333333334vw;
+        color: #fa5f24;
+        font-weight: 500;
+      }
+    }
+    .nav {
+      @include no-spacing;
+      padding: 0 6.666666666666667vw;
+      .nav-item {
+        list-style: none;
+        padding: 4vw 0;
+        border-bottom: 1px solid #a9a9a9;
+        .nav-link {
+          position: relative;
+          display: block;
+          width: 100%;
+          text-decoration: none;
+          color: $c-dark;
+          font-size: 5.333333333333334vw;
+          font-weight: 500;
+          .icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            svg {
+              display: block;
+              width: 5.333333333333334vw;
+              color: #a9a9a9;
+            }
+          }
+          .number {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            border-radius: 1vw;
+            background-color: #fa5f24;
+            color: $c-white;
+            padding: 0 2.3333333333333335vw;
+          }
+        }
+      }
+    }
+  }
+}
