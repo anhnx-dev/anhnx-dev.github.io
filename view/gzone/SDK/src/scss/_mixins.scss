@@ -1,0 +1,16 @@
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin clear {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+@mixin no-spacing {
+	margin: 0;
+	padding: 0;
+}
