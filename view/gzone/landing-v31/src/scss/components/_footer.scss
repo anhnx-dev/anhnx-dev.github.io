@@ -1,0 +1,28 @@
+.footer {
+  position: relative;
+  background: #1a1a1a;
+  padding: 6.953125vw 2.34375vw;
+  @media (min-width: $breakpoints-xl) {
+    padding: 3.802083333333333vw;
+  }
+
+  .logo-18 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8.125vw;
+    width: 9.21875vw;
+    height: 9.375vw;
+    @media (min-width: $breakpoints-xl) {
+      display: none;
+    }
+  }
+
+  .info {
+    font-size: 1.7249vw;
+    text-align: center;
+    @media (min-width: $breakpoints-xl) {
+      font-size: 1.5625vw;
+    }
+  }
+}

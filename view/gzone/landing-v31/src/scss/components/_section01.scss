@@ -1,0 +1,46 @@
+.c-section-1 {
+  position: relative;
+  height: 96.09375vw;
+  
+  @media (min-width: $breakpoints-xl) {
+    height: 80vw;
+  }
+
+  .group {
+    display: none;
+    position: absolute;
+    width: 25.416666666666664vw;
+    height: 7.135416666666666vw;
+    top: 39.0625vw;
+    right: 9.114583333333332vw;
+    background: url(../images/pc/tai.png);
+    background-size: 100% 100%;
+
+    @media (min-width: $breakpoints-xl) {
+      display: block;
+    }
+    a {
+      position: absolute;
+      text-decoration: none;
+      outline: none;
+      &:nth-child(1) {
+        width: 7.8125vw;
+        height: 2.604166666666667vw;
+        top: 0.8333333333333334vw;
+        left: 9.635416666666668vw;
+      }
+      &:nth-child(2) {
+        width: 7.8125vw;
+        height: 2.604166666666667vw;
+        top: 3.90625vw;
+        left: 9.635416666666668vw;
+      }
+      &:nth-child(3) {
+        width: 5.885416666666667vw;
+        height: 5.885416666666667vw;
+        top: 0.8333333333333334vw;
+        left: 17.96875vw;
+      }
+    }
+  }
+}

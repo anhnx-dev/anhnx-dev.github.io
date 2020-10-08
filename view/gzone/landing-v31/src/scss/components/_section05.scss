@@ -1,0 +1,77 @@
+.c-section-5 {
+  position: relative;
+  height: 94.4vw;
+  width: 100%;
+  overflow: hidden;
+
+
+  @media (min-width: $breakpoints-xl) {
+    height: 69.6vw;
+  }
+
+
+  .over {
+    position: absolute;
+    z-index: 2;
+    top: 17vw;
+    left: 0;
+    width: 98.90625vw;
+    height: 50.78125vw;
+    pointer-events: none;
+    background-image: url(../images/khung.png);
+    background-size: 100% 100%;
+    @media (min-width: $breakpoints-xl) {
+      width: 82.13541666666667vw;
+      height: 40.052083333333336vw;
+      left: 7.083333333333333vw;
+      background-image: url(../images/pc/khung.png);
+    }
+  }
+
+  .dac-sac {
+    position: absolute;
+    width: 74.375vw;
+    left: 13.28125vw;
+    top: 28.125vw;
+    @media (min-width: $breakpoints-xl) {
+      width: 58.64583333333333vw;
+      left: 20.625vw;
+      top: 25.9vw;
+    }
+
+    .slick-arrow {
+      display: none;
+      @media (min-width: $breakpoints-xl) {
+        display: block;
+      }
+      &.slick-prev {
+        left: -12.5vw;
+      }
+      &.slick-next {
+        right: -12.5vw;
+      }
+    }
+    .item {
+      outline: none;
+      a {
+        position: relative;
+        display: block;
+        outline: none;
+        &::before {
+          content: '';
+          display: block;
+          padding-bottom: 43.49%;
+        }
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+}

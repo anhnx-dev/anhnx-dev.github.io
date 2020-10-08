@@ -1,0 +1,47 @@
+.c-section-2 {
+  position: relative;
+  width: 100%;
+  height: 85.9375vw;
+  padding-top: 15vw;
+
+  @media (min-width: $breakpoints-xl) {
+    height: 55vw;
+    padding-top: 8vw;
+  }
+
+  .nhan-vat {
+    @media (min-width: $breakpoints-xl) {
+      width: 75.52083333333334vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .item {
+      padding-left: 4vw;
+      padding-right: 4vw;
+
+      @media (min-width: $breakpoints-xl) {
+        padding: 0;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .mobile {
+        @media (min-width: $breakpoints-xl) {
+          display: none;
+        }
+      }
+
+      .pc {
+        display: none;
+
+        @media (min-width: $breakpoints-xl) {
+          display: block;
+        }
+      }
+    }
+  }
+}

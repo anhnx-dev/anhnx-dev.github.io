@@ -1,0 +1,116 @@
+.c-section-3 {
+  position: relative;
+  height: 78vw;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 14vw;
+
+  @media (min-width: $breakpoints-xl) {
+    height: 60vw;
+    padding-top: 12vw;
+  }
+
+  .tham-gia {
+    padding-left: 6.25vw;
+    padding-right: 6.25vw;
+    @media (min-width: $breakpoints-xl) {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 72.60416666666667vw;
+    }
+
+    >a {
+      display: block;
+      text-decoration: none;
+      outline: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+
+      &.mobile {
+        @media (min-width: $breakpoints-xl) {
+          display: none;
+        }
+      }
+
+      &.pc {
+        display: none;
+
+        @media (min-width: $breakpoints-xl) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.46875vw;
+    @media (min-width: $breakpoints-xl) {
+      width: 75.52083333333334vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn {
+      position: relative;
+      display: block;
+      text-decoration: none;
+      outline: none;
+
+      img {
+        display: block;
+        width: 20.9375vw;
+        height: auto;
+
+        @media (min-width: $breakpoints-xl) {
+          width: 16.09375vw;
+        }
+
+        &.mobile {
+          @media (min-width: $breakpoints-xl) {
+            display: none;
+          }
+        }
+
+        &.pc {
+          display: none;
+          &.statu-1 {
+            transition: $tst;
+          }
+          &.statu-2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0;
+            transition: $tst;
+          }
+
+          @media (min-width: $breakpoints-xl) {
+            display: block;
+          }
+        }
+      }
+      &:hover {
+        img {
+          &.pc {
+            &.statu-1 {
+              opacity: 0;
+            }
+            &.statu-2 {
+              opacity: 1;
+              pointer-events: auto;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
