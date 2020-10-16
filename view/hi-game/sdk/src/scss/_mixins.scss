@@ -1,0 +1,108 @@
+@mixin mg-lr( $l, $r) {
+	margin-left: $l;
+	margin-right: $r;
+	@media (orientation: landscape) {
+		margin-left: $l;
+		margin-right: $r;
+	}
+}
+
+@mixin mg-tb( $t, $b) {
+	margin-top: $l;
+	margin-bottom: $b;
+	@media (orientation: landscape) {
+		margin-top: $l;
+		margin-bottom: $b;
+	}
+}
+
+@mixin mg-l($l) {
+	margin-left: $l;
+	@media (orientation: landscape) {
+		margin-left: $l;
+	}
+}
+
+@mixin mg-r($r) {
+	margin-right: $l;
+	@media (orientation: landscape) {
+		margin-right: $l;
+	}
+}
+
+@mixin mg-t($t) {
+	margin-top: $t;
+	@media (orientation: landscape) {
+		margin-top: $t;
+	}
+}
+
+@mixin mg-b($b) {
+	margin-bottom: $b;
+	@media (orientation: landscape) {
+		margin-bottom: $b;
+	}
+}
+
+@mixin pd-lr( $l, $r) {
+	padding-left: $l;
+	padding-right: $r;
+	@media (orientation: landscape) {
+		padding-left: $l;
+		padding-right: $r;
+	}
+}
+
+@mixin pd-tb( $t, $b) {
+	padding-top: $l;
+	padding-bottom: $b;
+	@media (orientation: landscape) {
+		padding-top: $l;
+		padding-bottom: $b;
+	}
+}
+
+@mixin pd-l($l) {
+	padding-left: $l;
+	@media (orientation: landscape) {
+		padding-left: $l;
+	}
+}
+
+@mixin pd-r($r) {
+	padding-right: $l;
+	@media (orientation: landscape) {
+		padding-right: $l;
+	}
+}
+
+@mixin pd-t($t) {
+	padding-top: $t;
+	@media (orientation: landscape) {
+		padding-top: $t;
+	}
+}
+
+@mixin pd-b($b) {
+	padding-bottom: $b;
+	@media (orientation: landscape) {
+		padding-bottom: $b;
+	}
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin clear {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+@mixin no-spacing {
+	margin: 0;
+	padding: 0;
+}

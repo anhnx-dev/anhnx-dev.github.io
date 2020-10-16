@@ -1,6 +1,6 @@
 .com-01 {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: auto;
   background-size: cover;
   background-position: center;
@@ -19,46 +19,26 @@
   }
 
   .com-wrappar {
-    padding-top: 17.333333333333336vw;
-    width: 68.8vw;
+    padding-top: 18.666666666666668vw;
+    width: 69.33333333333334vw;
     margin-left: auto;
     margin-right: auto;
-
-    .back-page {
-      display: flex;
-      align-items: center;
-      position: absolute;
-      z-index: 2;
-      left: 6.666666666666667vw;
-      top: 8vw;
-      color: $c-white;
-      font-size: 5.333333333333334vw;
-
-      .icon {
-        margin-right: 3.3333333333333335vw;
-
-        svg {
-          display: block;
-          width: 6vw;
-        }
-      }
-    }
 
     .heading {
       @include no-spacing;
       text-align: center;
       color: $c-white;
-      font-size: 7.333333333333333vw;
+      font-size: 6.4vw;
       text-transform: uppercase;
       font-weight: 700;
     }
 
     .form {
-      padding-top: 9.333333333333334vw;
+      margin-top: 8vw;
 
       .form-group {
         position: relative;
-        margin-bottom: 6vw;
+        margin-top: 5.333333333333334vw;
 
         .icon {
           position: absolute;
@@ -87,10 +67,9 @@
           border: 0;
           background: $c-white;
           color: $c-black;
-          font-size: 4vw;
           border-radius: 999px;
           outline: none;
-          padding: 3.4666666666666663vw 4.666666666666667vw;
+          padding: 3.733333333333334vw 6.666666666666667vw;
         }
       }
 
@@ -100,35 +79,35 @@
         width: 100%;
         border: 0;
         border-radius: 999px;
-        background-color: #ffe763;
+        background-color: $c-yellow;
         font-size: 5.333333333333334vw;
         text-transform: uppercase;
         font-weight: 700;
         color: #1b2fa1;
         outline: none;
         padding: 2.666666666666667vw 4.666666666666667vw;
+        margin-top: 8vw;
       }
     }
 
     .bottom {
-      padding-top: 6vw;
+      margin-top: 5.333333333333334vw;
       color: $c-white;
-      font-size: 4vw;
       text-align: center;
 
       .link-registration {
         a {
-          text-decoration: none;
-          color: #ffe763;
+          color: $c-yellow;
           outline: none;
+          font-weight: 600;
         }
       }
 
       .other {
-        margin-top: 4vw;
+        margin-top: 1vw;
 
         .title {
-          font-weight: 500;
+          font-weight: 700;
         }
 
         .group-link {
@@ -139,44 +118,18 @@
             position: relative;
             display: block;
             text-decoration: none;
-            width: 10.933333333333334vw;
-            height: 10.933333333333334vw;
+            width: 10.666666666666668vw;
+            height: 10.666666666666668vw;
             border-radius: 50%;
             color: $c-white;
 
-            svg {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate3d(-50%, -50%, 0);
-              height: 6.666666666666667vw;
-            }
-
-            &.item-facebook {
-              background-color: #3d5c9c;
-            }
+            img {
+              width: 100%;
+              height: 100%;
+            }            
           }
         }
       }
-    }
-  }
-
-
-
-  &.v1 {
-    >.com-wrappar {
-      padding-top: 24vw;
-
-      .heading {
-        opacity: .8;
-      }
-    }
-  }
-
-  &.v2 {
-    padding-bottom: 16.8vw;
-    &::after {
-      display: none;
     }
   }
 }

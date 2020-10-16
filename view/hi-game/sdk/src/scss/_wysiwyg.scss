@@ -1,0 +1,309 @@
+body {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $c-dark;
+  text-align: left;
+  background-color: $c-white;
+
+  @media (orientation: landscape) {
+    font-size: 2.08333333333333vw;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.popup-notification {
+  .popup-container {
+    width: 89.81481481481481vw;
+    max-height: 100vh;
+    overflow-y: auto;
+    background-color: $c-white;
+    text-align: center;
+    padding-bottom: 1px;
+
+    @media (orientation: landscape) {
+      width: 50.520833333333336vw;
+    }
+  }
+
+  .title {
+    background-color: $c-blue;
+    color: $c-white;
+    font-weight: 500;
+    font-size: 4.166666666666666vw;
+    padding: 1.3425925925925926vw 15px;
+
+    @media (orientation: landscape) {
+      font-size: 2.34375vw;
+      padding: 0.7552083333333334vw 15px;
+    }
+  }
+
+  .content {
+    color: $c-blue;
+    font-size: 3.2407407407407405vw;
+    padding: 3.7037037037037033vw;
+    margin-bottom: 0.9259259259259258vw;
+
+    @media (orientation: landscape) {
+      font-size: 1.8229166666666667vw;
+      padding: 2.083333333333333vw;
+      margin-bottom: 0.5208333333333333vw;
+    }
+  }
+
+  .popup-btn {
+    width: 28.703703703703702vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.2407407407407405vw;
+    margin-bottom: 5.7407407407407405vw;
+    padding: 1.2962962962962963vw;
+
+    @media (orientation: landscape) {
+      width: 16.145833333333336vw;
+      font-size: 1.8229166666666667vw;
+      padding: 0.7291666666666666vw;
+      margin-bottom: 3.229166666666667vw;
+    }
+  }
+
+  .group-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70.74074074074073vw;
+
+    @media (orientation: landscape) {
+      width: 39.791666666666664vw;
+    }
+
+    .popup-btn {
+      margin-left: 0;
+      transform: none;
+
+    }
+  }
+}
+
+.popup-payment {
+  .popup-container {
+    background-color: $c-white;
+    width: 93.05555555555556vw;
+    height: 121.94444444444446vw;
+
+    @media (orientation: landscape) {
+      width: 68.64583333333333vw;
+      height: 42.135416666666664vw;
+    }
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid $c-blue;
+    padding: 2.1296296296296298vw 3.981481481481482vw;
+
+    @media (orientation: landscape) {
+      padding: 1.1458333333333333vw 2.083333333333333vw;
+    }
+
+    .brand {
+      width: 33.333333%;
+
+      img {
+        display: block;
+        height: 6.7592592592592595vw;
+        width: auto;
+
+        @media (orientation: landscape) {
+          height: 3.802083333333333vw;
+        }
+      }
+    }
+
+    .title {
+      width: 33.333333%;
+      font-size: 3.7037037037037033vw;
+      font-weight: 600;
+      color: $c-blue;
+      text-align: center;
+
+      @media (orientation: landscape) {
+        font-size: 2.083333333333333vw;
+      }
+    }
+
+    .btn-exit {
+      position: relative;
+      width: 33.33333%;
+      text-align: right;
+
+      .icon {
+        display: inline-block;
+        width: 4.444444444444445vw;
+        height: 3.888888888888889vw;
+        background-image: url(../src/img/ic-exit.png);
+        background-size: 100% 100%;
+
+        @media (orientation: landscape) {
+          width: 2.5vw;
+          height: 2.1875vw;
+        }
+      }
+    }
+  }
+
+  .box {
+    margin-top: 5.555555555555555vw;
+    padding-left: 1.0185185185185186vw;
+    padding-right: 1.0185185185185186vw;
+    height: 100.92592592592592vw;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (orientation: landscape) {
+      margin-top: 3.0208333333333335vw;
+      padding-left: 4.6875vw;
+      padding-right: 4.6875vw;
+      height: 30.46875vw;
+    }
+  }
+
+  .item {
+    width: 33.333333%;
+    padding-left: 3.009259259259259vw;
+    padding-right: 3.009259259259259vw;
+    margin-top: 6.296296296296296vw;
+
+    @media (orientation: landscape) {
+      width: 25%;
+      padding-left: 1.5625vw;
+      padding-right: 1.5625vw;
+      margin-top: 2.083333333333333vw;
+
+      &:nth-child(4) {
+        margin-top: 0;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+
+  .item-inner {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    border-radius: 0.7407407407407408vw;
+    overflow: hidden;
+    @media (orientation: landscape) {
+      border-radius: 0.4166666666666667vw; 
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      padding-bottom: 120%;
+    }
+
+    .img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .info {
+      position: absolute;
+      z-index: 2;
+      background-color: $c-white;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: $c-blue;
+      text-align: center;
+      border: 1px solid $c-blue;
+      line-height: 1.1;
+      padding: 0.6481481481481481vw;
+      border-radius: 0 0 0.7407407407407408vw 0.7407407407407408vw;
+      @media (orientation: landscape) {
+        padding: 0.3645833333333333vw;
+        border-radius: 0 0 0.4166666666666667vw 0.4166666666666667vw;
+      }
+
+      .number-knb {
+        font-size: 2.5925925925925926vw;
+        @media (orientation: landscape) {
+          font-size: 1.4583333333333333vw;
+        }
+      }
+
+      .money {
+        font-weight: 600;
+        font-size: 3.0555555555555554vw;
+        @media (orientation: landscape) {
+          font-size: 1.7187500000000002vw;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(0);
+  overflow: hidden;
+  opacity: 0;
+  transition: $tst;
+
+  &.modal-active {
+    transform: translate3d(-50%, -50%, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-over-body {
+  display: none;
+  position: fixed;
+  z-index: 999998;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.299);
+
+  &.modal-over-body-active {
+    display: block;
+  }
+}

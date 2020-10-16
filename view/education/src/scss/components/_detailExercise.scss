@@ -1,0 +1,206 @@
+.c-detail-exercise {
+  &.v1 {
+    height: 355.4666666666667vw;
+    background-image: url(../images/bg.png);
+    background-size: 100% 100%;
+
+    .list {
+      padding: 0;
+      margin: 0;
+
+      li {
+        position: absolute;
+        z-index: 2;
+        list-style: none;
+
+        a {
+          display: block;
+          text-decoration: none;
+          outline: none;
+          width: 10.666666666666668vw;
+          height: 10.666666666666668vw;
+          background-image: url(../images/btn.png);
+          background-size: 100% 100%;
+          color: $c-white;
+          font-size: 4.8vw;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        &.active,
+        &.play {
+          a {
+            background-image: url(../images/btn-active.png);
+          }
+        }
+
+        &.play {
+          &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: 24vw;
+            bottom: 35%;
+            left: 56%;
+            transform: translateX(-50%);
+            height: 17.066666666666666vw;
+            background-image: url(../images/dang-choi.png);
+          }
+        }
+
+        &:nth-child(1) {
+          left: 40vw;
+          top: 16vw;
+        }
+
+        &:nth-child(2) {
+          left: 56vw;
+          top: 24vw;
+        }
+
+        &:nth-child(3) {
+          left: 66vw;
+          top: 37vw;
+        }
+
+        &:nth-child(4) {
+          left: 68vw;
+          top: 51vw;
+        }
+
+        &:nth-child(5) {
+          left: 65vw;
+          top: 65vw;
+        }
+
+        &:nth-child(6) {
+          left: 56vw;
+          top: 77vw;
+        }
+
+        &:nth-child(7) {
+          left: 42vw;
+          top: 86vw;
+        }
+
+        &:nth-child(8) {
+          left: 30vw;
+          top: 95vw;
+        }
+
+        &:nth-child(9) {
+          left: 25vw;
+          top: 109vw;
+        }
+
+        &:nth-child(10) {
+          left: 35vw;
+          top: 121vw;
+        }
+
+        &:nth-child(11) {
+          left: 48vw;
+          top: 132vw;
+        }
+
+        &:nth-child(12) {
+          left: 60vw;
+          top: 141vw;
+        }
+
+        &:nth-child(13) {
+          left: 67vw;
+          top: 154vw;
+        }
+
+        &:nth-child(14) {
+          left: 72vw;
+          top: 166vw;
+        }
+
+        &:nth-child(15) {
+          left: 72vw;
+          top: 180vw;
+        }
+
+        &:nth-child(16) {
+          left: 67vw;
+          top: 193vw;
+        }
+
+        &:nth-child(17) {
+          left: 56vw;
+          top: 202vw;
+        }
+
+        &:nth-child(18) {
+          left: 43vw;
+          top: 209vw;
+        }
+
+        &:nth-child(19) {
+          left: 28vw;
+          top: 217vw;
+        }
+
+        &:nth-child(20) {
+          left: 29vw;
+          top: 231vw;
+        }
+
+        &:nth-child(21) {
+          left: 38vw;
+          top: 240vw;
+        }
+
+        &:nth-child(22) {
+          left: 55vw;
+          top: 242vw;
+        }
+
+        &:nth-child(23) {
+          left: 73vw;
+          top: 248vw;
+        }
+
+        &:nth-child(24) {
+          left: 76vw;
+          top: 261vw;
+        }
+
+        &:nth-child(25) {
+          left: 62vw;
+          top: 268vw;
+        }
+
+        &:nth-child(26) {
+          left: 48vw;
+          top: 275vw;
+        }
+
+        &:nth-child(27) {
+          left: 41vw;
+          top: 287vw;
+        }
+
+        &:nth-child(28) {
+          left: 30vw;
+          top: 297vw;
+        }
+
+        &:nth-child(29) {
+          left: 40vw;
+          top: 312vw;
+        }
+
+        &:nth-child(30) {
+          left: 53vw;
+          top: 335vw;
+        }
+
+
+      }
+    }
+  }
+
+}

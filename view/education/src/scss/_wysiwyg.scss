@@ -3,8 +3,9 @@ body {
   line-height: 1.5;
   background-color: $c-white;
   color: $c-dark;
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
+  font-size: 3.733333333333334vw;
 }
 
 #app {
@@ -153,5 +154,69 @@ img {
 
   @media (min-width: $breakpoints-xl) {
     margin-top: 1.5625vw;
+  }
+}
+
+.switch {
+  position: relative;
+  width: 10.666666666666668vw;
+  height: 6.4vw;
+  border-radius: 999px;
+  background-color: #9D9D9D;
+  transition: $tst;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 5.333333333333334vw;
+    height: 5.333333333333334vw;
+    border-radius: 50%;
+    background-color: $c-white;
+    top: 50%;
+    transform: translate( 0, -50%);
+    left: 0.5333333333333333vw;
+    transition: $tst;
+  }
+
+  &.active {
+    background-color: #2592E4;
+    &::after {
+      left: calc(100% - 0.5333333333333333vw);
+      transform: translate( -100%, -50%);
+    }
+  }
+}
+
+.back-page {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  left: 6.666666666666667vw;
+  top: 6.666666666666667vw;
+  color: $c-white;
+  font-size: 5.333333333333334vw;
+  font-weight: 700;
+  line-height: 1;
+
+  .icon {
+    margin-right: 2.666666666666667vw;
+
+    svg {
+      display: block;
+      width: 3.4666666666666663vw;
+    }
+  }
+
+  &.v1 {
+    @include flex-center;
+    width: 34.66666666666667vw;
+    height: 10.666666666666668vw;
+    border-radius: 999px;
+    background-color: $c-white;
+    color: #FA5F24;
+    box-shadow: 0px 2px 0px #39B8FF, 0px 4px 0px #129FEF;
+    top: 4vw;
+    left: 4vw;
   }
 }

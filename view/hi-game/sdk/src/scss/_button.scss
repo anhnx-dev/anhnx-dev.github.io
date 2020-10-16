@@ -1,0 +1,41 @@
+.btn {
+  @include no-spacing;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 0;
+  text-decoration: none;
+  background: transparent;
+  color: $c-white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.083333333333333vh;
+  line-height: 1.5;
+  margin-bottom: 1.5625vh;
+  padding: 0.6510416666666667vh 0.78125vh;
+
+  @media (orientation: landscape) {
+    font-size: 3.7037037037037033vh;
+    margin-bottom: 2.7777777777777777vh;
+    padding: 1.1574074074074074vh 1.3888888888888888vh;
+  }
+
+  &.btn-blue {
+    background-color: $c-blue;
+  }
+
+  &.btn-indigo {
+    background-color: $c-indigo;
+  }
+
+  &.btn-red {
+    background-color: $c-red;
+  }
+
+  &.btn-yellow {
+    background-color: $c-yellow;
+  }
+  &.btn-info {
+    background-color: $c-info;
+  }
+}

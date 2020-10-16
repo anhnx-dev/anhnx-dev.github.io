@@ -1,0 +1,297 @@
+@import 'fonts';
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'wysiwyg';
+@import 'button';
+
+// @import './components/';
+
+.sdk {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 75.55555555555556vw;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/bg-doc.png);
+    background-size: 100% 100%;
+
+    @media (orientation: landscape) {
+      height: 49.84375vw;
+      background-image: url(../images/bg-ngang.png);
+    }
+  }
+
+  .brand {
+    position: absolute;
+    top: 16.666666666666664vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (orientation: landscape) {
+      top: 7.12962962962963vh;
+    }
+
+    img {
+      display: block;
+      height: 6.25vh;
+
+      @media (orientation: landscape) {
+        height: 11.11111111111111vh;
+      }
+    }
+  }
+
+  .box {
+    position: absolute;
+    width: 33.85416666666667vh;
+    top: 40.10416666666667vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (orientation: landscape) {
+      width: 60.18518518518518vh;
+      top: 27.962962962962962vh;
+    }
+  }
+
+  .other {
+    position: relative;
+    margin-top: 2.34375vh;
+    margin-bottom: 2.03125vh;
+    border-top: 1px solid $c-cyan;
+    color: $c-cyan;
+    font-size: 1.6666666666666667vh;
+
+    @media (orientation: landscape) {
+      margin-top: 4.166666666666666vh;
+      margin-bottom: 3.6111111111111107vh;
+      font-size: 2.9629629629629632vh;
+    }
+
+    >span {
+      position: absolute;
+      z-index: 2;
+      top: -0.26041666666666663vh;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      padding: 0 0.78125vh;
+      background-color: $c-white;
+
+      @media (orientation: landscape) {
+        top: -0.4629629629629629vh;
+        padding: 0 1.3888888888888888vh;
+      }
+    }
+  }
+
+  .btn-back {
+    position: absolute;
+    z-index: 2;
+    left: 2.864583333333333vh;
+    top: 2.864583333333333vh;
+    width: 6.25vh;
+    height: 6.25vh;
+    background-image: url(../src/img/ic-chevron-circle-left.png);
+    background-size: 100% 100%;
+
+    @media (orientation: landscape) {
+      top: 3.0555555555555554vh;
+      left: 2.7777777777777777vh;
+      width: 11.11111111111111vh;
+      height: 11.11111111111111vh;
+    }
+  }
+
+  .heading {
+    text-align: center;
+    color: $c-blue;
+    font-weight: 600;
+    font-size: 3.229166666666667vh;
+    padding-bottom: 2.083333333333333vh;
+    border-bottom: 1px solid $c-blue;
+
+    @media (orientation: landscape) {
+      font-size: 5.7407407407407405vh;
+      padding-bottom: 3.7037037037037033vh;
+    }
+  }
+
+  .ic {
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.ic-user {
+      background-image: url(../src/img/ic-user.png);
+      background-size: 1.7708333333333333vh 2.4479166666666665vh;
+
+      @media (orientation: landscape) {
+        background-size: 3.148148148148148vh 4.351851851851852vh;
+      }
+    }
+
+    &.ic-unlock {
+      background-image: url(../src/img/ic-unlock.png);
+      background-size: 1.7708333333333333vh 2.1875vh;
+      @media (orientation: landscape) {
+        background-size: 3.148148148148148vh 3.888888888888889vh;
+      }
+    }
+  }
+
+  .form {
+    position: relative;
+    padding-top: 3.3854166666666665vh;
+
+    @media (orientation: landscape) {
+      padding-top: 6.018518518518518vh;
+    }
+
+    .content {
+      color: $c-info;
+      text-align: center;
+      font-size: 1.6666666666666667vh;
+      margin-bottom: 2.083333333333333vh;
+      margin-top: -1.0416666666666665vw;
+      @media (orientation: landscape) {
+        margin-bottom: 3.7037037037037033vh;
+        margin-top: -1.8518518518518516vh;
+        font-size: 2.9629629629629632vh;
+      }
+      .phone {
+        color: $c-blue;
+      }
+    }
+
+    .form-error {
+      position: absolute;
+      right: 0;
+      top: 1.0416666666666665vh;
+      color: #b4b4b4;
+      font-size: 1.3020833333333335vh;
+      font-style: italic;
+
+      @media (orientation: landscape) {
+        top: 1.8518518518518516vh;
+        font-size: 2.314814814814815vh;
+      }
+    }
+
+    .form-group {
+      position: relative;
+
+      .ic {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 5.052083333333333vh;
+        height: 100%;
+        background-color: $c-blue;
+
+        @media (orientation: landscape) {
+          width: 8.981481481481483vh;
+        }
+      }
+
+      .btn-eye {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        width: 5.052083333333333vh;
+        height: 100%;
+        background-image: url(../src/img/ic-eye-slash.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 3.4375000000000004vh 2.1354166666666665vh;
+
+        @media (orientation: landscape) {
+          width: 8.981481481481483vh;
+          background-size: 6.111111111111111vh 3.7962962962962963vh;
+        }
+
+        &.active {
+          background-image: url(../src/img/ic-eye.png);
+          background-size: 3.28125vh 1.8229166666666667vh;
+          @media (orientation: landscape) {
+            background-size: 5.833333333333333vh 3.2407407407407405vh;
+          }
+        }
+      }
+
+      .form-control {
+        display: block;
+        width: 100%;
+        border: 1px solid $c-blue;
+        font-size: 1.8229166666666667vh;
+        padding: 1.0416666666666665vh 0.78125vh 1.0416666666666665vh 5.989583333333334vh;
+        margin-bottom: 2.083333333333333vh;
+
+        @media (min-width: 768px) {
+          border: 2px solid $c-blue;
+        }
+
+        @media (orientation: landscape) {
+          font-size: 3.2407407407407405vh;
+          padding: 1.8518518518518516vh 1.3888888888888888vh 1.8518518518518516vh 10.648148148148149vh;
+          margin-bottom: 3.7037037037037033vh;
+        }
+
+        &.form-password {
+          padding: 1.0416666666666665vh 5.989583333333334vh;
+
+          @media (orientation: landscape) {
+            padding: 1.8518518518518516vh 10.648148148148149vh;
+          }
+        }
+
+        &.form-code {
+          text-align: center;
+          padding: 1.0416666666666665vh;
+
+          @media (orientation: landscape) {
+            padding: 1.8518518518518516vh;
+          }
+        }
+      }
+    }
+  }
+
+  .link {
+    font-size: 1.8229166666666667vh;
+    color: $c-blue;
+    font-style: italic;
+    font-weight: 500;
+
+    @media (orientation: landscape) {
+      font-size: 3.2407407407407405vh;
+    }
+  }
+
+  &.c-01 {
+    .box {
+      top: 33.33333333333333vh;
+
+      @media (orientation: landscape) {
+        top: 16.666666666666664vh;
+      }
+    }
+
+    @media (orientation: landscape) {
+      .brand {
+        top: 3.0555555555555554vh;
+        left: inherit;
+        transform: none;
+        right: 2.7777777777777777vh;
+      }
+    }
+  }
+}

@@ -1,16 +1,19 @@
 .c-user_info {
-  position: relative;
-  height: 100%;
-  padding-top: 17.333333333333336vw;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 137.6vw;
+  left: 0;
+  bottom: 18.666666666666668vw;
+  background: $c-white;
+  border-radius: 2.666666666666667vw 2.666666666666667vw 0 0;
 
   .wrapper {
     position: relative;
     height: 100%;
-    background: $c-white;
-    border-radius: 4vw 4vw 0 0;
     padding-top: 10.933333333333334vw;
-    padding-left: 10.666666666666668vw;
-    padding-right: 10.666666666666668vw;
+    padding-left: 6.666666666666667vw;
+    padding-right: 6.666666666666667vw;
   }
 
   .heading {
@@ -19,35 +22,40 @@
     width: 82.66666666666667%;
     transform: translateY(-50%);
     background-color: $c-white;
-    border-radius: 5vw;
-    box-shadow: 1px 5px 2px 0 rgba(0, 0, 0, .1);
+    border-radius: 5.333333333333334vw;
+    box-shadow: 0px 4px 4px rgba(54, 170, 236, 0.45);
     color: #fa5f24;
-    font-weight: 500;
-    font-size: 6.666666666666667vw;
+    font-weight: 700;
+    font-size: 6.4vw;
     text-transform: uppercase;
-    padding: 2.5vw 15px;
+    padding: 4.533333333333333vw 15px;
     text-align: center;
   }
+
   .form {
-    
+    margin-top: 5.333333333333334vw;
+
     .form-group {
       padding: 2vw 0;
       border-top: 1px solid #cacaca;
+
       &:nth-child(1) {
         border-top: 0;
       }
+
       .title {
-        font-size: 5.333333333333334vw;
-        font-weight: 700;
+        font-size: 4.8vw;
+        font-weight: 600;
       }
+
       .form-control {
         display: block;
         width: 100%;
         border: 0;
         background: transparent;
         color: #008ac4;
-        font-size: 4.666666666666667vw;
-        padding: 2vw 0;
+        font-size: 4.8vw;
+        padding: 1.3333333333333335vw 0;
         transition: $tst;
         pointer-events: none;
       }
@@ -58,21 +66,25 @@
       margin-top: 4vw;
       display: flex;
       justify-content: space-between;
+
       .btn {
-        font-size: 5.333333333333334vw;
+        @include flex-center;
+        font-size: 4.8vw;
         text-transform: uppercase;
         font-weight: 700;
-        text-align: center;
         border-radius: 999px;
         color: $c-white;
-        width: 38.13333333333333vw;
-        padding: 1.7333333333333332vw 0;
+        width: 40vw;
+        height: 10.666666666666668vw;
+
         &.btn-update {
           background-color: #2eade2;
         }
+
         &.btn-back {
           background-color: #fa5f24;
         }
+
         &.btn-save {
           background-color: #2eade2;
           display: none;
@@ -84,15 +96,18 @@
       .form-group {
         .form-control {
           background-color: #cacaca;
-          padding: 2vw;
+          padding-left: 2vw;
+          padding-right: 2vw;
           color: $c-white;
           pointer-events: auto;
         }
       }
+
       .btn-group {
         .btn-update {
           display: none;
         }
+
         .btn-save {
           background-color: #2eade2;
           display: block;
