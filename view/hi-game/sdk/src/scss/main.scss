@@ -60,6 +60,18 @@
       width: 60.18518518518518vh;
       top: 27.962962962962962vh;
     }
+
+    >.content {
+      margin-top: 2.2488755622188905vh;
+      margin-bottom: 2.2488755622188905vh;
+      font-size: 2.39880059970015vh;
+
+      @media (orientation: landscape) {
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        font-size: 4.266666666666667vh;
+      }
+    }
   }
 
   .other {
@@ -146,28 +158,28 @@
     }
   }
 
+  .content {
+    color: $c-info;
+    text-align: center;
+    font-size: 1.6666666666666667vh;
+    margin-bottom: 2.083333333333333vh;
+    margin-top: -1.0416666666666665vw;
+    @media (orientation: landscape) {
+      margin-bottom: 3.7037037037037033vh;
+      margin-top: -1.8518518518518516vh;
+      font-size: 2.9629629629629632vh;
+    }
+    .phone {
+      color: $c-blue;
+    }
+  }
+
   .form {
     position: relative;
     padding-top: 3.3854166666666665vh;
 
     @media (orientation: landscape) {
       padding-top: 6.018518518518518vh;
-    }
-
-    .content {
-      color: $c-info;
-      text-align: center;
-      font-size: 1.6666666666666667vh;
-      margin-bottom: 2.083333333333333vh;
-      margin-top: -1.0416666666666665vw;
-      @media (orientation: landscape) {
-        margin-bottom: 3.7037037037037033vh;
-        margin-top: -1.8518518518518516vh;
-        font-size: 2.9629629629629632vh;
-      }
-      .phone {
-        color: $c-blue;
-      }
     }
 
     .form-error {
@@ -234,6 +246,7 @@
         font-size: 1.8229166666666667vh;
         padding: 1.0416666666666665vh 0.78125vh 1.0416666666666665vh 5.989583333333334vh;
         margin-bottom: 2.083333333333333vh;
+        outline: none;
 
         @media (min-width: 768px) {
           border: 2px solid $c-blue;
