@@ -72,9 +72,9 @@ $('.eagerly-item_title').on('click', function () {
   $(this).parent().toggleClass('active').siblings().removeClass('active');
 });
 
-
-
-
+$('.server .group .item').on('click', function () {
+  $(this).toggleClass('active').siblings().removeClass('active');
+});
 
 
 
@@ -92,65 +92,28 @@ if ($.fn.slick !== undefined) {
       fade: true,
       cssEase: 'linear',
       autoplay: true,
-      autoplaySpeed: 2700,
-      responsive: [{
-        breakpoint: 1200,
-        settings: {
-          dots: false
-        }
-      }]
+      autoplaySpeed: 2700
     });
   }
 
-  const carouselDiscountCode = $('.carousel-discount_code')
-
-  if (carouselDiscountCode) {
-    const carousel = carouselDiscountCode;
-    carousel.slick({
-      infinite: false,
-      speed: 300,
-      slidesToShow: 1,
-      variableWidth: true,
-      responsive: [{
-        breakpoint: 1200,
-        settings: {
-          arrows: false,
-        }
-      }]
-    });
-  }
-
-  const carouselProduct = $('.carousel-products');
-
-  if (carouselProduct) {
-    const carousels = carouselProduct;
-    for (let i = 0; i < carousels.length; i++) {
-      const carousel = carousels[i];
-      $(carousel).slick({
-        arrows: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        variableWidth: true
-      });
-    }
-  }
-
-  const carouselNews = $('.carousel-news');
+  const carouselNews = $('.carousel-news')
 
   if (carouselNews) {
     const carousel = carouselNews;
     carousel.slick({
-      infinite: false,
+      arrows: false,
+      dots: true,
+      infinite: true,
       speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToShow: 1,
+      variableWidth: true,
       autoplay: true,
       autoplaySpeed: 2700,
-      responsive: [{
-          breakpoint: 480,
+      responsive: [
+        {
+          breakpoint: 1024,
           settings: {
-            slidesToShow: 1
+            variableWidth: false,
           }
         }
       ]
@@ -158,7 +121,6 @@ if ($.fn.slick !== undefined) {
   }
 
 }
-
 
 // modal
 const modal = document.querySelectorAll('[data-modal]');

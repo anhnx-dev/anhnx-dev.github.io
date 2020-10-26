@@ -103,12 +103,7 @@ img {
 main {
   background-color: $c-white;
   padding-bottom: 40px;
-  min-height: calc(100vh - 321px);
-  @media (max-width: 1023.99px) {
-    padding-bottom: 0;
-    min-height: calc(100vh - 51.06666666666667vw);
-  }
-  
+  min-height: 100vh;
 }
 
 .btn {
@@ -124,6 +119,7 @@ main {
   color: $c-white;
   cursor: pointer;
   height: 41px;
+
   @media (max-width: 1023.99px) {
     margin-top: 4vw;
     height: 9.333333333333334vw;
@@ -137,6 +133,10 @@ main {
   &.btn-light {
     background-color: #e5e5e5;
     color: #2b2b2b;
+  }
+  &.btn-light-1 {
+    color: $c-white;
+    background-color: #e5e5e5;
   }
 }
 
@@ -165,6 +165,102 @@ main {
 
       &:last-of-type td {
         border-bottom: 1px solid #e5e5e5;
+      }
+    }
+  }
+}
+
+.carousel {
+  .slick-dots {
+    @include no-spacing;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    @media (max-width: 1023.99px) {
+      display: flex;
+      right: initial;
+      left: 50%;
+      transform: translateX(-50%);
+      top: initial;
+      bottom: 2vw;
+    }
+
+    li {
+      @include no-spacing;
+      list-style: none;
+      margin: 7px 0;
+      line-height: 0;
+      @media (max-width: 1023.99px) {
+        margin: 0 0.5vw;
+      }
+      
+
+      button {
+        @include no-spacing;
+        font-size: 0;
+        border: 1px solid $c-white;
+        background: transparent;
+        transition: $tst;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        transition: $tst;
+        @media (max-width: 1023.99px) {
+          width: 2vw;
+          height: 2vw;  
+        }
+        
+      }
+
+      &.slick-active {
+        button {
+          background: $c-white;
+        }
+      }
+    }
+  }
+
+  &.carousel-news {
+    .slick-dots {
+      position: initial;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      @media (max-width: 1023.99px) {
+        left: 0;
+        transform: none;
+        margin-top: 4vw;
+      }
+      
+      li {
+        margin: 0 4px;
+        @media (max-width: 1023.99px) {
+          margin: 0 0.5vw; 
+        }
+
+        button {
+          width: 10px;
+          height: 10px;
+          border: 0;
+          background: #cdcdcd;
+          border-radius: 999px;
+          @media (max-width: 1023.99px) {
+            width: 2vw;
+            height: 2vw;  
+          }
+          
+        }
+
+        &.slick-active {
+          button {
+            width: 58px;
+            background-color: #00aeff;
+          }
+        }
       }
     }
   }
