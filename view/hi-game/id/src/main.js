@@ -89,8 +89,8 @@ if ($.fn.slick !== undefined) {
       dots: true,
       infinite: true,
       speed: 300,
-      fade: true,
-      cssEase: 'linear',
+      // fade: true,
+      // cssEase: 'linear',
       autoplay: true,
       autoplaySpeed: 2700
     });
